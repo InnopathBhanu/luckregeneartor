@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="3400" viewBox="0 0 1440 3400">
+<defs>
+  <style>
+    .h1 { font: 700 22px Arial, sans-serif; fill:#172033; }
+    .h2 { font: 700 16px Arial, sans-serif; fill:#172033; }
+    .label { font: 600 13px Arial, sans-serif; fill:#172033; }
+    .small { font: 400 11px Arial, sans-serif; fill:#48566A; }
+    .tiny { font: 400 9px Arial, sans-serif; fill:#5E6B7C; }
+  </style>
+  <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity=".13"/>
+  </filter>
+</defs>
+<rect width="100%" height="100%" fill="#F5F7FA"/>
+<text x="24" y="30" class="h1">LotteryCorner State Hub — desktop anonymous template</text>
+<text x="24" y="48" class="tiny">Illustrative state-template structure — data and amounts are placeholders</text>
+<rect x="20" y="60" width="1400" height="104" rx="0" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<rect x="42" y="82" width="180" height="38" rx="5" fill="#0B1F3A" stroke="#0B1F3A"/>
+<text x="132" y="107" text-anchor="middle" class="label" fill="#FFFFFF">LOTTERY CORNER</text>
+<rect x="250" y="80" width="470" height="42" rx="21" fill="#F0F3F7" stroke="#D7DEE8"/>
+<text x="275" y="106" text-anchor="start" class="small">Search games, results, claims, news or questions…</text>
+<rect x="750" y="80" width="230" height="42" rx="21" fill="#E8F7F7" stroke="#00A7A5"/>
+<text x="865" y="106" text-anchor="middle" class="label" fill="#007B79">Ask LotteryCorner AI</text>
+<text x="1010" y="106" text-anchor="start" class="label" fill="#1F5EFF">Change state ▾     Sign in / Insider</text>
+<text x="70" y="150" text-anchor="start" class="label">Results     States     Games     Jackpots     Tools     News     Community / Forums</text>
+<rect x="50" y="190" width="1340" height="170" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="78" y="224" text-anchor="start" class="tiny" fill="#1F5EFF">S-01  FLORIDA LOTTERY HUB</text>
+<text x="78" y="262" text-anchor="start" class="h1">Florida Lottery Results, Games, Jackpots and Player Help</text>
+<text x="78" y="290" text-anchor="start" class="small">Latest numbers, live draws, state games, claims, taxes, scratchers, news, community and where to play.</text>
+<text x="78" y="326" text-anchor="start" class="tiny">Updated after each verified draw · Source links and correction history available</text>
+<rect x="930" y="225" width="190" height="40" rx="20" fill="#EDF4FF" stroke="#BCD1FF"/>
+<text x="1025" y="250" text-anchor="middle" class="label" fill="#1F5EFF">Follow Florida</text>
+<rect x="1130" y="225" width="220" height="40" rx="20" fill="#EAF9F8" stroke="#7FD5D2"/>
+<text x="1240" y="250" text-anchor="middle" class="label" fill="#007B79">Ask Florida lottery AI</text>
+<text x="930" y="305" text-anchor="start" class="small">State: Florida   Change state ▾</text>
+<rect x="230" y="390" width="980" height="86" rx="5" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="431.0" text-anchor="middle" class="small">STATE AD-S00 — TOP LEADERBOARD</text>
+<text x="720.0" y="451.0" text-anchor="middle" class="tiny">Size/ID inherited from current production configuration</text>
+<rect x="50" y="510" width="1340" height="56" rx="8" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="78" y="545" text-anchor="start" class="tiny" fill="#1F5EFF">Results</text>
+<text x="202" y="545" text-anchor="start" class="tiny" fill="#1F5EFF">Games</text>
+<text x="326" y="545" text-anchor="start" class="tiny" fill="#1F5EFF">Live &amp; Schedule</text>
+<text x="450" y="545" text-anchor="start" class="tiny" fill="#1F5EFF">How to Play</text>
+<text x="574" y="545" text-anchor="start" class="tiny" fill="#1F5EFF">Claims</text>
+<text x="698" y="545" text-anchor="start" class="tiny" fill="#1F5EFF">Taxes</text>
+<text x="822" y="545" text-anchor="start" class="tiny" fill="#1F5EFF">Scratchers</text>
+<text x="946" y="545" text-anchor="start" class="tiny" fill="#1F5EFF">News</text>
+<text x="1070" y="545" text-anchor="start" class="tiny" fill="#1F5EFF">Community</text>
+<text x="1194" y="545" text-anchor="start" class="tiny" fill="#1F5EFF">Where to Play</text>
+<text x="50" y="615" text-anchor="start" class="h2">S-02  LATEST STATE RESULTS</text>
+<text x="50" y="638" text-anchor="start" class="small">Multi-state and in-state games remain distinct and link to stable result/game pages.</text>
+<rect x="50" y="660" width="900" height="330" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="78" y="695" text-anchor="start" class="label">Multi-state games offered in Florida</text>
+<text x="78" y="735" text-anchor="start" class="label">Powerball</text>
+<text x="260" y="735" text-anchor="start" class="label">04 05 22 50 58 + 01</text>
+<text x="650" y="735" text-anchor="start" class="label" fill="#C73A3A">$XXXM</text>
+<text x="815" y="735" text-anchor="start" class="small" fill="#1F5EFF">Result · Check · Play →</text>
+<text x="78" y="821" text-anchor="start" class="label">Mega Millions</text>
+<text x="260" y="821" text-anchor="start" class="label">25 37 59 68 70 + 10</text>
+<text x="650" y="821" text-anchor="start" class="label" fill="#C73A3A">$XXXM</text>
+<text x="815" y="821" text-anchor="start" class="small" fill="#1F5EFF">Result · Check · Play →</text>
+<text x="78" y="905" text-anchor="start" class="label">Florida in-state games</text>
+<text x="78" y="940" text-anchor="start" class="small">Florida Lotto</text>
+<text x="248" y="940" text-anchor="start" class="label">12 18 23 34 45 51</text>
+<text x="498" y="940" text-anchor="start" class="small">Fantasy 5</text>
+<text x="668" y="940" text-anchor="start" class="label">03 11 22 28 35</text>
+<text x="78" y="986" text-anchor="start" class="small">Pick 3 Evening</text>
+<text x="248" y="986" text-anchor="start" class="label">3 8 6</text>
+<text x="498" y="986" text-anchor="start" class="small">Pick 4 Evening</text>
+<text x="668" y="986" text-anchor="start" class="label">2 5 9 6</text>
+<rect x="975" y="660" width="415" height="330" rx="10" fill="#EAF9F8" stroke="#7FD5D2" filter="url(#s)"/>
+<text x="1001" y="695" text-anchor="start" class="h2" fill="#007B79">S-03  FLORIDA AI BRIEF</text>
+<text x="1001" y="730" text-anchor="start" class="small">What changed since the last draw?</text>
+<text x="1001" y="759" text-anchor="start" class="small">• Latest result or jackpot movement</text>
+<text x="1001" y="787" text-anchor="start" class="small">• State schedule or rule update</text>
+<text x="1001" y="815" text-anchor="start" class="small">• Interesting historical connection</text>
+<text x="1001" y="843" text-anchor="start" class="small">• Active Florida discussion</text>
+<rect x="1001" y="875" width="330" height="38" rx="19" fill="#FFFFFF" stroke="#7FD5D2"/>
+<text x="1019" y="899" text-anchor="start" class="small">Ask about Florida games…</text>
+<rect x="1001" y="925" width="160" height="34" rx="17" fill="#00A7A5" stroke="#00A7A5"/>
+<text x="1081" y="947" text-anchor="middle" class="label" fill="#FFFFFF">Ask AI</text>
+<text x="1175" y="947" text-anchor="start" class="tiny">One full answer first</text>
+<rect x="250" y="1025" width="940" height="82" rx="5" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="1064.0" text-anchor="middle" class="small">STATE AD-S01 — POST RESULTS</text>
+<text x="720.0" y="1084.0" text-anchor="middle" class="tiny">Size/ID inherited from current production configuration</text>
+<rect x="50" y="1140" width="650" height="220" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="78" y="1175" text-anchor="start" class="h2">S-04  LIVE &amp; UPCOMING DRAWS</text>
+<text x="78" y="1215" text-anchor="start" class="tiny" fill="#C73A3A">PENDING</text>
+<text x="175" y="1215" text-anchor="start" class="label">Pick 3 Evening</text>
+<text x="370" y="1215" text-anchor="start" class="small">Result expected shortly</text>
+<text x="610" y="1215" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="78" y="1258" text-anchor="start" class="tiny" fill="#138A5B">VERIFIED</text>
+<text x="175" y="1258" text-anchor="start" class="label">Pick 4 Midday</text>
+<text x="370" y="1258" text-anchor="start" class="small">Latest result available</text>
+<text x="610" y="1258" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="78" y="1301" text-anchor="start" class="tiny" fill="#1F5EFF">UPCOMING</text>
+<text x="175" y="1301" text-anchor="start" class="label">Florida Lotto</text>
+<text x="370" y="1301" text-anchor="start" class="small">Wed/Sat · state time</text>
+<text x="610" y="1301" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="78" y="1330" text-anchor="start" class="small" fill="#1F5EFF">Schedule · Set alert · Where to play</text>
+<rect x="730" y="1140" width="660" height="220" rx="10" fill="#EDF4FF" stroke="#BCD1FF" filter="url(#s)"/>
+<text x="758" y="1175" text-anchor="start" class="h2">S-05  CHECK MY FLORIDA TICKET</text>
+<text x="758" y="1205" text-anchor="start" class="small">Choose game and draw; enter numbers for an exact comparison.</text>
+<rect x="758" y="1235" width="420" height="38" rx="19" fill="#FFFFFF" stroke="#BCD1FF"/>
+<text x="778" y="1259" text-anchor="start" class="small">Game, draw and numbers</text>
+<rect x="1190" y="1235" width="150" height="38" rx="19" fill="#1F5EFF" stroke="#1F5EFF"/>
+<text x="1265" y="1259" text-anchor="middle" class="label" fill="#FFFFFF">Check</text>
+<text x="758" y="1300" text-anchor="start" class="tiny">Save and track only after the result is shown.</text>
+<text x="758" y="1330" text-anchor="start" class="tiny">Potential win → calm claim guidance; no purchase pressure.</text>
+<text x="50" y="1410" text-anchor="start" class="h2">S-06  FLORIDA GAMES</text>
+<text x="50" y="1433" text-anchor="start" class="small">Game portfolio is grouped by player task, not one undifferentiated list.</text>
+<rect x="50" y="1460" width="650" height="110" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="74" y="1494" text-anchor="start" class="label">State draw games</text>
+<text x="74" y="1525" text-anchor="start" class="small">Florida Lotto · Fantasy 5 · Pick 2/3/4/5 · Cash Pop</text>
+<text x="74" y="1552" text-anchor="start" class="tiny" fill="#1F5EFF">Explore games →</text>
+<rect x="730" y="1460" width="650" height="110" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="754" y="1494" text-anchor="start" class="label">Multi-state games</text>
+<text x="754" y="1525" text-anchor="start" class="small">Powerball · Mega Millions · Cash4Life</text>
+<text x="754" y="1552" text-anchor="start" class="tiny" fill="#1F5EFF">Explore games →</text>
+<rect x="50" y="1595" width="650" height="110" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="74" y="1629" text-anchor="start" class="label">Scratch-offs</text>
+<text x="74" y="1660" text-anchor="start" class="small">New · top prizes remaining · ending soon · second chance</text>
+<text x="74" y="1687" text-anchor="start" class="tiny" fill="#1F5EFF">Explore games →</text>
+<rect x="730" y="1595" width="650" height="110" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="754" y="1629" text-anchor="start" class="label">Online / subscription</text>
+<text x="754" y="1660" text-anchor="start" class="small">Only when state service or qualified option exists</text>
+<text x="754" y="1687" text-anchor="start" class="tiny" fill="#1F5EFF">Explore games →</text>
+<rect x="250" y="1750" width="940" height="80" rx="5" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="1788.0" text-anchor="middle" class="small">STATE AD-S02 — POST GAMES</text>
+<text x="720.0" y="1808.0" text-anchor="middle" class="tiny">Size/ID inherited from current production configuration</text>
+<rect x="50" y="1865" width="650" height="250" rx="10" fill="#FFF1E9" stroke="#F1B48E" filter="url(#s)"/>
+<text x="78" y="1900" text-anchor="start" class="h2">S-07  WHERE TO PLAY IN FLORIDA</text>
+<text x="78" y="1932" text-anchor="start" class="small">Resolve state, game, provider type, cutoff and physical-location rules.</text>
+<text x="78" y="1970" text-anchor="start" class="label">Official state option</text>
+<text x="300" y="1970" text-anchor="start" class="small">Available / unavailable / app / subscription</text>
+<text x="78" y="2010" text-anchor="start" class="label">Courier or affiliate</text>
+<text x="300" y="2010" text-anchor="start" class="small">Only when verified and disclosed</text>
+<text x="78" y="2050" text-anchor="start" class="label">Retail purchase</text>
+<text x="300" y="2050" text-anchor="start" class="small">Retailer finder and cutoff</text>
+<rect x="78" y="2070" width="230" height="34" rx="17" fill="#D76722" stroke="#D76722"/>
+<text x="193" y="2092" text-anchor="middle" class="label" fill="#FFFFFF">View eligible options</text>
+<text x="325" y="2092" text-anchor="start" class="tiny">LotteryCorner may earn a commission</text>
+<rect x="730" y="1865" width="660" height="250" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="758" y="1900" text-anchor="start" class="h2">S-08/08A  PLAYER HELP & STATE ESSENTIALS</text>
+<text x="758" y="1940" text-anchor="start" class="label">How to claim</text>
+<text x="960" y="1940" text-anchor="start" class="small">Thresholds, methods and deadline</text>
+<text x="1320" y="1940" text-anchor="start" class="label" fill="#1F5EFF">›</text>
+<text x="758" y="1981" text-anchor="start" class="label">Taxes</text>
+<text x="960" y="1981" text-anchor="start" class="small">Federal/state assumptions and calculator</text>
+<text x="1320" y="1981" text-anchor="start" class="label" fill="#1F5EFF">›</text>
+<text x="758" y="2022" text-anchor="start" class="label">Winner privacy</text>
+<text x="960" y="2022" text-anchor="start" class="small">Can winners remain anonymous?</text>
+<text x="1320" y="2022" text-anchor="start" class="label" fill="#1F5EFF">›</text>
+<text x="758" y="2063" text-anchor="start" class="label">Retailers &amp; claim centers</text>
+<text x="960" y="2063" text-anchor="start" class="small">Locator and service capability</text>
+<text x="1320" y="2063" text-anchor="start" class="label" fill="#1F5EFF">›</text>
+<text x="758" y="2090" text-anchor="start" class="tiny">Source/effective date shown on high-consequence summaries.</text>
+<rect x="50" y="2160" width="650" height="220" rx="10" fill="#FFF6D9" stroke="#E4C466" filter="url(#s)"/>
+<text x="78" y="2195" text-anchor="start" class="h2">S-09  WORTH KNOWING IN FLORIDA</text>
+<text x="78" y="2230" text-anchor="start" class="small">• Jackpot or draw milestone</text>
+<text x="78" y="2260" text-anchor="start" class="small">• State rule / schedule / claim change</text>
+<text x="78" y="2290" text-anchor="start" class="small">• Unclaimed prize or winner update</text>
+<text x="78" y="2320" text-anchor="start" class="small">• Real community question</text>
+<text x="78" y="2350" text-anchor="start" class="label" fill="#1F5EFF">Explore evidence →</text>
+<rect x="730" y="2160" width="660" height="220" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="758" y="2195" text-anchor="start" class="h2">S-10  STATE TOOLS &amp; STATISTICS</text>
+<text x="758" y="2235" text-anchor="start" class="small" fill="#1F5EFF">Florida number history</text>
+<text x="1048" y="2235" text-anchor="start" class="small" fill="#1F5EFF">Hot &amp; cold by game</text>
+<text x="758" y="2277" text-anchor="start" class="small" fill="#1F5EFF">Number generator</text>
+<text x="1048" y="2277" text-anchor="start" class="small" fill="#1F5EFF">Jackpot history</text>
+<text x="758" y="2319" text-anchor="start" class="small" fill="#1F5EFF">Tax calculator</text>
+<text x="1048" y="2319" text-anchor="start" class="small" fill="#1F5EFF">Systems / wheels</text>
+<text x="758" y="2350" text-anchor="start" class="tiny">AI can explain or configure; calculations remain deterministic.</text>
+<rect x="250" y="2420" width="940" height="80" rx="5" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="2458.0" text-anchor="middle" class="small">STATE AD-S03 — LOWER UTILITY SLOT</text>
+<text x="720.0" y="2478.0" text-anchor="middle" class="tiny">Size/ID inherited from current production configuration</text>
+<rect x="50" y="2540" width="420" height="155" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="74" y="2575" text-anchor="start" class="h2">S-11  SCRATCH-OFFS</text>
+<text x="74" y="2608" text-anchor="start" class="small">New games · top prizes · ending soon · snapshot date</text>
+<text x="74" y="2662" text-anchor="start" class="label" fill="#1F5EFF">Explore →</text>
+<rect x="500" y="2540" width="420" height="155" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="524" y="2575" text-anchor="start" class="h2">S-12  WINNERS &amp; UNCLAIMED PRIZES</text>
+<text x="524" y="2608" text-anchor="start" class="small">Recent winners · deadlines · claim context</text>
+<text x="524" y="2662" text-anchor="start" class="label" fill="#1F5EFF">Explore →</text>
+<rect x="950" y="2540" width="420" height="155" rx="10" fill="#EAF9F8" stroke="#7FD5D2" filter="url(#s)"/>
+<text x="974" y="2575" text-anchor="start" class="h2">S-13  WHERE LOTTERY MONEY GOES</text>
+<text x="974" y="2608" text-anchor="start" class="small">State beneficiaries / education impact when sourced</text>
+<text x="974" y="2662" text-anchor="start" class="label" fill="#1F5EFF">Explore →</text>
+<rect x="50" y="2740" width="650" height="230" rx="10" fill="#F2EDFF" stroke="#C9B8ED" filter="url(#s)"/>
+<text x="78" y="2775" text-anchor="start" class="h2">S-14  FLORIDA COMMUNITY / FORUMS</text>
+<text x="78" y="2810" text-anchor="start" class="label">Florida Pick 3 monthly discussion</text>
+<text x="78" y="2835" text-anchor="start" class="tiny">Real replies, current activity and follow state</text>
+<text x="78" y="2870" text-anchor="start" class="label">Florida draw reactions</text>
+<text x="78" y="2895" text-anchor="start" class="tiny">AI Research Note where appropriate</text>
+<text x="78" y="2940" text-anchor="start" class="label" fill="#1F5EFF">Open Florida community →</text>
+<rect x="730" y="2740" width="660" height="230" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="758" y="2775" text-anchor="start" class="h2">S-15  FLORIDA NEWS &amp; GUIDES</text>
+<text x="758" y="2810" text-anchor="start" class="label">Current state lottery story + AI Quick Take</text>
+<text x="758" y="2835" text-anchor="start" class="tiny" fill="#007B79">Rule change / winner / unclaimed prize</text>
+<text x="758" y="2870" text-anchor="start" class="label">Evergreen Florida claim or game guide</text>
+<text x="758" y="2895" text-anchor="start" class="tiny">Current fact card remains separately governed</text>
+<text x="758" y="2940" text-anchor="start" class="label" fill="#1F5EFF">View Florida news →</text>
+<rect x="50" y="3015" width="1340" height="165" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="78" y="3050" text-anchor="start" class="h2">S-16  FOLLOW FLORIDA / MY LOTTERYCORNER</text>
+<text x="78" y="3085" text-anchor="start" class="small">Save games and number sets · result alerts · jackpot thresholds · replies · AI memory</text>
+<rect x="78" y="3110" width="190" height="34" rx="17" fill="#1F5EFF" stroke="#1F5EFF"/>
+<text x="173" y="3132" text-anchor="middle" class="label" fill="#FFFFFF">Follow Florida</text>
+<text x="300" y="3132" text-anchor="start" class="tiny">Sign in only when preserving value</text>
+<text x="920" y="3050" text-anchor="start" class="label" fill="#1F5EFF">Change state · All states directory</text>
+<rect x="250" y="3210" width="940" height="70" rx="5" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="3243.0" text-anchor="middle" class="small">STATE AD-S04 — BEFORE FOOTER</text>
+<text x="720.0" y="3263.0" text-anchor="middle" class="tiny">Size/ID inherited from current production configuration</text>
+<rect x="20" y="3310" width="1400" height="60" rx="0" fill="#0B1F3A" stroke="#0B1F3A"/>
+<text x="50" y="3345" text-anchor="start" class="small" fill="#FFFFFF">State links · Methodology · Corrections · AI policy · Affiliate disclosure · Responsible Play</text>
+</svg>

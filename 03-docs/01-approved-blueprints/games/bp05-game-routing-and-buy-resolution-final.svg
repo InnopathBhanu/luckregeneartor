@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="980" viewBox="0 0 1440 980">
+<defs>
+  <style>
+    .h1 { font: 700 22px Arial, sans-serif; fill:#172033; }
+    .h2 { font: 700 16px Arial, sans-serif; fill:#172033; }
+    .label { font: 600 13px Arial, sans-serif; fill:#172033; }
+    .small { font: 400 11px Arial, sans-serif; fill:#48566A; }
+    .tiny { font: 400 9px Arial, sans-serif; fill:#5E6B7C; }
+  </style>
+  <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity=".13"/>
+  </filter>
+</defs>
+<rect width="100%" height="100%" fill="#F5F7FA"/>
+<text x="24" y="30" class="h1">Approved game-page routing and Buy Now resolution</text>
+<text x="24" y="48" class="tiny">Page content never changes by IP; only Buy button visibility and first-party redirect destination are resolved</text>
+<rect x="40" y="80" width="1360" height="840" rx="12" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<rect x="500" y="115" width="440" height="95" rx="12" fill="#EAF9F8" stroke="#7FD5D2"/>
+<text x="720" y="150" text-anchor="middle" class="h2" fill="#007B79">GLOBAL FLAGSHIP HUB</text>
+<text x="720" y="178" text-anchor="middle" class="label">/powerball   /mega-millions</text>
+<text x="720" y="199" text-anchor="middle" class="tiny">Results · AI · insights · tools · history · news · community</text>
+<rect x="500" y="265" width="440" height="95" rx="12" fill="#EDF4FF" stroke="#BCD1FF"/>
+<text x="720" y="300" text-anchor="middle" class="h2" fill="#1F5EFF">ONE SHARED DRAW RECORD</text>
+<text x="720" y="328" text-anchor="middle" class="label">Existing or approved canonical draw route</text>
+<text x="720" y="349" text-anchor="middle" class="tiny">Powerball main draw, Double Play and rule era modelled correctly</text>
+<rect x="80" y="455" width="270" height="125" rx="10" fill="#FFF6D9" stroke="#E4C466" filter="url(#s)"/>
+<text x="215" y="486" text-anchor="middle" class="label">MINIMAL LOCAL OFFERING</text>
+<text x="215" y="514" text-anchor="middle" class="small" fill="#1F5EFF">/fl/powerball</text>
+<text x="215" y="544" text-anchor="middle" class="tiny">Florida features, claims, news and local discussion</text>
+<text x="215" y="565" text-anchor="middle" class="tiny">Self-canonical only when substantial</text>
+<rect x="390" y="455" width="270" height="125" rx="10" fill="#FFF6D9" stroke="#E4C466" filter="url(#s)"/>
+<text x="525" y="486" text-anchor="middle" class="label">UK OFFERING</text>
+<text x="525" y="514" text-anchor="middle" class="small" fill="#1F5EFF">/uk/powerball</text>
+<text x="525" y="544" text-anchor="middle" class="tiny">UK price, prize model, claim and local information</text>
+<text x="525" y="565" text-anchor="middle" class="tiny">Self-canonical only when substantial</text>
+<rect x="700" y="455" width="270" height="125" rx="10" fill="#FFF6D9" stroke="#E4C466" filter="url(#s)"/>
+<text x="835" y="486" text-anchor="middle" class="label">STATE-NATIVE GAME</text>
+<text x="835" y="514" text-anchor="middle" class="small" fill="#1F5EFF">/fl/pick-3</text>
+<text x="835" y="544" text-anchor="middle" class="tiny">Full local game results, rules, tools and community</text>
+<text x="835" y="565" text-anchor="middle" class="tiny">Self-canonical only when substantial</text>
+<rect x="1010" y="455" width="270" height="125" rx="10" fill="#FFF6D9" stroke="#E4C466" filter="url(#s)"/>
+<text x="1145" y="486" text-anchor="middle" class="label">FUTURE GAME FAMILY</text>
+<text x="1145" y="514" text-anchor="middle" class="small" fill="#1F5EFF">/games/pick-3</text>
+<text x="1145" y="544" text-anchor="middle" class="tiny">Comparison/discovery only; no merged universal draw</text>
+<text x="1145" y="565" text-anchor="middle" class="tiny">Self-canonical only when substantial</text>
+<rect x="175" y="660" width="410" height="150" rx="10" fill="#FFF1E9" stroke="#F1B48E" filter="url(#s)"/>
+<text x="380" y="695" text-anchor="middle" class="h2" fill="#B45118">FIRST-PARTY BUY LINK</text>
+<text x="380" y="725" text-anchor="middle" class="label">/play/powerball or /play/mega-millions</text>
+<text x="380" y="755" text-anchor="middle" class="small">External coarse IP API → state (U.S.) or country</text>
+<text x="380" y="782" text-anchor="middle" class="small">Raw IP is never stored</text>
+<rect x="855" y="660" width="410" height="150" rx="10" fill="#F2EDFF" stroke="#C9B8ED" filter="url(#s)"/>
+<text x="1060" y="695" text-anchor="middle" class="h2" fill="#6B43B5">REDIRECT RESOLVER</text>
+<text x="1060" y="725" text-anchor="middle" class="small">Supported? Show button. Unsupported? Hide button.</text>
+<text x="1060" y="755" text-anchor="middle" class="small">On click, resolve approved affiliate destination</text>
+<text x="1060" y="782" text-anchor="middle" class="small">No affiliate URL is embedded in page content</text>
+<text x="720" y="870" text-anchor="middle" class="small">All visitors see the same page content. Florida users may view California pages without any content rewrite or redirect.</text>
+<text x="720" y="897" text-anchor="middle" class="tiny">Future state offer banners are a separate feature-flagged capability, not part of the current game-page contract.</text>
+</svg>

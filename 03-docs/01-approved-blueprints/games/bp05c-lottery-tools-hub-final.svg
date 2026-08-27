@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="2400" viewBox="0 0 1440 2400">
+<defs>
+  <style>
+    .h1 { font: 700 22px Arial, sans-serif; fill:#172033; }
+    .h2 { font: 700 16px Arial, sans-serif; fill:#172033; }
+    .label { font: 600 13px Arial, sans-serif; fill:#172033; }
+    .small { font: 400 11px Arial, sans-serif; fill:#48566A; }
+    .tiny { font: 400 9px Arial, sans-serif; fill:#5E6B7C; }
+  </style>
+  <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity=".13"/>
+  </filter>
+</defs>
+<rect width="100%" height="100%" fill="#F5F7FA"/>
+<text x="24" y="30" class="h1">LotteryCorner Tools Hub — approved catalog structure</text>
+<text x="24" y="48" class="tiny">All tools are discoverable publicly; execution and advanced depth follow a tool-specific access policy</text>
+<rect x="20" y="60" width="1400" height="105" rx="0" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<rect x="42" y="82" width="180" height="38" rx="5" fill="#0B1F3A" stroke="#0B1F3A"/>
+<text x="132" y="107" text-anchor="middle" class="label" fill="#FFFFFF">LOTTERY CORNER</text>
+<rect x="250" y="80" width="600" height="42" rx="21" fill="#F0F3F7" stroke="#D7DEE8"/>
+<text x="275" y="106" text-anchor="start" class="small">Search lottery tools, calculators, statistics or systems…</text>
+<text x="1030" y="106" text-anchor="start" class="label" fill="#1F5EFF">Game: Powerball ▾     Sign in / Insider</text>
+<rect x="50" y="195" width="1340" height="180" rx="12" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="78" y="230" text-anchor="start" class="tiny" fill="#1F5EFF">TOOLS-01  LOTTERY TOOLS</text>
+<text x="78" y="268" text-anchor="start" class="h1">Check, Calculate, Analyze, Generate and Track</text>
+<text x="78" y="300" text-anchor="start" class="small">Public tools, visible Insider tools and AI-assisted analysis across Powerball, Mega Millions and state games.</text>
+<rect x="78" y="325" width="250" height="34" rx="17" fill="#1F5EFF" stroke="#1F5EFF"/>
+<text x="203" y="347" text-anchor="middle" class="label" fill="#FFFFFF">Start with Powerball tools</text>
+<text x="360" y="347" text-anchor="start" class="tiny">Tool inputs remain visible even when execution requires sign-in.</text>
+<rect x="50" y="420" width="420" height="330" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="74" y="457" text-anchor="start" class="h2">CHECK &amp; RESULTS</text>
+<text x="74" y="502" text-anchor="start" class="label">Number Checker</text>
+<text x="400" y="502" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="74" y="556" text-anchor="start" class="label">Past Draw Search</text>
+<text x="400" y="556" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="74" y="610" text-anchor="start" class="label">Draw Countdown</text>
+<text x="400" y="610" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="74" y="664" text-anchor="start" class="label">Prize Checker</text>
+<text x="400" y="664" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="74" y="725" text-anchor="start" class="tiny">Public / Sign-in / Insider label shown per tool</text>
+<rect x="500" y="420" width="420" height="330" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="524" y="457" text-anchor="start" class="h2">JACKPOT &amp; MONEY</text>
+<text x="524" y="502" text-anchor="start" class="label">Tax Calculator</text>
+<text x="850" y="502" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="524" y="556" text-anchor="start" class="label">Cash vs Annuity</text>
+<text x="850" y="556" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="524" y="610" text-anchor="start" class="label">Annuity Schedule</text>
+<text x="850" y="610" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="524" y="664" text-anchor="start" class="label">Pool Splitter</text>
+<text x="850" y="664" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="524" y="725" text-anchor="start" class="tiny">Public / Sign-in / Insider label shown per tool</text>
+<rect x="950" y="420" width="420" height="330" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="974" y="457" text-anchor="start" class="h2">NUMBER ANALYSIS</text>
+<text x="974" y="502" text-anchor="start" class="label">Frequency &amp; Gaps</text>
+<text x="1300" y="502" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="974" y="556" text-anchor="start" class="label">Drawn Together</text>
+<text x="1300" y="556" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="974" y="610" text-anchor="start" class="label">Pattern Explorer</text>
+<text x="1300" y="610" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="974" y="664" text-anchor="start" class="label">Rule-Era Compare</text>
+<text x="1300" y="664" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="974" y="725" text-anchor="start" class="tiny">Public / Sign-in / Insider label shown per tool</text>
+<rect x="50" y="780" width="420" height="330" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="74" y="817" text-anchor="start" class="h2">GENERATE &amp; SYSTEMS</text>
+<text x="74" y="862" text-anchor="start" class="label">Quick Pick</text>
+<text x="400" y="862" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="74" y="916" text-anchor="start" class="label">Constraint Generator</text>
+<text x="400" y="916" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="74" y="970" text-anchor="start" class="label">Coverage Calculator</text>
+<text x="400" y="970" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="74" y="1024" text-anchor="start" class="label">Wheels &amp; Systems</text>
+<text x="400" y="1024" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="74" y="1085" text-anchor="start" class="tiny">Public / Sign-in / Insider label shown per tool</text>
+<rect x="500" y="780" width="420" height="330" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="524" y="817" text-anchor="start" class="h2">PERSONAL &amp; AI</text>
+<text x="524" y="862" text-anchor="start" class="label">Saved Number Tracker</text>
+<text x="850" y="862" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="524" y="916" text-anchor="start" class="label">AI Ticket Analysis</text>
+<text x="850" y="916" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="524" y="970" text-anchor="start" class="label">AI Chart Explainer</text>
+<text x="850" y="970" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="524" y="1024" text-anchor="start" class="label">Personal Draw Brief</text>
+<text x="850" y="1024" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="524" y="1085" text-anchor="start" class="tiny">Public / Sign-in / Insider label shown per tool</text>
+<rect x="950" y="780" width="420" height="330" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="974" y="817" text-anchor="start" class="h2">PLANNING &amp; HELP</text>
+<text x="974" y="862" text-anchor="start" class="label">Ticket Cost</text>
+<text x="1300" y="862" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="974" y="916" text-anchor="start" class="label">Draw Calendar</text>
+<text x="1300" y="916" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="974" y="970" text-anchor="start" class="label">Claim Deadline Finder</text>
+<text x="1300" y="970" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="974" y="1024" text-anchor="start" class="label">Responsible Play Budget</text>
+<text x="1300" y="1024" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="974" y="1085" text-anchor="start" class="tiny">Public / Sign-in / Insider label shown per tool</text>
+<rect x="250" y="1175" width="940" height="78" rx="5" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="1212.0" text-anchor="middle" class="small">TOOLS AD-01 — AFTER PRIMARY CATALOG</text>
+<text x="720.0" y="1231.0" text-anchor="middle" class="tiny">Slot ID and size inherited from production configuration</text>
+<rect x="50" y="1300" width="1340" height="230" rx="10" fill="#EAF9F8" stroke="#7FD5D2" filter="url(#s)"/>
+<text x="78" y="1335" text-anchor="start" class="h2" fill="#007B79">TOOLS-02  AI INSIGHT CATALOG</text>
+<text x="78" y="1375" text-anchor="start" class="small">• Explain this draw fingerprint</text>
+<text x="698" y="1375" text-anchor="start" class="small">• Find historical structural analogs</text>
+<text x="78" y="1408" text-anchor="start" class="small">• Summarize jackpot run and cash ratio</text>
+<text x="698" y="1408" text-anchor="start" class="small">• Analyze my saved sets for duplicates and coverage</text>
+<text x="78" y="1441" text-anchor="start" class="small">• Configure a filter or generator in plain language</text>
+<text x="698" y="1441" text-anchor="start" class="small">• Explain a tax or annuity scenario</text>
+<text x="78" y="1474" text-anchor="start" class="small">• Summarize relevant news and human discussions</text>
+<text x="698" y="1474" text-anchor="start" class="small">• Create a transparent research note with source links</text>
+<text x="78" y="1505" text-anchor="start" class="tiny">AI explains and orchestrates; deterministic services calculate results, prizes, statistics and money.</text>
+<rect x="50" y="1580" width="1340" height="260" rx="10" fill="#FFF6D9" stroke="#E4C466" filter="url(#s)"/>
+<text x="78" y="1615" text-anchor="start" class="h2">TOOLS-03  ACCESS PATTERNS</text>
+<text x="78" y="1660" text-anchor="start" class="label" fill="#8A6500">PUBLIC COMPLETE</text>
+<text x="78" y="1690" text-anchor="start" class="tiny">Basic checker, countdown, quick pick and selected calculators</text>
+<text x="393" y="1660" text-anchor="start" class="label" fill="#8A6500">PUBLIC PREVIEW</text>
+<text x="393" y="1690" text-anchor="start" class="tiny">Inputs and sample output visible; sign-in required to run advanced analysis</text>
+<text x="708" y="1660" text-anchor="start" class="label" fill="#8A6500">SIGNED-IN</text>
+<text x="708" y="1690" text-anchor="start" class="tiny">Save, history, comparisons, alerts and cross-device continuity</text>
+<text x="1023" y="1660" text-anchor="start" class="label" fill="#8A6500">INSIDER</text>
+<text x="1023" y="1690" text-anchor="start" class="tiny">Advanced filters, batch analysis, systems, backtests and AI research</text>
+<text x="78" y="1795" text-anchor="start" class="small">No blanket gate: the tool manifest defines the access pattern and the value shown before sign-in.</text>
+<rect x="50" y="1880" width="1340" height="180" rx="0" fill="#0B1F3A" stroke="#0B1F3A"/>
+<text x="78" y="1920" text-anchor="start" class="h2" fill="#FFFFFF">Tools are separate canonical products</text>
+<text x="78" y="1955" text-anchor="start" class="small" fill="#D7E2F0">/tools · /tools/tax-calculator · /tools/annuity-calculator · /powerball/statistics · /mega-millions/check-numbers</text>
+<text x="78" y="1990" text-anchor="start" class="small" fill="#D7E2F0">Every game page links into this catalog using current game context.</text>
+</svg>

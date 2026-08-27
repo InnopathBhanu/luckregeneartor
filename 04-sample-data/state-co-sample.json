@@ -1,0 +1,876 @@
+{
+  "_meta": {
+    "purpose": "UI-first sample payload for the Colorado state page (/co), rendered by the shared StatePageTemplate. Result numbers/dates are real values from source-xml/latest-results-lc.xml. Copy is clean sample/admin-editable (no [ADMIN] tokens). Ads by slotKey; Buy Tickets via /buynow/<code>.",
+    "illustrative": true,
+    "schemaVersion": "0.1-sample",
+    "note": "Highlights/winner content is generic sample text (no fabricated named winners)."
+  },
+  "page": {
+    "stateCode": "co",
+    "stateName": "Colorado",
+    "url": "/co",
+    "pageType": "state",
+    "metadata": {
+      "title": "Colorado Lottery Results Today \u2014 Winning Numbers, Jackpots & How to Claim",
+      "description": "Latest Colorado Lottery winning numbers for Mega Millions, Powerball, Lotto, Lotto Plus, Pick 3 Midday \u2014 updated after every draw.",
+      "canonicalPlaceholder": "[VERIFY-CONVENTION] /co (host + trailing-slash convention not finalized \u2014 not emitted yet)",
+      "robots": "index,follow",
+      "openGraph": {
+        "type": "website",
+        "title": "Colorado Lottery Results Today",
+        "description": "Latest Colorado Lottery winning numbers and jackpots.",
+        "siteName": "Lottery Corner"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Colorado Lottery Results Today",
+        "description": "Latest Colorado Lottery winning numbers and jackpots."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "url": "/"
+        },
+        {
+          "name": "Colorado Winning Numbers",
+          "url": "/co"
+        }
+      ]
+    },
+    "h1": "Colorado Lottery Results Today \u2014 Winning Numbers, Jackpots, & How to Claim",
+    "intro": "Get the latest Colorado Lottery winning numbers, live jackpots, and clear tools to check results, verify your ticket, and understand odds and claim rules \u2014 updated after every draw.",
+    "lastUpdated": {
+      "display": "Last updated: July 9, 2026 at 12:11 AM MT",
+      "storedDrawTimezone": "America/New_York",
+      "displayTimezone": "America/Denver",
+      "isoDateModified": "2026-07-09T00:11:54"
+    },
+    "timezoneMeta": {
+      "storedTimezone": "America/New_York",
+      "gameLocalTimezone": "America/Denver",
+      "note": "Draw times stored in EST are converted to America/Denver for display (05-doc D6/D7)."
+    }
+  },
+  "jackpotTicker": {
+    "nextDraw": {
+      "game": "Mega Millions",
+      "timeDisplay": "see schedule (MT)",
+      "countdownLabel": ""
+    },
+    "topJackpots": [
+      {
+        "game": "Mega Millions",
+        "amountDisplay": "$576 Million"
+      },
+      {
+        "game": "Powerball",
+        "amountDisplay": "$435 Million"
+      },
+      {
+        "game": "Lotto",
+        "amountDisplay": "$6 Million"
+      }
+    ],
+    "alsoComingUp": [],
+    "quickActions": [
+      {
+        "label": "Check Ticket",
+        "href": "#check-ticket"
+      },
+      {
+        "label": "Past Results",
+        "href": "#winning-history"
+      },
+      {
+        "label": "Prize Lookup",
+        "href": "#how-to-claim"
+      },
+      {
+        "label": "Claim Info",
+        "href": "#how-to-claim"
+      }
+    ],
+    "buyTickets": {
+      "label": "Buy Tickets",
+      "href": "/buynow/play-usa-powerball"
+    },
+    "disclaimer": "Winning numbers are updated shortly after each drawing. For major prizes, confirm your ticket with an authorized Colorado Lottery retailer or office."
+  },
+  "tabs": [
+    {
+      "key": "results",
+      "label": "Results",
+      "href": "#results",
+      "active": true
+    },
+    {
+      "key": "winning-history",
+      "label": "Winning History",
+      "href": "#winning-history"
+    },
+    {
+      "key": "schedule",
+      "label": "Schedule",
+      "href": "#schedule"
+    },
+    {
+      "key": "how-to-play",
+      "label": "How to Play",
+      "href": "#how-to-play"
+    },
+    {
+      "key": "how-to-claim",
+      "label": "How to Claim",
+      "href": "#how-to-claim"
+    }
+  ],
+  "latestResults": {
+    "heading": "Latest Draw Results",
+    "infoCallout": "Winning numbers on Lottery Corner are updated shortly after each draw. For major prizes, confirm your ticket with an authorized Colorado Lottery retailer or office.",
+    "intro": "Here are the most recent Colorado Lottery winning numbers, updated as soon as each drawing is completed.",
+    "groups": [
+      {
+        "groupKey": "multiState",
+        "heading": "Multi-State Draws (Powerball & Mega Millions)",
+        "resultCards": [
+          {
+            "gameId": 1013,
+            "gameSlug": "mega-millions",
+            "displayName": "Mega Millions",
+            "formatRef": {
+              "gameId": 1013
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-07",
+              "display": "Tuesday, 07/07/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  2,
+                  31,
+                  35,
+                  36,
+                  63
+                ],
+                "colorToken": "ball.default"
+              },
+              {
+                "order": 1,
+                "label": "Mega Ball",
+                "values": [
+                  12
+                ],
+                "colorToken": "ball.megaball"
+              }
+            ],
+            "drawScheduleLabel": "Tue & Fri",
+            "prizeDisplay": "$576 Million",
+            "prizeRaw": "576000000",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$604 Million"
+            },
+            "buyTickets": {
+              "label": "Buy Tickets",
+              "href": "/buynow/play-usa-megamillions",
+              "affiliateResolved": false
+            },
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/co/mega-millions/2026"
+              },
+              {
+                "type": "findMore",
+                "href": "/co/mega-millions"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 1012,
+            "gameSlug": "powerball",
+            "displayName": "Powerball",
+            "formatRef": {
+              "gameId": 1012
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  12,
+                  29,
+                  37,
+                  43,
+                  55
+                ],
+                "colorToken": "ball.default"
+              },
+              {
+                "order": 1,
+                "label": "Powerball",
+                "values": [
+                  18
+                ],
+                "colorToken": "ball.powerball"
+              },
+              {
+                "order": 2,
+                "label": "Powerball",
+                "values": [
+                  23
+                ],
+                "colorToken": "ball.powerball"
+              }
+            ],
+            "drawScheduleLabel": "Mon, Wed & Sat",
+            "multipliers": [
+              {
+                "key": "power-play",
+                "label": "Power Play",
+                "value": 4,
+                "display": "Power Play 4X"
+              }
+            ],
+            "secondaryDraw": {
+              "key": "doubleplay",
+              "label": "Double Play",
+              "groupsDrawn": [
+                {
+                  "order": 0,
+                  "label": null,
+                  "values": [
+                    6,
+                    27,
+                    33,
+                    44,
+                    69
+                  ],
+                  "colorToken": "ball.default"
+                }
+              ]
+            },
+            "prizeDisplay": "$435 Million",
+            "prizeRaw": "435000000",
+            "nextDraw": {
+              "display": "Saturday, 07/11/2026",
+              "nextJackpotDisplay": "$457 Million"
+            },
+            "buyTickets": {
+              "label": "Buy Tickets",
+              "href": "/buynow/play-usa-powerball",
+              "affiliateResolved": false
+            },
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/co/powerball/2026"
+              },
+              {
+                "type": "findMore",
+                "href": "/co/powerball"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      },
+      {
+        "groupKey": "inState",
+        "heading": "Colorado In-State Draws",
+        "resultCards": [
+          {
+            "gameId": 319,
+            "gameSlug": "lotto",
+            "displayName": "Lotto",
+            "formatRef": {
+              "gameId": 319
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  20,
+                  23,
+                  28,
+                  31,
+                  34,
+                  37
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$6 Million",
+            "prizeRaw": "6000000",
+            "nextDraw": {
+              "display": "Saturday, 07/11/2026",
+              "nextJackpotDisplay": "$6.20 Million"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/co/lotto/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 578,
+            "gameSlug": "lotto-plus",
+            "displayName": "Lotto Plus",
+            "formatRef": {
+              "gameId": 578
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  2,
+                  19,
+                  23,
+                  26,
+                  32,
+                  38
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$250,000",
+            "prizeRaw": "250000",
+            "nextDraw": {
+              "display": "Saturday, 07/11/2026",
+              "nextJackpotDisplay": "$250,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/co/lotto-plus/2026"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      },
+      {
+        "groupKey": "pick",
+        "heading": "Pick Games & Daily Draws",
+        "resultCards": [
+          {
+            "gameId": 559,
+            "gameSlug": "pick-3-midday",
+            "displayName": "Pick 3 Midday",
+            "formatRef": {
+              "gameId": 559
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  6,
+                  3,
+                  1
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$2,500",
+            "prizeRaw": "2500",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$2,500"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/co/pick-3-midday/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 317,
+            "gameSlug": "pick-3",
+            "displayName": "Pick 3",
+            "formatRef": {
+              "gameId": 317
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  2,
+                  5,
+                  0
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$2,500",
+            "prizeRaw": "2500",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$2,500"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/co/pick-3/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 318,
+            "gameSlug": "cash-5",
+            "displayName": "Cash 5",
+            "formatRef": {
+              "gameId": 318
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  3,
+                  5,
+                  25,
+                  29,
+                  32
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$20,000",
+            "prizeRaw": "20000",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$20,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/co/cash-5/2026"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      }
+    ]
+  },
+  "quickFacts": {
+    "heading": "Colorado Lottery Quick Facts",
+    "rows": [
+      {
+        "label": "Minimum age to play",
+        "value": "18"
+      },
+      {
+        "label": "Draw-game claim deadline",
+        "value": "Varies by game (commonly 180 days from the draw date)"
+      },
+      {
+        "label": "State tax on winnings",
+        "value": "Yes \u2014 state income tax is withheld"
+      },
+      {
+        "label": "Games covered",
+        "value": "Mega Millions, Powerball, Lotto, Lotto Plus, Pick 3 Midday, Pick 3"
+      }
+    ]
+  },
+  "drawSchedule": {
+    "heading": "Colorado Lottery Draw Schedule (MT)",
+    "intro": "All times shown in Colorado local time.",
+    "entries": [
+      {
+        "game": "Mega Millions",
+        "days": "Tue & Fri",
+        "timeDisplay": "Evening (MT)"
+      },
+      {
+        "game": "Powerball",
+        "days": "Mon, Wed & Sat",
+        "timeDisplay": "Evening (MT)"
+      },
+      {
+        "game": "Lotto",
+        "days": "See game page",
+        "timeDisplay": "Evening (MT)"
+      },
+      {
+        "game": "Lotto Plus",
+        "days": "See game page",
+        "timeDisplay": "Evening (MT)"
+      },
+      {
+        "game": "Pick 3 Midday",
+        "days": "See game page",
+        "timeDisplay": "Evening (MT)"
+      },
+      {
+        "game": "Pick 3",
+        "days": "See game page",
+        "timeDisplay": "Evening (MT)"
+      },
+      {
+        "game": "Cash 5",
+        "days": "See game page",
+        "timeDisplay": "Evening (MT)"
+      }
+    ]
+  },
+  "historyLinks": {
+    "heading": "Colorado Lottery Winning Numbers History",
+    "intro": "Browse past Colorado Lottery winning numbers by game.",
+    "links": [
+      {
+        "label": "Mega Millions History",
+        "href": "/co/mega-millions/2026"
+      },
+      {
+        "label": "Powerball History",
+        "href": "/co/powerball/2026"
+      },
+      {
+        "label": "Lotto History",
+        "href": "/co/lotto/2026"
+      },
+      {
+        "label": "Lotto Plus History",
+        "href": "/co/lotto-plus/2026"
+      },
+      {
+        "label": "Pick 3 Midday History",
+        "href": "/co/pick-3-midday/2026"
+      },
+      {
+        "label": "Pick 3 History",
+        "href": "/co/pick-3/2026"
+      },
+      {
+        "label": "Cash 5 History",
+        "href": "/co/cash-5/2026"
+      }
+    ]
+  },
+  "howToClaim": {
+    "heading": "How to Claim Colorado Lottery Prizes",
+    "intro": "How to claim Colorado Lottery prizes, from small retailer payouts to large jackpot claims.",
+    "claimOptions": [
+      {
+        "amount": "Up to $599",
+        "method": "Claim at most authorized Colorado Lottery retailers"
+      },
+      {
+        "amount": "$600 and above",
+        "method": "Claim at a Colorado Lottery office or by mail per prize amount"
+      },
+      {
+        "amount": "Jackpot / annuity",
+        "method": "Claim in person at the Colorado Lottery headquarters (appointment recommended)"
+      }
+    ],
+    "documents": [
+      "Signed winning ticket",
+      "Government-issued photo ID",
+      "Social Security number or taxpayer ID",
+      "Completed claim form"
+    ],
+    "steps": [
+      {
+        "title": "Sign your winning ticket",
+        "detail": "Immediately sign the back to protect ownership."
+      },
+      {
+        "title": "Confirm the amount you won",
+        "detail": "Use the Check Ticket tool or Latest Draw Results."
+      },
+      {
+        "title": "Choose the correct claim method",
+        "detail": "Based on the prize amount."
+      },
+      {
+        "title": "Complete the paperwork",
+        "detail": "Claim form and tax forms for larger prizes."
+      },
+      {
+        "title": "Submit your claim",
+        "detail": "In person or by mail (certified mail recommended)."
+      }
+    ],
+    "deadlines": [
+      "Draw games: commonly 180 days from the draw date",
+      "Scratchers: per each game's end date",
+      "Mailed claims: postmark by the deadline"
+    ],
+    "districtOffices": "Colorado Lottery claim offices handle larger prizes; appointments are recommended for jackpot and annuity prizes."
+  },
+  "taxes": {
+    "heading": "Taxes & Withholding",
+    "stateNote": "Colorado withholds state income tax on lottery winnings, in addition to federal tax.",
+    "federalIntro": "Federal tax rules apply for prizes of $600 or more:",
+    "points": [
+      "Mandatory federal withholding: 24%",
+      "State income tax is withheld on winnings",
+      "Additional tax may apply at filing",
+      "W-2G forms are issued for reportable winnings"
+    ]
+  },
+  "playerInfo": {
+    "heading": "Colorado Lottery Guide & Player Information",
+    "intro": "Key information Colorado Lottery players should understand.",
+    "sections": [
+      {
+        "title": "Draw Integrity & Oversight",
+        "body": "Colorado Lottery drawings follow strict procedures designed to ensure fairness and randomness; results are verified before publication."
+      },
+      {
+        "title": "Key Colorado Lottery Rules",
+        "list": [
+          "Minimum age to play: 18",
+          "Tickets must be signed to become valid property",
+          "Damaged or unreadable tickets follow a formal review process",
+          "Draw cutoff times vary by game"
+        ]
+      },
+      {
+        "title": "Responsible Play",
+        "list": [
+          "Set a budget and stick to it",
+          "Odds are fixed \u2014 play for entertainment",
+          "Avoid chasing losses",
+          "A problem-gambling helpline is available for confidential support"
+        ]
+      }
+    ]
+  },
+  "finalFaqs": {
+    "heading": "Colorado Lottery \u2014 Frequently Asked Questions",
+    "visibleOnPage": true,
+    "items": [
+      {
+        "q": "What time are Colorado Lottery drawings held?",
+        "a": "Draw times vary by game; times on this page use Colorado local time. See the Schedule section for each game's days and times."
+      },
+      {
+        "q": "What is the minimum age to play the Colorado Lottery?",
+        "a": "You must be 18 or older to play."
+      },
+      {
+        "q": "Are Colorado Lottery prizes taxed?",
+        "a": "Colorado withholds state income tax on lottery winnings, in addition to federal tax. Federal withholding of 24% applies to prizes over $5,000."
+      },
+      {
+        "q": "How do I claim a Colorado Lottery prize?",
+        "a": "Smaller prizes can be claimed at retailers; larger prizes at a Lottery office or headquarters. See How to Claim above."
+      },
+      {
+        "q": "What happens to unclaimed Colorado Lottery prizes?",
+        "a": "Unclaimed prize funds are directed to state programs per Colorado Lottery rules."
+      }
+    ]
+  },
+  "adSlotRefs": {
+    "note": "Same fixed state-page ad slots as /fl (per pageType).",
+    "top": [
+      "sp_top_billboard"
+    ],
+    "inContent": [
+      "sp_mid_leaderboard_pos1",
+      "sp_mid_leaderboard_pos2",
+      "sp_mid_leaderboard_pos3",
+      "sp_mid_leaderboard_pos4"
+    ],
+    "rightRail": [
+      "sp_side_halfpage_pos1",
+      "sp_side_mpu_pos2",
+      "sp_side_skyscraper"
+    ],
+    "mobileInContent": [
+      "sp_mobile_leaderboard_pos1",
+      "sp_mobile_leaderboard_pos2",
+      "sp_mobile_leaderboard_pos3",
+      "sp_mobile_leaderboard_pos4"
+    ],
+    "bottom": [
+      "sp_bottom_billboard"
+    ],
+    "stickyFooterAd": "sp_bottom_large_leaderboard"
+  },
+  "officialSourceNotice": {
+    "name": "Colorado Lottery",
+    "text": "Winning numbers are sourced from official Colorado Lottery draws. Always verify major prizes with an authorized Colorado Lottery retailer or office."
+  },
+  "responsiblePlayNotice": {
+    "text": "Play responsibly. 18+ only. If gambling is a problem, help is available."
+  },
+  "independenceDisclaimer": {
+    "text": "Lottery Corner is an independent lottery information website and is not affiliated with the Colorado Lottery or the State of Colorado."
+  },
+  "popularGames": [
+    {
+      "gameSlug": "powerball",
+      "displayName": "Powerball",
+      "href": "/powerball"
+    },
+    {
+      "gameSlug": "mega-millions",
+      "displayName": "Mega Millions",
+      "href": "/mega-millions"
+    },
+    {
+      "gameSlug": "lotto",
+      "displayName": "Lotto",
+      "href": "/co/lotto"
+    },
+    {
+      "gameSlug": "lotto-plus",
+      "displayName": "Lotto Plus",
+      "href": "/co/lotto-plus"
+    }
+  ],
+  "aiToolsTeaser": {
+    "enabled": true,
+    "heading": "AI-assisted lottery tools (coming soon)",
+    "copy": "Explore AI-assisted insights, smart number analysis and personalized alerts. For entertainment and informational purposes only.",
+    "cta": "Sign in to try",
+    "loginGated": true
+  },
+  "accountHooks": {
+    "loginRegisterVisible": true,
+    "favoritesEnabled": true
+  },
+  "faqs": {
+    "heading": "Frequently Asked Questions",
+    "visibleOnPage": true,
+    "schemaEligible": true,
+    "items": [
+      {
+        "q": "What are today's Colorado Lottery numbers?",
+        "a": "The latest winning numbers for all games appear in the Latest Draw Results section above."
+      },
+      {
+        "q": "How do I check my Colorado Lottery ticket?",
+        "a": "Compare your numbers to the Latest Draw Results, or use the Check Your Ticket tool where available."
+      },
+      {
+        "q": "Where do I claim a Colorado Lottery prize?",
+        "a": "Smaller prizes at retailers; larger prizes at a Lottery office. See How to Claim below."
+      }
+    ]
+  },
+  "checkTicket": {
+    "heading": "Check Your Ticket",
+    "intro": "Enter your numbers and draw date to instantly see whether your Colorado Lottery ticket matches the latest results.",
+    "howItWorks": [
+      "Select the game you played.",
+      "Choose the draw date.",
+      "Enter your numbers exactly as printed on your ticket.",
+      "Review the prize matches shown.",
+      "For large wins, follow the Claim Info steps."
+    ],
+    "gameOptions": [
+      "Mega Millions",
+      "Powerball",
+      "Lotto",
+      "Lotto Plus",
+      "Pick 3 Midday",
+      "Pick 3",
+      "Cash 5"
+    ],
+    "note": "Type your numbers carefully. If a mistake is made, re-enter them and run the check again."
+  },
+  "highlights": {
+    "heading": "Recent Highlights & Alerts",
+    "intro": "Notable Colorado Lottery trends, unclaimed prizes nearing expiration, and jackpot movement. Updated periodically.",
+    "recentWins": [
+      {
+        "location": "Colorado",
+        "text": "A recent top-tier Colorado Lottery win was reported in the state (details published when officially released)."
+      }
+    ],
+    "unclaimedPrizes": [
+      {
+        "game": "Mega Millions",
+        "amount": "See official source",
+        "location": "Colorado",
+        "note": "Unclaimed prizes expire after the claim deadline \u2014 check your tickets."
+      }
+    ],
+    "jackpotGrowth": [
+      {
+        "game": "Powerball",
+        "text": "The jackpot has rolled following draws without a top-prize winner."
+      },
+      {
+        "game": "Mega Millions",
+        "text": "Recent rollovers have increased the advertised jackpot."
+      }
+    ],
+    "note": "Winner specifics are published only when officially released."
+  },
+  "fundAllocation": {
+    "heading": "Where Colorado Lottery Money Goes",
+    "intro": "How Colorado Lottery revenue supports state programs.",
+    "sections": [
+      {
+        "title": "Beneficiaries",
+        "body": "A significant portion of Colorado Lottery revenue supports state programs such as education and community initiatives, per state law."
+      },
+      {
+        "title": "Unclaimed prizes",
+        "body": "Unclaimed prize funds are also directed to state programs."
+      }
+    ]
+  }
+}

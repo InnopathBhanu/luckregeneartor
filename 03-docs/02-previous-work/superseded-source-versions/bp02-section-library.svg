@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="980" viewBox="0 0 1440 980">
+<defs>
+  <style>
+    .title { font: 700 18px Arial, sans-serif; fill:#172033; }
+    .label { font: 600 13px Arial, sans-serif; fill:#172033; }
+    .small { font: 400 11px Arial, sans-serif; fill:#48566A; }
+    .tiny { font: 400 9px Arial, sans-serif; fill:#5E6B7C; }
+  </style>
+  <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity=".14"/>
+  </filter>
+</defs>
+<rect width="100%" height="100%" fill="#F5F7FA"/>
+<text x="24" y="30" class="title">Reusable section library — visual anatomy</text>
+<rect x="45" y="70" width="400" height="205" rx="8" fill="#EDF4FF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<rect x="45" y="70" width="8" height="205" rx="8" fill="#1F5EFF" stroke="#1F5EFF" stroke-width="1"/>
+<text x="73" y="108" text-anchor="start" class="label" fill="#1F5EFF">RESULT CARD</text>
+<text x="73" y="142" text-anchor="start" class="small">Answer first</text>
+<text x="73" y="172" text-anchor="start" class="small">Numbers · draw date · status · check</text>
+<rect x="73" y="196" width="330" height="42" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1"/>
+<text x="89" y="222" text-anchor="start" class="small">Primary content / action area</text>
+<text x="73" y="260" text-anchor="start" class="tiny">States: loading · fresh · stale · empty · error</text>
+<rect x="500" y="70" width="400" height="205" rx="8" fill="#EAF9F8" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<rect x="500" y="70" width="8" height="205" rx="8" fill="#00A7A5" stroke="#00A7A5" stroke-width="1"/>
+<text x="528" y="108" text-anchor="start" class="label" fill="#00A7A5">AI QUICK TAKE</text>
+<text x="528" y="142" text-anchor="start" class="small">Contextual intelligence</text>
+<text x="528" y="172" text-anchor="start" class="small">Short answer · sources · next action</text>
+<rect x="528" y="196" width="330" height="42" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1"/>
+<text x="544" y="222" text-anchor="start" class="small">Primary content / action area</text>
+<text x="528" y="260" text-anchor="start" class="tiny">States: loading · fresh · stale · empty · error</text>
+<rect x="955" y="70" width="400" height="205" rx="8" fill="#FFF6D9" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<rect x="955" y="70" width="8" height="205" rx="8" fill="#C18A00" stroke="#C18A00" stroke-width="1"/>
+<text x="983" y="108" text-anchor="start" class="label" fill="#C18A00">INTERESTING FACT</text>
+<text x="983" y="142" text-anchor="start" class="small">Curiosity with evidence</text>
+<text x="983" y="172" text-anchor="start" class="small">Fact · why interesting · explore</text>
+<rect x="983" y="196" width="330" height="42" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1"/>
+<text x="999" y="222" text-anchor="start" class="small">Primary content / action area</text>
+<text x="983" y="260" text-anchor="start" class="tiny">States: loading · fresh · stale · empty · error</text>
+<rect x="45" y="315" width="400" height="205" rx="8" fill="#F2EDFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<rect x="45" y="315" width="8" height="205" rx="8" fill="#7A4BC3" stroke="#7A4BC3" stroke-width="1"/>
+<text x="73" y="353" text-anchor="start" class="label" fill="#7A4BC3">COMMUNITY PULSE</text>
+<text x="73" y="387" text-anchor="start" class="small">Human activity</text>
+<text x="73" y="417" text-anchor="start" class="small">Threads · replies · unanswered</text>
+<rect x="73" y="441" width="330" height="42" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1"/>
+<text x="89" y="467" text-anchor="start" class="small">Primary content / action area</text>
+<text x="73" y="505" text-anchor="start" class="tiny">States: loading · fresh · stale · empty · error</text>
+<rect x="500" y="315" width="400" height="205" rx="8" fill="#EAF9F0" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<rect x="500" y="315" width="8" height="205" rx="8" fill="#138A5B" stroke="#138A5B" stroke-width="1"/>
+<text x="528" y="353" text-anchor="start" class="label" fill="#138A5B">SAVE / FOLLOW</text>
+<text x="528" y="387" text-anchor="start" class="small">User investment</text>
+<text x="528" y="417" text-anchor="start" class="small">Save · follow · notify · sign in</text>
+<rect x="528" y="441" width="330" height="42" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1"/>
+<text x="544" y="467" text-anchor="start" class="small">Primary content / action area</text>
+<text x="528" y="505" text-anchor="start" class="tiny">States: loading · fresh · stale · empty · error</text>
+<rect x="955" y="315" width="400" height="205" rx="8" fill="#FFF1E9" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<rect x="955" y="315" width="8" height="205" rx="8" fill="#D76722" stroke="#D76722" stroke-width="1"/>
+<text x="983" y="353" text-anchor="start" class="label" fill="#D76722">PURCHASE MODULE</text>
+<text x="983" y="387" text-anchor="start" class="small">Qualified commerce</text>
+<text x="983" y="417" text-anchor="start" class="small">Eligibility · disclosure · outbound</text>
+<rect x="983" y="441" width="330" height="42" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1"/>
+<text x="999" y="467" text-anchor="start" class="small">Primary content / action area</text>
+<text x="983" y="505" text-anchor="start" class="tiny">States: loading · fresh · stale · empty · error</text>
+<rect x="45" y="560" width="400" height="205" rx="8" fill="#F7F7F7" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<rect x="45" y="560" width="8" height="205" rx="8" fill="#717985" stroke="#717985" stroke-width="1"/>
+<text x="73" y="598" text-anchor="start" class="label" fill="#717985">AD SLOT</text>
+<text x="73" y="632" text-anchor="start" class="small">Revenue after value</text>
+<text x="73" y="662" text-anchor="start" class="small">Reserved size · label · no disguise</text>
+<rect x="73" y="686" width="330" height="42" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1"/>
+<text x="89" y="712" text-anchor="start" class="small">Primary content / action area</text>
+<text x="73" y="750" text-anchor="start" class="tiny">States: loading · fresh · stale · empty · error</text>
+<rect x="500" y="560" width="400" height="205" rx="8" fill="#EEF3FA" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<rect x="500" y="560" width="8" height="205" rx="8" fill="#48566A" stroke="#48566A" stroke-width="1"/>
+<text x="528" y="598" text-anchor="start" class="label" fill="#48566A">TRUST META</text>
+<text x="528" y="632" text-anchor="start" class="small">Quiet confidence</text>
+<text x="528" y="662" text-anchor="start" class="small">Source · updated · correction</text>
+<rect x="528" y="686" width="330" height="42" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1"/>
+<text x="544" y="712" text-anchor="start" class="small">Primary content / action area</text>
+<text x="528" y="750" text-anchor="start" class="tiny">States: loading · fresh · stale · empty · error</text>
+<rect x="955" y="560" width="400" height="205" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<rect x="955" y="560" width="8" height="205" rx="8" fill="#1F5EFF" stroke="#1F5EFF" stroke-width="1"/>
+<text x="983" y="598" text-anchor="start" class="label" fill="#1F5EFF">NEXT ACTION</text>
+<text x="983" y="632" text-anchor="start" class="small">Meaningful momentum</text>
+<text x="983" y="662" text-anchor="start" class="small">One primary + up to three secondary</text>
+<rect x="983" y="686" width="330" height="42" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1"/>
+<text x="999" y="712" text-anchor="start" class="small">Primary content / action area</text>
+<text x="983" y="750" text-anchor="start" class="tiny">States: loading · fresh · stale · empty · error</text>
+<text x="45" y="922" text-anchor="start" class="small">Shared rules: answer first · contextual AI · one primary continuation · signed-in enrichment · explicit monetization · lifecycle ownership</text>
+</svg>

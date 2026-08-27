@@ -1,0 +1,838 @@
+{
+  "_meta": {
+    "purpose": "UI-first sample payload for the California state page (/ca), rendered by the shared StatePageTemplate. Result numbers/dates are real values from source-xml/latest-results-lc.xml. Copy is clean sample/admin-editable (no [ADMIN] tokens). Ads by slotKey; Buy Tickets via /buynow/<code>.",
+    "illustrative": true,
+    "schemaVersion": "0.1-sample",
+    "note": "Highlights/winner content is generic sample text (no fabricated named winners)."
+  },
+  "page": {
+    "stateCode": "ca",
+    "stateName": "California",
+    "url": "/ca",
+    "pageType": "state",
+    "metadata": {
+      "title": "California Lottery Results Today \u2014 Winning Numbers, Jackpots & How to Claim",
+      "description": "Latest California Lottery winning numbers for Powerball, Fantasy 5, SuperLotto Plus, Daily Derby, Daily 3 Midday \u2014 updated after every draw.",
+      "canonicalPlaceholder": "[VERIFY-CONVENTION] /ca (host + trailing-slash convention not finalized \u2014 not emitted yet)",
+      "robots": "index,follow",
+      "openGraph": {
+        "type": "website",
+        "title": "California Lottery Results Today",
+        "description": "Latest California Lottery winning numbers and jackpots.",
+        "siteName": "Lottery Corner"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "California Lottery Results Today",
+        "description": "Latest California Lottery winning numbers and jackpots."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "url": "/"
+        },
+        {
+          "name": "California Winning Numbers",
+          "url": "/ca"
+        }
+      ]
+    },
+    "h1": "California Lottery Results Today \u2014 Winning Numbers, Jackpots, & How to Claim",
+    "intro": "Get the latest California Lottery winning numbers, live jackpots, and clear tools to check results, verify your ticket, and understand odds and claim rules \u2014 updated after every draw.",
+    "lastUpdated": {
+      "display": "Last updated: July 9, 2026 at 12:11 AM PT",
+      "storedDrawTimezone": "America/New_York",
+      "displayTimezone": "America/Los_Angeles",
+      "isoDateModified": "2026-07-09T00:11:54"
+    },
+    "timezoneMeta": {
+      "storedTimezone": "America/New_York",
+      "gameLocalTimezone": "America/Los_Angeles",
+      "note": "Draw times stored in EST are converted to America/Los_Angeles for display (05-doc D6/D7)."
+    }
+  },
+  "jackpotTicker": {
+    "nextDraw": {
+      "game": "Powerball",
+      "timeDisplay": "see schedule (PT)",
+      "countdownLabel": ""
+    },
+    "topJackpots": [
+      {
+        "game": "Powerball",
+        "amountDisplay": "$435 Million"
+      },
+      {
+        "game": "SuperLotto Plus",
+        "amountDisplay": "$35 Million"
+      },
+      {
+        "game": "Fantasy 5",
+        "amountDisplay": "$169,000"
+      }
+    ],
+    "alsoComingUp": [],
+    "quickActions": [
+      {
+        "label": "Check Ticket",
+        "href": "#check-ticket"
+      },
+      {
+        "label": "Past Results",
+        "href": "#winning-history"
+      },
+      {
+        "label": "Prize Lookup",
+        "href": "#how-to-claim"
+      },
+      {
+        "label": "Claim Info",
+        "href": "#how-to-claim"
+      }
+    ],
+    "buyTickets": {
+      "label": "Buy Tickets",
+      "href": "/buynow/play-usa-powerball"
+    },
+    "disclaimer": "Winning numbers are updated shortly after each drawing. For major prizes, confirm your ticket with an authorized California Lottery retailer or office."
+  },
+  "tabs": [
+    {
+      "key": "results",
+      "label": "Results",
+      "href": "#results",
+      "active": true
+    },
+    {
+      "key": "winning-history",
+      "label": "Winning History",
+      "href": "#winning-history"
+    },
+    {
+      "key": "schedule",
+      "label": "Schedule",
+      "href": "#schedule"
+    },
+    {
+      "key": "how-to-play",
+      "label": "How to Play",
+      "href": "#how-to-play"
+    },
+    {
+      "key": "how-to-claim",
+      "label": "How to Claim",
+      "href": "#how-to-claim"
+    }
+  ],
+  "latestResults": {
+    "heading": "Latest Draw Results",
+    "infoCallout": "Winning numbers on Lottery Corner are updated shortly after each draw. For major prizes, confirm your ticket with an authorized California Lottery retailer or office.",
+    "intro": "Here are the most recent California Lottery winning numbers, updated as soon as each drawing is completed.",
+    "groups": [
+      {
+        "groupKey": "multiState",
+        "heading": "Multi-State Draws (Powerball & Mega Millions)",
+        "resultCards": [
+          {
+            "gameId": 1012,
+            "gameSlug": "powerball",
+            "displayName": "Powerball",
+            "formatRef": {
+              "gameId": 1012
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  12,
+                  29,
+                  37,
+                  43,
+                  55
+                ],
+                "colorToken": "ball.default"
+              },
+              {
+                "order": 1,
+                "label": "Powerball",
+                "values": [
+                  18
+                ],
+                "colorToken": "ball.powerball"
+              }
+            ],
+            "drawScheduleLabel": "Mon, Wed & Sat",
+            "prizeDisplay": "$435 Million",
+            "prizeRaw": "435000000",
+            "nextDraw": {
+              "display": "Saturday, 07/11/2026",
+              "nextJackpotDisplay": "$457 Million"
+            },
+            "buyTickets": {
+              "label": "Buy Tickets",
+              "href": "/buynow/play-usa-powerball",
+              "affiliateResolved": false
+            },
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/ca/powerball/2026"
+              },
+              {
+                "type": "findMore",
+                "href": "/ca/powerball"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      },
+      {
+        "groupKey": "inState",
+        "heading": "California In-State Draws",
+        "resultCards": [
+          {
+            "gameId": 314,
+            "gameSlug": "fantasy-5",
+            "displayName": "Fantasy 5",
+            "formatRef": {
+              "gameId": 314
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  11,
+                  23,
+                  25,
+                  28,
+                  36
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$169,000",
+            "prizeRaw": "169000",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$69,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/ca/fantasy-5/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 316,
+            "gameSlug": "superlotto-plus",
+            "displayName": "SuperLotto Plus",
+            "formatRef": {
+              "gameId": 316
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  18,
+                  22,
+                  28,
+                  33,
+                  38
+                ],
+                "colorToken": "ball.default"
+              },
+              {
+                "order": 1,
+                "label": "Mega Ball",
+                "values": [
+                  15
+                ],
+                "colorToken": "ball.megaball"
+              }
+            ],
+            "prizeDisplay": "$35 Million",
+            "prizeRaw": "35000000",
+            "nextDraw": {
+              "display": "Saturday, 07/11/2026",
+              "nextJackpotDisplay": "$36 Million"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/ca/superlotto-plus/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 315,
+            "gameSlug": "daily-derby",
+            "displayName": "Daily Derby",
+            "formatRef": {
+              "gameId": 315
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  1,
+                  11,
+                  2,
+                  4,
+                  3,
+                  5
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$87,000",
+            "prizeRaw": "87000",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$92,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/ca/daily-derby/2026"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      },
+      {
+        "groupKey": "pick",
+        "heading": "Pick Games & Daily Draws",
+        "resultCards": [
+          {
+            "gameId": 311,
+            "gameSlug": "daily-3-midday",
+            "displayName": "Daily 3 Midday",
+            "formatRef": {
+              "gameId": 311
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  1,
+                  3,
+                  1
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$456",
+            "prizeRaw": "456",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/ca/daily-3-midday/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 312,
+            "gameSlug": "daily-3-evening",
+            "displayName": "Daily 3 Evening",
+            "formatRef": {
+              "gameId": 312
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  2,
+                  2,
+                  6
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$536",
+            "prizeRaw": "536",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/ca/daily-3-evening/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 313,
+            "gameSlug": "daily-4",
+            "displayName": "Daily 4",
+            "formatRef": {
+              "gameId": 313
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  3,
+                  1,
+                  3,
+                  1
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$2,681",
+            "prizeRaw": "2681",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/ca/daily-4/2026"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      }
+    ]
+  },
+  "quickFacts": {
+    "heading": "California Lottery Quick Facts",
+    "rows": [
+      {
+        "label": "Minimum age to play",
+        "value": "18"
+      },
+      {
+        "label": "Draw-game claim deadline",
+        "value": "Varies by game (commonly 180 days from the draw date)"
+      },
+      {
+        "label": "State tax on winnings",
+        "value": "No state income tax on winnings"
+      },
+      {
+        "label": "Games covered",
+        "value": "Powerball, Fantasy 5, SuperLotto Plus, Daily Derby, Daily 3 Midday, Daily 3 Evening"
+      }
+    ]
+  },
+  "drawSchedule": {
+    "heading": "California Lottery Draw Schedule (PT)",
+    "intro": "All times shown in California local time.",
+    "entries": [
+      {
+        "game": "Powerball",
+        "days": "Mon, Wed & Sat",
+        "timeDisplay": "Evening (PT)"
+      },
+      {
+        "game": "Fantasy 5",
+        "days": "See game page",
+        "timeDisplay": "Evening (PT)"
+      },
+      {
+        "game": "SuperLotto Plus",
+        "days": "See game page",
+        "timeDisplay": "Evening (PT)"
+      },
+      {
+        "game": "Daily Derby",
+        "days": "See game page",
+        "timeDisplay": "Evening (PT)"
+      },
+      {
+        "game": "Daily 3 Midday",
+        "days": "See game page",
+        "timeDisplay": "Evening (PT)"
+      },
+      {
+        "game": "Daily 3 Evening",
+        "days": "See game page",
+        "timeDisplay": "Evening (PT)"
+      },
+      {
+        "game": "Daily 4",
+        "days": "See game page",
+        "timeDisplay": "Evening (PT)"
+      }
+    ]
+  },
+  "historyLinks": {
+    "heading": "California Lottery Winning Numbers History",
+    "intro": "Browse past California Lottery winning numbers by game.",
+    "links": [
+      {
+        "label": "Powerball History",
+        "href": "/ca/powerball/2026"
+      },
+      {
+        "label": "Fantasy 5 History",
+        "href": "/ca/fantasy-5/2026"
+      },
+      {
+        "label": "SuperLotto Plus History",
+        "href": "/ca/superlotto-plus/2026"
+      },
+      {
+        "label": "Daily Derby History",
+        "href": "/ca/daily-derby/2026"
+      },
+      {
+        "label": "Daily 3 Midday History",
+        "href": "/ca/daily-3-midday/2026"
+      },
+      {
+        "label": "Daily 3 Evening History",
+        "href": "/ca/daily-3-evening/2026"
+      },
+      {
+        "label": "Daily 4 History",
+        "href": "/ca/daily-4/2026"
+      }
+    ]
+  },
+  "howToClaim": {
+    "heading": "How to Claim California Lottery Prizes",
+    "intro": "How to claim California Lottery prizes, from small retailer payouts to large jackpot claims.",
+    "claimOptions": [
+      {
+        "amount": "Up to $599",
+        "method": "Claim at most authorized California Lottery retailers"
+      },
+      {
+        "amount": "$600 and above",
+        "method": "Claim at a California Lottery office or by mail per prize amount"
+      },
+      {
+        "amount": "Jackpot / annuity",
+        "method": "Claim in person at the California Lottery headquarters (appointment recommended)"
+      }
+    ],
+    "documents": [
+      "Signed winning ticket",
+      "Government-issued photo ID",
+      "Social Security number or taxpayer ID",
+      "Completed claim form"
+    ],
+    "steps": [
+      {
+        "title": "Sign your winning ticket",
+        "detail": "Immediately sign the back to protect ownership."
+      },
+      {
+        "title": "Confirm the amount you won",
+        "detail": "Use the Check Ticket tool or Latest Draw Results."
+      },
+      {
+        "title": "Choose the correct claim method",
+        "detail": "Based on the prize amount."
+      },
+      {
+        "title": "Complete the paperwork",
+        "detail": "Claim form and tax forms for larger prizes."
+      },
+      {
+        "title": "Submit your claim",
+        "detail": "In person or by mail (certified mail recommended)."
+      }
+    ],
+    "deadlines": [
+      "Draw games: commonly 180 days from the draw date",
+      "Scratchers: per each game's end date",
+      "Mailed claims: postmark by the deadline"
+    ],
+    "districtOffices": "California Lottery claim offices handle larger prizes; appointments are recommended for jackpot and annuity prizes."
+  },
+  "taxes": {
+    "heading": "Taxes & Withholding",
+    "stateNote": "California does NOT charge state income tax on lottery winnings.",
+    "federalIntro": "Federal tax rules apply for prizes of $600 or more:",
+    "points": [
+      "Mandatory federal withholding: 24%",
+      "Additional tax may apply at filing",
+      "W-2G forms are issued for reportable winnings"
+    ]
+  },
+  "playerInfo": {
+    "heading": "California Lottery Guide & Player Information",
+    "intro": "Key information California Lottery players should understand.",
+    "sections": [
+      {
+        "title": "Draw Integrity & Oversight",
+        "body": "California Lottery drawings follow strict procedures designed to ensure fairness and randomness; results are verified before publication."
+      },
+      {
+        "title": "Key California Lottery Rules",
+        "list": [
+          "Minimum age to play: 18",
+          "Tickets must be signed to become valid property",
+          "Damaged or unreadable tickets follow a formal review process",
+          "Draw cutoff times vary by game"
+        ]
+      },
+      {
+        "title": "Responsible Play",
+        "list": [
+          "Set a budget and stick to it",
+          "Odds are fixed \u2014 play for entertainment",
+          "Avoid chasing losses",
+          "A problem-gambling helpline is available for confidential support"
+        ]
+      }
+    ]
+  },
+  "finalFaqs": {
+    "heading": "California Lottery \u2014 Frequently Asked Questions",
+    "visibleOnPage": true,
+    "items": [
+      {
+        "q": "What time are California Lottery drawings held?",
+        "a": "Draw times vary by game; times on this page use California local time. See the Schedule section for each game's days and times."
+      },
+      {
+        "q": "What is the minimum age to play the California Lottery?",
+        "a": "You must be 18 or older to play."
+      },
+      {
+        "q": "Are California Lottery prizes taxed?",
+        "a": "California does NOT charge state income tax on lottery winnings. Federal withholding of 24% applies to prizes over $5,000."
+      },
+      {
+        "q": "How do I claim a California Lottery prize?",
+        "a": "Smaller prizes can be claimed at retailers; larger prizes at a Lottery office or headquarters. See How to Claim above."
+      },
+      {
+        "q": "What happens to unclaimed California Lottery prizes?",
+        "a": "Unclaimed prize funds are directed to state programs per California Lottery rules."
+      }
+    ]
+  },
+  "adSlotRefs": {
+    "note": "Same fixed state-page ad slots as /fl (per pageType).",
+    "top": [
+      "sp_top_billboard"
+    ],
+    "inContent": [
+      "sp_mid_leaderboard_pos1",
+      "sp_mid_leaderboard_pos2",
+      "sp_mid_leaderboard_pos3",
+      "sp_mid_leaderboard_pos4"
+    ],
+    "rightRail": [
+      "sp_side_halfpage_pos1",
+      "sp_side_mpu_pos2",
+      "sp_side_skyscraper"
+    ],
+    "mobileInContent": [
+      "sp_mobile_leaderboard_pos1",
+      "sp_mobile_leaderboard_pos2",
+      "sp_mobile_leaderboard_pos3",
+      "sp_mobile_leaderboard_pos4"
+    ],
+    "bottom": [
+      "sp_bottom_billboard"
+    ],
+    "stickyFooterAd": "sp_bottom_large_leaderboard"
+  },
+  "officialSourceNotice": {
+    "name": "California Lottery",
+    "text": "Winning numbers are sourced from official California Lottery draws. Always verify major prizes with an authorized California Lottery retailer or office."
+  },
+  "responsiblePlayNotice": {
+    "text": "Play responsibly. 18+ only. If gambling is a problem, help is available."
+  },
+  "independenceDisclaimer": {
+    "text": "Lottery Corner is an independent lottery information website and is not affiliated with the California Lottery or the State of California."
+  },
+  "popularGames": [
+    {
+      "gameSlug": "powerball",
+      "displayName": "Powerball",
+      "href": "/powerball"
+    },
+    {
+      "gameSlug": "mega-millions",
+      "displayName": "Mega Millions",
+      "href": "/mega-millions"
+    },
+    {
+      "gameSlug": "fantasy-5",
+      "displayName": "Fantasy 5",
+      "href": "/ca/fantasy-5"
+    },
+    {
+      "gameSlug": "superlotto-plus",
+      "displayName": "SuperLotto Plus",
+      "href": "/ca/superlotto-plus"
+    }
+  ],
+  "aiToolsTeaser": {
+    "enabled": true,
+    "heading": "AI-assisted lottery tools (coming soon)",
+    "copy": "Explore AI-assisted insights, smart number analysis and personalized alerts. For entertainment and informational purposes only.",
+    "cta": "Sign in to try",
+    "loginGated": true
+  },
+  "accountHooks": {
+    "loginRegisterVisible": true,
+    "favoritesEnabled": true
+  },
+  "faqs": {
+    "heading": "Frequently Asked Questions",
+    "visibleOnPage": true,
+    "schemaEligible": true,
+    "items": [
+      {
+        "q": "What are today's California Lottery numbers?",
+        "a": "The latest winning numbers for all games appear in the Latest Draw Results section above."
+      },
+      {
+        "q": "How do I check my California Lottery ticket?",
+        "a": "Compare your numbers to the Latest Draw Results, or use the Check Your Ticket tool where available."
+      },
+      {
+        "q": "Where do I claim a California Lottery prize?",
+        "a": "Smaller prizes at retailers; larger prizes at a Lottery office. See How to Claim below."
+      }
+    ]
+  },
+  "highlights": {
+    "heading": "Recent Highlights & Alerts",
+    "intro": "Notable California Lottery trends, unclaimed prizes nearing expiration, and jackpot movement. Updated periodically.",
+    "recentWins": [
+      {
+        "location": "California",
+        "text": "A recent top-tier California Lottery win was reported in the state (details published when officially released)."
+      }
+    ],
+    "unclaimedPrizes": [
+      {
+        "game": "Powerball",
+        "amount": "See official source",
+        "location": "California",
+        "note": "Unclaimed prizes expire after the claim deadline \u2014 check your tickets."
+      }
+    ],
+    "jackpotGrowth": [
+      {
+        "game": "Powerball",
+        "text": "The jackpot has rolled following draws without a top-prize winner."
+      },
+      {
+        "game": "Mega Millions",
+        "text": "Recent rollovers have increased the advertised jackpot."
+      }
+    ],
+    "note": "Winner specifics are published only when officially released."
+  },
+  "scratchOffs": {
+    "heading": "California Scratch-Off Games",
+    "intro": "Instant-win Scratchers are available alongside the draw games.",
+    "sections": [
+      {
+        "title": "What are Scratchers?",
+        "body": "Scratch-off tickets reveal whether you have won immediately \u2014 no draw required. Prizes and odds are printed per game."
+      },
+      {
+        "title": "Claiming Scratcher prizes",
+        "body": "Lower-tier prizes are paid at retailers; larger prizes at a Lottery office, subject to the game's end date and claim deadline."
+      }
+    ]
+  },
+  "anonymityRules": {
+    "heading": "Can California Lottery Winners Stay Anonymous?",
+    "intro": "Anonymity depends on the prize amount and current state law.",
+    "sections": [
+      {
+        "title": "Anonymity",
+        "body": "Whether California winners can remain anonymous depends on the prize tier and California law. Confirm the current rules with the official California Lottery before claiming."
+      },
+      {
+        "title": "Verification",
+        "body": "All winners must still complete identity and prize verification even where public disclosure is limited."
+      }
+    ]
+  },
+  "biggestWinners": {
+    "heading": "Biggest California Lottery Winners",
+    "intro": "Notable record prizes (published amounts).",
+    "items": [
+      {
+        "amount": "Record jackpot",
+        "game": "Powerball",
+        "location": "California",
+        "text": "California has produced multi-million-dollar Powerball and Mega Millions prizes over the years."
+      },
+      {
+        "amount": "State-game record",
+        "game": "SuperLotto Plus",
+        "location": "California",
+        "text": "In-state jackpot games have delivered notable top prizes."
+      }
+    ]
+  }
+}

@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="3580" viewBox="0 0 1440 3580">
+<defs>
+  <style>
+    .h1 { font: 700 22px Arial, sans-serif; fill:#172033; }
+    .h2 { font: 700 16px Arial, sans-serif; fill:#172033; }
+    .label { font: 600 13px Arial, sans-serif; fill:#172033; }
+    .small { font: 400 11px Arial, sans-serif; fill:#48566A; }
+    .tiny { font: 400 9px Arial, sans-serif; fill:#5E6B7C; }
+  </style>
+  <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity=".13"/>
+  </filter>
+</defs>
+<rect width="100%" height="100%" fill="#F5F7FA"/>
+<text x="24" y="30" class="h1">Powerball flagship page — final approved desktop structure</text>
+<text x="24" y="48" class="tiny">Global page content is stable; Buy button alone is resolved by coarse IP and a first-party redirect</text>
+<rect x="20" y="60" width="1400" height="105" rx="0" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<rect x="42" y="82" width="180" height="38" rx="5" fill="#0B1F3A" stroke="#0B1F3A"/>
+<text x="132" y="107" text-anchor="middle" class="label" fill="#FFFFFF">LOTTERY CORNER</text>
+<rect x="250" y="80" width="470" height="42" rx="21" fill="#F0F3F7" stroke="#D7DEE8"/>
+<text x="275" y="106" text-anchor="start" class="small">Search Powerball results, analysis, tools or questions…</text>
+<rect x="750" y="80" width="230" height="42" rx="21" fill="#E8F7F7" stroke="#00A7A5"/>
+<text x="865" y="106" text-anchor="middle" class="label" fill="#007B79">Ask Powerball AI</text>
+<text x="1030" y="106" text-anchor="start" class="label" fill="#1F5EFF">Sign in / Insider</text>
+<text x="70" y="150" text-anchor="start" class="label">Latest Result     Insights     Tools     History     Guides     News     Community</text>
+<rect x="50" y="195" width="1340" height="350" rx="12" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="78" y="230" text-anchor="start" class="tiny" fill="#1F5EFF">FG-01  POWERBALL GLOBAL HUB</text>
+<text x="78" y="268" text-anchor="start" class="h1">Powerball Results, Jackpot, AI Insights and Lottery Tools</text>
+<text x="78" y="300" text-anchor="start" class="small">One global game page for results, analysis, tools, U.S./UK guidance, news and community.</text>
+<text x="78" y="345" text-anchor="start" class="label">U.S. advertised jackpot</text>
+<text x="78" y="393" text-anchor="start" class="h1" fill="#C73A3A">$XXX MILLION</text>
+<text x="78" y="423" text-anchor="start" class="small">Estimated U.S. cash value $XXXM</text>
+<text x="430" y="345" text-anchor="start" class="label">UK Powerball prize display</text>
+<text x="430" y="380" text-anchor="start" class="h2" fill="#8A6500">Official GBP value / UK details</text>
+<text x="430" y="410" text-anchor="start" class="small">Separate lower-tier prizes and payment treatment</text>
+<text x="78" y="465" text-anchor="start" class="label">Latest winning numbers</text>
+<rect x="78" y="482" width="620" height="66" rx="10" fill="#EDF4FF" stroke="#BCD1FF"/>
+<text x="388" y="522" text-anchor="middle" class="h2">04   05   22   50   58     + 01     Power Play 3X</text>
+<text x="78" y="578" text-anchor="start" class="small" fill="#1F5EFF">Stable draw · Watch drawing · Winner counts · Correction history</text>
+<rect x="760" y="245" width="580" height="235" rx="12" fill="#FFF1E9" stroke="#F1B48E"/>
+<text x="790" y="280" text-anchor="start" class="h2">GLOBAL DRAW AND BUY WINDOW</text>
+<text x="790" y="315" text-anchor="start" class="label">Powerball drawing countdown</text>
+<text x="790" y="355" text-anchor="start" class="h1" fill="#B45118">02 DAYS  04 HOURS  18 MINUTES</text>
+<text x="790" y="385" text-anchor="start" class="small">Official drawing: 10:59 p.m. ET</text>
+<text x="790" y="416" text-anchor="start" class="small">LotteryCorner online purchase window closes 30 minutes earlier</text>
+<rect x="790" y="438" width="230" height="38" rx="19" fill="#D76722" stroke="#D76722"/>
+<text x="905" y="462" text-anchor="middle" class="label" fill="#FFFFFF">Buy Powerball Tickets</text>
+<text x="1038" y="462" text-anchor="start" class="tiny">Shown only for supported IP regions</text>
+<text x="790" y="498" text-anchor="start" class="tiny">Button uses /play/powerball; destination is resolved at click time.</text>
+<rect x="230" y="585" width="980" height="82" rx="5" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="624.0" text-anchor="middle" class="small">FG AD-00 — TOP LEADERBOARD</text>
+<text x="720.0" y="643.0" text-anchor="middle" class="tiny">Slot ID and size inherited from production configuration</text>
+<rect x="50" y="700" width="650" height="215" rx="10" fill="#EDF4FF" stroke="#BCD1FF" filter="url(#s)"/>
+<text x="72" y="734" text-anchor="start" class="h2">FG-02  CHECK MY NUMBERS</text>
+<text x="72" y="766" text-anchor="start" class="small">Current or historical draw comparison</text>
+<text x="72" y="793" text-anchor="start" class="small">Power Play-aware result and prize explanation</text>
+<text x="72" y="820" text-anchor="start" class="small">Double Play checked as a linked separate draw</text>
+<text x="72" y="847" text-anchor="start" class="small">Save and track after value</text>
+<text x="72" y="893" text-anchor="start" class="label" fill="#1F5EFF">Open →</text>
+<rect x="730" y="700" width="660" height="215" rx="10" fill="#EAF9F8" stroke="#7FD5D2" filter="url(#s)"/>
+<text x="752" y="734" text-anchor="start" class="h2" fill="#007B79">FG-03  LOTTERYCORNER POWERBALL AI</text>
+<text x="752" y="766" text-anchor="start" class="small">Explain the draw, jackpot, charts or rule differences</text>
+<text x="752" y="793" text-anchor="start" class="small">Configure a tool using plain language</text>
+<text x="752" y="820" text-anchor="start" class="small">Research news and community with source links</text>
+<text x="752" y="847" text-anchor="start" class="small">One complete public answer before sign-in</text>
+<text x="752" y="893" text-anchor="start" class="label" fill="#1F5EFF">Open →</text>
+<rect x="250" y="955" width="940" height="78" rx="5" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="992.0" text-anchor="middle" class="small">FG AD-01 — POST CORE UTILITY</text>
+<text x="720.0" y="1011.0" text-anchor="middle" class="tiny">Slot ID and size inherited from production configuration</text>
+<rect x="50" y="1070" width="1340" height="285" rx="10" fill="#FFF6D9" stroke="#E4C466" filter="url(#s)"/>
+<text x="78" y="1105" text-anchor="start" class="h2">FG-04  LATEST DRAW INTELLIGENCE, DISCUSSION AND FOLLOW</text>
+<text x="78" y="1150" text-anchor="start" class="label" fill="#8A6500">Draw fingerprint</text>
+<text x="78" y="1175" text-anchor="start" class="small">Sum · spread · odd/even · high/low · decades</text>
+<text x="498" y="1150" text-anchor="start" class="label" fill="#8A6500">Previous-draw relationship</text>
+<text x="498" y="1175" text-anchor="start" class="small">Repeats, consecutive values and gap change</text>
+<text x="918" y="1150" text-anchor="start" class="label" fill="#8A6500">Historical analog</text>
+<text x="918" y="1175" text-anchor="start" class="small">Similar structural draws, clearly non-predictive</text>
+<text x="78" y="1222" text-anchor="start" class="label" fill="#8A6500">Jackpot-run context</text>
+<text x="78" y="1247" text-anchor="start" class="small">Rollover count, growth and historical percentile</text>
+<text x="498" y="1222" text-anchor="start" class="label" fill="#8A6500">Community pulse</text>
+<text x="498" y="1247" text-anchor="start" class="small">Global reaction plus local state/UK discussions</text>
+<text x="78" y="1322" text-anchor="start" class="label" fill="#1F5EFF">Save this draw · Follow jackpot · Notify me · Ask AI about this insight</text>
+<rect x="50" y="1400" width="650" height="260" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="72" y="1434" text-anchor="start" class="h2">FG-05  HOW TO PLAY, PRIZES AND ODDS</text>
+<text x="72" y="1466" text-anchor="start" class="small">Five white balls 1–69 + Powerball 1–26</text>
+<text x="72" y="1493" text-anchor="start" class="small">Monday, Wednesday and Saturday at 10:59 p.m. ET</text>
+<text x="72" y="1520" text-anchor="start" class="small">Power Play drawing-level multiplier</text>
+<text x="72" y="1547" text-anchor="start" class="small">Double Play is a separate linked drawing</text>
+<text x="72" y="1574" text-anchor="start" class="small">Current and historical rule eras</text>
+<text x="72" y="1638" text-anchor="start" class="label" fill="#1F5EFF">Open →</text>
+<rect x="730" y="1400" width="660" height="260" rx="10" fill="#EAF9F8" stroke="#7FD5D2" filter="url(#s)"/>
+<text x="752" y="1434" text-anchor="start" class="h2" fill="#007B79">FG-06  U.S. AND UK POWERBALL</text>
+<text x="752" y="1466" text-anchor="start" class="small">Shared jackpot and drawing</text>
+<text x="752" y="1493" text-anchor="start" class="small">U.S. $2 play and jurisdiction add-ons</text>
+<text x="752" y="1520" text-anchor="start" class="small">UK £4 play and separate lower-tier prizes</text>
+<text x="752" y="1547" text-anchor="start" class="small">Different official jackpot display conventions</text>
+<text x="752" y="1574" text-anchor="start" class="small">Local purchase and claim pages remain distinct</text>
+<text x="752" y="1638" text-anchor="start" class="label" fill="#1F5EFF">Open →</text>
+<rect x="250" y="1700" width="940" height="78" rx="5" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="1737.0" text-anchor="middle" class="small">FG AD-02 — POST RULES</text>
+<text x="720.0" y="1756.0" text-anchor="middle" class="tiny">Slot ID and size inherited from production configuration</text>
+<text x="50" y="1825" text-anchor="start" class="h2">FG-07  POWERBALL TOOLS AND ANALYSIS</text>
+<rect x="50" y="1850" width="300" height="110" rx="9" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="70" y="1880" text-anchor="start" class="label">Number Checker</text>
+<text x="70" y="1907" text-anchor="start" class="tiny">Current/history and saved sets</text>
+<text x="70" y="1939" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<rect x="385" y="1850" width="300" height="110" rx="9" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="405" y="1880" text-anchor="start" class="label">Quick Pick &amp; Generator</text>
+<text x="405" y="1907" text-anchor="start" class="tiny">Random, fixed and filtered sets</text>
+<text x="405" y="1939" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<rect x="720" y="1850" width="300" height="110" rx="9" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="740" y="1880" text-anchor="start" class="label">Number Statistics</text>
+<text x="740" y="1907" text-anchor="start" class="tiny">Frequency, gaps and rule-era filters</text>
+<text x="740" y="1939" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<rect x="1055" y="1850" width="300" height="110" rx="9" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="1075" y="1880" text-anchor="start" class="label">Drawn Together</text>
+<text x="1075" y="1907" text-anchor="start" class="tiny">Pairs, triples and co-occurrence</text>
+<text x="1075" y="1939" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<rect x="50" y="1982" width="300" height="110" rx="9" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="70" y="2012" text-anchor="start" class="label">Pattern Explorer</text>
+<text x="70" y="2039" text-anchor="start" class="tiny">Sum, range, odd/even, high/low, decades</text>
+<text x="70" y="2071" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<rect x="385" y="1982" width="300" height="110" rx="9" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="405" y="2012" text-anchor="start" class="label">Jackpot Tracker</text>
+<text x="405" y="2039" text-anchor="start" class="tiny">Rollovers, growth, cash ratio and records</text>
+<text x="405" y="2071" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<rect x="720" y="1982" width="300" height="110" rx="9" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="740" y="2012" text-anchor="start" class="label">Tax Calculator</text>
+<text x="740" y="2039" text-anchor="start" class="tiny">Standalone /tools/tax-calculator</text>
+<text x="740" y="2071" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<rect x="1055" y="1982" width="300" height="110" rx="9" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="1075" y="2012" text-anchor="start" class="label">Cash vs Annuity</text>
+<text x="1075" y="2039" text-anchor="start" class="tiny">Standalone calculator and schedule</text>
+<text x="1075" y="2071" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<rect x="50" y="2114" width="300" height="110" rx="9" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="70" y="2144" text-anchor="start" class="label">Coverage &amp; Cost</text>
+<text x="70" y="2171" text-anchor="start" class="tiny">Combination count and ticket cost</text>
+<text x="70" y="2203" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<rect x="385" y="2114" width="300" height="110" rx="9" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="405" y="2144" text-anchor="start" class="label">Pool Splitter</text>
+<text x="405" y="2171" text-anchor="start" class="tiny">Shares, tax assumptions and net split</text>
+<text x="405" y="2203" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<rect x="720" y="2114" width="300" height="110" rx="9" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="740" y="2144" text-anchor="start" class="label">AI Ticket Analysis</text>
+<text x="740" y="2171" text-anchor="start" class="tiny">Coverage, duplicates and non-predictive context</text>
+<text x="740" y="2203" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<rect x="1055" y="2114" width="300" height="110" rx="9" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="1075" y="2144" text-anchor="start" class="label">All Lottery Tools</text>
+<text x="1075" y="2171" text-anchor="start" class="tiny">/tools hub and Insider previews</text>
+<text x="1075" y="2203" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<rect x="250" y="2275" width="940" height="78" rx="5" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="2312.0" text-anchor="middle" class="small">FG AD-03 — POST TOOLS</text>
+<text x="720.0" y="2331.0" text-anchor="middle" class="tiny">Slot ID and size inherited from production configuration</text>
+<rect x="50" y="2395" width="420" height="145" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="72" y="2429" text-anchor="start" class="h2">FG-08  RESULTS &amp; RULE-ERA HISTORY</text>
+<text x="72" y="2461" text-anchor="start" class="small">Stable draws, history search and era-aware analysis</text>
+<text x="72" y="2518" text-anchor="start" class="label" fill="#1F5EFF">Open →</text>
+<rect x="500" y="2395" width="420" height="145" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="522" y="2429" text-anchor="start" class="h2">FG-09  JACKPOT HISTORY</text>
+<text x="522" y="2461" text-anchor="start" class="small">Rollovers, resets, records and U.S./UK display context</text>
+<text x="522" y="2518" text-anchor="start" class="label" fill="#1F5EFF">Open →</text>
+<rect x="950" y="2395" width="420" height="145" rx="10" fill="#EAF9F8" stroke="#7FD5D2" filter="url(#s)"/>
+<text x="972" y="2429" text-anchor="start" class="h2" fill="#007B79">FG-10  GUIDES &amp; LOTTERYCORNER RESEARCH</text>
+<text x="972" y="2461" text-anchor="start" class="small">Cash vs annuity, UK comparison, methods and AI notes</text>
+<text x="972" y="2518" text-anchor="start" class="label" fill="#1F5EFF">Open →</text>
+<rect x="50" y="2570" width="420" height="145" rx="10" fill="#FFF6D9" stroke="#E4C466" filter="url(#s)"/>
+<text x="72" y="2604" text-anchor="start" class="h2">FG-11  INTERNATIONAL VISITOR GUIDE</text>
+<text x="72" y="2636" text-anchor="start" class="small">Where officially sold, visitor rules, scams and claims</text>
+<text x="72" y="2693" text-anchor="start" class="label" fill="#1F5EFF">Open →</text>
+<rect x="500" y="2570" width="420" height="145" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="522" y="2604" text-anchor="start" class="h2">FG-12  NEWS &amp; WINNERS</text>
+<text x="522" y="2636" text-anchor="start" class="small">Global stories with jurisdiction labels and AI Quick Takes</text>
+<text x="522" y="2693" text-anchor="start" class="label" fill="#1F5EFF">Open →</text>
+<rect x="950" y="2570" width="420" height="145" rx="10" fill="#F2EDFF" stroke="#C9B8ED" filter="url(#s)"/>
+<text x="972" y="2604" text-anchor="start" class="h2">FG-13  POWERBALL COMMUNITY</text>
+<text x="972" y="2636" text-anchor="start" class="small">Global draw threads, tools and local discussion routing</text>
+<text x="972" y="2693" text-anchor="start" class="label" fill="#1F5EFF">Open →</text>
+<rect x="250" y="2780" width="940" height="78" rx="5" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="2817.0" text-anchor="middle" class="small">FG AD-04 — LOWER CONTENT SLOT</text>
+<text x="720.0" y="2836.0" text-anchor="middle" class="tiny">Slot ID and size inherited from production configuration</text>
+<rect x="50" y="2910" width="1340" height="195" rx="0" fill="#0B1F3A" stroke="#0B1F3A"/>
+<text x="78" y="2950" text-anchor="start" class="h2" fill="#FFFFFF">Follow and trust controls</text>
+<text x="78" y="2985" text-anchor="start" class="small" fill="#D7E2F0">Save numbers · result alerts · jackpot threshold · discussion replies · app · email</text>
+<text x="78" y="3020" text-anchor="start" class="small" fill="#D7E2F0">Sources · field-level verification · correction log · AI policy · affiliate disclosure · Responsible Play</text>
+<text x="78" y="3060" text-anchor="start" class="tiny" fill="#D7E2F0">Content is identical for every visitor; only the Buy button is resolved from coarse IP location.</text>
+</svg>

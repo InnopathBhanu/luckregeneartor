@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="920" viewBox="0 0 1440 920">
+<defs>
+  <style>
+    .title { font: 700 18px Arial, sans-serif; fill:#172033; }
+    .label { font: 600 13px Arial, sans-serif; fill:#172033; }
+    .small { font: 400 11px Arial, sans-serif; fill:#48566A; }
+    .tiny { font: 400 9px Arial, sans-serif; fill:#5E6B7C; }
+  </style>
+  <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity=".14"/>
+  </filter>
+</defs>
+<rect width="100%" height="100%" fill="#F5F7FA"/>
+<text x="24" y="30" class="title">Desktop shell — signed-in / Insider</text>
+<rect x="20" y="50" width="1400" height="36" rx="0" fill="#0B1F3A" stroke="#0B1F3A" stroke-width="1"/>
+<text x="40" y="73" text-anchor="start" class="small" fill="#FFFFFF">Powerball result verified · 2 saved sets checked · 1 new reply</text>
+<rect x="20" y="86" width="1400" height="76" rx="0" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<rect x="42" y="105" width="180" height="38" rx="6" fill="#0B1F3A" stroke="#0B1F3A" stroke-width="1"/>
+<text x="132" y="130" text-anchor="middle" class="label" fill="#FFFFFF">LOTTERY CORNER</text>
+<rect x="250" y="103" width="470" height="42" rx="21" fill="#F0F3F7" stroke="#D7DEE8" stroke-width="1"/>
+<text x="275" y="129" text-anchor="start" class="small">Search LotteryCorner…</text>
+<rect x="750" y="103" width="230" height="42" rx="21" fill="#E8F7F7" stroke="#00A7A5" stroke-width="1"/>
+<text x="865" y="129" text-anchor="middle" class="label" fill="#007B79">Ask LotteryCorner AI</text>
+<rect x="1000" y="103" width="160" height="42" rx="21" fill="#EDF4FF" stroke="#BCD1FF" stroke-width="1"/>
+<text x="1080" y="129" text-anchor="middle" class="label" fill="#1F5EFF">Notifications 3</text>
+<rect x="1175" y="103" width="205" height="42" rx="21" fill="#FFFFFF" stroke="#1F5EFF" stroke-width="1"/>
+<text x="1277" y="129" text-anchor="middle" class="label" fill="#1F5EFF">My LotteryCorner ▾</text>
+<rect x="20" y="162" width="1400" height="48" rx="0" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1"/>
+<text x="70" y="192" text-anchor="start" class="label">Results</text>
+<text x="215" y="192" text-anchor="start" class="label">My Games</text>
+<text x="360" y="192" text-anchor="start" class="label">My Numbers</text>
+<text x="505" y="192" text-anchor="start" class="label">Tools</text>
+<text x="650" y="192" text-anchor="start" class="label">News</text>
+<text x="795" y="192" text-anchor="start" class="label">Community</text>
+<text x="940" y="192" text-anchor="start" class="label">Following</text>
+<rect x="20" y="210" width="1400" height="42" rx="0" fill="#EEF3FA" stroke="#D7DEE8" stroke-width="1"/>
+<text x="44" y="236" text-anchor="start" class="small">Personal context: Florida · Powerball · Pick 3 · Saved systems</text>
+<text x="1120" y="236" text-anchor="start" class="small">Edit preferences · Privacy</text>
+<rect x="70" y="280" width="930" height="170" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<text x="96" y="313" text-anchor="start" class="label">PERSONALIZED PRIMARY CONTENT</text>
+<text x="96" y="339" text-anchor="start" class="small">Core page remains public; personal matches and followed context appear after the answer.</text>
+<rect x="96" y="365" width="260" height="58" rx="8" fill="#EAF9F8" stroke="#7FD5D2" stroke-width="1"/>
+<text x="226" y="394" text-anchor="middle" class="label" fill="#007B79">2 saved sets checked</text>
+<rect x="372" y="365" width="260" height="58" rx="8" fill="#EDF4FF" stroke="#BCD1FF" stroke-width="1"/>
+<text x="502" y="394" text-anchor="middle" class="label" fill="#1F5EFF">Followed game update</text>
+<rect x="648" y="365" width="260" height="58" rx="8" fill="#FFF6D9" stroke="#E4C466" stroke-width="1"/>
+<text x="778" y="394" text-anchor="middle" class="label">Reply waiting</text>
+<rect x="1025" y="280" width="345" height="170" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<text x="1050" y="313" text-anchor="start" class="label">MY LOTTERY CORNER</text>
+<text x="1050" y="340" text-anchor="start" class="small">My games · My numbers</text>
+<text x="1050" y="363" text-anchor="start" class="small">Matches · Following</text>
+<text x="1050" y="386" text-anchor="start" class="small">AI history · Alerts</text>
+<rect x="70" y="474" width="930" height="130" rx="8" fill="#EAF9F8" stroke="#7FD5D2" stroke-width="1" filter="url(#shadow)"/>
+<text x="96" y="508" text-anchor="start" class="label" fill="#007B79">PERSONAL AI BRIEF</text>
+<text x="96" y="536" text-anchor="start" class="small">What changed since your last visit + contextual suggested actions.</text>
+<rect x="96" y="554" width="610" height="32" rx="16" fill="#FFFFFF" stroke="#7FD5D2" stroke-width="1"/>
+<text x="112" y="575" text-anchor="start" class="small">Ask about my saved numbers, systems or followed games…</text>
+<rect x="728" y="554" width="230" height="32" rx="16" fill="#00A7A5" stroke="#00A7A5" stroke-width="1"/>
+<text x="843" y="575" text-anchor="middle" class="label" fill="#FFFFFF">Continue with AI</text>
+<rect x="1025" y="474" width="345" height="130" rx="8" fill="#FFFFFF" stroke="#E4C466" stroke-width="1" filter="url(#shadow)"/>
+<text x="1050" y="508" text-anchor="start" class="label">QUALIFIED COMMERCE</text>
+<text x="1050" y="535" text-anchor="start" class="small">Eligible state/game only.</text>
+<text x="1050" y="558" text-anchor="start" class="small">Save before outbound click.</text>
+<rect x="70" y="628" width="300" height="160" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<text x="94" y="662" text-anchor="start" class="label">MY MATCHES</text>
+<text x="94" y="688" text-anchor="start" class="small">Exact outcomes only.</text>
+<rect x="385" y="628" width="300" height="160" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<text x="409" y="662" text-anchor="start" class="label">FOLLOWING</text>
+<text x="409" y="688" text-anchor="start" class="small">Games, states, threads.</text>
+<rect x="700" y="628" width="300" height="160" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<text x="724" y="662" text-anchor="start" class="label">COMMUNITY</text>
+<text x="724" y="688" text-anchor="start" class="small">Replies and discussions.</text>
+<rect x="1025" y="628" width="345" height="160" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<text x="1050" y="662" text-anchor="start" class="label">INSIDER AD / OFFER</text>
+<text x="1050" y="688" text-anchor="start" class="small">Ad-supported by default.</text>
+<rect x="20" y="820" width="1400" height="70" rx="0" fill="#0B1F3A" stroke="#0B1F3A" stroke-width="1"/>
+<text x="50" y="850" text-anchor="start" class="small" fill="#FFFFFF">Footer + account, memory, notification and responsible-play controls</text>
+</svg>

@@ -1,0 +1,888 @@
+{
+  "_meta": {
+    "purpose": "UI-first sample payload for the new home page (/), rendered by HomeTemplate. Real Powerball/Mega Millions values from source-xml; other sections are clean sample content (future DB/API/admin-driven). Ads referenced by slotKey (homePageSlots in ad-slot-definitions.json). Buy Tickets via /buynow/<code> only. No [ADMIN] tokens.",
+    "illustrative": true,
+    "dbApiDriven": [
+      "featureGames",
+      "topJackpots",
+      "latestResults",
+      "upcoming",
+      "news",
+      "jackpotHistory",
+      "lastUpdated"
+    ],
+    "adminEditable": [
+      "hero",
+      "stateSearch",
+      "tools",
+      "aiToolsTeaser",
+      "buyTicketsHighlight",
+      "systems",
+      "blog",
+      "newsletter"
+    ],
+    "schemaVersion": "0.1-sample"
+  },
+  "page": {
+    "url": "/",
+    "pageType": "home",
+    "metadata": {
+      "title": "US Lottery Results \u2014 Latest Winning Numbers & Jackpots",
+      "description": "Check today's US lottery results, winning numbers, and jackpots for Powerball, Mega Millions and every state lottery \u2014 updated after every draw.",
+      "canonicalPlaceholder": "[VERIFY-CONVENTION] https://lotterycorner.com (home; non-www, no trailing slash; migration pending \u2014 not emitted yet)",
+      "robots": "index,follow",
+      "openGraph": {
+        "type": "website",
+        "title": "US Lottery Results \u2014 Latest Winning Numbers & Jackpots",
+        "description": "Today's US lottery results and jackpots for Powerball, Mega Millions and every state.",
+        "siteName": "Lottery Corner"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "US Lottery Results \u2014 Latest Winning Numbers & Jackpots",
+        "description": "Today's US lottery results and jackpots."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "WebSite",
+        "Organization",
+        "ItemList"
+      ],
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "url": "/"
+        }
+      ]
+    },
+    "h1": "US Lottery Results \u2014 Latest Winning Numbers & Jackpots",
+    "intro": "Check the latest US lottery results, live jackpots, and winning numbers for Powerball, Mega Millions, and every state lottery \u2014 all in one place, updated after every official drawing.",
+    "lastUpdated": {
+      "display": "Last updated: July 9, 2026 at 12:11 AM ET",
+      "isoDateModified": "2026-07-09T00:11:54-04:00"
+    }
+  },
+  "stateSearch": {
+    "heading": "Find Your State Lottery",
+    "intro": "Select your state to see today's winning numbers, jackpots, draw schedules, and how to claim."
+  },
+  "featureGames": {
+    "heading": "Powerball, Mega Millions & Lotto America",
+    "cards": [
+      {
+        "gameId": 1012,
+        "gameSlug": "powerball",
+        "displayName": "Powerball",
+        "formatRef": {
+          "gameId": 1012
+        },
+        "status": "latest",
+        "drawScheduleLabel": "Mon, Wed & Sat",
+        "resultDate": {
+          "gameLocalDate": "2026-07-08",
+          "display": "Wednesday, 07/08/2026 \u2014 10:59 PM ET"
+        },
+        "groupsDrawn": [
+          {
+            "order": 0,
+            "label": null,
+            "values": [
+              12,
+              29,
+              37,
+              43,
+              55
+            ],
+            "colorToken": "ball.default"
+          },
+          {
+            "order": 1,
+            "label": "Powerball",
+            "values": [
+              18
+            ],
+            "colorToken": "ball.powerball"
+          }
+        ],
+        "multipliers": [
+          {
+            "key": "powerplay",
+            "label": "Power Play",
+            "value": 4,
+            "display": "Power Play 4X"
+          }
+        ],
+        "prizeDisplay": "$435 Million",
+        "prizeRaw": "435000000",
+        "nextDraw": {
+          "display": "Saturday, 07/11/2026",
+          "nextJackpotDisplay": "$457 Million"
+        },
+        "buyTickets": {
+          "label": "Buy Tickets",
+          "href": "/buynow/play-usa-powerball",
+          "affiliateResolved": false
+        },
+        "actions": [
+          {
+            "type": "findMore",
+            "href": "/powerball"
+          }
+        ],
+        "favoriteHook": true,
+        "toolLinks": [
+          {
+            "label": "View Details",
+            "href": "/powerball"
+          },
+          {
+            "label": "Winning History",
+            "href": "#"
+          },
+          {
+            "label": "Smart Picks",
+            "href": "#"
+          },
+          {
+            "label": "Search Numbers",
+            "href": "#"
+          },
+          {
+            "label": "Download",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "gameId": 1013,
+        "gameSlug": "mega-millions",
+        "displayName": "Mega Millions",
+        "formatRef": {
+          "gameId": 1013
+        },
+        "status": "latest",
+        "drawScheduleLabel": "Tue & Fri",
+        "resultDate": {
+          "gameLocalDate": "2026-07-07",
+          "display": "Tuesday, 07/07/2026 \u2014 11:00 PM ET"
+        },
+        "groupsDrawn": [
+          {
+            "order": 0,
+            "label": null,
+            "values": [
+              2,
+              31,
+              35,
+              36,
+              63
+            ],
+            "colorToken": "ball.default"
+          },
+          {
+            "order": 1,
+            "label": "Mega Ball",
+            "values": [
+              12
+            ],
+            "colorToken": "ball.megaball"
+          }
+        ],
+        "multipliers": [],
+        "prizeDisplay": "$576 Million",
+        "prizeRaw": "576000000",
+        "nextDraw": {
+          "display": "Friday, 07/10/2026",
+          "nextJackpotDisplay": "$604 Million"
+        },
+        "buyTickets": {
+          "label": "Buy Tickets",
+          "href": "/buynow/play-usa-megamillions",
+          "affiliateResolved": false
+        },
+        "actions": [
+          {
+            "type": "findMore",
+            "href": "/mega-millions"
+          }
+        ],
+        "favoriteHook": true,
+        "toolLinks": [
+          {
+            "label": "View Details",
+            "href": "/mega-millions"
+          },
+          {
+            "label": "Winning History",
+            "href": "#"
+          },
+          {
+            "label": "Smart Picks",
+            "href": "#"
+          },
+          {
+            "label": "Search Numbers",
+            "href": "#"
+          },
+          {
+            "label": "Download",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "gameId": 1018,
+        "gameSlug": "lotto-america",
+        "displayName": "Lotto America",
+        "formatRef": {
+          "gameId": 1018
+        },
+        "status": "latest",
+        "drawScheduleLabel": "Mon, Wed & Sat",
+        "resultDate": {
+          "gameLocalDate": "2026-07-08",
+          "display": "Wednesday, 07/08/2026"
+        },
+        "groupsDrawn": [
+          {
+            "order": 0,
+            "label": null,
+            "values": [
+              17,
+              26,
+              31,
+              32,
+              37
+            ],
+            "colorToken": "ball.default"
+          },
+          {
+            "order": 1,
+            "label": "Star Ball",
+            "values": [
+              1
+            ],
+            "colorToken": "ball.bonus"
+          }
+        ],
+        "multipliers": [
+          {
+            "key": "all-star-bonus",
+            "label": "All Star Bonus",
+            "value": 3,
+            "display": "All Star Bonus 3X"
+          }
+        ],
+        "prizeDisplay": "$32.86 Million",
+        "prizeRaw": "32860000",
+        "nextDraw": {
+          "display": "Saturday, 07/11/2026",
+          "nextJackpotDisplay": "$32.86 Million"
+        },
+        "buyTickets": {
+          "label": "Buy Tickets",
+          "href": "/buynow/play-usa-lottoamerica",
+          "affiliateResolved": false
+        },
+        "actions": [
+          {
+            "type": "findMore",
+            "href": "/lotto-america"
+          }
+        ],
+        "favoriteHook": true,
+        "toolLinks": [
+          {
+            "label": "View Details",
+            "href": "/lotto-america"
+          },
+          {
+            "label": "Winning History",
+            "href": "#"
+          },
+          {
+            "label": "Smart Picks",
+            "href": "#"
+          },
+          {
+            "label": "Search Numbers",
+            "href": "#"
+          },
+          {
+            "label": "Download",
+            "href": "#"
+          }
+        ]
+      }
+    ]
+  },
+  "topJackpots": {
+    "heading": "Top Jackpots Right Now",
+    "intro": "The biggest current US lottery jackpots. When a top prize rolls over, the next jackpot increases.",
+    "columns": [
+      "Game",
+      "Estimated Jackpot",
+      "Next Draw"
+    ],
+    "rows": [
+      [
+        "Mega Millions",
+        "$604 Million",
+        "Fri, 07/10/2026"
+      ],
+      [
+        "Powerball",
+        "$457 Million",
+        "Sat, 07/11/2026"
+      ],
+      [
+        "Lotto America",
+        "$32.86 Million",
+        "Sat, 07/11/2026"
+      ]
+    ]
+  },
+  "latestResults": {
+    "heading": "Latest Results / Live Lottery",
+    "intro": "The most recent winning numbers across popular US lottery games.",
+    "cards": [
+      {
+        "gameId": 337,
+        "gameSlug": "florida-lotto",
+        "displayName": "Florida Lotto",
+        "formatRef": {
+          "gameId": 337
+        },
+        "status": "latest",
+        "drawScheduleLabel": "Wed & Sat",
+        "resultDate": {
+          "gameLocalDate": "2026-07-08",
+          "display": "Wednesday, 07/08/2026"
+        },
+        "groupsDrawn": [
+          {
+            "order": 0,
+            "label": null,
+            "values": [
+              3,
+              8,
+              11,
+              18,
+              23,
+              38
+            ],
+            "colorToken": "ball.default"
+          }
+        ],
+        "secondaryDraw": {
+          "key": "doubleplay",
+          "label": "Double Play",
+          "groupsDrawn": [
+            {
+              "order": 0,
+              "label": null,
+              "values": [
+                1,
+                6,
+                12,
+                19,
+                26,
+                31
+              ],
+              "colorToken": "ball.default"
+            }
+          ]
+        },
+        "prizeDisplay": "$1.5 Million",
+        "nextDraw": {
+          "display": "Saturday, 07/11/2026"
+        },
+        "buyTickets": null,
+        "actions": [
+          {
+            "type": "viewHistory",
+            "href": "/fl/florida-lotto/2026"
+          }
+        ],
+        "favoriteHook": true
+      },
+      {
+        "gameId": 316,
+        "gameSlug": "superlotto-plus",
+        "displayName": "SuperLotto Plus (CA)",
+        "formatRef": {
+          "gameId": 316
+        },
+        "status": "latest",
+        "drawScheduleLabel": "Wed & Sat",
+        "resultDate": {
+          "gameLocalDate": "2026-07-08",
+          "display": "Wednesday, 07/08/2026"
+        },
+        "groupsDrawn": [
+          {
+            "order": 0,
+            "label": null,
+            "values": [
+              5,
+              12,
+              23,
+              30,
+              41
+            ],
+            "colorToken": "ball.default"
+          },
+          {
+            "order": 1,
+            "label": "Mega",
+            "values": [
+              9
+            ],
+            "colorToken": "ball.megaball"
+          }
+        ],
+        "prizeDisplay": "$18 Million",
+        "nextDraw": {
+          "display": "Saturday, 07/11/2026"
+        },
+        "buyTickets": null,
+        "actions": [
+          {
+            "type": "viewHistory",
+            "href": "/ca/superlotto-plus/2026"
+          }
+        ],
+        "favoriteHook": true
+      }
+    ]
+  },
+  "upcoming": {
+    "heading": "Upcoming Draws",
+    "items": [
+      {
+        "game": "Mega Millions",
+        "display": "Friday, 07/10/2026 \u2014 11:00 PM ET",
+        "jackpot": "$604 Million",
+        "status": "scheduled"
+      },
+      {
+        "game": "Powerball",
+        "display": "Saturday, 07/11/2026 \u2014 10:59 PM ET",
+        "jackpot": "$457 Million",
+        "status": "scheduled"
+      },
+      {
+        "game": "Lotto America",
+        "display": "Saturday, 07/11/2026",
+        "jackpot": "$32.86 Million",
+        "status": "awaiting",
+        "statusNote": "Awaiting latest results \u2014 results pending."
+      }
+    ]
+  },
+  "browseByState": {
+    "heading": "Browse Lottery Results by State",
+    "intro": "Pick a state for today's winning numbers, jackpots, draw schedules, taxes, and claim info.",
+    "states": [
+      {
+        "code": "az",
+        "name": "Arizona",
+        "href": "/az"
+      },
+      {
+        "code": "ar",
+        "name": "Arkansas",
+        "href": "/ar"
+      },
+      {
+        "code": "ca",
+        "name": "California",
+        "href": "/ca"
+      },
+      {
+        "code": "co",
+        "name": "Colorado",
+        "href": "/co"
+      },
+      {
+        "code": "ct",
+        "name": "Connecticut",
+        "href": "/ct"
+      },
+      {
+        "code": "de",
+        "name": "Delaware",
+        "href": "/de"
+      },
+      {
+        "code": "fl",
+        "name": "Florida",
+        "href": "/fl"
+      },
+      {
+        "code": "la",
+        "name": "Louisiana",
+        "href": "/la"
+      },
+      {
+        "code": "me",
+        "name": "Maine",
+        "href": "/me"
+      },
+      {
+        "code": "md",
+        "name": "Maryland",
+        "href": "/md"
+      },
+      {
+        "code": "ma",
+        "name": "Massachusetts",
+        "href": "/ma"
+      },
+      {
+        "code": "mi",
+        "name": "Michigan",
+        "href": "/mi"
+      },
+      {
+        "code": "mn",
+        "name": "Minnesota",
+        "href": "/mn"
+      },
+      {
+        "code": "ms",
+        "name": "Mississippi",
+        "href": "/ms"
+      },
+      {
+        "code": "ny",
+        "name": "New York",
+        "href": "/ny"
+      },
+      {
+        "code": "va",
+        "name": "Virginia",
+        "href": "/va"
+      }
+    ]
+  },
+  "tools": {
+    "heading": "Lottery Tools",
+    "intro": "Practical tools to check tickets and plan your play.",
+    "items": [
+      {
+        "label": "Check Your Ticket",
+        "desc": "See whether your numbers match the latest results.",
+        "href": "#"
+      },
+      {
+        "label": "Lottery Tax Calculator",
+        "desc": "Estimate federal and state withholding on winnings.",
+        "href": "/lottery-tax-calculator"
+      },
+      {
+        "label": "Jackpot Alerts",
+        "desc": "Get notified when jackpots climb (sign-in required).",
+        "href": "#"
+      }
+    ]
+  },
+  "aiToolsTeaser": {
+    "enabled": true,
+    "heading": "AI-assisted lottery tools (coming soon)",
+    "copy": "Explore AI-assisted insights, smart number analysis, and personalized alerts. For entertainment and informational purposes only \u2014 no tool can predict or guarantee winning numbers.",
+    "cta": "Sign in to try",
+    "loginGated": true
+  },
+  "buyTicketsHighlight": {
+    "heading": "Play Your Favorite Games",
+    "copy": "Buy Tickets links route through our partner service. Availability and destination depend on your location, state, and game.",
+    "cta": {
+      "label": "Buy Tickets",
+      "href": "/buynow/play-usa-powerball"
+    }
+  },
+  "news": {
+    "heading": "Latest News, Winners & Unclaimed Prizes",
+    "intro": "Recent US lottery news, notable wins, and prizes nearing their claim deadline.",
+    "recentWins": [
+      {
+        "location": "USA",
+        "text": "Recent multi-state jackpot wins are published when officially released."
+      }
+    ],
+    "unclaimedPrizes": [
+      {
+        "game": "Powerball",
+        "amount": "See official source",
+        "location": "Multiple states",
+        "note": "Unclaimed prizes expire after each state's claim deadline \u2014 check your tickets."
+      }
+    ],
+    "jackpotGrowth": [
+      {
+        "game": "Mega Millions",
+        "text": "Recent rollovers have pushed the jackpot into a higher prize tier."
+      },
+      {
+        "game": "Powerball",
+        "text": "The jackpot has rolled following draws without a top-prize winner."
+      }
+    ],
+    "note": "Winner specifics are published only when officially released."
+  },
+  "popularGames": {
+    "heading": "Most Popular Games",
+    "items": [
+      {
+        "slug": "powerball",
+        "displayName": "Powerball",
+        "jurisdiction": "Multi-State",
+        "topPrize": "$457 Million",
+        "nextDraw": "Sat, 07/11/2026",
+        "href": "/powerball",
+        "buyTickets": "/buynow/play-usa-powerball"
+      },
+      {
+        "slug": "mega-millions",
+        "displayName": "Mega Millions",
+        "jurisdiction": "Multi-State",
+        "topPrize": "$604 Million",
+        "nextDraw": "Fri, 07/10/2026",
+        "href": "/mega-millions",
+        "buyTickets": "/buynow/play-usa-megamillions"
+      },
+      {
+        "slug": "lotto-america",
+        "displayName": "Lotto America",
+        "jurisdiction": "Multi-State",
+        "topPrize": "$32.86 Million",
+        "nextDraw": "Sat, 07/11/2026",
+        "href": "/lotto-america",
+        "buyTickets": "/buynow/play-usa-lottoamerica"
+      },
+      {
+        "slug": "cash4life",
+        "displayName": "Cash4Life",
+        "jurisdiction": "Multi-State",
+        "topPrize": "$1,000/day for life",
+        "nextDraw": "Daily",
+        "href": "/cash4life",
+        "buyTickets": "/buynow/play-usa-cash4life"
+      },
+      {
+        "slug": "florida-lotto",
+        "displayName": "Florida Lotto",
+        "jurisdiction": "Florida",
+        "topPrize": "$1.5 Million",
+        "nextDraw": "Sat, 07/11/2026",
+        "href": "/fl/florida-lotto",
+        "buyTickets": null
+      },
+      {
+        "slug": "superlotto-plus",
+        "displayName": "SuperLotto Plus",
+        "jurisdiction": "California",
+        "topPrize": "$18 Million",
+        "nextDraw": "Sat, 07/11/2026",
+        "href": "/ca/superlotto-plus",
+        "buyTickets": null
+      }
+    ]
+  },
+  "jackpotHistory": {
+    "heading": "Jackpot Snapshot & Comparison",
+    "intro": "Current estimated jackpots and how they compare with the previous draw. Estimates are set by each lottery and can change before the drawing.",
+    "futureSeriesNote": "Historical jackpot series (for a future chart) will come from the API/DB. No chart is rendered until real historical data is available \u2014 do not display simulated trends.",
+    "items": [
+      {
+        "game": "Powerball",
+        "href": "/powerball",
+        "current": "$457 Million",
+        "previous": "$435 Million",
+        "change": "+$22 Million",
+        "nextDraw": "Sat, 07/11/2026",
+        "status": "Rolled \u2014 no top-prize winner in the last draw"
+      },
+      {
+        "game": "Mega Millions",
+        "href": "/mega-millions",
+        "current": "$604 Million",
+        "previous": "$576 Million",
+        "change": "+$28 Million",
+        "nextDraw": "Fri, 07/10/2026",
+        "status": "Rolled \u2014 no top-prize winner in the last draw"
+      },
+      {
+        "game": "Lotto America",
+        "href": "/lotto-america",
+        "current": "$32.86 Million",
+        "nextDraw": "Sat, 07/11/2026",
+        "status": "Estimated jackpot"
+      }
+    ]
+  },
+  "systems": {
+    "heading": "Lottery Systems & Number Analysis",
+    "intro": "Explore how players use number patterns and systems. These tools are for exploration and entertainment only \u2014 lottery draws are random and outcomes cannot be predicted or guaranteed.",
+    "sections": [
+      {
+        "title": "Number analysis",
+        "body": "Review historical frequencies (hot/cold numbers) for exploration. Past results do not affect future draws."
+      },
+      {
+        "title": "Play responsibly",
+        "list": [
+          "Set a budget",
+          "Odds are fixed for every draw",
+          "No system can guarantee a win"
+        ]
+      }
+    ]
+  },
+  "blog": {
+    "heading": "Lottery Blog & Guides",
+    "items": [
+      {
+        "title": "How to claim a lottery prize",
+        "date": "2026-07-05",
+        "category": "Guides",
+        "excerpt": "Small and large prize claim steps explained.",
+        "href": "/blog"
+      },
+      {
+        "title": "Understanding lottery taxes",
+        "date": "2026-07-02",
+        "category": "Taxes",
+        "excerpt": "Federal and state withholding, explained simply.",
+        "href": "/blog"
+      },
+      {
+        "title": "Using AI-assisted lottery tools responsibly",
+        "date": "2026-06-28",
+        "category": "AI & Tools",
+        "excerpt": "What AI-assisted exploration can and cannot do \u2014 draws are random.",
+        "href": "/blog"
+      }
+    ]
+  },
+  "newsletter": {
+    "title": "Subscribe to our Newsletter",
+    "text": "Get Powerball and Mega Millions winning numbers and jackpot updates by email. Join now for the latest US lottery results and jackpot alerts.",
+    "emailPlaceholder": "Email address"
+  },
+  "faqs": {
+    "heading": "Frequently Asked Questions",
+    "visibleOnPage": true,
+    "schemaEligible": true,
+    "items": [
+      {
+        "q": "Where can I check today's US lottery results?",
+        "a": "Today's winning numbers for Powerball, Mega Millions, and every state lottery appear on this page and each state's page, updated after every official drawing."
+      },
+      {
+        "q": "How do I find my state's lottery results?",
+        "a": "Use 'Find Your State Lottery' or 'Browse Lottery Results by State' to open your state's page."
+      },
+      {
+        "q": "Can any tool predict winning numbers?",
+        "a": "No. Lottery draws are random; no tool or system can predict or guarantee winning numbers. Our tools are for information and entertainment only."
+      }
+    ]
+  },
+  "adSlotRefs": {
+    "note": "Home ad slots (homePageSlots in ad-slot-definitions.json). Fixed GAM placements; positions preserved.",
+    "top": [
+      "hp_top_billboard"
+    ],
+    "inContent": [
+      "hp_mid_leaderboard",
+      "hp_mid_large_leaderboard_pos1",
+      "hp_mid_billboard_pos1",
+      "hp_mid_large_leaderboard_pos2",
+      "hp_mid_billboard_pos2",
+      "hp_mid_large_leaderboard_pos3",
+      "hp_mid_billboard_pos3",
+      "hp_mid_large_leaderboard_pos4"
+    ],
+    "rightRail": [
+      "hp_side_halfpage_pos1",
+      "hp_side_mpu",
+      "hp_side_halfpage_pos2",
+      "hp_side_mpu_pos1",
+      "hp_side_halfpage_pos3",
+      "hp_side_halfpage_pos4"
+    ],
+    "mobileInContent": [
+      "hp_mobile_leaderboard_pos1",
+      "hp_mobile_leaderboard_pos2",
+      "hp_mobile_leaderboard_pos3",
+      "hp_mobile_leaderboard_pos4"
+    ],
+    "stickyFooterAd": "hp_bottom_large_leaderboard_sticky"
+  },
+  "contentMeta": {
+    "source": "Official state lottery draw results (multi-state consortium for Powerball & Mega Millions)",
+    "reviewStatus": "published",
+    "lastReviewed": "July 9, 2026 ET",
+    "note": "Results reviewed after each official drawing (draft \u2192 review \u2192 publish workflow for future admin/agent edits)."
+  },
+  "liveNews": {
+    "heading": "Live Lottery News",
+    "intro": "Latest US lottery news, jackpot milestones, and player guides.",
+    "futureSource": "DB/API/admin-driven",
+    "items": [
+      {
+        "category": "Jackpots",
+        "date": "2026-07-09",
+        "title": "Mega Millions climbs to $604 Million",
+        "summary": "A rollover pushes the Mega Millions jackpot higher ahead of Friday\u2019s drawing.",
+        "image": null,
+        "href": "/blog"
+      },
+      {
+        "category": "Powerball",
+        "date": "2026-07-08",
+        "title": "Powerball rolls to $457 Million",
+        "summary": "No top-prize winner means the Powerball jackpot keeps growing.",
+        "image": null,
+        "href": "/blog"
+      },
+      {
+        "category": "Guides",
+        "date": "2026-07-07",
+        "title": "How to claim a large lottery prize",
+        "summary": "Step-by-step guidance for claiming bigger prizes at state lottery offices.",
+        "image": null,
+        "href": "/blog"
+      }
+    ]
+  },
+  "insider": {
+    "heading": "Lottery Corner Insider",
+    "subheading": "Free tools and alerts to help you play smarter \u2014 for entertainment and information only.",
+    "features": [
+      {
+        "title": "Favorite games",
+        "desc": "Save your games for one-tap results."
+      },
+      {
+        "title": "Jackpot alerts",
+        "desc": "Get notified when jackpots climb."
+      },
+      {
+        "title": "AI-assisted pattern exploration",
+        "desc": "Explore historical patterns. No tool can predict or guarantee winning numbers."
+      },
+      {
+        "title": "Personalized tools",
+        "desc": "Smart picks and number analysis for exploration."
+      }
+    ],
+    "cta": {
+      "label": "Sign in to explore",
+      "href": "#insider"
+    },
+    "loginGated": true
+  }
+}

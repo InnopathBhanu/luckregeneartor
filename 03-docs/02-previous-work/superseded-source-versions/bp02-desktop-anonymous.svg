@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="920" viewBox="0 0 1440 920">
+<defs>
+  <style>
+    .title { font: 700 18px Arial, sans-serif; fill:#172033; }
+    .label { font: 600 13px Arial, sans-serif; fill:#172033; }
+    .small { font: 400 11px Arial, sans-serif; fill:#48566A; }
+    .tiny { font: 400 9px Arial, sans-serif; fill:#5E6B7C; }
+  </style>
+  <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity=".14"/>
+  </filter>
+</defs>
+<rect width="100%" height="100%" fill="#F5F7FA"/>
+<text x="24" y="30" class="title">Desktop shell — anonymous visitor</text>
+<rect x="20" y="50" width="1400" height="36" rx="0" fill="#0B1F3A" stroke="#0B1F3A" stroke-width="1"/>
+<text x="40" y="73" text-anchor="start" class="small" fill="#FFFFFF">Jackpots · Result status · State selector · Responsible Play</text>
+<rect x="20" y="86" width="1400" height="76" rx="0" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<rect x="42" y="105" width="180" height="38" rx="6" fill="#0B1F3A" stroke="#0B1F3A" stroke-width="1"/>
+<text x="132" y="130" text-anchor="middle" class="label" fill="#FFFFFF">LOTTERY CORNER</text>
+<rect x="250" y="103" width="510" height="42" rx="21" fill="#F0F3F7" stroke="#D7DEE8" stroke-width="1"/>
+<text x="275" y="129" text-anchor="start" class="small">Search states, games, results, news or questions…</text>
+<rect x="790" y="103" width="220" height="42" rx="21" fill="#E8F7F7" stroke="#00A7A5" stroke-width="1"/>
+<text x="900" y="129" text-anchor="middle" class="label" fill="#007B79">Ask LotteryCorner AI</text>
+<rect x="1190" y="103" width="190" height="42" rx="21" fill="#FFFFFF" stroke="#1F5EFF" stroke-width="1"/>
+<text x="1285" y="129" text-anchor="middle" class="label" fill="#1F5EFF">Sign in / Insider</text>
+<rect x="20" y="162" width="1400" height="48" rx="0" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1"/>
+<text x="70" y="192" text-anchor="start" class="label">Results</text>
+<text x="200" y="192" text-anchor="start" class="label">States</text>
+<text x="330" y="192" text-anchor="start" class="label">Games</text>
+<text x="460" y="192" text-anchor="start" class="label">Jackpots</text>
+<text x="590" y="192" text-anchor="start" class="label">Tools</text>
+<text x="720" y="192" text-anchor="start" class="label">News</text>
+<text x="850" y="192" text-anchor="start" class="label">Community</text>
+<rect x="20" y="210" width="1400" height="42" rx="0" fill="#EEF3FA" stroke="#D7DEE8" stroke-width="1"/>
+<text x="44" y="236" text-anchor="start" class="small">Home  ›  Florida  ›  Powerball</text>
+<text x="1180" y="236" text-anchor="start" class="small">Follow · Share · Source checked</text>
+<rect x="70" y="280" width="930" height="180" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<text x="96" y="313" text-anchor="start" class="label">PRIMARY PAGE CONTENT / IMMEDIATE USER JOB</text>
+<text x="96" y="338" text-anchor="start" class="small">Winning numbers, jackpot, article, tool result or forum question appears first.</text>
+<rect x="96" y="360" width="300" height="68" rx="8" fill="#EDF4FF" stroke="#BCD1FF" stroke-width="1"/>
+<text x="246" y="389" text-anchor="middle" class="label">Core fact / action</text>
+<text x="246" y="410" text-anchor="middle" class="tiny">No ad or signup before this</text>
+<rect x="1025" y="280" width="345" height="180" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<text x="1050" y="313" text-anchor="start" class="label">CONTEXT RAIL</text>
+<text x="1050" y="339" text-anchor="start" class="small">Next draw · related tools</text>
+<text x="1050" y="361" text-anchor="start" class="small">relevant discussion · buy eligibility</text>
+<rect x="70" y="482" width="930" height="124" rx="8" fill="#EAF9F8" stroke="#7FD5D2" stroke-width="1" filter="url(#shadow)"/>
+<text x="96" y="514" text-anchor="start" class="label" fill="#007B79">LOTTERYCORNER AI — CONTEXTUAL ENTRY</text>
+<text x="96" y="540" text-anchor="start" class="small">Suggested question based on this page + one complete public answer.</text>
+<rect x="96" y="558" width="620" height="32" rx="16" fill="#FFFFFF" stroke="#7FD5D2" stroke-width="1"/>
+<text x="112" y="579" text-anchor="start" class="small">Ask about this draw, rule, article, tool or discussion…</text>
+<rect x="738" y="558" width="220" height="32" rx="16" fill="#00A7A5" stroke="#00A7A5" stroke-width="1"/>
+<text x="848" y="579" text-anchor="middle" class="label" fill="#FFFFFF">Ask AI</text>
+<rect x="1025" y="482" width="345" height="124" rx="8" fill="#FFFFFF" stroke="#E4C466" stroke-width="1" filter="url(#shadow)"/>
+<text x="1050" y="514" text-anchor="start" class="label">AD / AFFILIATE ZONE</text>
+<text x="1050" y="539" text-anchor="start" class="small">Only after the primary task.</text>
+<text x="1050" y="562" text-anchor="start" class="small">State-aware and clearly labeled.</text>
+<rect x="70" y="630" width="300" height="160" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<text x="94" y="662" text-anchor="start" class="label">INTERESTING FACT</text>
+<text x="94" y="688" text-anchor="start" class="small">Historical or contextual</text>
+<text x="94" y="710" text-anchor="start" class="small">fact with evidence.</text>
+<rect x="385" y="630" width="300" height="160" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<text x="409" y="662" text-anchor="start" class="label">COMMUNITY PULSE</text>
+<text x="409" y="688" text-anchor="start" class="small">Real discussions and</text>
+<text x="409" y="710" text-anchor="start" class="small">unanswered questions.</text>
+<rect x="700" y="630" width="300" height="160" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<text x="724" y="662" text-anchor="start" class="label">PRIMARY NEXT ACTION</text>
+<text x="724" y="688" text-anchor="start" class="small">One best continuation,</text>
+<text x="724" y="710" text-anchor="start" class="small">not a CTA wall.</text>
+<rect x="1025" y="630" width="345" height="160" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<text x="1050" y="662" text-anchor="start" class="label">RETURN / INVESTMENT</text>
+<text x="1050" y="688" text-anchor="start" class="small">Save · Follow · Notify</text>
+<text x="1050" y="710" text-anchor="start" class="small">Install app · Prefer on Google</text>
+<rect x="20" y="820" width="1400" height="70" rx="0" fill="#0B1F3A" stroke="#0B1F3A" stroke-width="1"/>
+<text x="50" y="850" text-anchor="start" class="small" fill="#FFFFFF">Footer: States · Games · Results · Tools · News · Community · Policies</text>
+<text x="50" y="874" text-anchor="start" class="tiny" fill="#D7E2F0">Independent publisher · AI policy · Affiliate disclosure · Responsible Play</text>
+</svg>

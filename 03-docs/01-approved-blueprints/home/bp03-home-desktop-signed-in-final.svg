@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="2680" viewBox="0 0 1440 2680">
+<defs><style>
+.h1{font:700 22px Arial,sans-serif;fill:#172033} .h2{font:700 16px Arial,sans-serif;fill:#172033}
+.label{font:600 13px Arial,sans-serif;fill:#172033} .small{font:400 11px Arial,sans-serif;fill:#48566A}
+.tiny{font:400 9px Arial,sans-serif;fill:#5E6B7C}
+</style><filter id="s"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity=".13"/></filter></defs>
+<rect width="100%" height="100%" fill="#F5F7FA"/>
+<text x="24" y="30" class="h1">LotteryCorner Home — final desktop signed-in / Insider structure</text>
+<text x="24" y="48" class="tiny">Illustrative structure — all values are placeholders; ad sizes inherit production configuration</text>
+<rect x="20" y="60" width="1400" height="104" rx="0" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<rect x="42" y="82" width="180" height="38" rx="5" fill="#0B1F3A" stroke="#0B1F3A"/>
+<text x="132" y="107" text-anchor="middle" class="label" fill="#FFF">LOTTERY CORNER</text>
+<rect x="250" y="80" width="470" height="42" rx="21" fill="#F0F3F7" stroke="#D7DEE8"/>
+<text x="275" y="106" text-anchor="start" class="small">Search LotteryCorner…</text>
+<rect x="750" y="80" width="230" height="42" rx="21" fill="#E8F7F7" stroke="#00A7A5"/>
+<text x="865" y="106" text-anchor="middle" class="label" fill="#007B79">Ask LotteryCorner AI</text>
+<text x="1020" y="106" text-anchor="start" class="label" fill="#1F5EFF">Alerts 3     My LotteryCorner ▾</text>
+<text x="70" y="150" text-anchor="start" class="label">Results     My Games     My Numbers     Jackpots     Tools     News     Community</text>
+<rect x="50" y="195" width="1340" height="190" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="78" y="230" text-anchor="start" class="h1">H-01S  WHAT CHANGED FOR ME</text>
+<text x="78" y="260" text-anchor="start" class="small">2 saved sets checked · 3 followed draws next · 1 new reply</text>
+<rect x="78" y="292" width="245" height="64" rx="8" fill="#EDF4FF" stroke="#BCD1FF"/>
+<text x="96" y="318" text-anchor="start" class="label">My matches</text>
+<text x="96" y="342" text-anchor="start" class="tiny">Exact outcomes</text>
+<rect x="348" y="292" width="245" height="64" rx="8" fill="#EDF4FF" stroke="#BCD1FF"/>
+<text x="366" y="318" text-anchor="start" class="label">Upcoming</text>
+<text x="366" y="342" text-anchor="start" class="tiny">Live + next draws</text>
+<rect x="618" y="292" width="245" height="64" rx="8" fill="#EDF4FF" stroke="#BCD1FF"/>
+<text x="636" y="318" text-anchor="start" class="label">Community</text>
+<text x="636" y="342" text-anchor="start" class="tiny">Replies and following</text>
+<rect x="920" y="235" width="420" height="110" rx="10" fill="#EAF9F8" stroke="#7FD5D2"/>
+<text x="945" y="268" text-anchor="start" class="label" fill="#007B79">MY AI BRIEF</text>
+<text x="945" y="298" text-anchor="start" class="small">Explain changes, numbers or followed games</text>
+<rect x="230" y="415" width="980" height="84" rx="4" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="455.0" text-anchor="middle" class="small">AD-H00 — INHERITED TOP SLOT</text>
+<text x="720.0" y="475.0" text-anchor="middle" class="tiny">Inherited production slot / size</text>
+<rect x="50" y="535" width="990" height="310" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="78" y="570" text-anchor="start" class="h2">H-02S  FOLLOWED FEATURED GAME — POWERBALL</text>
+<text x="78" y="610" text-anchor="start" class="h1">$XXXM jackpot · Latest numbers · 2 saved sets checked</text>
+<text x="78" y="648" text-anchor="start" class="small">No winning match · Next draw alert enabled</text>
+<rect x="78" y="680" width="560" height="60" rx="8" fill="#EAF9F8" stroke="#7FD5D2"/>
+<text x="358" y="717" text-anchor="middle" class="label" fill="#007B79">Saved-set comparison and exact result</text>
+<text x="78" y="778" text-anchor="start" class="small" fill="#1F5EFF">Result · Match history · Continue system · Ask AI · Discussion</text>
+<rect x="1070" y="535" width="320" height="310" rx="5" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="1230" y="680" text-anchor="middle" class="small">AD-H01R / INSIDER OFFER</text>
+<rect x="50" y="890" width="410" height="150" rx="10" fill="#EAF9F8" stroke="#7FD5D2" filter="url(#s)"/>
+<text x="74" y="925" text-anchor="start" class="h2">H-03S My Matches</text>
+<text x="74" y="958" text-anchor="start" class="small">Exact sets and outcomes</text>
+<text x="74" y="1005" text-anchor="start" class="label" fill="#1F5EFF">Open →</text>
+<rect x="495" y="890" width="410" height="150" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="519" y="925" text-anchor="start" class="h2">H-04S Live &amp; Upcoming</text>
+<text x="519" y="958" text-anchor="start" class="small">Status, schedules and alerts</text>
+<text x="519" y="1005" text-anchor="start" class="label" fill="#1F5EFF">Open →</text>
+<rect x="940" y="890" width="410" height="150" rx="10" fill="#FFF6D9" stroke="#E4C466" filter="url(#s)"/>
+<text x="964" y="925" text-anchor="start" class="h2">H-05S Worth Knowing</text>
+<text x="964" y="958" text-anchor="start" class="small">Why it is relevant to me</text>
+<text x="964" y="1005" text-anchor="start" class="label" fill="#1F5EFF">Open →</text>
+<rect x="250" y="1080" width="940" height="82" rx="4" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="1119.0" text-anchor="middle" class="small">AD-HS01 — AFTER PERSONAL UTILITY</text>
+<text x="720.0" y="1139.0" text-anchor="middle" class="tiny">Inherited production slot / size</text>
+<rect x="50" y="1210" width="410" height="145" rx="10" fill="#F2EDFF" stroke="#C9B8ED" filter="url(#s)"/>
+<text x="74" y="1245" text-anchor="start" class="h2">H-06S Following &amp; Community</text>
+<text x="74" y="1280" text-anchor="start" class="small">Replies · topics · real activity</text>
+<text x="74" y="1322" text-anchor="start" class="label" fill="#1F5EFF">Continue →</text>
+<rect x="495" y="1210" width="410" height="145" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="519" y="1245" text-anchor="start" class="h2">H-07S Tools &amp; Systems</text>
+<text x="519" y="1280" text-anchor="start" class="small">Saved sets · filters · AI history</text>
+<text x="519" y="1322" text-anchor="start" class="label" fill="#1F5EFF">Continue →</text>
+<rect x="940" y="1210" width="410" height="145" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="964" y="1245" text-anchor="start" class="h2">H-08S News, Blog &amp; Winners</text>
+<text x="964" y="1280" text-anchor="start" class="small">Relevant current and durable stories</text>
+<text x="964" y="1322" text-anchor="start" class="label" fill="#1F5EFF">Continue →</text>
+<rect x="50" y="1385" width="410" height="145" rx="10" fill="#FFF1E9" stroke="#F1B48E" filter="url(#s)"/>
+<text x="74" y="1420" text-anchor="start" class="h2">H-09S Where to Play</text>
+<text x="74" y="1455" text-anchor="start" class="small">Confirmed state · qualified options</text>
+<text x="74" y="1497" text-anchor="start" class="label" fill="#1F5EFF">Continue →</text>
+<rect x="495" y="1385" width="410" height="145" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="519" y="1420" text-anchor="start" class="h2">H-10S Controls</text>
+<text x="519" y="1455" text-anchor="start" class="small">Alerts · memory · app · privacy</text>
+<text x="519" y="1497" text-anchor="start" class="label" fill="#1F5EFF">Continue →</text>
+<rect x="940" y="1385" width="410" height="145" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="964" y="1420" text-anchor="start" class="h2">Broad Discovery</text>
+<text x="964" y="1455" text-anchor="start" class="small">Other jackpots · games · states</text>
+<text x="964" y="1497" text-anchor="start" class="label" fill="#1F5EFF">Continue →</text>
+<text x="50" y="1615" text-anchor="start" class="h2">PUBLIC DISCOVERY REMAINS AVAILABLE</text>
+<rect x="50" y="1640" width="235" height="100" rx="8" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="68" y="1675" text-anchor="start" class="label">Popular Games</text>
+<text x="68" y="1712" text-anchor="start" class="small" fill="#1F5EFF">Explore →</text>
+<rect x="315" y="1640" width="235" height="100" rx="8" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="333" y="1675" text-anchor="start" class="label">Jackpot History</text>
+<text x="333" y="1712" text-anchor="start" class="small" fill="#1F5EFF">Explore →</text>
+<rect x="580" y="1640" width="235" height="100" rx="8" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="598" y="1675" text-anchor="start" class="label">News</text>
+<text x="598" y="1712" text-anchor="start" class="small" fill="#1F5EFF">Explore →</text>
+<rect x="845" y="1640" width="235" height="100" rx="8" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="863" y="1675" text-anchor="start" class="label">Community</text>
+<text x="863" y="1712" text-anchor="start" class="small" fill="#1F5EFF">Explore →</text>
+<rect x="1110" y="1640" width="235" height="100" rx="8" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="1128" y="1675" text-anchor="start" class="label">State Directory</text>
+<text x="1128" y="1712" text-anchor="start" class="small" fill="#1F5EFF">Explore →</text>
+<rect x="250" y="1790" width="940" height="84" rx="4" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="1830.0" text-anchor="middle" class="small">AD-H04/H05 — LOWER SLOT</text>
+<text x="720.0" y="1850.0" text-anchor="middle" class="tiny">Inherited production slot / size</text>
+<rect x="50" y="1910" width="1340" height="180" rx="0" fill="#0B1F3A" stroke="#0B1F3A"/>
+<text x="78" y="1950" text-anchor="start" class="h2" fill="#FFF">My LotteryCorner Footer &amp; Controls</text>
+<text x="78" y="1985" text-anchor="start" class="small" fill="#D7E2F0">Account · AI memory · Notifications · Responsible Play · Policies · Support</text>
+</svg>

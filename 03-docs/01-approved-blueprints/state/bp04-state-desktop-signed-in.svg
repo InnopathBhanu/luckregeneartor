@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="2850" viewBox="0 0 1440 2850">
+<defs>
+  <style>
+    .h1 { font: 700 22px Arial, sans-serif; fill:#172033; }
+    .h2 { font: 700 16px Arial, sans-serif; fill:#172033; }
+    .label { font: 600 13px Arial, sans-serif; fill:#172033; }
+    .small { font: 400 11px Arial, sans-serif; fill:#48566A; }
+    .tiny { font: 400 9px Arial, sans-serif; fill:#5E6B7C; }
+  </style>
+  <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity=".13"/>
+  </filter>
+</defs>
+<rect width="100%" height="100%" fill="#F5F7FA"/>
+<text x="24" y="30" class="h1">LotteryCorner State Hub — desktop signed-in / Insider template</text>
+<text x="24" y="48" class="tiny">Illustrative state-template structure — data and amounts are placeholders</text>
+<rect x="20" y="60" width="1400" height="104" rx="0" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<rect x="42" y="82" width="180" height="38" rx="5" fill="#0B1F3A" stroke="#0B1F3A"/>
+<text x="132" y="107" text-anchor="middle" class="label" fill="#FFFFFF">LOTTERY CORNER</text>
+<rect x="250" y="80" width="450" height="42" rx="21" fill="#F0F3F7" stroke="#D7DEE8"/>
+<text x="275" y="106" text-anchor="start" class="small">Search Florida results, games or questions…</text>
+<rect x="730" y="80" width="230" height="42" rx="21" fill="#E8F7F7" stroke="#00A7A5"/>
+<text x="845" y="106" text-anchor="middle" class="label" fill="#007B79">Ask Florida lottery AI</text>
+<text x="1000" y="106" text-anchor="start" class="label" fill="#1F5EFF">Alerts 4     My LotteryCorner ▾</text>
+<text x="70" y="150" text-anchor="start" class="label">Results     My Games     My Numbers     Tools     News     Florida Community</text>
+<rect x="50" y="190" width="1340" height="195" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="78" y="225" text-anchor="start" class="tiny" fill="#1F5EFF">S-01S  MY FLORIDA LOTTERY HOME</text>
+<text x="78" y="263" text-anchor="start" class="h1">What changed for my Florida games</text>
+<text x="78" y="293" text-anchor="start" class="small">Followed results, saved matches, live draws, replies and state-specific next actions.</text>
+<rect x="78" y="320" width="225" height="44" rx="8" fill="#EDF4FF" stroke="#BCD1FF"/>
+<text x="92" y="346" text-anchor="start" class="tiny">Saved sets checked</text>
+<text x="273" y="348" text-anchor="middle" class="label" fill="#1F5EFF">3</text>
+<rect x="328" y="320" width="225" height="44" rx="8" fill="#EDF4FF" stroke="#BCD1FF"/>
+<text x="342" y="346" text-anchor="start" class="tiny">Upcoming draws</text>
+<text x="523" y="348" text-anchor="middle" class="label" fill="#1F5EFF">4</text>
+<rect x="578" y="320" width="225" height="44" rx="8" fill="#EDF4FF" stroke="#BCD1FF"/>
+<text x="592" y="346" text-anchor="start" class="tiny">New replies</text>
+<text x="773" y="348" text-anchor="middle" class="label" fill="#1F5EFF">2</text>
+<rect x="860" y="225" width="480" height="120" rx="10" fill="#EAF9F8" stroke="#7FD5D2"/>
+<text x="885" y="257" text-anchor="start" class="label" fill="#007B79">MY FLORIDA AI BRIEF</text>
+<text x="885" y="287" text-anchor="start" class="small">What changed · check saved numbers · explain a rule</text>
+<rect x="885" y="305" width="220" height="30" rx="15" fill="#00A7A5" stroke="#00A7A5"/>
+<text x="995" y="325" text-anchor="middle" class="label" fill="#FFFFFF">Open personal AI</text>
+<rect x="230" y="420" width="980" height="82" rx="5" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="459.0" text-anchor="middle" class="small">STATE AD-S00 — INHERITED TOP SLOT</text>
+<text x="720.0" y="479.0" text-anchor="middle" class="tiny">Size/ID inherited from current production configuration</text>
+<rect x="50" y="535" width="900" height="300" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="78" y="570" text-anchor="start" class="h2">S-02S  FOLLOWED FLORIDA RESULTS</text>
+<text x="78" y="610" text-anchor="start" class="label">Florida Lotto</text>
+<text x="300" y="610" text-anchor="start" class="small">Latest verified numbers</text>
+<text x="610" y="610" text-anchor="start" class="small" fill="#007B79">1 saved set checked</text>
+<text x="850" y="610" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="78" y="659" text-anchor="start" class="label">Pick 3 Evening</text>
+<text x="300" y="659" text-anchor="start" class="small">Latest draw</text>
+<text x="610" y="659" text-anchor="start" class="small" fill="#007B79">2 sets checked</text>
+<text x="850" y="659" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="78" y="708" text-anchor="start" class="label">Powerball</text>
+<text x="300" y="708" text-anchor="start" class="small">Latest draw / next jackpot</text>
+<text x="610" y="708" text-anchor="start" class="small" fill="#007B79">Followed</text>
+<text x="850" y="708" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="78" y="757" text-anchor="start" class="label">Mega Millions</text>
+<text x="300" y="757" text-anchor="start" class="small">Next draw</text>
+<text x="610" y="757" text-anchor="start" class="small" fill="#007B79">Jackpot alert</text>
+<text x="850" y="757" text-anchor="start" class="tiny" fill="#1F5EFF">Open →</text>
+<text x="78" y="812" text-anchor="start" class="small" fill="#1F5EFF">View all Florida results · Check my numbers</text>
+<rect x="975" y="535" width="415" height="300" rx="10" fill="#FFF6D9" stroke="#E4C466" filter="url(#s)"/>
+<text x="1001" y="570" text-anchor="start" class="h2">S-03S  PERSONAL NEXT ACTION</text>
+<text x="1001" y="606" text-anchor="start" class="small">Pick 3 Evening result is pending.</text>
+<text x="1001" y="635" text-anchor="start" class="small">A followed jackpot draws next.</text>
+<text x="1001" y="664" text-anchor="start" class="small">One Florida thread has new replies.</text>
+<rect x="1001" y="700" width="210" height="34" rx="17" fill="#1F5EFF" stroke="#1F5EFF"/>
+<text x="1106" y="722" text-anchor="middle" class="label" fill="#FFFFFF">Open highest priority</text>
+<rect x="1001" y="748" width="210" height="34" rx="17" fill="#FFF" stroke="#D76722"/>
+<text x="1106" y="770" text-anchor="middle" class="label" fill="#B45118">Where to play</text>
+<text x="1001" y="805" text-anchor="start" class="tiny">Only after confirmed eligibility</text>
+<rect x="50" y="880" width="420" height="155" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="74" y="915" text-anchor="start" class="h2">S-04S  LIVE &amp; UPCOMING</text>
+<text x="74" y="950" text-anchor="start" class="small">Followed draw status and schedule</text>
+<text x="74" y="1005" text-anchor="start" class="label" fill="#1F5EFF">Open →</text>
+<rect x="500" y="880" width="420" height="155" rx="10" fill="#EAF9F8" stroke="#7FD5D2" filter="url(#s)"/>
+<text x="524" y="915" text-anchor="start" class="h2">S-05S  MY MATCHES</text>
+<text x="524" y="950" text-anchor="start" class="small">Exact outcomes; no near-miss pressure</text>
+<text x="524" y="1005" text-anchor="start" class="label" fill="#1F5EFF">Open →</text>
+<rect x="950" y="880" width="420" height="155" rx="10" fill="#EDF4FF" stroke="#BCD1FF" filter="url(#s)"/>
+<text x="974" y="915" text-anchor="start" class="h2">S-06S  ALERTS</text>
+<text x="974" y="950" text-anchor="start" class="small">Results, jackpots, replies and quiet hours</text>
+<text x="974" y="1005" text-anchor="start" class="label" fill="#1F5EFF">Open →</text>
+<rect x="250" y="1075" width="940" height="80" rx="5" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="1113.0" text-anchor="middle" class="small">STATE AD-SS01 — AFTER PERSONAL UTILITY</text>
+<text x="720.0" y="1133.0" text-anchor="middle" class="tiny">Size/ID inherited from current production configuration</text>
+<rect x="50" y="1200" width="420" height="165" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="74" y="1235" text-anchor="start" class="h2">S-07S  MY FLORIDA TOOLS</text>
+<text x="74" y="1272" text-anchor="start" class="small">Recent filters · saved systems · number sets</text>
+<text x="74" y="1327" text-anchor="start" class="label" fill="#1F5EFF">Continue →</text>
+<rect x="500" y="1200" width="420" height="165" rx="10" fill="#F2EDFF" stroke="#C9B8ED" filter="url(#s)"/>
+<text x="524" y="1235" text-anchor="start" class="h2">S-08S  FLORIDA COMMUNITY</text>
+<text x="524" y="1272" text-anchor="start" class="small">Replies · followed threads · unanswered questions</text>
+<text x="524" y="1327" text-anchor="start" class="label" fill="#1F5EFF">Continue →</text>
+<rect x="950" y="1200" width="420" height="165" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="974" y="1235" text-anchor="start" class="h2">S-09S  FLORIDA NEWS &amp; WINNERS</text>
+<text x="974" y="1272" text-anchor="start" class="small">Relevant stories · guides · claim updates</text>
+<text x="974" y="1327" text-anchor="start" class="label" fill="#1F5EFF">Continue →</text>
+<rect x="50" y="1390" width="420" height="165" rx="10" fill="#FFF1E9" stroke="#F1B48E" filter="url(#s)"/>
+<text x="74" y="1425" text-anchor="start" class="h2">S-10S  WHERE TO PLAY</text>
+<text x="74" y="1462" text-anchor="start" class="small">Confirmed state and provider rules</text>
+<text x="74" y="1517" text-anchor="start" class="label" fill="#1F5EFF">Continue →</text>
+<rect x="500" y="1390" width="420" height="165" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="524" y="1425" text-anchor="start" class="h2">S-11S  SCRATCHERS</text>
+<text x="524" y="1462" text-anchor="start" class="small">Followed tickets · ending games · top prizes</text>
+<text x="524" y="1517" text-anchor="start" class="label" fill="#1F5EFF">Continue →</text>
+<rect x="950" y="1390" width="420" height="165" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="974" y="1425" text-anchor="start" class="h2">S-12S  MY CONTROLS</text>
+<text x="974" y="1462" text-anchor="start" class="small">State follow · AI memory · privacy · Responsible Play</text>
+<text x="974" y="1517" text-anchor="start" class="label" fill="#1F5EFF">Continue →</text>
+<rect x="50" y="1620" width="1340" height="180" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="78" y="1655" text-anchor="start" class="h2">BROAD FLORIDA DISCOVERY & ESSENTIALS & STATE ESSENTIALS</text>
+<text x="78" y="1700" text-anchor="start" class="label" fill="#1F5EFF">All Florida games</text>
+<text x="498" y="1700" text-anchor="start" class="label" fill="#1F5EFF">Claims &amp; taxes</text>
+<text x="918" y="1700" text-anchor="start" class="label" fill="#1F5EFF">Jackpot history</text>
+<text x="78" y="1745" text-anchor="start" class="label" fill="#1F5EFF">Scratchers</text>
+<text x="498" y="1745" text-anchor="start" class="label" fill="#1F5EFF">Winner stories</text>
+<text x="918" y="1745" text-anchor="start" class="label" fill="#1F5EFF">State directory</text>
+<rect x="250" y="1840" width="940" height="80" rx="5" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="1878.0" text-anchor="middle" class="small">STATE AD-SS02 — LOWER SLOT</text>
+<text x="720.0" y="1898.0" text-anchor="middle" class="tiny">Size/ID inherited from current production configuration</text>
+<rect x="50" y="1960" width="1340" height="175" rx="0" fill="#0B1F3A" stroke="#0B1F3A"/>
+<text x="78" y="2000" text-anchor="start" class="h2" fill="#FFFFFF">My Florida / My LotteryCorner footer and controls</text>
+<text x="78" y="2038" text-anchor="start" class="small" fill="#D7E2F0">Notifications · AI memory · account · state preference · policies · Responsible Play</text>
+</svg>

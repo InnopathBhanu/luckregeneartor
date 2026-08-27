@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "purpose": "Normalized payout example. The source feed's <payout> element contains ESCAPED nested XML (&lt;payoutInfo&gt;...). This file shows the NORMALIZED JSON the UI consumes. The browser UI must NOT parse raw/escaped XML — a server-side API/parser decodes it (unescape -> parse <payoutInfo>) and emits structured rows like below. No payout data is lost in transformation.",
+    "sourceFeed": "04-sample-data/source-xml/latest-results-lc.xml",
+    "sourceField": "payout",
+    "illustrative": true,
+    "note": "Florida sample games in the feed have no <payout>; this real example is California Fantasy 5 (gameId 314), which does. FL result cards would carry normalizedPayoutRows only when the feed provides a <payout> for that draw."
+  },
+  "sourceGameId": 314,
+  "gameName": "California-Fantasy 5",
+  "stateCode": "ca",
+  "drawDate": "2026-07-08",
+  "sourceField": "payout",
+  "sourcePayoutMeta": {
+    "escapedInSource": true,
+    "innerRoot": "payoutInfo",
+    "eventId": "1783560600314",
+    "storedDrawDateTime": "2026-07-08T18:30:00Z",
+    "storedTimezone": "UTC-in-payoutInfo (note: main feed draw fields use EST/America/New_York; payoutInfo timestamps are Z/UTC — normalize consistently)",
+    "updated": "2026-07-08T22:10:09Z"
+  },
+  "normalizedPayoutRows": [
+    { "match": "Matched 5 Of 5 Numbers", "numOfWinners": 2, "prize": 86627.00, "prizeType": "cash", "prizeDisplay": "$86,627.00" },
+    { "match": "Matched 4 Of 5 Numbers", "numOfWinners": 180, "prize": 363.00, "prizeType": "cash", "prizeDisplay": "$363.00" },
+    { "match": "Matched 3 Of 5 Numbers", "numOfWinners": 5611, "prize": 14.00, "prizeType": "cash", "prizeDisplay": "$14.00" },
+    { "match": "Matched 2 Of 5 Numbers", "numOfWinners": 60401, "prize": null, "prizeType": "freePlay", "prizeDisplay": "Free Play" }
+  ],
+  "totals": { "match": "Total Winners", "numOfWinners": 66194 },
+  "notes": [
+    "UI consumes normalizedPayoutRows + totals — NEVER the escaped <payout> XML string.",
+    "prize is numeric when a cash amount; null with prizeType 'freePlay' for non-cash prizes (e.g. 'Free Play'). Preserve the original label in prizeDisplay so no data is lost.",
+    "prizeDisplay is illustrative; final currency formatting should reuse the prize-formatting rule (05-doc R8 formatePrizeString).",
+    "Decoding is server-side only: unescape &lt;/&gt; then parse <payoutInfo><winners> rows. Corresponds to game_result.payout_xml (04-doc).",
+    "Round-trip integrity required: every <winners> row (incl. 'Total Winners') must survive normalization."
+  ]
+}

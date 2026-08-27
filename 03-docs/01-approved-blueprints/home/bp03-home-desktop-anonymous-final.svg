@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="3140" viewBox="0 0 1440 3140">
+<defs><style>
+.h1{font:700 22px Arial,sans-serif;fill:#172033} .h2{font:700 16px Arial,sans-serif;fill:#172033}
+.label{font:600 13px Arial,sans-serif;fill:#172033} .small{font:400 11px Arial,sans-serif;fill:#48566A}
+.tiny{font:400 9px Arial,sans-serif;fill:#5E6B7C}
+</style><filter id="s"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity=".13"/></filter></defs>
+<rect width="100%" height="100%" fill="#F5F7FA"/>
+<text x="24" y="30" class="h1">LotteryCorner Home — final desktop anonymous structure</text>
+<text x="24" y="48" class="tiny">Illustrative structure — all values are placeholders; ad sizes inherit production configuration</text>
+<rect x="20" y="60" width="1400" height="104" rx="0" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<rect x="42" y="82" width="180" height="38" rx="5" fill="#0B1F3A" stroke="#0B1F3A"/>
+<text x="132" y="107" text-anchor="middle" class="label" fill="#FFF">LOTTERY CORNER</text>
+<rect x="250" y="80" width="500" height="42" rx="21" fill="#F0F3F7" stroke="#D7DEE8"/>
+<text x="275" y="106" text-anchor="start" class="small">Search results, states, games, news or questions…</text>
+<rect x="780" y="80" width="230" height="42" rx="21" fill="#E8F7F7" stroke="#00A7A5"/>
+<text x="895" y="106" text-anchor="middle" class="label" fill="#007B79">Ask LotteryCorner AI</text>
+<text x="70" y="150" text-anchor="start" class="label">Results     States     Games     Jackpots     Tools     News     Community / Forums</text>
+<rect x="50" y="190" width="1340" height="150" rx="10" fill="#FFFFFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="78" y="224" text-anchor="start" class="h1">H-01  Results, jackpots and specialized lottery AI</text>
+<text x="78" y="252" text-anchor="start" class="small">Choose a state, check numbers, ask a question or jump directly to a game.</text>
+<rect x="78" y="278" width="320" height="38" rx="19" fill="#F0F3F7" stroke="#D7DEE8"/>
+<text x="96" y="302" text-anchor="start" class="small">Select state or ZIP</text>
+<rect x="410" y="278" width="190" height="38" rx="19" fill="#1F5EFF" stroke="#1F5EFF"/>
+<text x="505" y="302" text-anchor="middle" class="label" fill="#FFF">Show my results</text>
+<rect x="615" y="278" width="230" height="38" rx="19" fill="#FFF" stroke="#00A7A5"/>
+<text x="730" y="302" text-anchor="middle" class="label" fill="#007B79">Ask LotteryCorner AI</text>
+<rect x="230" y="365" width="980" height="90" rx="4" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="408.0" text-anchor="middle" class="small">AD-H00 — TOP LEADERBOARD</text>
+<text x="720.0" y="428.0" text-anchor="middle" class="tiny">Inherited production slot / size</text>
+<text x="50" y="500" text-anchor="start" class="h2">H-02A  FEATURED NATIONAL GAMES</text>
+<rect x="50" y="525" width="990" height="330" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="80" y="563" text-anchor="start" class="h2">POWERBALL</text>
+<text x="80" y="600" text-anchor="start" class="h1">Estimated jackpot  $XXX MILLION</text>
+<text x="80" y="627" text-anchor="start" class="small">Cash value $XXXM · Next draw: Day, time ET</text>
+<text x="80" y="665" text-anchor="start" class="label">Latest winning numbers</text>
+<rect x="80" y="680" width="600" height="62" rx="8" fill="#EDF4FF" stroke="#BCD1FF"/>
+<text x="380" y="718" text-anchor="middle" class="h2">04   05   22   50   58     + 01</text>
+<text x="80" y="776" text-anchor="start" class="small" fill="#1F5EFF">Result · Jackpot history · Check numbers · Generate · Discussion</text>
+<rect x="80" y="798" width="300" height="34" rx="17" fill="#EAF9F8" stroke="#7FD5D2"/>
+<text x="230" y="820" text-anchor="middle" class="label" fill="#007B79">Ask AI about this draw</text>
+<rect x="400" y="798" width="240" height="34" rx="17" fill="#FFF1E9" stroke="#F1B48E"/>
+<text x="520" y="820" text-anchor="middle" class="label" fill="#B45118">Where to play</text>
+<text x="700" y="563" text-anchor="start" class="label" fill="#007B79">Draw insight</text>
+<text x="700" y="590" text-anchor="start" class="small">Historical connection or jackpot milestone</text>
+<text x="700" y="620" text-anchor="start" class="small">Community: current draw reaction</text>
+<text x="700" y="650" text-anchor="start" class="small" fill="#1F5EFF">Interesting fact → evidence page</text>
+<rect x="1070" y="525" width="320" height="330" rx="4" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="1230.0" y="688.0" text-anchor="middle" class="small">AD-H01R — DESKTOP RAIL</text>
+<text x="1230.0" y="708.0" text-anchor="middle" class="tiny">Inherited production slot / size</text>
+<rect x="250" y="880" width="940" height="86" rx="4" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="921.0" text-anchor="middle" class="small">AD-H01I — FEATURED-GAME INTERSTITIAL</text>
+<text x="720.0" y="941.0" text-anchor="middle" class="tiny">Inherited production slot / size</text>
+<rect x="50" y="995" width="990" height="330" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="80" y="1033" text-anchor="start" class="h2">MEGA MILLIONS</text>
+<text x="80" y="1070" text-anchor="start" class="h1">Estimated jackpot  $XXX MILLION</text>
+<text x="80" y="1097" text-anchor="start" class="small">Cash value $XXXM · Next draw: Day, time ET</text>
+<text x="80" y="1135" text-anchor="start" class="label">Latest winning numbers</text>
+<rect x="80" y="1150" width="600" height="62" rx="8" fill="#FFF6D9" stroke="#E4C466"/>
+<text x="380" y="1188" text-anchor="middle" class="h2">25   37   59   68   70     + 10</text>
+<text x="80" y="1246" text-anchor="start" class="small" fill="#1F5EFF">Result · Jackpot history · Check numbers · Generate · Discussion</text>
+<rect x="80" y="1268" width="300" height="34" rx="17" fill="#EAF9F8" stroke="#7FD5D2"/>
+<text x="230" y="1290" text-anchor="middle" class="label" fill="#007B79">Ask AI about this draw</text>
+<rect x="400" y="1268" width="240" height="34" rx="17" fill="#FFF1E9" stroke="#F1B48E"/>
+<text x="520" y="1290" text-anchor="middle" class="label" fill="#B45118">Where to play</text>
+<text x="700" y="1033" text-anchor="start" class="label" fill="#007B79">Game context</text>
+<text x="700" y="1060" text-anchor="start" class="small">Current rule/news or jackpot insight</text>
+<text x="700" y="1090" text-anchor="start" class="small">Community: jackpot discussion</text>
+<text x="700" y="1120" text-anchor="start" class="small" fill="#1F5EFF">Follow / alert / save numbers</text>
+<rect x="1070" y="995" width="320" height="330" rx="10" fill="#FFF6D9" stroke="#E4C466" filter="url(#s)"/>
+<text x="1095" y="1030" text-anchor="start" class="label">H-02B OTHER JACKPOTS</text>
+<text x="1095" y="1075" text-anchor="start" class="label">Lotto America  $XXM</text>
+<text x="1095" y="1100" text-anchor="start" class="tiny" fill="#1F5EFF">Next draw · Where to play →</text>
+<text x="1095" y="1137" text-anchor="start" class="label">Selected state game  $XM</text>
+<text x="1095" y="1162" text-anchor="start" class="tiny" fill="#1F5EFF">Next draw · Where to play →</text>
+<text x="1095" y="1199" text-anchor="start" class="label">Compare all jackpots</text>
+<text x="1095" y="1224" text-anchor="start" class="tiny" fill="#1F5EFF">Next draw · Where to play →</text>
+<text x="50" y="1370" text-anchor="start" class="h2">H-03  LATEST U.S. AND STATE RESULTS</text>
+<rect x="50" y="1395" width="1340" height="250" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="78" y="1440" text-anchor="start" class="label">Powerball</text>
+<text x="330" y="1440" text-anchor="start" class="label">04 05 22 50 58 +01</text>
+<text x="1210" y="1440" text-anchor="start" class="small" fill="#1F5EFF">View result →</text>
+<text x="78" y="1502" text-anchor="start" class="label">Mega Millions</text>
+<text x="330" y="1502" text-anchor="start" class="label">25 37 59 68 70 +10</text>
+<text x="1210" y="1502" text-anchor="start" class="small" fill="#1F5EFF">View result →</text>
+<text x="78" y="1564" text-anchor="start" class="label">State daily games</text>
+<text x="330" y="1564" text-anchor="start" class="label">Choose state to show Pick 3 / Pick 4 / Lotto</text>
+<text x="1210" y="1564" text-anchor="start" class="small" fill="#1F5EFF">View result →</text>
+<text x="78" y="1620" text-anchor="start" class="small" fill="#1F5EFF">View all U.S. results · Select/change state · Check my numbers</text>
+<rect x="250" y="1680" width="940" height="86" rx="4" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="1721.0" text-anchor="middle" class="small">AD-H02 — POST RESULTS</text>
+<text x="720.0" y="1741.0" text-anchor="middle" class="tiny">Inherited production slot / size</text>
+<rect x="50" y="1800" width="650" height="190" rx="10" fill="#EDF4FF" stroke="#BCD1FF" filter="url(#s)"/>
+<text x="78" y="1835" text-anchor="start" class="h2">H-04  CHECK MY NUMBERS</text>
+<text x="78" y="1865" text-anchor="start" class="small">Game + numbers → exact comparison → save after value</text>
+<rect x="78" y="1895" width="430" height="38" rx="19" fill="#FFF" stroke="#BCD1FF"/>
+<text x="98" y="1919" text-anchor="start" class="small">Select game and enter numbers</text>
+<rect x="520" y="1895" width="140" height="38" rx="19" fill="#1F5EFF" stroke="#1F5EFF"/>
+<text x="590" y="1919" text-anchor="middle" class="label" fill="#FFF">Check</text>
+<rect x="730" y="1800" width="660" height="190" rx="10" fill="#EAF9F8" stroke="#7FD5D2" filter="url(#s)"/>
+<text x="758" y="1835" text-anchor="start" class="h2" fill="#007B79">H-05  LOTTERYCORNER AI DAILY BRIEF</text>
+<text x="758" y="1865" text-anchor="start" class="small">What changed today? What draws tonight? What is interesting?</text>
+<rect x="758" y="1895" width="430" height="38" rx="19" fill="#FFF" stroke="#7FD5D2"/>
+<text x="778" y="1919" text-anchor="start" class="small">Ask a lottery question…</text>
+<rect x="1200" y="1895" width="150" height="38" rx="19" fill="#00A7A5" stroke="#00A7A5"/>
+<text x="1275" y="1919" text-anchor="middle" class="label" fill="#FFF">Ask AI</text>
+<text x="50" y="2035" text-anchor="start" class="h2">H-06A/B  LIVE, RECENTLY COMPLETED &amp; UPCOMING DRAWS</text>
+<rect x="50" y="2060" width="1340" height="230" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="78" y="2105" text-anchor="start" class="tiny" fill="#C73A3A">LIVE / PENDING</text>
+<text x="220" y="2105" text-anchor="start" class="label">State Pick 3 Evening</text>
+<text x="500" y="2105" text-anchor="start" class="small">Result expected shortly</text>
+<text x="1180" y="2105" text-anchor="start" class="small" fill="#1F5EFF">Open / Follow →</text>
+<text x="78" y="2160" text-anchor="start" class="tiny" fill="#138A5B">VERIFIED</text>
+<text x="220" y="2160" text-anchor="start" class="label">State Pick 4 Midday</text>
+<text x="500" y="2160" text-anchor="start" class="small">Numbers available</text>
+<text x="1180" y="2160" text-anchor="start" class="small" fill="#1F5EFF">Open / Follow →</text>
+<text x="78" y="2215" text-anchor="start" class="tiny" fill="#1F5EFF">UPCOMING</text>
+<text x="220" y="2215" text-anchor="start" class="label">Powerball</text>
+<text x="500" y="2215" text-anchor="start" class="small">Next drawing and cutoff</text>
+<text x="1180" y="2215" text-anchor="start" class="small" fill="#1F5EFF">Open / Follow →</text>
+<rect x="250" y="2320" width="940" height="86" rx="4" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="2361.0" text-anchor="middle" class="small">AD-H03 — POST LIVE DRAWS</text>
+<text x="720.0" y="2381.0" text-anchor="middle" class="tiny">Inherited production slot / size</text>
+<rect x="50" y="2440" width="650" height="190" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="78" y="2475" text-anchor="start" class="h2">H-07  EXPLORE YOUR STATE</text>
+<text x="78" y="2505" text-anchor="start" class="small">Results · games · claims · taxes · scratchers · community · play</text>
+<rect x="78" y="2535" width="320" height="38" rx="19" fill="#F0F3F7" stroke="#D7DEE8"/>
+<text x="98" y="2559" text-anchor="start" class="small">Select state or ZIP</text>
+<rect x="730" y="2440" width="660" height="190" rx="10" fill="#FFF6D9" stroke="#E4C466" filter="url(#s)"/>
+<text x="758" y="2475" text-anchor="start" class="h2">H-08  WORTH KNOWING</text>
+<text x="758" y="2508" text-anchor="start" class="small">Historical result connection</text>
+<text x="758" y="2537" text-anchor="start" class="small">Jackpot milestone</text>
+<text x="758" y="2566" text-anchor="start" class="small">Rule / purchase / community update</text>
+<text x="50" y="2680" text-anchor="start" class="h2">LOWER HOME ECOSYSTEM — SELECTIVE, NOT EVERY CURRENT MODULE</text>
+<rect x="50" y="2710" width="300" height="120" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="70" y="2742" text-anchor="start" class="label">H-09  Tools &amp; Systems</text>
+<text x="70" y="2771" text-anchor="start" class="small">Generator · hot/cold · wheels · tax</text>
+<text x="70" y="2808" text-anchor="start" class="small" fill="#1F5EFF">Explore →</text>
+<rect x="385" y="2710" width="300" height="120" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="405" y="2742" text-anchor="start" class="label">H-09A Popular Games</text>
+<text x="405" y="2771" text-anchor="start" class="small">Demand + state + upcoming draw</text>
+<text x="405" y="2808" text-anchor="start" class="small" fill="#1F5EFF">Explore →</text>
+<rect x="720" y="2710" width="300" height="120" rx="10" fill="#FFF6D9" stroke="#E4C466" filter="url(#s)"/>
+<text x="740" y="2742" text-anchor="start" class="label">H-09B Jackpot History</text>
+<text x="740" y="2771" text-anchor="start" class="small">Powerball/MM trends and comparison</text>
+<text x="740" y="2808" text-anchor="start" class="small" fill="#1F5EFF">Explore →</text>
+<rect x="1055" y="2710" width="300" height="120" rx="10" fill="#F2EDFF" stroke="#C9B8ED" filter="url(#s)"/>
+<text x="1075" y="2742" text-anchor="start" class="label">H-10 Community Live</text>
+<text x="1075" y="2771" text-anchor="start" class="small">Real topics, replies and questions</text>
+<text x="1075" y="2808" text-anchor="start" class="small" fill="#1F5EFF">Explore →</text>
+<rect x="50" y="2855" width="300" height="120" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="70" y="2887" text-anchor="start" class="label">H-10A Winners</text>
+<text x="70" y="2916" text-anchor="start" class="small">Winner, claim and unclaimed stories</text>
+<text x="70" y="2953" text-anchor="start" class="small" fill="#1F5EFF">Explore →</text>
+<rect x="385" y="2855" width="300" height="120" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="405" y="2887" text-anchor="start" class="label">H-11 News</text>
+<text x="405" y="2916" text-anchor="start" class="small">Current stories + AI Quick Take</text>
+<text x="405" y="2953" text-anchor="start" class="small" fill="#1F5EFF">Explore →</text>
+<rect x="720" y="2855" width="300" height="120" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="740" y="2887" text-anchor="start" class="label">H-11A Blog &amp; Guides</text>
+<text x="740" y="2916" text-anchor="start" class="small">Analysis, tutorials and systems</text>
+<text x="740" y="2953" text-anchor="start" class="small" fill="#1F5EFF">Explore →</text>
+<rect x="1055" y="2855" width="300" height="120" rx="10" fill="#FFF1E9" stroke="#F1B48E" filter="url(#s)"/>
+<text x="1075" y="2887" text-anchor="start" class="label">H-12 Where to Play</text>
+<text x="1075" y="2916" text-anchor="start" class="small">State-aware official/courier/retail</text>
+<text x="1075" y="2953" text-anchor="start" class="small" fill="#1F5EFF">Explore →</text>
+<rect x="250" y="3010" width="940" height="80" rx="4" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="720.0" y="3048.0" text-anchor="middle" class="small">AD-H04/H05 — LOWER CONTENT SLOT</text>
+<text x="720.0" y="3068.0" text-anchor="middle" class="tiny">Inherited production slot / size</text>
+</svg>

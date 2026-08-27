@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="940" viewBox="0 0 430 940">
+<defs>
+  <style>
+    .title { font: 700 18px Arial, sans-serif; fill:#172033; }
+    .label { font: 600 13px Arial, sans-serif; fill:#172033; }
+    .small { font: 400 11px Arial, sans-serif; fill:#48566A; }
+    .tiny { font: 400 9px Arial, sans-serif; fill:#5E6B7C; }
+  </style>
+  <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity=".14"/>
+  </filter>
+</defs>
+<rect width="100%" height="100%" fill="#F5F7FA"/>
+<text x="24" y="30" class="title">Mobile shell — anonymous</text>
+<rect x="15" y="48" width="400" height="54" rx="0" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<rect x="28" y="61" width="112" height="30" rx="5" fill="#0B1F3A" stroke="#0B1F3A" stroke-width="1"/>
+<text x="84" y="81" text-anchor="middle" class="tiny" fill="#FFFFFF">LOTTERY CORNER</text>
+<text x="330" y="80" text-anchor="start" class="label">⌕   ☰</text>
+<rect x="15" y="102" width="400" height="38" rx="0" fill="#0B1F3A" stroke="#0B1F3A" stroke-width="1"/>
+<text x="28" y="126" text-anchor="start" class="tiny" fill="#FFFFFF">$743M Mega Millions · Result verified</text>
+<rect x="15" y="140" width="400" height="36" rx="0" fill="#EEF3FA" stroke="#D7DEE8" stroke-width="1"/>
+<text x="28" y="163" text-anchor="start" class="tiny">Florida › Powerball › Latest result</text>
+<rect x="25" y="192" width="380" height="170" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<text x="45" y="222" text-anchor="start" class="label">PRIMARY USER JOB</text>
+<text x="45" y="247" text-anchor="start" class="small">Winning numbers / core article /</text>
+<text x="45" y="267" text-anchor="start" class="small">tool output appears before ads.</text>
+<rect x="45" y="292" width="340" height="46" rx="8" fill="#EDF4FF" stroke="#BCD1FF" stroke-width="1"/>
+<text x="215" y="321" text-anchor="middle" class="label">Core result or action</text>
+<rect x="25" y="382" width="380" height="138" rx="8" fill="#EAF9F8" stroke="#7FD5D2" stroke-width="1" filter="url(#shadow)"/>
+<text x="45" y="414" text-anchor="start" class="label" fill="#007B79">ASK LOTTERYCORNER AI</text>
+<text x="45" y="438" text-anchor="start" class="small">One contextual question is free.</text>
+<rect x="45" y="457" width="245" height="38" rx="19" fill="#FFFFFF" stroke="#7FD5D2" stroke-width="1"/>
+<text x="60" y="481" text-anchor="start" class="small">Ask about this page…</text>
+<rect x="300" y="457" width="85" height="38" rx="19" fill="#00A7A5" stroke="#00A7A5" stroke-width="1"/>
+<text x="342" y="481" text-anchor="middle" class="label" fill="#FFFFFF">Ask</text>
+<rect x="25" y="538" width="380" height="82" rx="8" fill="#FFFFFF" stroke="#E4C466" stroke-width="1" filter="url(#shadow)"/>
+<text x="45" y="569" text-anchor="start" class="label">AD / PURCHASE MODULE</text>
+<text x="45" y="594" text-anchor="start" class="small">After task; state-aware; disclosed.</text>
+<rect x="25" y="638" width="180" height="120" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<text x="45" y="668" text-anchor="start" class="label">FACT</text>
+<text x="45" y="694" text-anchor="start" class="small">Interesting</text>
+<text x="45" y="712" text-anchor="start" class="small">and sourced.</text>
+<rect x="225" y="638" width="180" height="120" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<text x="245" y="668" text-anchor="start" class="label">COMMUNITY</text>
+<text x="245" y="694" text-anchor="start" class="small">Real activity</text>
+<text x="245" y="712" text-anchor="start" class="small">only.</text>
+<rect x="25" y="778" width="380" height="74" rx="8" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<text x="45" y="810" text-anchor="start" class="label">PRIMARY NEXT ACTION</text>
+<text x="45" y="834" text-anchor="start" class="small">Save · Follow · Explore · Buy</text>
+<rect x="15" y="870" width="400" height="54" rx="0" fill="#FFFFFF" stroke="#D7DEE8" stroke-width="1" filter="url(#shadow)"/>
+<text x="45" y="902" text-anchor="middle" class="tiny" fill="#48566A">Home</text>
+<text x="120" y="902" text-anchor="middle" class="tiny" fill="#48566A">Results</text>
+<text x="205" y="902" text-anchor="middle" class="tiny" fill="#48566A">My Numbers</text>
+<text x="305" y="902" text-anchor="middle" class="tiny" fill="#48566A">Community</text>
+<text x="385" y="902" text-anchor="middle" class="tiny" fill="#1F5EFF">Ask AI</text>
+</svg>

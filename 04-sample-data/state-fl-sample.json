@@ -1,0 +1,414 @@
+{
+  "_meta": {
+    "purpose": "UI-first sample payload for the Florida state page (/fl). Result numbers/dates are real values from source-xml/latest-results-lc.xml. All copy here is sample/admin-editable but is written as clean display text (NO [ADMIN] tokens) so the public UI renders cleanly. Ads referenced by slotKey (ad-slot-definitions.json). Buy Tickets uses /buynow/<code> only.",
+    "illustrative": true,
+    "editableContentNote": "Every text block below is admin/API-editable in production. Values are realistic samples, not final editorial copy.",
+    "schemaVersion": "0.2-sample"
+  },
+  "page": {
+    "stateCode": "fl",
+    "stateName": "Florida",
+    "url": "/fl",
+    "pageType": "state",
+    "metadata": {
+      "title": "Florida Lottery Results Today — Winning Numbers, Jackpots & How to Claim",
+      "description": "Latest Florida Lottery winning numbers for Powerball, Mega Millions, Florida Lotto, Fantasy 5, Cash4Life, Pick games and Cash Pop — updated after every draw.",
+      "canonicalPlaceholder": "[VERIFY-CONVENTION] /fl (host + trailing-slash convention not finalized — not emitted yet)",
+      "robots": "index,follow",
+      "openGraph": {
+        "type": "website",
+        "title": "Florida Lottery Results Today",
+        "description": "Latest Florida Lottery winning numbers and jackpots.",
+        "siteName": "Lottery Corner"
+      },
+      "twitter": { "card": "summary_large_image", "title": "Florida Lottery Results Today", "description": "Latest Florida Lottery winning numbers and jackpots." },
+      "schemaTypes": ["WebPage", "BreadcrumbList", "FAQPage"],
+      "breadcrumb": [
+        { "name": "Home", "url": "/" },
+        { "name": "Florida Winning Numbers", "url": "/fl" }
+      ]
+    },
+    "h1": "Florida Lottery Results Today — Winning Numbers, Jackpots, & How to Claim",
+    "intro": "Get the latest Florida Lottery winning numbers, live jackpots, and clear tools to check results, verify your ticket, and understand odds and claim rules — updated after every draw.",
+    "lastUpdated": {
+      "display": "Last updated: July 9, 2026 at 12:11 AM ET",
+      "storedDrawTimezone": "America/New_York",
+      "displayTimezone": "America/New_York",
+      "isoDateModified": "2026-07-09T00:11:54-04:00"
+    },
+    "timezoneMeta": {
+      "storedTimezone": "America/New_York",
+      "gameLocalTimezone": "America/New_York",
+      "note": "Florida is Eastern, so stored (EST) and display share the TZ. Non-EST states apply local->EST->local rules (05-doc D7)."
+    }
+  },
+  "jackpotTicker": {
+    "nextDraw": { "game": "Powerball", "timeDisplay": "Sat 10:59 PM ET", "countdownLabel": "12h 51m" },
+    "topJackpots": [
+      { "game": "Powerball", "amountDisplay": "$435 Million" },
+      { "game": "Mega Millions", "amountDisplay": "$576 Million" },
+      { "game": "Florida Lotto", "amountDisplay": "$1.5 Million" }
+    ],
+    "alsoComingUp": [
+      { "game": "Florida Lotto", "countdownLabel": "13h 7m" },
+      { "game": "Fantasy 5", "countdownLabel": "13h 26m" }
+    ],
+    "quickActions": [
+      { "label": "Check Ticket", "href": "#check-ticket" },
+      { "label": "Past Results", "href": "#winning-history" },
+      { "label": "Prize Lookup", "href": "#how-to-claim" },
+      { "label": "Claim Info", "href": "#how-to-claim" }
+    ],
+    "buyTickets": { "label": "Buy Tickets", "href": "/buynow/play-usa-powerball" },
+    "disclaimer": "Winning numbers are updated shortly after each drawing. For major prizes, confirm your ticket with an authorized Florida Lottery retailer or office."
+  },
+  "tabs": [
+    { "key": "results", "label": "Results", "href": "#results", "active": true },
+    { "key": "winning-history", "label": "Winning History", "href": "#winning-history" },
+    { "key": "schedule", "label": "Schedule", "href": "#schedule" },
+    { "key": "how-to-play", "label": "How to Play", "href": "#how-to-play" },
+    { "key": "how-to-claim", "label": "How to Claim", "href": "#how-to-claim" }
+  ],
+  "latestResults": {
+    "heading": "Latest Draw Results",
+    "infoCallout": "Winning numbers on Lottery Corner are updated shortly after each draw. For major prizes, confirm your ticket with an authorized Florida Lottery retailer or office.",
+    "intro": "Here are the most recent Florida Lottery winning numbers, updated as soon as each drawing is completed — starting with Powerball and Mega Millions and then all in-state games.",
+    "groups": [
+      {
+        "groupKey": "multiState",
+        "heading": "Multi-State Draws (Powerball & Mega Millions)",
+        "resultCards": [
+          {
+            "gameId": 1012,
+            "gameSlug": "powerball",
+            "displayName": "Powerball",
+            "formatRef": { "gameId": 1012, "effectiveFrom": "2015-10-07" },
+            "status": "latest",
+            "drawScheduleLabel": "Wed & Sat",
+            "resultDate": { "gameLocalDate": "2026-07-08", "display": "Tuesday, 07/08/2026 — 10:59 PM ET", "isoDrawDateTime": "2026-07-08T22:59:00-04:00" },
+            "groupsDrawn": [
+              { "order": 0, "label": null, "values": [12, 29, 37, 43, 55], "colorToken": "ball.default" },
+              { "order": 1, "label": "Powerball", "values": [18], "colorToken": "ball.powerball" }
+            ],
+            "multipliers": [ { "key": "powerplay", "label": "Power Play", "value": 4, "display": "Power Play 4X" } ],
+            "prizeDisplay": "$435 Million",
+            "prizeRaw": "435000000",
+            "nextDraw": { "gameLocalDate": "2026-07-11", "display": "Saturday, 07/11/2026", "nextJackpotDisplay": "$457 Million" },
+            "buyTickets": { "label": "Buy Tickets", "href": "/buynow/play-usa-powerball", "affiliateResolved": false },
+            "actions": [ { "type": "viewHistory", "href": "/fl/powerball/2026" }, { "type": "findMore", "href": "/fl/powerball" } ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 1013,
+            "gameSlug": "mega-millions",
+            "displayName": "Mega Millions",
+            "formatRef": { "gameId": 1013, "effectiveFrom": "2025-04-08" },
+            "status": "awaiting",
+            "statusMessage": "Awaiting latest results — drawing completed, results pending",
+            "drawScheduleLabel": "Tue & Fri",
+            "resultDate": { "gameLocalDate": "2026-07-07", "display": "Tuesday, 07/07/2026 — 11:00 PM ET", "isoDrawDateTime": "2026-07-07T23:00:00-04:00" },
+            "groupsDrawn": [
+              { "order": 0, "label": null, "values": [2, 31, 35, 36, 63], "colorToken": "ball.default" },
+              { "order": 1, "label": "Mega Ball", "values": [12], "colorToken": "ball.megaball" }
+            ],
+            "multipliers": [],
+            "prizeDisplay": "$576 Million",
+            "prizeRaw": "576000000",
+            "nextDraw": { "gameLocalDate": "2026-07-10", "display": "Friday, 07/10/2026", "nextJackpotDisplay": "$604 Million" },
+            "buyTickets": { "label": "Buy Tickets", "href": "/buynow/play-usa-megamillions", "affiliateResolved": false },
+            "actions": [ { "type": "viewHistory", "href": "/fl/mega-millions/2026" }, { "type": "findMore", "href": "/fl/mega-millions" } ],
+            "favoriteHook": true
+          }
+        ]
+      },
+      {
+        "groupKey": "inState",
+        "heading": "Florida In-State Draws",
+        "resultCards": [
+          {
+            "gameId": 337,
+            "gameSlug": "florida-lotto",
+            "displayName": "Florida Lotto",
+            "formatRef": { "gameId": 337, "effectiveFrom": null },
+            "status": "latest",
+            "drawScheduleLabel": "Wed & Sat",
+            "resultDate": { "gameLocalDate": "2026-07-08", "display": "Wednesday, 07/08/2026", "isoDrawDateTime": "2026-07-08T23:15:00-04:00" },
+            "groupsDrawn": [ { "order": 0, "label": null, "values": [3, 8, 11, 18, 23, 38], "colorToken": "ball.default" } ],
+            "secondaryDraw": { "key": "doubleplay", "label": "Double Play", "groupsDrawn": [ { "order": 0, "label": null, "values": [1, 6, 12, 19, 26, 31], "colorToken": "ball.default" } ] },
+            "multipliers": [],
+            "prizeDisplay": "$1.5 Million",
+            "prizeRaw": "1500000",
+            "nextDraw": { "gameLocalDate": "2026-07-11", "display": "Saturday, 07/11/2026", "nextJackpotDisplay": "$2 Million" },
+            "buyTickets": null,
+            "actions": [ { "type": "viewHistory", "href": "/fl/florida-lotto/2026" } ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 336,
+            "gameSlug": "fantasy-5",
+            "displayName": "Fantasy 5",
+            "formatRef": { "gameId": 336, "effectiveFrom": null },
+            "status": "latest",
+            "drawScheduleLabel": "Daily",
+            "resultDate": { "gameLocalDate": "2026-07-08", "display": "Wednesday, 07/08/2026", "isoDrawDateTime": "2026-07-08T23:15:00-04:00" },
+            "groupsDrawn": [ { "order": 0, "label": null, "values": [7, 25, 33, 35, 36], "colorToken": "ball.default" } ],
+            "multipliers": [],
+            "prizeDisplay": "$200,000",
+            "prizeRaw": "200000",
+            "nextDraw": { "gameLocalDate": "2026-07-09", "display": "Thursday, 07/09/2026", "nextJackpotDisplay": "$200,000" },
+            "buyTickets": null,
+            "actions": [ { "type": "viewHistory", "href": "/fl/fantasy-5/2026" } ],
+            "favoriteHook": true
+          }
+        ]
+      },
+      {
+        "groupKey": "pick",
+        "heading": "Pick Games & Cash Pop",
+        "resultCards": [
+          {
+            "gameId": 332,
+            "gameSlug": "pick-3-midday",
+            "displayName": "Pick 3 (Midday)",
+            "formatRef": { "gameId": 332, "effectiveFrom": "2019-04-28" },
+            "status": "latest",
+            "drawScheduleLabel": "Midday & Evening",
+            "resultDate": { "gameLocalDate": "2026-07-09", "display": "Thursday, 07/09/2026", "isoDrawDateTime": "2026-07-09T13:30:00-04:00" },
+            "groupsDrawn": [ { "order": 0, "label": null, "values": [3, 7, 8], "colorToken": "ball.default" } ],
+            "addOns": [ { "key": "fireball", "label": "Fireball", "value": 9, "colorToken": "ball.fireball" } ],
+            "prizeDisplay": "$500",
+            "nextDraw": { "gameLocalDate": "2026-07-10", "display": "Friday, 07/10/2026" },
+            "buyTickets": null,
+            "actions": [ { "type": "viewHistory", "href": "/fl/pick-3-midday/2026" } ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 563,
+            "gameSlug": "pick-2-midday",
+            "displayName": "Pick 2 (Midday)",
+            "formatRef": { "gameId": 563, "effectiveFrom": "2019-04-28" },
+            "status": "latest",
+            "drawScheduleLabel": "Midday & Evening",
+            "resultDate": { "gameLocalDate": "2026-07-09", "display": "Thursday, 07/09/2026", "isoDrawDateTime": "2026-07-09T13:30:00-04:00" },
+            "groupsDrawn": [ { "order": 0, "label": null, "values": [6, 6], "colorToken": "ball.default" } ],
+            "addOns": [ { "key": "fireball", "label": "Fireball", "value": 9, "colorToken": "ball.fireball" } ],
+            "prizeDisplay": "$50",
+            "nextDraw": { "gameLocalDate": "2026-07-10", "display": "Friday, 07/10/2026" },
+            "buyTickets": null,
+            "actions": [ { "type": "viewHistory", "href": "/fl/pick-2-midday/2026" } ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 614,
+            "gameSlug": "cash-pop-morning",
+            "displayName": "Cash Pop (Morning)",
+            "formatRef": { "gameId": 614, "effectiveFrom": null },
+            "status": "latest",
+            "drawScheduleLabel": "5 draws daily",
+            "resultDate": { "gameLocalDate": "2026-07-09", "display": "Thursday, 07/09/2026", "isoDrawDateTime": "2026-07-09T09:45:00-04:00" },
+            "groupsDrawn": [ { "order": 0, "label": null, "values": [3], "colorToken": "ball.default" } ],
+            "multipliers": [],
+            "prizeDisplay": "$250",
+            "nextDraw": { "gameLocalDate": "2026-07-09", "display": "Later today" },
+            "buyTickets": null,
+            "actions": [ { "type": "viewHistory", "href": "/fl/cash-pop-morning/2026" } ],
+            "favoriteHook": true
+          }
+        ]
+      }
+    ]
+  },
+  "checkTicket": {
+    "heading": "Check Your Ticket",
+    "intro": "Enter your numbers and draw date to instantly see whether your Florida Lottery ticket matches the latest results.",
+    "howItWorks": [
+      "Select the game you played.",
+      "Choose the draw date.",
+      "Enter your numbers exactly as printed on your ticket.",
+      "Review the prize matches shown.",
+      "For large wins, follow the Claim Info steps to submit your ticket safely."
+    ],
+    "gameOptions": ["Powerball", "Mega Millions", "Florida Lotto", "Fantasy 5", "Cash4Life", "Pick 2", "Pick 3", "Pick 4", "Pick 5"],
+    "note": "Type your numbers carefully. If a mistake is made, simply re-enter them and run the check again."
+  },
+  "faqs": {
+    "heading": "Frequently Asked Questions",
+    "visibleOnPage": true,
+    "schemaEligible": true,
+    "items": [
+      { "q": "What are today's Florida Lottery numbers?", "a": "The latest Florida Lottery winning numbers for all games appear in the Latest Draw Results section above, updated shortly after each drawing." },
+      { "q": "How do I check my Florida Lottery ticket?", "a": "Use the Check Your Ticket tool: pick the game and draw date, enter your numbers, and review the matches." },
+      { "q": "Where do I go to claim a Florida Lottery prize?", "a": "Smaller prizes can be claimed at authorized retailers; larger prizes are claimed at district offices or Lottery Headquarters. See How to Claim below." },
+      { "q": "Are Florida Lottery winnings taxed by the state?", "a": "Florida does not charge a state income tax on lottery winnings; federal tax rules still apply." }
+    ]
+  },
+  "highlights": {
+    "heading": "Recent Highlights & Alerts",
+    "intro": "Notable Florida Lottery wins, unclaimed prizes nearing expiration, and ongoing jackpot trends. Updated periodically as new information becomes available.",
+    "recentWins": [
+      { "location": "Tampa", "text": "$2 Million Florida Lotto: a ticket worth $2 million was sold in Tampa. The ticket must be claimed within 180 days of the draw date." },
+      { "location": "Orlando", "text": "Fantasy 5 top prize: a Fantasy 5 ticket sold in Orlando matched all five numbers and secured the top prize." },
+      { "location": "Jacksonville", "text": "Cash4Life second-tier win: a Cash4Life ticket purchased in Jacksonville matched five numbers." }
+    ],
+    "unclaimedPrizes": [
+      { "game": "Fantasy 5", "amount": "$208,000", "location": "Miami", "note": "Expires soon. Ticket purchased at a convenience store in southwest Miami." },
+      { "game": "Florida Lotto", "amount": "$55,000", "location": "St. Petersburg", "note": "Winner has limited time remaining to claim." },
+      { "game": "Pick 4", "amount": "$5,000", "location": "Fort Myers", "note": "Ticket sold at a local gas station." }
+    ],
+    "jackpotGrowth": [
+      { "game": "Powerball", "text": "The jackpot has rolled multiple times following consecutive drawings without a top-prize winner." },
+      { "game": "Mega Millions", "text": "Recent rollovers have pushed the jackpot into a higher prize tier." },
+      { "game": "Florida Lotto", "text": "Several consecutive drawings have passed without a jackpot hit, increasing local player interest." }
+    ],
+    "note": "Unclaimed prize funds are transferred to Florida's Education Enhancement Trust Fund."
+  },
+  "howToClaim": {
+    "heading": "How to Claim Florida Lottery Prizes",
+    "intro": "Learn how to claim Florida Lottery prizes step-by-step, from small retailer payouts to large jackpot claims at district offices.",
+    "claimOptions": [
+      { "amount": "Up to $599", "method": "Claim at most authorized retailers or District Offices" },
+      { "amount": "$600 – $250,000", "method": "Claim at a District Office or by mail" },
+      { "amount": "$600 – $1,000,000", "method": "Claim in person at a District Office" },
+      { "amount": "Over $1,000,000 / annuity", "method": "Must be claimed in person at Lottery Headquarters" }
+    ],
+    "documents": [
+      "Signed winning ticket",
+      "Government-issued photo ID",
+      "Social Security number or SSN card",
+      "Completed Winner Claim Form",
+      "Additional forms for annuity or lifetime prizes"
+    ],
+    "steps": [
+      { "title": "Sign your winning ticket", "detail": "Immediately sign the back of your ticket to protect ownership." },
+      { "title": "Confirm the amount you won", "detail": "Use the Check Ticket tool or the Latest Draw Results section." },
+      { "title": "Choose the correct claim method", "detail": "Based on prize amount, from retailer payout to Lottery Headquarters." },
+      { "title": "Complete the required paperwork", "detail": "Winner Claim Form, W-2G if applicable, direct deposit forms for large prizes." },
+      { "title": "Submit your claim", "detail": "In person or by mail (certified mail recommended)." }
+    ],
+    "deadlines": [
+      "Draw games: 180 days from draw date",
+      "Scratch-Off games: 60 days after the game officially ends",
+      "Mailed claims: envelope must be postmarked by the deadline"
+    ],
+    "districtOffices": "Larger prizes can be claimed at district offices statewide, including Miami, Orlando, Tampa, Jacksonville, Fort Myers, and Escambia. Appointments are recommended for jackpot and annuity prizes."
+  },
+  "taxes": {
+    "heading": "Taxes & Withholding",
+    "stateNote": "Florida does NOT charge state income tax on lottery winnings.",
+    "federalIntro": "Federal tax rules apply for prizes of $600 or more:",
+    "points": [
+      "Mandatory federal withholding: 24%",
+      "Additional tax may apply at filing",
+      "W-2G forms are issued for reportable winnings"
+    ]
+  },
+  "oddsGuide": {
+    "heading": "Game Odds, Prize Matrix & How Each Florida Lottery Game Works",
+    "intro": "Understand the odds, prize tiers, and basic rules for every major Florida Lottery draw game.",
+    "games": [
+      {
+        "gameName": "Florida Lotto",
+        "rules": "Players pick six numbers from 1–53. The jackpot grows until someone wins.",
+        "prizeMatrix": [
+          { "tier": "Match 6", "prize": "Jackpot (varies)" },
+          { "tier": "Match 5", "prize": "Large fixed prize" },
+          { "tier": "Match 4", "prize": "Mid-tier prize" },
+          { "tier": "Match 3", "prize": "Free ticket" }
+        ],
+        "odds": ["Jackpot: 1 in 22,957,480", "Any prize: 1 in 7.61"]
+      },
+      {
+        "gameName": "Cash4Life",
+        "rules": "Pick five numbers from 1–60 plus a Cash Ball from 1–4. Draws occur daily.",
+        "prizeMatrix": [
+          { "tier": "Match 5 + Cash Ball", "prize": "$1,000 per day for life" },
+          { "tier": "Match 5", "prize": "$1,000 per week for life" }
+        ],
+        "odds": ["Top prize: 1 in 21,846,048", "Any prize: 1 in 8"]
+      },
+      {
+        "gameName": "Powerball",
+        "rules": "Pick five numbers (1–69) plus a Powerball (1–26).",
+        "prizeMatrix": [
+          { "tier": "Match 5 + Powerball", "prize": "Jackpot" },
+          { "tier": "Match 5", "prize": "$1 million" }
+        ],
+        "odds": ["Jackpot: 1 in 292 million", "Any prize: 1 in 24.9"]
+      },
+      {
+        "gameName": "Mega Millions",
+        "rules": "Pick five numbers (1–70) plus a Megaball (1–24).",
+        "prizeMatrix": [
+          { "tier": "Match 5 + Megaball", "prize": "Jackpot" },
+          { "tier": "Match 5", "prize": "$1 million" }
+        ],
+        "odds": ["Jackpot: 1 in 302 million", "Any prize: 1 in 24"]
+      }
+    ]
+  },
+  "playerInfo": {
+    "heading": "Florida Lottery Guide & Player Information",
+    "intro": "Key information Florida Lottery players should understand, including draw integrity, basic rules, responsible play guidance, and where lottery funds go.",
+    "sections": [
+      { "title": "Draw Integrity & Oversight", "body": "Lottery drawings in Florida follow strict procedures designed to ensure fairness and randomness. Draw machines are inspected before each drawing, numbered balls are tested and weighed, and results are transmitted only after verification." },
+      { "title": "Key Florida Lottery Rules", "list": ["Minimum age to play: 18", "Tickets must be signed to become valid property", "Damaged or unreadable tickets follow a formal review process", "Retailers cannot refuse to check a ticket", "Draw cutoff times vary by game"] },
+      { "title": "Responsible Play (Florida Guidelines)", "list": ["Set a weekly budget", "Understand that odds are fixed", "Avoid chasing losses", "Florida's gambling helpline is available for support"] },
+      { "title": "Where Lottery Money Goes", "body": "A significant portion of Florida Lottery revenue supports state education programs, including scholarships and school enhancements. Each year, hundreds of millions of dollars are allocated to Florida's Education Enhancement Trust Fund." }
+    ]
+  },
+  "sourcesMethodology": {
+    "heading": "Sources, Methodology & Update Process",
+    "intro": "How Lottery Corner collects, verifies, and updates Florida Lottery results and related game information.",
+    "groups": [
+      { "title": "Data Sources", "list": ["The official Florida Lottery winning-numbers feed", "Published draw results from the Florida Lottery website", "Publicly released jackpot updates", "Multi-state consortium data for Powerball and Mega Millions"] },
+      { "title": "Update Frequency", "list": ["Draw results are checked and updated shortly after each drawing", "Jackpot amounts are refreshed daily and again after official updates", "Claim information, rules, and office locations are reviewed weekly"] },
+      { "title": "Time Zone & Formatting", "list": ["All times on this page use Eastern Time (ET)", "Timestamps include machine-readable ISO formatting", "Draw dates reflect the official draw calendar"] },
+      { "title": "Accuracy & Verification", "list": ["Automated feed checks", "Manual editorial review", "Cross-checking against official draw pages", "Random spot audits for large jackpots"] },
+      { "title": "Editorial Standards", "list": ["No speculation on results", "No predictions or strategy claims", "Clear separation between draw results and claim guidance"] },
+      { "title": "Limitations & Notes", "list": ["Official Florida Lottery results always take precedence", "Prize payouts must be confirmed by Florida Lottery claim centers", "Ticket validation can only be performed by official lottery systems"] }
+    ]
+  },
+  "finalFaqs": {
+    "heading": "Florida Lottery — Frequently Asked Questions",
+    "visibleOnPage": true,
+    "items": [
+      { "q": "What time are Florida Lottery drawings held?", "a": "Draw times vary by game; times on this page use Eastern Time (ET). See the Schedule section for each game's days and times." },
+      { "q": "Can I buy Florida Lottery tickets online?", "a": "Ticket-buying options vary. Use the Buy Tickets links where available; the final destination is provided by our partner service." },
+      { "q": "Can I stay anonymous if I win the Florida Lottery?", "a": "Anonymity rules vary by prize amount and state law. Confirm current rules with the official Florida Lottery before claiming." },
+      { "q": "Can a group of people claim a prize together?", "a": "Group wins are allowed with proper documentation. Each member typically completes the required forms." },
+      { "q": "Are Florida Lottery prizes taxed?", "a": "Florida has no state income tax on winnings; federal withholding of 24% applies to prizes over $5,000." },
+      { "q": "What is the minimum age to play the Florida Lottery?", "a": "You must be 18 or older to play the Florida Lottery." },
+      { "q": "What happens to unclaimed lottery prizes in Florida?", "a": "Unclaimed prize funds are transferred to Florida's Education Enhancement Trust Fund." }
+    ]
+  },
+  "adSlotRefs": {
+    "note": "Reference ad slots by slotKey from ad-slot-definitions.json. FIXED GAM placements; UI lays out content around them. Only slot styling changed in this correction — not the slots/positions.",
+    "top": ["sp_top_billboard"],
+    "inContent": ["sp_mid_leaderboard_pos1", "sp_mid_leaderboard_pos2", "sp_mid_leaderboard_pos3", "sp_mid_leaderboard_pos4"],
+    "rightRail": ["sp_side_halfpage_pos1", "sp_side_mpu_pos2", "sp_side_skyscraper"],
+    "mobileInContent": ["sp_mobile_leaderboard_pos1", "sp_mobile_leaderboard_pos2", "sp_mobile_leaderboard_pos3", "sp_mobile_leaderboard_pos4"],
+    "bottom": ["sp_bottom_billboard"],
+    "stickyFooterAd": "sp_bottom_large_leaderboard"
+  },
+  "officialSourceNotice": {
+    "name": "Florida Lottery",
+    "text": "Winning numbers are sourced from official Florida Lottery draws. Always verify major prizes with an authorized Florida Lottery retailer or office."
+  },
+  "responsiblePlayNotice": { "text": "Play responsibly. 18+ only. If gambling is a problem, help is available." },
+  "independenceDisclaimer": { "text": "Lottery Corner is an independent lottery information website and is not affiliated with the Florida Lottery or the State of Florida." },
+  "popularGames": [
+    { "gameSlug": "powerball", "displayName": "Powerball", "href": "/powerball" },
+    { "gameSlug": "mega-millions", "displayName": "Mega Millions", "href": "/mega-millions" },
+    { "gameSlug": "florida-lotto", "displayName": "Florida Lotto", "href": "/fl/florida-lotto" },
+    { "gameSlug": "fantasy-5", "displayName": "Fantasy 5", "href": "/fl/fantasy-5" }
+  ],
+  "aiToolsTeaser": {
+    "enabled": true,
+    "heading": "AI-assisted lottery tools (coming soon)",
+    "copy": "Explore AI-assisted insights, smart number analysis and personalized alerts. For entertainment and informational purposes only.",
+    "cta": "Sign in to try",
+    "guardrail": "Do NOT claim AI predicts or guarantees winning numbers.",
+    "loginGated": true
+  },
+  "accountHooks": { "loginRegisterVisible": true, "favoritesEnabled": true }
+}

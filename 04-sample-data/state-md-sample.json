@@ -1,0 +1,1206 @@
+{
+  "_meta": {
+    "purpose": "UI-first sample payload for the Maryland state page (/md), rendered by the shared StatePageTemplate. Real result values from source-xml; content structure guided by the Maryland content doc. Clean sample/admin-editable copy (no [ADMIN]). /buynow only.",
+    "illustrative": true,
+    "schemaVersion": "0.1-sample",
+    "canonicalTarget": "https://lotterycorner.com/md (no trailing slash; www->non-www migration pending)"
+  },
+  "page": {
+    "stateCode": "md",
+    "stateName": "Maryland",
+    "url": "/md",
+    "pageType": "state",
+    "metadata": {
+      "title": "Maryland Lottery Results Today \u2014 Winning Numbers, Jackpots & How to Claim",
+      "description": "Latest Maryland Lottery winning numbers for Mega Millions, Powerball, Bonus Match 5, Multi Match, Pick 3 Midday \u2014 updated after every draw.",
+      "canonicalPlaceholder": "[VERIFY-CONVENTION] https://lotterycorner.com/md (target host non-www, no trailing slash; migration pending \u2014 not emitted yet)",
+      "robots": "index,follow",
+      "openGraph": {
+        "type": "website",
+        "title": "Maryland Lottery Results Today",
+        "description": "Latest Maryland Lottery winning numbers and jackpots.",
+        "siteName": "Lottery Corner"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Maryland Lottery Results Today",
+        "description": "Latest Maryland Lottery winning numbers and jackpots."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "url": "/"
+        },
+        {
+          "name": "Maryland Winning Numbers",
+          "url": "/md"
+        }
+      ]
+    },
+    "h1": "Maryland Lottery Results Today \u2014 Winning Numbers, Jackpots, & How to Claim",
+    "intro": "Check the latest Maryland Lottery winning numbers, jackpots, and draw results in one place \u2014 including next draw times, prize information, claim instructions, and jackpot updates. Updated after every official Maryland Lottery drawing.",
+    "lastUpdated": {
+      "display": "Last updated: July 9, 2026 at 1:16 PM ET",
+      "storedDrawTimezone": "America/New_York",
+      "displayTimezone": "America/New_York",
+      "isoDateModified": "2026-07-09T13:16:49"
+    },
+    "timezoneMeta": {
+      "storedTimezone": "America/New_York",
+      "gameLocalTimezone": "America/New_York",
+      "note": "Draw times stored in EST are converted to America/New_York for display (05-doc D6/D7)."
+    }
+  },
+  "jackpotTicker": {
+    "nextDraw": {
+      "game": "Mega Millions",
+      "timeDisplay": "see schedule (ET)",
+      "countdownLabel": ""
+    },
+    "topJackpots": [
+      {
+        "game": "Mega Millions",
+        "amountDisplay": "$576 Million"
+      },
+      {
+        "game": "Powerball",
+        "amountDisplay": "$435 Million"
+      },
+      {
+        "game": "Multi Match",
+        "amountDisplay": "$1.70 Million"
+      }
+    ],
+    "alsoComingUp": [],
+    "quickActions": [
+      {
+        "label": "Check Ticket",
+        "href": "#check-ticket"
+      },
+      {
+        "label": "Past Results",
+        "href": "#winning-history"
+      },
+      {
+        "label": "Jackpot Tracker",
+        "href": "#jackpot-tracker"
+      },
+      {
+        "label": "Claim Info",
+        "href": "#how-to-claim"
+      }
+    ],
+    "buyTickets": {
+      "label": "Buy Tickets",
+      "href": "/buynow/play-usa-powerball"
+    },
+    "disclaimer": "Winning numbers are updated shortly after each drawing. Always verify winning tickets with the official Maryland Lottery before claiming a prize."
+  },
+  "tabs": [
+    {
+      "key": "results",
+      "label": "Results",
+      "href": "#results",
+      "active": true
+    },
+    {
+      "key": "winning-history",
+      "label": "Winning History",
+      "href": "#winning-history"
+    },
+    {
+      "key": "schedule",
+      "label": "Schedule",
+      "href": "#schedule"
+    },
+    {
+      "key": "how-to-play",
+      "label": "How to Play",
+      "href": "#how-to-play"
+    },
+    {
+      "key": "how-to-claim",
+      "label": "How to Claim",
+      "href": "#how-to-claim"
+    }
+  ],
+  "latestResults": {
+    "heading": "Today's Maryland Lottery Winning Numbers",
+    "infoCallout": "Winning numbers are published after the Maryland Lottery releases the official draw results. If you believe you have a winning ticket, keep the original ticket safe and complete the official validation process.",
+    "intro": "Find the latest Maryland Lottery winning numbers for every draw game below as soon as each official drawing is complete.",
+    "groups": [
+      {
+        "groupKey": "multiState",
+        "heading": "Multi-State Draws (Powerball & Mega Millions)",
+        "resultCards": [
+          {
+            "gameId": 1013,
+            "gameSlug": "mega-millions",
+            "displayName": "Mega Millions",
+            "formatRef": {
+              "gameId": 1013
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-07",
+              "display": "Tuesday, 07/07/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  2,
+                  31,
+                  35,
+                  36,
+                  63
+                ],
+                "colorToken": "ball.default"
+              },
+              {
+                "order": 1,
+                "label": "Mega Ball",
+                "values": [
+                  12
+                ],
+                "colorToken": "ball.megaball"
+              }
+            ],
+            "drawScheduleLabel": "Tue & Fri",
+            "prizeDisplay": "$576 Million",
+            "prizeRaw": "576000000",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$604 Million"
+            },
+            "buyTickets": {
+              "label": "Buy Tickets",
+              "href": "/buynow/play-usa-megamillions",
+              "affiliateResolved": false
+            },
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/md/mega-millions/2026"
+              },
+              {
+                "type": "findMore",
+                "href": "/md/mega-millions"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 1012,
+            "gameSlug": "powerball",
+            "displayName": "Powerball",
+            "formatRef": {
+              "gameId": 1012
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  12,
+                  29,
+                  37,
+                  43,
+                  55
+                ],
+                "colorToken": "ball.default"
+              },
+              {
+                "order": 1,
+                "label": "Powerball",
+                "values": [
+                  18
+                ],
+                "colorToken": "ball.powerball"
+              },
+              {
+                "order": 2,
+                "label": "Powerball",
+                "values": [
+                  23
+                ],
+                "colorToken": "ball.powerball"
+              }
+            ],
+            "drawScheduleLabel": "Mon, Wed & Sat",
+            "multipliers": [
+              {
+                "key": "power-play",
+                "label": "Power Play",
+                "value": 4,
+                "display": "Power Play 4X"
+              }
+            ],
+            "secondaryDraw": {
+              "key": "doubleplay",
+              "label": "Double Play",
+              "groupsDrawn": [
+                {
+                  "order": 0,
+                  "label": null,
+                  "values": [
+                    6,
+                    27,
+                    33,
+                    44,
+                    69
+                  ],
+                  "colorToken": "ball.default"
+                }
+              ]
+            },
+            "prizeDisplay": "$435 Million",
+            "prizeRaw": "435000000",
+            "nextDraw": {
+              "display": "Saturday, 07/11/2026",
+              "nextJackpotDisplay": "$457 Million"
+            },
+            "buyTickets": {
+              "label": "Buy Tickets",
+              "href": "/buynow/play-usa-powerball",
+              "affiliateResolved": false
+            },
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/md/powerball/2026"
+              },
+              {
+                "type": "findMore",
+                "href": "/md/powerball"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      },
+      {
+        "groupKey": "inState",
+        "heading": "Maryland In-State Draws",
+        "resultCards": [
+          {
+            "gameId": 392,
+            "gameSlug": "bonus-match-5",
+            "displayName": "Bonus Match 5",
+            "formatRef": {
+              "gameId": 392
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  17,
+                  29,
+                  35,
+                  36,
+                  38
+                ],
+                "colorToken": "ball.default"
+              },
+              {
+                "order": 1,
+                "label": "Bonus",
+                "values": [
+                  4
+                ],
+                "colorToken": "ball.bonus"
+              }
+            ],
+            "prizeDisplay": "$50,000",
+            "prizeRaw": "50000",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$50,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/md/bonus-match-5/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 515,
+            "gameSlug": "multi-match",
+            "displayName": "Multi Match",
+            "formatRef": {
+              "gameId": 515
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-06",
+              "display": "Monday, 07/06/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  10,
+                  11,
+                  15,
+                  17,
+                  31,
+                  34
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$1.70 Million",
+            "prizeRaw": "1700000",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$1.80 Million"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/md/multi-match/2026"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      },
+      {
+        "groupKey": "pick",
+        "heading": "Pick Games & Daily Draws",
+        "resultCards": [
+          {
+            "gameId": 388,
+            "gameSlug": "pick-3-midday",
+            "displayName": "Pick 3 Midday",
+            "formatRef": {
+              "gameId": 388
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-09",
+              "display": "Thursday, 07/09/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  4,
+                  9,
+                  7
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$500",
+            "prizeRaw": "500",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$500"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/md/pick-3-midday/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 389,
+            "gameSlug": "pick-3-evening",
+            "displayName": "Pick 3 Evening",
+            "formatRef": {
+              "gameId": 389
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  9,
+                  0,
+                  5
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$500",
+            "prizeRaw": "500",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$500"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/md/pick-3-evening/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 390,
+            "gameSlug": "pick-4-midday",
+            "displayName": "Pick 4 Midday",
+            "formatRef": {
+              "gameId": 390
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-09",
+              "display": "Thursday, 07/09/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  0,
+                  5,
+                  8,
+                  7
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$5,000",
+            "prizeRaw": "5000",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$5,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/md/pick-4-midday/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 391,
+            "gameSlug": "pick-4-evening",
+            "displayName": "Pick 4 Evening",
+            "formatRef": {
+              "gameId": 391
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  4,
+                  7,
+                  6,
+                  1
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$5,000",
+            "prizeRaw": "5000",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$5,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/md/pick-4-evening/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 629,
+            "gameSlug": "pick-5-midday",
+            "displayName": "Pick 5 Midday",
+            "formatRef": {
+              "gameId": 629
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-09",
+              "display": "Thursday, 07/09/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  0,
+                  3,
+                  9,
+                  6,
+                  3
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$50,000",
+            "prizeRaw": "50000",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$50,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/md/pick-5-midday/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 630,
+            "gameSlug": "pick-5-evening",
+            "displayName": "Pick 5 Evening",
+            "formatRef": {
+              "gameId": 630
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  0,
+                  0,
+                  6,
+                  4,
+                  3
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$50,000",
+            "prizeRaw": "50000",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$50,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/md/pick-5-evening/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 654,
+            "gameSlug": "cash-pop-9am",
+            "displayName": "Cash Pop 9am",
+            "formatRef": {
+              "gameId": 654
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-09",
+              "display": "Thursday, 07/09/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  5
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$250",
+            "prizeRaw": "250",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$250"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/md/cash-pop-9am/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 655,
+            "gameSlug": "cash-pop-1pm",
+            "displayName": "Cash Pop 1pm",
+            "formatRef": {
+              "gameId": 655
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-09",
+              "display": "Thursday, 07/09/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  6
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$250",
+            "prizeRaw": "250",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$250"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/md/cash-pop-1pm/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 656,
+            "gameSlug": "cash-pop-6pm",
+            "displayName": "Cash Pop 6pm",
+            "formatRef": {
+              "gameId": 656
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  15
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$250",
+            "prizeRaw": "250",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$250"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/md/cash-pop-6pm/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 657,
+            "gameSlug": "cash-pop-11pm",
+            "displayName": "Cash Pop 11pm",
+            "formatRef": {
+              "gameId": 657
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  11
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$250",
+            "prizeRaw": "250",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$250"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/md/cash-pop-11pm/2026"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      }
+    ]
+  },
+  "quickFacts": {
+    "heading": "Maryland Lottery Quick Facts",
+    "rows": [
+      {
+        "label": "Founded",
+        "value": "1973"
+      },
+      {
+        "label": "Minimum playing age",
+        "value": "18 years"
+      },
+      {
+        "label": "Claim deadline (draw games)",
+        "value": "182 days from the draw date"
+      },
+      {
+        "label": "State tax on winnings",
+        "value": "Yes \u2014 state income tax is withheld"
+      },
+      {
+        "label": "Games covered",
+        "value": "Mega Millions, Powerball, Bonus Match 5, Multi Match, Pick 3 Midday, Pick 3 Evening"
+      },
+      {
+        "label": "Time zone",
+        "value": "Maryland local time (ET)"
+      }
+    ]
+  },
+  "drawSchedule": {
+    "heading": "Maryland Lottery Draw Schedule (ET)",
+    "intro": "Regular draw days and approximate draw times (ET). Times are approximate and may change for operational reasons or holidays.",
+    "entries": [
+      {
+        "game": "Mega Millions",
+        "days": "Tue & Fri",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Powerball",
+        "days": "Mon, Wed & Sat",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Bonus Match 5",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Multi Match",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Pick 3 Midday",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Pick 3 Evening",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Pick 4 Midday",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Pick 4 Evening",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      }
+    ]
+  },
+  "historyLinks": {
+    "heading": "Maryland Lottery Winning Numbers History",
+    "intro": "Browse past Maryland Lottery winning numbers by game.",
+    "links": [
+      {
+        "label": "Mega Millions History",
+        "href": "/md/mega-millions/2026"
+      },
+      {
+        "label": "Powerball History",
+        "href": "/md/powerball/2026"
+      },
+      {
+        "label": "Bonus Match 5 History",
+        "href": "/md/bonus-match-5/2026"
+      },
+      {
+        "label": "Multi Match History",
+        "href": "/md/multi-match/2026"
+      },
+      {
+        "label": "Pick 3 Midday History",
+        "href": "/md/pick-3-midday/2026"
+      },
+      {
+        "label": "Pick 3 Evening History",
+        "href": "/md/pick-3-evening/2026"
+      },
+      {
+        "label": "Pick 4 Midday History",
+        "href": "/md/pick-4-midday/2026"
+      },
+      {
+        "label": "Pick 4 Evening History",
+        "href": "/md/pick-4-evening/2026"
+      }
+    ]
+  },
+  "howToClaim": {
+    "heading": "How to Claim Maryland Lottery Prizes",
+    "intro": "How to claim Maryland Lottery prizes, from small retailer payouts to large jackpot claims.",
+    "claimOptions": [
+      {
+        "amount": "Up to $599",
+        "method": "Claim at most authorized Maryland Lottery retailers"
+      },
+      {
+        "amount": "$600 and above",
+        "method": "Claim at a Maryland Lottery office or claim center per prize amount"
+      },
+      {
+        "amount": "Jackpot / annuity",
+        "method": "Claim at Maryland Lottery headquarters (appointment recommended)"
+      }
+    ],
+    "documents": [
+      "Signed winning ticket",
+      "Government-issued photo ID",
+      "Social Security number or taxpayer ID",
+      "Completed claim form"
+    ],
+    "steps": [
+      {
+        "title": "Sign your winning ticket",
+        "detail": "Sign the back immediately to protect ownership."
+      },
+      {
+        "title": "Confirm the amount you won",
+        "detail": "Compare to the Latest Draw Results."
+      },
+      {
+        "title": "Choose the correct claim method",
+        "detail": "Based on the prize amount."
+      },
+      {
+        "title": "Complete the paperwork",
+        "detail": "Claim form and tax forms for larger prizes."
+      },
+      {
+        "title": "Submit your claim",
+        "detail": "In person or by mail (certified mail recommended)."
+      }
+    ],
+    "deadlines": [
+      "Draw games: 182 days from the draw date",
+      "Scratch-Offs: per each game's end date",
+      "Mailed claims: postmark by the deadline"
+    ],
+    "districtOffices": "Maryland Lottery claim centers/headquarters handle larger prizes; appointments recommended for jackpot and annuity prizes."
+  },
+  "taxes": {
+    "heading": "Taxes & Withholding",
+    "stateNote": "Maryland withholds state income tax on lottery winnings, in addition to federal tax.",
+    "federalIntro": "Federal tax rules apply for prizes of $600 or more:",
+    "points": [
+      "Mandatory federal withholding: 24%",
+      "State income tax is withheld on winnings",
+      "Additional tax may apply at filing",
+      "W-2G forms are issued for reportable winnings"
+    ]
+  },
+  "playerInfo": {
+    "heading": "Maryland Lottery Guide & Player Information",
+    "intro": "Key information Maryland Lottery players should understand.",
+    "sections": [
+      {
+        "title": "Draw Integrity & Oversight",
+        "body": "Maryland Lottery drawings follow strict procedures to ensure fairness and randomness; results are verified before publication."
+      },
+      {
+        "title": "Key Maryland Lottery Rules",
+        "list": [
+          "Minimum age to play: 18",
+          "Tickets must be signed to become valid property",
+          "Damaged or unreadable tickets follow a formal review process",
+          "Draw cutoff times vary by game"
+        ]
+      },
+      {
+        "title": "Responsible Play",
+        "list": [
+          "Set a budget and stick to it",
+          "Odds are fixed \u2014 play for entertainment",
+          "Avoid chasing losses",
+          "A problem-gambling helpline is available for confidential support"
+        ]
+      }
+    ]
+  },
+  "finalFaqs": {
+    "heading": "Maryland Lottery \u2014 Frequently Asked Questions",
+    "visibleOnPage": true,
+    "items": [
+      {
+        "q": "What time are Maryland Lottery drawings held?",
+        "a": "Draw times vary by game; times on this page use Maryland local time (ET). See the Schedule section."
+      },
+      {
+        "q": "What is the minimum age to play the Maryland Lottery?",
+        "a": "You must be 18 or older to play."
+      },
+      {
+        "q": "Are Maryland Lottery prizes taxed?",
+        "a": "Maryland withholds state income tax on lottery winnings, in addition to federal tax. Federal withholding of 24% applies to prizes over $5,000."
+      },
+      {
+        "q": "How do I claim a Maryland Lottery prize?",
+        "a": "Smaller prizes at retailers; larger prizes at a claim center or headquarters. See How to Claim above."
+      },
+      {
+        "q": "What happens to unclaimed Maryland Lottery prizes?",
+        "a": "Unclaimed prize funds are directed to state programs per Maryland Lottery rules."
+      }
+    ]
+  },
+  "faqs": {
+    "heading": "Frequently Asked Questions",
+    "visibleOnPage": true,
+    "schemaEligible": true,
+    "items": [
+      {
+        "q": "What are today's Maryland Lottery numbers?",
+        "a": "The latest winning numbers for all games appear in the Latest Draw Results section above."
+      },
+      {
+        "q": "How do I check my Maryland Lottery ticket?",
+        "a": "Compare your numbers to the Latest Draw Results and complete official validation before claiming."
+      },
+      {
+        "q": "Did anyone win the jackpot?",
+        "a": "See the Jackpot Tracker below for whether top prizes rolled over and the next estimated jackpots."
+      }
+    ]
+  },
+  "adSlotRefs": {
+    "note": "Same fixed state-page ad slots as /fl.",
+    "top": [
+      "sp_top_billboard"
+    ],
+    "inContent": [
+      "sp_mid_leaderboard_pos1",
+      "sp_mid_leaderboard_pos2",
+      "sp_mid_leaderboard_pos3",
+      "sp_mid_leaderboard_pos4"
+    ],
+    "rightRail": [
+      "sp_side_halfpage_pos1",
+      "sp_side_mpu_pos2",
+      "sp_side_skyscraper"
+    ],
+    "mobileInContent": [
+      "sp_mobile_leaderboard_pos1",
+      "sp_mobile_leaderboard_pos2",
+      "sp_mobile_leaderboard_pos3",
+      "sp_mobile_leaderboard_pos4"
+    ],
+    "bottom": [
+      "sp_bottom_billboard"
+    ],
+    "stickyFooterAd": "sp_bottom_large_leaderboard"
+  },
+  "officialSourceNotice": {
+    "name": "Maryland Lottery",
+    "text": "Winning numbers are sourced from official Maryland Lottery draws. Always verify major prizes with an authorized Maryland Lottery retailer or office."
+  },
+  "responsiblePlayNotice": {
+    "text": "Play responsibly. 18+ only. If gambling is a problem, help is available."
+  },
+  "independenceDisclaimer": {
+    "text": "Lottery Corner is an independent lottery information website and is not affiliated with the Maryland Lottery or the State of Maryland."
+  },
+  "popularGames": [
+    {
+      "gameSlug": "powerball",
+      "displayName": "Powerball",
+      "href": "/powerball"
+    },
+    {
+      "gameSlug": "mega-millions",
+      "displayName": "Mega Millions",
+      "href": "/mega-millions"
+    },
+    {
+      "gameSlug": "bonus-match-5",
+      "displayName": "Bonus Match 5",
+      "href": "/md/bonus-match-5"
+    },
+    {
+      "gameSlug": "multi-match",
+      "displayName": "Multi Match",
+      "href": "/md/multi-match"
+    }
+  ],
+  "aiToolsTeaser": {
+    "enabled": true,
+    "heading": "AI-assisted lottery tools (coming soon)",
+    "copy": "Explore AI-assisted insights, smart number analysis and personalized alerts. For entertainment and informational purposes only.",
+    "cta": "Sign in to try",
+    "loginGated": true
+  },
+  "accountHooks": {
+    "loginRegisterVisible": true,
+    "favoritesEnabled": true
+  },
+  "jackpotTracker": {
+    "heading": "Did Anyone Win Last Night? (Jackpot Tracker)",
+    "intro": "Current estimated jackpots and next draw dates for the biggest games. When a top prize rolls over, the next jackpot increases.",
+    "columns": [
+      "Game",
+      "Jackpot Won?",
+      "Next Estimated Jackpot",
+      "Next Draw Date"
+    ],
+    "rows": [
+      [
+        "Pick 5 Midday",
+        "Rolled Over",
+        "$50,000",
+        "Friday, 07/10/2026"
+      ],
+      [
+        "Pick 5 Evening",
+        "Rolled Over",
+        "$50,000",
+        "Thursday, 07/09/2026"
+      ],
+      [
+        "Bonus Match 5",
+        "Rolled Over",
+        "$50,000",
+        "Thursday, 07/09/2026"
+      ],
+      [
+        "Multi Match",
+        "Rolled Over",
+        "$1.80 Million",
+        "Thursday, 07/09/2026"
+      ],
+      [
+        "Mega Millions",
+        "Rolled Over",
+        "$604 Million",
+        "Friday, 07/10/2026"
+      ],
+      [
+        "Powerball",
+        "Rolled Over",
+        "$457 Million",
+        "Saturday, 07/11/2026"
+      ]
+    ]
+  },
+  "highlights": {
+    "heading": "Recent Highlights & Alerts",
+    "intro": "Notable Maryland Lottery trends, unclaimed prizes nearing expiration, and jackpot movement. Updated periodically.",
+    "recentWins": [
+      {
+        "location": "Maryland",
+        "text": "Recent top-tier Maryland Lottery wins are published when officially released."
+      }
+    ],
+    "unclaimedPrizes": [
+      {
+        "game": "Mega Millions",
+        "amount": "See official source",
+        "location": "Maryland",
+        "note": "Unclaimed prizes expire after the claim deadline \u2014 check your tickets."
+      }
+    ],
+    "jackpotGrowth": [
+      {
+        "game": "Powerball",
+        "text": "The jackpot has rolled following draws without a top-prize winner."
+      },
+      {
+        "game": "Mega Millions",
+        "text": "Recent rollovers have increased the advertised jackpot."
+      }
+    ],
+    "note": "Winner specifics are published only when officially released."
+  },
+  "secondChance": {
+    "heading": "Maryland Lottery Second-Chance Drawings",
+    "intro": "Give eligible non-winning tickets another chance to win.",
+    "sections": [
+      {
+        "title": "How it works",
+        "body": "Many Maryland Lottery games offer second-chance drawings for eligible non-winning tickets. Enter through the official Maryland Lottery website or app; check current promotions and eligibility there."
+      },
+      {
+        "title": "Good to know",
+        "list": [
+          "Second-chance promotions and eligible games change over time",
+          "Enter before the promotion's deadline",
+          "Official rules are published by the Maryland Lottery"
+        ]
+      }
+    ]
+  },
+  "contentMeta": {
+    "source": "Official Maryland Lottery draw results",
+    "reviewStatus": "published",
+    "lastReviewed": "July 9, 2026 at 1:16 PM ET",
+    "note": "Content is reviewed after each official drawing (draft \u2192 review \u2192 publish workflow for future admin/agent edits)."
+  }
+}

@@ -1,0 +1,435 @@
+{
+  "_meta": {
+    "purpose": "UI-first sample payload for the Arizona state page (/az). Validates that StatePageTemplate is reusable (no Florida hardcoding). Result numbers/dates are real values from source-xml/latest-results-lc.xml. All copy is clean sample/admin-editable text (no [ADMIN] tokens). Ads by slotKey. Buy Tickets via /buynow/<code> only.",
+    "illustrative": true,
+    "stateDifferencesFromFL": "AZ timezone America/Phoenix (MST, no DST); min age 21; AZ state tax on winnings; games The Pick/Triple Twist/Fantasy 5/Pick 3; Data Methodology module OFF (omitted); no Double Play.",
+    "schemaVersion": "0.2-sample"
+  },
+  "page": {
+    "stateCode": "az",
+    "stateName": "Arizona",
+    "url": "/az",
+    "pageType": "state",
+    "metadata": {
+      "title": "Arizona Lottery Results Today — Winning Numbers, Jackpots & How to Claim",
+      "description": "Latest Arizona Lottery winning numbers for Powerball, Mega Millions, The Pick, Fantasy 5, Triple Twist and Pick 3 — updated after every draw.",
+      "canonicalPlaceholder": "[VERIFY-CONVENTION] /az (host + trailing-slash convention not finalized — not emitted yet)",
+      "robots": "index,follow",
+      "openGraph": { "type": "website", "title": "Arizona Lottery Results Today", "description": "Latest Arizona Lottery winning numbers and jackpots.", "siteName": "Lottery Corner" },
+      "twitter": { "card": "summary_large_image", "title": "Arizona Lottery Results Today", "description": "Latest Arizona Lottery winning numbers and jackpots." },
+      "schemaTypes": ["WebPage", "BreadcrumbList", "FAQPage"],
+      "breadcrumb": [
+        { "name": "Home", "url": "/" },
+        { "name": "Arizona Winning Numbers", "url": "/az" }
+      ]
+    },
+    "h1": "Arizona Lottery Results Today — Winning Numbers, Jackpots, & How to Claim",
+    "intro": "Get the latest Arizona Lottery winning numbers, live jackpots, and clear tools to check results, verify your ticket, and understand odds and claim rules — updated after every draw.",
+    "lastUpdated": {
+      "display": "Last updated: July 8, 2026 at 8:00 PM MST",
+      "storedDrawTimezone": "America/New_York",
+      "displayTimezone": "America/Phoenix",
+      "isoDateModified": "2026-07-08T20:00:00-07:00"
+    },
+    "timezoneMeta": {
+      "storedTimezone": "America/New_York",
+      "gameLocalTimezone": "America/Phoenix",
+      "note": "Arizona is MST (no DST). Draw times stored in EST are converted to America/Phoenix for display. HIGH-RISK for the after-10PM local -> next-EST-day date shift (05-doc D7) — must be handled by the future API/date logic."
+    }
+  },
+  "jackpotTicker": {
+    "nextDraw": { "game": "The Pick", "timeDisplay": "Sat 7:00 PM MST", "countdownLabel": "2d 21h" },
+    "topJackpots": [
+      { "game": "Powerball", "amountDisplay": "$435 Million" },
+      { "game": "Mega Millions", "amountDisplay": "$576 Million" },
+      { "game": "The Pick", "amountDisplay": "$1 Million" }
+    ],
+    "alsoComingUp": [
+      { "game": "Fantasy 5", "countdownLabel": "21h 5m" },
+      { "game": "Triple Twist", "countdownLabel": "2d 21h" }
+    ],
+    "quickActions": [
+      { "label": "Check Ticket", "href": "#check-ticket" },
+      { "label": "Past Results", "href": "#winning-history" },
+      { "label": "Prize Lookup", "href": "#how-to-claim" },
+      { "label": "Claim Info", "href": "#how-to-claim" }
+    ],
+    "buyTickets": { "label": "Buy Tickets", "href": "/buynow/play-usa-powerball" },
+    "disclaimer": "Winning numbers are updated shortly after each drawing. For major prizes, confirm your ticket with an authorized Arizona Lottery retailer or office."
+  },
+  "tabs": [
+    { "key": "results", "label": "Results", "href": "#results", "active": true },
+    { "key": "winning-history", "label": "Winning History", "href": "#winning-history" },
+    { "key": "schedule", "label": "Schedule", "href": "#schedule" },
+    { "key": "how-to-play", "label": "How to Play", "href": "#how-to-play" },
+    { "key": "how-to-claim", "label": "How to Claim", "href": "#how-to-claim" }
+  ],
+  "latestResults": {
+    "heading": "Latest Draw Results",
+    "infoCallout": "Winning numbers on Lottery Corner are updated shortly after each draw. For major prizes, confirm your ticket with an authorized Arizona Lottery retailer or office.",
+    "intro": "Here are the most recent Arizona Lottery winning numbers, updated as soon as each drawing is completed — starting with Powerball and Mega Millions and then all in-state games.",
+    "groups": [
+      {
+        "groupKey": "multiState",
+        "heading": "Multi-State Draws (Powerball & Mega Millions)",
+        "resultCards": [
+          {
+            "gameId": 1012,
+            "gameSlug": "powerball",
+            "displayName": "Powerball",
+            "formatRef": { "gameId": 1012, "effectiveFrom": "2015-10-07" },
+            "status": "latest",
+            "drawScheduleLabel": "Mon, Wed & Sat",
+            "resultDate": { "gameLocalDate": "2026-07-08", "display": "Wednesday, 07/08/2026 — 7:59 PM MST", "isoDrawDateTime": "2026-07-08T19:59:00-07:00" },
+            "groupsDrawn": [
+              { "order": 0, "label": null, "values": [12, 29, 37, 43, 55], "colorToken": "ball.default" },
+              { "order": 1, "label": "Powerball", "values": [18], "colorToken": "ball.powerball" }
+            ],
+            "multipliers": [ { "key": "powerplay", "label": "Power Play", "value": 4, "display": "Power Play 4X" } ],
+            "prizeDisplay": "$435 Million",
+            "prizeRaw": "435000000",
+            "nextDraw": { "gameLocalDate": "2026-07-11", "display": "Saturday, 07/11/2026", "nextJackpotDisplay": "$457 Million" },
+            "buyTickets": { "label": "Buy Tickets", "href": "/buynow/play-usa-powerball", "affiliateResolved": false },
+            "actions": [ { "type": "viewHistory", "href": "/az/powerball/2026" }, { "type": "findMore", "href": "/az/powerball" } ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 1013,
+            "gameSlug": "mega-millions",
+            "displayName": "Mega Millions",
+            "formatRef": { "gameId": 1013, "effectiveFrom": "2025-04-08" },
+            "status": "latest",
+            "drawScheduleLabel": "Tue & Fri",
+            "resultDate": { "gameLocalDate": "2026-07-07", "display": "Tuesday, 07/07/2026 — 8:00 PM MST", "isoDrawDateTime": "2026-07-07T20:00:00-07:00" },
+            "groupsDrawn": [
+              { "order": 0, "label": null, "values": [2, 31, 35, 36, 63], "colorToken": "ball.default" },
+              { "order": 1, "label": "Mega Ball", "values": [12], "colorToken": "ball.megaball" }
+            ],
+            "multipliers": [],
+            "prizeDisplay": "$576 Million",
+            "prizeRaw": "576000000",
+            "nextDraw": { "gameLocalDate": "2026-07-10", "display": "Friday, 07/10/2026", "nextJackpotDisplay": "$604 Million" },
+            "buyTickets": { "label": "Buy Tickets", "href": "/buynow/play-usa-megamillions", "affiliateResolved": false },
+            "actions": [ { "type": "viewHistory", "href": "/az/mega-millions/2026" }, { "type": "findMore", "href": "/az/mega-millions" } ],
+            "favoriteHook": true
+          }
+        ]
+      },
+      {
+        "groupKey": "inState",
+        "heading": "Arizona In-State Draws",
+        "resultCards": [
+          {
+            "gameId": 305,
+            "gameSlug": "the-pick",
+            "displayName": "The Pick",
+            "formatRef": { "gameId": 305, "effectiveFrom": null },
+            "status": "latest",
+            "drawScheduleLabel": "Wed & Sat",
+            "resultDate": { "gameLocalDate": "2026-07-08", "display": "Wednesday, 07/08/2026", "isoDrawDateTime": "2026-07-08T19:00:00-07:00" },
+            "groupsDrawn": [ { "order": 0, "label": null, "values": [1, 10, 29, 30, 33, 35], "colorToken": "ball.default" } ],
+            "multipliers": [],
+            "prizeDisplay": "$1 Million",
+            "prizeRaw": "1000000",
+            "nextDraw": { "gameLocalDate": "2026-07-11", "display": "Saturday, 07/11/2026", "nextJackpotDisplay": "$1.1 Million" },
+            "buyTickets": null,
+            "actions": [ { "type": "viewHistory", "href": "/az/the-pick/2026" } ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 303,
+            "gameSlug": "fantasy-5",
+            "displayName": "Fantasy 5",
+            "formatRef": { "gameId": 303, "effectiveFrom": null },
+            "status": "latest",
+            "drawScheduleLabel": "Daily",
+            "resultDate": { "gameLocalDate": "2026-07-08", "display": "Wednesday, 07/08/2026", "isoDrawDateTime": "2026-07-08T19:00:00-07:00" },
+            "groupsDrawn": [ { "order": 0, "label": null, "values": [13, 28, 33, 34, 35], "colorToken": "ball.default" } ],
+            "multipliers": [],
+            "prizeDisplay": "$216,000",
+            "prizeRaw": "216000",
+            "nextDraw": { "gameLocalDate": "2026-07-09", "display": "Thursday, 07/09/2026", "nextJackpotDisplay": "$230,000" },
+            "buyTickets": null,
+            "actions": [ { "type": "viewHistory", "href": "/az/fantasy-5/2026" } ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 577,
+            "gameSlug": "triple-twist",
+            "displayName": "Triple Twist",
+            "formatRef": { "gameId": 577, "effectiveFrom": null },
+            "status": "latest",
+            "drawScheduleLabel": "Wed & Sat",
+            "resultDate": { "gameLocalDate": "2026-07-08", "display": "Wednesday, 07/08/2026", "isoDrawDateTime": "2026-07-08T19:00:00-07:00" },
+            "groupsDrawn": [ { "order": 0, "label": null, "values": [3, 8, 19, 28, 29, 39], "colorToken": "ball.default" } ],
+            "multipliers": [],
+            "prizeDisplay": "$245,000",
+            "prizeRaw": "245000",
+            "nextDraw": { "gameLocalDate": "2026-07-09", "display": "Thursday, 07/09/2026", "nextJackpotDisplay": "$250,000" },
+            "buyTickets": null,
+            "actions": [ { "type": "viewHistory", "href": "/az/triple-twist/2026" } ],
+            "favoriteHook": true
+          }
+        ]
+      },
+      {
+        "groupKey": "pick",
+        "heading": "Pick Games",
+        "resultCards": [
+          {
+            "gameId": 301,
+            "gameSlug": "pick-3",
+            "displayName": "Pick 3",
+            "formatRef": { "gameId": 301, "effectiveFrom": null },
+            "status": "latest",
+            "drawScheduleLabel": "Daily",
+            "resultDate": { "gameLocalDate": "2026-07-08", "display": "Wednesday, 07/08/2026", "isoDrawDateTime": "2026-07-08T19:00:00-07:00" },
+            "groupsDrawn": [ { "order": 0, "label": null, "values": [3, 7, 5], "colorToken": "ball.default" } ],
+            "multipliers": [],
+            "prizeDisplay": "$500",
+            "nextDraw": { "gameLocalDate": "2026-07-09", "display": "Thursday, 07/09/2026" },
+            "buyTickets": null,
+            "actions": [ { "type": "viewHistory", "href": "/az/pick-3/2026" } ],
+            "favoriteHook": true
+          }
+        ]
+      }
+    ]
+  },
+  "checkTicket": {
+    "heading": "Check Your Ticket",
+    "intro": "Enter your numbers and draw date to instantly see whether your Arizona Lottery ticket matches the latest results.",
+    "howItWorks": [
+      "Select the game you played.",
+      "Choose the draw date.",
+      "Enter your numbers exactly as printed on your ticket.",
+      "Review the prize matches shown.",
+      "For large wins, follow the Claim Info steps to submit your ticket safely."
+    ],
+    "gameOptions": ["Powerball", "Mega Millions", "The Pick", "Fantasy 5", "Triple Twist", "Pick 3"],
+    "note": "Type your numbers carefully. If a mistake is made, simply re-enter them and run the check again."
+  },
+  "faqs": {
+    "heading": "Frequently Asked Questions",
+    "visibleOnPage": true,
+    "schemaEligible": true,
+    "items": [
+      { "q": "What are today's Arizona Lottery numbers?", "a": "The latest Arizona Lottery winning numbers for all games appear in the Latest Draw Results section above, updated shortly after each drawing." },
+      { "q": "How do I check my Arizona Lottery ticket?", "a": "Use the Check Your Ticket tool: pick the game and draw date, enter your numbers, and review the matches." },
+      { "q": "What is the minimum age to play the Arizona Lottery?", "a": "You must be 21 or older to purchase Arizona Lottery tickets." },
+      { "q": "Are Arizona Lottery winnings taxed?", "a": "Arizona withholds state income tax on lottery winnings in addition to federal withholding. See Taxes below." }
+    ]
+  },
+  "highlights": {
+    "heading": "Recent Highlights & Alerts",
+    "intro": "Notable Arizona Lottery wins, unclaimed prizes nearing expiration, and ongoing jackpot trends. Updated periodically as new information becomes available.",
+    "recentWins": [
+      { "location": "Phoenix", "text": "The Pick jackpot win: a ticket sold in the Phoenix area matched all six numbers for the top prize." },
+      { "location": "Tucson", "text": "Fantasy 5 top-tier win: a Tucson ticket matched all five numbers in a recent draw." },
+      { "location": "Mesa", "text": "Powerball second-tier win: a Mesa ticket matched five numbers for a $1 million prize." }
+    ],
+    "unclaimedPrizes": [
+      { "game": "Fantasy 5", "amount": "$50,000", "location": "Scottsdale", "note": "Expires soon. Ticket purchased at a convenience store." },
+      { "game": "The Pick", "amount": "$120,000", "location": "Chandler", "note": "Winner has limited time remaining to claim." }
+    ],
+    "jackpotGrowth": [
+      { "game": "Powerball", "text": "The jackpot has rolled multiple times following consecutive drawings without a top-prize winner." },
+      { "game": "The Pick", "text": "Several consecutive drawings have passed without a jackpot hit, increasing local player interest." }
+    ],
+    "note": "Prize amounts and locations are published only when officially released."
+  },
+  "howToClaim": {
+    "heading": "How to Claim Arizona Lottery Prizes",
+    "intro": "Learn how to claim Arizona Lottery prizes step-by-step, from small retailer payouts to large jackpot claims at Arizona Lottery offices.",
+    "claimOptions": [
+      { "amount": "Up to $599", "method": "Claim at most authorized Arizona Lottery retailers" },
+      { "amount": "$600 – $99,999", "method": "Claim at an Arizona Lottery office or by mail" },
+      { "amount": "$100,000 and above / annuity", "method": "Claim in person at an Arizona Lottery office (appointment recommended)" }
+    ],
+    "documents": [
+      "Signed winning ticket",
+      "Government-issued photo ID",
+      "Social Security number or taxpayer ID",
+      "Completed Arizona Lottery Claim Form"
+    ],
+    "steps": [
+      { "title": "Sign your winning ticket", "detail": "Immediately sign the back of your ticket to protect ownership." },
+      { "title": "Confirm the amount you won", "detail": "Use the Check Ticket tool or the Latest Draw Results section." },
+      { "title": "Choose the correct claim method", "detail": "Based on prize amount, from retailer payout to an Arizona Lottery office." },
+      { "title": "Complete the required paperwork", "detail": "Arizona Lottery Claim Form and tax forms for larger prizes." },
+      { "title": "Submit your claim", "detail": "In person or by mail (certified mail recommended)." }
+    ],
+    "deadlines": [
+      "Draw games: 180 days from the draw date",
+      "Scratchers: 180 days after the game officially ends",
+      "Mailed claims: envelope must be postmarked by the deadline"
+    ],
+    "districtOffices": "Arizona Lottery offices are located in Phoenix and Tucson. Appointments are recommended for jackpot and annuity prizes."
+  },
+  "taxes": {
+    "heading": "Taxes & Withholding",
+    "stateNote": "Arizona DOES withhold state income tax on lottery winnings (in addition to federal tax).",
+    "federalIntro": "Tax rules apply for prizes of $600 or more:",
+    "points": [
+      "Mandatory federal withholding: 24%",
+      "Arizona state withholding applies to residents and non-residents (rates differ)",
+      "Additional tax may apply at filing",
+      "W-2G forms are issued for reportable winnings"
+    ]
+  },
+  "oddsGuide": {
+    "heading": "Game Odds, Prize Matrix & How Each Arizona Lottery Game Works",
+    "intro": "Understand the odds, prize tiers, and basic rules for every major Arizona Lottery draw game.",
+    "games": [
+      {
+        "gameName": "The Pick",
+        "rules": "Players pick six numbers from 1–44. The jackpot grows until someone wins.",
+        "prizeMatrix": [
+          { "tier": "Match 6", "prize": "Jackpot (varies)" },
+          { "tier": "Match 5", "prize": "Mid-tier prize" },
+          { "tier": "Match 4", "prize": "Lower-tier prize" },
+          { "tier": "Match 3", "prize": "Free ticket" }
+        ],
+        "odds": ["Jackpot: 1 in 7,059,052", "Any prize: 1 in 9"]
+      },
+      {
+        "gameName": "Fantasy 5",
+        "rules": "Pick five numbers from 1–41. Drawn daily.",
+        "prizeMatrix": [
+          { "tier": "Match 5", "prize": "Top prize (varies)" },
+          { "tier": "Match 4", "prize": "Mid-tier cash prize" },
+          { "tier": "Match 3", "prize": "Lower-tier cash prize" }
+        ],
+        "odds": ["Match 5: 1 in 749,398", "Any prize: 1 in 9.62"]
+      },
+      {
+        "gameName": "Powerball",
+        "rules": "Pick five numbers (1–69) plus a Powerball (1–26).",
+        "prizeMatrix": [
+          { "tier": "Match 5 + Powerball", "prize": "Jackpot" },
+          { "tier": "Match 5", "prize": "$1 million" }
+        ],
+        "odds": ["Jackpot: 1 in 292 million", "Any prize: 1 in 24.9"]
+      },
+      {
+        "gameName": "Mega Millions",
+        "rules": "Pick five numbers (1–70) plus a Megaball (1–24).",
+        "prizeMatrix": [
+          { "tier": "Match 5 + Megaball", "prize": "Jackpot" },
+          { "tier": "Match 5", "prize": "$1 million" }
+        ],
+        "odds": ["Jackpot: 1 in 302 million", "Any prize: 1 in 24"]
+      }
+    ]
+  },
+  "playerInfo": {
+    "heading": "Arizona Lottery Guide & Player Information",
+    "intro": "Key information Arizona Lottery players should understand, including draw integrity, basic rules, and responsible play guidance.",
+    "sections": [
+      { "title": "Draw Integrity & Oversight", "body": "Arizona Lottery drawings follow strict procedures designed to ensure fairness and randomness. Equipment is tested and results are verified before publication." },
+      { "title": "Key Arizona Lottery Rules", "list": ["Minimum age to play: 21", "Tickets must be signed to become valid property", "Damaged or unreadable tickets follow a formal review process", "Draw cutoff times vary by game"] },
+      { "title": "Responsible Play (Arizona Guidelines)", "list": ["Set a weekly budget", "Understand that odds are fixed", "Avoid chasing losses", "Arizona's problem-gambling helpline is available for support"] }
+    ]
+  },
+  "quickFacts": {
+    "heading": "Arizona Lottery Quick Facts",
+    "rows": [
+      { "label": "Established", "value": "1981" },
+      { "label": "Minimum age to play", "value": "21" },
+      { "label": "Draw-game claim deadline", "value": "180 days from the draw date" },
+      { "label": "State tax on winnings", "value": "Yes — Arizona withholds state income tax" },
+      { "label": "In-state games", "value": "The Pick, Fantasy 5, Triple Twist, Pick 3" },
+      { "label": "Multi-state games", "value": "Powerball, Mega Millions" }
+    ]
+  },
+  "drawSchedule": {
+    "heading": "Arizona Lottery Draw Schedule (MST)",
+    "intro": "All times are Arizona time (MST, no daylight saving).",
+    "entries": [
+      { "game": "Powerball", "days": "Mon, Wed & Sat", "timeDisplay": "7:59 PM MST" },
+      { "game": "Mega Millions", "days": "Tue & Fri", "timeDisplay": "8:00 PM MST" },
+      { "game": "The Pick", "days": "Wed & Sat", "timeDisplay": "7:00 PM MST" },
+      { "game": "Fantasy 5", "days": "Daily", "timeDisplay": "7:00 PM MST" },
+      { "game": "Triple Twist", "days": "Wed & Sat", "timeDisplay": "7:00 PM MST" },
+      { "game": "Pick 3", "days": "Daily", "timeDisplay": "7:00 PM MST" }
+    ]
+  },
+  "historyLinks": {
+    "heading": "Arizona Lottery Winning Numbers History",
+    "intro": "Browse past Arizona Lottery winning numbers by game.",
+    "links": [
+      { "label": "The Pick History", "href": "/az/the-pick/2026" },
+      { "label": "Fantasy 5 History", "href": "/az/fantasy-5/2026" },
+      { "label": "Triple Twist History", "href": "/az/triple-twist/2026" },
+      { "label": "Pick 3 History", "href": "/az/pick-3/2026" },
+      { "label": "Powerball History", "href": "/az/powerball/2026" },
+      { "label": "Mega Millions History", "href": "/az/mega-millions/2026" }
+    ]
+  },
+  "biggestWinners": {
+    "heading": "Biggest Arizona Lottery Winners",
+    "intro": "Notable record Arizona Lottery prizes (published amounts).",
+    "items": [
+      { "amount": "$473.1 Million", "game": "Powerball", "location": "Arizona", "text": "One of Arizona's largest Powerball prizes, claimed by a single ticket." },
+      { "amount": "$410 Million", "game": "Powerball", "location": "Glendale", "text": "A Glendale-area ticket matched all five numbers plus the Powerball." },
+      { "amount": "Record jackpot", "game": "The Pick", "location": "Phoenix", "text": "The Pick jackpots grow until won; the top in-state prizes have reached the millions." }
+    ]
+  },
+  "scratchOffs": {
+    "heading": "Arizona Scratch-Off Games",
+    "intro": "Instant-win Scratchers are available alongside the draw games.",
+    "sections": [
+      { "title": "What are Scratchers?", "body": "Scratch-off (instant) tickets reveal whether you have won immediately — no draw required. Prizes and odds are printed per game." },
+      { "title": "Claiming Scratcher prizes", "body": "Lower-tier Scratcher prizes are paid at retailers; larger prizes are claimed at an Arizona Lottery office, subject to the game's end date and claim deadline." },
+      { "title": "Good to know", "list": ["Each Scratcher game has its own price, prize tiers, and odds", "Top-prizes-remaining information is published per game", "Scratcher claim deadlines run from the game's official end date"] }
+    ]
+  },
+  "legalResponsiblePlay": {
+    "heading": "Legal & Responsible Play",
+    "intro": "Play information and responsible-gaming guidance for Arizona players.",
+    "sections": [
+      { "title": "Legal", "list": ["You must be 21 or older to play in Arizona", "Winning tickets must be signed to become valid property", "All prizes are subject to verification by the Arizona Lottery", "Official Arizona Lottery results always take precedence"] },
+      { "title": "Responsible Play", "list": ["Set a budget and stick to it", "Odds are fixed — play for entertainment, not income", "Avoid chasing losses", "Arizona's problem-gambling helpline is available for confidential support"] }
+    ]
+  },
+  "finalFaqs": {
+    "heading": "Arizona Lottery — Frequently Asked Questions",
+    "visibleOnPage": true,
+    "items": [
+      { "q": "What time are Arizona Lottery drawings held?", "a": "Draw times vary by game; times on this page use Arizona time (MST, no daylight saving). See the Schedule section for each game's days and times." },
+      { "q": "Can I stay anonymous if I win the Arizona Lottery?", "a": "Anonymity rules depend on the prize amount and current Arizona law. Confirm with the official Arizona Lottery before claiming." },
+      { "q": "What is the minimum age to play the Arizona Lottery?", "a": "You must be 21 or older to purchase Arizona Lottery tickets." },
+      { "q": "Are Arizona Lottery prizes taxed?", "a": "Yes — Arizona withholds state income tax on winnings in addition to federal withholding of 24% on prizes over $5,000." },
+      { "q": "What happens to unclaimed lottery prizes in Arizona?", "a": "Unclaimed prize funds are directed to state programs per Arizona Lottery rules." }
+    ]
+  },
+  "adSlotRefs": {
+    "note": "Same fixed state-page ad slots as /fl (per pageType). Slot keys/positions unchanged.",
+    "top": ["sp_top_billboard"],
+    "inContent": ["sp_mid_leaderboard_pos1", "sp_mid_leaderboard_pos2", "sp_mid_leaderboard_pos3", "sp_mid_leaderboard_pos4"],
+    "rightRail": ["sp_side_halfpage_pos1", "sp_side_mpu_pos2", "sp_side_skyscraper"],
+    "mobileInContent": ["sp_mobile_leaderboard_pos1", "sp_mobile_leaderboard_pos2", "sp_mobile_leaderboard_pos3", "sp_mobile_leaderboard_pos4"],
+    "bottom": ["sp_bottom_billboard"],
+    "stickyFooterAd": "sp_bottom_large_leaderboard"
+  },
+  "officialSourceNotice": {
+    "name": "Arizona Lottery",
+    "text": "Winning numbers are sourced from official Arizona Lottery draws. Always verify major prizes with an authorized Arizona Lottery retailer or office."
+  },
+  "responsiblePlayNotice": { "text": "Play responsibly. 21+ only in Arizona. If gambling is a problem, help is available." },
+  "independenceDisclaimer": { "text": "Lottery Corner is an independent lottery information website and is not affiliated with the Arizona Lottery or the State of Arizona." },
+  "popularGames": [
+    { "gameSlug": "powerball", "displayName": "Powerball", "href": "/powerball" },
+    { "gameSlug": "mega-millions", "displayName": "Mega Millions", "href": "/mega-millions" },
+    { "gameSlug": "the-pick", "displayName": "The Pick", "href": "/az/the-pick" },
+    { "gameSlug": "fantasy-5", "displayName": "Fantasy 5", "href": "/az/fantasy-5" }
+  ],
+  "aiToolsTeaser": {
+    "enabled": true,
+    "heading": "AI-assisted lottery tools (coming soon)",
+    "copy": "Explore AI-assisted insights, smart number analysis and personalized alerts. For entertainment and informational purposes only.",
+    "cta": "Sign in to try",
+    "loginGated": true
+  },
+  "accountHooks": { "loginRegisterVisible": true, "favoritesEnabled": true }
+}

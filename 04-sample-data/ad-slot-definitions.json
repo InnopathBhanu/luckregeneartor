@@ -1,0 +1,3195 @@
+{
+  "_meta": {
+    "purpose": "Structured ad-slot definitions for the AdSlot component. Slots, sizes, div IDs, and size mappings are taken verbatim from lottery-result_upgrade_as.jsp (03-revenue-inventory). FIXED Google Ad Manager placements \u2014 the UI adapts around them; do not move/remove/merge/rename/reduce without Bala approval. No live GAM is loaded yet.",
+    "gamNetworkCode": "21828142944",
+    "adSense": {
+      "publisherId": "ca-pub-6009276896057794",
+      "loadedVia": "adsbygoogle.js in common include",
+      "note": "site-wide AdSense; preserve loader"
+    },
+    "managedWrapper": {
+      "pattern": "lotterycornercom_* (placementName/slotId)",
+      "vendor": "UNKNOWN \u2014 confirm with Bala"
+    },
+    "secondPublisher": {
+      "publisherId": "pub-5258173596915552",
+      "note": "in ads.txt (DIRECT); relationship to GAM network UNKNOWN"
+    },
+    "deviceTargeting": "responsive = one slot serving both desktop & mobile via GAM size mapping (breakpoint 992px). mobile = mobile-only snippet slot. desktop/tablet reserved for future explicit-tier slots (none discovered as desktop-only). The JSP uses only two size-mapping tiers: [992,0] (desktop) and [0,0] (mobile/tablet), so 'tablet' currently resolves to the mobile tier.",
+    "lazyLoadNote": "lazyLoad fields express intent for FUTURE GAM integration: request an ad only when the slot nears the viewport. Space is reserved up-front (reserveSpace) so there is NO layout shift; collapseIfEmpty stays false because placements are fixed. No googletag calls exist yet.",
+    "stickyFooterAdNote": "Discovered in lottery-result_upgrade_as.jsp: a sticky, CLOSABLE footer ad (#stickyAd + #closeAdButton) wraps the bottom_large_leaderboard slot (div-gpt-ad-1695650613003-0). Modeled via container='stickyFooter' + closable=true on sp_bottom_large_leaderboard. Placeholder only, no live GAM.",
+    "rightRailPolicy": "The right rail is reserved for PRODUCTION ad slots + known widgets only. Do NOT add AI teasers or new static promo banners to the rail without Bala approval. AI teasers stay in content sections and must not replace ad inventory.",
+    "schemaVersion": "0.5-sample"
+  },
+  "lazyLoadDefaults": {
+    "lazyLoad": true,
+    "lazyLoadMarginPx": 300,
+    "reserveSpace": true,
+    "collapseIfEmpty": false
+  },
+  "sizeMappings": {
+    "_note": "Copied verbatim from the JSP googletag.sizeMapping() builders. minViewport is [width,height]; [992,0] = desktop tier, [0,0] = mobile/tablet tier.",
+    "horizontaladsTop": {
+      "breakpoints": [
+        {
+          "minViewport": [
+            992,
+            0
+          ],
+          "sizes": [
+            [
+              728,
+              90
+            ]
+          ]
+        },
+        {
+          "minViewport": [
+            0,
+            0
+          ],
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ]
+        }
+      ]
+    },
+    "horizontalads": {
+      "breakpoints": [
+        {
+          "minViewport": [
+            992,
+            0
+          ],
+          "sizes": [
+            [
+              728,
+              90
+            ]
+          ]
+        },
+        {
+          "minViewport": [
+            0,
+            0
+          ],
+          "sizes": [
+            [
+              336,
+              280
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              320,
+              50
+            ]
+          ]
+        }
+      ]
+    },
+    "horizontalads1": {
+      "breakpoints": [
+        {
+          "minViewport": [
+            992,
+            0
+          ],
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              970,
+              250
+            ]
+          ]
+        },
+        {
+          "minViewport": [
+            0,
+            0
+          ],
+          "sizes": [
+            [
+              320,
+              50
+            ],
+            [
+              320,
+              100
+            ]
+          ]
+        }
+      ]
+    },
+    "horizontalads2": {
+      "breakpoints": [
+        {
+          "minViewport": [
+            992,
+            0
+          ],
+          "sizes": [
+            [
+              728,
+              90
+            ]
+          ]
+        },
+        {
+          "minViewport": [
+            0,
+            0
+          ],
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ]
+        }
+      ]
+    },
+    "verticalads": {
+      "breakpoints": [
+        {
+          "minViewport": [
+            992,
+            0
+          ],
+          "sizes": [
+            [
+              300,
+              250
+            ]
+          ]
+        },
+        {
+          "minViewport": [
+            0,
+            0
+          ],
+          "sizes": [
+            [
+              336,
+              280
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              320,
+              100
+            ]
+          ]
+        }
+      ]
+    },
+    "verticalads1": {
+      "breakpoints": [
+        {
+          "minViewport": [
+            992,
+            0
+          ],
+          "sizes": [
+            [
+              160,
+              600
+            ],
+            [
+              300,
+              600
+            ],
+            [
+              300,
+              250
+            ]
+          ]
+        },
+        {
+          "minViewport": [
+            0,
+            0
+          ],
+          "sizes": [
+            [
+              336,
+              280
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              320,
+              100
+            ]
+          ]
+        }
+      ]
+    },
+    "hp_horizontalheader": {
+      "breakpoints": [
+        {
+          "minViewport": [
+            992,
+            0
+          ],
+          "sizes": [
+            [
+              728,
+              90
+            ]
+          ]
+        },
+        {
+          "minViewport": [
+            0,
+            0
+          ],
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ]
+        }
+      ]
+    },
+    "hp_horizontalAds": {
+      "breakpoints": [
+        {
+          "minViewport": [
+            992,
+            0
+          ],
+          "sizes": [
+            [
+              728,
+              90
+            ]
+          ]
+        },
+        {
+          "minViewport": [
+            0,
+            0
+          ],
+          "sizes": [
+            [
+              336,
+              280
+            ],
+            [
+              320,
+              50
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              320,
+              100
+            ]
+          ]
+        }
+      ]
+    },
+    "hp_horizontalAds1": {
+      "breakpoints": [
+        {
+          "minViewport": [
+            992,
+            0
+          ],
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              970,
+              250
+            ]
+          ]
+        },
+        {
+          "minViewport": [
+            0,
+            0
+          ],
+          "sizes": [
+            [
+              336,
+              280
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              320,
+              100
+            ]
+          ]
+        }
+      ]
+    },
+    "hp_horizontalAds2": {
+      "breakpoints": [
+        {
+          "minViewport": [
+            992,
+            0
+          ],
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              970,
+              250
+            ]
+          ]
+        },
+        {
+          "minViewport": [
+            0,
+            0
+          ],
+          "sizes": [
+            [
+              320,
+              50
+            ],
+            [
+              320,
+              100
+            ]
+          ]
+        }
+      ]
+    },
+    "hp_verticalAds": {
+      "breakpoints": [
+        {
+          "minViewport": [
+            992,
+            0
+          ],
+          "sizes": [
+            [
+              160,
+              600
+            ],
+            [
+              300,
+              600
+            ],
+            [
+              300,
+              250
+            ]
+          ]
+        },
+        {
+          "minViewport": [
+            0,
+            0
+          ],
+          "sizes": [
+            [
+              336,
+              280
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              320,
+              50
+            ]
+          ]
+        }
+      ]
+    },
+    "hp_verticalAds1": {
+      "breakpoints": [
+        {
+          "minViewport": [
+            992,
+            0
+          ],
+          "sizes": [
+            [
+              300,
+              250
+            ]
+          ]
+        },
+        {
+          "minViewport": [
+            0,
+            0
+          ],
+          "sizes": [
+            [
+              336,
+              280
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              320,
+              100
+            ],
+            [
+              320,
+              50
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "statePageSlots": [
+    {
+      "slotKey": "sp_top_billboard",
+      "pageType": "state",
+      "placementName": "top_billboard",
+      "gamPath": "/21828142944/lc_sp_display_web_top_billboard",
+      "divId": "div-gpt-ad-1695648156445-0",
+      "device": "responsive",
+      "sizeMapping": "horizontaladsTop",
+      "sizes": [
+        [
+          320,
+          50
+        ],
+        [
+          728,
+          90
+        ]
+      ],
+      "desktopPlacement": "Top, below header/promo bar",
+      "mobilePlacement": "Top leaderboard 320x50",
+      "fixedPlacement": true,
+      "eagerAboveFold": true,
+      "lazyLoad": false,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 0,
+      "notes": "Above-the-fold \u2014 eager (still no live GAM)."
+    },
+    {
+      "slotKey": "sp_toppromobar",
+      "pageType": "state",
+      "placementName": "toppromobar",
+      "gamPath": "/21828142944/lc_toppromobar",
+      "divId": "UNKNOWN \u2014 not defined in this JSP",
+      "device": "responsive",
+      "sizeMapping": null,
+      "sizes": [
+        [
+          430,
+          71
+        ]
+      ],
+      "desktopPlacement": "Sticky top promotional bar",
+      "mobilePlacement": "Sticky top promo bar",
+      "fixedPlacement": true,
+      "lazyLoad": false,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 1,
+      "notes": "Defined elsewhere; div ID/full size array not in lottery-result_upgrade_as.jsp."
+    },
+    {
+      "slotKey": "sp_mid_leaderboard_pos1",
+      "pageType": "state",
+      "placementName": "mid_leaderboard_pos1",
+      "gamPath": "/21828142944/lc_sp_display_web_mid_leaderboard_pos1",
+      "divId": "div-gpt-ad-1695648437211-0",
+      "device": "responsive",
+      "sizeMapping": "horizontalads",
+      "sizes": [
+        [
+          336,
+          280
+        ],
+        [
+          728,
+          90
+        ],
+        [
+          970,
+          90
+        ]
+      ],
+      "desktopPlacement": "In-content (1st)",
+      "mobilePlacement": "In-content 336x280 / 320x50",
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "lazyLoadMarginPx": 300,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 2
+    },
+    {
+      "slotKey": "sp_mid_leaderboard_pos2",
+      "pageType": "state",
+      "placementName": "mid_leaderboard_pos2",
+      "gamPath": "/21828142944/lc_sp_display_web_mid_leaderboard_pos2",
+      "divId": "div-gpt-ad-1695648878708-0",
+      "device": "responsive",
+      "sizeMapping": "horizontalads",
+      "sizes": [
+        [
+          728,
+          90
+        ],
+        [
+          970,
+          90
+        ],
+        [
+          336,
+          280
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 3
+    },
+    {
+      "slotKey": "sp_mid_leaderboard_pos3",
+      "pageType": "state",
+      "placementName": "mid_leaderboard_pos3",
+      "gamPath": "/21828142944/lc_sp_display_web_mid_leaderboard_pos3",
+      "divId": "div-gpt-ad-1695649068812-0",
+      "device": "responsive",
+      "sizeMapping": "horizontalads",
+      "sizes": [
+        [
+          970,
+          90
+        ],
+        [
+          336,
+          280
+        ],
+        [
+          728,
+          90
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 4
+    },
+    {
+      "slotKey": "sp_mid_leaderboard_pos4",
+      "pageType": "state",
+      "placementName": "mid_leaderboard_pos4",
+      "gamPath": "/21828142944/lc_sp_display_web_mid_leaderboard_pos4",
+      "divId": "div-gpt-ad-1695649467987-0",
+      "device": "responsive",
+      "sizeMapping": "horizontalads",
+      "sizes": [
+        [
+          336,
+          280
+        ],
+        [
+          728,
+          90
+        ],
+        [
+          970,
+          90
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 5
+    },
+    {
+      "slotKey": "sp_mid_leaderboard_pos5",
+      "pageType": "state",
+      "placementName": "mid_leaderboard_pos5",
+      "gamPath": "/21828142944/lc_sp_display_web_mid_leaderboard_pos5",
+      "divId": "div-gpt-ad-1696670847831-0",
+      "device": "responsive",
+      "sizeMapping": "horizontalads",
+      "sizes": [
+        [
+          336,
+          280
+        ],
+        [
+          728,
+          90
+        ],
+        [
+          970,
+          90
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 6
+    },
+    {
+      "slotKey": "sp_mid_leaderboard_pos6",
+      "pageType": "state",
+      "placementName": "mid_leaderboard_pos6",
+      "gamPath": "/21828142944/lc_sp_display_web_mid_leaderboard_pos6",
+      "divId": "div-gpt-ad-1696670920637-0",
+      "device": "responsive",
+      "sizeMapping": "horizontalads",
+      "sizes": [
+        [
+          336,
+          280
+        ],
+        [
+          728,
+          90
+        ],
+        [
+          970,
+          90
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 7
+    },
+    {
+      "slotKey": "sp_mid_leaderboard",
+      "pageType": "state",
+      "placementName": "mid_leaderboard",
+      "gamPath": "/21828142944/lc_sp_display_web_mid_leaderboard",
+      "divId": "div-gpt-ad-1695650411336-0",
+      "device": "responsive",
+      "sizeMapping": "horizontalads",
+      "sizes": [
+        [
+          336,
+          280
+        ],
+        [
+          728,
+          90
+        ],
+        [
+          970,
+          90
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 8
+    },
+    {
+      "slotKey": "sp_side_halfpage_pos1",
+      "pageType": "state",
+      "placementName": "side_halfpage_pos1",
+      "gamPath": "/21828142944/lc_sp_display_web_side_halfpage_pos1",
+      "divId": "div-gpt-ad-1695648350770-0",
+      "device": "responsive",
+      "sizeMapping": "verticalads1",
+      "sizes": [
+        [
+          300,
+          600
+        ],
+        [
+          300,
+          250
+        ],
+        [
+          160,
+          600
+        ]
+      ],
+      "desktopPlacement": "Right rail \u2014 halfpage",
+      "mobilePlacement": "In-content (small tier)",
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 9
+    },
+    {
+      "slotKey": "sp_side_mpu_pos2",
+      "pageType": "state",
+      "placementName": "side_MPU_pos2",
+      "gamPath": "/21828142944/lc_sp_display_web_side_MPU_pos2",
+      "divId": "div-gpt-ad-1695649586080-0",
+      "device": "responsive",
+      "sizeMapping": "verticalads1",
+      "sizes": [
+        [
+          300,
+          600
+        ],
+        [
+          300,
+          250
+        ],
+        [
+          160,
+          600
+        ],
+        [
+          336,
+          280
+        ]
+      ],
+      "desktopPlacement": "Right rail \u2014 MPU",
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 10
+    },
+    {
+      "slotKey": "sp_side_mpu_pos3",
+      "pageType": "state",
+      "placementName": "side_MPU_pos3",
+      "gamPath": "/21828142944/lc_sp_display_web_side_MPU_pos3",
+      "divId": "div-gpt-ad-1695649839170-0",
+      "device": "responsive",
+      "sizeMapping": "verticalads",
+      "sizes": [
+        [
+          336,
+          280
+        ],
+        [
+          300,
+          250
+        ]
+      ],
+      "desktopPlacement": "Right rail \u2014 MPU",
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 11
+    },
+    {
+      "slotKey": "sp_side_mpu_pos4",
+      "pageType": "state",
+      "placementName": "side_MPU_pos4",
+      "gamPath": "/21828142944/lc_sp_display_web_side_MPU_pos4",
+      "divId": "div-gpt-ad-1695649981450-0",
+      "device": "responsive",
+      "sizeMapping": "verticalads",
+      "sizes": [
+        [
+          336,
+          280
+        ],
+        [
+          300,
+          250
+        ]
+      ],
+      "desktopPlacement": "Right rail \u2014 MPU",
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 12
+    },
+    {
+      "slotKey": "sp_side_mpu_pos5",
+      "pageType": "state",
+      "placementName": "side_MPU_pos5",
+      "gamPath": "/21828142944/lc_sp_display_web_side_MPU_pos5",
+      "divId": "div-gpt-ad-1695650062170-0",
+      "device": "responsive",
+      "sizeMapping": "verticalads",
+      "sizes": [
+        [
+          336,
+          280
+        ],
+        [
+          300,
+          250
+        ]
+      ],
+      "desktopPlacement": "Right rail \u2014 MPU",
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 13
+    },
+    {
+      "slotKey": "sp_side_skyscraper",
+      "pageType": "state",
+      "placementName": "side_skyscraper",
+      "gamPath": "/21828142944/lc_sp_display_web_side_skyscraper",
+      "divId": "div-gpt-ad-1695650228068-0",
+      "device": "responsive",
+      "sizeMapping": "verticalads1",
+      "sizes": [
+        [
+          320,
+          100
+        ],
+        [
+          160,
+          600
+        ]
+      ],
+      "desktopPlacement": "Right rail \u2014 skyscraper",
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 14
+    },
+    {
+      "slotKey": "sp_side_skyscraper_pos2",
+      "pageType": "state",
+      "placementName": "side_skyscraper_pos2",
+      "gamPath": "/21828142944/lc_sp_display_web_side_skyscraper_pos2",
+      "divId": "div-gpt-ad-1696670589090-0",
+      "device": "responsive",
+      "sizeMapping": "verticalads1",
+      "sizes": [
+        [
+          300,
+          250
+        ],
+        [
+          160,
+          600
+        ]
+      ],
+      "desktopPlacement": "Right rail \u2014 skyscraper",
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 15
+    },
+    {
+      "slotKey": "sp_side_skyscraper_pos3",
+      "pageType": "state",
+      "placementName": "side_skyscraper_pos3",
+      "gamPath": "/21828142944/lc_sp_display_web_side_skyscraper_pos3",
+      "divId": "div-gpt-ad-1696670665970-0",
+      "device": "responsive",
+      "sizeMapping": "verticalads1",
+      "sizes": [
+        [
+          300,
+          250
+        ],
+        [
+          160,
+          600
+        ]
+      ],
+      "desktopPlacement": "Right rail \u2014 skyscraper",
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 16
+    },
+    {
+      "slotKey": "sp_bottom_billboard",
+      "pageType": "state",
+      "placementName": "bottom_billboard",
+      "gamPath": "/21828142944/lc_sp_display_web_bottom_billboard",
+      "divId": "div-gpt-ad-1695650467957-0",
+      "device": "responsive",
+      "sizeMapping": "horizontalads1",
+      "sizes": [
+        [
+          320,
+          100
+        ],
+        [
+          970,
+          250
+        ]
+      ],
+      "desktopPlacement": "Bottom billboard",
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 17
+    },
+    {
+      "slotKey": "sp_bottom_large_leaderboard",
+      "pageType": "state",
+      "placementName": "bottom_large_leaderboard",
+      "gamPath": "/21828142944/lc_sp_display_web_bottom_large_leaderboard",
+      "divId": "div-gpt-ad-1695650613003-0",
+      "device": "responsive",
+      "sizeMapping": "horizontalads2",
+      "sizes": [
+        [
+          728,
+          90
+        ],
+        [
+          320,
+          50
+        ]
+      ],
+      "container": "stickyFooter",
+      "closable": true,
+      "desktopPlacement": "Sticky closable footer bar (#stickyAd / #closeAdButton in JSP)",
+      "mobilePlacement": "Sticky closable footer bar",
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 18,
+      "notes": "This slot is the production sticky/closable footer ad. Container renders fixed at viewport bottom with a close button; closing hides only this ad for the session."
+    }
+  ],
+  "statePageMobileSnippetSlots": [
+    {
+      "slotKey": "sp_mobile_leaderboard_pos1",
+      "pageType": "state",
+      "placementName": "mobile_leaderboard_pos1",
+      "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos1",
+      "divId": "div-gpt-ad-1707413795676-0",
+      "device": "mobile",
+      "sizeMapping": "horizontalads2",
+      "sizes": [
+        [
+          320,
+          50
+        ]
+      ],
+      "desktopPlacement": "hidden",
+      "mobilePlacement": "In-content mobile 320x50 (1st)",
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "notes": "Mobile-only snippet slot. JSP applies horizontalads2 mapping but the slot's intent/name is a 320x50 mobile leaderboard."
+    },
+    {
+      "slotKey": "sp_mobile_leaderboard_pos2",
+      "pageType": "state",
+      "placementName": "mobile_leaderboard_pos2",
+      "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos2",
+      "divId": "div-gpt-ad-1707413859823-0",
+      "device": "mobile",
+      "sizeMapping": "horizontalads2",
+      "sizes": [
+        [
+          320,
+          50
+        ]
+      ],
+      "desktopPlacement": "hidden",
+      "mobilePlacement": "In-content mobile 320x50 (2nd)",
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false
+    },
+    {
+      "slotKey": "sp_mobile_leaderboard_pos3",
+      "pageType": "state",
+      "placementName": "mobile_leaderboard_pos3",
+      "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos3",
+      "divId": "div-gpt-ad-1707413940026-0",
+      "device": "mobile",
+      "sizeMapping": "horizontalads2",
+      "sizes": [
+        [
+          320,
+          50
+        ]
+      ],
+      "desktopPlacement": "hidden",
+      "mobilePlacement": "In-content mobile 320x50 (3rd)",
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false
+    },
+    {
+      "slotKey": "sp_mobile_leaderboard_pos4",
+      "pageType": "state",
+      "placementName": "mobile_leaderboard_pos4",
+      "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos4",
+      "divId": "div-gpt-ad-1707414004765-0",
+      "device": "mobile",
+      "sizeMapping": "horizontalads2",
+      "sizes": [
+        [
+          320,
+          50
+        ]
+      ],
+      "desktopPlacement": "hidden",
+      "mobilePlacement": "In-content mobile 320x50 (4th)",
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false
+    }
+  ],
+  "videoSlots": [
+    {
+      "slotKey": "atv_video_player",
+      "pageType": "state",
+      "placementName": "video_player",
+      "gamPath": "/21828142944/LC_ATV_video_player",
+      "divId": "UNKNOWN",
+      "device": "responsive",
+      "sizeMapping": null,
+      "sizes": [
+        [
+          300,
+          168
+        ]
+      ],
+      "desktopPlacement": "Video ad unit",
+      "mobilePlacement": "Video ad unit",
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "notes": "Video ad; sizes from JSP defineSlot [300,168]."
+    }
+  ],
+  "stateSpecificSlots": [
+    {
+      "slotKey": "wy_on_results_table_pos1",
+      "pageType": "state",
+      "stateCode": "wy",
+      "placementName": "wyoming_on_results_table_pos1",
+      "gamPath": "/21828142944/wyoming_on_results_table_pos1",
+      "divId": "UNKNOWN",
+      "device": "responsive",
+      "sizeMapping": null,
+      "sizes": null,
+      "desktopPlacement": "Inside results table (Wyoming only)",
+      "mobilePlacement": "In results table",
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "notes": "State-specific; div ID/sizes UNKNOWN \u2014 confirm. Do not drop."
+    },
+    {
+      "slotKey": "wy_on_results_table_pos2",
+      "pageType": "state",
+      "stateCode": "wy",
+      "placementName": "wyoming_on_results_table_pos2",
+      "gamPath": "/21828142944/wyoming_on_results_table_pos2",
+      "divId": "UNKNOWN",
+      "device": "responsive",
+      "sizeMapping": null,
+      "sizes": null,
+      "desktopPlacement": "Inside results table (Wyoming only)",
+      "mobilePlacement": "In results table",
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "notes": "div ID/sizes UNKNOWN \u2014 confirm."
+    }
+  ],
+  "otherPageTypesReference": {
+    "note": "Slot families for other page types (03-doc \u00a73). Div IDs/size mappings not enumerated here \u2014 capture from their JSPs before building those pages.",
+    "gamePage": "lc_mgp_* / lc_mpg_* (+ mobile snippet slots)",
+    "blog": "lc_bp_* ; blogDetail: lc_bdp_*",
+    "jackpot": "lc_jp_*",
+    "gameHistory": "lc_gh_*",
+    "home": "lc_hp_* + managed lotterycornercom_* + AdSense",
+    "promoTest": "promotionalbar_test (1920x75) \u2014 verify if live"
+  },
+  "unknowns": [
+    "toppromobar div ID + full size array (defined outside lottery-result_upgrade_as.jsp).",
+    "Managed-wrapper vendor for lotterycornercom_* placements.",
+    "Second publisher pub-5258173596915552 relationship to GAM network.",
+    "Wyoming in-table slot div IDs + sizes.",
+    "Video slot div ID.",
+    "No desktop-only or tablet-only tiers exist in the JSP: size mappings use only [992,0] and [0,0], so 'tablet' currently maps to the mobile tier."
+  ],
+  "homePageSlots": [
+    {
+      "slotKey": "hp_top_billboard",
+      "pageType": "home",
+      "placementName": "LC_hp_display_web_top_billboard",
+      "gamPath": "/21828142944/LC_hp_display_web_top_billboard",
+      "divId": "div-gpt-ad-1694691105444-0",
+      "device": "responsive",
+      "sizeMapping": "hp_horizontalheader",
+      "sizes": [
+        [
+          320,
+          50
+        ],
+        [
+          728,
+          90
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": false,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 0,
+      "eagerAboveFold": true,
+      "notes": "Top billboard, above hero \u2014 eager (above fold)."
+    },
+    {
+      "slotKey": "hp_mid_leaderboard",
+      "pageType": "home",
+      "placementName": "lc_hp_display_web_mid_leaderboard",
+      "gamPath": "/21828142944/lc_hp_display_web_mid_leaderboard",
+      "divId": "div-gpt-ad-1694691723384-0",
+      "device": "responsive",
+      "sizeMapping": "hp_horizontalAds",
+      "sizes": [
+        [
+          728,
+          90
+        ],
+        [
+          320,
+          100
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 1
+    },
+    {
+      "slotKey": "hp_mid_billboard_pos1",
+      "pageType": "home",
+      "placementName": "lc_hp_display_web_mid_billboard_pos1",
+      "gamPath": "/21828142944/lc_hp_display_web_mid_billboard_pos1",
+      "divId": "div-gpt-ad-1694708721384-0",
+      "device": "responsive",
+      "sizeMapping": "hp_horizontalAds1",
+      "sizes": [
+        [
+          336,
+          280
+        ],
+        [
+          970,
+          90
+        ],
+        [
+          728,
+          90
+        ],
+        [
+          970,
+          250
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 2
+    },
+    {
+      "slotKey": "hp_mid_billboard_pos2",
+      "pageType": "home",
+      "placementName": "lc_hp_display_web_mid_billboard_pos2",
+      "gamPath": "/21828142944/lc_hp_display_web_mid_billboard_pos2",
+      "divId": "div-gpt-ad-1694709237082-0",
+      "device": "responsive",
+      "sizeMapping": "hp_horizontalAds1",
+      "sizes": [
+        [
+          336,
+          280
+        ],
+        [
+          970,
+          250
+        ],
+        [
+          728,
+          90
+        ],
+        [
+          970,
+          90
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 3
+    },
+    {
+      "slotKey": "hp_mid_billboard_pos3",
+      "pageType": "home",
+      "placementName": "lc_hp_display_web_mid_billboard_pos3",
+      "gamPath": "/21828142944/lc_hp_display_web_mid_billboard_pos3",
+      "divId": "div-gpt-ad-1694709361130-0",
+      "device": "responsive",
+      "sizeMapping": "hp_horizontalAds1",
+      "sizes": [
+        [
+          336,
+          280
+        ],
+        [
+          728,
+          90
+        ],
+        [
+          970,
+          250
+        ],
+        [
+          970,
+          90
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 4
+    },
+    {
+      "slotKey": "hp_mid_large_leaderboard_pos1",
+      "pageType": "home",
+      "placementName": "lc_hp_display_web_mid_large_leaderboard_pos1",
+      "gamPath": "/21828142944/lc_hp_display_web_mid_large_leaderboard_pos1",
+      "divId": "div-gpt-ad-1694708847897-0",
+      "device": "responsive",
+      "sizeMapping": "hp_horizontalAds",
+      "sizes": [
+        [
+          336,
+          280
+        ],
+        [
+          728,
+          90
+        ],
+        [
+          970,
+          90
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 5
+    },
+    {
+      "slotKey": "hp_mid_large_leaderboard_pos2",
+      "pageType": "home",
+      "placementName": "lc_hp_display_web_mid_large_leaderboard_pos2",
+      "gamPath": "/21828142944/lc_hp_display_web_mid_large_leaderboard_pos2",
+      "divId": "div-gpt-ad-1694709039320-0",
+      "device": "responsive",
+      "sizeMapping": "hp_horizontalAds",
+      "sizes": [
+        [
+          728,
+          90
+        ],
+        [
+          336,
+          280
+        ],
+        [
+          970,
+          90
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 6
+    },
+    {
+      "slotKey": "hp_mid_large_leaderboard_pos3",
+      "pageType": "home",
+      "placementName": "lc_hp_display_web_mid_large_leaderboard_pos3",
+      "gamPath": "/21828142944/lc_hp_display_web_mid_large_leaderboard_pos3",
+      "divId": "div-gpt-ad-1694709114849-0",
+      "device": "responsive",
+      "sizeMapping": "hp_horizontalAds",
+      "sizes": [
+        [
+          336,
+          280
+        ],
+        [
+          728,
+          90
+        ],
+        [
+          970,
+          90
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 7
+    },
+    {
+      "slotKey": "hp_mid_large_leaderboard_pos4",
+      "pageType": "home",
+      "placementName": "lc_hp_display_web_mid_large_leaderboard_pos4",
+      "gamPath": "/21828142944/lc_hp_display_web_mid_large_leaderboard_pos4",
+      "divId": "div-gpt-ad-1696347916722-0",
+      "device": "responsive",
+      "sizeMapping": "hp_horizontalAds",
+      "sizes": [
+        [
+          728,
+          90
+        ],
+        [
+          970,
+          90
+        ],
+        [
+          336,
+          280
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 8
+    },
+    {
+      "slotKey": "hp_side_halfpage_pos1",
+      "pageType": "home",
+      "placementName": "lc_hp_display_web_side_halfpage_pos1",
+      "gamPath": "/21828142944/lc_hp_display_web_side_halfpage_pos1",
+      "divId": "div-gpt-ad-1694690716926-0",
+      "device": "responsive",
+      "sizeMapping": "hp_verticalAds",
+      "sizes": [
+        [
+          336,
+          288
+        ],
+        [
+          300,
+          600
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 9,
+      "notes": "Right rail"
+    },
+    {
+      "slotKey": "hp_side_halfpage_pos2",
+      "pageType": "home",
+      "placementName": "lc_hp_display_web_side_halfpage_pos2",
+      "gamPath": "/21828142944/lc_hp_display_web_side_halfpage_pos2",
+      "divId": "div-gpt-ad-1694709543711-0",
+      "device": "responsive",
+      "sizeMapping": null,
+      "sizes": [
+        [
+          300,
+          600
+        ],
+        [
+          336,
+          280
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 10,
+      "notes": "Right rail; no size mapping in JSP"
+    },
+    {
+      "slotKey": "hp_side_halfpage_pos3",
+      "pageType": "home",
+      "placementName": "lc_hp_display_web_side_halfpage_pos3",
+      "gamPath": "/21828142944/lc_hp_display_web_side_halfpage_pos3",
+      "divId": "div-gpt-ad-1696347663152-0",
+      "device": "responsive",
+      "sizeMapping": null,
+      "sizes": [
+        [
+          300,
+          250
+        ],
+        [
+          160,
+          600
+        ],
+        [
+          300,
+          600
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 11,
+      "notes": "Right rail; no size mapping in JSP"
+    },
+    {
+      "slotKey": "hp_side_halfpage_pos4",
+      "pageType": "home",
+      "placementName": "lc_hp_display_web_side_halfpage_pos4",
+      "gamPath": "/21828142944/lc_hp_display_web_side_halfpage_pos4",
+      "divId": "div-gpt-ad-1696348050684-0",
+      "device": "responsive",
+      "sizeMapping": null,
+      "sizes": [
+        [
+          300,
+          250
+        ],
+        [
+          160,
+          600
+        ],
+        [
+          300,
+          600
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 12,
+      "notes": "Right rail; no size mapping in JSP"
+    },
+    {
+      "slotKey": "hp_side_mpu",
+      "pageType": "home",
+      "placementName": "lc_hp_display_web_side_MPU",
+      "gamPath": "/21828142944/lc_hp_display_web_side_MPU",
+      "divId": "div-gpt-ad-1694709311530-0",
+      "device": "responsive",
+      "sizeMapping": "hp_verticalAds1",
+      "sizes": [
+        [
+          300,
+          250
+        ],
+        [
+          336,
+          280
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 13,
+      "notes": "Right rail"
+    },
+    {
+      "slotKey": "hp_side_mpu_pos1",
+      "pageType": "home",
+      "placementName": "lc_hp_display_web_side_MPU_pos1",
+      "gamPath": "/21828142944/lc_hp_display_web_side_MPU_pos1",
+      "divId": "div-gpt-ad-1696598357091-0",
+      "device": "responsive",
+      "sizeMapping": "hp_verticalAds",
+      "sizes": [
+        [
+          300,
+          600
+        ],
+        [
+          300,
+          250
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 14,
+      "notes": "Right rail"
+    },
+    {
+      "slotKey": "hp_bottom_large_leaderboard_sticky",
+      "pageType": "home",
+      "placementName": "lc_hp_display_web_bottom_large_leaderboard_sticky",
+      "gamPath": "/21828142944/lc_hp_display_web_bottom_large_leaderboard_sticky",
+      "divId": "div-gpt-ad-1694709627267-0",
+      "device": "responsive",
+      "sizeMapping": "hp_horizontalAds",
+      "sizes": [
+        [
+          728,
+          90
+        ],
+        [
+          320,
+          50
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 15,
+      "container": "stickyFooter",
+      "closable": true,
+      "notes": "Sticky, closable home footer ad (#stickyAd/#closeAdButton)."
+    },
+    {
+      "slotKey": "hp_video",
+      "pageType": "home",
+      "placementName": "LC_ATV_video_player",
+      "gamPath": "/21828142944/LC_ATV_video_player",
+      "divId": "div-gpt-ad-1715268442152-0",
+      "device": "responsive",
+      "sizeMapping": null,
+      "sizes": [
+        [
+          300,
+          168
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 16,
+      "notes": "In-content video ad."
+    },
+    {
+      "slotKey": "hp_mobile_leaderboard_pos1",
+      "pageType": "home",
+      "placementName": "lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos1",
+      "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos1",
+      "divId": "div-gpt-ad-1707413795676-0",
+      "device": "mobile",
+      "sizeMapping": "hp_horizontalAds2",
+      "sizes": [
+        [
+          320,
+          50
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 17,
+      "notes": "Mobile-only snippet (shared GAM unit)."
+    },
+    {
+      "slotKey": "hp_mobile_leaderboard_pos2",
+      "pageType": "home",
+      "placementName": "lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos2",
+      "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos2",
+      "divId": "div-gpt-ad-1707413859823-0",
+      "device": "mobile",
+      "sizeMapping": "hp_horizontalAds2",
+      "sizes": [
+        [
+          320,
+          50
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 18
+    },
+    {
+      "slotKey": "hp_mobile_leaderboard_pos3",
+      "pageType": "home",
+      "placementName": "lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos3",
+      "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos3",
+      "divId": "div-gpt-ad-1707413940026-0",
+      "device": "mobile",
+      "sizeMapping": "hp_horizontalAds2",
+      "sizes": [
+        [
+          320,
+          50
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 19
+    },
+    {
+      "slotKey": "hp_mobile_leaderboard_pos4",
+      "pageType": "home",
+      "placementName": "lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos4",
+      "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos4",
+      "divId": "div-gpt-ad-1707414004765-0",
+      "device": "mobile",
+      "sizeMapping": "hp_horizontalAds2",
+      "sizes": [
+        [
+          320,
+          50
+        ]
+      ],
+      "fixedPlacement": true,
+      "lazyLoad": true,
+      "reserveSpace": true,
+      "collapseIfEmpty": false,
+      "order": 20
+    }
+  ],
+  "capturedPageFamiliesNotActivated": {
+    "_meta": {
+      "purpose": "LRG-ADS-CANARY-001 \u00a75 \u2014 page families captured from legacy evidence but NOT activated in React. Their blueprint-relative placement requires a separate founder / ad-operations review.",
+      "capturedBy": "LRG-ADS-CANARY-001",
+      "extractionDate": "2026-08-17",
+      "activationStatus": "CAPTURED-ONLY \u2014 no React component maps or requests any slot below.",
+      "sizeMappingNote": "The multiStateGame template's `horizontalads` mobile tier additionally carries [320,100]; every other family matches the shared builders recorded in capturedSizeMappings.",
+      "gamNetworkCode": "21828142944"
+    },
+    "capturedSizeMappings": {
+      "horizontalads": {
+        "_source": "legacy sizeMapping() builder",
+        "breakpoints": [
+          {
+            "minViewport": [
+              992,
+              0
+            ],
+            "sizes": [
+              [
+                728,
+                90
+              ],
+              [
+                970,
+                250
+              ]
+            ]
+          },
+          {
+            "minViewport": [
+              0,
+              0
+            ],
+            "sizes": [
+              [
+                336,
+                280
+              ],
+              [
+                300,
+                250
+              ],
+              [
+                320,
+                50
+              ]
+            ]
+          }
+        ]
+      },
+      "horizontalheader": {
+        "_source": "legacy sizeMapping() builder",
+        "breakpoints": [
+          {
+            "minViewport": [
+              992,
+              0
+            ],
+            "sizes": [
+              [
+                728,
+                90
+              ]
+            ]
+          },
+          {
+            "minViewport": [
+              0,
+              0
+            ],
+            "sizes": [
+              [
+                320,
+                50
+              ]
+            ]
+          }
+        ]
+      },
+      "verticalads": {
+        "_source": "legacy sizeMapping() builder",
+        "breakpoints": [
+          {
+            "minViewport": [
+              992,
+              0
+            ],
+            "sizes": [
+              [
+                160,
+                600
+              ],
+              [
+                300,
+                600
+              ],
+              [
+                300,
+                250
+              ]
+            ]
+          },
+          {
+            "minViewport": [
+              0,
+              0
+            ],
+            "sizes": [
+              [
+                336,
+                280
+              ],
+              [
+                300,
+                250
+              ],
+              [
+                320,
+                100
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "multiStateGame": {
+      "prefix": "lc_mgp_* / lc_mpg_*",
+      "sourceFile": "WebContent/WEB-INF/upgrade/results/multistate/powerball_upgrade_as.jsp",
+      "slotCount": 13,
+      "slots": [
+        {
+          "pageFamily": "multi-state game page",
+          "gamPath": "/21828142944/lc_mpg_display_web_top_large_leaderboard",
+          "divId": "div-gpt-ad-1701096449400-0",
+          "sizes": [
+            [
+              320,
+              50
+            ],
+            [
+              728,
+              90
+            ]
+          ],
+          "sizeMapping": "horizontalheader",
+          "desktopBehavior": "desktop tier of horizontalheader at >=992px",
+          "mobileBehavior": "mobile tier of horizontalheader below 992px",
+          "legacyOrder": 0,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/multistate/powerball_upgrade_as.jsp",
+          "legacyLine": 115,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Flagship/multi-state game page (Powerball template). Both prefixes appear: lc_mpg_ on the two large leaderboards, lc_mgp_ on the rest \u2014 transcribed as found, not normalised."
+        },
+        {
+          "pageFamily": "multi-state game page",
+          "gamPath": "/21828142944/lc_mpg_display_web_mid_large_leaderboard",
+          "divId": "div-gpt-ad-1701096648404-0",
+          "sizes": [
+            [
+              336,
+              280
+            ],
+            [
+              970,
+              90
+            ],
+            [
+              728,
+              90
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 1,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/multistate/powerball_upgrade_as.jsp",
+          "legacyLine": 116,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Flagship/multi-state game page (Powerball template). Both prefixes appear: lc_mpg_ on the two large leaderboards, lc_mgp_ on the rest \u2014 transcribed as found, not normalised."
+        },
+        {
+          "pageFamily": "multi-state game page",
+          "gamPath": "/21828142944/lc_mgp_display_web_side_mpu_pos1",
+          "divId": "div-gpt-ad-1701096692689-0",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "verticalads",
+          "desktopBehavior": "desktop tier of verticalads at >=992px",
+          "mobileBehavior": "mobile tier of verticalads below 992px",
+          "legacyOrder": 2,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/multistate/powerball_upgrade_as.jsp",
+          "legacyLine": 117,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Flagship/multi-state game page (Powerball template). Both prefixes appear: lc_mpg_ on the two large leaderboards, lc_mgp_ on the rest \u2014 transcribed as found, not normalised."
+        },
+        {
+          "pageFamily": "multi-state game page",
+          "gamPath": "/21828142944/lc_mgp_display_web_side_mpu_pos2",
+          "divId": "div-gpt-ad-1701096720577-0",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "verticalads",
+          "desktopBehavior": "desktop tier of verticalads at >=992px",
+          "mobileBehavior": "mobile tier of verticalads below 992px",
+          "legacyOrder": 3,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/multistate/powerball_upgrade_as.jsp",
+          "legacyLine": 118,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Flagship/multi-state game page (Powerball template). Both prefixes appear: lc_mpg_ on the two large leaderboards, lc_mgp_ on the rest \u2014 transcribed as found, not normalised."
+        },
+        {
+          "pageFamily": "multi-state game page",
+          "gamPath": "/21828142944/lc_mgp_display_web_side_mpu_pos3",
+          "divId": "div-gpt-ad-1701096771653-0",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "verticalads",
+          "desktopBehavior": "desktop tier of verticalads at >=992px",
+          "mobileBehavior": "mobile tier of verticalads below 992px",
+          "legacyOrder": 4,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/multistate/powerball_upgrade_as.jsp",
+          "legacyLine": 119,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Flagship/multi-state game page (Powerball template). Both prefixes appear: lc_mpg_ on the two large leaderboards, lc_mgp_ on the rest \u2014 transcribed as found, not normalised."
+        },
+        {
+          "pageFamily": "multi-state game page",
+          "gamPath": "/21828142944/lc_mgp_display_web_side_halfpage_pos1",
+          "divId": "div-gpt-ad-1701096822044-0",
+          "sizes": [
+            [
+              300,
+              600
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "verticalads",
+          "desktopBehavior": "desktop tier of verticalads at >=992px",
+          "mobileBehavior": "mobile tier of verticalads below 992px",
+          "legacyOrder": 5,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/multistate/powerball_upgrade_as.jsp",
+          "legacyLine": 120,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Flagship/multi-state game page (Powerball template). Both prefixes appear: lc_mpg_ on the two large leaderboards, lc_mgp_ on the rest \u2014 transcribed as found, not normalised."
+        },
+        {
+          "pageFamily": "multi-state game page",
+          "gamPath": "/21828142944/lc_mgp_display_web_side_halfpage_pos2",
+          "divId": "div-gpt-ad-1701096868608-0",
+          "sizes": [
+            [
+              300,
+              600
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "verticalads",
+          "desktopBehavior": "desktop tier of verticalads at >=992px",
+          "mobileBehavior": "mobile tier of verticalads below 992px",
+          "legacyOrder": 6,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/multistate/powerball_upgrade_as.jsp",
+          "legacyLine": 121,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Flagship/multi-state game page (Powerball template). Both prefixes appear: lc_mpg_ on the two large leaderboards, lc_mgp_ on the rest \u2014 transcribed as found, not normalised."
+        },
+        {
+          "pageFamily": "multi-state game page",
+          "gamPath": "/21828142944/lc_mgp_display_web_side_skyscraper_pos2",
+          "divId": "div-gpt-ad-1701096972325-0",
+          "sizes": [
+            [
+              160,
+              600
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "verticalads",
+          "desktopBehavior": "desktop tier of verticalads at >=992px",
+          "mobileBehavior": "mobile tier of verticalads below 992px",
+          "legacyOrder": 7,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/multistate/powerball_upgrade_as.jsp",
+          "legacyLine": 122,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Flagship/multi-state game page (Powerball template). Both prefixes appear: lc_mpg_ on the two large leaderboards, lc_mgp_ on the rest \u2014 transcribed as found, not normalised."
+        },
+        {
+          "pageFamily": "multi-state game page",
+          "gamPath": "/21828142944/lc_mgp_display_web_mid_large_leaderboard_pos1",
+          "divId": "div-gpt-ad-1701097071811-0",
+          "sizes": [
+            [
+              336,
+              280
+            ],
+            [
+              970,
+              90
+            ],
+            [
+              728,
+              90
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 8,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/multistate/powerball_upgrade_as.jsp",
+          "legacyLine": 123,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Flagship/multi-state game page (Powerball template). Both prefixes appear: lc_mpg_ on the two large leaderboards, lc_mgp_ on the rest \u2014 transcribed as found, not normalised."
+        },
+        {
+          "pageFamily": "multi-state game page",
+          "gamPath": "/21828142944/lc_mgp_display_web_mid_large_leaderboard_pos2",
+          "divId": "div-gpt-ad-1701097099265-0",
+          "sizes": [
+            [
+              336,
+              280
+            ],
+            [
+              970,
+              90
+            ],
+            [
+              728,
+              90
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 9,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/multistate/powerball_upgrade_as.jsp",
+          "legacyLine": 124,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Flagship/multi-state game page (Powerball template). Both prefixes appear: lc_mpg_ on the two large leaderboards, lc_mgp_ on the rest \u2014 transcribed as found, not normalised."
+        },
+        {
+          "pageFamily": "multi-state game page",
+          "gamPath": "/21828142944/lc_mgp_display_web_mid_leaderboard",
+          "divId": "div-gpt-ad-1701097178385-0",
+          "sizes": [
+            [
+              320,
+              100
+            ],
+            [
+              728,
+              90
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 10,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/multistate/powerball_upgrade_as.jsp",
+          "legacyLine": 125,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Flagship/multi-state game page (Powerball template). Both prefixes appear: lc_mpg_ on the two large leaderboards, lc_mgp_ on the rest \u2014 transcribed as found, not normalised."
+        },
+        {
+          "pageFamily": "multi-state game page",
+          "gamPath": "/21828142944/lc_mgp_display_web_mid_Masthead",
+          "divId": "div-gpt-ad-1701097213046-0",
+          "sizes": [
+            [
+              336,
+              280
+            ],
+            [
+              970,
+              250
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 11,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/multistate/powerball_upgrade_as.jsp",
+          "legacyLine": 126,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Flagship/multi-state game page (Powerball template). Both prefixes appear: lc_mpg_ on the two large leaderboards, lc_mgp_ on the rest \u2014 transcribed as found, not normalised."
+        },
+        {
+          "pageFamily": "multi-state game page",
+          "gamPath": "/21828142944/LC_ATV_video_player",
+          "divId": "div-gpt-ad-1715268442152-0",
+          "sizes": [
+            [
+              300,
+              168
+            ]
+          ],
+          "sizeMapping": null,
+          "desktopBehavior": "video unit",
+          "mobileBehavior": "video unit",
+          "legacyOrder": 12,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/multistate/powerball_upgrade_as.jsp",
+          "legacyLine": 127,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        }
+      ]
+    },
+    "blogHub": {
+      "prefix": "lc_bp_*",
+      "sourceFile": "WebContent/WEB-INF/upgrade/blog/blog_upgrade_as.jsp",
+      "slotCount": 10,
+      "slots": [
+        {
+          "pageFamily": "blog hub",
+          "gamPath": "/21828142944/lc_bp_display_web_top_masthead",
+          "divId": "div-gpt-ad-9424011897-0",
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalheader",
+          "desktopBehavior": "desktop tier of horizontalheader at >=992px",
+          "mobileBehavior": "mobile tier of horizontalheader below 992px",
+          "legacyOrder": 0,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/blog/blog_upgrade_as.jsp",
+          "legacyLine": 71,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Blog listing page."
+        },
+        {
+          "pageFamily": "blog hub",
+          "gamPath": "/21828142944/lc_bp_display_web_middle_leaderboard",
+          "divId": "div-gpt-ad-0851566033-0",
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 1,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/blog/blog_upgrade_as.jsp",
+          "legacyLine": 72,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Blog listing page."
+        },
+        {
+          "pageFamily": "blog hub",
+          "gamPath": "/21828142944/lc_bp_display_web_middle_leaderboard_pos1",
+          "divId": "div-gpt-ad-7262901052-0",
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 2,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/blog/blog_upgrade_as.jsp",
+          "legacyLine": 73,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Blog listing page."
+        },
+        {
+          "pageFamily": "blog hub",
+          "gamPath": "/21828142944/lc_bp_display_web_bottom_leaderboard_sticky",
+          "divId": "div-gpt-ad-2330092340-0",
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 3,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/blog/blog_upgrade_as.jsp",
+          "legacyLine": 74,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Blog listing page."
+        },
+        {
+          "pageFamily": "blog hub",
+          "gamPath": "/21828142944/lc_bp_display_web_side_mpu",
+          "divId": "div-gpt-ad-1703666367377-0",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "verticalads",
+          "desktopBehavior": "desktop tier of verticalads at >=992px",
+          "mobileBehavior": "mobile tier of verticalads below 992px",
+          "legacyOrder": 4,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/blog/blog_upgrade_as.jsp",
+          "legacyLine": 75,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Blog listing page."
+        },
+        {
+          "pageFamily": "blog hub",
+          "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos1",
+          "divId": "div-gpt-ad-1707413795676-0",
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "mobile-only 320x50 snippet \u2014 no desktop tier",
+          "mobileBehavior": "320x50 in-content",
+          "legacyOrder": 5,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/blog/blog_upgrade_as.jsp",
+          "legacyLine": 76,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        },
+        {
+          "pageFamily": "blog hub",
+          "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos2",
+          "divId": "div-gpt-ad-1707413859823-0",
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "mobile-only 320x50 snippet \u2014 no desktop tier",
+          "mobileBehavior": "320x50 in-content",
+          "legacyOrder": 6,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/blog/blog_upgrade_as.jsp",
+          "legacyLine": 77,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        },
+        {
+          "pageFamily": "blog hub",
+          "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos3",
+          "divId": "div-gpt-ad-1707413940026-0",
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "mobile-only 320x50 snippet \u2014 no desktop tier",
+          "mobileBehavior": "320x50 in-content",
+          "legacyOrder": 7,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/blog/blog_upgrade_as.jsp",
+          "legacyLine": 78,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        },
+        {
+          "pageFamily": "blog hub",
+          "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos4",
+          "divId": "div-gpt-ad-1707414004765-0",
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "mobile-only 320x50 snippet \u2014 no desktop tier",
+          "mobileBehavior": "320x50 in-content",
+          "legacyOrder": 8,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/blog/blog_upgrade_as.jsp",
+          "legacyLine": 79,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        },
+        {
+          "pageFamily": "blog hub",
+          "gamPath": "/21828142944/LC_ATV_video_player",
+          "divId": "div-gpt-ad-1715268442152-0",
+          "sizes": [
+            [
+              300,
+              168
+            ]
+          ],
+          "sizeMapping": null,
+          "desktopBehavior": "video unit",
+          "mobileBehavior": "video unit",
+          "legacyOrder": 9,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/blog/blog_upgrade_as.jsp",
+          "legacyLine": 80,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        }
+      ]
+    },
+    "blogDetail": {
+      "prefix": "lc_bdp_*",
+      "sourceFile": "WebContent/WEB-INF/upgrade/NewBlog.jsp",
+      "slotCount": 11,
+      "slots": [
+        {
+          "pageFamily": "blog detail",
+          "gamPath": "/21828142944/lc_bdp_display_web_top_masthead",
+          "divId": "div-gpt-ad-7372231207-0",
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 0,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/NewBlog.jsp",
+          "legacyLine": 161,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Blog article page (NewBlog.jsp)."
+        },
+        {
+          "pageFamily": "blog detail",
+          "gamPath": "/21828142944/lc_bdp_display_web_middle_leaderboard_pos1",
+          "divId": "div-gpt-ad-7170061281-0",
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 1,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/NewBlog.jsp",
+          "legacyLine": 162,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Blog article page (NewBlog.jsp)."
+        },
+        {
+          "pageFamily": "blog detail",
+          "gamPath": "/21828142944/lc_bdp_display_web_middle_leaderboard_pos2",
+          "divId": "div-gpt-ad-6533599007-0",
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 2,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/NewBlog.jsp",
+          "legacyLine": 163,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Blog article page (NewBlog.jsp)."
+        },
+        {
+          "pageFamily": "blog detail",
+          "gamPath": "/21828142944/lc_bdp_display_web_middle_leaderboard_pos3",
+          "divId": "div-gpt-ad-7327707223-0",
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 3,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/NewBlog.jsp",
+          "legacyLine": 164,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Blog article page (NewBlog.jsp)."
+        },
+        {
+          "pageFamily": "blog detail",
+          "gamPath": "/21828142944/lc_bdp_display_web_side_mpu",
+          "divId": "div-gpt-ad-4743944654-0",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "verticalads",
+          "desktopBehavior": "desktop tier of verticalads at >=992px",
+          "mobileBehavior": "mobile tier of verticalads below 992px",
+          "legacyOrder": 4,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/NewBlog.jsp",
+          "legacyLine": 165,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Blog article page (NewBlog.jsp)."
+        },
+        {
+          "pageFamily": "blog detail",
+          "gamPath": "/21828142944/lc_bdp_display_web_side_halfpage",
+          "divId": "div-gpt-ad-0211539982-0",
+          "sizes": [
+            [
+              300,
+              600
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "verticalads",
+          "desktopBehavior": "desktop tier of verticalads at >=992px",
+          "mobileBehavior": "mobile tier of verticalads below 992px",
+          "legacyOrder": 5,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/NewBlog.jsp",
+          "legacyLine": 166,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Blog article page (NewBlog.jsp)."
+        },
+        {
+          "pageFamily": "blog detail",
+          "gamPath": "/21828142944/lc_bdp_display_web_bottom_leaderboard_sticky",
+          "divId": "div-gpt-ad-6465827694-0",
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 6,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/NewBlog.jsp",
+          "legacyLine": 167,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Blog article page (NewBlog.jsp)."
+        },
+        {
+          "pageFamily": "blog detail",
+          "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos1",
+          "divId": "div-gpt-ad-1707413795676-0",
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "mobile-only 320x50 snippet \u2014 no desktop tier",
+          "mobileBehavior": "320x50 in-content",
+          "legacyOrder": 7,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/NewBlog.jsp",
+          "legacyLine": 168,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        },
+        {
+          "pageFamily": "blog detail",
+          "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos2",
+          "divId": "div-gpt-ad-1707413859823-0",
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "mobile-only 320x50 snippet \u2014 no desktop tier",
+          "mobileBehavior": "320x50 in-content",
+          "legacyOrder": 8,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/NewBlog.jsp",
+          "legacyLine": 169,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        },
+        {
+          "pageFamily": "blog detail",
+          "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos3",
+          "divId": "div-gpt-ad-1707413940026-0",
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "mobile-only 320x50 snippet \u2014 no desktop tier",
+          "mobileBehavior": "320x50 in-content",
+          "legacyOrder": 9,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/NewBlog.jsp",
+          "legacyLine": 170,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        },
+        {
+          "pageFamily": "blog detail",
+          "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos4",
+          "divId": "div-gpt-ad-1707414004765-0",
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "mobile-only 320x50 snippet \u2014 no desktop tier",
+          "mobileBehavior": "320x50 in-content",
+          "legacyOrder": 10,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/NewBlog.jsp",
+          "legacyLine": 171,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        }
+      ]
+    },
+    "jackpot": {
+      "prefix": "lc_jp_*",
+      "sourceFile": "WebContent/WEB-INF/upgrade/jackpot_upgrade_as.jsp",
+      "slotCount": 10,
+      "slots": [
+        {
+          "pageFamily": "jackpot page",
+          "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos1",
+          "divId": "div-gpt-ad-1707413795676-0",
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "mobile-only 320x50 snippet \u2014 no desktop tier",
+          "mobileBehavior": "320x50 in-content",
+          "legacyOrder": 0,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/jackpot_upgrade_as.jsp",
+          "legacyLine": 160,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        },
+        {
+          "pageFamily": "jackpot page",
+          "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos2",
+          "divId": "div-gpt-ad-1707413859823-0",
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "mobile-only 320x50 snippet \u2014 no desktop tier",
+          "mobileBehavior": "320x50 in-content",
+          "legacyOrder": 1,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/jackpot_upgrade_as.jsp",
+          "legacyLine": 166,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        },
+        {
+          "pageFamily": "jackpot page",
+          "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos3",
+          "divId": "div-gpt-ad-1707413940026-0",
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "mobile-only 320x50 snippet \u2014 no desktop tier",
+          "mobileBehavior": "320x50 in-content",
+          "legacyOrder": 2,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/jackpot_upgrade_as.jsp",
+          "legacyLine": 172,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        },
+        {
+          "pageFamily": "jackpot page",
+          "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos4",
+          "divId": "div-gpt-ad-1707414004765-0",
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "mobile-only 320x50 snippet \u2014 no desktop tier",
+          "mobileBehavior": "320x50 in-content",
+          "legacyOrder": 3,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/jackpot_upgrade_as.jsp",
+          "legacyLine": 178,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        },
+        {
+          "pageFamily": "jackpot page",
+          "gamPath": "/21828142944/lc_jp_display_web_top_masthead",
+          "divId": "div-gpt-ad-1702970526055-0",
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 4,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/jackpot_upgrade_as.jsp",
+          "legacyLine": 184,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Jackpot page."
+        },
+        {
+          "pageFamily": "jackpot page",
+          "gamPath": "/21828142944/lc_jp_display_web_middle_leaderboard_pos1",
+          "divId": "div-gpt-ad-1702970616826-0",
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 5,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/jackpot_upgrade_as.jsp",
+          "legacyLine": 192,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Jackpot page."
+        },
+        {
+          "pageFamily": "jackpot page",
+          "gamPath": "/21828142944/lc_jp_display_web_side_halfpage",
+          "divId": "div-gpt-ad-1702970696624-0",
+          "sizes": [
+            [
+              300,
+              600
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": null,
+          "desktopBehavior": "UNKNOWN \u2014 no named mapping in source",
+          "mobileBehavior": "UNKNOWN \u2014 no named mapping in source",
+          "legacyOrder": 6,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/jackpot_upgrade_as.jsp",
+          "legacyLine": 198,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Jackpot page."
+        },
+        {
+          "pageFamily": "jackpot page",
+          "gamPath": "/21828142944/lc_jp_display_web_middle_leaderboard_pos2",
+          "divId": "div-gpt-ad-1702970900585-0",
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 7,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/jackpot_upgrade_as.jsp",
+          "legacyLine": 204,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Jackpot page."
+        },
+        {
+          "pageFamily": "jackpot page",
+          "gamPath": "/21828142944/lc_jp_display_web_bottom_leaderboard_sticky",
+          "divId": "div-gpt-ad-1702970960583-0",
+          "sizes": [
+            [
+              320,
+              50
+            ],
+            [
+              728,
+              90
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 8,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/jackpot_upgrade_as.jsp",
+          "legacyLine": 211,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Jackpot page."
+        },
+        {
+          "pageFamily": "jackpot page",
+          "gamPath": "/21828142944/LC_ATV_video_player",
+          "divId": "div-gpt-ad-1715268442152-0",
+          "sizes": [
+            [
+              300,
+              168
+            ]
+          ],
+          "sizeMapping": null,
+          "desktopBehavior": "video unit",
+          "mobileBehavior": "video unit",
+          "legacyOrder": 9,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/jackpot_upgrade_as.jsp",
+          "legacyLine": 217,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        }
+      ]
+    },
+    "gameHistory": {
+      "prefix": "lc_gh_* (+ one lc_gn_*)",
+      "sourceFile": "WebContent/WEB-INF/upgrade/results/gamehistoryresults_upgrade_as.jsp",
+      "slotCount": 12,
+      "slots": [
+        {
+          "pageFamily": "game history page",
+          "gamPath": "/21828142944/lc_gh_display_web_top_masthead",
+          "divId": "div-gpt-ad-8701632745-0",
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalheader",
+          "desktopBehavior": "desktop tier of horizontalheader at >=992px",
+          "mobileBehavior": "mobile tier of horizontalheader below 992px",
+          "legacyOrder": 0,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/gamehistoryresults_upgrade_as.jsp",
+          "legacyLine": 133,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Yearly/game history results page. Carries the single lc_gn_ unit found anywhere in the templates read."
+        },
+        {
+          "pageFamily": "game history page",
+          "gamPath": "/21828142944/lc_gh_display_web_middle_leaderboard_pos4",
+          "divId": "div-gpt-ad-7071936826-0",
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 1,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/gamehistoryresults_upgrade_as.jsp",
+          "legacyLine": 134,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Yearly/game history results page. Carries the single lc_gn_ unit found anywhere in the templates read."
+        },
+        {
+          "pageFamily": "game history page",
+          "gamPath": "/21828142944/lc_gh_display_web_middle_leaderboard_pos1",
+          "divId": "div-gpt-ad-5061855814-0",
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 2,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/gamehistoryresults_upgrade_as.jsp",
+          "legacyLine": 135,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Yearly/game history results page. Carries the single lc_gn_ unit found anywhere in the templates read."
+        },
+        {
+          "pageFamily": "game history page",
+          "gamPath": "/21828142944/lc_gh_display_web_middle_leaderboard_pos2",
+          "divId": "div-gpt-ad-9289817098-0",
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 3,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/gamehistoryresults_upgrade_as.jsp",
+          "legacyLine": 136,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Yearly/game history results page. Carries the single lc_gn_ unit found anywhere in the templates read."
+        },
+        {
+          "pageFamily": "game history page",
+          "gamPath": "/21828142944/lc_gh_display_web_side_halfpage",
+          "divId": "div-gpt-ad-2146634548-0",
+          "sizes": [
+            [
+              300,
+              600
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "verticalads",
+          "desktopBehavior": "desktop tier of verticalads at >=992px",
+          "mobileBehavior": "mobile tier of verticalads below 992px",
+          "legacyOrder": 4,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/gamehistoryresults_upgrade_as.jsp",
+          "legacyLine": 137,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Yearly/game history results page. Carries the single lc_gn_ unit found anywhere in the templates read."
+        },
+        {
+          "pageFamily": "game history page",
+          "gamPath": "/21828142944/lc_gh_display_web_middle_leaderboard_pos3",
+          "divId": "div-gpt-ad-9152476576-0",
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              336,
+              280
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 5,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/gamehistoryresults_upgrade_as.jsp",
+          "legacyLine": 138,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Yearly/game history results page. Carries the single lc_gn_ unit found anywhere in the templates read."
+        },
+        {
+          "pageFamily": "game history page",
+          "gamPath": "/21828142944/lc_gn_display_web_bottom_leaderboard_sticky",
+          "divId": "div-gpt-ad-6946562090-0",
+          "sizes": [
+            [
+              728,
+              90
+            ],
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "desktop tier of horizontalads at >=992px",
+          "mobileBehavior": "mobile tier of horizontalads below 992px",
+          "legacyOrder": 6,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/gamehistoryresults_upgrade_as.jsp",
+          "legacyLine": 139,
+          "extractionDate": "2026-08-17",
+          "status": "defined-in-template",
+          "notes": "Yearly/game history results page. Carries the single lc_gn_ unit found anywhere in the templates read."
+        },
+        {
+          "pageFamily": "game history page",
+          "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos1",
+          "divId": "div-gpt-ad-1707413795676-0",
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "mobile-only 320x50 snippet \u2014 no desktop tier",
+          "mobileBehavior": "320x50 in-content",
+          "legacyOrder": 7,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/gamehistoryresults_upgrade_as.jsp",
+          "legacyLine": 140,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        },
+        {
+          "pageFamily": "game history page",
+          "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos2",
+          "divId": "div-gpt-ad-1707413859823-0",
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "mobile-only 320x50 snippet \u2014 no desktop tier",
+          "mobileBehavior": "320x50 in-content",
+          "legacyOrder": 8,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/gamehistoryresults_upgrade_as.jsp",
+          "legacyLine": 141,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        },
+        {
+          "pageFamily": "game history page",
+          "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos3",
+          "divId": "div-gpt-ad-1707413940026-0",
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "mobile-only 320x50 snippet \u2014 no desktop tier",
+          "mobileBehavior": "320x50 in-content",
+          "legacyOrder": 9,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/gamehistoryresults_upgrade_as.jsp",
+          "legacyLine": 142,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        },
+        {
+          "pageFamily": "game history page",
+          "gamPath": "/21828142944/lc_mgp_snippet_display_web_320x50_mobile_leaderboard_pos4",
+          "divId": "div-gpt-ad-1707414004765-0",
+          "sizes": [
+            [
+              320,
+              50
+            ]
+          ],
+          "sizeMapping": "horizontalads",
+          "desktopBehavior": "mobile-only 320x50 snippet \u2014 no desktop tier",
+          "mobileBehavior": "320x50 in-content",
+          "legacyOrder": 10,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/gamehistoryresults_upgrade_as.jsp",
+          "legacyLine": 143,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        },
+        {
+          "pageFamily": "game history page",
+          "gamPath": "/21828142944/LC_ATV_video_player",
+          "divId": "div-gpt-ad-1715268442152-0",
+          "sizes": [
+            [
+              300,
+              168
+            ]
+          ],
+          "sizeMapping": null,
+          "desktopBehavior": "video unit",
+          "mobileBehavior": "video unit",
+          "legacyOrder": 11,
+          "placementDescription": "UNKNOWN \u2014 defineSlot order only; the container's position in the rendered page was not transcribed",
+          "sourceFile": "WebContent/WEB-INF/upgrade/results/gamehistoryresults_upgrade_as.jsp",
+          "legacyLine": 144,
+          "extractionDate": "2026-08-17",
+          "status": "duplicate-shared-unit",
+          "notes": "Shared across several page families; already recorded for the State page."
+        }
+      ]
+    }
+  }
+}

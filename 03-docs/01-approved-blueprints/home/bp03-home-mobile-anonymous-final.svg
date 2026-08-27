@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="3300" viewBox="0 0 430 3300">
+<defs><style>
+.h1{font:700 22px Arial,sans-serif;fill:#172033} .h2{font:700 16px Arial,sans-serif;fill:#172033}
+.label{font:600 13px Arial,sans-serif;fill:#172033} .small{font:400 11px Arial,sans-serif;fill:#48566A}
+.tiny{font:400 9px Arial,sans-serif;fill:#5E6B7C}
+</style><filter id="s"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity=".13"/></filter></defs>
+<rect width="100%" height="100%" fill="#F5F7FA"/>
+<text x="24" y="30" class="h1">LotteryCorner Home — final mobile anonymous structure</text>
+<text x="24" y="48" class="tiny">Illustrative structure — all values are placeholders; ad sizes inherit production configuration</text>
+<rect x="15" y="58" width="400" height="88" rx="0" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<rect x="28" y="72" width="112" height="28" rx="5" fill="#0B1F3A" stroke="#0B1F3A"/>
+<text x="84" y="91" text-anchor="middle" class="tiny" fill="#FFF">LOTTERY CORNER</text>
+<text x="328" y="91" text-anchor="start" class="label">⌕  ☰</text>
+<text x="28" y="132" text-anchor="start" class="tiny">Home · Results · My Numbers · Community · Ask AI</text>
+<rect x="24" y="170" width="382" height="170" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="44" y="202" text-anchor="start" class="h2">H-01  RESULTS, JACKPOTS &amp; LOTTERY AI</text>
+<text x="44" y="232" text-anchor="start" class="small">Choose state, check numbers or ask a question.</text>
+<rect x="44" y="260" width="342" height="38" rx="19" fill="#F0F3F7" stroke="#D7DEE8"/>
+<text x="62" y="284" text-anchor="start" class="small">Select state or ZIP</text>
+<rect x="44" y="307" width="160" height="32" rx="16" fill="#1F5EFF" stroke="#1F5EFF"/>
+<text x="124" y="328" text-anchor="middle" class="label" fill="#FFF">Show results</text>
+<rect x="216" y="307" width="170" height="32" rx="16" fill="#FFF" stroke="#00A7A5"/>
+<text x="301" y="328" text-anchor="middle" class="label" fill="#007B79">Ask AI</text>
+<rect x="24" y="370" width="382" height="70" rx="4" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="215.0" y="403.0" text-anchor="middle" class="small">AD-H00 — MOBILE TOP SLOT</text>
+<text x="215.0" y="423.0" text-anchor="middle" class="tiny">Inherited production slot / size</text>
+<rect x="24" y="470" width="382" height="290" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="44" y="504" text-anchor="start" class="h2">POWERBALL</text>
+<text x="44" y="542" text-anchor="start" class="h1">$XXX MILLION jackpot</text>
+<text x="44" y="572" text-anchor="start" class="small">Cash value · Next draw</text>
+<rect x="44" y="595" width="342" height="55" rx="8" fill="#EDF4FF" stroke="#BCD1FF"/>
+<text x="215" y="628" text-anchor="middle" class="label">Latest winning numbers</text>
+<text x="44" y="680" text-anchor="start" class="small" fill="#1F5EFF">Result · Check · Generate · Discussion</text>
+<text x="44" y="709" text-anchor="start" class="small" fill="#007B79">AI insight / historical fact</text>
+<rect x="44" y="722" width="150" height="30" rx="15" fill="#FFF1E9" stroke="#F1B48E"/>
+<text x="119" y="742" text-anchor="middle" class="tiny" fill="#B45118">Where to play</text>
+<rect x="24" y="775" width="382" height="42" rx="4" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="215.0" y="794.0" text-anchor="middle" class="small">AD-H01I — BETWEEN GAMES</text>
+<text x="215.0" y="814.0" text-anchor="middle" class="tiny">Inherited production slot / size</text>
+<rect x="24" y="830" width="382" height="290" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="44" y="864" text-anchor="start" class="h2">MEGA MILLIONS</text>
+<text x="44" y="902" text-anchor="start" class="h1">$XXX MILLION jackpot</text>
+<text x="44" y="932" text-anchor="start" class="small">Cash value · Next draw</text>
+<rect x="44" y="955" width="342" height="55" rx="8" fill="#FFF6D9" stroke="#E4C466"/>
+<text x="215" y="988" text-anchor="middle" class="label">Latest winning numbers</text>
+<text x="44" y="1040" text-anchor="start" class="small" fill="#1F5EFF">Result · Check · Generate · Discussion</text>
+<text x="44" y="1069" text-anchor="start" class="small" fill="#007B79">AI insight / historical fact</text>
+<rect x="44" y="1082" width="150" height="30" rx="15" fill="#FFF1E9" stroke="#F1B48E"/>
+<text x="119" y="1102" text-anchor="middle" class="tiny" fill="#B45118">Where to play</text>
+<rect x="24" y="1205" width="382" height="140" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="44" y="1238" text-anchor="start" class="h2">H-02B  OTHER JACKPOTS</text>
+<text x="44" y="1270" text-anchor="start" class="small">Lotto America · selected state jackpot</text>
+<text x="44" y="1312" text-anchor="start" class="label" fill="#1F5EFF">Compare all jackpots →</text>
+<rect x="24" y="1375" width="382" height="220" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="44" y="1408" text-anchor="start" class="h2">H-03  LATEST RESULTS</text>
+<text x="44" y="1450" text-anchor="start" class="label">Powerball</text>
+<text x="240" y="1450" text-anchor="start" class="small" fill="#1F5EFF">Numbers / select state →</text>
+<text x="44" y="1498" text-anchor="start" class="label">Mega Millions</text>
+<text x="240" y="1498" text-anchor="start" class="small" fill="#1F5EFF">Numbers / select state →</text>
+<text x="44" y="1546" text-anchor="start" class="label">State daily games</text>
+<text x="240" y="1546" text-anchor="start" class="small" fill="#1F5EFF">Numbers / select state →</text>
+<rect x="24" y="1625" width="382" height="70" rx="4" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="215.0" y="1658.0" text-anchor="middle" class="small">AD-H02 — POST RESULTS</text>
+<text x="215.0" y="1678.0" text-anchor="middle" class="tiny">Inherited production slot / size</text>
+<rect x="24" y="1725" width="382" height="150" rx="10" fill="#EDF4FF" stroke="#BCD1FF" filter="url(#s)"/>
+<text x="44" y="1759" text-anchor="start" class="h2">H-04  CHECK MY NUMBERS</text>
+<text x="44" y="1793" text-anchor="start" class="small">Compare exact sets; save after value</text>
+<text x="44" y="1837" text-anchor="start" class="label" fill="#1F5EFF">Open / Continue →</text>
+<rect x="24" y="1905" width="382" height="150" rx="10" fill="#EAF9F8" stroke="#7FD5D2" filter="url(#s)"/>
+<text x="44" y="1939" text-anchor="start" class="h2">H-05  LOTTERYCORNER AI</text>
+<text x="44" y="1973" text-anchor="start" class="small">Daily brief and one complete answer</text>
+<text x="44" y="2017" text-anchor="start" class="label" fill="#1F5EFF">Open / Continue →</text>
+<rect x="24" y="2085" width="382" height="150" rx="10" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="44" y="2119" text-anchor="start" class="h2">H-06A/B  LIVE &amp; UPCOMING</text>
+<text x="44" y="2153" text-anchor="start" class="small">Live, pending, verified and next draws</text>
+<text x="44" y="2197" text-anchor="start" class="label" fill="#1F5EFF">Open / Continue →</text>
+<rect x="24" y="2265" width="382" height="70" rx="4" fill="#F3F3F3" stroke="#AEB6C2"/>
+<text x="215.0" y="2298.0" text-anchor="middle" class="small">AD-H03 — POST LIVE DRAWS</text>
+<text x="215.0" y="2318.0" text-anchor="middle" class="tiny">Inherited production slot / size</text>
+<rect x="24" y="2370" width="382" height="62" rx="8" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="44" y="2395" text-anchor="start" class="label">Explore Your State</text>
+<text x="44" y="2417" text-anchor="start" class="tiny">Results · games · claims · play</text>
+<rect x="24" y="2445" width="382" height="62" rx="8" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="44" y="2470" text-anchor="start" class="label">Worth Knowing</text>
+<text x="44" y="2492" text-anchor="start" class="tiny">History · milestone · update</text>
+<rect x="24" y="2520" width="382" height="62" rx="8" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="44" y="2545" text-anchor="start" class="label">Tools &amp; Systems</text>
+<text x="44" y="2567" text-anchor="start" class="tiny">Generator · hot/cold · wheels</text>
+<rect x="24" y="2595" width="382" height="62" rx="8" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="44" y="2620" text-anchor="start" class="label">Popular Games</text>
+<text x="44" y="2642" text-anchor="start" class="tiny">State and national discovery</text>
+<rect x="24" y="2670" width="382" height="62" rx="8" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="44" y="2695" text-anchor="start" class="label">Jackpot History</text>
+<text x="44" y="2717" text-anchor="start" class="tiny">Powerball/MM comparison</text>
+<rect x="24" y="2745" width="382" height="62" rx="8" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="44" y="2770" text-anchor="start" class="label">Community Live</text>
+<text x="44" y="2792" text-anchor="start" class="tiny">Real questions and replies</text>
+<rect x="24" y="2820" width="382" height="62" rx="8" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="44" y="2845" text-anchor="start" class="label">Winners</text>
+<text x="44" y="2867" text-anchor="start" class="tiny">Stories · claims · unclaimed</text>
+<rect x="24" y="2895" width="382" height="62" rx="8" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="44" y="2920" text-anchor="start" class="label">News</text>
+<text x="44" y="2942" text-anchor="start" class="tiny">Current stories + AI Quick Take</text>
+<rect x="24" y="2970" width="382" height="62" rx="8" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="44" y="2995" text-anchor="start" class="label">Blog &amp; Guides</text>
+<text x="44" y="3017" text-anchor="start" class="tiny">Analysis · tutorials · systems</text>
+<rect x="24" y="3045" width="382" height="62" rx="8" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="44" y="3070" text-anchor="start" class="label">Where to Play</text>
+<text x="44" y="3092" text-anchor="start" class="tiny">Confirmed state options</text>
+<rect x="24" y="3120" width="382" height="62" rx="8" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="44" y="3145" text-anchor="start" class="label">Insider &amp; Return</text>
+<text x="44" y="3167" text-anchor="start" class="tiny">Save · alerts · app · newsletter</text>
+<rect x="24" y="3195" width="382" height="62" rx="8" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="44" y="3220" text-anchor="start" class="label">State Directory</text>
+<text x="44" y="3242" text-anchor="start" class="tiny">All U.S. lottery jurisdictions</text>
+<rect x="15" y="3250" width="400" height="40" rx="0" fill="#FFF" stroke="#D7DEE8" filter="url(#s)"/>
+<text x="45" y="3276" text-anchor="middle" class="tiny" fill="#1F5EFF">Home</text>
+<text x="120" y="3276" text-anchor="middle" class="tiny">Results</text>
+<text x="205" y="3276" text-anchor="middle" class="tiny">My Numbers</text>
+<text x="305" y="3276" text-anchor="middle" class="tiny">Community</text>
+<text x="385" y="3276" text-anchor="middle" class="tiny" fill="#1F5EFF">Ask AI</text>
+</svg>

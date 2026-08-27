@@ -1,0 +1,150 @@
+{
+  "_meta": {
+    "purpose": "State-level config for UI rendering (state list, timezone, module toggles, SEO/content placeholders). Consumed via the data-provider (sample now, admin/API later). SEO/content/officialSource/disclaimer values are PLACEHOLDERS and must be admin/API-driven, not hardcoded in components.",
+    "illustrative": true,
+    "moduleKeys": ["checkTicket", "scratchOffs", "oddsStrategy", "newsAndWinners", "fundAllocation", "anonymityRules", "dataMethodology", "quickFacts", "numberTrends", "biggestJackpots", "winnerLocation", "highlightsGrid", "gameComparison", "whereAndHowToPlay"],
+    "timezoneNote": "storedTimezone for all draw data is America/New_York (EST/EDT); each state has its own display timezone. See timezone rules in 06-doc §9 / 05-doc D6-D8.",
+    "schemaVersion": "0.1-sample"
+  },
+  "states": [
+    {
+      "stateId": 107,
+      "stateCode": "fl",
+      "stateName": "Florida",
+      "url": "/fl",
+      "timezone": "America/New_York",
+      "displayTimezoneLabel": "ET",
+      "storedTimezone": "America/New_York",
+      "isLotteryState": true,
+      "showInStateList": true,
+      "taxRate": 0.0,
+      "games": [
+        { "gameId": 1012, "slug": "powerball", "displayName": "Powerball", "group": "multiState", "order": 0 },
+        { "gameId": 1013, "slug": "mega-millions", "displayName": "Mega Millions", "group": "multiState", "order": 1 },
+        { "gameId": 337, "slug": "florida-lotto", "displayName": "Florida Lotto", "group": "inState", "order": 2 },
+        { "gameId": 336, "slug": "fantasy-5", "displayName": "Fantasy 5", "group": "inState", "order": 3 },
+        { "gameId": 582, "slug": "jackpot-triple-play", "displayName": "Jackpot Triple Play", "group": "inState", "order": 4 },
+        { "gameId": 332, "slug": "pick-3-midday", "displayName": "Pick 3", "group": "pick", "order": 5 },
+        { "gameId": 563, "slug": "pick-2-midday", "displayName": "Pick 2", "group": "pick", "order": 6 },
+        { "gameId": 614, "slug": "cash-pop-morning", "displayName": "Cash Pop", "group": "pick", "order": 7 }
+      ],
+      "optionalModules": {
+        "checkTicket": true,
+        "scratchOffs": false,
+        "oddsStrategy": true,
+        "newsAndWinners": true,
+        "fundAllocation": true,
+        "anonymityRules": false,
+        "dataMethodology": true
+      },
+      "seoContent": {
+        "titlePlaceholder": "[ADMIN] Florida Lottery Results Today — Winning Numbers, Jackpots & How to Claim",
+        "metaDescriptionPlaceholder": "[ADMIN] Latest Florida Lottery winning numbers, jackpots, and how to claim — updated after every draw.",
+        "canonicalPlaceholder": "[VERIFY-CONVENTION] canonical for /fl (host + trailing-slash convention not finalized; do not change existing)",
+        "h1Placeholder": "[ADMIN] Florida Lottery Results Today",
+        "shortAnswerPlaceholder": "[ADMIN] Short answer block: today's Florida Powerball, Mega Millions and in-state game results.",
+        "editable": true,
+        "source": "admin/SEOMeta (per-URL) — migrate existing values"
+      },
+      "officialSource": {
+        "namePlaceholder": "Florida Lottery",
+        "urlPlaceholder": "[ADMIN] official state lottery URL",
+        "noticePlaceholder": "[ADMIN] Results are sourced from official Florida Lottery draws; always verify with the official lottery before claiming."
+      },
+      "disclaimers": {
+        "independencePlaceholder": "[ADMIN] Lottery Corner is an independent lottery information website and is not affiliated with the Florida Lottery.",
+        "responsiblePlayPlaceholder": "[ADMIN] Play responsibly. 18+ only.",
+        "dataAccuracyPlaceholder": "[ADMIN] Winning numbers are updated shortly after each draw; confirm major prizes with an authorized retailer or office."
+      }
+    },
+    {
+      "stateId": 101,
+      "stateCode": "az",
+      "stateName": "Arizona",
+      "url": "/az",
+      "timezone": "America/Phoenix",
+      "displayTimezoneLabel": "MST",
+      "storedTimezone": "America/New_York",
+      "isLotteryState": true,
+      "showInStateList": true,
+      "taxRate": 0.05,
+      "timezoneNote": "Arizona does NOT observe DST (America/Phoenix). High-risk for the after-10PM EST date-shift rule (05-doc D7). Add test cases.",
+      "games": [
+        { "gameId": 1012, "slug": "powerball", "displayName": "Powerball", "group": "multiState", "order": 0 },
+        { "gameId": 1013, "slug": "mega-millions", "displayName": "Mega Millions", "group": "multiState", "order": 1 },
+        { "gameId": 305, "slug": "the-pick", "displayName": "The Pick", "group": "inState", "order": 2 },
+        { "gameId": 303, "slug": "fantasy-5", "displayName": "Fantasy 5", "group": "inState", "order": 3 },
+        { "gameId": 301, "slug": "pick-3", "displayName": "Pick 3", "group": "pick", "order": 4 }
+      ],
+      "optionalModules": { "checkTicket": true, "scratchOffs": true, "oddsStrategy": true, "newsAndWinners": true, "fundAllocation": false, "anonymityRules": false, "dataMethodology": false },
+      "seoContent": { "titlePlaceholder": "[ADMIN]", "metaDescriptionPlaceholder": "[ADMIN]", "canonicalPlaceholder": "[VERIFY-CONVENTION] /az", "h1Placeholder": "[ADMIN] Arizona Lottery Results Today", "shortAnswerPlaceholder": "[ADMIN]", "editable": true },
+      "officialSource": { "namePlaceholder": "Arizona Lottery", "urlPlaceholder": "[ADMIN]", "noticePlaceholder": "[ADMIN]" },
+      "disclaimers": { "independencePlaceholder": "[ADMIN]", "responsiblePlayPlaceholder": "[ADMIN] Play responsibly. 21+ in AZ.", "dataAccuracyPlaceholder": "[ADMIN]" }
+    },
+    {
+      "stateId": 127,
+      "stateCode": "ny",
+      "stateName": "New York",
+      "url": "/ny",
+      "timezone": "America/New_York",
+      "displayTimezoneLabel": "ET",
+      "storedTimezone": "America/New_York",
+      "isLotteryState": true,
+      "showInStateList": true,
+      "taxRate": 0.09,
+      "games": [
+        { "gameId": 1012, "slug": "powerball", "displayName": "Powerball", "group": "multiState", "order": 0 },
+        { "gameId": 1013, "slug": "mega-millions", "displayName": "Mega Millions", "group": "multiState", "order": 1 },
+        { "gameId": 1017, "slug": "cash4life", "displayName": "Cash4Life", "group": "inState", "order": 2 },
+        { "gameId": 421, "slug": "numbers-midday", "displayName": "Numbers", "group": "pick", "order": 3 },
+        { "gameId": 423, "slug": "win-4-midday", "displayName": "Win 4", "group": "pick", "order": 4 }
+      ],
+      "optionalModules": { "checkTicket": false, "scratchOffs": false, "oddsStrategy": false, "newsAndWinners": true, "fundAllocation": false, "anonymityRules": false, "dataMethodology": false, "highlightsGrid": true, "whereAndHowToPlay": true },
+      "seoContent": { "titlePlaceholder": "[ADMIN]", "metaDescriptionPlaceholder": "[ADMIN]", "canonicalPlaceholder": "[VERIFY-CONVENTION] /ny", "h1Placeholder": "[ADMIN] New York Lottery Results", "shortAnswerPlaceholder": "[ADMIN]", "editable": true },
+      "officialSource": { "namePlaceholder": "New York Lottery", "urlPlaceholder": "[ADMIN]", "noticePlaceholder": "[ADMIN]" },
+      "disclaimers": { "independencePlaceholder": "[ADMIN]", "responsiblePlayPlaceholder": "[ADMIN] Play responsibly. 18+ only.", "dataAccuracyPlaceholder": "[ADMIN]" }
+    },
+    {
+      "stateId": 103,
+      "stateCode": "ca",
+      "stateName": "California",
+      "url": "/ca",
+      "timezone": "America/Los_Angeles",
+      "displayTimezoneLabel": "PT",
+      "storedTimezone": "America/New_York",
+      "isLotteryState": true,
+      "showInStateList": true,
+      "taxRate": 0.0,
+      "timezoneNote": "Pacific time — high-risk for the after-10PM local EST date-shift rule (05-doc D7). Add test cases (esp. game 314 Fantasy 5 which carries payout data).",
+      "games": [
+        { "gameId": 1012, "slug": "powerball", "displayName": "Powerball", "group": "multiState", "order": 0 },
+        { "gameId": 1013, "slug": "mega-millions", "displayName": "Mega Millions", "group": "multiState", "order": 1 },
+        { "gameId": 316, "slug": "superlotto-plus", "displayName": "SuperLotto Plus", "group": "inState", "order": 2 },
+        { "gameId": 314, "slug": "fantasy-5", "displayName": "Fantasy 5", "group": "inState", "order": 3 },
+        { "gameId": 311, "slug": "daily-3-midday", "displayName": "Daily 3", "group": "pick", "order": 4 }
+      ],
+      "optionalModules": { "checkTicket": false, "scratchOffs": true, "oddsStrategy": false, "newsAndWinners": true, "fundAllocation": false, "anonymityRules": true, "dataMethodology": false },
+      "seoContent": { "titlePlaceholder": "[ADMIN]", "metaDescriptionPlaceholder": "[ADMIN]", "canonicalPlaceholder": "[VERIFY-CONVENTION] /ca", "h1Placeholder": "[ADMIN] California Lottery Winning Numbers & Results", "shortAnswerPlaceholder": "[ADMIN]", "editable": true },
+      "officialSource": { "namePlaceholder": "California Lottery", "urlPlaceholder": "[ADMIN]", "noticePlaceholder": "[ADMIN]" },
+      "disclaimers": { "independencePlaceholder": "[ADMIN]", "responsiblePlayPlaceholder": "[ADMIN] Play responsibly. 18+ only.", "dataAccuracyPlaceholder": "[ADMIN]" }
+    },
+    {
+      "stateId": 999,
+      "stateCode": "hi",
+      "stateName": "Hawaii",
+      "url": "/hi",
+      "timezone": "Pacific/Honolulu",
+      "displayTimezoneLabel": "HST",
+      "storedTimezone": "America/New_York",
+      "isLotteryState": false,
+      "showInStateList": true,
+      "taxRate": 0.0,
+      "games": [],
+      "optionalModules": {},
+      "noLotteryNote": "No-lottery state (hi/al/ak/nv/ut). Renders a dedicated no-results template: FAQ + popular games + SEO only (05-doc R10). URL must be preserved.",
+      "seoContent": { "titlePlaceholder": "[ADMIN] Hawaii Lottery Information", "h1Placeholder": "[ADMIN] Does Hawaii Have a Lottery?", "shortAnswerPlaceholder": "[ADMIN]", "editable": true },
+      "officialSource": { "namePlaceholder": "N/A", "noticePlaceholder": "[ADMIN]" },
+      "disclaimers": { "responsiblePlayPlaceholder": "[ADMIN]" }
+    }
+  ]
+}

@@ -1,0 +1,1091 @@
+{
+  "_meta": {
+    "purpose": "UI-friendly, metadata-driven result-format model for the dynamic result card. Derived from 03-docs/04-game-result-format-inventory.md + reference-tables/game.csv. The UI renders balls from this metadata; it never hardcodes a fixed ball count and never parses raw feed XML.",
+    "illustrative": true,
+    "colorTokensNote": "colorToken values are semantic names only. Final colors are NOT decided yet. sourceCssClass records the legacy CSS class from ResultFormat_Upgrade.properties where known (see 04-doc); null = not yet confirmed. Do not treat these as final hex colors.",
+    "ballValueTypes": [
+      "number",
+      "digit",
+      "card"
+    ],
+    "schemaVersion": "0.1-sample",
+    "lrg_state_025": "Twelve Florida draw-event formats added for LRG-STATE-025 so every one of the 19 Florida events in 04-sample-data/source-xml/latest-results-lc.xml has a governed format. Shapes are cloned from the existing verified sibling format for the same game family; ball counts and ranges come from PLAY_TYPE in reference-tables/game.csv (production-derived) and are consistent with the numbers-str shape in the feed. Jackpot Triple Play is 6/46 per game.csv. No Powerball/Mega Millions definition was altered. No non-Florida format was touched."
+  },
+  "formats": [
+    {
+      "gameId": 301,
+      "gameName": "Arizona Pick 3",
+      "displayName": "Pick 3",
+      "stateCode": "az",
+      "gameSlug": "pick-3",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "3-Digits",
+      "maxBallCount": 3,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "digit",
+          "count": 3,
+          "min": 0,
+          "max": 9,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number"
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [],
+      "historicalFormats": [],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 303,
+      "gameName": "Arizona Fantasy 5",
+      "displayName": "Fantasy 5",
+      "stateCode": "az",
+      "gameSlug": "fantasy-5",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "5/41",
+      "maxBallCount": 5,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "number",
+          "count": 5,
+          "min": 1,
+          "max": 41,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number"
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [],
+      "historicalFormats": [],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 305,
+      "gameName": "Arizona The Pick",
+      "displayName": "The Pick",
+      "stateCode": "az",
+      "gameSlug": "the-pick",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "6/44",
+      "maxBallCount": 6,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "number",
+          "count": 6,
+          "min": 1,
+          "max": 44,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number"
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [],
+      "historicalFormats": [],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 577,
+      "gameName": "Arizona Triple Twist",
+      "displayName": "Triple Twist",
+      "stateCode": "az",
+      "gameSlug": "triple-twist",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "6-numbers",
+      "maxBallCount": 6,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "number",
+          "count": 6,
+          "min": 1,
+          "max": 39,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number",
+          "note": "Range illustrative \u2014 confirm Triple Twist matrix."
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [],
+      "historicalFormats": [],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 332,
+      "gameName": "Florida Pick 3 Midday",
+      "displayName": "Pick 3 (Midday)",
+      "stateCode": "fl",
+      "gameSlug": "pick-3-midday",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "3-Digits+1",
+      "maxBallCount": 4,
+      "effectiveFrom": "2019-04-28",
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "digit",
+          "count": 3,
+          "min": 0,
+          "max": 9,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number"
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [
+        {
+          "key": "fireball",
+          "label": "Fireball",
+          "valueType": "digit",
+          "count": 1,
+          "min": 0,
+          "max": 9,
+          "colorToken": "ball.fireball",
+          "sourceCssClass": null,
+          "note": "Fireball add-on. Present from 2019-04-28. sourceCssClass not yet confirmed."
+        }
+      ],
+      "historicalFormats": [
+        {
+          "note": "Draws before 2019-04-28 had no Fireball.",
+          "effectiveFrom": null,
+          "effectiveTo": "2019-04-27"
+        }
+      ],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 333,
+      "gameName": "Florida Pick 3 (Evening)",
+      "displayName": "Pick 3 (Evening)",
+      "stateCode": "fl",
+      "gameSlug": "pick-3-evening",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "3-Digits+1",
+      "maxBallCount": 4,
+      "effectiveFrom": "2019-04-28",
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "digit",
+          "count": 3,
+          "min": 0,
+          "max": 9,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number"
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [
+        {
+          "key": "fireball",
+          "label": "Fireball",
+          "valueType": "digit",
+          "count": 1,
+          "min": 0,
+          "max": 9,
+          "colorToken": "ball.fireball",
+          "sourceCssClass": null,
+          "note": "Fireball add-on. Present from 2019-04-28. sourceCssClass not yet confirmed."
+        }
+      ],
+      "historicalFormats": [
+        {
+          "note": "Draws before 2019-04-28 had no Fireball.",
+          "effectiveFrom": null,
+          "effectiveTo": "2019-04-27"
+        }
+      ],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 334,
+      "gameName": "Florida Pick 4 Midday",
+      "displayName": "Pick 4 (Midday)",
+      "stateCode": "fl",
+      "gameSlug": "pick-4-midday",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "4-Digits+1",
+      "maxBallCount": 5,
+      "effectiveFrom": "2019-04-28",
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "digit",
+          "count": 4,
+          "min": 0,
+          "max": 9,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number"
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [
+        {
+          "key": "fireball",
+          "label": "Fireball",
+          "valueType": "digit",
+          "count": 1,
+          "min": 0,
+          "max": 9,
+          "colorToken": "ball.fireball",
+          "sourceCssClass": null,
+          "note": "Fireball add-on. Present from 2019-04-28. sourceCssClass not yet confirmed."
+        }
+      ],
+      "historicalFormats": [
+        {
+          "note": "Draws before 2019-04-28 had no Fireball.",
+          "effectiveFrom": null,
+          "effectiveTo": "2019-04-27"
+        }
+      ],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 335,
+      "gameName": "Florida Pick 4 Evening",
+      "displayName": "Pick 4 (Evening)",
+      "stateCode": "fl",
+      "gameSlug": "pick-4-evening",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "4-Digits+1",
+      "maxBallCount": 5,
+      "effectiveFrom": "2019-04-28",
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "digit",
+          "count": 4,
+          "min": 0,
+          "max": 9,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number"
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [
+        {
+          "key": "fireball",
+          "label": "Fireball",
+          "valueType": "digit",
+          "count": 1,
+          "min": 0,
+          "max": 9,
+          "colorToken": "ball.fireball",
+          "sourceCssClass": null,
+          "note": "Fireball add-on. Present from 2019-04-28. sourceCssClass not yet confirmed."
+        }
+      ],
+      "historicalFormats": [
+        {
+          "note": "Draws before 2019-04-28 had no Fireball.",
+          "effectiveFrom": null,
+          "effectiveTo": "2019-04-27"
+        }
+      ],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 336,
+      "gameName": "Florida Fantasy 5",
+      "displayName": "Fantasy 5 (Evening)",
+      "stateCode": "fl",
+      "gameSlug": "fantasy-5-evening",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "5/36",
+      "maxBallCount": 5,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "number",
+          "count": 5,
+          "min": 1,
+          "max": 36,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number",
+          "note": "Standard 5-ball game, no special ball \u2014 exercises the plain 5-ball layout."
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [],
+      "historicalFormats": [],
+      "secondaryDraw": null,
+      "note_lrg025": "Feed game 336 is the evening draw (game.csv GAMETIME 11:15 PM ET); 640 is the 1:05 PM midday draw. Period label is mandatory."
+    },
+    {
+      "gameId": 337,
+      "gameName": "Florida Lotto",
+      "displayName": "Florida Lotto",
+      "stateCode": "fl",
+      "gameSlug": "florida-lotto",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "6/53+6/53",
+      "maxBallCount": 12,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "number",
+          "count": 6,
+          "min": 1,
+          "max": 53,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number"
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [],
+      "historicalFormats": [
+        {
+          "note": "Florida Lotto has had multiple main-number ranges over time; add prior effective-date ranges when historical data is loaded."
+        }
+      ],
+      "secondaryDraw": {
+        "key": "doubleplay",
+        "label": "Double Play",
+        "availabilityNote": "Florida Lotto Double Play is a second 6-number draw of the same ticket.",
+        "ballGroups": [
+          {
+            "order": 0,
+            "ballType": "MAIN",
+            "valueType": "number",
+            "count": 6,
+            "min": 1,
+            "max": 53,
+            "colorToken": "ball.default"
+          }
+        ],
+        "specialBalls": []
+      }
+    },
+    {
+      "gameId": 563,
+      "gameName": "Florida Pick 2 Midday",
+      "displayName": "Pick 2 (Midday)",
+      "stateCode": "fl",
+      "gameSlug": "pick-2-midday",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "2-Digits+1",
+      "maxBallCount": 3,
+      "effectiveFrom": "2019-04-28",
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "digit",
+          "count": 2,
+          "min": 0,
+          "max": 9,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number"
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [
+        {
+          "key": "fireball",
+          "label": "Fireball",
+          "valueType": "digit",
+          "count": 1,
+          "min": 0,
+          "max": 9,
+          "colorToken": "ball.fireball",
+          "sourceCssClass": null,
+          "note": "Fireball add-on; optional replacement digit. Present from 2019-04-28 (see 04-doc \u00a78). sourceCssClass not yet confirmed."
+        }
+      ],
+      "historicalFormats": [
+        {
+          "note": "Draws before 2019-04-28 had no Fireball (use the '.old' / no-addOn format).",
+          "effectiveFrom": null,
+          "effectiveTo": "2019-04-27"
+        }
+      ],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 564,
+      "gameName": "Florida Pick 2 (Evening)",
+      "displayName": "Pick 2 (Evening)",
+      "stateCode": "fl",
+      "gameSlug": "pick-2-evening",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "2-Digits+1",
+      "maxBallCount": 3,
+      "effectiveFrom": "2019-04-28",
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "digit",
+          "count": 2,
+          "min": 0,
+          "max": 9,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number"
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [
+        {
+          "key": "fireball",
+          "label": "Fireball",
+          "valueType": "digit",
+          "count": 1,
+          "min": 0,
+          "max": 9,
+          "colorToken": "ball.fireball",
+          "sourceCssClass": null,
+          "note": "Fireball add-on; optional replacement digit. Present from 2019-04-28 (see 04-doc \u00a78). sourceCssClass not yet confirmed."
+        }
+      ],
+      "historicalFormats": [
+        {
+          "note": "Draws before 2019-04-28 had no Fireball (use the '.old' / no-addOn format).",
+          "effectiveFrom": null,
+          "effectiveTo": "2019-04-27"
+        }
+      ],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 565,
+      "gameName": "Florida Pick 5 Midday",
+      "displayName": "Pick 5 (Midday)",
+      "stateCode": "fl",
+      "gameSlug": "pick-5-midday",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "5-Digits+1",
+      "maxBallCount": 6,
+      "effectiveFrom": "2019-04-28",
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "digit",
+          "count": 5,
+          "min": 0,
+          "max": 9,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number"
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [
+        {
+          "key": "fireball",
+          "label": "Fireball",
+          "valueType": "digit",
+          "count": 1,
+          "min": 0,
+          "max": 9,
+          "colorToken": "ball.fireball",
+          "sourceCssClass": null,
+          "note": "Fireball add-on. Present from 2019-04-28. sourceCssClass not yet confirmed."
+        }
+      ],
+      "historicalFormats": [
+        {
+          "note": "Draws before 2019-04-28 had no Fireball.",
+          "effectiveFrom": null,
+          "effectiveTo": "2019-04-27"
+        }
+      ],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 566,
+      "gameName": "Florida Pick 5 Evening",
+      "displayName": "Pick 5 (Evening)",
+      "stateCode": "fl",
+      "gameSlug": "pick-5-evening",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "5-Digits+1",
+      "maxBallCount": 6,
+      "effectiveFrom": "2019-04-28",
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "digit",
+          "count": 5,
+          "min": 0,
+          "max": 9,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number"
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [
+        {
+          "key": "fireball",
+          "label": "Fireball",
+          "valueType": "digit",
+          "count": 1,
+          "min": 0,
+          "max": 9,
+          "colorToken": "ball.fireball",
+          "sourceCssClass": null,
+          "note": "Fireball add-on. Present from 2019-04-28. sourceCssClass not yet confirmed."
+        }
+      ],
+      "historicalFormats": [
+        {
+          "note": "Draws before 2019-04-28 had no Fireball.",
+          "effectiveFrom": null,
+          "effectiveTo": "2019-04-27"
+        }
+      ],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 582,
+      "gameName": "Florida Jackpot Triple Play",
+      "displayName": "Jackpot Triple Play",
+      "stateCode": "fl",
+      "gameSlug": "jackpot-triple-play",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "6/46",
+      "maxBallCount": 6,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "number",
+          "count": 6,
+          "min": 1,
+          "max": 46,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number"
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [],
+      "historicalFormats": [],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 614,
+      "gameName": "Florida Cash Pop Morning",
+      "displayName": "Cash Pop (Morning)",
+      "stateCode": "fl",
+      "gameSlug": "cash-pop-morning",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "1/15",
+      "maxBallCount": 1,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "number",
+          "count": 1,
+          "min": 1,
+          "max": 15,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number",
+          "note": "Single-ball game \u2014 lower bound of the ball-count range. UI must render 1 ball cleanly."
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [],
+      "historicalFormats": [],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 615,
+      "gameName": "Florida Cash Pop (Matinee)",
+      "displayName": "Cash Pop (Matinee)",
+      "stateCode": "fl",
+      "gameSlug": "cash-pop-matinee",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "1/15",
+      "maxBallCount": 1,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "number",
+          "count": 1,
+          "min": 1,
+          "max": 15,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number",
+          "note": "Single-ball game \u2014 lower bound of the ball-count range. UI must render 1 ball cleanly."
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [],
+      "historicalFormats": [],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 616,
+      "gameName": "Florida Cash Pop (Afternoon)",
+      "displayName": "Cash Pop (Afternoon)",
+      "stateCode": "fl",
+      "gameSlug": "cash-pop-afternoon",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "1/15",
+      "maxBallCount": 1,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "number",
+          "count": 1,
+          "min": 1,
+          "max": 15,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number",
+          "note": "Single-ball game \u2014 lower bound of the ball-count range. UI must render 1 ball cleanly."
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [],
+      "historicalFormats": [],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 617,
+      "gameName": "Florida Cash Pop (Evening)",
+      "displayName": "Cash Pop (Evening)",
+      "stateCode": "fl",
+      "gameSlug": "cash-pop-evening",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "1/15",
+      "maxBallCount": 1,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "number",
+          "count": 1,
+          "min": 1,
+          "max": 15,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number",
+          "note": "Single-ball game \u2014 lower bound of the ball-count range. UI must render 1 ball cleanly."
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [],
+      "historicalFormats": [],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 618,
+      "gameName": "Florida Cash Pop (Late Night)",
+      "displayName": "Cash Pop (Late Night)",
+      "stateCode": "fl",
+      "gameSlug": "cash-pop-late-night",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "1/15",
+      "maxBallCount": 1,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "number",
+          "count": 1,
+          "min": 1,
+          "max": 15,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number",
+          "note": "Single-ball game \u2014 lower bound of the ball-count range. UI must render 1 ball cleanly."
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [],
+      "historicalFormats": [],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 640,
+      "gameName": "Florida Fantasy 5 Midday",
+      "displayName": "Fantasy 5 (Midday)",
+      "stateCode": "fl",
+      "gameSlug": "fantasy-5-midday",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "5/36",
+      "maxBallCount": 5,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "number",
+          "count": 5,
+          "min": 1,
+          "max": 36,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number",
+          "note": "Standard 5-ball game, no special ball \u2014 exercises the plain 5-ball layout."
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [],
+      "historicalFormats": [],
+      "secondaryDraw": null
+    },
+    {
+      "gameId": 511,
+      "gameName": "Indiana Quick Draw Midday",
+      "displayName": "Quick Draw (Midday)",
+      "stateCode": "in",
+      "gameSlug": "quick-draw-midday",
+      "isMultiState": false,
+      "isCardGame": false,
+      "playType": "10/80",
+      "maxBallCount": 21,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "number",
+          "count": 20,
+          "min": 1,
+          "max": 80,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number",
+          "note": "Keno-style: 20 drawn numbers. UI must WRAP to multiple rows on desktop and mobile."
+        }
+      ],
+      "specialBalls": [
+        {
+          "order": 1,
+          "ballType": "BONUS",
+          "label": "Bonus",
+          "valueType": "number",
+          "count": 1,
+          "min": 1,
+          "max": 10,
+          "differentSet": true,
+          "colorToken": "ball.bonus",
+          "sourceCssClass": "highlighted4",
+          "note": "Bonus/multiplier ball; range illustrative (confirm)."
+        }
+      ],
+      "multipliers": [],
+      "addOns": [],
+      "historicalFormats": [],
+      "secondaryDraw": null,
+      "layoutHints": {
+        "wrap": true,
+        "ballsPerRowDesktop": 10,
+        "ballsPerRowMobile": 5
+      }
+    },
+    {
+      "gameId": 384,
+      "gameName": "5 Card Cash",
+      "displayName": "5 Card Cash",
+      "stateCode": "ky",
+      "gameSlug": "5-card-cash",
+      "isMultiState": false,
+      "isCardGame": true,
+      "playType": "PlayingCardGame",
+      "maxBallCount": 5,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "CARD",
+          "label": null,
+          "valueType": "card",
+          "count": 5,
+          "min": null,
+          "max": null,
+          "differentSet": false,
+          "colorToken": "card.face",
+          "sourceCssClass": "card.number",
+          "note": "Playing-card game \u2014 values are card faces (e.g. 'AS','KH'), not numbers. Render as card faces. Placeholder pending card-value format confirmation."
+        }
+      ],
+      "specialBalls": [],
+      "multipliers": [],
+      "addOns": [],
+      "historicalFormats": [],
+      "secondaryDraw": null,
+      "cardFaces": true
+    },
+    {
+      "gameId": 1012,
+      "gameName": "Powerball",
+      "displayName": "Powerball",
+      "stateCode": "multi",
+      "gameSlug": "powerball",
+      "isMultiState": true,
+      "isCardGame": false,
+      "playType": "5/69+1/26",
+      "maxBallCount": 7,
+      "effectiveFrom": "2015-10-07",
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "number",
+          "count": 5,
+          "min": 1,
+          "max": 69,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number"
+        }
+      ],
+      "specialBalls": [
+        {
+          "order": 1,
+          "ballType": "SPECIAL",
+          "label": "Power Ball",
+          "valueType": "number",
+          "count": 1,
+          "min": 1,
+          "max": 26,
+          "differentSet": true,
+          "colorToken": "ball.powerball",
+          "sourceCssClass": "highlighted"
+        }
+      ],
+      "multipliers": [
+        {
+          "key": "powerplay",
+          "label": "Power Play",
+          "suffix": "X",
+          "colorToken": "multiplier.default"
+        }
+      ],
+      "addOns": [],
+      "historicalFormats": [
+        {
+          "note": "Older Powerball draws used different main/special ranges; model as prior effective-date ranges when historical data is loaded.",
+          "effectiveFrom": null,
+          "effectiveTo": "2015-10-06"
+        }
+      ],
+      "secondaryDraw": {
+        "key": "doubleplay",
+        "label": "Double Play",
+        "availabilityNote": "Powerball Double Play only in certain jurisdictions (see 05-doc pbDoublePlayStates: CO,FL,IN,MD,MI,MO,NJ,PA,PR,SC,SD,TN,WA,DC). Toggle per state.",
+        "ballGroups": [
+          {
+            "order": 0,
+            "ballType": "MAIN",
+            "valueType": "number",
+            "count": 5,
+            "min": 1,
+            "max": 69,
+            "colorToken": "ball.default"
+          }
+        ],
+        "specialBalls": [
+          {
+            "order": 1,
+            "ballType": "SPECIAL",
+            "label": "Power Ball",
+            "valueType": "number",
+            "count": 1,
+            "min": 1,
+            "max": 26,
+            "colorToken": "ball.powerball"
+          }
+        ]
+      }
+    },
+    {
+      "gameId": 1013,
+      "gameName": "Mega Millions",
+      "displayName": "Mega Millions",
+      "stateCode": "multi",
+      "gameSlug": "mega-millions",
+      "isMultiState": true,
+      "isCardGame": false,
+      "playType": "5/70+1/24",
+      "maxBallCount": 7,
+      "effectiveFrom": "2025-04-08",
+      "effectiveTo": null,
+      "ballGroups": [
+        {
+          "order": 0,
+          "ballType": "MAIN",
+          "label": null,
+          "valueType": "number",
+          "count": 5,
+          "min": 1,
+          "max": 70,
+          "differentSet": false,
+          "colorToken": "ball.default",
+          "sourceCssClass": "number"
+        }
+      ],
+      "specialBalls": [
+        {
+          "order": 1,
+          "ballType": "SPECIAL",
+          "label": "Mega Ball",
+          "valueType": "number",
+          "count": 1,
+          "min": 1,
+          "max": 24,
+          "differentSet": true,
+          "colorToken": "ball.megaball",
+          "sourceCssClass": "highlighted2"
+        }
+      ],
+      "multipliers": [
+        {
+          "key": "megaplier",
+          "label": "Multiplier",
+          "suffix": "X",
+          "colorToken": "multiplier.default",
+          "note": "Displayed as 'Multiplier' in legacy templates (Megaplier)."
+        }
+      ],
+      "addOns": [],
+      "historicalFormats": [
+        {
+          "note": "Pre-2025 Mega Millions used 5/70 + 1/25 and a separate Megaplier structure. Model prior ranges as effective-date ranges for historical draws.",
+          "effectiveFrom": "2017-10-31",
+          "effectiveTo": "2025-04-07"
+        }
+      ],
+      "secondaryDraw": null
+    }
+  ]
+}
