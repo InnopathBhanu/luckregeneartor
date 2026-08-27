@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-   output: 'export',
   reactStrictMode: true,
   // Phase 1 scaffold: keep TS strict (real safety), but don't let lint block the scaffold build.
   // Run `npm run lint` separately. See 03-docs/14.
