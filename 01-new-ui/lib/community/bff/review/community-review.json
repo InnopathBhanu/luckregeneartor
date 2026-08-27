@@ -1,0 +1,993 @@
+{
+  "_meta_note": "REVIEW-FIXTURE CORPUS — authorized by source-conflicts.md Conflict 41 FOUNDER AMENDMENT (2026-08-11) under five conditions, all implemented: (1) every community page renders the meta.disclosure banner; (2) every record carries provenance 'synthetic-review-fixture' and lib/community/bff/communityBff.ts REFUSES to serve this file in a production build; (3) community pages are noindex and in no sitemap; (4) fixture members are never emitted as Person JSON-LD, never counted in a statistic presented as real, and carry no earned badges; (5) the expiry is recorded in meta.expiry. Five personas, ten topics, written by the LotteryCorner team in LotteryPost-style player voice. No real person, no real winner claim, no fabricated official result, no prediction claim. Components never import this file; it enters the application only through communityBff.ts, which asserts its shape on every read.",
+  "meta": {
+    "source": "review",
+    "disclosure": "You are viewing LotteryCorner's community review build. The members and discussions on these pages are design fixtures written by the LotteryCorner team to exercise the interface — they are not real players or real posts. Real community content replaces them at launch.",
+    "expiry": "This fixture corpus expires at community launch: production requires real human content or designed empty states, and the corpus must never ship ungated (source-conflicts.md Conflict 41, founder amendment condition 5).",
+    "authorizedBy": "source-conflicts.md Conflict 41 — FOUNDER AMENDMENT, 2026-08-11",
+    "asOfIso": "2026-08-11"
+  },
+  "members": [
+    {
+      "username": "sunshinepicks",
+      "displayName": null,
+      "joinedIso": "2024-02-18",
+      "homeState": "fl",
+      "bio": "Florida daily-games regular. Pick 3 and Pick 4 every day, monthly state threads, pair lists and tidy sheets. Small plays, long habit, good company.",
+      "interests": { "games": ["pick-3", "pick-4"], "states": ["fl"] },
+      "contributionLabels": [],
+      "status": "active",
+      "provenance": "synthetic-review-fixture"
+    },
+    {
+      "username": "peachstatepat",
+      "displayName": null,
+      "joinedIso": "2023-10-05",
+      "homeState": "ga",
+      "bio": "Georgia Cash 3, box plays, family numbers. Mostly here to cheer everybody on — the little wins are the good ones.",
+      "interests": { "games": ["cash-3"], "states": ["ga"] },
+      "contributionLabels": [],
+      "status": "active",
+      "provenance": "synthetic-review-fixture"
+    },
+    {
+      "username": "moondreamer59",
+      "displayName": null,
+      "joinedIso": "2025-06-14",
+      "homeState": "ny",
+      "bio": "I play the numbers my dreams and my grandmother's book hand me. Personal belief, family tradition, and I never pretend it is anything else.",
+      "interests": { "games": ["pick-3", "pick-4"], "states": ["ny", "fl"] },
+      "contributionLabels": [],
+      "status": "active",
+      "provenance": "synthetic-review-fixture"
+    },
+    {
+      "username": "wheelhousebill",
+      "displayName": null,
+      "joinedIso": "2022-09-12",
+      "homeState": "oh",
+      "bio": "Ohio. Spreadsheets, sums, filters and wheels — systems as a hobby, never as a promise. I will always tell you the odds do not move.",
+      "interests": { "games": ["cash-3", "pick-4"], "states": ["oh"] },
+      "contributionLabels": [],
+      "status": "active",
+      "provenance": "synthetic-review-fixture"
+    },
+    {
+      "username": "jackpotchaser22",
+      "displayName": null,
+      "joinedIso": "2025-01-30",
+      "homeState": "tx",
+      "bio": "Texas. Big-game watcher — Powerball and Mega Millions runs, office pools, cash-versus-annuity arguments in the group chat.",
+      "interests": { "games": ["powerball", "mega-millions"], "states": ["tx"] },
+      "contributionLabels": [],
+      "status": "active",
+      "provenance": "synthetic-review-fixture"
+    }
+  ],
+  "entries": [
+    {
+      "forumEntryId": "fe-2026-0008",
+      "slug": "moving-to-florida-pick-3-scene",
+      "title": "Moving from up north to Florida — what should I know about the Pick 3 scene?",
+      "username": "moondreamer59",
+      "createdAtIso": "2026-08-10T14:05:00Z",
+      "updatedAtIso": null,
+      "tags": ["question", "pick-3", "fl"],
+      "gameId": "pick-3",
+      "stateCode": "fl",
+      "drawId": null,
+      "yearArchive": null,
+      "newsArticleSlug": null,
+      "toolId": null,
+      "eventId": null,
+      "status": "OPEN",
+      "indexabilityState": "INDEX_PENDING",
+      "moderationState": "NONE",
+      "body": [
+        {
+          "kind": "text",
+          "text": "We may move near Tampa next spring, and Pick 3 is my little daily ritual. Florida players: what should I know? Midday and evening rhythms, where you like to check results, whether the Fireball add-on is worth the fun, anything a newcomer would not think to ask. I would love lived experience rather than the rulebook."
+        }
+      ],
+      "attachment": null,
+      "contextRefs": [
+        { "label": "Florida lottery hub", "href": "/fl", "kind": "state" },
+        { "label": "Florida Pick 3 game page", "href": "/fl/pick-3", "kind": "game" }
+      ],
+      "researchReply": null,
+      "replies": [],
+      "acceptedReplyId": null,
+      "acceptedBy": null,
+      "provenance": "synthetic-review-fixture"
+    },
+    {
+      "forumEntryId": "fe-2026-0005",
+      "slug": "dreamed-about-fish-again-231",
+      "title": "Dreamed about fish again — grandma's book says 231",
+      "username": "moondreamer59",
+      "createdAtIso": "2026-08-06T02:12:00Z",
+      "updatedAtIso": null,
+      "tags": ["dreams", "lucky-numbers", "ny"],
+      "gameId": "pick-3",
+      "stateCode": "ny",
+      "drawId": null,
+      "yearArchive": null,
+      "newsArticleSlug": null,
+      "toolId": null,
+      "eventId": null,
+      "status": "ACTIVE",
+      "indexabilityState": "INDEX_PENDING",
+      "moderationState": "NONE",
+      "body": [
+        {
+          "kind": "text",
+          "text": "Three nights running I dreamed about fish. My grandmother's dream book puts fish at 231, and her handwriting in the margin says \"play it a week.\" So 231 box it is, for a week. That is my whole method and I love it. What are your numbers telling you this month? This is my personal belief and my grandmother's book — I am not claiming it does anything but make me happy."
+        }
+      ],
+      "attachment": null,
+      "contextRefs": [],
+      "researchReply": null,
+      "replies": [
+        {
+          "id": "r-0005-01",
+          "username": "peachstatepat",
+          "body": [{ "kind": "text", "text": "My mama's book says fish is money coming. Either way it is a sweet way to remember your grandma. WTG for keeping the tradition alive." }],
+          "postedAtIso": "2026-08-06T11:30:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0005-02",
+          "username": "sunshinepicks",
+          "body": [{ "kind": "text", "text": "231 has a nice bounce to it. Adding it to my box list this week just for the company." }],
+          "postedAtIso": "2026-08-06T13:02:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0005-03",
+          "username": "wheelhousebill",
+          "body": [{ "kind": "text", "text": "No dream number is more or less likely than any other — and honestly that is the nicest part. Play the memory, enjoy it, spend what it is worth to you and not a dollar past that." }],
+          "postedAtIso": "2026-08-06T16:44:00Z",
+          "helpful": true,
+          "summaryPoint": { "kind": "fact", "text": "Dream numbers carry the same chance as any other combination; the value is the tradition, not the mathematics." },
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0005-04",
+          "username": "jackpotchaser22",
+          "body": [{ "kind": "text", "text": "My aunt swears by her book too. Family tradition is half of why I play at all." }],
+          "postedAtIso": "2026-08-07T01:15:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0005-05",
+          "username": "moondreamer59",
+          "body": [{ "kind": "text", "text": "That is it exactly — it is about the people. The numbers are just how we hold them." }],
+          "postedAtIso": "2026-08-07T02:40:00Z",
+          "helpful": false,
+          "summaryPoint": { "kind": "viewpoint", "text": "For the believers in the thread, dream numbers are a way of carrying family memory, not a claim about outcomes." },
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0005-06",
+          "username": "peachstatepat",
+          "body": [{ "kind": "text", "text": "This thread is why I love this place." }],
+          "postedAtIso": "2026-08-07T12:20:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        }
+      ],
+      "acceptedReplyId": null,
+      "acceptedBy": null,
+      "provenance": "synthetic-review-fixture"
+    },
+    {
+      "forumEntryId": "fe-2026-0006",
+      "slug": "first-decent-box-hit-story",
+      "title": "Finally a decent box hit after two dry months (small but mine)",
+      "username": "peachstatepat",
+      "createdAtIso": "2026-08-05T22:50:00Z",
+      "updatedAtIso": null,
+      "tags": ["win-story", "cash-3", "ga"],
+      "gameId": "cash-3",
+      "stateCode": "ga",
+      "drawId": null,
+      "yearArchive": null,
+      "newsArticleSlug": null,
+      "toolId": null,
+      "eventId": null,
+      "status": "ACTIVE",
+      "indexabilityState": "INDEX_PENDING",
+      "moderationState": "NONE",
+      "body": [
+        {
+          "kind": "text",
+          "text": "After two months of nothing, my 419 box finally came through last week — $290 on a fifty-cent ticket. I did a little dance at the kitchen counter. It is grocery money and a nice dinner, not a life change, but it made my whole week. No ticket photo — I never post barcodes or serials, and neither should you."
+        }
+      ],
+      "attachment": {
+        "kind": "winStory",
+        "state": "GA",
+        "game": "Georgia Cash 3",
+        "amount": "$290 (fifty-cent box)",
+        "photo": null,
+        "verificationState": "UNVERIFIED_STORY",
+        "story": "A regular box hit on a long-played family number, told first-hand. No ticket image was uploaded and no claim beyond the story itself is made."
+      },
+      "contextRefs": [],
+      "researchReply": null,
+      "replies": [
+        {
+          "id": "r-0006-01",
+          "username": "sunshinepicks",
+          "body": [{ "kind": "text", "text": "WTG Pat!! The hits that end a dry spell are the sweetest ones." }],
+          "postedAtIso": "2026-08-06T00:10:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0006-02",
+          "username": "moondreamer59",
+          "body": [{ "kind": "text", "text": "Wonderful! 419 must mean something in your family — enjoy that dinner." }],
+          "postedAtIso": "2026-08-06T01:25:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0006-03",
+          "username": "jackpotchaser22",
+          "body": [{ "kind": "text", "text": "Congrats! The kitchen-counter dance is mandatory, I do not make the rules." }],
+          "postedAtIso": "2026-08-06T03:00:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0006-04",
+          "username": "wheelhousebill",
+          "body": [{ "kind": "text", "text": "Congrats Pat. Also a model post — story told, no barcode, no serial number, no claim number. New folks, that is how you share a win." }],
+          "postedAtIso": "2026-08-06T15:35:00Z",
+          "helpful": true,
+          "summaryPoint": { "kind": "experience", "text": "The thread treats Pat's post as the template for sharing a win safely: story only, no ticket identifiers." },
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0006-05",
+          "username": "peachstatepat",
+          "body": [{ "kind": "text", "text": "Thank y'all! Dinner was catfish, which felt right given the dreams thread." }],
+          "postedAtIso": "2026-08-07T00:05:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0006-06",
+          "username": "sunshinepicks",
+          "body": [{ "kind": "text", "text": "Catfish! Perfect." }],
+          "postedAtIso": "2026-08-07T00:30:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        }
+      ],
+      "acceptedReplyId": null,
+      "acceptedBy": null,
+      "provenance": "synthetic-review-fixture"
+    },
+    {
+      "forumEntryId": "fe-2026-0007",
+      "slug": "scratch-off-talk-august",
+      "title": "Scratch-off talk — what's in your wallet this week?",
+      "username": "jackpotchaser22",
+      "createdAtIso": "2026-08-04T18:20:00Z",
+      "updatedAtIso": null,
+      "tags": ["scratch-off", "tx"],
+      "gameId": null,
+      "stateCode": "tx",
+      "drawId": null,
+      "yearArchive": null,
+      "newsArticleSlug": null,
+      "toolId": null,
+      "eventId": null,
+      "status": "ACTIVE",
+      "indexabilityState": "INDEX_PENDING",
+      "moderationState": "NONE",
+      "body": [
+        {
+          "kind": "text",
+          "text": "Scratch talk for August. I set myself a ten-dollar weekly ceiling and I stick to it — it keeps the hobby friendly. This week: one $5 crossword-style ticket and a $2 quick one. Broke even on the crossword. What is in your wallet, and what is your ceiling?"
+        }
+      ],
+      "attachment": null,
+      "contextRefs": [],
+      "researchReply": null,
+      "replies": [
+        {
+          "id": "r-0007-01",
+          "username": "peachstatepat",
+          "body": [{ "kind": "text", "text": "One $3 ticket with my Saturday coffee, that is my whole routine. Got a free-ticket result last week, which always feels like a holiday." }],
+          "postedAtIso": "2026-08-04T21:10:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0007-02",
+          "username": "sunshinepicks",
+          "body": [{ "kind": "text", "text": "The crossword ones take me forever and I enjoy every minute. Ceiling here is $5 a week." }],
+          "postedAtIso": "2026-08-05T00:45:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0007-03",
+          "username": "wheelhousebill",
+          "body": [{ "kind": "text", "text": "Break-even weeks are the honest average. A posted ceiling is the best system anyone in this thread runs, and I include mine in that." }],
+          "postedAtIso": "2026-08-05T13:55:00Z",
+          "helpful": true,
+          "summaryPoint": { "kind": "viewpoint", "text": "The thread's shared position: a fixed weekly spending ceiling is the habit that keeps scratch play a hobby." },
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0007-04",
+          "username": "moondreamer59",
+          "body": [{ "kind": "text", "text": "I only buy one when the cashier is someone I like. It is a vibe purchase." }],
+          "postedAtIso": "2026-08-05T19:05:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0007-05",
+          "username": "jackpotchaser22",
+          "body": [{ "kind": "text", "text": "Vibe purchase is exactly right. Ten a week here too, and the ceiling holds even when the office pool is on." }],
+          "postedAtIso": "2026-08-06T02:15:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        }
+      ],
+      "acceptedReplyId": null,
+      "acceptedBy": null,
+      "provenance": "synthetic-review-fixture"
+    },
+    {
+      "forumEntryId": "fe-2026-0009",
+      "slug": "poll-cash-or-annuity",
+      "title": "Poll: cash or annuity if you ever hit the big one?",
+      "username": "jackpotchaser22",
+      "createdAtIso": "2026-08-03T16:40:00Z",
+      "updatedAtIso": null,
+      "tags": ["poll", "powerball", "jackpot"],
+      "gameId": "powerball",
+      "stateCode": null,
+      "drawId": null,
+      "yearArchive": null,
+      "newsArticleSlug": null,
+      "toolId": null,
+      "eventId": null,
+      "status": "ACTIVE",
+      "indexabilityState": "INDEX_PENDING",
+      "moderationState": "NONE",
+      "body": [
+        {
+          "kind": "text",
+          "text": "Settle the group-chat argument. If you ever hit a jackpot-sized prize, cash or annuity? Vote with a reply and say why — the tally below counts the replies in this thread only."
+        }
+      ],
+      "attachment": {
+        "kind": "poll",
+        "question": "If you hit a jackpot-sized prize, would you take the cash option or the annuity?",
+        "choices": ["Cash, all at once", "Annuity, thirty years", "Depends how big it is"],
+        "closeDateIso": "2026-08-31",
+        "disclosure": "This is a LotteryCorner community poll and does not represent all lottery players."
+      },
+      "contextRefs": [
+        { "label": "Powerball hub", "href": "/powerball", "kind": "game" }
+      ],
+      "researchReply": null,
+      "replies": [
+        {
+          "id": "r-0009-01",
+          "username": "peachstatepat",
+          "body": [{ "kind": "text", "text": "Annuity. I know myself, and a check that keeps coming is the kinder plan." }],
+          "postedAtIso": "2026-08-03T18:00:00Z",
+          "helpful": false,
+          "pollChoice": "Annuity, thirty years",
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0009-02",
+          "username": "wheelhousebill",
+          "body": [{ "kind": "text", "text": "Cash, with a fee-only advisor booked before anything else. Whichever way anyone leans, the professional comes first." }],
+          "postedAtIso": "2026-08-03T20:30:00Z",
+          "helpful": true,
+          "pollChoice": "Cash, all at once",
+          "summaryPoint": { "kind": "viewpoint", "text": "Across both camps, the repeated advice is to line up qualified professional help before deciding anything." },
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0009-03",
+          "username": "moondreamer59",
+          "body": [{ "kind": "text", "text": "Depends. Small enough, cash and quiet. Big enough, I would want the structure." }],
+          "postedAtIso": "2026-08-04T01:50:00Z",
+          "helpful": false,
+          "pollChoice": "Depends how big it is",
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0009-04",
+          "username": "jackpotchaser22",
+          "body": [{ "kind": "text", "text": "Cash. The group chat knows my heart." }],
+          "postedAtIso": "2026-08-04T02:20:00Z",
+          "helpful": false,
+          "pollChoice": "Cash, all at once",
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0009-05",
+          "username": "sunshinepicks",
+          "body": [{ "kind": "text", "text": "Annuity — I have read too many stories about year one going sideways." }],
+          "postedAtIso": "2026-08-05T11:05:00Z",
+          "helpful": false,
+          "pollChoice": "Annuity, thirty years",
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0009-06",
+          "username": "peachstatepat",
+          "body": [{ "kind": "text", "text": "Love reading these. Whatever you would pick, promise me you would call a professional before anyone else." }],
+          "postedAtIso": "2026-08-09T14:45:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        }
+      ],
+      "acceptedReplyId": null,
+      "acceptedBy": null,
+      "provenance": "synthetic-review-fixture"
+    },
+    {
+      "forumEntryId": "fe-2026-0010",
+      "slug": "introduce-yourself-august-2026",
+      "title": "Introduce yourself — who are you and what do you play?",
+      "username": "peachstatepat",
+      "createdAtIso": "2026-08-02T15:00:00Z",
+      "updatedAtIso": null,
+      "tags": ["introductions", "new-members"],
+      "gameId": null,
+      "stateCode": null,
+      "drawId": null,
+      "yearArchive": null,
+      "newsArticleSlug": null,
+      "toolId": null,
+      "eventId": null,
+      "status": "ACTIVE",
+      "indexabilityState": "INDEX_PENDING",
+      "moderationState": "NONE",
+      "body": [
+        {
+          "kind": "text",
+          "text": "New faces keep arriving, so here is a fresh introductions thread. Say hi, tell us your state, what you play, and one tip you wish you had known when you started. House rules: be kind, no barcodes or personal information in photos, and keep it about the games."
+        }
+      ],
+      "attachment": null,
+      "contextRefs": [],
+      "researchReply": null,
+      "replies": [
+        {
+          "id": "r-0010-01",
+          "username": "sunshinepicks",
+          "body": [{ "kind": "text", "text": "Florida. Pick 3 and Pick 4 daily, and the monthly threads are my home base. Tip: keep your plays small enough that a losing month is boring, not painful." }],
+          "postedAtIso": "2026-08-02T16:10:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0010-02",
+          "username": "wheelhousebill",
+          "body": [{ "kind": "text", "text": "Ohio. Cash 3 plus a spreadsheet habit. Tip: enjoy systems as a hobby and never pay anybody for one." }],
+          "postedAtIso": "2026-08-02T18:25:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0010-03",
+          "username": "moondreamer59",
+          "body": [{ "kind": "text", "text": "New York, dream numbers and family numbers. Tip: the community is the prize most days." }],
+          "postedAtIso": "2026-08-02T23:40:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0010-04",
+          "username": "jackpotchaser22",
+          "body": [{ "kind": "text", "text": "Texas, big-game watcher. Tip: written pool agreements save friendships." }],
+          "postedAtIso": "2026-08-03T00:55:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0010-05",
+          "username": "peachstatepat",
+          "body": [{ "kind": "text", "text": "Georgia, Cash 3 box. Tip: celebrate everybody's little wins — it comes back around." }],
+          "postedAtIso": "2026-08-03T13:15:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0010-06",
+          "username": "moondreamer59",
+          "body": [{ "kind": "text", "text": "One more: read the responsible-play page once a season. It keeps the hobby a hobby." }],
+          "postedAtIso": "2026-08-04T04:30:00Z",
+          "helpful": true,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0010-07",
+          "username": "sunshinepicks",
+          "body": [{ "kind": "text", "text": "WTG all — pinning this thread in my heart if not on the board." }],
+          "postedAtIso": "2026-08-04T12:00:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        }
+      ],
+      "acceptedReplyId": null,
+      "acceptedBy": null,
+      "provenance": "synthetic-review-fixture"
+    },
+    {
+      "forumEntryId": "fe-2026-0001",
+      "slug": "florida-pick-3-august-2026",
+      "title": "Florida: 8/1 - 8/31/2026",
+      "username": "sunshinepicks",
+      "createdAtIso": "2026-08-01T10:00:00Z",
+      "updatedAtIso": "2026-08-09T12:00:00Z",
+      "tags": ["pick-3", "fl", "monthly"],
+      "gameId": "pick-3",
+      "stateCode": "fl",
+      "drawId": null,
+      "yearArchive": null,
+      "newsArticleSlug": null,
+      "toolId": null,
+      "eventId": null,
+      "status": "ACTIVE",
+      "indexabilityState": "INDEX_PENDING",
+      "moderationState": "NONE",
+      "body": [
+        {
+          "kind": "text",
+          "text": "Welcome to the Florida monthly thread for August! Same house rules as July: post your picks, your pairs and your little celebrations, keep it kind, and remember nothing in here changes any draw — we track because tracking is the fun. My opening sheet for week one below."
+        },
+        {
+          "kind": "numbers",
+          "text": "My pairs list, week 1 (tracking only)\n\nFront pairs   Back pairs\n-----------   ----------\n12  38  50    07  24  91\n17  44  62    13  36  58\n\nSums on my sheet:  9  12  14  17"
+        }
+      ],
+      "attachment": {
+        "kind": "numberShare",
+        "game": "Florida Pick 3",
+        "draw": "August 2026 evening draws",
+        "numbers": "382, 507, 149",
+        "playType": "Straight/Box",
+        "publicShareConfirmation": "Shared publicly by @sunshinepicks — picks only; no private saved sets and no purchased-ticket records are included.",
+        "resultStatusAfterDraw": "No result is attached. This review build never attaches an invented draw result."
+      },
+      "contextRefs": [
+        { "label": "Florida Pick 3 game page", "href": "/fl/pick-3", "kind": "game" },
+        { "label": "Florida Pick 3 2026 results archive", "href": "/fl/pick-3/2026", "kind": "archive" }
+      ],
+      "researchReply": null,
+      "replies": [
+        {
+          "id": "r-0001-01",
+          "username": "peachstatepat",
+          "body": [{ "kind": "text", "text": "Good luck this month, Florida! I will be riding my usual 419 box all month like always. WTG on keeping this thread going, sunshine." }],
+          "postedAtIso": "2026-08-01T12:30:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0001-02",
+          "username": "wheelhousebill",
+          "body": [
+            { "kind": "text", "text": "Here is my week-one sums worksheet, for fun and for anyone who likes the bookkeeping." },
+            { "kind": "numbers", "text": "Sums worksheet, week 1\n\nSum   Combos on my sheet\n---   ------------------\n 9    126  234  450\n12    345  066  921\n14    059  680  770" }
+          ],
+          "postedAtIso": "2026-08-01T15:45:00Z",
+          "helpful": true,
+          "summaryPoint": { "kind": "experience", "text": "Members share weekly worksheets — pairs, sums and boxed picks — as the thread's organizing habit." },
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0001-03",
+          "username": "moondreamer59",
+          "body": [{ "kind": "text", "text": "I dreamed about keys Sunday night — my book puts keys at 514. Playing it box all week. Just my own reading of it, as always." }],
+          "postedAtIso": "2026-08-02T03:20:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0001-04",
+          "username": "jackpotchaser22",
+          "body": [{ "kind": "text", "text": "Dropping in from Texas to say good luck, y'all. When the big games are quiet I play a few Florida numbers with my cousin in Ocala." }],
+          "postedAtIso": "2026-08-02T22:10:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0001-05",
+          "username": "sunshinepicks",
+          "body": [
+            { "kind": "text", "text": "Week two sheet, evening draws only." },
+            { "kind": "numbers", "text": "Week 2 picks (eve)\n\n219  467  508\nBox: 118  335" }
+          ],
+          "postedAtIso": "2026-08-08T11:00:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0001-06",
+          "username": "peachstatepat",
+          "body": [{ "kind": "text", "text": "467 — my aunt plays that one for her birthday. This thread is the friendliest corner of the internet." }],
+          "postedAtIso": "2026-08-08T14:25:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0001-07",
+          "username": "moondreamer59",
+          "body": [{ "kind": "text", "text": "Anyone else keep waiting on that 8 pair to come back around? I know it means nothing, it just feels good when it lands." }],
+          "postedAtIso": "2026-08-08T21:50:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0001-08",
+          "username": "wheelhousebill",
+          "body": [{ "kind": "text", "text": "Friendly reminder for new folks reading along: no pair is ever due, and tracking does not change the odds of any draw. I keep my lists because the bookkeeping is the fun part." }],
+          "postedAtIso": "2026-08-09T00:35:00Z",
+          "helpful": true,
+          "summaryPoint": { "kind": "fact", "text": "The thread's standing correction: pair tracking is player culture; every draw is independent and no pair is ever owed an appearance." },
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0001-09",
+          "username": "jackpotchaser22",
+          "body": [{ "kind": "text", "text": "That is the healthiest way to put it, Bill." }],
+          "postedAtIso": "2026-08-09T01:00:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0001-10",
+          "username": "sunshinepicks",
+          "body": [{ "kind": "text", "text": "Closing out week two — thank you for keeping it kind in here. New folks: say hi in the introductions thread and tell us what you play." }],
+          "postedAtIso": "2026-08-09T12:00:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        }
+      ],
+      "acceptedReplyId": null,
+      "acceptedBy": null,
+      "provenance": "synthetic-review-fixture"
+    },
+    {
+      "forumEntryId": "fe-2026-0003",
+      "slug": "powerball-roll-streak-stories",
+      "title": "Powerball roll streaks — what's the longest run you've followed?",
+      "username": "jackpotchaser22",
+      "createdAtIso": "2026-07-28T19:30:00Z",
+      "updatedAtIso": null,
+      "tags": ["powerball", "jackpot", "news-discussion"],
+      "gameId": "powerball",
+      "stateCode": null,
+      "drawId": null,
+      "yearArchive": null,
+      "newsArticleSlug": "powerball-2015-matrix-history",
+      "toolId": null,
+      "eventId": null,
+      "status": "ACTIVE",
+      "indexabilityState": "INDEX_PENDING",
+      "moderationState": "NONE",
+      "body": [
+        {
+          "kind": "text",
+          "text": "Every time Powerball goes on one of those long roll streaks, my office pool doubles and the group chat wakes up. What is the longest run you have personally followed, and did you buy more or sit tight? Also — I read the LotteryCorner piece on the 2015 matrix change and now I am curious: did that change really make long runs more common? Asking LotteryCorner Research to weigh in on that part."
+        }
+      ],
+      "attachment": null,
+      "contextRefs": [
+        { "label": "Powerball hub", "href": "/powerball", "kind": "game" },
+        { "label": "News: Powerball's 2015 matrix change", "href": "/news/powerball-2015-matrix-history", "kind": "news" }
+      ],
+      "researchReply": {
+        "id": "rr-0003",
+        "label": "LotteryCorner Research",
+        "questionResearched": "Did the October 2015 Powerball matrix change make long jackpot runs more common?",
+        "whatWeFound": [
+          "Yes, in the direction you would expect. On October 7, 2015, Powerball moved from 5-of-59 plus a Powerball of 35 to 5-of-69 plus a Powerball of 26. That lengthened the jackpot odds, so on average more drawings pass without a jackpot winner and prize runs last longer than under the older matrix.",
+          "Run length still varies a great deal: ticket sales rise as a prize grows, which raises the chance that someone somewhere matches on any given late-run drawing."
+        ],
+        "evidence": [
+          "LotteryCorner result-format definitions, production-derived (04-sample-data/result-format-definitions.json)",
+          "LotteryCorner News: Powerball's 2015 matrix change (/news/powerball-2015-matrix-history)"
+        ],
+        "whatRemainsUncertain": "How any particular run ends — that depends on which tickets people actually buy, drawing by drawing.",
+        "publishedIso": "2026-07-29T14:00:00Z",
+        "invokedBy": "jackpotchaser22",
+        "correctionStatus": "No corrections.",
+        "provenance": "synthetic-review-fixture"
+      },
+      "replies": [
+        {
+          "id": "r-0003-01",
+          "username": "peachstatepat",
+          "body": [{ "kind": "text", "text": "I only buy in when the office does. Two tickets, that is my ceiling, win or lose." }],
+          "postedAtIso": "2026-07-28T21:00:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0003-02",
+          "username": "wheelhousebill",
+          "body": [{ "kind": "text", "text": "Longest I tracked was a stretch back in 2021, on paper the whole way. The Research note above says it well — longer odds per drawing means more rolls on average before somebody hits, and no way to know how long any single run goes." }],
+          "postedAtIso": "2026-07-29T16:20:00Z",
+          "helpful": true,
+          "summaryPoint": { "kind": "fact", "text": "The 2015 matrix change lengthened per-draw jackpot odds, which is why long roll streaks became more common on average." },
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0003-03",
+          "username": "moondreamer59",
+          "body": [{ "kind": "text", "text": "I buy one ticket when a run gets long, mostly for the daydream. The dream is worth the two dollars to me." }],
+          "postedAtIso": "2026-07-30T02:45:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0003-04",
+          "username": "jackpotchaser22",
+          "body": [{ "kind": "text", "text": "Same here. The cash-versus-annuity arguments in the group chat are half the fun. There is a whole poll thread on that now." }],
+          "postedAtIso": "2026-07-30T03:30:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0003-05",
+          "username": "sunshinepicks",
+          "body": [{ "kind": "text", "text": "Florida checking in — our pool at work does five dollars each when a run gets long. We have a written agreement now after one near-argument. Highly recommend the boring paperwork." }],
+          "postedAtIso": "2026-07-31T13:10:00Z",
+          "helpful": false,
+          "summaryPoint": { "kind": "experience", "text": "Office pools in the thread converge on written agreements — split rules, ticket copies, one buyer — after near-disputes." },
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0003-06",
+          "username": "peachstatepat",
+          "body": [{ "kind": "text", "text": "A written pool agreement is the most helpful thing in this thread. WTG." }],
+          "postedAtIso": "2026-07-31T15:40:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0003-07",
+          "username": "wheelhousebill",
+          "body": [{ "kind": "text", "text": "Seconding the written agreement. Split rules, copies of the tickets, one designated buyer. Boring beats messy." }],
+          "postedAtIso": "2026-08-01T00:20:00Z",
+          "helpful": true,
+          "provenance": "synthetic-review-fixture"
+        }
+      ],
+      "acceptedReplyId": null,
+      "acceptedBy": null,
+      "provenance": "synthetic-review-fixture"
+    },
+    {
+      "forumEntryId": "fe-2026-0002",
+      "slug": "pick-4-pairs-summer-tracking",
+      "title": "Pick 4 pairs I'm tracking this summer — what's on your list?",
+      "username": "sunshinepicks",
+      "createdAtIso": "2026-07-15T09:30:00Z",
+      "updatedAtIso": "2026-07-21T10:00:00Z",
+      "tags": ["pick-4", "pairs", "fl", "statistics"],
+      "gameId": "pick-4",
+      "stateCode": "fl",
+      "drawId": null,
+      "yearArchive": null,
+      "newsArticleSlug": null,
+      "toolId": null,
+      "eventId": null,
+      "status": "ACTIVE",
+      "indexabilityState": "INDEX_PENDING",
+      "moderationState": "NONE",
+      "body": [
+        {
+          "kind": "text",
+          "text": "My summer pairs notebook, June through July, from my own sheets. Before anyone asks: I know a notebook does not move the machine — this is player culture and I love it. What pairs live on your list, and why? Bonus points for the family stories behind them."
+        },
+        {
+          "kind": "numbers",
+          "text": "Pairs notebook — June through July\n\nPair   Times on my sheet\n----   -----------------\n38     9\n07     8\n55     6\n21     5"
+        }
+      ],
+      "attachment": null,
+      "contextRefs": [
+        { "label": "Florida Pick 4 game page", "href": "/fl/pick-4", "kind": "game" }
+      ],
+      "researchReply": {
+        "id": "rr-0002",
+        "label": "LotteryCorner Research",
+        "questionResearched": "Do pair frequencies over a short window tell you anything about future Pick 4 draws?",
+        "whatWeFound": [
+          "Each Pick 4 digit is drawn independently, so every ordered pair has the same chance on every drawing. Over a six-week window it is normal for a few pairs to appear several times and others not at all — that spread is what independent random draws look like, not a signal.",
+          "Tracking sheets are a well-loved part of daily-game culture and a fine way to organize play. They do not change what the machine draws."
+        ],
+        "evidence": [
+          "LotteryCorner result-format definitions, production-derived (04-sample-data/result-format-definitions.json)",
+          "Basic counting: one hundred equally likely digit pairs per position pairing"
+        ],
+        "whatRemainsUncertain": "Nothing material — pair independence follows from the draw procedure itself.",
+        "publishedIso": "2026-07-20T15:30:00Z",
+        "invokedBy": "sunshinepicks",
+        "correctionStatus": "No corrections.",
+        "provenance": "synthetic-review-fixture"
+      },
+      "replies": [
+        {
+          "id": "r-0002-01",
+          "username": "peachstatepat",
+          "body": [{ "kind": "text", "text": "My back pair 19 keeps me company most weeks. Nothing scientific — it is my mama's birthday." }],
+          "postedAtIso": "2026-07-15T12:00:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0002-02",
+          "username": "wheelhousebill",
+          "body": [{ "kind": "text", "text": "Nice sheet. One thing worth saying out loud: over a couple of months, some pair always tops the list just by chance — a flat random draw still produces streaks. It does not mean the pair is special, and it is not a lean for the next draw." }],
+          "postedAtIso": "2026-07-16T17:45:00Z",
+          "helpful": true,
+          "summaryPoint": { "kind": "fact", "text": "Some pair always tops a short-window tally purely by chance; a leader on the sheet says nothing about the next drawing." },
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0002-03",
+          "username": "moondreamer59",
+          "body": [{ "kind": "text", "text": "I keep 23 and 32 both, whichever way the dream goes." }],
+          "postedAtIso": "2026-07-17T04:10:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0002-04",
+          "username": "jackpotchaser22",
+          "body": [{ "kind": "text", "text": "Y'all are organized. I just play quick picks and watch the big games." }],
+          "postedAtIso": "2026-07-18T01:35:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0002-05",
+          "username": "sunshinepicks",
+          "body": [{ "kind": "text", "text": "Bill, that is exactly why I asked LotteryCorner Research to weigh in — their note is up top. Accepting your reply so newer players see it first." }],
+          "postedAtIso": "2026-07-20T16:00:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0002-06",
+          "username": "peachstatepat",
+          "body": [{ "kind": "text", "text": "WTG Bill, helpful as always." }],
+          "postedAtIso": "2026-07-20T18:20:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0002-07",
+          "username": "moondreamer59",
+          "body": [{ "kind": "text", "text": "Still playing my pairs either way. It is a ritual, not a strategy, and I am at peace with that." }],
+          "postedAtIso": "2026-07-21T02:55:00Z",
+          "helpful": false,
+          "summaryPoint": { "kind": "viewpoint", "text": "Several members keep their pair rituals with open eyes: tracked for meaning and fun, not as a strategy." },
+          "provenance": "synthetic-review-fixture"
+        }
+      ],
+      "acceptedReplyId": "r-0002-02",
+      "acceptedBy": "sunshinepicks",
+      "provenance": "synthetic-review-fixture"
+    },
+    {
+      "forumEntryId": "fe-2026-0004",
+      "slug": "cash-3-sum-range-filter-system",
+      "title": "My Cash 3 sum-range filter — an entertainment system, not a promise",
+      "username": "wheelhousebill",
+      "createdAtIso": "2026-07-08T13:15:00Z",
+      "updatedAtIso": null,
+      "tags": ["system", "mathematics", "cash-3", "oh"],
+      "gameId": "cash-3",
+      "stateCode": "oh",
+      "drawId": null,
+      "yearArchive": null,
+      "newsArticleSlug": null,
+      "toolId": null,
+      "eventId": null,
+      "status": "ACTIVE",
+      "indexabilityState": "INDEX_PENDING",
+      "moderationState": "NONE",
+      "body": [
+        {
+          "kind": "text",
+          "text": "Posting my summer revision since a few folks asked in the monthly threads. Up front, as always: this is entertainment and organization, nothing more — no filter changes the odds of a fair draw. What it changes is how many combinations I have to look at, which is the part I enjoy. Structured fields below, walk-through table after."
+        },
+        {
+          "kind": "numbers",
+          "text": "Filter walk-through, one week\n\nStep             Combos left\n----             -----------\nAll straights    1000\nSum 9 to 18       ~660\nDrop triples       650\nMy rotation          3"
+        }
+      ],
+      "attachment": {
+        "kind": "system",
+        "systemName": "Sum-range filter",
+        "game": "Cash 3 (Ohio)",
+        "version": "v3, summer 2026",
+        "rules": "Keep straights whose digit sum lands between 9 and 18, drop triples, then rotate three boxed picks per week from what is left.",
+        "example": "Week of 7/6: kept 126, 345 and 780 (sums 9, 12 and 15), played each as a fifty-cent box.",
+        "backtestHref": null,
+        "assumptions": "Assumes you enjoy the bookkeeping. The filter narrows how many combinations I look at; it does not change what the machine draws.",
+        "disclosure": "This is a member method or historical research workflow. It does not guarantee future wins."
+      },
+      "contextRefs": [],
+      "researchReply": null,
+      "replies": [
+        {
+          "id": "r-0004-01",
+          "username": "sunshinepicks",
+          "body": [{ "kind": "text", "text": "Love how tidy this is. I borrow the sum idea for my Pick 3 sheets." }],
+          "postedAtIso": "2026-07-08T15:40:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0004-02",
+          "username": "peachstatepat",
+          "body": [{ "kind": "text", "text": "You math folks amaze me. I will stick to birthdays, but WTG on the write-up." }],
+          "postedAtIso": "2026-07-08T20:05:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0004-03",
+          "username": "jackpotchaser22",
+          "body": [{ "kind": "text", "text": "Honest question — does running a filter like this actually win more over a year?" }],
+          "postedAtIso": "2026-07-09T01:20:00Z",
+          "helpful": false,
+          "summaryPoint": { "kind": "open", "text": "A member asked whether the filter wins more over a year; the author's own answer is that it cannot and does not." },
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0004-04",
+          "username": "wheelhousebill",
+          "body": [{ "kind": "text", "text": "It does not, and I want to be plain about that: the odds are identical for every combination, filtered or not. What it wins me is time and tidiness. I keep a results sheet against my own picks for fun, and it lands where chance says it should." }],
+          "postedAtIso": "2026-07-09T13:50:00Z",
+          "helpful": true,
+          "summaryPoint": { "kind": "fact", "text": "The author states plainly that the filter does not and cannot improve results; every combination carries identical odds." },
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0004-05",
+          "username": "moondreamer59",
+          "body": [{ "kind": "text", "text": "I respect that you say that out loud, Bill." }],
+          "postedAtIso": "2026-07-10T03:05:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        },
+        {
+          "id": "r-0004-06",
+          "username": "sunshinepicks",
+          "body": [{ "kind": "text", "text": "Same. Systems as a hobby, not a promise — that is the spirit of this whole board." }],
+          "postedAtIso": "2026-07-10T11:30:00Z",
+          "helpful": false,
+          "provenance": "synthetic-review-fixture"
+        }
+      ],
+      "acceptedReplyId": null,
+      "acceptedBy": null,
+      "provenance": "synthetic-review-fixture"
+    }
+  ]
+}

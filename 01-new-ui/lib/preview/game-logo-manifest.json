@@ -1,0 +1,80 @@
+{
+  "_meta": {
+    "purpose": "Provenance record for the game-recognition logo assets served from public/game-logos/. PRIVATE — this file lives in lib/ and is never served over HTTP.",
+    "supersedes": "public/game-logos/logo-manifest.json, which was publicly reachable at /game-logos/logo-manifest.json and exposed internal provenance. Deleted by task LRG-UI-011 §9 after this replacement was verified.",
+    "createdBy": "Task LRG-UI-011",
+    "extractionDate": "2026-07-26",
+    "sourceRepositoryRelativeRoot": "00-reference-existing-project/LotteryCorner40/WebContent/images/",
+    "pathPolicy": "Every path recorded here is REPOSITORY-RELATIVE. No absolute filesystem path and no user home directory is recorded.",
+    "copyMechanism": "Static image files copied once. No code import, path reference, build alias or runtime dependency on the legacy project exists. The legacy tree is read-only and unmodified (CLAUDE.md §5).",
+    "usageBoundary": [
+      "Recognition assets ONLY.",
+      "MUST NOT imply LotteryCorner is an official lottery operator or is affiliated with any lottery organisation.",
+      "The game name MUST always be rendered as visible text alongside the logo. The logo is never the only identifier.",
+      "Rendered decoratively (alt=\"\") because the adjacent visible game name is the accessible name.",
+      "Aspect ratio is always preserved via object-fit: contain. Never cropped, stretched or recoloured.",
+      "Used only by the LC_HOME_PREVIEW-guarded, noindex Home preview."
+    ],
+    "OPEN_ITEM_FOR_FOUNDER": "Powerball(R) and Mega Millions(R) are third-party trademarks of their respective consortia. They are reproduced here from the existing production image set, which already publishes them. Trademark clearance for continued public use is a FOUNDER/LEGAL decision and is NOT settled by this task. If clearance is withheld, replacing them is a one-file change in lib/preview/gameLogoRegistry.ts. LRG-GAME-051 ADDS THE SAME UNRESOLVED QUESTION FOR FLORIDA PICK 3: the PICK 3 PLUS FIREBALL wordmark is a Florida Lottery trademark, reproduced here from the existing production image set which already publishes it. Provenance is verified; trademark clearance for continued public use is NOT settled by that task either. If clearance is withheld, removing the 'fl-pick-3' entry from lib/preview/gameLogoRegistry.ts reverts the page to the neutral lettered mark with no other change."
+  },
+  "logos": [
+    {
+      "gameId": "powerball",
+      "gameName": "Powerball",
+      "publicPath": "/game-logos/powerball.jpg",
+      "sourceRepositoryRelative": "00-reference-existing-project/LotteryCorner40/WebContent/images/logo-power-ball.jpg",
+      "fileType": "image/jpeg",
+      "intrinsicWidth": 181,
+      "intrinsicHeight": 61,
+      "aspectRatio": "2.967:1",
+      "verificationStatus": "VERIFIED",
+      "verificationEvidence": "Two independent signals agree: the source filename is explicit (logo-power-ball.jpg), and visual inspection of the asset shows the Powerball wordmark with the POWER PLAY lockup.",
+      "provenanceNote": "Copied verbatim from the production image set. Not recoloured, cropped or re-encoded.",
+      "usageStatus": "IN USE — featured card (H-02A), jackpot comparison rows (H-02B), popular games (H-09A)."
+    },
+    {
+      "gameId": "mega-millions",
+      "gameName": "Mega Millions",
+      "publicPath": "/game-logos/mega-millions.png",
+      "sourceRepositoryRelative": "00-reference-existing-project/LotteryCorner40/WebContent/images/logo-mega-millions.png",
+      "fileType": "image/png",
+      "intrinsicWidth": 97,
+      "intrinsicHeight": 39,
+      "aspectRatio": "2.487:1",
+      "verificationStatus": "VERIFIED",
+      "verificationEvidence": "Two independent signals agree: the source filename is explicit (logo-mega-millions.png), and visual inspection of the asset shows the Mega Millions wordmark with its gold ball glyph.",
+      "provenanceNote": "Copied verbatim from the production image set. Not recoloured, cropped or re-encoded.",
+      "usageStatus": "IN USE — featured card (H-02A), jackpot comparison rows (H-02B), popular games (H-09A)."
+    },
+    {
+      "gameId": null,
+      "gameName": "UNIDENTIFIED — previously mislabelled Lotto America",
+      "publicPath": "/game-logos/lotto-america.webp",
+      "sourceRepositoryRelative": "00-reference-existing-project/LotteryCorner40/WebContent/images/lotto.webp",
+      "fileType": "image/webp",
+      "intrinsicWidth": 140,
+      "intrinsicHeight": 40,
+      "aspectRatio": "3.5:1",
+      "verificationStatus": "DISPROVEN",
+      "verificationEvidence": "Task LRG-UI-010 inferred 'Lotto America' from the generic source filename 'lotto.webp'. LRG-UI-011 tested that inference and it FAILED. (1) The filename is referenced NOWHERE in the legacy application: no JSP, JSPF, HTML, CSS, JS or configuration file mentions lotto.webp, so there is no alt text, adjacent game ID or CSS mapping to confirm anything. (2) Visual inspection at 6.4x magnification shows the artwork reads 'FLORIDA LOTTO' with an orange X glyph and a pink 'with Double Play' bar. It is the FLORIDA LOTTO mark, not Lotto America.",
+      "provenanceNote": "The file is retained on disk because deleting assets is outside this task's authority, but it is NO LONGER REFERENCED by any code path. Note that the copied filename 'lotto-america.webp' is itself now misleading and should be corrected or the file removed in a separate approved cleanup.",
+      "usageStatus": "NOT IN USE — removed from the Lotto America presentation. Lotto America renders its game name as text with no logo.",
+      "founderDecisionRequired": "Two options. (a) Re-map this asset to Florida Lotto, which the artwork supports, after confirming whether the 'with Double Play' sub-brand is wanted on a general Florida Lotto surface. (b) Source a correct Lotto America mark. Neither is decided here, and no replacement mark was fabricated."
+    },
+    {
+      "gameId": "fl-pick-3",
+      "gameName": "Florida Pick 3",
+      "publicPath": "/game-logos/fl-pick-3.webp",
+      "sourceRepositoryRelative": "00-reference-existing-project/LotteryCorner40/WebContent/img/logos/florida/florida-pick3.webp",
+      "fileType": "image/webp",
+      "intrinsicWidth": 140,
+      "intrinsicHeight": 77,
+      "aspectRatio": "1.818:1",
+      "verificationStatus": "VERIFIED",
+      "verificationEvidence": "Direct visual inspection of the byte-identical sibling florida-pick3.png (140x77) shows the wordmark \"PICK 3\" with a \"PLUS FIREBALL\" lockup over the Florida Lottery starburst. Three further signals agree: (1) the asset sits in a per-STATE logo library, img/logos/florida/, not in the multi-state share-card folder; (2) the FIREBALL lockup dates the artwork to the current rule era, since FIREBALL launched 2021-01-18 per the Florida Lottery Pick 3 fact sheet; (3) its sibling florida-cash3.png reads \"CA$H 3\", the pre-2016 name this asset supersedes, so the library tracks the rename rather than confusing it.",
+      "provenanceNote": "Copied verbatim from the production per-state logo library. Not recoloured, cropped or re-encoded. The 140x40 variants in the same folder are letterboxed crops and were NOT used; this is the full-aspect original. Extraction date 2026-08-04, task LRG-GAME-051.",
+      "disambiguation": "A filename search for \"pick3\" finds img/social/pick3.webp FIRST, and that file is MAINE's Pick 3 logo (visually inspected: \"PICK 3\" over \"Maine\"). img/social/ is the Open Graph share-card folder, keyed by state name in lottery-result_upgrade_as.jsp. Using it for Florida would have repeated the LRG-UI-010 mis-mapping. The registry key is therefore state-scoped (fl-pick-3), never the bare game slug.",
+      "usageStatus": "IN USE - the registry-enabled /fl/pick-3 JG-M2 Game Page identity (JG-01). One identity for the whole Pick 3 family; Midday and Evening share it and have no separate marks."
+    }
+  ]
+}

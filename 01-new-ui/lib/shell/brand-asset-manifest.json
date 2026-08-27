@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "purpose": "Provenance record for the LotteryCorner brand lockup served from public/brand-lockup.png. PRIVATE — this file lives in lib/ and is never served over HTTP.",
+    "createdBy": "Brand mark correction task (founder-directed, 2026-08-12)",
+    "extractionDate": "2026-08-12",
+    "sourceRepositoryRelativeRoot": "00-reference-existing-project/LotteryCorner40/WebContent/img/",
+    "pathPolicy": "Every path recorded here is REPOSITORY-RELATIVE. No absolute filesystem path and no user home directory is recorded.",
+    "copyMechanism": "Static image file copied once. No code import, path reference, build alias or runtime dependency on the legacy project exists. The legacy tree is read-only and unmodified (CLAUDE.md §5). No legacy CSS, markup or class name was copied.",
+    "reasonForChange": "The shared header previously DREW an approximation of the brand mark in CSS: a solid circle with a '★' text glyph, plus the wordmark split into white 'LOTTERY' and gold 'CORNER'. That is not the LotteryCorner brand. The real mark is a single designed lockup — the star badge and the heavy condensed 'LOTTERY CORNER' wordmark — and neither the badge artwork nor the wordmark's typography survived the CSS approximation.",
+    "founderDecision": "SETTLED 2026-08-12 after four directions; the FINAL one governs. (1) Replace the CSS approximation with a real lockup. (2) An interim build restyled the shell to a light header with the navy PNG lockup; interrupted mid-run. (3) The founder briefly directed back to the dark header, and the gold PNG lockup was mounted. (4) FINAL: on seeing the gold mark the founder rejected it ('I did not ask for that yellow') and pointed at the reviewed Home design: light header, with the BLUE-AND-RED TEXT lockup — navy star roundel, 'LOTTERY' in navy, 'CORNER' in the brand red — and the red game-accent treatment in the results sections. The header is therefore the light bar and the mark is the text lockup rendered by components/shell/PreviewChrome.tsx from design tokens (--color-brand-navy, --color-action-primary, --color-commerce). NO PNG lockup is in use; both production PNG variants remain recorded below in case the founder ever wants the production mark back. The founder is the brand authority; this record supersedes the 'a CSS-drawn mark is not the brand' rationale above for the mark itself, while the provenance of the PNG assets stays valid."
+  },
+  "lockup": {
+    "publicPath": "/brand-lockup.png",
+    "usageStatusOverride": "NOT IN USE since founder direction 4 (2026-08-12). Retained in public/ so the recorded asset stays available; the live mark is the token-driven text lockup in PreviewChrome.tsx.",
+    "sourceRepositoryRelative": "00-reference-existing-project/LotteryCorner40/WebContent/img/logo-yellow.png",
+    "fileType": "image/png",
+    "intrinsicWidth": 250,
+    "intrinsicHeight": 33,
+    "aspectRatio": "7.576:1",
+    "verificationStatus": "VERIFIED",
+    "verificationEvidence": "Three signals agree. (1) The asset is served from the legacy application's own brand image directory (WebContent/img/). (2) Visual inspection shows the LotteryCorner star badge and the 'LOTTERY CORNER' wordmark in the gold dark-background treatment. (3) The companion navy variant (logo-header.png) is the mark visible in the header of the production screenshot at 05-design-inputs/state-pages/existing-screenshots/florida1.png — same lockup design, light-surface variant.",
+    "provenanceNote": "Copied verbatim from the production image set. Not recoloured, cropped or re-encoded.",
+    "usageStatus": "IN USE — the brand link in the shared header (components/shell/PreviewChrome.tsx), rendered from the root layout on every route, on the committed dark navy header bar.",
+    "variantsAvailableButNotUsed": [
+      {
+        "sourceRepositoryRelative": "00-reference-existing-project/LotteryCorner40/WebContent/img/logo-header.png",
+        "intrinsicWidth": 250,
+        "intrinsicHeight": 42,
+        "note": "NAVY lockup for LIGHT backgrounds; carries the 'LET'S DISCUSS LOTTERIES' tagline (hence taller). Was briefly in use during the rejected light-header treatment. Required if any future surface renders the mark on white."
+      },
+      {
+        "sourceRepositoryRelative": "00-reference-existing-project/LotteryCorner40/WebContent/images/logo-white.png",
+        "intrinsicWidth": 149,
+        "intrinsicHeight": 26,
+        "note": "White lockup for dark backgrounds. NOT used: at 149x26 it is too low-resolution to render crisply on a 2x display."
+      }
+    ],
+    "OPEN_ITEM_FOR_FOUNDER": "RESOLUTION. This is a 250x33 raster; on a 2x/3x display it is upscaled at desktop size and will look soft next to the text beside it. No vector (SVG) or 2x export of the lockup exists anywhere in the repository — the legacy set is raster only. Supplying an SVG, or a 500x66 / 750x99 PNG export, is a FOUNDER/DESIGN action. When one is supplied it is a one-file swap: replace public/brand-lockup.png and update the intrinsic dimensions recorded here and in components/shell/PreviewChrome.tsx plus the .lcp-brand heights in app/globals.css. This does NOT block the change — the correct-but-soft real lockup is a strict improvement on a CSS approximation of the wrong mark."
+  }
+}

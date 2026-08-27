@@ -1,0 +1,48 @@
+# LotteryCorner rebuild — root repository ignore rules
+#
+# Scope: this repository protects the NEW rebuild work (01-new-ui, 02-new-api,
+# 03-docs, 04-sample-data, 05-design-inputs, CLAUDE.md).
+#
+# The legacy application under 00-reference-existing-project/LotteryCorner40 is an
+# INDEPENDENT nested Git repository and is intentionally excluded here. Do not convert
+# it to a submodule and do not alter its Git configuration.
+
+# --- OS metadata ---
+.DS_Store
+**/.DS_Store
+
+# --- Dependencies (vendor) ---
+node_modules/
+**/node_modules/
+
+# --- Build / generated output ---
+.next/
+**/.next/
+
+out/
+**/out/
+
+build/
+**/build/
+
+dist/
+**/dist/
+
+target/
+**/target/
+
+coverage/
+**/coverage/
+
+*.tsbuildinfo
+
+# --- Environment / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Local Claude Code permission state (machine-specific, not project source) ---
+.claude/settings.local.json
+
+# --- Legacy reference application: separate nested Git repository ---
+00-reference-existing-project/LotteryCorner40/

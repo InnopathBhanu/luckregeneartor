@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0",
+  "game": {
+    "stateCode": "fl",
+    "stateName": "Florida",
+    "gameSlug": "powerball",
+    "gameId": 1012,
+    "gameLabel": "Powerball",
+    "mode": "JG-M1",
+    "visualIdentity": "powerball",
+    "isMultiState": true,
+    "timezoneLabel": "ET"
+  },
+  "preview": {
+    "enabled": true
+  },
+  "capabilities": {
+    "hasLatestResult": true,
+    "hasSecondaryDraw": true,
+    "hasMultiplier": true,
+    "hasDrawSchedule": true,
+    "hasLocalSalesCutoff": true,
+    "hasLocalFeatures": true,
+    "hasClaimGuidance": true,
+    "hasBuyNowEntry": true,
+    "hasSharedAi": true,
+    "hasCommunityStarters": true,
+    "hasStateResourceLinks": true,
+    "hasResultHistory": false,
+    "hasJackpotMovement": false,
+    "hasGlobalGameHub": false,
+    "hasGlobalTools": false,
+    "hasLocalNews": false,
+    "hasLocalWinners": false,
+    "hasFollowOffering": false,
+    "hasTicketPrice": false,
+    "hasAdvancePlay": false,
+    "hasTaxGuidance": false,
+    "hasWinnerPublicityRule": false,
+    "hasPublishedOdds": false,
+    "hasDrawCountdown": false
+  },
+  "seo": {
+    "canonicalPath": "/fl/powerball",
+    "title": "Florida Powerball Results, Local Features and Claim Information | LotteryCorner",
+    "description": "Florida Powerball winning numbers with Power Play and Double Play, the Florida ticket sales cutoff, and how Florida Powerball prizes are claimed.",
+    "breadcrumbLabel": "Powerball",
+    "openGraph": {
+      "type": "website",
+      "title": "Florida Powerball Results, Local Features and Claim Information",
+      "description": "Florida Powerball winning numbers with Power Play and Double Play, the Florida ticket sales cutoff, and how Florida Powerball prizes are claimed.",
+      "imageKey": null
+    }
+  },
+  "copy": {
+    "h1": "Powerball in Florida: Results, Local Features and Claim Information",
+    "localPurpose": "Powerball is a multi-state game. The drawing is the same everywhere; what changes by state is how you buy, how long you have to claim, and where you claim. This page covers the Florida side of it.",
+    "featuresHeading": "Playing Powerball in Florida",
+    "claimHeading": "Claiming a Florida Powerball prize",
+    "communityHeading": "Powerball questions from Florida players",
+    "communityIntro": "These are discussion starters written by LotteryCorner, not player posts. No Powerball discussion has been started yet.",
+    "resourcesHeading": "Sources and player support"
+  },
+  "localFeatures": [
+    {
+      "key": "power-play",
+      "label": "Power Play",
+      "sourceKey": "multiplier"
+    },
+    {
+      "key": "double-play",
+      "label": "Double Play",
+      "sourceKey": "secondaryDraw"
+    },
+    {
+      "key": "sales-cutoff",
+      "label": "Ticket sales cutoff",
+      "sourceKey": "drawCutoffs"
+    },
+    {
+      "key": "draw-days",
+      "label": "Draw days",
+      "sourceKey": "drawSchedule"
+    },
+    {
+      "key": "minimum-age",
+      "label": "Minimum age to play",
+      "sourceKey": "minimumPurchaseAge"
+    }
+  ],
+  "community": [
+    {
+      "key": "power-play-value",
+      "title": "What does the Power Play number next to a result mean?",
+      "excerpt": "A discussion starter for the multiplier shown beside the Powerball numbers, and when it applies to a ticket.",
+      "tags": [
+        "Powerball",
+        "Power Play",
+        "Discussion starter"
+      ],
+      "actionLabel": "Ask players"
+    },
+    {
+      "key": "double-play-separate",
+      "title": "Is Double Play a separate drawing?",
+      "excerpt": "A discussion starter for the second Powerball drawing, its own numbers, and how it relates to the main draw.",
+      "tags": [
+        "Powerball",
+        "Double Play",
+        "Discussion starter"
+      ],
+      "actionLabel": "Ask players"
+    },
+    {
+      "key": "claim-in-florida",
+      "title": "Where do you claim a larger Powerball prize in Florida?",
+      "excerpt": "A discussion starter for Florida claim locations and what to confirm before travelling to an office.",
+      "tags": [
+        "Powerball",
+        "Florida",
+        "Discussion starter"
+      ],
+      "actionLabel": "Ask players"
+    }
+  ],
+  "destinations": {
+    "stateHub": {
+      "kind": "route",
+      "href": "/fl",
+      "label": "All Florida results"
+    },
+    "stateClaimHelp": {
+      "kind": "inPage",
+      "fragment": "claim-prize",
+      "label": "Florida claim and help"
+    }
+  },
+  "trust": {
+    "summary": "LotteryCorner publishes Powerball results from its production results feed and states when each result was last checked. Only the Florida Lottery can validate a ticket.",
+    "independence": "LotteryCorner is an independent lottery information service and is not affiliated with any state lottery."
+  }
+}

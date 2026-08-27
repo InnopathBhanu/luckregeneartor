@@ -1,0 +1,398 @@
+{
+  "schemaVersion": "1.0",
+  "state": {
+    "code": "mi",
+    "name": "Michigan",
+    "timezone": "America/New_York",
+    "timezoneLabel": "ET",
+    "minimumLotteryAge": null,
+    "lotteryProfile": "lottery"
+  },
+  "preview": {
+    "enabled": true
+  },
+  "capabilities": {
+    "hasStateLottery": true,
+    "hasStateNativeDrawGames": true,
+    "hasPowerball": true,
+    "hasMegaMillions": true,
+    "hasDrawSchedule": false,
+    "hasClaimGuide": false,
+    "hasStateResourcesBand": true,
+    "hasBuyNowEntry": true,
+    "hasTicketCheckGuidance": true,
+    "hasLotteryCornerNews": false,
+    "hasLotteryCornerGuides": true,
+    "hasLotteryCornerCommunity": true,
+    "hasStateExploreBand": true,
+    "hasClaimVideo": true
+  },
+  "seo": {
+    "slug": "mi",
+    "canonicalPath": "/mi",
+    "title": "Michigan Lottery Results Today, Winning Numbers & Jackpots | LotteryCorner",
+    "description": "Michigan lottery results today for Powerball, Mega Millions and Michigan draw games. Winning numbers, draw dates and official sources, checked against the operator's own published results.",
+    "breadcrumbLabel": "Michigan Lottery Results",
+    "schemaAboutName": "Michigan Lottery",
+    "openGraph": {
+      "type": "website",
+      "title": "Michigan Lottery Results Today, Winning Numbers & Jackpots",
+      "description": "Michigan lottery results today for Powerball, Mega Millions and Michigan draw games. Winning numbers, draw dates and official sources, checked against the operator's own published results.",
+      "imageKey": null
+    }
+  },
+  "presentation": {
+    "featuredMultiStateGames": [
+      "powerball",
+      "mega-millions"
+    ],
+    "nativeFamilyGroupOrder": [
+      "stateOnly",
+      "dailyVariants",
+      "specialized"
+    ],
+    "topStackAdditionalFamilies": 2,
+    "families": [
+      {
+        "familyId": "powerball",
+        "familyLabel": "Powerball",
+        "visualIdentity": "powerball",
+        "group": "multiState",
+        "formatGameKey": "powerball",
+        "members": [
+          {
+            "gameId": 1012,
+            "variantLabel": "",
+            "displayOrder": 0
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "multiState",
+        "priority": 1
+      },
+      {
+        "familyId": "mega-millions",
+        "familyLabel": "Mega Millions",
+        "visualIdentity": "mega-millions",
+        "group": "multiState",
+        "formatGameKey": "mega-millions",
+        "members": [
+          {
+            "gameId": 1013,
+            "variantLabel": "",
+            "displayOrder": 0
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "multiState",
+        "priority": 2
+      },
+      {
+        "familyId": "classic-lotto-47",
+        "familyLabel": "Classic Lotto 47",
+        "group": "stateOnly",
+        "formatGameKey": "mi-classic-lotto-47",
+        "members": [
+          {
+            "gameId": 517,
+            "variantLabel": "",
+            "displayOrder": 0
+          }
+        ],
+        "buyNowEligible": true,
+        "priority": 1
+      },
+      {
+        "familyId": "fantasy-5",
+        "familyLabel": "Fantasy 5",
+        "group": "dailyVariants",
+        "formatGameKey": "mi-fantasy-5",
+        "members": [
+          {
+            "gameId": 401,
+            "variantLabel": "",
+            "displayOrder": 0
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "gameRules",
+        "priority": 1
+      },
+      {
+        "familyId": "daily-3",
+        "familyLabel": "Daily 3",
+        "group": "dailyVariants",
+        "formatGameKey": "mi-daily-3",
+        "members": [
+          {
+            "gameId": 397,
+            "variantLabel": "Midday",
+            "displayOrder": 0
+          },
+          {
+            "gameId": 398,
+            "variantLabel": "Evening",
+            "displayOrder": 1
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "gameRules",
+        "priority": 2
+      },
+      {
+        "familyId": "daily-4",
+        "familyLabel": "Daily 4",
+        "group": "dailyVariants",
+        "formatGameKey": "mi-daily-4",
+        "members": [
+          {
+            "gameId": 399,
+            "variantLabel": "Midday",
+            "displayOrder": 0
+          },
+          {
+            "gameId": 400,
+            "variantLabel": "Evening",
+            "displayOrder": 1
+          }
+        ],
+        "buyNowEligible": true,
+        "priority": 3
+      }
+    ]
+  },
+  "content": {
+    "explore": {
+      "heading": "Explore Michigan Lottery",
+      "intro": "Quick ways to check a Michigan result, find a game, and get to claim help on LotteryCorner.",
+      "items": [
+        {
+          "key": "latest-results",
+          "title": "Latest results",
+          "copy": "Every Michigan draw game LotteryCorner currently publishes, grouped by game so midday and evening drawings stay separate.",
+          "actionLabel": "Jump to latest results",
+          "cue": "calendar",
+          "primary": true,
+          "destination": {
+            "kind": "inPage",
+            "fragment": "latest-results"
+          }
+        },
+        {
+          "key": "all-games",
+          "title": "Michigan games",
+          "copy": "The full list of Michigan draw games on this page, from Classic Lotto 47 to the daily number games.",
+          "actionLabel": "See all games",
+          "cue": "grid",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "games"
+          }
+        },
+        {
+          "key": "check-ticket",
+          "title": "Check a ticket",
+          "copy": "Compare a Michigan ticket against the drawing it belongs to, one game and one date at a time.",
+          "actionLabel": "Check my ticket",
+          "cue": "ticket",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "check-ticket"
+          }
+        },
+        {
+          "key": "claim-help",
+          "title": "Claim help",
+          "copy": "Watch the LotteryCorner video on claiming a Michigan prize, and see what we do and do not publish about claiming.",
+          "actionLabel": "Go to claim help",
+          "cue": "clock",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "where-to-play"
+          }
+        }
+      ]
+    },
+    "news": {
+      "heading": "",
+      "intro": "",
+      "ownerLabel": "",
+      "items": []
+    },
+    "guides": {
+      "heading": "Michigan guides and answers",
+      "intro": "Short explanations for the Michigan questions this page gets asked most.",
+      "label": "LotteryCorner Guide",
+      "items": [
+        {
+          "key": "member-dates",
+          "title": "Why Midday and Evening results can show different dates",
+          "summary": "Midday and Evening are separate Michigan drawings with separate results. When the later drawing has not happened yet, or has not been published, LotteryCorner keeps showing the most recent completed result for that drawing rather than blanking the row.",
+          "takeaways": [
+            "Each drawing keeps its own result date.",
+            "A row is never filled from its sibling drawing.",
+            "Check the label above the numbers before comparing a ticket."
+          ],
+          "tags": [
+            "Michigan",
+            "Daily 3",
+            "Midday and Evening"
+          ],
+          "actionLabel": "See the grouped results",
+          "aiActionLabel": "Ask LotteryCorner AI",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "latest-results"
+          }
+        },
+        {
+          "key": "draw-times",
+          "title": "How Michigan draw times are shown",
+          "summary": "Draw times on this page are shown in Eastern Time (ET), the time zone Michigan drawings are held in. Each game row carries its own published draw time so you can tell which drawing a result belongs to.",
+          "takeaways": [
+            "All times on this page are ET.",
+            "Each game row shows its own draw time.",
+            "An exact date is always shown, never “today” or “last night”."
+          ],
+          "tags": [
+            "Michigan",
+            "Draw times",
+            "ET"
+          ],
+          "actionLabel": "See game draw times",
+          "aiActionLabel": "Ask LotteryCorner AI",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "latest-results"
+          }
+        },
+        {
+          "key": "claim-video-guide",
+          "title": "Claiming a Michigan prize",
+          "summary": "LotteryCorner has its own short video on how Michigan prizes are claimed. Because claim rules change, we point you to it rather than restating amounts or deadlines we have not re-checked.",
+          "takeaways": [
+            "The video is LotteryCorner’s own.",
+            "Confirm current requirements before claiming.",
+            "Official claim authority stays with the state lottery."
+          ],
+          "tags": [
+            "Michigan",
+            "Claiming",
+            "Video"
+          ],
+          "actionLabel": "Watch the claim video",
+          "aiActionLabel": "Ask LotteryCorner AI",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "where-to-play"
+          }
+        }
+      ],
+      "aiContinuation": {
+        "heading": "Still have a question?",
+        "copy": "Ask LotteryCorner AI about Michigan results, draw times and game rules. Answers are grounded in what this page publishes.",
+        "actionLabel": "Ask LotteryCorner AI"
+      }
+    },
+    "community": {
+      "heading": "Michigan community",
+      "intro": "These are discussion starters written by LotteryCorner, not player posts. No Michigan discussion has been started yet.",
+      "items": [
+        {
+          "key": "daily-numbers",
+          "title": "Questions about Michigan Daily 3 drawings",
+          "excerpt": "A discussion starter for midday and evening drawings — which drawing a result belongs to, and why the two rows can show different dates.",
+          "tags": [
+            "Michigan",
+            "Daily 3",
+            "Discussion starter"
+          ],
+          "actionLabel": "Ask players",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "community"
+          }
+        },
+        {
+          "key": "jackpot-games",
+          "title": "Classic Lotto 47 and the multi-state games in Michigan",
+          "excerpt": "A discussion starter for jackpot games — reading Classic Lotto 47 results, and how Powerball and Mega Millions appear on a Michigan page.",
+          "tags": [
+            "Michigan",
+            "Classic Lotto 47",
+            "Discussion starter"
+          ],
+          "actionLabel": "Ask players",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "community"
+          }
+        },
+        {
+          "key": "result-claim",
+          "title": "Result and claim questions for Michigan",
+          "excerpt": "A discussion starter for checking a ticket against the right drawing, and for what to confirm before claiming.",
+          "tags": [
+            "Michigan",
+            "Results",
+            "Discussion starter"
+          ],
+          "actionLabel": "Ask players",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "community"
+          }
+        }
+      ],
+      "questionContinuation": {
+        "heading": "Have a Michigan lottery question?",
+        "copy": "Ask about a result, a game rule or a claim step. Community accounts are not part of this preview.",
+        "actionLabel": "Ask a question"
+      }
+    },
+    "resources": {
+      "heading": "Michigan resources and player support",
+      "items": [
+        {
+          "label": "Latest results",
+          "destinationName": "Michigan results on LotteryCorner",
+          "fragment": "latest-results"
+        },
+        {
+          "label": "Michigan games",
+          "destinationName": "Michigan game list on LotteryCorner",
+          "fragment": "games"
+        },
+        {
+          "label": "Check a ticket",
+          "destinationName": "Ticket check guidance on LotteryCorner",
+          "fragment": "check-ticket"
+        },
+        {
+          "label": "Claim video",
+          "destinationName": "LotteryCorner Michigan claim video",
+          "fragment": "where-to-play"
+        },
+        {
+          "label": "Corrections policy",
+          "destinationName": "LotteryCorner corrections policy"
+        }
+      ]
+    },
+    "claimVideo": {
+      "videoId": "5Bx-u2g5xXg",
+      "title": "How to claim a Michigan Lottery prize",
+      "description": "A short LotteryCorner walkthrough of how Michigan lottery prizes are claimed.",
+      "ownerLabel": "LotteryCorner video",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/5Bx-u2g5xXg",
+      "watchUrl": "https://www.youtube.com/watch?v=5Bx-u2g5xXg",
+      "thumbnailUrl": null,
+      "uploadDate": null,
+      "duration": null
+    }
+  },
+  "trust": {
+    "summary": "LotteryCorner publishes results from official lottery sources and states when each result was last checked.",
+    "independence": "LotteryCorner is an independent lottery information service and is not affiliated with any state lottery."
+  }
+}

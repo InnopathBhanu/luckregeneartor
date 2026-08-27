@@ -1,0 +1,204 @@
+{
+  "schemaVersion": "1.0",
+  "game": {
+    "stateCode": "ca",
+    "stateName": "California",
+    "gameSlug": "daily-3",
+    "gameId": 311,
+    "gameLabel": "Daily 3",
+    "mode": "JG-M2",
+    "visualIdentity": null,
+    "isMultiState": false,
+    "timezoneLabel": "PT",
+    "familyId": "daily-3",
+    "ruleGameKey": "ca-daily-3"
+  },
+  "preview": {
+    "enabled": true
+  },
+  "capabilities": {
+    "hasSharedAi": true,
+    "hasBuyNowEntry": true,
+    "hasChecker": false,
+    "hasHistory": true,
+    "hasNumberHistory": true,
+    "hasStatistics": true,
+    "hasGenerator": true,
+    "hasMethods": true,
+    "hasCommunityStarters": true,
+    "hasAlerts": true,
+    "hasGlobalTools": false,
+    "hasFollowOffering": false
+  },
+  "seo": {
+    "canonicalPath": "/ca/daily-3",
+    "title": "California Daily 3 Results, Winning Numbers and Game Details | LotteryCorner",
+    "description": "See the latest California Daily 3 results and winning numbers, search past draws, explore statistics, generate a valid set, and read how Daily 3 works.",
+    "breadcrumbLabel": "Daily 3",
+    "openGraph": {
+      "type": "website",
+      "title": "California Daily 3 Results and Winning Numbers",
+      "description": "California Daily 3 results, past-draw search, statistics and a number generator.",
+      "imageKey": null
+    }
+  },
+  "navigation": [
+    {
+      "label": "Latest results",
+      "fragment": "#jg-01"
+    },
+    {
+      "label": "How to play",
+      "fragment": "#jg-06"
+    },
+    {
+      "label": "History",
+      "fragment": "#jg-07"
+    },
+    {
+      "label": "Search a number",
+      "fragment": "#jg-08"
+    },
+    {
+      "label": "Statistics",
+      "fragment": "#jg-09"
+    },
+    {
+      "label": "Generator",
+      "fragment": "#jg-10"
+    },
+    {
+      "label": "Game details",
+      "fragment": "#jg-12"
+    }
+  ],
+  "copy": {
+    "h1": "California Daily 3 Results and Winning Numbers",
+    "intro": "Find the latest California Daily 3 winning numbers, search past drawings for a set of three digits, explore the recorded history and read how the game works.",
+    "jg01Heading": "Latest California Daily 3 results",
+    "jg02Heading": "Play Daily 3 in California",
+    "jg02Body": "Choose three digits from 0 through 9 and the drawing you want to enter. Midday and Evening are separate drawings.",
+    "jg03Heading": "Check your Daily 3 numbers",
+    "jg03Intro": "A ticket checker for this game needs its published prize table, which has not been verified yet.",
+    "jg04Heading": "Ask LotteryCorner about Daily 3",
+    "jg04Intro": "Ask about the latest drawing, how Daily 3 works, the schedule, or the statistics shown on this page.",
+    "jg05Heading": "Daily 3 drawings",
+    "jg05Intro": "Midday and Evening are separate drawings. Each keeps its own result, status and next scheduled time.",
+    "jg06Heading": "How to play California Daily 3",
+    "jg06Intro": "Daily 3 uses three digits, one for each position.",
+    "jg06PayoutsHeading": "Daily 3 prizes and odds",
+    "jg07Heading": "California Daily 3 results history",
+    "jg07Intro": "Browse past drawings. Every row keeps its own draw date and the rules that applied at the time.",
+    "jg08Heading": "Search a Daily 3 number in past draws",
+    "jg08Intro": "Enter a set of three digits to find the drawings it appeared in. Choose how far back to look.",
+    "jg09Heading": "Daily 3 statistics",
+    "jg09Intro": "A summary of the selected history. Open the detailed view for more.",
+    "jg10Heading": "Generate Daily 3 numbers",
+    "jg10Intro": "Create a valid random set of three digits for this game.",
+    "jg11Heading": "Daily 3 play methods explained",
+    "jg11Intro": "How common approaches to Daily 3 are structured, and what they do not change.",
+    "jg12Heading": "California Daily 3 game details",
+    "jg12Body": "California Daily 3 is operated by the California Lottery. Midday and Evening are separate drawings. Each keeps its own result, status and next scheduled time.",
+    "jg13Heading": "Claiming a California Daily 3 prize",
+    "jg13Intro": "Where and how a prize is claimed depends on the amount and the California Lottery's current claim rules.",
+    "jg14Heading": "What changed in recent Daily 3 drawings",
+    "jg14Intro": "A short summary of the selected verified history.",
+    "jg15Heading": "Daily 3 guides, news and analysis",
+    "jg16Heading": "California Daily 3 player discussions",
+    "jg16ColdStart": "Start a discussion about a result, how Daily 3 works, or its recorded history. Questions and replies are player conversation, not lottery advice.",
+    "jg17Heading": "Save Daily 3 and get the updates you choose",
+    "jg17SignedOut": "Sign in to keep alerts, follows and saved number sets on your LotteryCorner account, so they work on every device you use.",
+    "jg18Heading": "About these Daily 3 results and tools",
+    "jg18Primary": "",
+    "localPurpose": "This page covers California Daily 3: the drawing, the rules that apply in California, and how a California prize is claimed."
+  },
+  "aiPrompts": [
+    "Explain the latest result",
+    "How does Daily 3 work?",
+    "When is the next drawing?",
+    "Show me where to find a past draw"
+  ],
+  "guides": [
+    "How to play Daily 3"
+  ],
+  "methodology": [
+    "How results are collected",
+    "How corrections are handled",
+    "Statistics methodology",
+    "AI explanation policy"
+  ],
+  "methods": [
+    {
+      "key": "coverage",
+      "title": "What buying more entries covers",
+      "summary": "Each Daily 3 entry is compared with the drawing on its own.",
+      "limitation": "More entries is more chances at the published odds. It does not change how the drawing is conducted."
+    },
+    {
+      "key": "budget",
+      "title": "Setting a fixed entertainment budget",
+      "summary": "Deciding an amount before you play, and treating it as the cost of entertainment, keeps play in proportion.",
+      "limitation": "No budget or number of entries changes the outcome of a drawing."
+    }
+  ],
+  "localFeatures": [
+    {
+      "key": "drawSchedule",
+      "label": "Drawings",
+      "sourceKey": "drawSchedule"
+    },
+    {
+      "key": "minimumAge",
+      "label": "Minimum age",
+      "sourceKey": "minimumPurchaseAge"
+    }
+  ],
+  "community": [
+    {
+      "key": "how-you-play",
+      "title": "How do you pick your Daily 3 numbers?",
+      "excerpt": "Tell other California players how you choose.",
+      "tags": [
+        "Discussion starter",
+        "Daily 3"
+      ],
+      "actionLabel": "Start this discussion"
+    }
+  ],
+  "destinations": {
+    "allStateResults": {
+      "kind": "route",
+      "href": "/ca",
+      "label": "All California results"
+    },
+    "explainResult": {
+      "kind": "inPage",
+      "fragment": "#jg-04",
+      "label": "Explain this result"
+    },
+    "resultHistory": {
+      "kind": "inPage",
+      "fragment": "#jg-07",
+      "label": "View result history"
+    },
+    "generator": {
+      "kind": "inPage",
+      "fragment": "#jg-10",
+      "label": "Generate numbers"
+    },
+    "claim": {
+      "kind": "inPage",
+      "fragment": "#jg-13",
+      "label": "How to claim"
+    },
+    "sources": {
+      "kind": "inPage",
+      "fragment": "#jg-18",
+      "label": "Sources and methodology"
+    }
+  },
+  "trust": {
+    "summary": "LotteryCorner organizes California Daily 3 results by drawing, date and rule era. Results come from the California Lottery results feed; game structure comes from the governed result-format registry.",
+    "independence": "LotteryCorner is an independent lottery information service and is not affiliated with or endorsed by the California Lottery."
+  }
+}

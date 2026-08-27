@@ -1,0 +1,563 @@
+{
+  "schemaVersion": "1.0",
+  "state": {
+    "code": "fl",
+    "name": "Florida",
+    "timezone": "America/New_York",
+    "timezoneLabel": "ET",
+    "minimumLotteryAge": 18,
+    "lotteryProfile": "lottery"
+  },
+  "preview": {
+    "enabled": true
+  },
+  "capabilities": {
+    "hasStateLottery": true,
+    "hasStateNativeDrawGames": true,
+    "hasPowerball": true,
+    "hasMegaMillions": true,
+    "hasDrawSchedule": true,
+    "hasClaimGuide": true,
+    "hasStateResourcesBand": true,
+    "hasBuyNowEntry": true,
+    "hasTicketCheckGuidance": true,
+    "hasLotteryCornerNews": true,
+    "hasLotteryCornerGuides": true,
+    "hasLotteryCornerCommunity": true,
+    "hasStateExploreBand": true
+  },
+  "seo": {
+    "slug": "fl",
+    "canonicalPath": "/fl",
+    "title": "Florida Lottery Results Today, Winning Numbers & Jackpots | LotteryCorner",
+    "description": "Florida lottery results today for Powerball, Mega Millions, Fantasy 5, Florida Lotto, Pick games and more. Check winning numbers, draw times, jackpots and claim help.",
+    "breadcrumbLabel": "Florida Lottery Results",
+    "schemaAboutName": "Florida Lottery",
+    "openGraph": {
+      "type": "website",
+      "title": "Florida Lottery Results Today, Winning Numbers & Jackpots",
+      "description": "Florida lottery results today for Powerball, Mega Millions, Fantasy 5, Florida Lotto, Pick games and more. Check winning numbers, draw times, jackpots and claim help.",
+      "imageKey": null
+    }
+  },
+  "presentation": {
+    "featuredMultiStateGames": [
+      "powerball",
+      "mega-millions"
+    ],
+    "nativeFamilyGroupOrder": [
+      "stateOnly",
+      "dailyVariants",
+      "specialized"
+    ],
+    "topStackAdditionalFamilies": 2,
+    "families": [
+      {
+        "familyId": "powerball",
+        "familyLabel": "Powerball",
+        "visualIdentity": "powerball",
+        "group": "multiState",
+        "formatGameKey": "powerball",
+        "members": [
+          {
+            "gameId": 1012,
+            "variantLabel": "",
+            "displayOrder": 0
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "multiState",
+        "priority": 1
+      },
+      {
+        "familyId": "mega-millions",
+        "familyLabel": "Mega Millions",
+        "visualIdentity": "mega-millions",
+        "group": "multiState",
+        "formatGameKey": "mega-millions",
+        "members": [
+          {
+            "gameId": 1013,
+            "variantLabel": "",
+            "displayOrder": 0
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "multiState",
+        "priority": 2
+      },
+      {
+        "familyId": "florida-lotto",
+        "familyLabel": "Florida Lotto",
+        "group": "stateOnly",
+        "formatGameKey": "florida-lotto",
+        "members": [
+          {
+            "gameId": 337,
+            "variantLabel": "",
+            "displayOrder": 0
+          }
+        ],
+        "buyNowEligible": true,
+        "priority": 1
+      },
+      {
+        "familyId": "jackpot-triple-play",
+        "familyLabel": "Jackpot Triple Play",
+        "group": "stateOnly",
+        "formatGameKey": "jackpot-triple-play",
+        "members": [
+          {
+            "gameId": 582,
+            "variantLabel": "",
+            "displayOrder": 0
+          }
+        ],
+        "buyNowEligible": true,
+        "priority": 2
+      },
+      {
+        "familyId": "fantasy-5",
+        "familyLabel": "Fantasy 5",
+        "group": "dailyVariants",
+        "formatGameKey": "fantasy-5",
+        "members": [
+          {
+            "gameId": 640,
+            "variantLabel": "Midday",
+            "displayOrder": 0
+          },
+          {
+            "gameId": 336,
+            "variantLabel": "Evening",
+            "displayOrder": 1
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "gameRules",
+        "priority": 1
+      },
+      {
+        "familyId": "pick-2",
+        "familyLabel": "Pick 2",
+        "group": "dailyVariants",
+        "formatGameKey": "pick-2",
+        "members": [
+          {
+            "gameId": 563,
+            "variantLabel": "Midday",
+            "displayOrder": 0
+          },
+          {
+            "gameId": 564,
+            "variantLabel": "Evening",
+            "displayOrder": 1
+          }
+        ],
+        "buyNowEligible": true,
+        "priority": 3
+      },
+      {
+        "familyId": "pick-3",
+        "familyLabel": "Pick 3",
+        "group": "dailyVariants",
+        "formatGameKey": "pick-3",
+        "members": [
+          {
+            "gameId": 332,
+            "variantLabel": "Midday",
+            "displayOrder": 0
+          },
+          {
+            "gameId": 333,
+            "variantLabel": "Evening",
+            "displayOrder": 1
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "gameRules",
+        "priority": 2
+      },
+      {
+        "familyId": "pick-4",
+        "familyLabel": "Pick 4",
+        "group": "dailyVariants",
+        "formatGameKey": "pick-4",
+        "members": [
+          {
+            "gameId": 334,
+            "variantLabel": "Midday",
+            "displayOrder": 0
+          },
+          {
+            "gameId": 335,
+            "variantLabel": "Evening",
+            "displayOrder": 1
+          }
+        ],
+        "buyNowEligible": true,
+        "priority": 4
+      },
+      {
+        "familyId": "pick-5",
+        "familyLabel": "Pick 5",
+        "group": "dailyVariants",
+        "formatGameKey": "pick-5",
+        "members": [
+          {
+            "gameId": 565,
+            "variantLabel": "Midday",
+            "displayOrder": 0
+          },
+          {
+            "gameId": 566,
+            "variantLabel": "Evening",
+            "displayOrder": 1
+          }
+        ],
+        "buyNowEligible": true,
+        "priority": 5
+      },
+      {
+        "familyId": "cash-pop",
+        "familyLabel": "Cash Pop",
+        "group": "specialized",
+        "formatGameKey": "cash-pop",
+        "members": [
+          {
+            "gameId": 614,
+            "variantLabel": "Morning",
+            "displayOrder": 0
+          },
+          {
+            "gameId": 615,
+            "variantLabel": "Matinee",
+            "displayOrder": 1
+          },
+          {
+            "gameId": 616,
+            "variantLabel": "Afternoon",
+            "displayOrder": 2
+          },
+          {
+            "gameId": 617,
+            "variantLabel": "Evening",
+            "displayOrder": 3
+          },
+          {
+            "gameId": 618,
+            "variantLabel": "Late Night",
+            "displayOrder": 4
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "gameRules",
+        "priority": 1
+      }
+    ]
+  },
+  "content": {
+    "explore": {
+      "heading": "Explore Florida Lottery",
+      "intro": "Quick ways to check past results, plan for the next draw, understand a claim, or explore Florida games.",
+      "items": [
+        {
+          "key": "results-calendar",
+          "title": "Results calendar",
+          "copy": "Browse Florida results by date and game. Midday and Evening draws stay separate, so you can verify the exact drawing you need.",
+          "actionLabel": "Browse results by date",
+          "cue": "calendar",
+          "primary": true,
+          "destination": {
+            "kind": "preview",
+            "note": "Results by date is coming to LotteryCorner. Today the most recent drawing for every Florida game, with Midday and Evening kept separate, is on this page above."
+          }
+        },
+        {
+          "key": "draw-schedule",
+          "title": "Draw schedule",
+          "copy": "See Florida draw times and ticket-sales cutoffs in Eastern Time, including twice-daily Pick games and five daily Cash Pop drawings.",
+          "actionLabel": "View draw schedule",
+          "cue": "clock",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "upcoming-draws"
+          }
+        },
+        {
+          "key": "claiming-a-prize",
+          "title": "Claiming a prize",
+          "copy": "Start with the game and prize amount, protect your ticket, and follow the correct Florida claim path.",
+          "actionLabel": "See claim steps",
+          "cue": "ticket",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "claim-prize"
+          }
+        },
+        {
+          "key": "florida-games",
+          "title": "Florida games",
+          "copy": "Explore Florida draw games, result formats, add-ons, and the difference between main and secondary drawings.",
+          "actionLabel": "Explore Florida games",
+          "cue": "grid",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "games"
+          }
+        }
+      ]
+    },
+    "news": {
+      "heading": "Latest from Florida",
+      "intro": "Florida Lottery news, promotions, and player stories selected by the LotteryCorner editorial team.",
+      "ownerLabel": "LotteryCorner News",
+      "items": [
+        {
+          "key": "orange-county-cash-stacks",
+          "title": "Orange County player claims $1 million Cash Stacks prize",
+          "date": "July 24, 2026",
+          "category": "Winner story",
+          "summary": "An Orange County player claimed a $1 million top prize from the $1,000,000 Cash Stacks Scratch-Off game. The ticket was purchased in Apopka, and the prize was claimed through the Florida Lottery process.",
+          "tags": [
+            "Florida Lottery",
+            "Winner",
+            "Scratch-Off",
+            "$1 million"
+          ],
+          "actionLabel": "Read the story",
+          "featured": true,
+          "destination": {
+            "kind": "preview",
+            "note": "The full story opens on LotteryCorner once the article page is live. It covers the game, the claim process and what other players ask about Scratch-Off prizes."
+          }
+        },
+        {
+          "key": "april-winners-roundup",
+          "title": "April Florida Lottery winners collected more than $239.6 million",
+          "date": "July 17, 2026",
+          "category": "Winner roundup",
+          "summary": "The Florida Lottery’s April report covered more than $239.6 million in prizes, including six top prizes worth $5 million. LotteryCorner’s roundup highlights the largest claims and the games involved.",
+          "tags": [
+            "Florida Lottery",
+            "Winners",
+            "Monthly roundup"
+          ],
+          "actionLabel": "Read the roundup",
+          "destination": {
+            "kind": "preview",
+            "note": "The full roundup opens on LotteryCorner once the article page is live. It breaks the month down by game and prize tier."
+          }
+        },
+        {
+          "key": "national-lottery-week",
+          "title": "National Lottery Week puts player education and responsible play in focus",
+          "date": "July 13, 2026",
+          "category": "Florida Lottery news",
+          "summary": "National Lottery Week highlighted lottery games, player information, responsible play, and the role of lottery proceeds in State programs. Here are the Florida resources most useful to players.",
+          "tags": [
+            "Florida Lottery",
+            "Player information",
+            "Responsible play"
+          ],
+          "actionLabel": "Read the update",
+          "destination": {
+            "kind": "preview",
+            "note": "The full update opens on LotteryCorner once the article page is live. The responsible-play destinations it points to are in the resources strip below."
+          }
+        },
+        {
+          "key": "pick-cash-pop-bonus-play",
+          "title": "Pick & Cash Pop Bonus Play runs through September 20",
+          "date": "July 2, 2026",
+          "category": "Promotion",
+          "summary": "Eligible Cash Pop and Florida Pick 2, Pick 3, Pick 4, and Pick 5 tickets can be entered during the promotional period for chances to win cash prizes. Review the eligible games and end date before entering.",
+          "tags": [
+            "Florida Lottery",
+            "Promotion",
+            "Cash Pop",
+            "Pick games"
+          ],
+          "actionLabel": "See promotion details",
+          "visibleUntil": "2026-09-20",
+          "destination": {
+            "kind": "preview",
+            "note": "The promotion details open on LotteryCorner once the article page is live, including the eligible games and the entry period."
+          }
+        }
+      ]
+    },
+    "guides": {
+      "heading": "Florida guides and answers",
+      "intro": "Clear explanations for common Florida result, game, and claim questions.",
+      "label": "LotteryCorner Guide",
+      "items": [
+        {
+          "key": "midday-evening-dates",
+          "title": "Why Midday and Evening results can show different dates",
+          "summary": "Midday and Evening are separate Florida games with separate drawings. If today’s later drawing has not happened or has not been published, LotteryCorner continues to show the most recent completed result for that member game.",
+          "takeaways": [
+            "Each member game keeps its own result date.",
+            "Rows remain in a familiar order.",
+            "A pending draw does not erase the last completed result."
+          ],
+          "tags": [
+            "Florida",
+            "Results",
+            "Midday",
+            "Evening"
+          ],
+          "actionLabel": "Read guide",
+          "aiActionLabel": "Ask AI about different dates",
+          "destination": {
+            "kind": "preview",
+            "note": "The full guide opens on LotteryCorner once the guide page is live. It also covers what happens when a drawing is delayed."
+          }
+        },
+        {
+          "key": "fireball-pick-games",
+          "title": "What Fireball means in Florida Pick games",
+          "summary": "Fireball is a separately drawn add-on used with eligible Pick plays. It may replace one of the main Pick numbers for prize matching, but it is not an extra ordinary winning ball.",
+          "takeaways": [
+            "Fireball is drawn separately.",
+            "It applies only when the ticket includes the add-on.",
+            "Ticket play type and amount still matter."
+          ],
+          "tags": [
+            "Florida",
+            "Fireball",
+            "Pick 2",
+            "Pick 3",
+            "Pick 4",
+            "Pick 5"
+          ],
+          "actionLabel": "Read guide",
+          "aiActionLabel": "Ask AI about Fireball",
+          "destination": {
+            "kind": "preview",
+            "note": "The full guide opens on LotteryCorner once the guide page is live. It walks through each Pick play type with the add-on."
+          }
+        },
+        {
+          "key": "powerball-double-play-power-play",
+          "title": "Powerball, Double Play, and Power Play explained",
+          "summary": "The main Powerball result, Double Play result, and Power Play multiplier have different roles. LotteryCorner displays them separately so players can see which numbers and options apply to their ticket.",
+          "takeaways": [
+            "Powerball is the primary drawing.",
+            "Double Play is a separate secondary drawing.",
+            "Power Play is an optional multiplier for eligible purchases."
+          ],
+          "tags": [
+            "Florida",
+            "Powerball",
+            "Double Play",
+            "Power Play"
+          ],
+          "actionLabel": "Read guide",
+          "aiActionLabel": "Ask AI about Powerball options",
+          "destination": {
+            "kind": "preview",
+            "note": "The full guide opens on LotteryCorner once the guide page is live. The Powerball result it refers to, including Double Play, is at the top of this page."
+          }
+        }
+      ],
+      "aiContinuation": {
+        "heading": "Still have a question?",
+        "copy": "Ask LotteryCorner AI about Florida results, draw times, game rules, claims, or buying options.",
+        "actionLabel": "Ask LotteryCorner AI"
+      }
+    },
+    "community": {
+      "heading": "Florida community",
+      "intro": "Questions, result discussions, and player experiences for Florida lottery players.",
+      "items": [
+        {
+          "key": "fantasy-5-evening-date",
+          "title": "Why does Fantasy 5 Evening still show yesterday’s date?",
+          "excerpt": "Midday and Evening publish independently. Use this discussion for questions about differing result dates, pending Evening results, or which drawing a result belongs to.",
+          "tags": [
+            "Florida",
+            "Fantasy 5",
+            "Results",
+            "Midday & Evening"
+          ],
+          "actionLabel": "Join discussion",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "community-daily"
+          }
+        },
+        {
+          "key": "fireball-pick-3-ticket",
+          "title": "How does Fireball work with a Pick 3 ticket?",
+          "excerpt": "Ask about the separately drawn Fireball, eligible play types, and how the add-on changes prize matching without becoming an extra main number.",
+          "tags": [
+            "Florida",
+            "Pick 3",
+            "Fireball",
+            "Game rules"
+          ],
+          "actionLabel": "Join discussion",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "community-daily"
+          }
+        },
+        {
+          "key": "powerball-jackpot-florida",
+          "title": "Powerball jackpot discussion for Florida players",
+          "excerpt": "Discuss the latest Powerball result, jackpot movement, Double Play result, and questions about buying or claiming a Florida-issued ticket.",
+          "tags": [
+            "Florida",
+            "Powerball",
+            "Jackpot",
+            "Double Play"
+          ],
+          "actionLabel": "Join discussion",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "community-jackpot"
+          }
+        }
+      ],
+      "questionContinuation": {
+        "heading": "Have a Florida lottery question?",
+        "copy": "Ask about a result, game rule, claim step, or source correction.",
+        "actionLabel": "Ask a question"
+      }
+    },
+    "resources": {
+      "heading": "Florida resources and player support",
+      "items": [
+        {
+          "label": "Verify results",
+          "destinationName": "Florida Lottery winning numbers",
+          "href": "https://floridalottery.com/games/winning-numbers"
+        },
+        {
+          "label": "Find a retailer",
+          "destinationName": "Florida Lottery retailer locator",
+          "href": "https://floridalottery.com/where-to-play"
+        },
+        {
+          "label": "Claim information",
+          "destinationName": "Florida Lottery Winner’s Guide",
+          "href": "https://floridalottery.com/howtoclaim"
+        },
+        {
+          "label": "Responsible play",
+          "destinationName": "Florida Lottery responsible-play resources",
+          "href": "https://floridalottery.com/play-responsibly"
+        },
+        {
+          "label": "Corrections policy",
+          "destinationName": "LotteryCorner corrections policy"
+        }
+      ]
+    }
+  },
+  "trust": {
+    "summary": "LotteryCorner publishes results from official lottery sources and records corrections when information changes.",
+    "independence": "LotteryCorner is an independent lottery information service and is not affiliated with the Florida Lottery."
+  }
+}

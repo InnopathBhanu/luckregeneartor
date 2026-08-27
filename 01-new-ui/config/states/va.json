@@ -1,0 +1,496 @@
+{
+  "schemaVersion": "1.0",
+  "state": {
+    "code": "va",
+    "name": "Virginia",
+    "timezone": "America/New_York",
+    "timezoneLabel": "ET",
+    "minimumLotteryAge": null,
+    "lotteryProfile": "lottery"
+  },
+  "preview": {
+    "enabled": true
+  },
+  "capabilities": {
+    "hasStateLottery": true,
+    "hasStateNativeDrawGames": true,
+    "hasPowerball": true,
+    "hasMegaMillions": true,
+    "hasDrawSchedule": false,
+    "hasClaimGuide": false,
+    "hasStateResourcesBand": true,
+    "hasBuyNowEntry": true,
+    "hasTicketCheckGuidance": true,
+    "hasLotteryCornerNews": false,
+    "hasLotteryCornerGuides": true,
+    "hasLotteryCornerCommunity": true,
+    "hasStateExploreBand": true,
+    "hasClaimVideo": true
+  },
+  "seo": {
+    "slug": "va",
+    "canonicalPath": "/va",
+    "title": "Virginia Lottery Results Today, Winning Numbers & Jackpots | LotteryCorner",
+    "description": "Virginia lottery results today for Powerball, Mega Millions and Virginia draw games. Winning numbers, draw dates and official sources, checked against the operator's own published results.",
+    "breadcrumbLabel": "Virginia Lottery Results",
+    "schemaAboutName": "Virginia Lottery",
+    "openGraph": {
+      "type": "website",
+      "title": "Virginia Lottery Results Today, Winning Numbers & Jackpots",
+      "description": "Virginia lottery results today for Powerball, Mega Millions and Virginia draw games. Winning numbers, draw dates and official sources, checked against the operator's own published results.",
+      "imageKey": null
+    }
+  },
+  "presentation": {
+    "featuredMultiStateGames": [
+      "powerball",
+      "mega-millions"
+    ],
+    "nativeFamilyGroupOrder": [
+      "stateOnly",
+      "dailyVariants",
+      "specialized"
+    ],
+    "topStackAdditionalFamilies": 2,
+    "families": [
+      {
+        "familyId": "powerball",
+        "familyLabel": "Powerball",
+        "visualIdentity": "powerball",
+        "group": "multiState",
+        "formatGameKey": "powerball",
+        "members": [
+          {
+            "gameId": 1012,
+            "variantLabel": "",
+            "displayOrder": 0
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "multiState",
+        "priority": 1
+      },
+      {
+        "familyId": "mega-millions",
+        "familyLabel": "Mega Millions",
+        "visualIdentity": "mega-millions",
+        "group": "multiState",
+        "formatGameKey": "mega-millions",
+        "members": [
+          {
+            "gameId": 1013,
+            "variantLabel": "",
+            "displayOrder": 0
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "multiState",
+        "priority": 2
+      },
+      {
+        "familyId": "bank-a-million",
+        "familyLabel": "Bank a Million",
+        "group": "stateOnly",
+        "formatGameKey": "va-bank-a-million",
+        "members": [
+          {
+            "gameId": 574,
+            "variantLabel": "",
+            "displayOrder": 0
+          }
+        ],
+        "buyNowEligible": true,
+        "priority": 1
+      },
+      {
+        "familyId": "cash-5",
+        "familyLabel": "Cash 5",
+        "group": "dailyVariants",
+        "formatGameKey": "va-cash-5",
+        "members": [
+          {
+            "gameId": 542,
+            "variantLabel": "",
+            "displayOrder": 0
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "gameRules",
+        "priority": 1
+      },
+      {
+        "familyId": "pick-3",
+        "familyLabel": "Pick 3",
+        "group": "dailyVariants",
+        "formatGameKey": "va-pick-3",
+        "members": [
+          {
+            "gameId": 488,
+            "variantLabel": "Day",
+            "displayOrder": 0
+          },
+          {
+            "gameId": 489,
+            "variantLabel": "Night",
+            "displayOrder": 1
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "gameRules",
+        "priority": 2
+      },
+      {
+        "familyId": "pick-4",
+        "familyLabel": "Pick 4",
+        "group": "dailyVariants",
+        "formatGameKey": "va-pick-4",
+        "members": [
+          {
+            "gameId": 490,
+            "variantLabel": "Day",
+            "displayOrder": 0
+          },
+          {
+            "gameId": 491,
+            "variantLabel": "Night",
+            "displayOrder": 1
+          }
+        ],
+        "buyNowEligible": true,
+        "priority": 3
+      },
+      {
+        "familyId": "pick-5",
+        "familyLabel": "Pick 5",
+        "group": "dailyVariants",
+        "formatGameKey": "va-pick-5",
+        "members": [
+          {
+            "gameId": 641,
+            "variantLabel": "Day",
+            "displayOrder": 0
+          },
+          {
+            "gameId": 642,
+            "variantLabel": "Night",
+            "displayOrder": 1
+          }
+        ],
+        "buyNowEligible": true,
+        "priority": 4
+      },
+      {
+        "familyId": "cash-pop",
+        "familyLabel": "Cash Pop",
+        "group": "specialized",
+        "formatGameKey": "va-cash-pop",
+        "members": [
+          {
+            "gameId": 631,
+            "variantLabel": "Coffee Break",
+            "displayOrder": 0
+          },
+          {
+            "gameId": 632,
+            "variantLabel": "Lunch Break",
+            "displayOrder": 1
+          },
+          {
+            "gameId": 633,
+            "variantLabel": "Rush Hour",
+            "displayOrder": 2
+          },
+          {
+            "gameId": 634,
+            "variantLabel": "Prime Time",
+            "displayOrder": 3
+          },
+          {
+            "gameId": 635,
+            "variantLabel": "After Hours",
+            "displayOrder": 4
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "gameRules",
+        "priority": 1
+      }
+    ]
+  },
+  "content": {
+    "explore": {
+      "heading": "Explore Virginia Lottery",
+      "intro": "Quick ways to check a Virginia result, find a game, and get to claim help on LotteryCorner.",
+      "items": [
+        {
+          "key": "latest-results",
+          "title": "Latest results",
+          "copy": "Every Virginia draw game LotteryCorner currently publishes, grouped by game so day and night drawings stay separate.",
+          "actionLabel": "Jump to latest results",
+          "cue": "calendar",
+          "primary": true,
+          "destination": {
+            "kind": "inPage",
+            "fragment": "latest-results"
+          }
+        },
+        {
+          "key": "all-games",
+          "title": "Virginia games",
+          "copy": "The full list of Virginia draw games on this page, from Bank a Million to the daily number games.",
+          "actionLabel": "See all games",
+          "cue": "grid",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "games"
+          }
+        },
+        {
+          "key": "check-ticket",
+          "title": "Check a ticket",
+          "copy": "Compare a Virginia ticket against the drawing it belongs to, one game and one date at a time.",
+          "actionLabel": "Check my ticket",
+          "cue": "ticket",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "check-ticket"
+          }
+        },
+        {
+          "key": "claim-help",
+          "title": "Claim help",
+          "copy": "Watch the LotteryCorner video on claiming a Virginia prize, and see what we do and do not publish about claiming.",
+          "actionLabel": "Go to claim help",
+          "cue": "clock",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "where-to-play"
+          }
+        }
+      ]
+    },
+    "news": {
+      "heading": "",
+      "intro": "",
+      "ownerLabel": "",
+      "items": []
+    },
+    "guides": {
+      "heading": "Virginia guides and answers",
+      "intro": "Short explanations for the Virginia questions this page gets asked most.",
+      "label": "LotteryCorner Guide",
+      "items": [
+        {
+          "key": "member-dates",
+          "title": "Why Day and Night results can show different dates",
+          "summary": "Day and Night are separate Virginia drawings with separate results. When the later drawing has not happened yet, or has not been published, LotteryCorner keeps showing the most recent completed result for that drawing rather than blanking the row.",
+          "takeaways": [
+            "Each drawing keeps its own result date.",
+            "A row is never filled from its sibling drawing.",
+            "Check the label above the numbers before comparing a ticket."
+          ],
+          "tags": [
+            "Virginia",
+            "Pick 3",
+            "Day and Night"
+          ],
+          "actionLabel": "See the grouped results",
+          "aiActionLabel": "Ask LotteryCorner AI",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "latest-results"
+          }
+        },
+        {
+          "key": "draw-times",
+          "title": "How Virginia draw times are shown",
+          "summary": "Draw times on this page are shown in Eastern Time (ET), the time zone Virginia drawings are held in. Each game row carries its own published draw time so you can tell which drawing a result belongs to.",
+          "takeaways": [
+            "All times on this page are ET.",
+            "Each game row shows its own draw time.",
+            "An exact date is always shown, never “today” or “last night”."
+          ],
+          "tags": [
+            "Virginia",
+            "Draw times",
+            "ET"
+          ],
+          "actionLabel": "See game draw times",
+          "aiActionLabel": "Ask LotteryCorner AI",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "latest-results"
+          }
+        },
+        {
+          "key": "claim-video-guide",
+          "title": "Claiming a Virginia prize",
+          "summary": "LotteryCorner has its own short video on how Virginia prizes are claimed. Because claim rules change, we point you to it rather than restating amounts or deadlines we have not re-checked.",
+          "takeaways": [
+            "The video is LotteryCorner’s own.",
+            "Confirm current requirements before claiming.",
+            "Official claim authority stays with the state lottery."
+          ],
+          "tags": [
+            "Virginia",
+            "Claiming",
+            "Video"
+          ],
+          "actionLabel": "Watch the claim video",
+          "aiActionLabel": "Ask LotteryCorner AI",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "where-to-play"
+          }
+        },
+        {
+          "key": "addon",
+          "title": "What Fireball means in Virginia Pick 3 games",
+          "summary": "Fireball is a separately drawn add-on shown beside the main numbers. It is not an extra ordinary winning ball, and it only applies when the ticket includes the add-on.",
+          "takeaways": [
+            "Fireball is drawn separately.",
+            "It applies only when the ticket includes the add-on.",
+            "It is never counted as one of the main numbers."
+          ],
+          "tags": [
+            "Virginia",
+            "Pick 3",
+            "Fireball"
+          ],
+          "actionLabel": "See the numbers",
+          "aiActionLabel": "Ask LotteryCorner AI",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "latest-results"
+          }
+        },
+        {
+          "key": "frequent-draws",
+          "title": "How Virginia Cash Pop drawings are grouped",
+          "summary": "Cash Pop runs several drawings a day. LotteryCorner shows them as one game with a labelled row per drawing, in a fixed order, so the page does not become a wall of near-identical cards.",
+          "takeaways": [
+            "One game, several labelled drawings.",
+            "Rows stay in the same order every visit.",
+            "Each row carries its own date and number."
+          ],
+          "tags": [
+            "Virginia",
+            "Cash Pop",
+            "Grouped results"
+          ],
+          "actionLabel": "See the grouped drawings",
+          "aiActionLabel": "Ask LotteryCorner AI",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "latest-results"
+          }
+        }
+      ],
+      "aiContinuation": {
+        "heading": "Still have a question?",
+        "copy": "Ask LotteryCorner AI about Virginia results, draw times and game rules. Answers are grounded in what this page publishes.",
+        "actionLabel": "Ask LotteryCorner AI"
+      }
+    },
+    "community": {
+      "heading": "Virginia community",
+      "intro": "These are discussion starters written by LotteryCorner, not player posts. No Virginia discussion has been started yet.",
+      "items": [
+        {
+          "key": "daily-numbers",
+          "title": "Questions about Virginia Pick 3 drawings",
+          "excerpt": "A discussion starter for day and night drawings — which drawing a result belongs to, and why the two rows can show different dates.",
+          "tags": [
+            "Virginia",
+            "Pick 3",
+            "Discussion starter"
+          ],
+          "actionLabel": "Ask players",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "community"
+          }
+        },
+        {
+          "key": "jackpot-games",
+          "title": "Bank a Million and the multi-state games in Virginia",
+          "excerpt": "A discussion starter for jackpot games — reading Bank a Million results, and how Powerball and Mega Millions appear on a Virginia page.",
+          "tags": [
+            "Virginia",
+            "Bank a Million",
+            "Discussion starter"
+          ],
+          "actionLabel": "Ask players",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "community"
+          }
+        },
+        {
+          "key": "result-claim",
+          "title": "Result and claim questions for Virginia",
+          "excerpt": "A discussion starter for checking a ticket against the right drawing, and for what to confirm before claiming.",
+          "tags": [
+            "Virginia",
+            "Results",
+            "Discussion starter"
+          ],
+          "actionLabel": "Ask players",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "community"
+          }
+        }
+      ],
+      "questionContinuation": {
+        "heading": "Have a Virginia lottery question?",
+        "copy": "Ask about a result, a game rule or a claim step. Community accounts are not part of this preview.",
+        "actionLabel": "Ask a question"
+      }
+    },
+    "resources": {
+      "heading": "Virginia resources and player support",
+      "items": [
+        {
+          "label": "Latest results",
+          "destinationName": "Virginia results on LotteryCorner",
+          "fragment": "latest-results"
+        },
+        {
+          "label": "Virginia games",
+          "destinationName": "Virginia game list on LotteryCorner",
+          "fragment": "games"
+        },
+        {
+          "label": "Check a ticket",
+          "destinationName": "Ticket check guidance on LotteryCorner",
+          "fragment": "check-ticket"
+        },
+        {
+          "label": "Claim video",
+          "destinationName": "LotteryCorner Virginia claim video",
+          "fragment": "where-to-play"
+        },
+        {
+          "label": "Corrections policy",
+          "destinationName": "LotteryCorner corrections policy"
+        }
+      ]
+    },
+    "claimVideo": {
+      "videoId": "LMVq-937NWI",
+      "title": "How to claim a Virginia Lottery prize",
+      "description": "A short LotteryCorner walkthrough of how Virginia lottery prizes are claimed.",
+      "ownerLabel": "LotteryCorner video",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/LMVq-937NWI",
+      "watchUrl": "https://www.youtube.com/watch?v=LMVq-937NWI",
+      "thumbnailUrl": null,
+      "uploadDate": null,
+      "duration": null
+    }
+  },
+  "trust": {
+    "summary": "LotteryCorner publishes results from official lottery sources and states when each result was last checked.",
+    "independence": "LotteryCorner is an independent lottery information service and is not affiliated with any state lottery."
+  }
+}

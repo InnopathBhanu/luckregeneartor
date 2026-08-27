@@ -1,0 +1,470 @@
+{
+  "schemaVersion": "1.0",
+  "state": {
+    "code": "md",
+    "name": "Maryland",
+    "timezone": "America/New_York",
+    "timezoneLabel": "ET",
+    "minimumLotteryAge": null,
+    "lotteryProfile": "lottery"
+  },
+  "preview": {
+    "enabled": true
+  },
+  "capabilities": {
+    "hasStateLottery": true,
+    "hasStateNativeDrawGames": true,
+    "hasPowerball": true,
+    "hasMegaMillions": true,
+    "hasDrawSchedule": false,
+    "hasClaimGuide": false,
+    "hasStateResourcesBand": true,
+    "hasBuyNowEntry": true,
+    "hasTicketCheckGuidance": true,
+    "hasLotteryCornerNews": false,
+    "hasLotteryCornerGuides": true,
+    "hasLotteryCornerCommunity": true,
+    "hasStateExploreBand": true,
+    "hasClaimVideo": true
+  },
+  "seo": {
+    "slug": "md",
+    "canonicalPath": "/md",
+    "title": "Maryland Lottery Results Today, Winning Numbers & Jackpots | LotteryCorner",
+    "description": "Maryland lottery results today for Powerball, Mega Millions and Maryland draw games. Winning numbers, draw dates and official sources, checked against the operator's own published results.",
+    "breadcrumbLabel": "Maryland Lottery Results",
+    "schemaAboutName": "Maryland Lottery",
+    "openGraph": {
+      "type": "website",
+      "title": "Maryland Lottery Results Today, Winning Numbers & Jackpots",
+      "description": "Maryland lottery results today for Powerball, Mega Millions and Maryland draw games. Winning numbers, draw dates and official sources, checked against the operator's own published results.",
+      "imageKey": null
+    }
+  },
+  "presentation": {
+    "featuredMultiStateGames": [
+      "powerball",
+      "mega-millions"
+    ],
+    "nativeFamilyGroupOrder": [
+      "stateOnly",
+      "dailyVariants",
+      "specialized"
+    ],
+    "topStackAdditionalFamilies": 2,
+    "families": [
+      {
+        "familyId": "powerball",
+        "familyLabel": "Powerball",
+        "visualIdentity": "powerball",
+        "group": "multiState",
+        "formatGameKey": "powerball",
+        "members": [
+          {
+            "gameId": 1012,
+            "variantLabel": "",
+            "displayOrder": 0
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "multiState",
+        "priority": 1
+      },
+      {
+        "familyId": "mega-millions",
+        "familyLabel": "Mega Millions",
+        "visualIdentity": "mega-millions",
+        "group": "multiState",
+        "formatGameKey": "mega-millions",
+        "members": [
+          {
+            "gameId": 1013,
+            "variantLabel": "",
+            "displayOrder": 0
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "multiState",
+        "priority": 2
+      },
+      {
+        "familyId": "multi-match",
+        "familyLabel": "Multi Match",
+        "group": "stateOnly",
+        "formatGameKey": "md-multi-match",
+        "members": [
+          {
+            "gameId": 515,
+            "variantLabel": "",
+            "displayOrder": 0
+          }
+        ],
+        "buyNowEligible": true,
+        "priority": 1
+      },
+      {
+        "familyId": "bonus-match-5",
+        "familyLabel": "Bonus Match 5",
+        "group": "dailyVariants",
+        "formatGameKey": "md-bonus-match-5",
+        "members": [
+          {
+            "gameId": 392,
+            "variantLabel": "",
+            "displayOrder": 0
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "gameRules",
+        "priority": 1
+      },
+      {
+        "familyId": "pick-3",
+        "familyLabel": "Pick 3",
+        "group": "dailyVariants",
+        "formatGameKey": "md-pick-3",
+        "members": [
+          {
+            "gameId": 388,
+            "variantLabel": "Midday",
+            "displayOrder": 0
+          },
+          {
+            "gameId": 389,
+            "variantLabel": "Evening",
+            "displayOrder": 1
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "gameRules",
+        "priority": 2
+      },
+      {
+        "familyId": "pick-4",
+        "familyLabel": "Pick 4",
+        "group": "dailyVariants",
+        "formatGameKey": "md-pick-4",
+        "members": [
+          {
+            "gameId": 390,
+            "variantLabel": "Midday",
+            "displayOrder": 0
+          },
+          {
+            "gameId": 391,
+            "variantLabel": "Evening",
+            "displayOrder": 1
+          }
+        ],
+        "buyNowEligible": true,
+        "priority": 3
+      },
+      {
+        "familyId": "pick-5",
+        "familyLabel": "Pick 5",
+        "group": "dailyVariants",
+        "formatGameKey": "md-pick-5",
+        "members": [
+          {
+            "gameId": 629,
+            "variantLabel": "Midday",
+            "displayOrder": 0
+          },
+          {
+            "gameId": 630,
+            "variantLabel": "Evening",
+            "displayOrder": 1
+          }
+        ],
+        "buyNowEligible": true,
+        "priority": 4
+      },
+      {
+        "familyId": "cash-pop",
+        "familyLabel": "Cash Pop",
+        "group": "specialized",
+        "formatGameKey": "md-cash-pop",
+        "members": [
+          {
+            "gameId": 654,
+            "variantLabel": "9am",
+            "displayOrder": 0
+          },
+          {
+            "gameId": 655,
+            "variantLabel": "1pm",
+            "displayOrder": 1
+          },
+          {
+            "gameId": 656,
+            "variantLabel": "6pm",
+            "displayOrder": 2
+          },
+          {
+            "gameId": 657,
+            "variantLabel": "11pm",
+            "displayOrder": 3
+          }
+        ],
+        "buyNowEligible": true,
+        "aiContextKey": "gameRules",
+        "priority": 1
+      }
+    ]
+  },
+  "content": {
+    "explore": {
+      "heading": "Explore Maryland Lottery",
+      "intro": "Quick ways to check a Maryland result, find a game, and get to claim help on LotteryCorner.",
+      "items": [
+        {
+          "key": "latest-results",
+          "title": "Latest results",
+          "copy": "Every Maryland draw game LotteryCorner currently publishes, grouped by game so midday and evening drawings stay separate.",
+          "actionLabel": "Jump to latest results",
+          "cue": "calendar",
+          "primary": true,
+          "destination": {
+            "kind": "inPage",
+            "fragment": "latest-results"
+          }
+        },
+        {
+          "key": "all-games",
+          "title": "Maryland games",
+          "copy": "The full list of Maryland draw games on this page, from Multi Match to the daily number games.",
+          "actionLabel": "See all games",
+          "cue": "grid",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "games"
+          }
+        },
+        {
+          "key": "check-ticket",
+          "title": "Check a ticket",
+          "copy": "Compare a Maryland ticket against the drawing it belongs to, one game and one date at a time.",
+          "actionLabel": "Check my ticket",
+          "cue": "ticket",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "check-ticket"
+          }
+        },
+        {
+          "key": "claim-help",
+          "title": "Claim help",
+          "copy": "Watch the LotteryCorner video on claiming a Maryland prize, and see what we do and do not publish about claiming.",
+          "actionLabel": "Go to claim help",
+          "cue": "clock",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "where-to-play"
+          }
+        }
+      ]
+    },
+    "news": {
+      "heading": "",
+      "intro": "",
+      "ownerLabel": "",
+      "items": []
+    },
+    "guides": {
+      "heading": "Maryland guides and answers",
+      "intro": "Short explanations for the Maryland questions this page gets asked most.",
+      "label": "LotteryCorner Guide",
+      "items": [
+        {
+          "key": "member-dates",
+          "title": "Why Midday and Evening results can show different dates",
+          "summary": "Midday and Evening are separate Maryland drawings with separate results. When the later drawing has not happened yet, or has not been published, LotteryCorner keeps showing the most recent completed result for that drawing rather than blanking the row.",
+          "takeaways": [
+            "Each drawing keeps its own result date.",
+            "A row is never filled from its sibling drawing.",
+            "Check the label above the numbers before comparing a ticket."
+          ],
+          "tags": [
+            "Maryland",
+            "Pick 3",
+            "Midday and Evening"
+          ],
+          "actionLabel": "See the grouped results",
+          "aiActionLabel": "Ask LotteryCorner AI",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "latest-results"
+          }
+        },
+        {
+          "key": "draw-times",
+          "title": "How Maryland draw times are shown",
+          "summary": "Draw times on this page are shown in Eastern Time (ET), the time zone Maryland drawings are held in. Each game row carries its own published draw time so you can tell which drawing a result belongs to.",
+          "takeaways": [
+            "All times on this page are ET.",
+            "Each game row shows its own draw time.",
+            "An exact date is always shown, never “today” or “last night”."
+          ],
+          "tags": [
+            "Maryland",
+            "Draw times",
+            "ET"
+          ],
+          "actionLabel": "See game draw times",
+          "aiActionLabel": "Ask LotteryCorner AI",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "latest-results"
+          }
+        },
+        {
+          "key": "claim-video-guide",
+          "title": "Claiming a Maryland prize",
+          "summary": "LotteryCorner has its own short video on how Maryland prizes are claimed. Because claim rules change, we point you to it rather than restating amounts or deadlines we have not re-checked.",
+          "takeaways": [
+            "The video is LotteryCorner’s own.",
+            "Confirm current requirements before claiming.",
+            "Official claim authority stays with the state lottery."
+          ],
+          "tags": [
+            "Maryland",
+            "Claiming",
+            "Video"
+          ],
+          "actionLabel": "Watch the claim video",
+          "aiActionLabel": "Ask LotteryCorner AI",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "where-to-play"
+          }
+        },
+        {
+          "key": "frequent-draws",
+          "title": "How Maryland Cash Pop drawings are grouped",
+          "summary": "Cash Pop runs several drawings a day. LotteryCorner shows them as one game with a labelled row per drawing, in a fixed order, so the page does not become a wall of near-identical cards.",
+          "takeaways": [
+            "One game, several labelled drawings.",
+            "Rows stay in the same order every visit.",
+            "Each row carries its own date and number."
+          ],
+          "tags": [
+            "Maryland",
+            "Cash Pop",
+            "Grouped results"
+          ],
+          "actionLabel": "See the grouped drawings",
+          "aiActionLabel": "Ask LotteryCorner AI",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "latest-results"
+          }
+        }
+      ],
+      "aiContinuation": {
+        "heading": "Still have a question?",
+        "copy": "Ask LotteryCorner AI about Maryland results, draw times and game rules. Answers are grounded in what this page publishes.",
+        "actionLabel": "Ask LotteryCorner AI"
+      }
+    },
+    "community": {
+      "heading": "Maryland community",
+      "intro": "These are discussion starters written by LotteryCorner, not player posts. No Maryland discussion has been started yet.",
+      "items": [
+        {
+          "key": "daily-numbers",
+          "title": "Questions about Maryland Pick 3 drawings",
+          "excerpt": "A discussion starter for midday and evening drawings — which drawing a result belongs to, and why the two rows can show different dates.",
+          "tags": [
+            "Maryland",
+            "Pick 3",
+            "Discussion starter"
+          ],
+          "actionLabel": "Ask players",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "community"
+          }
+        },
+        {
+          "key": "jackpot-games",
+          "title": "Multi Match and the multi-state games in Maryland",
+          "excerpt": "A discussion starter for jackpot games — reading Multi Match results, and how Powerball and Mega Millions appear on a Maryland page.",
+          "tags": [
+            "Maryland",
+            "Multi Match",
+            "Discussion starter"
+          ],
+          "actionLabel": "Ask players",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "community"
+          }
+        },
+        {
+          "key": "result-claim",
+          "title": "Result and claim questions for Maryland",
+          "excerpt": "A discussion starter for checking a ticket against the right drawing, and for what to confirm before claiming.",
+          "tags": [
+            "Maryland",
+            "Results",
+            "Discussion starter"
+          ],
+          "actionLabel": "Ask players",
+          "destination": {
+            "kind": "inPage",
+            "fragment": "community"
+          }
+        }
+      ],
+      "questionContinuation": {
+        "heading": "Have a Maryland lottery question?",
+        "copy": "Ask about a result, a game rule or a claim step. Community accounts are not part of this preview.",
+        "actionLabel": "Ask a question"
+      }
+    },
+    "resources": {
+      "heading": "Maryland resources and player support",
+      "items": [
+        {
+          "label": "Latest results",
+          "destinationName": "Maryland results on LotteryCorner",
+          "fragment": "latest-results"
+        },
+        {
+          "label": "Maryland games",
+          "destinationName": "Maryland game list on LotteryCorner",
+          "fragment": "games"
+        },
+        {
+          "label": "Check a ticket",
+          "destinationName": "Ticket check guidance on LotteryCorner",
+          "fragment": "check-ticket"
+        },
+        {
+          "label": "Claim video",
+          "destinationName": "LotteryCorner Maryland claim video",
+          "fragment": "where-to-play"
+        },
+        {
+          "label": "Corrections policy",
+          "destinationName": "LotteryCorner corrections policy"
+        }
+      ]
+    },
+    "claimVideo": {
+      "videoId": "v_0X13KKl8o",
+      "title": "How to claim a Maryland Lottery prize",
+      "description": "A short LotteryCorner walkthrough of how Maryland lottery prizes are claimed.",
+      "ownerLabel": "LotteryCorner video",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/v_0X13KKl8o",
+      "watchUrl": "https://www.youtube.com/watch?v=v_0X13KKl8o",
+      "thumbnailUrl": null,
+      "uploadDate": null,
+      "duration": null
+    }
+  },
+  "trust": {
+    "summary": "LotteryCorner publishes results from official lottery sources and states when each result was last checked.",
+    "independence": "LotteryCorner is an independent lottery information service and is not affiliated with any state lottery."
+  }
+}

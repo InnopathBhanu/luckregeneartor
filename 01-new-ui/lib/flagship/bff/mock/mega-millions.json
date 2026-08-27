@@ -1,0 +1,3159 @@
+{
+ "meta": {
+  "gameSlug": "mega-millions",
+  "source": "mock",
+  "disclosure": "Live feeds are still being connected. The latest drawing is real; the history, jackpot figures, prize amounts and discussions are preview data for layout and tool testing.",
+  "asOfIso": "2026-07-07"
+ },
+ "history": [
+  {
+   "drawDateIso": "2026-07-07",
+   "main": [
+    2,
+    31,
+    35,
+    36,
+    63
+   ],
+   "special": 12,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$576,000,000",
+   "source": "productionFeed"
+  },
+  {
+   "drawDateIso": "2026-07-03",
+   "main": [
+    6,
+    12,
+    21,
+    27,
+    70
+   ],
+   "special": 14,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$526,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-06-30",
+   "main": [
+    11,
+    25,
+    41,
+    47,
+    64
+   ],
+   "special": 17,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$493,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-06-26",
+   "main": [
+    8,
+    29,
+    37,
+    48,
+    50
+   ],
+   "special": 16,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$455,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-06-23",
+   "main": [
+    22,
+    28,
+    38,
+    46,
+    49
+   ],
+   "special": 10,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$417,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-06-19",
+   "main": [
+    3,
+    27,
+    39,
+    42,
+    62
+   ],
+   "special": 24,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$371,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-06-16",
+   "main": [
+    35,
+    39,
+    40,
+    54,
+    70
+   ],
+   "special": 23,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$337,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-06-12",
+   "main": [
+    16,
+    37,
+    42,
+    44,
+    49
+   ],
+   "special": 21,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$293,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-06-09",
+   "main": [
+    10,
+    11,
+    56,
+    59,
+    70
+   ],
+   "special": 6,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$260,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-06-05",
+   "main": [
+    20,
+    44,
+    54,
+    65,
+    68
+   ],
+   "special": 1,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$223,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-06-02",
+   "main": [
+    5,
+    8,
+    36,
+    45,
+    67
+   ],
+   "special": 22,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$190,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-05-29",
+   "main": [
+    10,
+    28,
+    41,
+    46,
+    70
+   ],
+   "special": 8,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$159,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-05-26",
+   "main": [
+    6,
+    21,
+    49,
+    54,
+    60
+   ],
+   "special": 9,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$140,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-05-22",
+   "main": [
+    7,
+    15,
+    34,
+    44,
+    56
+   ],
+   "special": 10,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$129,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-05-19",
+   "main": [
+    6,
+    13,
+    35,
+    44,
+    63
+   ],
+   "special": 20,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$110,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-05-15",
+   "main": [
+    25,
+    31,
+    35,
+    42,
+    51
+   ],
+   "special": 11,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$91,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-05-12",
+   "main": [
+    24,
+    25,
+    45,
+    55,
+    58
+   ],
+   "special": 17,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$82,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-05-08",
+   "main": [
+    9,
+    27,
+    30,
+    33,
+    37
+   ],
+   "special": 3,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$70,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-05-05",
+   "main": [
+    6,
+    17,
+    27,
+    44,
+    50
+   ],
+   "special": 4,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$59,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-05-01",
+   "main": [
+    2,
+    3,
+    6,
+    49,
+    57
+   ],
+   "special": 20,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$49,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-04-28",
+   "main": [
+    37,
+    38,
+    40,
+    48,
+    70
+   ],
+   "special": 11,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$45,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-04-24",
+   "main": [
+    12,
+    38,
+    49,
+    51,
+    62
+   ],
+   "special": 5,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$38,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-04-21",
+   "main": [
+    2,
+    9,
+    43,
+    62,
+    63
+   ],
+   "special": 9,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$35,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-04-17",
+   "main": [
+    6,
+    20,
+    23,
+    39,
+    64
+   ],
+   "special": 20,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$29,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-04-14",
+   "main": [
+    5,
+    14,
+    15,
+    23,
+    54
+   ],
+   "special": 11,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$27,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-04-10",
+   "main": [
+    12,
+    13,
+    34,
+    64,
+    70
+   ],
+   "special": 12,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$25,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-04-07",
+   "main": [
+    32,
+    37,
+    40,
+    42,
+    58
+   ],
+   "special": 21,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$22,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-04-03",
+   "main": [
+    6,
+    9,
+    12,
+    33,
+    54
+   ],
+   "special": 18,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$20,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-03-31",
+   "main": [
+    2,
+    5,
+    33,
+    46,
+    47
+   ],
+   "special": 17,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$537,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-03-27",
+   "main": [
+    6,
+    8,
+    11,
+    37,
+    46
+   ],
+   "special": 9,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$475,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-03-24",
+   "main": [
+    33,
+    54,
+    55,
+    57,
+    67
+   ],
+   "special": 23,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$423,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-03-20",
+   "main": [
+    16,
+    43,
+    58,
+    61,
+    70
+   ],
+   "special": 9,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$393,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-03-17",
+   "main": [
+    7,
+    23,
+    32,
+    42,
+    43
+   ],
+   "special": 17,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$349,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-03-13",
+   "main": [
+    13,
+    33,
+    42,
+    47,
+    68
+   ],
+   "special": 9,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$297,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-03-10",
+   "main": [
+    30,
+    34,
+    43,
+    49,
+    52
+   ],
+   "special": 4,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$269,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-03-06",
+   "main": [
+    16,
+    31,
+    43,
+    45,
+    49
+   ],
+   "special": 22,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$218,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-03-03",
+   "main": [
+    7,
+    16,
+    43,
+    55,
+    66
+   ],
+   "special": 7,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$185,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-02-27",
+   "main": [
+    22,
+    24,
+    58,
+    59,
+    68
+   ],
+   "special": 6,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$163,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-02-24",
+   "main": [
+    4,
+    11,
+    16,
+    43,
+    56
+   ],
+   "special": 12,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$134,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-02-20",
+   "main": [
+    16,
+    32,
+    35,
+    57,
+    58
+   ],
+   "special": 24,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$124,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-02-17",
+   "main": [
+    3,
+    6,
+    36,
+    42,
+    54
+   ],
+   "special": 19,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$102,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-02-13",
+   "main": [
+    3,
+    6,
+    11,
+    12,
+    23
+   ],
+   "special": 21,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$89,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-02-10",
+   "main": [
+    17,
+    33,
+    34,
+    46,
+    57
+   ],
+   "special": 7,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$78,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-02-06",
+   "main": [
+    15,
+    26,
+    28,
+    61,
+    66
+   ],
+   "special": 18,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$67,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-02-03",
+   "main": [
+    16,
+    26,
+    57,
+    58,
+    69
+   ],
+   "special": 16,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$55,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-01-30",
+   "main": [
+    15,
+    16,
+    21,
+    31,
+    50
+   ],
+   "special": 1,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$49,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-01-27",
+   "main": [
+    27,
+    36,
+    40,
+    53,
+    62
+   ],
+   "special": 19,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$44,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-01-23",
+   "main": [
+    2,
+    3,
+    50,
+    68,
+    70
+   ],
+   "special": 3,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$36,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-01-20",
+   "main": [
+    16,
+    26,
+    49,
+    53,
+    55
+   ],
+   "special": 22,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$33,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-01-16",
+   "main": [
+    17,
+    38,
+    44,
+    63,
+    64
+   ],
+   "special": 13,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$30,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-01-13",
+   "main": [
+    10,
+    11,
+    27,
+    63,
+    66
+   ],
+   "special": 14,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$26,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-01-09",
+   "main": [
+    5,
+    19,
+    43,
+    48,
+    57
+   ],
+   "special": 12,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$22,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-01-06",
+   "main": [
+    9,
+    20,
+    29,
+    34,
+    59
+   ],
+   "special": 20,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$204,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-01-02",
+   "main": [
+    23,
+    26,
+    29,
+    61,
+    67
+   ],
+   "special": 22,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$187,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-12-30",
+   "main": [
+    17,
+    29,
+    34,
+    67,
+    70
+   ],
+   "special": 8,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$154,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-12-26",
+   "main": [
+    6,
+    11,
+    38,
+    40,
+    55
+   ],
+   "special": 19,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$140,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-12-23",
+   "main": [
+    9,
+    44,
+    48,
+    52,
+    65
+   ],
+   "special": 8,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$123,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-12-19",
+   "main": [
+    1,
+    3,
+    15,
+    16,
+    18
+   ],
+   "special": 14,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$115,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-12-16",
+   "main": [
+    7,
+    8,
+    31,
+    61,
+    64
+   ],
+   "special": 15,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$96,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-12-12",
+   "main": [
+    1,
+    32,
+    42,
+    53,
+    70
+   ],
+   "special": 22,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$89,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-12-09",
+   "main": [
+    4,
+    9,
+    26,
+    30,
+    32
+   ],
+   "special": 1,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$82,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-12-05",
+   "main": [
+    3,
+    22,
+    28,
+    36,
+    38
+   ],
+   "special": 17,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$70,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-12-02",
+   "main": [
+    2,
+    8,
+    10,
+    44,
+    47
+   ],
+   "special": 12,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$60,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-11-28",
+   "main": [
+    2,
+    28,
+    30,
+    36,
+    50
+   ],
+   "special": 17,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$51,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-11-25",
+   "main": [
+    30,
+    34,
+    41,
+    53,
+    63
+   ],
+   "special": 8,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$46,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-11-21",
+   "main": [
+    39,
+    44,
+    49,
+    52,
+    62
+   ],
+   "special": 3,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$39,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-11-18",
+   "main": [
+    7,
+    13,
+    31,
+    39,
+    68
+   ],
+   "special": 22,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$34,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-11-14",
+   "main": [
+    15,
+    33,
+    37,
+    42,
+    49
+   ],
+   "special": 20,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$28,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-11-11",
+   "main": [
+    14,
+    32,
+    52,
+    56,
+    60
+   ],
+   "special": 15,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$24,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-11-07",
+   "main": [
+    5,
+    14,
+    31,
+    39,
+    55
+   ],
+   "special": 6,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$22,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-11-04",
+   "main": [
+    2,
+    23,
+    37,
+    61,
+    63
+   ],
+   "special": 5,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$246,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-10-31",
+   "main": [
+    10,
+    30,
+    50,
+    57,
+    62
+   ],
+   "special": 6,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$200,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-10-28",
+   "main": [
+    22,
+    24,
+    27,
+    49,
+    69
+   ],
+   "special": 20,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$184,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-10-24",
+   "main": [
+    12,
+    30,
+    33,
+    42,
+    54
+   ],
+   "special": 23,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$150,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-10-21",
+   "main": [
+    19,
+    45,
+    58,
+    60,
+    61
+   ],
+   "special": 11,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$136,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-10-17",
+   "main": [
+    6,
+    31,
+    63,
+    64,
+    65
+   ],
+   "special": 5,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$126,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-10-14",
+   "main": [
+    4,
+    9,
+    29,
+    34,
+    42
+   ],
+   "special": 1,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$119,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-10-10",
+   "main": [
+    3,
+    28,
+    40,
+    42,
+    53
+   ],
+   "special": 15,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$101,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-10-07",
+   "main": [
+    6,
+    12,
+    25,
+    47,
+    63
+   ],
+   "special": 7,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$86,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-10-03",
+   "main": [
+    3,
+    7,
+    10,
+    23,
+    39
+   ],
+   "special": 20,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$71,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-09-30",
+   "main": [
+    17,
+    23,
+    25,
+    53,
+    66
+   ],
+   "special": 18,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$65,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-09-26",
+   "main": [
+    1,
+    9,
+    22,
+    39,
+    55
+   ],
+   "special": 15,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$59,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-09-23",
+   "main": [
+    14,
+    25,
+    29,
+    56,
+    62
+   ],
+   "special": 3,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$48,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-09-19",
+   "main": [
+    7,
+    16,
+    41,
+    62,
+    64
+   ],
+   "special": 5,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$41,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-09-16",
+   "main": [
+    12,
+    27,
+    53,
+    60,
+    66
+   ],
+   "special": 7,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$37,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-09-12",
+   "main": [
+    7,
+    15,
+    49,
+    59,
+    60
+   ],
+   "special": 15,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$33,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-09-09",
+   "main": [
+    5,
+    20,
+    45,
+    57,
+    70
+   ],
+   "special": 9,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$30,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-09-05",
+   "main": [
+    7,
+    8,
+    9,
+    41,
+    61
+   ],
+   "special": 20,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$25,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-09-02",
+   "main": [
+    4,
+    10,
+    30,
+    52,
+    62
+   ],
+   "special": 12,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$23,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-08-29",
+   "main": [
+    6,
+    31,
+    32,
+    56,
+    65
+   ],
+   "special": 4,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$20,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-08-26",
+   "main": [
+    13,
+    15,
+    25,
+    62,
+    63
+   ],
+   "special": 5,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$282,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-08-22",
+   "main": [
+    1,
+    33,
+    36,
+    58,
+    68
+   ],
+   "special": 10,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$251,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-08-19",
+   "main": [
+    7,
+    13,
+    42,
+    54,
+    58
+   ],
+   "special": 3,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$233,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-08-15",
+   "main": [
+    32,
+    37,
+    49,
+    54,
+    67
+   ],
+   "special": 2,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$216,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-08-12",
+   "main": [
+    14,
+    17,
+    18,
+    36,
+    41
+   ],
+   "special": 7,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$183,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-08-08",
+   "main": [
+    15,
+    42,
+    55,
+    59,
+    60
+   ],
+   "special": 10,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$153,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-08-05",
+   "main": [
+    23,
+    46,
+    47,
+    64,
+    67
+   ],
+   "special": 22,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$132,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-08-01",
+   "main": [
+    4,
+    10,
+    17,
+    29,
+    61
+   ],
+   "special": 16,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$118,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-07-29",
+   "main": [
+    14,
+    16,
+    18,
+    34,
+    45
+   ],
+   "special": 14,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$105,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-07-25",
+   "main": [
+    14,
+    17,
+    55,
+    64,
+    65
+   ],
+   "special": 1,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$98,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-07-22",
+   "main": [
+    34,
+    44,
+    52,
+    54,
+    63
+   ],
+   "special": 9,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$91,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-07-18",
+   "main": [
+    12,
+    19,
+    56,
+    64,
+    68
+   ],
+   "special": 20,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$75,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-07-15",
+   "main": [
+    3,
+    4,
+    7,
+    38,
+    62
+   ],
+   "special": 18,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$61,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-07-11",
+   "main": [
+    6,
+    18,
+    21,
+    32,
+    70
+   ],
+   "special": 17,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$51,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-07-08",
+   "main": [
+    9,
+    34,
+    35,
+    46,
+    57
+   ],
+   "special": 23,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$42,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-07-04",
+   "main": [
+    6,
+    9,
+    23,
+    26,
+    52
+   ],
+   "special": 5,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$39,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-07-01",
+   "main": [
+    1,
+    47,
+    52,
+    63,
+    64
+   ],
+   "special": 18,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$32,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-06-27",
+   "main": [
+    14,
+    24,
+    40,
+    50,
+    57
+   ],
+   "special": 8,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$28,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-06-24",
+   "main": [
+    7,
+    18,
+    25,
+    50,
+    55
+   ],
+   "special": 8,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$26,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-06-20",
+   "main": [
+    2,
+    10,
+    23,
+    34,
+    45
+   ],
+   "special": 3,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$23,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-06-17",
+   "main": [
+    5,
+    24,
+    34,
+    36,
+    42
+   ],
+   "special": 1,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$169,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-06-13",
+   "main": [
+    7,
+    16,
+    17,
+    58,
+    64
+   ],
+   "special": 3,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$143,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-06-10",
+   "main": [
+    5,
+    14,
+    24,
+    43,
+    60
+   ],
+   "special": 5,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$116,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-06-06",
+   "main": [
+    16,
+    34,
+    41,
+    48,
+    68
+   ],
+   "special": 5,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$106,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-06-03",
+   "main": [
+    11,
+    21,
+    39,
+    53,
+    56
+   ],
+   "special": 10,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$88,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-05-30",
+   "main": [
+    22,
+    33,
+    45,
+    64,
+    66
+   ],
+   "special": 15,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$74,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-05-27",
+   "main": [
+    19,
+    42,
+    44,
+    58,
+    69
+   ],
+   "special": 13,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$61,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-05-23",
+   "main": [
+    4,
+    12,
+    35,
+    62,
+    67
+   ],
+   "special": 13,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$52,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-05-20",
+   "main": [
+    8,
+    22,
+    39,
+    61,
+    62
+   ],
+   "special": 10,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$45,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-05-16",
+   "main": [
+    10,
+    12,
+    50,
+    57,
+    59
+   ],
+   "special": 6,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$41,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-05-13",
+   "main": [
+    6,
+    20,
+    27,
+    56,
+    60
+   ],
+   "special": 23,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$34,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-05-09",
+   "main": [
+    19,
+    35,
+    38,
+    41,
+    68
+   ],
+   "special": 24,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$29,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-05-06",
+   "main": [
+    10,
+    18,
+    29,
+    38,
+    60
+   ],
+   "special": 22,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$26,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-05-02",
+   "main": [
+    17,
+    24,
+    26,
+    36,
+    56
+   ],
+   "special": 6,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$21,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-04-29",
+   "main": [
+    5,
+    26,
+    31,
+    39,
+    40
+   ],
+   "special": 19,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$201,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-04-25",
+   "main": [
+    1,
+    28,
+    54,
+    56,
+    68
+   ],
+   "special": 19,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$170,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-04-22",
+   "main": [
+    11,
+    13,
+    43,
+    53,
+    57
+   ],
+   "special": 3,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$138,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-04-18",
+   "main": [
+    2,
+    10,
+    33,
+    39,
+    49
+   ],
+   "special": 14,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$123,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-04-15",
+   "main": [
+    1,
+    6,
+    41,
+    49,
+    70
+   ],
+   "special": 9,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$99,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-04-11",
+   "main": [
+    12,
+    27,
+    37,
+    57,
+    68
+   ],
+   "special": 21,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$86,000,000",
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-04-08",
+   "main": [
+    2,
+    38,
+    40,
+    44,
+    64
+   ],
+   "special": 7,
+   "multiplier": null,
+   "secondary": null,
+   "jackpotDisplay": "$71,000,000",
+   "source": "mock"
+  }
+ ],
+ "jackpotHistory": [
+  {
+   "drawDateIso": "2026-07-07",
+   "advertised": 576000000,
+   "cashValue": 296500000,
+   "wonAtThisDraw": false,
+   "source": "productionFeed"
+  },
+  {
+   "drawDateIso": "2026-07-03",
+   "advertised": 526000000,
+   "cashValue": 256500000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-06-30",
+   "advertised": 493000000,
+   "cashValue": 242300000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-06-26",
+   "advertised": 455000000,
+   "cashValue": 239300000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-06-23",
+   "advertised": 417000000,
+   "cashValue": 200300000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-06-19",
+   "advertised": 371000000,
+   "cashValue": 182100000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-06-16",
+   "advertised": 337000000,
+   "cashValue": 169700000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-06-12",
+   "advertised": 293000000,
+   "cashValue": 146900000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-06-09",
+   "advertised": 260000000,
+   "cashValue": 126700000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-06-05",
+   "advertised": 223000000,
+   "cashValue": 110400000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-06-02",
+   "advertised": 190000000,
+   "cashValue": 96000000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-05-29",
+   "advertised": 159000000,
+   "cashValue": 77900000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-05-26",
+   "advertised": 140000000,
+   "cashValue": 71500000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-05-22",
+   "advertised": 129000000,
+   "cashValue": 61600000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-05-19",
+   "advertised": 110000000,
+   "cashValue": 52400000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-05-15",
+   "advertised": 91000000,
+   "cashValue": 47400000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-05-12",
+   "advertised": 82000000,
+   "cashValue": 42100000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-05-08",
+   "advertised": 70000000,
+   "cashValue": 36200000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-05-05",
+   "advertised": 59000000,
+   "cashValue": 27800000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-05-01",
+   "advertised": 49000000,
+   "cashValue": 26000000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-04-28",
+   "advertised": 45000000,
+   "cashValue": 23800000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-04-24",
+   "advertised": 38000000,
+   "cashValue": 18100000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-04-21",
+   "advertised": 35000000,
+   "cashValue": 18200000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-04-17",
+   "advertised": 29000000,
+   "cashValue": 14600000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-04-14",
+   "advertised": 27000000,
+   "cashValue": 14000000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-04-10",
+   "advertised": 25000000,
+   "cashValue": 12100000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-04-07",
+   "advertised": 22000000,
+   "cashValue": 11000000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-04-03",
+   "advertised": 20000000,
+   "cashValue": 9600000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-03-31",
+   "advertised": 537000000,
+   "cashValue": 265400000,
+   "wonAtThisDraw": true,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-03-27",
+   "advertised": 475000000,
+   "cashValue": 227200000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-03-24",
+   "advertised": 423000000,
+   "cashValue": 205100000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-03-20",
+   "advertised": 393000000,
+   "cashValue": 205600000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-03-17",
+   "advertised": 349000000,
+   "cashValue": 178800000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-03-13",
+   "advertised": 297000000,
+   "cashValue": 144200000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-03-10",
+   "advertised": 269000000,
+   "cashValue": 136500000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-03-06",
+   "advertised": 218000000,
+   "cashValue": 108900000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-03-03",
+   "advertised": 185000000,
+   "cashValue": 88600000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-02-27",
+   "advertised": 163000000,
+   "cashValue": 80000000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-02-24",
+   "advertised": 134000000,
+   "cashValue": 70300000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-02-20",
+   "advertised": 124000000,
+   "cashValue": 62000000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-02-17",
+   "advertised": 102000000,
+   "cashValue": 49200000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-02-13",
+   "advertised": 89000000,
+   "cashValue": 43700000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-02-10",
+   "advertised": 78000000,
+   "cashValue": 38300000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-02-06",
+   "advertised": 67000000,
+   "cashValue": 35100000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-02-03",
+   "advertised": 55000000,
+   "cashValue": 28800000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-01-30",
+   "advertised": 49000000,
+   "cashValue": 23100000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-01-27",
+   "advertised": 44000000,
+   "cashValue": 23100000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-01-23",
+   "advertised": 36000000,
+   "cashValue": 17600000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-01-20",
+   "advertised": 33000000,
+   "cashValue": 17200000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-01-16",
+   "advertised": 30000000,
+   "cashValue": 15500000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-01-13",
+   "advertised": 26000000,
+   "cashValue": 12300000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-01-09",
+   "advertised": 22000000,
+   "cashValue": 11000000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-01-06",
+   "advertised": 204000000,
+   "cashValue": 100600000,
+   "wonAtThisDraw": true,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2026-01-02",
+   "advertised": 187000000,
+   "cashValue": 94300000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-12-30",
+   "advertised": 154000000,
+   "cashValue": 75900000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-12-26",
+   "advertised": 140000000,
+   "cashValue": 71400000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-12-23",
+   "advertised": 123000000,
+   "cashValue": 63800000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-12-19",
+   "advertised": 115000000,
+   "cashValue": 55400000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-12-16",
+   "advertised": 96000000,
+   "cashValue": 50600000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-12-12",
+   "advertised": 89000000,
+   "cashValue": 45800000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-12-09",
+   "advertised": 82000000,
+   "cashValue": 42000000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-12-05",
+   "advertised": 70000000,
+   "cashValue": 33900000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-12-02",
+   "advertised": 60000000,
+   "cashValue": 30100000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-11-28",
+   "advertised": 51000000,
+   "cashValue": 24100000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-11-25",
+   "advertised": 46000000,
+   "cashValue": 23500000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-11-21",
+   "advertised": 39000000,
+   "cashValue": 19000000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-11-18",
+   "advertised": 34000000,
+   "cashValue": 16900000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-11-14",
+   "advertised": 28000000,
+   "cashValue": 13500000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-11-11",
+   "advertised": 24000000,
+   "cashValue": 12000000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-11-07",
+   "advertised": 22000000,
+   "cashValue": 10800000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-11-04",
+   "advertised": 246000000,
+   "cashValue": 128000000,
+   "wonAtThisDraw": true,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-10-31",
+   "advertised": 200000000,
+   "cashValue": 98600000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-10-28",
+   "advertised": 184000000,
+   "cashValue": 96600000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-10-24",
+   "advertised": 150000000,
+   "cashValue": 76100000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-10-21",
+   "advertised": 136000000,
+   "cashValue": 67500000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-10-17",
+   "advertised": 126000000,
+   "cashValue": 66200000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-10-14",
+   "advertised": 119000000,
+   "cashValue": 60800000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-10-10",
+   "advertised": 101000000,
+   "cashValue": 48400000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-10-07",
+   "advertised": 86000000,
+   "cashValue": 44900000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-10-03",
+   "advertised": 71000000,
+   "cashValue": 33700000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-09-30",
+   "advertised": 65000000,
+   "cashValue": 31800000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-09-26",
+   "advertised": 59000000,
+   "cashValue": 29600000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-09-23",
+   "advertised": 48000000,
+   "cashValue": 22800000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-09-19",
+   "advertised": 41000000,
+   "cashValue": 20400000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-09-16",
+   "advertised": 37000000,
+   "cashValue": 18700000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-09-12",
+   "advertised": 33000000,
+   "cashValue": 15900000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-09-09",
+   "advertised": 30000000,
+   "cashValue": 15600000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-09-05",
+   "advertised": 25000000,
+   "cashValue": 12300000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-09-02",
+   "advertised": 23000000,
+   "cashValue": 10900000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-08-29",
+   "advertised": 20000000,
+   "cashValue": 10500000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-08-26",
+   "advertised": 282000000,
+   "cashValue": 147800000,
+   "wonAtThisDraw": true,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-08-22",
+   "advertised": 251000000,
+   "cashValue": 120000000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-08-19",
+   "advertised": 233000000,
+   "cashValue": 110900000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-08-15",
+   "advertised": 216000000,
+   "cashValue": 104600000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-08-12",
+   "advertised": 183000000,
+   "cashValue": 88000000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-08-08",
+   "advertised": 153000000,
+   "cashValue": 74100000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-08-05",
+   "advertised": 132000000,
+   "cashValue": 68800000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-08-01",
+   "advertised": 118000000,
+   "cashValue": 57400000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-07-29",
+   "advertised": 105000000,
+   "cashValue": 50000000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-07-25",
+   "advertised": 98000000,
+   "cashValue": 48200000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-07-22",
+   "advertised": 91000000,
+   "cashValue": 45300000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-07-18",
+   "advertised": 75000000,
+   "cashValue": 38700000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-07-15",
+   "advertised": 61000000,
+   "cashValue": 31200000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-07-11",
+   "advertised": 51000000,
+   "cashValue": 24900000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-07-08",
+   "advertised": 42000000,
+   "cashValue": 21000000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-07-04",
+   "advertised": 39000000,
+   "cashValue": 20200000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-07-01",
+   "advertised": 32000000,
+   "cashValue": 15500000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-06-27",
+   "advertised": 28000000,
+   "cashValue": 13300000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-06-24",
+   "advertised": 26000000,
+   "cashValue": 12300000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-06-20",
+   "advertised": 23000000,
+   "cashValue": 11000000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-06-17",
+   "advertised": 169000000,
+   "cashValue": 87200000,
+   "wonAtThisDraw": true,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-06-13",
+   "advertised": 143000000,
+   "cashValue": 72200000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-06-10",
+   "advertised": 116000000,
+   "cashValue": 59200000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-06-06",
+   "advertised": 106000000,
+   "cashValue": 51700000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-06-03",
+   "advertised": 88000000,
+   "cashValue": 43200000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-05-30",
+   "advertised": 74000000,
+   "cashValue": 38700000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-05-27",
+   "advertised": 61000000,
+   "cashValue": 31900000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-05-23",
+   "advertised": 52000000,
+   "cashValue": 27300000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-05-20",
+   "advertised": 45000000,
+   "cashValue": 21700000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-05-16",
+   "advertised": 41000000,
+   "cashValue": 20500000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-05-13",
+   "advertised": 34000000,
+   "cashValue": 16500000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-05-09",
+   "advertised": 29000000,
+   "cashValue": 14600000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-05-06",
+   "advertised": 26000000,
+   "cashValue": 12200000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-05-02",
+   "advertised": 21000000,
+   "cashValue": 11100000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-04-29",
+   "advertised": 201000000,
+   "cashValue": 104700000,
+   "wonAtThisDraw": true,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-04-25",
+   "advertised": 170000000,
+   "cashValue": 85700000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-04-22",
+   "advertised": 138000000,
+   "cashValue": 72400000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-04-18",
+   "advertised": 123000000,
+   "cashValue": 58100000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-04-15",
+   "advertised": 99000000,
+   "cashValue": 50700000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-04-11",
+   "advertised": 86000000,
+   "cashValue": 42700000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  },
+  {
+   "drawDateIso": "2025-04-08",
+   "advertised": 71000000,
+   "cashValue": 34300000,
+   "wonAtThisDraw": false,
+   "source": "mock"
+  }
+ ],
+ "prizeTiers": [
+  {
+   "mainMatched": 5,
+   "specialMatched": true,
+   "label": "5 + Mega Ball",
+   "prizeDisplay": null,
+   "multiplierApplies": false,
+   "source": "mock"
+  },
+  {
+   "mainMatched": 5,
+   "specialMatched": false,
+   "label": "5 of 5",
+   "prizeDisplay": "$1,000,000",
+   "multiplierApplies": true,
+   "source": "mock"
+  },
+  {
+   "mainMatched": 4,
+   "specialMatched": true,
+   "label": "4 + Mega Ball",
+   "prizeDisplay": "$10,000",
+   "multiplierApplies": true,
+   "source": "mock"
+  },
+  {
+   "mainMatched": 4,
+   "specialMatched": false,
+   "label": "4 of 5",
+   "prizeDisplay": "$500",
+   "multiplierApplies": true,
+   "source": "mock"
+  },
+  {
+   "mainMatched": 3,
+   "specialMatched": true,
+   "label": "3 + Mega Ball",
+   "prizeDisplay": "$200",
+   "multiplierApplies": true,
+   "source": "mock"
+  },
+  {
+   "mainMatched": 3,
+   "specialMatched": false,
+   "label": "3 of 5",
+   "prizeDisplay": "$10",
+   "multiplierApplies": true,
+   "source": "mock"
+  },
+  {
+   "mainMatched": 2,
+   "specialMatched": true,
+   "label": "2 + Mega Ball",
+   "prizeDisplay": "$10",
+   "multiplierApplies": true,
+   "source": "mock"
+  },
+  {
+   "mainMatched": 1,
+   "specialMatched": true,
+   "label": "1 + Mega Ball",
+   "prizeDisplay": "$4",
+   "multiplierApplies": true,
+   "source": "mock"
+  },
+  {
+   "mainMatched": 0,
+   "specialMatched": true,
+   "label": "0 + Mega Ball",
+   "prizeDisplay": "$2",
+   "multiplierApplies": true,
+   "source": "mock"
+  }
+ ],
+ "nextDraw": {
+  "drawDateIso": "2026-07-10",
+  "drawTimeEt": "11:00 p.m. ET",
+  "advertisedJackpot": 604000000,
+  "advertisedCashValue": 296000000,
+  "source": "productionFeed"
+ },
+ "content": {
+  "forum": [
+   {
+    "id": "mega-millions-forum-1",
+    "kind": "forum",
+    "title": "Anyone else keep the same line every week?",
+    "author": "QuickPickQueen",
+    "publishedIso": "2026-07-06",
+    "href": "/community/mega-millions-forum-1",
+    "excerpt": "Preview discussion, written to test this layout. No member wrote it.",
+    "tags": [
+     "Mega Millions"
+    ],
+    "replyCount": 3,
+    "source": "mock"
+   },
+   {
+    "id": "mega-millions-forum-2",
+    "kind": "forum",
+    "title": "How long did your claim actually take?",
+    "author": "NumbersNed",
+    "publishedIso": "2026-07-03",
+    "href": "/community/mega-millions-forum-2",
+    "excerpt": "Preview discussion, written to test this layout. No member wrote it.",
+    "tags": [
+     "Mega Millions"
+    ],
+    "replyCount": 10,
+    "source": "mock"
+   },
+   {
+    "id": "mega-millions-forum-3",
+    "kind": "forum",
+    "title": "Does the multiplier ever feel worth the extra dollar?",
+    "author": "ColdStreakCarl",
+    "publishedIso": "2026-06-30",
+    "href": "/community/mega-millions-forum-3",
+    "excerpt": "Preview discussion, written to test this layout. No member wrote it.",
+    "tags": [
+     "Mega Millions"
+    ],
+    "replyCount": 17,
+    "source": "mock"
+   },
+   {
+    "id": "mega-millions-forum-4",
+    "kind": "forum",
+    "title": "Group play — how do you split it fairly?",
+    "author": "OddEvenOlive",
+    "publishedIso": "2026-06-27",
+    "href": "/community/mega-millions-forum-4",
+    "excerpt": "Preview discussion, written to test this layout. No member wrote it.",
+    "tags": [
+     "Mega Millions"
+    ],
+    "replyCount": 24,
+    "source": "mock"
+   },
+   {
+    "id": "mega-millions-forum-5",
+    "kind": "forum",
+    "title": "I finally matched four. Here is what happened next.",
+    "author": "RolloverRay",
+    "publishedIso": "2026-06-24",
+    "href": "/community/mega-millions-forum-5",
+    "excerpt": "Preview discussion, written to test this layout. No member wrote it.",
+    "tags": [
+     "Mega Millions"
+    ],
+    "replyCount": 9,
+    "source": "mock"
+   }
+  ],
+  "blog": [
+   {
+    "id": "mega-millions-blog-1",
+    "kind": "blog",
+    "title": "Cash or annuity: how the Mega Millions choice actually works",
+    "author": "LotteryCorner Editorial",
+    "publishedIso": "2026-07-06",
+    "href": "/news/mega-millions-blog-1",
+    "excerpt": "Preview article, written to test this layout. It reports nothing that happened.",
+    "tags": [
+     "Mega Millions"
+    ],
+    "source": "mock"
+   },
+   {
+    "id": "mega-millions-blog-2",
+    "kind": "blog",
+    "title": "Reading Mega Millions statistics without fooling yourself",
+    "author": "LotteryCorner Editorial",
+    "publishedIso": "2026-07-03",
+    "href": "/news/mega-millions-blog-2",
+    "excerpt": "Preview article, written to test this layout. It reports nothing that happened.",
+    "tags": [
+     "Mega Millions"
+    ],
+    "source": "mock"
+   },
+   {
+    "id": "mega-millions-blog-3",
+    "kind": "blog",
+    "title": "Mega Millions claim guide: what to do before you sign the ticket",
+    "author": "LotteryCorner Editorial",
+    "publishedIso": "2026-06-30",
+    "href": "/news/mega-millions-blog-3",
+    "excerpt": "Preview article, written to test this layout. It reports nothing that happened.",
+    "tags": [
+     "Mega Millions"
+    ],
+    "source": "mock"
+   }
+  ],
+  "news": [
+   {
+    "id": "mega-millions-news-1",
+    "kind": "news",
+    "title": "How Mega Millions results are published, and how soon after the drawing",
+    "author": "LotteryCorner Editorial",
+    "publishedIso": "2026-07-06",
+    "href": "/news/mega-millions-news-1",
+    "excerpt": "Preview article, written to test this layout. It reports nothing that happened.",
+    "tags": [
+     "Mega Millions"
+    ],
+    "source": "mock"
+   },
+   {
+    "id": "mega-millions-news-2",
+    "kind": "news",
+    "title": "Mega Millions draw nights, sales cut-offs and what \"official\" means",
+    "author": "LotteryCorner Editorial",
+    "publishedIso": "2026-07-03",
+    "href": "/news/mega-millions-news-2",
+    "excerpt": "Preview article, written to test this layout. It reports nothing that happened.",
+    "tags": [
+     "Mega Millions"
+    ],
+    "source": "mock"
+   },
+   {
+    "id": "mega-millions-news-3",
+    "kind": "news",
+    "title": "Claim deadlines and where a Mega Millions prize is paid",
+    "author": "LotteryCorner Editorial",
+    "publishedIso": "2026-06-30",
+    "href": "/news/mega-millions-news-3",
+    "excerpt": "Preview article, written to test this layout. It reports nothing that happened.",
+    "tags": [
+     "Mega Millions"
+    ],
+    "source": "mock"
+   }
+  ]
+ },
+ "checkerExamples": [
+  {
+   "key": "match-latest",
+   "label": "A line that matches the latest drawing",
+   "main": [
+    2,
+    31,
+    35,
+    36,
+    63
+   ],
+   "special": 12,
+   "source": "mock"
+  },
+  {
+   "key": "partial",
+   "label": "A line with a partial match",
+   "main": [
+    2,
+    31,
+    8,
+    19,
+    61
+   ],
+   "special": 7,
+   "source": "mock"
+  }
+ ]
+}

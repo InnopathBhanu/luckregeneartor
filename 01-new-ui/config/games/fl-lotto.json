@@ -1,0 +1,204 @@
+{
+  "schemaVersion": "1.0",
+  "game": {
+    "stateCode": "fl",
+    "stateName": "Florida",
+    "gameSlug": "lotto",
+    "gameId": 337,
+    "gameLabel": "Lotto",
+    "mode": "JG-M2",
+    "visualIdentity": null,
+    "isMultiState": false,
+    "timezoneLabel": "ET",
+    "familyId": "florida-lotto",
+    "ruleGameKey": "florida-lotto"
+  },
+  "preview": {
+    "enabled": true
+  },
+  "capabilities": {
+    "hasSharedAi": true,
+    "hasBuyNowEntry": true,
+    "hasChecker": false,
+    "hasHistory": true,
+    "hasNumberHistory": true,
+    "hasStatistics": true,
+    "hasGenerator": true,
+    "hasMethods": true,
+    "hasCommunityStarters": true,
+    "hasAlerts": true,
+    "hasGlobalTools": false,
+    "hasFollowOffering": false
+  },
+  "seo": {
+    "canonicalPath": "/fl/lotto",
+    "title": "Florida Lotto Results, Winning Numbers and Game Details | LotteryCorner",
+    "description": "See the latest Florida Lotto results and winning numbers, search past draws, explore statistics, generate a valid set, and read how Lotto works.",
+    "breadcrumbLabel": "Lotto",
+    "openGraph": {
+      "type": "website",
+      "title": "Florida Lotto Results and Winning Numbers",
+      "description": "Florida Lotto results, past-draw search, statistics and a number generator.",
+      "imageKey": null
+    }
+  },
+  "navigation": [
+    {
+      "label": "Latest results",
+      "fragment": "#jg-01"
+    },
+    {
+      "label": "How to play",
+      "fragment": "#jg-06"
+    },
+    {
+      "label": "History",
+      "fragment": "#jg-07"
+    },
+    {
+      "label": "Search a number",
+      "fragment": "#jg-08"
+    },
+    {
+      "label": "Statistics",
+      "fragment": "#jg-09"
+    },
+    {
+      "label": "Generator",
+      "fragment": "#jg-10"
+    },
+    {
+      "label": "Game details",
+      "fragment": "#jg-12"
+    }
+  ],
+  "copy": {
+    "h1": "Florida Lotto Results and Winning Numbers",
+    "intro": "Find the latest Florida Lotto winning numbers, search past drawings for a set of six numbers, explore the recorded history and read how the game works.",
+    "jg01Heading": "Latest Florida Lotto results",
+    "jg02Heading": "Play Lotto in Florida",
+    "jg02Body": "Choose six numbers from 1 through 53. Order does not matter — a ticket matches on the set of numbers.",
+    "jg03Heading": "Check your Lotto numbers",
+    "jg03Intro": "A ticket checker for this game needs its published prize table, which has not been verified yet.",
+    "jg04Heading": "Ask LotteryCorner about Lotto",
+    "jg04Intro": "Ask about the latest drawing, how Lotto works, the schedule, or the statistics shown on this page.",
+    "jg05Heading": "Lotto drawings",
+    "jg05Intro": "This game has one drawing per draw day.",
+    "jg06Heading": "How to play Florida Lotto",
+    "jg06Intro": "Choose six different numbers from 1 through 53, or take a random valid set. Order does not matter.",
+    "jg06PayoutsHeading": "Lotto prizes and odds",
+    "jg07Heading": "Florida Lotto results history",
+    "jg07Intro": "Browse past drawings. Every row keeps its own draw date and the rules that applied at the time.",
+    "jg08Heading": "Search a Lotto number in past draws",
+    "jg08Intro": "Enter a set of six numbers to find the drawings it appeared in. Choose how far back to look.",
+    "jg09Heading": "Lotto statistics",
+    "jg09Intro": "A summary of the selected history. Open the detailed view for more.",
+    "jg10Heading": "Generate Lotto numbers",
+    "jg10Intro": "Create a valid random set of six numbers for this game.",
+    "jg11Heading": "Lotto play methods explained",
+    "jg11Intro": "How common approaches to Lotto are structured, and what they do not change.",
+    "jg12Heading": "Florida Lotto game details",
+    "jg12Body": "Florida Lotto is operated by the Florida Lottery. This game has one drawing per draw day.",
+    "jg13Heading": "Claiming a Florida Lotto prize",
+    "jg13Intro": "Where and how a prize is claimed depends on the amount and the Florida Lottery's current claim rules.",
+    "jg14Heading": "What changed in recent Lotto drawings",
+    "jg14Intro": "A short summary of the selected verified history.",
+    "jg15Heading": "Lotto guides, news and analysis",
+    "jg16Heading": "Florida Lotto player discussions",
+    "jg16ColdStart": "Start a discussion about a result, how Lotto works, or its recorded history. Questions and replies are player conversation, not lottery advice.",
+    "jg17Heading": "Save Lotto and get the updates you choose",
+    "jg17SignedOut": "Sign in to keep alerts, follows and saved number sets on your LotteryCorner account, so they work on every device you use.",
+    "jg18Heading": "About these Lotto results and tools",
+    "jg18Primary": "",
+    "localPurpose": "This page covers Florida Lotto: the drawing, the rules that apply in Florida, and how a Florida prize is claimed."
+  },
+  "aiPrompts": [
+    "Explain the latest result",
+    "How does Lotto work?",
+    "When is the next drawing?",
+    "Show me where to find a past draw"
+  ],
+  "guides": [
+    "How to play Lotto"
+  ],
+  "methodology": [
+    "How results are collected",
+    "How corrections are handled",
+    "Statistics methodology",
+    "AI explanation policy"
+  ],
+  "methods": [
+    {
+      "key": "coverage",
+      "title": "What buying more entries covers",
+      "summary": "Each Lotto entry is compared with the drawing on its own.",
+      "limitation": "More entries is more chances at the published odds. It does not change how the drawing is conducted."
+    },
+    {
+      "key": "budget",
+      "title": "Setting a fixed entertainment budget",
+      "summary": "Deciding an amount before you play, and treating it as the cost of entertainment, keeps play in proportion.",
+      "limitation": "No budget or number of entries changes the outcome of a drawing."
+    }
+  ],
+  "localFeatures": [
+    {
+      "key": "drawSchedule",
+      "label": "Drawings",
+      "sourceKey": "drawSchedule"
+    },
+    {
+      "key": "minimumAge",
+      "label": "Minimum age",
+      "sourceKey": "minimumPurchaseAge"
+    }
+  ],
+  "community": [
+    {
+      "key": "how-you-play",
+      "title": "How do you pick your Lotto numbers?",
+      "excerpt": "Tell other Florida players how you choose.",
+      "tags": [
+        "Discussion starter",
+        "Lotto"
+      ],
+      "actionLabel": "Start this discussion"
+    }
+  ],
+  "destinations": {
+    "allStateResults": {
+      "kind": "route",
+      "href": "/fl",
+      "label": "All Florida results"
+    },
+    "explainResult": {
+      "kind": "inPage",
+      "fragment": "#jg-04",
+      "label": "Explain this result"
+    },
+    "resultHistory": {
+      "kind": "inPage",
+      "fragment": "#jg-07",
+      "label": "View result history"
+    },
+    "generator": {
+      "kind": "inPage",
+      "fragment": "#jg-10",
+      "label": "Generate numbers"
+    },
+    "claim": {
+      "kind": "inPage",
+      "fragment": "#jg-13",
+      "label": "How to claim"
+    },
+    "sources": {
+      "kind": "inPage",
+      "fragment": "#jg-18",
+      "label": "Sources and methodology"
+    }
+  },
+  "trust": {
+    "summary": "LotteryCorner organizes Florida Lotto results by drawing, date and rule era. Results come from the Florida Lottery results feed; game structure comes from the governed result-format registry.",
+    "independence": "LotteryCorner is an independent lottery information service and is not affiliated with or endorsed by the Florida Lottery."
+  }
+}

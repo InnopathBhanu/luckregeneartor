@@ -1,0 +1,723 @@
+{
+  "schemaVersion": "1.0",
+  "game": {
+    "stateCode": "fl",
+    "stateName": "Florida",
+    "gameSlug": "pick-3",
+    "gameId": 332,
+    "gameLabel": "Pick 3",
+    "mode": "JG-M2",
+    "visualIdentity": "fl-pick-3",
+    "isMultiState": false,
+    "timezoneLabel": "ET",
+    "familyId": "pick-3",
+    "ruleGameKey": "pick-3"
+  },
+  "preview": {
+    "enabled": true
+  },
+  "capabilities": {
+    "hasSharedAi": true,
+    "hasBuyNowEntry": true,
+    "hasChecker": true,
+    "hasHistory": true,
+    "hasNumberHistory": true,
+    "hasStatistics": true,
+    "hasGenerator": true,
+    "hasMethods": true,
+    "hasCommunityStarters": true,
+    "hasAlerts": true,
+    "hasGlobalTools": false,
+    "hasFollowOffering": false
+  },
+  "seo": {
+    "canonicalPath": "/fl/pick-3",
+    "title": "Florida Pick 3 Results, Winning Numbers, Payouts and Tools | LotteryCorner",
+    "description": "See Florida Pick 3 Midday and Evening results, check your numbers, explore payouts and history, generate number sets, and learn how Pick 3 works.",
+    "breadcrumbLabel": "Pick 3",
+    "openGraph": {
+      "type": "website",
+      "title": "Florida Pick 3 Results, Winning Numbers and Payouts",
+      "description": "Florida Pick 3 Midday and Evening results, a rule-aware number checker, payouts, history, statistics and a number generator.",
+      "imageKey": null
+    }
+  },
+  "navigation": [
+    {
+      "label": "Latest results",
+      "fragment": "#jg-01"
+    },
+    {
+      "label": "Check numbers",
+      "fragment": "#jg-03"
+    },
+    {
+      "label": "How to play",
+      "fragment": "#jg-06"
+    },
+    {
+      "label": "History",
+      "fragment": "#jg-07"
+    },
+    {
+      "label": "Statistics",
+      "fragment": "#jg-09"
+    },
+    {
+      "label": "Generator",
+      "fragment": "#jg-10"
+    },
+    {
+      "label": "Payouts",
+      "fragment": "#jg-06-payouts"
+    },
+    {
+      "label": "News and guides",
+      "fragment": "#jg-15"
+    }
+  ],
+  "copy": {
+    "h1": "Florida Pick 3 Results, Winning Numbers and Payouts",
+    "intro": "Find the latest Florida Pick 3 Midday and Evening winning numbers in one place. Check a set of numbers, compare past draws, understand Straight and Box plays, explore statistics and generate a valid random set for a future drawing.",
+    "jg01Heading": "Latest Florida Pick 3 results",
+    "jg02Heading": "Play Pick 3 in Florida",
+    "jg02Body": "Choose three digits from 0 through 9, select a play type and choose the drawing you want to enter. Midday and Evening are separate drawings on the same Pick 3 ticket experience.",
+    "jg03Heading": "Check your Pick 3 numbers",
+    "jg03Intro": "Enter the three digits from your ticket, then choose the drawing, play type, wager and FIREBALL option. The checker compares the ticket with the rules that applied to that drawing.",
+    "jg04Heading": "Ask LotteryCorner about Pick 3",
+    "jg04Intro": "Ask about the latest drawings, play types, payouts, FIREBALL, history or the statistics shown on this page.",
+    "jg05Heading": "Today's Pick 3 drawings",
+    "jg05Intro": "Midday and Evening are separate drawings. Each keeps its own result, status and next scheduled time.",
+    "jg06Heading": "How to play Florida Pick 3",
+    "jg06Intro": "Pick 3 uses three digits, one for each position. You can choose the digits yourself or generate a random valid set. Your play type determines whether order matters.",
+    "jg06PayoutsHeading": "Pick 3 prizes and odds",
+    "jg07Heading": "Florida Pick 3 results history",
+    "jg07Intro": "Browse Midday and Evening results together or filter to one drawing. Every row keeps the draw date and rule era that applied at the time.",
+    "jg08Heading": "Search a Pick 3 number in past draws",
+    "jg08Intro": "Enter a three-digit number to find the drawings it appeared in. Choose how far back to look, which drawing to search, and whether the order has to match.",
+    "jg09Heading": "Pick 3 statistics",
+    "jg09Intro": "A summary of the selected history. Open the detailed view for positional frequency, pairs and gaps.",
+    "jg10Heading": "Generate Pick 3 numbers",
+    "jg10Intro": "Create a valid random three-digit set for Midday or Evening. You can keep the first set or generate another.",
+    "jg11Heading": "Pick 3 play methods explained",
+    "jg11Intro": "Learn how common Pick 3 play methods are structured, what they cost and what they do not change.",
+    "jg12Heading": "Florida Pick 3 game details",
+    "jg12Body": "Florida Pick 3 offers separate Midday and Evening drawings. Choose the drawing and play type on the ticket; each drawing is checked independently.",
+    "jg13Heading": "Claiming a Florida Pick 3 prize",
+    "jg13Intro": "Where and how a prize is claimed depends on the amount and the Florida Lottery's current claim rules.",
+    "jg14Heading": "What changed in recent Pick 3 drawings",
+    "jg14Intro": "A short summary of the selected verified history.",
+    "jg15Heading": "Pick 3 guides, news and analysis",
+    "jg16Heading": "Florida Pick 3 player discussions",
+    "jg16ColdStart": "Start a discussion about a result, play type, checker explanation or Pick 3 history. Questions and replies are player conversation, not lottery advice.",
+    "jg17Heading": "Save Pick 3 and get the updates you choose",
+    "jg17SignedOut": "Sign in to keep alerts, follows and saved number sets on your LotteryCorner account, so they work on every device you use.",
+    "jg18Heading": "About these Pick 3 results and tools",
+    "jg18Primary": "LotteryCorner organizes Florida Pick 3 results by drawing, date and rule era. Checkers and statistics use deterministic calculations; AI explains those results and helps route questions to the right tool.",
+    "localPurpose": "This page covers Florida Pick 3: both daily drawings, the rules that apply in Florida, and how a Florida prize is claimed.",
+    "jg15GuidesHeading": "Pick 3 guides",
+    "jg15GuidesIntro": "How the play types work, what each one costs, and how FIREBALL changes a ticket.",
+    "jg15NewsHeading": "Pick 3 news and rule updates",
+    "jg15NewsIntro": "Historical changes to the game's rules, play types and schedule, each with the date it took effect.",
+    "jg15BlogsHeading": "Pick 3 analysis",
+    "jg15BlogsIntro": "How to read the statistics on this page, and what two drawings a day means when you check a ticket."
+  },
+  "aiPrompts": [
+    "Explain the latest Midday result",
+    "What is the difference between Straight and Box?",
+    "How does FIREBALL affect a ticket?",
+    "Compare Midday and Evening history",
+    "Show me where to find a past draw"
+  ],
+  "editorial": [
+    {
+      "slug": "straight-box-and-combo-explained",
+      "kind": "Guides",
+      "title": "Which Pick 3 play type should you choose?",
+      "summary": "What each play type costs, what it pays, and what you give up to win more often.",
+      "reviewedDate": "2026-08-04",
+      "body": [
+        {
+          "kind": "p",
+          "text": "Pick 3 asks for three digits. The digits are the easy half. The play type is the half that decides what you actually win, and it is the one most tickets get chosen by habit rather than by comparison."
+        },
+        {
+          "kind": "h",
+          "text": "The trade every play type makes"
+        },
+        {
+          "kind": "p",
+          "text": "Every option below is the same trade in a different proportion: win less often for more money, or win more often for less. Nothing on this list is a better bet than anything else — they are different shapes of the same wager."
+        },
+        {
+          "kind": "h",
+          "text": "Straight — one order, the biggest prize"
+        },
+        {
+          "kind": "p",
+          "text": "Your digits must match in the exact order drawn. It pays $250.00 on a 50-cent play or $500.00 on a $1.00 play, at 1 in 1,000. If you have a number you always play in the same order, this is the play type that rewards it."
+        },
+        {
+          "kind": "h",
+          "text": "Box — any order, a smaller prize"
+        },
+        {
+          "kind": "p",
+          "text": "Your digits match in any order. It wins several times as often as a Straight play and pays proportionally less. Exactly how much less depends on whether one of your digits repeats, which is worth understanding before you pick — the companion guide covers it."
+        },
+        {
+          "kind": "h",
+          "text": "Straight/Box — a dollar split between the two"
+        },
+        {
+          "kind": "p",
+          "text": "A $1.00 play that is really two 50-cent plays, one of each. It pays the larger amount if the order is exact and the box amount otherwise, so a near miss on order still returns something. On three different digits that is $290.00 or $40.00."
+        },
+        {
+          "kind": "h",
+          "text": "Combo — every order, at the Straight price"
+        },
+        {
+          "kind": "p",
+          "text": "A Combo buys each possible order as its own Straight play. You are paid at the Straight level whichever order comes up, and you pay for the coverage: six orders at $1.00 each is a $6.00 ticket for a $500.00 prize."
+        },
+        {
+          "kind": "h",
+          "text": "Front Pair and Back Pair — two digits instead of three"
+        },
+        {
+          "kind": "p",
+          "text": "A pair play uses only the first two or the last two digits and ignores the third position. Short odds at 1 in 100, and a correspondingly small prize: $25.00 or $50.00."
+        },
+        {
+          "kind": "h",
+          "text": "A practical way to choose"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "Care about the order? Straight, or Straight/Box if you want a consolation.",
+            "Care about the digits, not the order? Box, or Combo if you would rather be paid at the Straight rate.",
+            "Want to win more often for less? A pair play.",
+            "Only ever play one number? Compare Straight against Combo on your specific digits — the ticket price differs a lot."
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "Whichever you pick, each drawing is independent of the ones before it, and no play type changes what the machine produces."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PICK 3 game rules (Florida Lottery, 53ER24-56)",
+          "url": "https://floridalottery.com/content/dam/flalottery-web/files/game-reports/08-pick/pick3-game-rules.pdf",
+          "accessed": "2026-08-04"
+        }
+      ]
+    },
+    {
+      "slug": "how-repeated-digits-change-box-combinations",
+      "kind": "Guides",
+      "title": "Why a repeated digit changes what your ticket pays",
+      "summary": "Why 1-1-2 and 1-2-3 cost the same but pay differently, and why 7-7-7 can only be played one way.",
+      "reviewedDate": "2026-08-04",
+      "body": [
+        {
+          "kind": "p",
+          "text": "Two Pick 3 numbers that look equally ordinary can pay very different amounts on the same play type. It is not a quirk of the prize table — it follows from how many ways your own digits can be arranged."
+        },
+        {
+          "kind": "h",
+          "text": "Count the arrangements first"
+        },
+        {
+          "kind": "p",
+          "text": "Three different digits can come up six ways. 1-2-3 also covers 1-3-2, 2-1-3, 2-3-1, 3-1-2 and 3-2-1. A number with two the same has only three: 1-1-2 covers 1-1-2, 1-2-1 and 2-1-1. Three of a kind has exactly one."
+        },
+        {
+          "kind": "h",
+          "text": "What that does to a Box prize"
+        },
+        {
+          "kind": "p",
+          "text": "A Box play wins on any of those arrangements, so a number with six of them wins about twice as often as one with three — and pays about half as much when it does."
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "All three digits different (a 6-way box): $40.00 on a 50-cent play, $80.00 on a $1.00 play, 1 in 166.67.",
+            "Exactly two digits the same (a 3-way box): $80.00 or $160.00, 1 in 333.33.",
+            "All three the same: no Box play exists."
+          ]
+        },
+        {
+          "kind": "h",
+          "text": "Why a triple is Straight-only"
+        },
+        {
+          "kind": "p",
+          "text": "Choosing a Box play is choosing to accept any order other than the one you wrote. 7-7-7 has no other order, so there is nothing to buy. The same applies to Straight/Box and Combo, which are both built from a box component. A triple is a Straight play or nothing."
+        },
+        {
+          "kind": "h",
+          "text": "Where it shows up on the ticket price"
+        },
+        {
+          "kind": "p",
+          "text": "Combo is the clearest case: it buys every arrangement separately, so the same play amount costs $3.00 on a number with three arrangements and $6.00 on one with six. Same prize, different price, decided entirely by whether a digit repeats."
+        },
+        {
+          "kind": "h",
+          "text": "What it does not mean"
+        },
+        {
+          "kind": "p",
+          "text": "How many ways your digits can be arranged is a fact about your ticket. It says nothing about which digits the next drawing will produce, and every valid combination has the same chance in any single drawing."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PICK 3 game rules (Florida Lottery, 53ER24-56)",
+          "url": "https://floridalottery.com/content/dam/flalottery-web/files/game-reports/08-pick/pick3-game-rules.pdf",
+          "accessed": "2026-08-04"
+        }
+      ]
+    },
+    {
+      "slug": "how-fireball-works-on-a-pick-3-ticket",
+      "kind": "Guides",
+      "title": "How FIREBALL works on a Pick 3 ticket",
+      "summary": "The replacement mechanic, the three combinations it creates, and why its prize is separate.",
+      "reviewedDate": "2026-08-04",
+      "body": [
+        {
+          "kind": "p",
+          "text": "FIREBALL is an add-on, not a play type. It cannot be bought on its own, it doubles the cost of every panel on the ticket, and it is available with both the 50-cent and the $1.00 play."
+        },
+        {
+          "kind": "h",
+          "text": "It replaces a drawn digit — it is not a fourth digit"
+        },
+        {
+          "kind": "p",
+          "text": "A FIREBALL number is drawn alongside the three Pick 3 digits. On a ticket that includes FIREBALL, that number may take the place of any one of the three drawn digits. Because there are three positions it could replace, it produces three additional winning combinations for the same drawing."
+        },
+        {
+          "kind": "p",
+          "text": "If the drawing produced 3-7-8 and the FIREBALL number was 9, the three FIREBALL combinations are 9-7-8, 3-9-8 and 3-7-9. Your ticket is then compared against each of them under its own play type."
+        },
+        {
+          "kind": "h",
+          "text": "A FIREBALL prize is separate from a base prize"
+        },
+        {
+          "kind": "p",
+          "text": "You can win with FIREBALL without winning the base game, and you can win both on the same ticket. The two are settled independently, and the FIREBALL prizes are their own smaller schedule: a Straight play pays $100.00 at 50 cents or $200.00 at $1.00, a 3-way box $34.00 or $68.00, a 6-way box $17.00 or $34.00, and a pair play $10.00 or $20.00."
+        },
+        {
+          "kind": "h",
+          "text": "More than one FIREBALL win is possible"
+        },
+        {
+          "kind": "p",
+          "text": "Because the created combinations are allowed to duplicate each other, a single ticket can collect more than one FIREBALL prize on the same drawing. The Florida Lottery publishes a maximum per play type — three for a Straight play, two for a 6-way box, four for a 3-way Straight/Box."
+        },
+        {
+          "kind": "h",
+          "text": "What it changes and what it does not"
+        },
+        {
+          "kind": "p",
+          "text": "FIREBALL adds combinations to a drawing that has already happened, for a ticket that already exists. It does not alter the drawing, and it doubles the ticket price to do it."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PICK 3 game rules (Florida Lottery, 53ER24-56)",
+          "url": "https://floridalottery.com/content/dam/flalottery-web/files/game-reports/08-pick/pick3-game-rules.pdf",
+          "accessed": "2026-08-04"
+        },
+        {
+          "title": "Pick 3 (Florida Lottery)",
+          "url": "https://floridalottery.com/games/draw-games/pick-3",
+          "accessed": "2026-08-04"
+        }
+      ]
+    },
+    {
+      "slug": "fireball-replaces-1-off",
+      "kind": "News",
+      "title": "Rule change: fIREBALL replaced the 1-OFF play style across the PICK daily games",
+      "summary": "The add-on launched and 1-OFF ended on the same day. Tickets and payout tables from before that date follow different rules. This is a historical rule update, not a current announcement.",
+      "effectiveDate": "2021-01-18",
+      "body": [
+        {
+          "kind": "p",
+          "text": "On 18 January 2021 the Florida Lottery introduced the FIREBALL add-on across all of its PICK daily games, and ended the 1-OFF play style on the same day."
+        },
+        {
+          "kind": "p",
+          "text": "The Florida Lottery's Pick 3 fact sheet records both halves of the change in a single entry, which is what makes the date unambiguous: FIREBALL was introduced and 1-OFF ended together."
+        },
+        {
+          "kind": "h",
+          "text": "Why it still matters years later"
+        },
+        {
+          "kind": "p",
+          "text": "It means any Pick 3 payout table can be dated by what it contains. A table with 1-OFF rows and no FIREBALL rows describes the game as it was before 18 January 2021 — not a slightly out-of-date version of the current game, but a different set of play types."
+        },
+        {
+          "kind": "p",
+          "text": "1-OFF, introduced on 16 March 2015, paid on tickets whose digits were one away from a drawn digit. It cannot be bought today, and it does not appear anywhere in the current game rules."
+        },
+        {
+          "kind": "h",
+          "text": "How LotteryCorner handles it"
+        },
+        {
+          "kind": "p",
+          "text": "Results from 16 March 2015 to 17 January 2021 are checked against the rules that applied then, including 1-OFF. Results from 18 January 2021 onwards are checked against the current rules, including FIREBALL. The rule era in force is stated alongside every comparison."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PICK 3 fact sheet (Florida Lottery)",
+          "url": "https://floridalottery.com/content/dam/flalottery-web/files/fact-sheets/pick3-fact-sheet.pdf",
+          "accessed": "2026-08-04"
+        },
+        {
+          "title": "PICK 3 game rules (Florida Lottery, 53ER24-56)",
+          "url": "https://floridalottery.com/content/dam/flalottery-web/files/game-reports/08-pick/pick3-game-rules.pdf",
+          "accessed": "2026-08-04"
+        }
+      ]
+    },
+    {
+      "slug": "evening-draw-time-moved-to-9-45-pm",
+      "kind": "News",
+      "title": "Schedule change: the Pick 3 evening draw time moved to 9:45 p.m. ET",
+      "summary": "The evening drawing shifted from 7:57 p.m. Production data exported before the change still carries the old time. This is a historical rule update, not a current announcement.",
+      "effectiveDate": "2018-08-05",
+      "body": [
+        {
+          "kind": "p",
+          "text": "On 5 August 2018 the Florida Lottery moved the Pick 3 evening drawing from 7:57 p.m. to 9:45 p.m. Eastern Time. The midday drawing, added in May 2008, remained at 1:30 p.m. ET."
+        },
+        {
+          "kind": "h",
+          "text": "Sales cutoffs follow the draw time"
+        },
+        {
+          "kind": "p",
+          "text": "Tickets for each drawing may be bought up to 11 minutes before it — 1:19 p.m. ET for the midday drawing and 9:34 p.m. ET for the evening drawing."
+        },
+        {
+          "kind": "h",
+          "text": "Why the old time still turns up"
+        },
+        {
+          "kind": "p",
+          "text": "Data exported from older systems can still carry 7:57 p.m. for the evening drawing. Where a stored value and the operator's published time disagree, LotteryCorner treats the operator's published time as correct and records the discrepancy rather than quietly overwriting it."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PICK 3 fact sheet (Florida Lottery)",
+          "url": "https://floridalottery.com/content/dam/flalottery-web/files/fact-sheets/pick3-fact-sheet.pdf",
+          "accessed": "2026-08-04"
+        },
+        {
+          "title": "Pick 3 (Florida Lottery)",
+          "url": "https://floridalottery.com/games/draw-games/pick-3",
+          "accessed": "2026-08-04"
+        }
+      ]
+    },
+    {
+      "slug": "cash-3-renamed-pick-3",
+      "kind": "News",
+      "title": "Name change: cASH 3 was renamed PICK 3",
+      "summary": "The rename completed the PICK daily games family. Older results and archives may still use the previous name. This is a historical rule update, not a current announcement.",
+      "effectiveDate": "2016-08-01",
+      "body": [
+        {
+          "kind": "p",
+          "text": "On 1 August 2016 the Florida Lottery renamed CASH 3 to PICK 3, completing its family of PICK daily games. CASH 3 had been on sale since 29 April 1988 and was one of the first Florida draw games."
+        },
+        {
+          "kind": "h",
+          "text": "The game did not change with the name"
+        },
+        {
+          "kind": "p",
+          "text": "The rename did not alter the three-digit format or the play types. Front Pair and Back Pair had been added in November 1989 and Combo in March 1992; all of them carried over."
+        },
+        {
+          "kind": "h",
+          "text": "Where the old name still appears"
+        },
+        {
+          "kind": "p",
+          "text": "Historical archives, older printed material and some stored data still refer to CASH 3. Results drawn under the previous name are the same game's history and are kept rather than discarded."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PICK 3 fact sheet (Florida Lottery)",
+          "url": "https://floridalottery.com/content/dam/flalottery-web/files/fact-sheets/pick3-fact-sheet.pdf",
+          "accessed": "2026-08-04"
+        }
+      ]
+    },
+    {
+      "slug": "reading-digit-frequency-without-forecasting",
+      "kind": "Blogs",
+      "title": "How to read Pick 3 digit frequency without fooling yourself",
+      "summary": "What a frequency table can honestly tell you, and the three ways it is usually misread.",
+      "reviewedDate": "2026-08-04",
+      "body": [
+        {
+          "kind": "p",
+          "text": "A digit frequency table is genuinely useful and very easy to misread. The difference is entirely in what you think it is a statement about."
+        },
+        {
+          "kind": "h",
+          "text": "It describes a period, not a machine"
+        },
+        {
+          "kind": "p",
+          "text": "A frequency count says how often a digit appeared over a particular stretch of drawings. Change the stretch and the counts change. That is not the data being unreliable — it is what the measurement is. A count without the period attached does not mean anything, which is why every figure in the statistics section says how far back it looked."
+        },
+        {
+          "kind": "h",
+          "text": "Misreading one: an uneven table looks like a signal"
+        },
+        {
+          "kind": "p",
+          "text": "Over any finite run of drawings, a perfectly even spread would be the surprising result. Ten digits across a few dozen drawings will always show peaks and troughs, and they move as the period moves. An uneven table is the normal appearance of a fair game."
+        },
+        {
+          "kind": "h",
+          "text": "Misreading two: the gap looks like a countdown"
+        },
+        {
+          "kind": "p",
+          "text": "The most tempting figure is how many drawings have passed since a digit last appeared. It is a real, checkable measurement of the past. It is not a forecast. A drawing has no memory, and a digit absent for thirty drawings is exactly as likely as any other in the next one."
+        },
+        {
+          "kind": "h",
+          "text": "Misreading three: two figures from different periods"
+        },
+        {
+          "kind": "p",
+          "text": "Comparing a count taken over 60 drawings with one taken over 10 will always favour the longer period, and it is easy to do by accident. Check that both figures came from the same range before drawing any conclusion from the difference."
+        },
+        {
+          "kind": "h",
+          "text": "What it is actually good for"
+        },
+        {
+          "kind": "p",
+          "text": "Understanding the shape of the game. How often a repeated digit turns up, how the three digits tend to add up, how one drawing's recorded history compares with the other's. Those are real properties of what has been drawn, and they are worth knowing. None of them tells you what to play."
+        }
+      ]
+    },
+    {
+      "slug": "midday-and-evening-are-two-different-games",
+      "kind": "Blogs",
+      "title": "Midday and Evening are two different games",
+      "summary": "Why the two Pick 3 drawings often show different dates, and what that means when you check a ticket.",
+      "reviewedDate": "2026-08-04",
+      "body": [
+        {
+          "kind": "p",
+          "text": "Florida draws Pick 3 twice a day, and the two drawings are not two halves of one game. They are separate drawings with separate results, and treating them as one is the most common way a Pick 3 ticket gets checked against the wrong numbers."
+        },
+        {
+          "kind": "h",
+          "text": "Why the dates on this page often differ"
+        },
+        {
+          "kind": "p",
+          "text": "Between the two drawings, one has a result for today and the other's most recent result is yesterday's. Both are correct. If you arrive in the afternoon and see Midday dated today with Evening dated yesterday, nothing is out of date — the evening drawing has not happened yet."
+        },
+        {
+          "kind": "h",
+          "text": "What that means for your ticket"
+        },
+        {
+          "kind": "p",
+          "text": "Your ticket names which drawing it was bought for, and only that drawing's numbers can win it. A midday ticket compared against an evening result will look like a loss when it was a win, or the reverse. It is worth checking the drawing on the ticket before checking the numbers."
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "Midday is drawn at 1:30 p.m. ET; tickets close 11 minutes earlier, at 1:19 p.m.",
+            "Evening is drawn at 9:45 p.m. ET; tickets close at 9:34 p.m.",
+            "An Advance Play ticket can cover midday, evening, or both — the ticket says which."
+          ]
+        },
+        {
+          "kind": "h",
+          "text": "Why the rows on this page never swap places"
+        },
+        {
+          "kind": "p",
+          "text": "Midday is always shown above Evening, whichever drew most recently. If the order changed with the time of day you would have to read the labels every visit to find the row you wanted, and that is exactly the moment a mistake gets made."
+        },
+        {
+          "kind": "h",
+          "text": "If you play both"
+        },
+        {
+          "kind": "p",
+          "text": "Two drawings a day is two independent chances, not a better one. The evening drawing has no knowledge of the midday result, and a digit that came up at lunchtime is neither more nor less likely at night."
+        }
+      ]
+    }
+  ],
+  "guides": [
+    "Straight, Box and Combo explained",
+    "How repeated digits change Box combinations",
+    "How FIREBALL works on a Pick 3 ticket"
+  ],
+  "methodology": [
+    "How results are collected",
+    "How corrections are handled",
+    "Statistics methodology",
+    "AI explanation policy"
+  ],
+  "methods": [
+    {
+      "key": "straight-vs-box",
+      "title": "Straight versus Box: order and coverage",
+      "summary": "A Straight play wins on one exact order. A Box play covers every order of the same digits, and pays less because it covers more.",
+      "limitation": "Covering more orders does not change how the drawing is conducted. Each drawing is independent."
+    },
+    {
+      "key": "wheel-coverage",
+      "title": "What a wheel or combination set actually covers",
+      "summary": "A Combo buys every unique order of your digits as separate Straight plays, so the ticket costs more in proportion to the orders it covers.",
+      "limitation": "The cost rises with the coverage. A wider set of plays is not a discount on the odds of any single play."
+    },
+    {
+      "key": "repeated-digits",
+      "title": "Playing repeated digits",
+      "summary": "A number with two identical digits has three orders instead of six, which is why it is a 3-way rather than a 6-way play and pays a different amount.",
+      "limitation": "The number of orders is arithmetic about your ticket, not a statement about which digits will be drawn."
+    },
+    {
+      "key": "pairs",
+      "title": "Using Front Pair and Back Pair",
+      "summary": "A pair play asks for two digits in exact order and ignores the third position entirely, at shorter odds and a smaller prize.",
+      "limitation": "A shorter-odds play is a smaller prize, not a stronger position."
+    },
+    {
+      "key": "budget",
+      "title": "Setting a fixed entertainment budget",
+      "summary": "Deciding an amount before you play, and treating it as the cost of entertainment, keeps play types and coverage in proportion.",
+      "limitation": "No budget, wheel or play type changes the outcome of a drawing."
+    }
+  ],
+  "localFeatures": [
+    {
+      "key": "drawSchedule",
+      "label": "Drawings",
+      "sourceKey": "drawSchedule"
+    },
+    {
+      "key": "drawCutoffs",
+      "label": "Ticket sales close",
+      "sourceKey": "drawCutoffs"
+    },
+    {
+      "key": "minimumAge",
+      "label": "Minimum age",
+      "sourceKey": "minimumPurchaseAge"
+    }
+  ],
+  "community": [
+    {
+      "key": "track-separately",
+      "title": "Do you track Midday and Evening results separately?",
+      "excerpt": "Two drawings a day, two records. Tell other Florida players how you keep them apart.",
+      "tags": [
+        "Discussion starter",
+        "Pick 3"
+      ],
+      "actionLabel": "Start this discussion"
+    },
+    {
+      "key": "hardest-play-type",
+      "title": "Which Pick 3 play type is hardest to understand?",
+      "excerpt": "Straight/Box, Combo and the pair plays all price differently. Which one needed explaining twice?",
+      "tags": [
+        "Discussion starter",
+        "Pick 3"
+      ],
+      "actionLabel": "Start this discussion"
+    },
+    {
+      "key": "checker-explanation",
+      "title": "What should a result checker explain after a match?",
+      "excerpt": "Tell us what a checker should say once it has compared your ticket with a drawing.",
+      "tags": [
+        "Discussion starter",
+        "Tools"
+      ],
+      "actionLabel": "Start this discussion"
+    }
+  ],
+  "destinations": {
+    "allStateResults": {
+      "kind": "route",
+      "href": "/fl",
+      "label": "All Florida results"
+    },
+    "checkNumbers": {
+      "kind": "inPage",
+      "fragment": "#jg-03",
+      "label": "Check these numbers"
+    },
+    "explainResult": {
+      "kind": "inPage",
+      "fragment": "#jg-04",
+      "label": "Explain this result"
+    },
+    "resultHistory": {
+      "kind": "inPage",
+      "fragment": "#jg-07",
+      "label": "View result history"
+    },
+    "statistics": {
+      "kind": "inPage",
+      "fragment": "#jg-09",
+      "label": "Pick 3 statistics"
+    },
+    "generator": {
+      "kind": "inPage",
+      "fragment": "#jg-10",
+      "label": "Generate numbers"
+    },
+    "payouts": {
+      "kind": "inPage",
+      "fragment": "#jg-06-payouts",
+      "label": "Prizes and odds"
+    },
+    "claim": {
+      "kind": "inPage",
+      "fragment": "#jg-13",
+      "label": "How to claim"
+    },
+    "sources": {
+      "kind": "inPage",
+      "fragment": "#jg-18",
+      "label": "Sources and methodology"
+    }
+  },
+  "trust": {
+    "summary": "LotteryCorner organizes Florida Pick 3 results by drawing, date and rule era. Results come from the Florida Lottery results feed; play types, prizes and odds come from the Florida Lottery's published Pick 3 game rules.",
+    "independence": "LotteryCorner is an independent lottery information service and is not affiliated with or endorsed by the Florida Lottery."
+  }
+}

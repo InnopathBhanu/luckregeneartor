@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0",
+  "game": {
+    "stateCode": "fl",
+    "stateName": "Florida",
+    "gameSlug": "jackpot-triple-play",
+    "gameId": 582,
+    "gameLabel": "Jackpot Triple Play",
+    "mode": "JG-M2",
+    "visualIdentity": null,
+    "isMultiState": false,
+    "timezoneLabel": "ET",
+    "familyId": "jackpot-triple-play",
+    "ruleGameKey": "jackpot-triple-play"
+  },
+  "preview": {
+    "enabled": true
+  },
+  "capabilities": {
+    "hasSharedAi": true,
+    "hasBuyNowEntry": true,
+    "hasChecker": false,
+    "hasHistory": true,
+    "hasNumberHistory": true,
+    "hasStatistics": true,
+    "hasGenerator": true,
+    "hasMethods": true,
+    "hasCommunityStarters": true,
+    "hasAlerts": true,
+    "hasGlobalTools": false,
+    "hasFollowOffering": false
+  },
+  "seo": {
+    "canonicalPath": "/fl/jackpot-triple-play",
+    "title": "Florida Jackpot Triple Play Results, Winning Numbers and Game Details | LotteryCorner",
+    "description": "Florida Jackpot Triple Play results and winning numbers, how the three sets of numbers work, game details, statistics and how to claim a Florida prize.",
+    "breadcrumbLabel": "Jackpot Triple Play",
+    "openGraph": {
+      "type": "website",
+      "title": "Florida Jackpot Triple Play Results and Winning Numbers",
+      "description": "Florida Jackpot Triple Play results, game details, history, statistics and Florida claim information.",
+      "imageKey": null
+    }
+  },
+  "navigation": [
+    {
+      "label": "Latest results",
+      "fragment": "#jg-01"
+    },
+    {
+      "label": "How to play",
+      "fragment": "#jg-06"
+    },
+    {
+      "label": "History",
+      "fragment": "#jg-07"
+    },
+    {
+      "label": "Statistics",
+      "fragment": "#jg-09"
+    },
+    {
+      "label": "Generator",
+      "fragment": "#jg-10"
+    },
+    {
+      "label": "Game details",
+      "fragment": "#jg-12"
+    }
+  ],
+  "copy": {
+    "h1": "Florida Jackpot Triple Play Results and Winning Numbers",
+    "intro": "Find the latest Florida Jackpot Triple Play winning numbers, see how the three sets of numbers on a ticket work, browse past drawings and read how a Florida prize is claimed.",
+    "jg01Heading": "Latest Florida Jackpot Triple Play result",
+    "jg02Heading": "Play Jackpot Triple Play in Florida",
+    "jg02Body": "Choose six numbers from 1 through 46. Every ticket plays three separate sets of six numbers for the same drawing.",
+    "jg03Heading": "Check your Jackpot Triple Play numbers",
+    "jg03Intro": "A number checker for this game needs the published prize table, which has not been verified yet.",
+    "jg04Heading": "Ask LotteryCorner about Jackpot Triple Play",
+    "jg04Intro": "Ask about the latest drawing, how the three sets of numbers work, the game's schedule or the statistics shown on this page.",
+    "jg05Heading": "Jackpot Triple Play drawings",
+    "jg05Intro": "This game has one drawing per draw day. The schedule and next drawing are shown below.",
+    "jg06Heading": "How to play Florida Jackpot Triple Play",
+    "jg06Intro": "Choose six numbers from 1 through 46, or take a random set. Each ticket carries three sets of numbers and each set is compared with the drawing.",
+    "jg06PayoutsHeading": "Jackpot Triple Play prizes and odds",
+    "jg07Heading": "Florida Jackpot Triple Play results history",
+    "jg07Intro": "Browse past drawings. Every row keeps the draw date and the rules that applied at the time.",
+    "jg08Heading": "Search a Jackpot Triple Play number in past draws",
+    "jg08Intro": "Enter a set of numbers to find the drawings they appeared in. Choose how far back to look.",
+    "jg09Heading": "Jackpot Triple Play statistics",
+    "jg09Intro": "Explore descriptive patterns in the selected history. Change the date range to update every view.",
+    "jg10Heading": "Generate Jackpot Triple Play numbers",
+    "jg10Intro": "Create a valid random set of six numbers from 1 through 46.",
+    "jg11Heading": "Jackpot Triple Play play methods explained",
+    "jg11Intro": "Learn how common approaches to a six-number game are structured and what they do not change.",
+    "jg12Heading": "Florida Jackpot Triple Play game details",
+    "jg12Body": "Jackpot Triple Play is a Florida game with one drawing per draw day and three sets of numbers on every ticket.",
+    "jg13Heading": "Claiming a Florida Jackpot Triple Play prize",
+    "jg13Intro": "Where and how a prize is claimed depends on the amount and the Florida Lottery's current claim rules.",
+    "jg14Heading": "What changed in recent Jackpot Triple Play drawings",
+    "jg14Intro": "A concise summary of changes in the selected verified history, based on the filters shown below.",
+    "jg15Heading": "Jackpot Triple Play news, guides and player stories",
+    "jg16Heading": "Florida Jackpot Triple Play player discussions",
+    "jg16ColdStart": "Start a discussion about a result, the three sets of numbers, or this game's history. Questions and replies are player conversation, not lottery advice.",
+    "jg17Heading": "Save Jackpot Triple Play and get the updates you choose",
+    "jg17SignedOut": "Sign in to keep alerts, follows and saved number sets on your LotteryCorner account, so they work on every device you use.",
+    "jg18Heading": "About these Jackpot Triple Play results and tools",
+    "jg18Primary": "LotteryCorner organizes Florida Jackpot Triple Play results by date and rule era. Statistics use deterministic calculations; AI explains those results and helps route questions to the right tool.",
+    "localPurpose": "This page covers Florida Jackpot Triple Play: the drawing, the rules that apply in Florida, and how a Florida prize is claimed."
+  },
+  "aiPrompts": [
+    "Explain the latest result",
+    "How do the three sets of numbers work?",
+    "When is the next drawing?",
+    "Show me where to find a past draw"
+  ],
+  "guides": [
+    "How three sets of numbers are compared",
+    "How Combo works on this ticket"
+  ],
+  "methodology": [
+    "How results are collected",
+    "How corrections are handled",
+    "Statistics methodology",
+    "AI explanation policy"
+  ],
+  "methods": [
+    {
+      "key": "coverage",
+      "title": "What three sets of numbers cover",
+      "summary": "Each ticket carries three separate six-number sets, and each is compared with the same drawing independently.",
+      "limitation": "Three sets are three chances at the published odds. They do not change how the drawing is conducted."
+    },
+    {
+      "key": "budget",
+      "title": "Setting a fixed entertainment budget",
+      "summary": "Deciding an amount before you play, and treating it as the cost of entertainment, keeps ticket volume in proportion.",
+      "limitation": "No budget or ticket volume changes the outcome of a drawing."
+    }
+  ],
+  "localFeatures": [
+    {
+      "key": "drawSchedule",
+      "label": "Drawings",
+      "sourceKey": "drawSchedule"
+    },
+    {
+      "key": "minimumAge",
+      "label": "Minimum age",
+      "sourceKey": "minimumPurchaseAge"
+    }
+  ],
+  "community": [
+    {
+      "key": "three-sets",
+      "title": "Do you play all three sets the same way?",
+      "excerpt": "Every ticket carries three sets of numbers. Tell other Florida players how you fill them.",
+      "tags": [
+        "Discussion starter",
+        "Jackpot Triple Play"
+      ],
+      "actionLabel": "Start this discussion"
+    }
+  ],
+  "destinations": {
+    "allStateResults": {
+      "kind": "route",
+      "href": "/fl",
+      "label": "All Florida results"
+    },
+    "explainResult": {
+      "kind": "inPage",
+      "fragment": "#jg-04",
+      "label": "Explain this result"
+    },
+    "resultHistory": {
+      "kind": "inPage",
+      "fragment": "#jg-07",
+      "label": "View result history"
+    },
+    "generator": {
+      "kind": "inPage",
+      "fragment": "#jg-10",
+      "label": "Generate numbers"
+    },
+    "claim": {
+      "kind": "inPage",
+      "fragment": "#jg-13",
+      "label": "How to claim"
+    },
+    "sources": {
+      "kind": "inPage",
+      "fragment": "#jg-18",
+      "label": "Sources and methodology"
+    }
+  },
+  "trust": {
+    "summary": "LotteryCorner organizes Florida Jackpot Triple Play results by date and rule era. Results come from the Florida Lottery results feed; game structure comes from the Florida Lottery's published game page.",
+    "independence": "LotteryCorner is an independent lottery information service and is not affiliated with or endorsed by the Florida Lottery."
+  }
+}

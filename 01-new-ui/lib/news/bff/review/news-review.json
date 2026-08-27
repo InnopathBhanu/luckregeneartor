@@ -1,0 +1,385 @@
+{
+  "_meta_note": "REVIEW CORPUS — CLAUDE.md §14. Every article is either an evergreen guide or a record of a clearly-dated historical fact evidenced in 04-sample-data. No current-news claim, no winner, no jackpot figure, no prize amount, no deadline and no real-person statement exists anywhere in this file. The author is an accountable editorial-team placeholder that says what it is. Components never import this file; it enters the application only through lib/news/bff/newsBff.ts, which asserts its shape on every read.",
+  "meta": {
+    "source": "review",
+    "disclosure": "This section is running on review content: dated historical records and evergreen guides written for interface review. No current lottery news is published here yet.",
+    "asOfIso": "2026-08-11"
+  },
+  "authors": [
+    {
+      "slug": "lotterycorner-editorial-team",
+      "name": "LotteryCorner Editorial Team",
+      "role": "Editorial team (review placeholder)",
+      "reviewStatus": "review-fixture",
+      "biography": "This is an accountable placeholder identity used while the LotteryCorner newsroom pages are reviewed. It is not a person. Articles carrying this byline are review fixtures: evergreen guides and dated historical records checked against LotteryCorner's own production-derived data files. When real reporters join, each will have their own profile with a real name, photograph and biography — this placeholder never pretends to be one of them.",
+      "photo": null,
+      "covers": [
+        "Game rule changes",
+        "Result formats",
+        "How LotteryCorner pages work"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "slug": "mega-millions-2025-matrix-change",
+      "contentType": "NEWS",
+      "newsCategory": "Game Change",
+      "articleClass": "standard-news",
+      "storyStatus": "PUBLISHED",
+      "headline": "Mega Millions moved to a 24-ball Mega Ball pool on April 8, 2025",
+      "description": "On April 8, 2025, Mega Millions changed its matrix from 5-of-70 plus a Mega Ball of 25 to 5-of-70 plus a Mega Ball of 24. Draws before and after that date are read against different formats, which matters when you check older tickets or browse archives.",
+      "bottomLine": "Bottom Line: Since the drawing of April 8, 2025, Mega Millions has drawn its Mega Ball from a pool of 24 instead of 25. The five main numbers still come from a pool of 70, and results before that date must be read against the older format.",
+      "authorSlug": "lotterycorner-editorial-team",
+      "editorName": "LotteryCorner Editorial Team",
+      "datePublishedIso": "2026-08-11",
+      "dateModifiedIso": "2026-08-11",
+      "primaryEntity": "Mega Millions",
+      "gameIds": [
+        "mega-millions"
+      ],
+      "stateCodes": [],
+      "tags": [
+        "Mega Millions"
+      ],
+      "keywords": [
+        "Mega Millions",
+        "matrix change",
+        "Mega Ball",
+        "game format",
+        "April 2025"
+      ],
+      "beforeAfterLabel": "Mega Millions matrix, before and after April 8, 2025",
+      "beforeAfter": [
+        {
+          "item": "Main numbers",
+          "before": "5 of 70",
+          "after": "5 of 70"
+        },
+        {
+          "item": "Mega Ball",
+          "before": "1 of 25",
+          "after": "1 of 24"
+        },
+        {
+          "item": "In effect",
+          "before": "October 31, 2017 – April 7, 2025",
+          "after": "From April 8, 2025"
+        }
+      ],
+      "body": [
+        "Mega Millions changed its drawing matrix with the drawing of April 8, 2025. The five main numbers are still drawn from a pool of 70, and the Mega Ball is now drawn from a pool of 24 rather than 25.",
+        "The format it replaced had been in effect since October 31, 2017: five main numbers from 70 and a Mega Ball from 25, with a separate Megaplier structure. LotteryCorner's result-format records model both eras as date-bounded formats, so a drawing is always read against the rules that were in force on its draw date.",
+        "For players, the practical effect is about reading results correctly. A ticket or an archived result from March 2025 belongs to the older format; one from May 2025 belongs to the current one. LotteryCorner's result pages apply the format that matches each drawing's date, so historical results keep their original meaning.",
+        "The change is recorded in LotteryCorner's production-derived format definitions, which carry the effective dates for both eras. Anything this article does not state — prices, odds or prize structures — is outside what those records evidence, and we do not guess at it."
+      ],
+      "aiContext": {
+        "rendered": false,
+        "suppressionReason": "07 §7 acceptance test: no AI module renders unless it adds a grounded element beyond the headline, Bottom Line or first paragraph. No model is connected in this build, so nothing can pass the test; suppression is the compliant state."
+      },
+      "whyItMatters": [
+        "A result from before April 8, 2025 is read against a 25-ball Mega Ball pool; one from after is read against 24.",
+        "Archived drawings keep the format that was in force on their draw date — the change did not rewrite history.",
+        "If a number pattern looks different across the boundary, the format change is the first thing to check."
+      ],
+      "historicalNote": "Worth Knowing: LotteryCorner's format records model Mega Millions as date-bounded eras — the 2017 format ran from October 31, 2017 through April 7, 2025, and the current format applies from April 8, 2025.",
+      "primaryAction": {
+        "label": "Use Tax Calculator",
+        "href": "/tools/tax-calculator?game=mega-millions"
+      },
+      "discussionQuestion": "When a game changes its matrix, what helps you most on a results page — a visible note on the boundary date, or a format label on every drawing?",
+      "canonicalDiscussionThreadId": null,
+      "relatedNextActions": [
+        {
+          "label": "Open Mega Millions",
+          "href": "/mega-millions"
+        },
+        {
+          "label": "More lottery news",
+          "href": "/news"
+        }
+      ],
+      "sources": {
+        "primarySource": "LotteryCorner result-format records (production-derived)",
+        "additionalSources": [],
+        "lotteryCornerDataUsed": [
+          "LotteryCorner result-format records — Mega Millions effective-date ranges (production-derived)"
+        ],
+        "lastCheckedIso": "2026-08-11",
+        "correctionStatus": "No corrections."
+      },
+      "provenance": {
+        "factBasis": "dated-historical-fact",
+        "evidence": [
+          "04-sample-data/result-format-definitions.json"
+        ],
+        "lastCheckedIso": "2026-08-11",
+        "reviewStatus": "review-fixture"
+      }
+    },
+    {
+      "slug": "powerball-2015-matrix-history",
+      "contentType": "NEWS",
+      "newsCategory": "Game Change",
+      "articleClass": "standard-news",
+      "storyStatus": "PUBLISHED",
+      "headline": "Powerball's current 69/26 matrix took effect on October 7, 2015",
+      "description": "Powerball has drawn five main numbers from a pool of 69 and a Powerball from a pool of 26 since the drawing of October 7, 2015. Earlier drawings used different number ranges, so archived results are read against the format in force on their draw date.",
+      "bottomLine": "Bottom Line: Every Powerball drawing since October 7, 2015 uses five main numbers from a pool of 69 and a Powerball from a pool of 26. Drawings before that date used different ranges, and LotteryCorner reads each result against the format that was in force when it was drawn.",
+      "authorSlug": "lotterycorner-editorial-team",
+      "editorName": "LotteryCorner Editorial Team",
+      "datePublishedIso": "2026-08-11",
+      "dateModifiedIso": "2026-08-11",
+      "primaryEntity": "Powerball",
+      "gameIds": [
+        "powerball"
+      ],
+      "stateCodes": [],
+      "tags": [
+        "Powerball"
+      ],
+      "keywords": [
+        "Powerball",
+        "matrix",
+        "game format",
+        "October 2015",
+        "results history"
+      ],
+      "beforeAfterLabel": "Powerball matrix from October 7, 2015",
+      "beforeAfter": [
+        {
+          "item": "Main numbers",
+          "before": "Different ranges before October 7, 2015",
+          "after": "5 of 69"
+        },
+        {
+          "item": "Powerball",
+          "before": "Different ranges before October 7, 2015",
+          "after": "1 of 26"
+        },
+        {
+          "item": "In effect",
+          "before": "Through October 6, 2015",
+          "after": "From October 7, 2015"
+        }
+      ],
+      "body": [
+        "The Powerball format in use now — five main numbers drawn from a pool of 69 and a Powerball drawn from a pool of 26 — took effect with the drawing of October 7, 2015.",
+        "Drawings before that date used different main-number and Powerball ranges. LotteryCorner's result-format records model the boundary as an effective date, so a 2014 drawing and a 2016 drawing are each read against their own era's rules rather than against a single current format.",
+        "This matters most in the archives. A results page that applied the current 69/26 ranges to a pre-2015 drawing would describe numbers that could never have been drawn together under the old rules. Date-bounded formats are how historical result display stays correct.",
+        "Our records document the current era's ranges and its start date. The precise ranges of earlier eras are noted in the records as different but are not fully enumerated there, so this article does not state them — where evidence stops, so does the story."
+      ],
+      "aiContext": {
+        "rendered": false,
+        "suppressionReason": "07 §7 acceptance test: no AI module renders unless it adds a grounded element beyond the headline, Bottom Line or first paragraph. No model is connected in this build, so nothing can pass the test; suppression is the compliant state."
+      },
+      "whyItMatters": [
+        "Archived Powerball results before October 7, 2015 belong to a different format era than results after it.",
+        "Number-frequency comparisons that cross the 2015 boundary mix two different pools and can mislead.",
+        "Format eras are why a very old drawing can show numbers outside the current ranges — that is history, not an error."
+      ],
+      "historicalNote": "Worth Knowing: LotteryCorner's format records mark October 7, 2015 as the start of the current Powerball era; drawings through October 6, 2015 are modelled as prior effective-date ranges.",
+      "primaryAction": {
+        "label": "Open Powerball",
+        "href": "/powerball"
+      },
+      "discussionQuestion": "When you look at very old drawings, do you want the page to explain the format that was in force, or just show the numbers as they were published?",
+      "canonicalDiscussionThreadId": "fe-2026-0003",
+      "relatedNextActions": [
+        {
+          "label": "Open Powerball",
+          "href": "/powerball"
+        },
+        {
+          "label": "More lottery news",
+          "href": "/news"
+        }
+      ],
+      "sources": {
+        "primarySource": "LotteryCorner result-format records (production-derived)",
+        "additionalSources": [],
+        "lotteryCornerDataUsed": [
+          "LotteryCorner result-format records — Powerball effective-date ranges (production-derived)"
+        ],
+        "lastCheckedIso": "2026-08-11",
+        "correctionStatus": "No corrections."
+      },
+      "provenance": {
+        "factBasis": "dated-historical-fact",
+        "evidence": [
+          "04-sample-data/result-format-definitions.json"
+        ],
+        "lastCheckedIso": "2026-08-11",
+        "reviewStatus": "review-fixture"
+      }
+    },
+    {
+      "slug": "how-yearly-results-archives-work",
+      "contentType": "EDITORIAL",
+      "newsCategory": "Research",
+      "articleClass": "explainer-research",
+      "storyStatus": "EVERGREEN",
+      "headline": "How yearly results archives work on LotteryCorner",
+      "description": "A guide to LotteryCorner's yearly results archives: how drawings are grouped by the game's own local draw date, why a year page shows every drawing from that calendar year, and how to move between a game page and its history.",
+      "bottomLine": "Bottom Line: A yearly archive collects every drawing a game held in one calendar year, grouped by the game's own local draw date. It is the fastest way to check an old ticket or follow how a game's results ran across a season.",
+      "authorSlug": "lotterycorner-editorial-team",
+      "editorName": "LotteryCorner Editorial Team",
+      "datePublishedIso": "2026-08-11",
+      "dateModifiedIso": "2026-08-11",
+      "primaryEntity": "LotteryCorner yearly archives",
+      "gameIds": [],
+      "stateCodes": [
+        "fl"
+      ],
+      "tags": [],
+      "keywords": [
+        "results archive",
+        "yearly results",
+        "draw history",
+        "how to",
+        "guide"
+      ],
+      "beforeAfterLabel": null,
+      "beforeAfter": null,
+      "body": [
+        "A yearly results archive is one game's drawings for one calendar year, in one place. Where a game page answers \"what was drawn most recently\", the archive answers \"what was drawn on a date I have in mind\".",
+        "Dates in an archive follow the game's own local draw date. A drawing that happened late in the evening belongs to the day it was drawn where the game is played — not to the next day in some other timezone. That rule keeps a ticket's printed date and the archive's date in agreement.",
+        "Archives are organised by year because that is how people remember tickets: a drawing from last spring, a ticket found in a winter coat. Opening the game's page and stepping into the right year is usually faster than scrolling a long feed.",
+        "Formats can change between years. When a game changes its number ranges, the archive keeps each drawing under the rules that were in force on its draw date, so older results always mean what they meant when they were published."
+      ],
+      "aiContext": {
+        "rendered": false,
+        "suppressionReason": "07 §7 acceptance test: no AI module renders unless it adds a grounded element beyond the headline, Bottom Line or first paragraph. No model is connected in this build, so nothing can pass the test; suppression is the compliant state."
+      },
+      "whyItMatters": [
+        "Old tickets are checked against the drawing's own date — the archive is built around exactly that lookup.",
+        "Game-local draw dates mean the date on your ticket and the date in the archive agree.",
+        "Format eras are preserved, so a result from years ago still reads the way it was published."
+      ],
+      "historicalNote": "Worth Knowing: LotteryCorner's archives group drawings by the game's local draw date, and format changes are modelled as date-bounded eras so no historical result is re-read against newer rules.",
+      "primaryAction": {
+        "label": "Open a yearly archive",
+        "href": "/fl/pick-3/2026"
+      },
+      "discussionQuestion": "When you check an old ticket, do you start from the game, the state, or the date — and what would make that faster?",
+      "canonicalDiscussionThreadId": null,
+      "relatedNextActions": [
+        {
+          "label": "Open a yearly archive",
+          "href": "/fl/pick-3/2026"
+        },
+        {
+          "label": "Florida lottery results",
+          "href": "/fl"
+        },
+        {
+          "label": "More lottery news",
+          "href": "/news"
+        }
+      ],
+      "sources": {
+        "primarySource": "LotteryCorner archive pages (this site)",
+        "additionalSources": [],
+        "lotteryCornerDataUsed": [
+          "LotteryCorner archive route behaviour and result-format era model"
+        ],
+        "lastCheckedIso": "2026-08-11",
+        "correctionStatus": "No corrections."
+      },
+      "provenance": {
+        "factBasis": "evergreen-guide",
+        "evidence": [
+          "01-new-ui archive pages (product behaviour, not external fact)"
+        ],
+        "lastCheckedIso": "2026-08-11",
+        "reviewStatus": "review-fixture"
+      }
+    },
+    {
+      "slug": "what-a-result-format-is",
+      "contentType": "EDITORIAL",
+      "newsCategory": "Research",
+      "articleClass": "explainer-research",
+      "storyStatus": "EVERGREEN",
+      "headline": "Ball groups, special balls and multipliers: what a result format is",
+      "description": "An explainer of the parts of a lottery result: main-number groups, named special balls like the Powerball and Mega Ball, and multipliers. Knowing the parts makes any game's results page easier to read.",
+      "bottomLine": "Bottom Line: Every lottery result is built from a few reusable parts — one or more groups of main numbers, sometimes a named special ball drawn from its own pool, and sometimes a multiplier. Once you can name the parts, any results page reads the same way.",
+      "authorSlug": "lotterycorner-editorial-team",
+      "editorName": "LotteryCorner Editorial Team",
+      "datePublishedIso": "2026-08-11",
+      "dateModifiedIso": "2026-08-11",
+      "primaryEntity": "Lottery result formats",
+      "gameIds": [
+        "powerball",
+        "mega-millions"
+      ],
+      "stateCodes": [],
+      "tags": [
+        "Powerball",
+        "Mega Millions"
+      ],
+      "keywords": [
+        "result format",
+        "special ball",
+        "multiplier",
+        "ball groups",
+        "explainer"
+      ],
+      "beforeAfterLabel": null,
+      "beforeAfter": null,
+      "body": [
+        "Start with the main numbers. Most draw games pick a fixed count of numbers from one pool — five from 69 in Powerball, five from 70 in Mega Millions, three digits from 0–9 in a Pick 3. That set is the result's first ball group.",
+        "Some games add a special ball drawn from its own separate pool, with its own name: the Powerball, the Mega Ball, a Cash Ball or a Bonus ball. Because it comes from a separate pool, the special ball can repeat a main number — that is normal, not a misprint.",
+        "Multipliers such as Power Play sit beside the drawn numbers rather than among them. They scale certain prizes and are shown as part of the result, but they are not a ball from the main pools.",
+        "Formats also change over time, which is why LotteryCorner models them with effective dates. A results page that knows a game's format for each era can render any drawing — recent or historical — with the right groups, the right pools and the right labels."
+      ],
+      "aiContext": {
+        "rendered": false,
+        "suppressionReason": "07 §7 acceptance test: no AI module renders unless it adds a grounded element beyond the headline, Bottom Line or first paragraph. No model is connected in this build, so nothing can pass the test; suppression is the compliant state."
+      },
+      "whyItMatters": [
+        "A special ball matching a main number is expected behaviour once you know the pools are separate.",
+        "Multipliers affect prizes, not the drawn combination — reading them as a ball misreads the result.",
+        "Games with unusual shapes (extra groups, card games) still break down into the same parts."
+      ],
+      "historicalNote": "Worth Knowing: LotteryCorner's format records describe every game as ball groups with their own pools, named special balls and multipliers, with effective dates — one model that renders a 3-digit daily game and a two-pool jackpot game alike.",
+      "primaryAction": {
+        "label": "Open Powerball",
+        "href": "/powerball"
+      },
+      "discussionQuestion": "Which part of a results page do you check first — the main numbers, the special ball, or the multiplier?",
+      "canonicalDiscussionThreadId": null,
+      "relatedNextActions": [
+        {
+          "label": "Open Powerball",
+          "href": "/powerball"
+        },
+        {
+          "label": "Open Mega Millions",
+          "href": "/mega-millions"
+        },
+        {
+          "label": "More lottery news",
+          "href": "/news"
+        }
+      ],
+      "sources": {
+        "primarySource": "LotteryCorner result-format records (production-derived)",
+        "additionalSources": [],
+        "lotteryCornerDataUsed": [
+          "LotteryCorner result-format records — ball groups, special balls and multipliers (production-derived)"
+        ],
+        "lastCheckedIso": "2026-08-11",
+        "correctionStatus": "No corrections."
+      },
+      "provenance": {
+        "factBasis": "evergreen-guide",
+        "evidence": [
+          "04-sample-data/result-format-definitions.json"
+        ],
+        "lastCheckedIso": "2026-08-11",
+        "reviewStatus": "review-fixture"
+      }
+    }
+  ]
+}

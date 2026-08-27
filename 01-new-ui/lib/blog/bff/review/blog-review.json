@@ -1,0 +1,619 @@
+{
+  "_meta_note": "THE BLOG REVIEW CORPUS — Conflict 39 (source-conflicts.md, CLOSED 2026-08-11). Evergreen guides, labelled analysis, one labelled opinion piece and one labelled systems-culture piece, written for interface review against governed repository data (04-sample-data). No current-news claim, no invented winner, no jackpot figure, no fabricated human author. Every record carries provenance; lib/blog/bff/blogBff.ts re-asserts the invariants on every read. The two desk identities are review fixtures (07 §3: no fake authors) and are never emitted as Person JSON-LD (community precedent, Conflict 41 condition 4).",
+  "meta": {
+    "source": "review",
+    "disclosure": "This blog is running on review content: evergreen guides and labelled editorial written for interface review against LotteryCorner's own data files. Nothing here reports current news, and the desk identities are review fixtures, not people.",
+    "asOfIso": "2026-08-12"
+  },
+  "authors": [
+    {
+      "slug": "lotterycorner-results-desk",
+      "name": "LotteryCorner Results Desk",
+      "role": "Results and data desk (review fixture)",
+      "reviewStatus": "review-fixture",
+      "beat": "How games, formats, drawings and archives actually work, explained from LotteryCorner's own production-derived data.",
+      "biography": "This is an accountable desk identity used while the LotteryCorner blog is reviewed. It is not a person, and this is a placeholder profile. Posts carrying this byline are review fixtures: evergreen explainers about game formats, drawings, multipliers, secondary draws and archives, checked against LotteryCorner's production-derived format and results data. At launch a real named writer, with a real photograph and real credentials, takes over this desk — this placeholder never pretends to be that person.",
+      "photo": null,
+      "covers": [
+        "Game formats and matrix changes",
+        "Digit games and drawing schedules",
+        "Multipliers and secondary draws",
+        "Results archives and historical data"
+      ],
+      "launchNote": "At launch this desk is retired in favour of a real named author with a consented photograph, credentials and Person JSON-LD — the identity structure Google's E-E-A-T and Preferred Sources guidance actually rewards. Until then the schema emits Organization, never Person."
+    },
+    {
+      "slug": "lotterycorner-guides-desk",
+      "name": "LotteryCorner Guides Desk",
+      "role": "Guides and player desk (review fixture)",
+      "reviewStatus": "review-fixture",
+      "beat": "Claiming, taxes, player culture and playing sensibly — the practical side of the game, explained straight.",
+      "biography": "This is an accountable desk identity used while the LotteryCorner blog is reviewed. It is not a person, and this is a placeholder profile. Posts carrying this byline are review fixtures: practical guides about claiming prizes, taxes, the cash-versus-annuity choice and player culture, checked against LotteryCorner's own state guidance records. At launch a real named writer, with a real photograph and real credentials, takes over this desk — this placeholder never pretends to be that person.",
+      "photo": null,
+      "covers": [
+        "Claiming prizes and deadlines",
+        "Taxes and withholding basics",
+        "Cash versus annuity",
+        "Player culture and responsible play"
+      ],
+      "launchNote": "At launch this desk is retired in favour of a real named author with a consented photograph, credentials and Person JSON-LD — the identity structure Google's E-E-A-T and Preferred Sources guidance actually rewards. Until then the schema emits Organization, never Person."
+    }
+  ],
+  "posts": [
+    {
+      "slug": "hot-and-cold-numbers-an-honest-look",
+      "category": "analysis",
+      "claimType": "analysis",
+      "headline": "Hot and cold numbers: an honest look at what the lists can and cannot tell you",
+      "description": "Hot and cold lists are real history and unreliable prophecy at the same time. What a frequency list actually measures, why it cannot predict a fair drawing, and how to enjoy the lists without fooling yourself.",
+      "authorSlug": "lotterycorner-results-desk",
+      "editorName": "LotteryCorner Editorial Team",
+      "datePublishedIso": "2026-08-11",
+      "dateModifiedIso": "2026-08-11",
+      "primaryEntity": "Number frequency",
+      "gameIds": ["powerball", "mega-millions"],
+      "stateCodes": [],
+      "tags": ["Powerball", "Mega Millions"],
+      "keywords": ["hot numbers", "cold numbers", "number frequency", "lottery odds", "independent draws"],
+      "sections": [
+        {
+          "heading": null,
+          "paragraphs": [
+            "A hot-and-cold list is two true things stapled together: an accurate count of the past, and an implied promise about the future that the math cannot keep.",
+            "Players love these lists, and there is nothing wrong with reading them. The trouble starts when a frequency table quietly turns into a forecast. This post separates the two, using the games' own published formats as the yardstick."
+          ]
+        },
+        {
+          "heading": "What a hot list actually is",
+          "paragraphs": [
+            "A hot list is a tally of how often each number appeared over some window of past drawings — a statistically true historical observation, nothing more and nothing less.",
+            "The window matters enormously. The same game produces different hot lists over 30 draws, 100 draws and 1,000 draws, and none of the versions is the real one. Each is an honest summary of a different slice of history."
+          ]
+        },
+        {
+          "heading": "Why the list cannot predict the next drawing",
+          "paragraphs": [
+            "Every drawing is independent: the machine has no memory, so a number's history changes nothing about its next appearance. In Powerball's current format, each of the 69 main balls has the same chance in every single drawing — the format LotteryCorner's records date from October 7, 2015. Mega Millions works the same way with its 70 main balls and its Mega Ball pool of 24, the format in effect since April 8, 2025.",
+            "A ball that appeared five times last month and a ball that has not appeared all year walk into the next drawing with identical chances. That is not an opinion about randomness; it is what a fair draw means."
+          ]
+        },
+        {
+          "heading": "Why streaks show up anyway",
+          "paragraphs": [
+            "Random results are streaky. Flip a fair coin two hundred times and you will almost certainly see runs that look meaningful; a lottery's history behaves the same way. Clusters and droughts are what genuine randomness looks like, especially over the short windows most hot lists use.",
+            "Our own archive pages make this easy to see: pick any year of results and the frequency table will have a top and a bottom, every year, for every game. The pattern is in the counting, not in the balls."
+          ]
+        },
+        {
+          "heading": "How to enjoy the lists honestly",
+          "paragraphs": [
+            "Read hot and cold lists the way you read a box score: as history, culture and conversation. Pick your numbers from the hot list, the cold list, your family's birthdays or the back of a fortune cookie — in a fair drawing every method carries exactly the same odds.",
+            "What we will never tell you is that any of those methods improves them. That claim would be false, and it stays out of every page on this site."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        { "label": "Powerball results and game page", "href": "/powerball" },
+        { "label": "Mega Millions results and game page", "href": "/mega-millions" },
+        { "label": "Pick 3 yearly archive for Florida", "href": "/fl/pick-3/2026" }
+      ],
+      "sources": {
+        "primarySource": "LotteryCorner production-derived result-format definitions",
+        "additionalSources": [],
+        "lotteryCornerDataUsed": [
+          "04-sample-data/result-format-definitions.json (Powerball 5/69+1/26 from 2015-10-07; Mega Millions 5/70+1/24 from 2025-04-08)"
+        ],
+        "lastCheckedIso": "2026-08-12",
+        "correctionStatus": "No corrections. This post explains probability over published formats and makes no event claims."
+      },
+      "provenance": {
+        "factBasis": "evergreen-guide",
+        "evidence": ["04-sample-data/result-format-definitions.json"],
+        "lastCheckedIso": "2026-08-12",
+        "reviewStatus": "review-fixture"
+      }
+    },
+    {
+      "slug": "lottery-systems-wheels-and-lucky-numbers",
+      "category": "systems",
+      "claimType": "entertainment",
+      "headline": "Systems, wheels and lucky numbers: the folk art of lottery play",
+      "description": "Wheels, systems and lucky numbers are a real and enjoyable part of player culture. What a wheel actually does, what a system can and cannot change, and the one honest rule that keeps all of it fun.",
+      "authorSlug": "lotterycorner-guides-desk",
+      "editorName": "LotteryCorner Editorial Team",
+      "datePublishedIso": "2026-08-10",
+      "dateModifiedIso": "2026-08-10",
+      "primaryEntity": "Player culture",
+      "gameIds": ["powerball", "mega-millions"],
+      "stateCodes": [],
+      "tags": ["Powerball", "Mega Millions"],
+      "keywords": ["lottery systems", "number wheels", "lucky numbers", "player culture", "entertainment"],
+      "sections": [
+        {
+          "heading": null,
+          "paragraphs": [
+            "Systems, wheels and lucky numbers are the folk art of lottery play — worth understanding, worth enjoying, and worth being honest about.",
+            "This piece is filed under systems and culture, and it wears its label plainly: what follows is about the fun of playing, not a strategy for changing a drawing's odds. Nothing changes those."
+          ]
+        },
+        {
+          "heading": "What a wheel actually does",
+          "paragraphs": [
+            "A wheel spreads a chosen set of numbers across several tickets so that the combinations you hold follow a deliberate pattern. That is a real, well-defined piece of combinatorics — wheels genuinely control which combinations you cover.",
+            "What a wheel does not do is change the chance that any one combination is drawn. It rearranges your tickets; it cannot rearrange the drawing. Holding ten patterned tickets and holding ten random tickets gives the same total chance for the same total spend."
+          ]
+        },
+        {
+          "heading": "What a system can and cannot change",
+          "paragraphs": [
+            "A system can give you a budget, a routine and a set of numbers that feel like yours — and those are honest benefits. Playing the same numbers every draw with a fixed spend is a perfectly good way to keep the game a small, planned pleasure.",
+            "A system cannot make a fair drawing favor you. Every marketed method that claims otherwise is selling the streaky look of randomness back to you as a secret."
+          ]
+        },
+        {
+          "heading": "Lucky numbers are culture, not math",
+          "paragraphs": [
+            "Birthdays, anniversaries, jersey numbers, a grandmother's house number: lucky numbers carry meaning, and meaning is a fine reason to pick them. In the drawing they perform exactly as well as any other selection.",
+            "The one practical footnote: numbers 31 and under are popular precisely because of dates, so date-heavy tickets are more likely to share a prize if they ever match. That affects splitting, never matching."
+          ]
+        },
+        {
+          "heading": "The one honest rule",
+          "paragraphs": [
+            "Play with money you can afford to lose, for fun you can actually feel, and stop when it stops being fun. Every drawing is independent, and nothing in this post — or anywhere else — changes the odds of a fair draw.",
+            "That is the whole rule. The wheels and the lucky numbers are yours to enjoy on top of it."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        { "label": "Powerball results and game page", "href": "/powerball" },
+        { "label": "Mega Millions results and game page", "href": "/mega-millions" }
+      ],
+      "sources": {
+        "primarySource": "LotteryCorner production-derived result-format definitions",
+        "additionalSources": [],
+        "lotteryCornerDataUsed": [
+          "04-sample-data/result-format-definitions.json (published ball pools; independence of drawings)"
+        ],
+        "lastCheckedIso": "2026-08-12",
+        "correctionStatus": "No corrections. This is a labelled culture piece; its only factual claims are about probability over published formats."
+      },
+      "provenance": {
+        "factBasis": "evergreen-guide",
+        "evidence": ["04-sample-data/result-format-definitions.json"],
+        "lastCheckedIso": "2026-08-12",
+        "reviewStatus": "review-fixture"
+      }
+    },
+    {
+      "slug": "why-we-publish-the-boring-version",
+      "category": "opinion",
+      "claimType": "opinion",
+      "headline": "Why we publish the boring version",
+      "description": "An editorial on how LotteryCorner writes about odds, numbers and luck: answer first, classify every claim, and never dress a coincidence up as a method. The boring version is the one you can trust.",
+      "authorSlug": "lotterycorner-guides-desk",
+      "editorName": "LotteryCorner Editorial Team",
+      "datePublishedIso": "2026-08-03",
+      "dateModifiedIso": "2026-08-03",
+      "primaryEntity": "Editorial standards",
+      "gameIds": [],
+      "stateCodes": [],
+      "tags": [],
+      "keywords": ["editorial standards", "odds honesty", "corrections", "trust", "opinion"],
+      "sections": [
+        {
+          "heading": null,
+          "paragraphs": [
+            "There are two ways to write about lottery odds: the exciting way and the true way, and this site chose the true way on purpose.",
+            "This is an opinion piece about our own editorial rules — the ones frozen in LotteryCorner's product constitution — and why we think the duller sentence is the better product."
+          ]
+        },
+        {
+          "heading": "Answer first, hype never",
+          "paragraphs": [
+            "Our copy pattern is fixed: answer the question, classify the claim, explain the context, then offer a next step. A results page gives you the numbers before it asks you for anything, and a guide tells you the rule before it tells you a story.",
+            "The exciting version inverts that order — tease first, answer later — because suspense holds attention. We think attention held by suspense on a money topic curdles into distrust, and distrust is expensive."
+          ]
+        },
+        {
+          "heading": "Every claim wears its class",
+          "paragraphs": [
+            "A verified fact, a statistically true historical observation, a coincidence, our own analysis, a community belief and an entertainment tool are six different things, and our rules require each to be labelled as what it is. The hot-and-cold analysis on this blog says it cannot predict; the systems piece says it is for fun.",
+            "You will never read a claim here that a pick method improves the odds of a fair draw, because that sentence is false in every version."
+          ]
+        },
+        {
+          "heading": "Corrections are content, not confessions",
+          "paragraphs": [
+            "When something we publish is wrong, the correction states what changed, when, and what it affects — visibly, on the page it touches. A corrections policy you can read is worth more than a perfection we could only pretend to.",
+            "That policy is linked from the bottom of every page on this site."
+          ]
+        },
+        {
+          "heading": "Boring is a long game",
+          "paragraphs": [
+            "The honest version loses the first click to the hyped version, most days. We are betting it earns the second visit, and the two-hundredth, because a reader who checks numbers here learns that nothing on the page is trying to fool them.",
+            "That is the entire strategy behind these desks: authority built by being reliably, verifiably dull about the things that matter."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        { "label": "How corrections work", "href": "/corrections-policy" },
+        { "label": "How LotteryCorner uses AI", "href": "/ai-policy" }
+      ],
+      "sources": {
+        "primarySource": "LotteryCorner's frozen product constitution (internal)",
+        "additionalSources": ["LotteryCorner corrections policy (published on this site)"],
+        "lotteryCornerDataUsed": [],
+        "lastCheckedIso": "2026-08-12",
+        "correctionStatus": "No corrections. This is a labelled opinion piece about our own published standards."
+      },
+      "provenance": {
+        "factBasis": "editorial-opinion",
+        "evidence": [
+          "03-docs/00-foundation/authoritative/00A-v2.1-luckregenerator-product-constitution-FROZEN.md"
+        ],
+        "lastCheckedIso": "2026-08-12",
+        "reviewStatus": "review-fixture"
+      }
+    },
+    {
+      "slug": "multipliers-explained-power-play-and-megaplier",
+      "category": "analysis",
+      "claimType": "explainer",
+      "headline": "Multipliers explained: what Power Play and Megaplier actually do",
+      "description": "Power Play and Megaplier are add-ons that multiply certain non-jackpot prizes — and the multiplier itself is drawn. How the multiplier shows up in a result, what it touches, and what it never changes.",
+      "authorSlug": "lotterycorner-results-desk",
+      "editorName": "LotteryCorner Editorial Team",
+      "datePublishedIso": "2026-07-22",
+      "dateModifiedIso": "2026-07-22",
+      "primaryEntity": "Multipliers",
+      "gameIds": ["powerball", "mega-millions"],
+      "stateCodes": [],
+      "tags": ["Powerball", "Mega Millions"],
+      "keywords": ["Power Play", "Megaplier", "multiplier", "Powerball", "Mega Millions"],
+      "sections": [
+        {
+          "heading": null,
+          "paragraphs": [
+            "Power Play and Megaplier are optional add-ons that multiply certain prizes below the jackpot — and the multiplier is itself part of the drawing, which is why results pages print it next to the numbers.",
+            "LotteryCorner's format records model the multiplier as its own field on a result: Powerball carries Power Play and Mega Millions carries Megaplier, each shown with an X suffix, like 2X or 3X."
+          ]
+        },
+        {
+          "heading": "The multiplier is part of the result",
+          "paragraphs": [
+            "When you read a drawing on this site, the multiplier that was drawn belongs to that drawing the same way the balls do. A ticket's add-on only means something in combination with the multiplier its drawing produced, which is why our result cards keep them together.",
+            "That also means an old result keeps its old multiplier forever: archives show the value drawn that night, not a current one."
+          ]
+        },
+        {
+          "heading": "What it touches, and what it does not",
+          "paragraphs": [
+            "The add-on multiplies set prize tiers below the top prize, according to each game's published prize rules; the jackpot itself is not multiplied. The exact tier tables are official-source material, and the game's own page is the place to read them.",
+            "The add-on costs extra per play, and whether it is worth it is a personal call about stakes — not a question with a hidden right answer."
+          ]
+        },
+        {
+          "heading": "It never changes the odds of matching",
+          "paragraphs": [
+            "A multiplier changes what a matching ticket pays, never the chance of matching. The drawing's probabilities come from the ball pools — 69 and 26 for Powerball, 70 and 24 for Mega Millions in the current formats our records carry — and the add-on has no effect on any of them.",
+            "If you remember one sentence: Power Play and Megaplier are about payout size, not probability."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        { "label": "Powerball results and game page", "href": "/powerball" },
+        { "label": "Mega Millions results and game page", "href": "/mega-millions" }
+      ],
+      "sources": {
+        "primarySource": "LotteryCorner production-derived result-format definitions",
+        "additionalSources": [],
+        "lotteryCornerDataUsed": [
+          "04-sample-data/result-format-definitions.json (Power Play and Megaplier multiplier definitions; current ball pools)"
+        ],
+        "lastCheckedIso": "2026-08-12",
+        "correctionStatus": "No corrections. Prize-tier specifics are deliberately deferred to official sources."
+      },
+      "provenance": {
+        "factBasis": "evergreen-guide",
+        "evidence": ["04-sample-data/result-format-definitions.json"],
+        "lastCheckedIso": "2026-08-12",
+        "reviewStatus": "review-fixture"
+      }
+    },
+    {
+      "slug": "what-double-play-is",
+      "category": "tutorial",
+      "claimType": "explainer",
+      "headline": "What Double Play is: Powerball's second drawing, explained",
+      "description": "Double Play gives the same Powerball ticket numbers a second, separate drawing with its own results and prizes. How it works, where it is offered, and how to read it on a results page without mixing it up with the main draw.",
+      "authorSlug": "lotterycorner-results-desk",
+      "editorName": "LotteryCorner Editorial Team",
+      "datePublishedIso": "2026-07-14",
+      "dateModifiedIso": "2026-07-14",
+      "primaryEntity": "Powerball Double Play",
+      "gameIds": ["powerball"],
+      "stateCodes": ["fl"],
+      "tags": ["Powerball"],
+      "keywords": ["Double Play", "Powerball", "secondary drawing", "add-on", "results"],
+      "sections": [
+        {
+          "heading": null,
+          "paragraphs": [
+            "Double Play is a second Powerball drawing: the same numbers you picked for the main draw get another, completely separate chance in their own drawing with its own prizes.",
+            "It is an add-on, so a ticket is only in the Double Play drawing if that option was purchased — and it is only offered in some jurisdictions."
+          ]
+        },
+        {
+          "heading": "Same matrix, separate drawing",
+          "paragraphs": [
+            "Double Play uses the same structure as the main game — five main numbers from 69 and a Powerball from 26 in LotteryCorner's format records — but it is a distinct drawing with distinct results. Matching the main draw tells you nothing about the Double Play result, and the other way around.",
+            "Its top prize is its own fixed structure, separate from the main jackpot. The exact prize table is published by the game; the official Powerball page is the source for those figures."
+          ]
+        },
+        {
+          "heading": "Only in some states",
+          "paragraphs": [
+            "Availability is state-by-state. LotteryCorner's format records list Double Play in Colorado, Florida, Indiana, Maryland, Michigan, Missouri, New Jersey, Pennsylvania, Puerto Rico, South Carolina, South Dakota, Tennessee, Washington and the District of Columbia.",
+            "If your state is not on that list, tickets there simply do not carry the option — and our state pages only show Double Play where it exists."
+          ]
+        },
+        {
+          "heading": "How it reads on a results page",
+          "paragraphs": [
+            "On a LotteryCorner results page, Double Play appears as its own labelled row under the main drawing — never blended into it. If the Double Play result has not been published yet, the row says so instead of borrowing the main draw's numbers.",
+            "Checking a ticket means checking the right drawing: main-draw numbers against the main result, Double Play against the Double Play result, one at a time."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        { "label": "Powerball results and game page", "href": "/powerball" },
+        { "label": "Florida lottery results", "href": "/fl" }
+      ],
+      "sources": {
+        "primarySource": "LotteryCorner production-derived result-format definitions",
+        "additionalSources": [],
+        "lotteryCornerDataUsed": [
+          "04-sample-data/result-format-definitions.json (Powerball secondaryDraw: doubleplay, jurisdiction list, ball groups)"
+        ],
+        "lastCheckedIso": "2026-08-12",
+        "correctionStatus": "No corrections. Prize figures are deliberately deferred to the official source."
+      },
+      "provenance": {
+        "factBasis": "evergreen-guide",
+        "evidence": ["04-sample-data/result-format-definitions.json"],
+        "lastCheckedIso": "2026-08-12",
+        "reviewStatus": "review-fixture"
+      }
+    },
+    {
+      "slug": "how-to-claim-a-florida-lottery-prize",
+      "category": "tutorial",
+      "claimType": "explainer",
+      "headline": "How to claim a Florida Lottery prize, step by step",
+      "description": "Florida prize claims work in tiers: the bigger the prize, the fewer places can pay it. Where each prize amount is claimed, what documents to bring, and the deadlines that decide whether a ticket can be paid at all.",
+      "authorSlug": "lotterycorner-guides-desk",
+      "editorName": "LotteryCorner Editorial Team",
+      "datePublishedIso": "2026-07-06",
+      "dateModifiedIso": "2026-07-06",
+      "primaryEntity": "Florida Lottery claims",
+      "gameIds": [],
+      "stateCodes": ["fl"],
+      "tags": [],
+      "keywords": ["Florida Lottery", "claim a prize", "claim deadline", "district office", "claim form"],
+      "sections": [
+        {
+          "heading": null,
+          "paragraphs": [
+            "Claiming a Florida Lottery prize works in tiers: the bigger the prize, the fewer places can pay it, and the more paperwork the claim needs.",
+            "This guide walks the tiers in order, using the claim rules LotteryCorner's Florida page records. Rules can change, so treat the Florida Lottery itself as the final word before you travel anywhere with a ticket."
+          ]
+        },
+        {
+          "heading": "Sign the ticket first",
+          "paragraphs": [
+            "Before anything else, sign the back of the ticket. A lottery ticket is a bearer instrument — a signature is what ties it to you — and confirming the amount with the official results or a ticket checker comes second."
+          ]
+        },
+        {
+          "heading": "Where each prize tier is claimed",
+          "paragraphs": [
+            "Per the claim rules our Florida page records: prizes up to $599 can be paid at most authorized retailers or at a district office. Prizes from $600 to $250,000 can be claimed at a district office or by mail, and prizes up to $1,000,000 must be claimed in person at a district office. Anything over $1,000,000 — and any annuity prize — must be claimed in person at Lottery headquarters.",
+            "District offices operate statewide, including Miami, Orlando, Tampa, Jacksonville, Fort Myers and Escambia; appointments are recommended for the largest claims."
+          ]
+        },
+        {
+          "heading": "What to bring",
+          "paragraphs": [
+            "A claim needs the signed ticket, a government-issued photo ID, your Social Security number, and a completed claim form; annuity and lifetime prizes carry additional forms. Large claims may also involve tax paperwork such as a W-2G and direct-deposit forms.",
+            "Mailing a claim? Certified mail with copies kept is the sensible route."
+          ]
+        },
+        {
+          "heading": "The deadlines that decide everything",
+          "paragraphs": [
+            "Draw-game tickets have 180 days from the draw date, and scratch-off tickets have 60 days after the game officially ends. A mailed claim must be postmarked by the deadline.",
+            "A ticket past its deadline cannot be paid, no matter the amount, which is why the claim date deserves the same attention as the numbers."
+          ]
+        },
+        {
+          "heading": "Confirm with the official source",
+          "paragraphs": [
+            "Everything above reflects the guidance recorded on LotteryCorner's Florida page. The Florida Lottery's own instructions govern every real claim — check them before you act, especially for large prizes."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        { "label": "Florida lottery results", "href": "/fl" },
+        { "label": "Florida Pick 3 results", "href": "/fl/pick-3" }
+      ],
+      "sources": {
+        "primarySource": "LotteryCorner Florida page guidance records (production-derived sample)",
+        "additionalSources": ["Florida Lottery official claim instructions (the governing source)"],
+        "lotteryCornerDataUsed": [
+          "04-sample-data/state-fl-sample.json (howToClaim: claim tiers, documents, steps, deadlines, district offices)"
+        ],
+        "lastCheckedIso": "2026-08-12",
+        "correctionStatus": "No corrections. Claim rules change; the official source governs every real claim."
+      },
+      "provenance": {
+        "factBasis": "evergreen-guide",
+        "evidence": ["04-sample-data/state-fl-sample.json"],
+        "lastCheckedIso": "2026-08-12",
+        "reviewStatus": "review-fixture"
+      }
+    },
+    {
+      "slug": "cash-vs-annuity-explained",
+      "category": "tutorial",
+      "claimType": "explainer",
+      "headline": "Cash versus annuity: the two ways a jackpot pays, explained",
+      "description": "Every big jackpot is advertised two ways: a lump-sum cash value and an annuity paid over decades. What each option actually is, how taxes land on both, and why the choice is made at claim time — without any financial advice.",
+      "authorSlug": "lotterycorner-guides-desk",
+      "editorName": "LotteryCorner Editorial Team",
+      "datePublishedIso": "2026-06-24",
+      "dateModifiedIso": "2026-06-24",
+      "primaryEntity": "Jackpot payout options",
+      "gameIds": ["powerball", "mega-millions"],
+      "stateCodes": ["fl"],
+      "tags": ["Powerball", "Mega Millions"],
+      "keywords": ["cash option", "annuity", "lump sum", "jackpot payout", "withholding"],
+      "sections": [
+        {
+          "heading": null,
+          "paragraphs": [
+            "Big jackpot games advertise their top prize two ways at once: a headline annuity figure paid out over decades, and a smaller lump-sum cash value paid at once.",
+            "Neither number is a trick — they are two honest prices for the same prize, measured over different lengths of time. Here is what each one means, in plain terms."
+          ]
+        },
+        {
+          "heading": "What the annuity is",
+          "paragraphs": [
+            "The annuity is the prize as a series of payments: an immediate installment followed by yearly installments over the schedule the game publishes. The advertised headline figure is the TOTAL of all those payments added together.",
+            "The exact schedule — how many payments, and how they grow — is set by each game's official rules, and the game's own page is the source for it."
+          ]
+        },
+        {
+          "heading": "What the cash option is",
+          "paragraphs": [
+            "The cash option is the prize as one payment: the money actually sitting behind the annuity, taken at once instead of over the schedule. It is always a smaller number than the annuity headline, because a dollar paid over decades and a dollar paid at once are different dollars.",
+            "Which is worth more to a particular person depends on that person — which is exactly why this post stops short of an answer."
+          ]
+        },
+        {
+          "heading": "Taxes land on both",
+          "paragraphs": [
+            "Prizes at the reportable federal threshold and above come with tax paperwork either way. The guidance recorded on LotteryCorner's Florida page puts it plainly: mandatory federal withholding of 24% applies, additional tax may apply at filing, and W-2G forms are issued for reportable amounts.",
+            "State tax varies by state. Florida charges no state income tax on lottery prizes — one reason the same prize nets differently in different states."
+          ]
+        },
+        {
+          "heading": "A claim-time decision, not a ticket-time one",
+          "paragraphs": [
+            "The cash-or-annuity choice is made when the prize is claimed, within the rules and deadlines the game and state publish. Large and annuity prizes are claimed at lottery headquarters in Florida, per the claim tiers our Florida guide walks through.",
+            "LotteryCorner does not give financial advice, and no page on this site will tell you which option to take. A licensed advisor who can see your whole situation is the right person for that conversation."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        { "label": "Estimate taxes on a prize — Lottery Tax Calculator", "href": "/tools/tax-calculator" },
+        { "label": "How to claim a Florida Lottery prize", "href": "/blog/how-to-claim-a-florida-lottery-prize" },
+        { "label": "Powerball results and game page", "href": "/powerball" },
+        { "label": "Mega Millions results and game page", "href": "/mega-millions" }
+      ],
+      "sources": {
+        "primarySource": "LotteryCorner Florida page guidance records (production-derived sample)",
+        "additionalSources": ["Each game's official rules (payment schedules; the governing source)"],
+        "lotteryCornerDataUsed": [
+          "04-sample-data/state-fl-sample.json (taxes: 24% mandatory federal withholding, W-2G, no Florida state income tax; howToClaim: annuity claims at headquarters)"
+        ],
+        "lastCheckedIso": "2026-08-12",
+        "correctionStatus": "No corrections. Payment-schedule specifics are deliberately deferred to official sources."
+      },
+      "provenance": {
+        "factBasis": "evergreen-guide",
+        "evidence": ["04-sample-data/state-fl-sample.json"],
+        "lastCheckedIso": "2026-08-12",
+        "reviewStatus": "review-fixture"
+      }
+    },
+    {
+      "slug": "how-pick-3-payouts-work",
+      "category": "tutorial",
+      "claimType": "explainer",
+      "headline": "How Pick 3 payouts work: digits, draw times and reading the prize table",
+      "description": "Pick 3 is a digit game, and digit games pay differently from jackpot games: fixed prizes, play types, and often two drawings a day. How to read a Pick 3 result and its payout table without mixing up the rules.",
+      "authorSlug": "lotterycorner-results-desk",
+      "editorName": "LotteryCorner Editorial Team",
+      "datePublishedIso": "2026-06-15",
+      "dateModifiedIso": "2026-06-15",
+      "primaryEntity": "Pick 3",
+      "gameIds": ["pick-3"],
+      "stateCodes": ["fl"],
+      "tags": [],
+      "keywords": ["Pick 3", "digit game", "payout table", "midday drawing", "evening drawing"],
+      "sections": [
+        {
+          "heading": null,
+          "paragraphs": [
+            "Pick 3 is a digit game: three digits, each from 0 to 9, drawn in order — and that one structural fact drives everything about how it pays.",
+            "LotteryCorner's format records model Pick 3 exactly that way: three digit positions, each 0 through 9, with repeats allowed. A result like 3-3-7 is perfectly normal, which never happens in a ball game where each ball leaves the pool."
+          ]
+        },
+        {
+          "heading": "Digits are not balls",
+          "paragraphs": [
+            "In a jackpot game, five balls come out of one pool, so no number repeats. In Pick 3, each position is its own draw of 0–9, so 1,000 exact outcomes exist, from 000 to 999, every drawing.",
+            "That is why digit games support play types — exact-order and any-order style plays — that ball games cannot offer: the game is small enough to price every pattern."
+          ]
+        },
+        {
+          "heading": "Fixed prizes instead of a shared jackpot",
+          "paragraphs": [
+            "Digit-game prizes are typically fixed amounts set by the play type and stake, rather than a rolling shared jackpot. Two people holding the same play do not split a pot the way jackpot co-hitters do.",
+            "The exact prize amounts per play type belong to each state's official game rules — Pick 3 differs from state to state — so our pages point at the official source for the figures rather than guessing at them."
+          ]
+        },
+        {
+          "heading": "Reading a payout table",
+          "paragraphs": [
+            "When a lottery publishes payout details for a drawing, the table reads as tiers: what was matched, how many tickets matched at that tier, and what each pays — with non-cash lines like a free play shown as labels instead of amounts.",
+            "LotteryCorner normalizes those tables from the raw feed so a result card can show the rows cleanly; where a feed provides no payout detail for a draw, the card simply shows none rather than inventing rows."
+          ]
+        },
+        {
+          "heading": "Midday and evening are separate drawings",
+          "paragraphs": [
+            "Many states draw Pick 3 twice a day, and our format records treat midday and evening as separate games with their own results. A ticket names its drawing, and it checks against that drawing only.",
+            "It is the single most common mix-up in digit games — right numbers, wrong session — and the fix is always the same: match the draw time printed on the ticket to the draw time on the result."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        { "label": "Florida Pick 3 results", "href": "/fl/pick-3" },
+        { "label": "Pick 3 yearly archive for Florida", "href": "/fl/pick-3/2026" },
+        { "label": "What a result format is", "href": "/news/what-a-result-format-is" }
+      ],
+      "sources": {
+        "primarySource": "LotteryCorner production-derived result-format definitions",
+        "additionalSources": ["LotteryCorner payout normalization records (production-derived sample)"],
+        "lotteryCornerDataUsed": [
+          "04-sample-data/result-format-definitions.json (Pick 3 digit format, 3× 0–9, midday/evening variants)",
+          "04-sample-data/payout-sample.json (normalized payout rows: match tiers, counts, cash and free-play prizes)"
+        ],
+        "lastCheckedIso": "2026-08-12",
+        "correctionStatus": "No corrections. State-specific prize amounts are deliberately deferred to official sources."
+      },
+      "provenance": {
+        "factBasis": "evergreen-guide",
+        "evidence": [
+          "04-sample-data/result-format-definitions.json",
+          "04-sample-data/payout-sample.json"
+        ],
+        "lastCheckedIso": "2026-08-12",
+        "reviewStatus": "review-fixture"
+      }
+    }
+  ]
+}

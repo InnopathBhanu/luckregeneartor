@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "1.0",
+  "state": {
+    "code": "ut",
+    "name": "Utah",
+    "timezone": "America/Denver",
+    "timezoneLabel": "MT",
+    "minimumLotteryAge": null,
+    "lotteryProfile": "noLottery"
+  },
+  "preview": {
+    "enabled": true
+  },
+  "capabilities": {
+    "hasStateLottery": false,
+    "hasStateNativeDrawGames": false,
+    "hasPowerball": false,
+    "hasMegaMillions": false,
+    "hasDrawSchedule": false,
+    "hasClaimGuide": false,
+    "hasStateResourcesBand": false,
+    "hasBuyNowEntry": false,
+    "hasTicketCheckGuidance": false,
+    "hasLotteryCornerNews": false,
+    "hasLotteryCornerGuides": false,
+    "hasLotteryCornerCommunity": false,
+    "hasStateExploreBand": false
+  },
+  "seo": {
+    "slug": "ut",
+    "canonicalPath": "/ut",
+    "title": "Utah Lottery: Why There Are No Utah Lottery Results | LotteryCorner",
+    "description": "Utah does not operate a state lottery, so there are no Utah winning numbers to check. What that means, and where to find results for states that do run one.",
+    "breadcrumbLabel": "Utah",
+    "schemaAboutName": "Utah",
+    "openGraph": {
+      "type": "website",
+      "title": "Utah Lottery: Why There Are No Utah Lottery Results",
+      "description": "Utah does not operate a state lottery, so there are no Utah winning numbers to check.",
+      "imageKey": null
+    }
+  },
+  "presentation": {
+    "featuredMultiStateGames": [],
+    "nativeFamilyGroupOrder": [],
+    "topStackAdditionalFamilies": 0,
+    "families": []
+  },
+  "content": {
+    "explore": {
+      "heading": "",
+      "intro": "",
+      "items": []
+    },
+    "news": {
+      "heading": "",
+      "intro": "",
+      "ownerLabel": "",
+      "items": []
+    },
+    "guides": {
+      "heading": "",
+      "intro": "",
+      "label": "",
+      "items": [],
+      "aiContinuation": {
+        "heading": "",
+        "copy": "",
+        "actionLabel": ""
+      }
+    },
+    "community": {
+      "heading": "",
+      "intro": "",
+      "items": [],
+      "questionContinuation": {
+        "heading": "",
+        "copy": "",
+        "actionLabel": ""
+      }
+    },
+    "resources": {
+      "heading": "",
+      "items": []
+    }
+  },
+  "trust": {
+    "summary": "LotteryCorner publishes results from official lottery sources and states when each result was last checked.",
+    "independence": "LotteryCorner is an independent lottery information service and is not affiliated with any state lottery."
+  }
+}
