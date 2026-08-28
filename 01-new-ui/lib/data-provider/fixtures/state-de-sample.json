@@ -1,0 +1,1011 @@
+{
+  "_meta": {
+    "purpose": "UI-first sample payload for the Delaware state page (/de), rendered by the shared StatePageTemplate. Result numbers/dates are real values from source-xml/latest-results-lc.xml. Copy is clean sample/admin-editable (no [ADMIN] tokens). Ads by slotKey; Buy Tickets via /buynow/<code>.",
+    "illustrative": true,
+    "schemaVersion": "0.1-sample",
+    "note": "Highlights/winner content is generic sample text (no fabricated named winners)."
+  },
+  "page": {
+    "stateCode": "de",
+    "stateName": "Delaware",
+    "url": "/de",
+    "pageType": "state",
+    "metadata": {
+      "title": "Delaware Lottery Results Today \u2014 Winning Numbers, Jackpots & How to Claim",
+      "description": "Latest Delaware Lottery winning numbers for Lotto America, Mega Millions, Powerball, Multi-Win Lotto, Play 3 Day \u2014 updated after every draw.",
+      "canonicalPlaceholder": "[VERIFY-CONVENTION] /de (host + trailing-slash convention not finalized \u2014 not emitted yet)",
+      "robots": "index,follow",
+      "openGraph": {
+        "type": "website",
+        "title": "Delaware Lottery Results Today",
+        "description": "Latest Delaware Lottery winning numbers and jackpots.",
+        "siteName": "Lottery Corner"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Delaware Lottery Results Today",
+        "description": "Latest Delaware Lottery winning numbers and jackpots."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "url": "/"
+        },
+        {
+          "name": "Delaware Winning Numbers",
+          "url": "/de"
+        }
+      ]
+    },
+    "h1": "Delaware Lottery Results Today \u2014 Winning Numbers, Jackpots, & How to Claim",
+    "intro": "Get the latest Delaware Lottery winning numbers, live jackpots, and clear tools to check results, verify your ticket, and understand odds and claim rules \u2014 updated after every draw.",
+    "lastUpdated": {
+      "display": "Last updated: July 9, 2026 at 2:16 PM ET",
+      "storedDrawTimezone": "America/New_York",
+      "displayTimezone": "America/New_York",
+      "isoDateModified": "2026-07-09T14:16:55"
+    },
+    "timezoneMeta": {
+      "storedTimezone": "America/New_York",
+      "gameLocalTimezone": "America/New_York",
+      "note": "Draw times stored in EST are converted to America/New_York for display (05-doc D6/D7)."
+    }
+  },
+  "jackpotTicker": {
+    "nextDraw": {
+      "game": "Lotto America",
+      "timeDisplay": "see schedule (ET)",
+      "countdownLabel": ""
+    },
+    "topJackpots": [
+      {
+        "game": "Mega Millions",
+        "amountDisplay": "$576 Million"
+      },
+      {
+        "game": "Powerball",
+        "amountDisplay": "$435 Million"
+      },
+      {
+        "game": "Lotto America",
+        "amountDisplay": "$32.50 Million"
+      }
+    ],
+    "alsoComingUp": [],
+    "quickActions": [
+      {
+        "label": "Check Ticket",
+        "href": "#check-ticket"
+      },
+      {
+        "label": "Past Results",
+        "href": "#winning-history"
+      },
+      {
+        "label": "Prize Lookup",
+        "href": "#how-to-claim"
+      },
+      {
+        "label": "Claim Info",
+        "href": "#how-to-claim"
+      }
+    ],
+    "buyTickets": {
+      "label": "Buy Tickets",
+      "href": "/buynow/play-usa-powerball"
+    },
+    "disclaimer": "Winning numbers are updated shortly after each drawing. For major prizes, confirm your ticket with an authorized Delaware Lottery retailer or office."
+  },
+  "tabs": [
+    {
+      "key": "results",
+      "label": "Results",
+      "href": "#results",
+      "active": true
+    },
+    {
+      "key": "winning-history",
+      "label": "Winning History",
+      "href": "#winning-history"
+    },
+    {
+      "key": "schedule",
+      "label": "Schedule",
+      "href": "#schedule"
+    },
+    {
+      "key": "how-to-play",
+      "label": "How to Play",
+      "href": "#how-to-play"
+    },
+    {
+      "key": "how-to-claim",
+      "label": "How to Claim",
+      "href": "#how-to-claim"
+    }
+  ],
+  "latestResults": {
+    "heading": "Latest Draw Results",
+    "infoCallout": "Winning numbers on Lottery Corner are updated shortly after each draw. For major prizes, confirm your ticket with an authorized Delaware Lottery retailer or office.",
+    "intro": "Here are the most recent Delaware Lottery winning numbers, updated as soon as each drawing is completed.",
+    "groups": [
+      {
+        "groupKey": "multiState",
+        "heading": "Multi-State Draws (Powerball & Mega Millions)",
+        "resultCards": [
+          {
+            "gameId": 1018,
+            "gameSlug": "lotto-america",
+            "displayName": "Lotto America",
+            "formatRef": {
+              "gameId": 1018
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  17,
+                  26,
+                  31,
+                  32,
+                  37
+                ],
+                "colorToken": "ball.default"
+              },
+              {
+                "order": 1,
+                "label": "Star Ball",
+                "values": [
+                  1
+                ],
+                "colorToken": "ball.bonus"
+              }
+            ],
+            "drawScheduleLabel": "Wed & Sat",
+            "prizeDisplay": "$32.50 Million",
+            "prizeRaw": "32500000",
+            "nextDraw": {
+              "display": "Saturday, 07/11/2026",
+              "nextJackpotDisplay": "$32.86 Million"
+            },
+            "buyTickets": {
+              "label": "Buy Tickets",
+              "href": "/buynow/play-usa-lottoamerica",
+              "affiliateResolved": false
+            },
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/de/lotto-america/2026"
+              },
+              {
+                "type": "findMore",
+                "href": "/de/lotto-america"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 1013,
+            "gameSlug": "mega-millions",
+            "displayName": "Mega Millions",
+            "formatRef": {
+              "gameId": 1013
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-07",
+              "display": "Tuesday, 07/07/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  2,
+                  31,
+                  35,
+                  36,
+                  63
+                ],
+                "colorToken": "ball.default"
+              },
+              {
+                "order": 1,
+                "label": "Mega Ball",
+                "values": [
+                  12
+                ],
+                "colorToken": "ball.megaball"
+              }
+            ],
+            "drawScheduleLabel": "Tue & Fri",
+            "prizeDisplay": "$576 Million",
+            "prizeRaw": "576000000",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$604 Million"
+            },
+            "buyTickets": {
+              "label": "Buy Tickets",
+              "href": "/buynow/play-usa-megamillions",
+              "affiliateResolved": false
+            },
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/de/mega-millions/2026"
+              },
+              {
+                "type": "findMore",
+                "href": "/de/mega-millions"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 1012,
+            "gameSlug": "powerball",
+            "displayName": "Powerball",
+            "formatRef": {
+              "gameId": 1012
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  12,
+                  29,
+                  37,
+                  43,
+                  55
+                ],
+                "colorToken": "ball.default"
+              },
+              {
+                "order": 1,
+                "label": "Powerball",
+                "values": [
+                  18
+                ],
+                "colorToken": "ball.powerball"
+              }
+            ],
+            "drawScheduleLabel": "Mon, Wed & Sat",
+            "multipliers": [
+              {
+                "key": "power-play",
+                "label": "Power Play",
+                "value": 4,
+                "display": "Power Play 4X"
+              }
+            ],
+            "prizeDisplay": "$435 Million",
+            "prizeRaw": "435000000",
+            "nextDraw": {
+              "display": "Saturday, 07/11/2026",
+              "nextJackpotDisplay": "$457 Million"
+            },
+            "buyTickets": {
+              "label": "Buy Tickets",
+              "href": "/buynow/play-usa-powerball",
+              "affiliateResolved": false
+            },
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/de/powerball/2026"
+              },
+              {
+                "type": "findMore",
+                "href": "/de/powerball"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      },
+      {
+        "groupKey": "inState",
+        "heading": "Delaware In-State Draws",
+        "resultCards": [
+          {
+            "gameId": 331,
+            "gameSlug": "multi-win-lotto",
+            "displayName": "Multi-Win Lotto",
+            "formatRef": {
+              "gameId": 331
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  4,
+                  10,
+                  17,
+                  18,
+                  19,
+                  24
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$51,500",
+            "prizeRaw": "51500",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$52,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/de/multi-win-lotto/2026"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      },
+      {
+        "groupKey": "pick",
+        "heading": "Pick Games & Daily Draws",
+        "resultCards": [
+          {
+            "gameId": 326,
+            "gameSlug": "play-3-day",
+            "displayName": "Play 3 Day",
+            "formatRef": {
+              "gameId": 326
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-09",
+              "display": "Thursday, 07/09/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  0,
+                  5,
+                  2
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$500",
+            "prizeRaw": "500",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$500"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/de/play-3-day/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 327,
+            "gameSlug": "play-3-night",
+            "displayName": "Play 3 Night",
+            "formatRef": {
+              "gameId": 327
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  5,
+                  9,
+                  3
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$500",
+            "prizeRaw": "500",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$500"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/de/play-3-night/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 328,
+            "gameSlug": "play-4-day",
+            "displayName": "Play 4 Day",
+            "formatRef": {
+              "gameId": 328
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-09",
+              "display": "Thursday, 07/09/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  4,
+                  6,
+                  0,
+                  0
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$5,000",
+            "prizeRaw": "5000",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$5,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/de/play-4-day/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 329,
+            "gameSlug": "play-4-night",
+            "displayName": "Play 4 Night",
+            "formatRef": {
+              "gameId": 329
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  3,
+                  1,
+                  3,
+                  2
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$5,000",
+            "prizeRaw": "5000",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$5,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/de/play-4-night/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 658,
+            "gameSlug": "play-5-day",
+            "displayName": "Play 5 Day",
+            "formatRef": {
+              "gameId": 658
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-09",
+              "display": "Thursday, 07/09/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  7,
+                  1,
+                  0,
+                  3,
+                  5
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$50,000",
+            "prizeRaw": "50000",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$50,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/de/play-5-day/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 659,
+            "gameSlug": "play-5-night",
+            "displayName": "Play 5 Night",
+            "formatRef": {
+              "gameId": 659
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  9,
+                  5,
+                  5,
+                  3,
+                  0
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$50,000",
+            "prizeRaw": "50000",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$50,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/de/play-5-night/2026"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      }
+    ]
+  },
+  "quickFacts": {
+    "heading": "Delaware Lottery Quick Facts",
+    "rows": [
+      {
+        "label": "Minimum age to play",
+        "value": "18"
+      },
+      {
+        "label": "Draw-game claim deadline",
+        "value": "Varies by game (commonly 180 days from the draw date)"
+      },
+      {
+        "label": "State tax on winnings",
+        "value": "No state income tax on winnings"
+      },
+      {
+        "label": "Games covered",
+        "value": "Lotto America, Mega Millions, Powerball, Multi-Win Lotto, Play 3 Day, Play 3 Night"
+      }
+    ]
+  },
+  "drawSchedule": {
+    "heading": "Delaware Lottery Draw Schedule (ET)",
+    "intro": "All times shown in Delaware local time.",
+    "entries": [
+      {
+        "game": "Lotto America",
+        "days": "Wed & Sat",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Mega Millions",
+        "days": "Tue & Fri",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Powerball",
+        "days": "Mon, Wed & Sat",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Multi-Win Lotto",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Play 3 Day",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Play 3 Night",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Play 4 Day",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Play 4 Night",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      }
+    ]
+  },
+  "historyLinks": {
+    "heading": "Delaware Lottery Winning Numbers History",
+    "intro": "Browse past Delaware Lottery winning numbers by game.",
+    "links": [
+      {
+        "label": "Lotto America History",
+        "href": "/de/lotto-america/2026"
+      },
+      {
+        "label": "Mega Millions History",
+        "href": "/de/mega-millions/2026"
+      },
+      {
+        "label": "Powerball History",
+        "href": "/de/powerball/2026"
+      },
+      {
+        "label": "Multi-Win Lotto History",
+        "href": "/de/multi-win-lotto/2026"
+      },
+      {
+        "label": "Play 3 Day History",
+        "href": "/de/play-3-day/2026"
+      },
+      {
+        "label": "Play 3 Night History",
+        "href": "/de/play-3-night/2026"
+      },
+      {
+        "label": "Play 4 Day History",
+        "href": "/de/play-4-day/2026"
+      },
+      {
+        "label": "Play 4 Night History",
+        "href": "/de/play-4-night/2026"
+      }
+    ]
+  },
+  "howToClaim": {
+    "heading": "How to Claim Delaware Lottery Prizes",
+    "intro": "How to claim Delaware Lottery prizes, from small retailer payouts to large jackpot claims.",
+    "claimOptions": [
+      {
+        "amount": "Up to $599",
+        "method": "Claim at most authorized Delaware Lottery retailers"
+      },
+      {
+        "amount": "$600 and above",
+        "method": "Claim at a Delaware Lottery office or by mail per prize amount"
+      },
+      {
+        "amount": "Jackpot / annuity",
+        "method": "Claim in person at the Delaware Lottery headquarters (appointment recommended)"
+      }
+    ],
+    "documents": [
+      "Signed winning ticket",
+      "Government-issued photo ID",
+      "Social Security number or taxpayer ID",
+      "Completed claim form"
+    ],
+    "steps": [
+      {
+        "title": "Sign your winning ticket",
+        "detail": "Immediately sign the back to protect ownership."
+      },
+      {
+        "title": "Confirm the amount you won",
+        "detail": "Use the Check Ticket tool or Latest Draw Results."
+      },
+      {
+        "title": "Choose the correct claim method",
+        "detail": "Based on the prize amount."
+      },
+      {
+        "title": "Complete the paperwork",
+        "detail": "Claim form and tax forms for larger prizes."
+      },
+      {
+        "title": "Submit your claim",
+        "detail": "In person or by mail (certified mail recommended)."
+      }
+    ],
+    "deadlines": [
+      "Draw games: commonly 180 days from the draw date",
+      "Scratchers: per each game's end date",
+      "Mailed claims: postmark by the deadline"
+    ],
+    "districtOffices": "Delaware Lottery claim offices handle larger prizes; appointments are recommended for jackpot and annuity prizes."
+  },
+  "taxes": {
+    "heading": "Taxes & Withholding",
+    "stateNote": "Delaware does NOT charge state income tax on lottery winnings.",
+    "federalIntro": "Federal tax rules apply for prizes of $600 or more:",
+    "points": [
+      "Mandatory federal withholding: 24%",
+      "Additional tax may apply at filing",
+      "W-2G forms are issued for reportable winnings"
+    ]
+  },
+  "playerInfo": {
+    "heading": "Delaware Lottery Guide & Player Information",
+    "intro": "Key information Delaware Lottery players should understand.",
+    "sections": [
+      {
+        "title": "Draw Integrity & Oversight",
+        "body": "Delaware Lottery drawings follow strict procedures designed to ensure fairness and randomness; results are verified before publication."
+      },
+      {
+        "title": "Key Delaware Lottery Rules",
+        "list": [
+          "Minimum age to play: 18",
+          "Tickets must be signed to become valid property",
+          "Damaged or unreadable tickets follow a formal review process",
+          "Draw cutoff times vary by game"
+        ]
+      },
+      {
+        "title": "Responsible Play",
+        "list": [
+          "Set a budget and stick to it",
+          "Odds are fixed \u2014 play for entertainment",
+          "Avoid chasing losses",
+          "A problem-gambling helpline is available for confidential support"
+        ]
+      }
+    ]
+  },
+  "finalFaqs": {
+    "heading": "Delaware Lottery \u2014 Frequently Asked Questions",
+    "visibleOnPage": true,
+    "items": [
+      {
+        "q": "What time are Delaware Lottery drawings held?",
+        "a": "Draw times vary by game; times on this page use Delaware local time. See the Schedule section for each game's days and times."
+      },
+      {
+        "q": "What is the minimum age to play the Delaware Lottery?",
+        "a": "You must be 18 or older to play."
+      },
+      {
+        "q": "Are Delaware Lottery prizes taxed?",
+        "a": "Delaware does NOT charge state income tax on lottery winnings. Federal withholding of 24% applies to prizes over $5,000."
+      },
+      {
+        "q": "How do I claim a Delaware Lottery prize?",
+        "a": "Smaller prizes can be claimed at retailers; larger prizes at a Lottery office or headquarters. See How to Claim above."
+      },
+      {
+        "q": "What happens to unclaimed Delaware Lottery prizes?",
+        "a": "Unclaimed prize funds are directed to state programs per Delaware Lottery rules."
+      }
+    ]
+  },
+  "adSlotRefs": {
+    "note": "Same fixed state-page ad slots as /fl (per pageType).",
+    "top": [
+      "sp_top_billboard"
+    ],
+    "inContent": [
+      "sp_mid_leaderboard_pos1",
+      "sp_mid_leaderboard_pos2",
+      "sp_mid_leaderboard_pos3",
+      "sp_mid_leaderboard_pos4"
+    ],
+    "rightRail": [
+      "sp_side_halfpage_pos1",
+      "sp_side_mpu_pos2",
+      "sp_side_skyscraper"
+    ],
+    "mobileInContent": [
+      "sp_mobile_leaderboard_pos1",
+      "sp_mobile_leaderboard_pos2",
+      "sp_mobile_leaderboard_pos3",
+      "sp_mobile_leaderboard_pos4"
+    ],
+    "bottom": [
+      "sp_bottom_billboard"
+    ],
+    "stickyFooterAd": "sp_bottom_large_leaderboard"
+  },
+  "officialSourceNotice": {
+    "name": "Delaware Lottery",
+    "text": "Winning numbers are sourced from official Delaware Lottery draws. Always verify major prizes with an authorized Delaware Lottery retailer or office."
+  },
+  "responsiblePlayNotice": {
+    "text": "Play responsibly. 18+ only. If gambling is a problem, help is available."
+  },
+  "independenceDisclaimer": {
+    "text": "Lottery Corner is an independent lottery information website and is not affiliated with the Delaware Lottery or the State of Delaware."
+  },
+  "popularGames": [
+    {
+      "gameSlug": "powerball",
+      "displayName": "Powerball",
+      "href": "/powerball"
+    },
+    {
+      "gameSlug": "mega-millions",
+      "displayName": "Mega Millions",
+      "href": "/mega-millions"
+    },
+    {
+      "gameSlug": "multi-win-lotto",
+      "displayName": "Multi-Win Lotto",
+      "href": "/de/multi-win-lotto"
+    }
+  ],
+  "aiToolsTeaser": {
+    "enabled": true,
+    "heading": "AI-assisted lottery tools (coming soon)",
+    "copy": "Explore AI-assisted insights, smart number analysis and personalized alerts. For entertainment and informational purposes only.",
+    "cta": "Sign in to try",
+    "loginGated": true
+  },
+  "accountHooks": {
+    "loginRegisterVisible": true,
+    "favoritesEnabled": true
+  },
+  "faqs": {
+    "heading": "Frequently Asked Questions",
+    "visibleOnPage": true,
+    "schemaEligible": true,
+    "items": [
+      {
+        "q": "What are today's Delaware Lottery numbers?",
+        "a": "The latest winning numbers for all games appear in the Latest Draw Results section above."
+      },
+      {
+        "q": "How do I check my Delaware Lottery ticket?",
+        "a": "Compare your numbers to the Latest Draw Results, or use the Check Your Ticket tool where available."
+      },
+      {
+        "q": "Where do I claim a Delaware Lottery prize?",
+        "a": "Smaller prizes at retailers; larger prizes at a Lottery office. See How to Claim below."
+      }
+    ]
+  },
+  "highlights": {
+    "heading": "Recent Highlights & Alerts",
+    "intro": "Notable Delaware Lottery trends, unclaimed prizes nearing expiration, and jackpot movement. Updated periodically.",
+    "recentWins": [
+      {
+        "location": "Delaware",
+        "text": "A recent top-tier Delaware Lottery win was reported in the state (details published when officially released)."
+      }
+    ],
+    "unclaimedPrizes": [
+      {
+        "game": "Lotto America",
+        "amount": "See official source",
+        "location": "Delaware",
+        "note": "Unclaimed prizes expire after the claim deadline \u2014 check your tickets."
+      }
+    ],
+    "jackpotGrowth": [
+      {
+        "game": "Powerball",
+        "text": "The jackpot has rolled following draws without a top-prize winner."
+      },
+      {
+        "game": "Mega Millions",
+        "text": "Recent rollovers have increased the advertised jackpot."
+      }
+    ],
+    "note": "Winner specifics are published only when officially released."
+  },
+  "anonymityRules": {
+    "heading": "Can Delaware Lottery Winners Stay Anonymous?",
+    "intro": "Anonymity depends on the prize amount and current state law.",
+    "sections": [
+      {
+        "title": "Anonymity",
+        "body": "Whether Delaware winners can remain anonymous depends on the prize tier and Delaware law. Confirm the current rules with the official Delaware Lottery before claiming."
+      },
+      {
+        "title": "Verification",
+        "body": "All winners must still complete identity and prize verification even where public disclosure is limited."
+      }
+    ]
+  },
+  "winnerLocation": {
+    "heading": "Recent Delaware Lottery Winning Ticket Locations",
+    "intro": "Illustrative sample rows; official winner locations are published when released.",
+    "columns": [
+      "Prize",
+      "Game",
+      "Area",
+      "Draw Date"
+    ],
+    "rows": [
+      [
+        "$32.50 Million",
+        "Lotto America",
+        "Statewide (sample)",
+        "Wednesday, 07/08/2026"
+      ],
+      [
+        "$576 Million",
+        "Mega Millions",
+        "Statewide (sample)",
+        "Tuesday, 07/07/2026"
+      ],
+      [
+        "$435 Million",
+        "Powerball",
+        "Statewide (sample)",
+        "Wednesday, 07/08/2026"
+      ],
+      [
+        "$51,500",
+        "Multi-Win Lotto",
+        "Statewide (sample)",
+        "Wednesday, 07/08/2026"
+      ],
+      [
+        "$500",
+        "Play 3 Day",
+        "Statewide (sample)",
+        "Thursday, 07/09/2026"
+      ]
+    ]
+  }
+}

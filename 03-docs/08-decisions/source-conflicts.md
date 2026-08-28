@@ -1483,6 +1483,169 @@ The instruction authorises the **free account foundation** and nothing beyond it
 
 **Status.** CLOSED — this is a recorded Tier-1 authorization, not an open question. Blocks nothing.
 
+## Conflict 38 — Canonical ownership of the five legacy policy routes transfers to the new UI (CLOSED — RECORDED 2026-08-11)
+
+**Recorded by the orchestrating session, directly from the founder's chat instructions of 2026-08-11.**
+
+The founder instructed, in substance: *"finish the regular pages like contact us, login, signup, terms and
+conditions, privacy policy"* and, on deployment model (same day, gating decision): *"we are not publishing step
+by step; we are pushing entire code to server at once."* Together these supersede the LRG-SHELL-046 ruling
+"EXISTING LEGACY POLICY — MIGRATION DEFERRED": at cutover the new UI owns `/about-us`, `/contact-us`,
+`/terms-and-conditions`, `/privacy-policy`, `/cookies-policy`. The LRG-SHELL-046 duplication-guard test is to be
+updated deliberately, citing this entry.
+
+**Constraints that stand:** policy/legal text is TRANSCRIBED from the legacy pages with provenance (read-only
+evidence use, `CLAUDE.md` §5), never drafted fresh by the implementation; any legacy clause that no longer
+matches the product is marked `[FOUNDER-LEGAL-REVIEW]` and listed in the task report — legal wording is a
+founder/legal sign-off, not an implementation decision. A contact form may store submissions in the review data
+layer for the admin phase, but MUST NOT claim delivery to a human until a real channel exists. All five pages
+noindex until launch.
+
+**Status.** CLOSED as authorization; legal-text sign-off remains an open founder item at launch.
+
+## Conflict 39 — Blog family built without its blueprint on Tier-1 instruction (CLOSED — RECORDED 2026-08-11)
+
+The founder instructed: *"blog list page, blog search and blog item"*. No blog blueprint exists (BP-08's blog
+half was never authored) — `CLAUDE.md` §2 would block the family. The Tier-1 instruction overrides the block.
+Composition derives from the approved News article architecture (07B) plus the Experience Architecture §35 blog
+distinction (analysis · tutorial · opinion · systems · contributor story); `BlogPosting` schema per 07/07B.
+Routes `/blog` and `/blog/{slug}` are already classified **preserve** in the ratified route audit (21 live
+indexed URLs). The `lc_bp_*`/`lc_bdp_*` ad families remain named-but-not-captured: blueprint-style anchors ship
+as typed-empty reserved profiles pending the ad-inventory capture task. News search and blog search pages are
+likewise founder additions with no blueprint section — both ship noindex with crawlable non-search fallbacks.
+**Open remainder:** authoring the blog half of BP-08 post-hoc, and the legacy two-template canonical question
+(`CLAUDE.md` §10) which this build does not answer.
+
+**Status.** CLOSED as authorization; BP-08 blog authoring and the two-template question remain OPEN.
+
+## Conflict 40 — Admin area authorized as a protected area inside the new app (CLOSED — RECORDED 2026-08-11)
+
+The founder instructed: *"Admin login for LotteryCorner admin to approve news item and blog item entered, even
+to enter news and blog items, and maintain forum approval; later we can automate it using agents by calling the
+API."* No tier-1..5 authority governed admin; the tier-7 strategy document's open question 1 (legacy admin vs
+separate app vs protected area) is hereby answered by the founder: **(c) protected area inside the new app**.
+
+**Binding constraints inherited from higher tiers:** noindex + robots-disallowed + auth-gated; admin controls
+never present in public page markup (Shell §15); editorial flow is draft → review → publish with `contentMeta`
+(source, reviewStatus, lastReviewed); every news article has an accountable human editor (07 §3); every
+moderation action carries reason + policy + appeal route (08 §22); AI may later triage and assist but humans own
+severe actions and appeals (Constitution §50); full audit trail (who/what/when/action/reason).
+
+**Status.** CLOSED as authorization.
+
+## Conflict 41 — Community surfaces in review mode use self-identifying interface-test content (CLOSED — RECORDED 2026-08-11; TIME-BOXED)
+
+The Constitution forbids fabricating posts, threads, replies, reputation or activity, twice. The founder's
+"finish the entire site / assume the database exists" instruction requires reviewable community pages now.
+Resolution, following the Conflict 33 flagship precedent: the community review data layer may carry entries and
+replies ONLY if their own visible text identifies them as interface-test material written by the team (never as
+members, never with invented usernames presented as real people); alternatively sections render their designed
+empty states. Production launch requires real human content or empty states — the review corpus MUST NOT ship
+ungated. Reputation numbers, member counts and activity statistics are never simulated; the AI/Research reply
+(FE-06) renders per 08D Templates G/H with its real labels.
+
+**Status.** CLOSED as authorization; expires at community launch (real content or empty states only).
+
+### FOUNDER AMENDMENT — 2026-08-11 (same day, in review of this entry)
+
+The founder ruled, in substance: *"Let's have 5 forum users (though it's fabricated, we need them for now); create
+the names and personas and language very much similar to lotterypost.com so that we know exact questions and
+topics; also create 10 topics and at least 5 to 10 discussion replies for each entry; for now it's only UI —
+later we can build the DB for these users."*
+
+This amends the interface-test-labeling requirement above for the REVIEW BUILD ONLY: the community review corpus
+may carry five named member personas with realistic player voice and ten topics with five to ten replies each,
+written by the team as design fixtures. Conditions that make this compatible with the Constitution's purpose
+(never deceive the public):
+1. A page-level review disclosure banner renders on every community page served from the review corpus (the
+   flagship `meta.disclosure` pattern).
+2. Every fixture record carries `provenance: "synthetic-review-fixture"` and the data layer REFUSES to serve the
+   corpus in a production build (Conflict 33 pattern).
+3. Community pages stay noindex and out of every sitemap.
+4. Fixture members are never emitted as `Person` entities in JSON-LD, never counted in any statistic presented
+   as real, and never carry reputation badges presented as earned.
+5. The expiry stands: production launch requires real human content or designed empty states; the fixture
+   corpus MUST NOT ship ungated.
+
+**Status after amendment.** CLOSED; review-fixture personas authorized under conditions 1–5; expiry unchanged.
+
+## Conflict 42 — `/lottery-tax-calculator` (legacy, live, indexed) vs `/tools/tax-calculator` (blueprint) (MEDIUM — OPEN)
+
+BP-05C §5 defines `/tools/tax-calculator`; production serves the indexed static page `/lottery-tax-calculator`.
+This is a route change requiring the full `CLAUDE.md` §10 package (evidence, canonical, sitemap, internal links,
+1:1 redirect plan), which no FD-RTE ruling settles. **Interim (founder build instruction):** the tool is built at
+the blueprint route, noindex, and the consolidation decision (redirect direction and timing) is taken with the
+launch redirect map. Nothing redirects today.
+
+**Status.** OPEN — needs the §10 route-change package before launch.
+
+## Conflict 43 — Home carries content BP-02 §12 has no section ID for: the FAQ, and the systems block's own framing (CLOSED — RECORDED 2026-08-13)
+
+**Raised by the founder, 2026-08-13, comparing a circulating screenshot of the ARCHIVED home against the built
+one:** *"I think home page missing some of the important sections … not sure why sometimes it's creating the
+attached screenshot sections and sometimes it's implementing the current home page. I like the current home
+Powerball and Mega Millions sections with AI, but the sections I like in the attached screenshot — get the best
+of both."*
+
+**The screenshot is `components/archived/legacy/home/HomeTemplate.tsx`, not a design.** It is the tier-7
+composition `FD-GATE-01` archived. Every section it shows is already present in the built BP-02 Home under a
+governed ID — *Find Your State Lottery* is H-07, *Live Lottery News* is H-11, *Jackpot Snapshot & Comparison* is
+H-09B, and so on — with exactly two exceptions, below. Its three-game featured row is NOT an exception: BP-02 §14
+names H-02A *"Featured National Games: Powerball and Mega Millions"*, two games, and Lotto America appears on the
+built page under H-06A. The AI-carrying H-02A is unchanged, per the instruction.
+
+### 43.1 — The systems block lost its heading and its safety copy to a de-duplication (defect, no conflict)
+
+BP-02 §12 order 15 is *"Tools, Systems and Number Exploration"*; §23 lists Systems and Wheels and
+Frequency/number history among the initial tools. LRG-UI-016 §1 correctly filtered `systems.sections` to drop two
+rows duplicating a tool card — but both fixture rows matched, the array emptied, and the renderer's
+`systems.length > 0` guard took the sub-block's heading *and its intro* down with the rows. The lost intro is
+Constitution §7 language: *"lottery draws are random and outcomes cannot be predicted or guaranteed"*, sitting
+directly beneath a Number Analysis tool. **Not a source conflict — a regression.** Heading and intro now render
+from the fixture independently of how many rows survive the filter; the filter is unchanged.
+
+### 43.2 — The Home FAQ has no BP-02 section ID (conflict; resolved without amending §12)
+
+`04-sample-data/home-page-sample.json` carries `faqs` with `visibleOnPage: true`, `schemaEligible: true` and
+three answers. The archived template rendered it. BP-02 §12 lists **no FAQ entry at any position**, and §29
+(H-15 Trust, Support and Footer) does not name one either. So: tier-4 has no slot for content the founder wants
+visible and the fixture marks visible.
+
+**Resolution — absorbed into H-15, no 31st entry.** The alternative was inventing an ID absent from a frozen
+30-entry sequence, which `CLAUDE.md` §6 forbids ("page structure comes from the blueprints"). This codebase has
+already approved and shipped the same absorption for the same content type: **FG-15 is "Trust, responsible play
+and FAQ"** on the flagship game pages, where the FAQ renders inside the trust section without a section ID of its
+own. §29's content list (methodology, corrections, support) is where these three answers belong anyway — where to
+check results, how to find a state, and whether any tool can predict a draw. `visibleOnPage: false` yields no
+block, so the flag genuinely governs.
+
+**No `FAQPage` JSON-LD**, following the reason `FlagshipEcosystem` records: `CLAUDE.md` §11 permits it once the
+FAQ is visible — which it now is — but Home is `noindex, nofollow`, so emitting structured data for a page no
+crawler may index advertises what is not on offer. It ships with the indexing cutover, alongside the `FD-RTE-03`
+origin reconciliation.
+
+**Open founder item.** If Home should instead carry a standalone `<h2>` FAQ section at the screenshot's position
+(after H-11A Blog and Guides, before H-14B Browse by State), that is a **BP-02 §12 amendment** and needs explicit
+approval. It was not assumed here.
+
+### 43.3 — `AGENTS.md` was a stale copy of `CLAUDE.md` (fixed)
+
+Untracked `AGENTS.md`, the Codex-facing guide, was byte-identical to `CLAUDE.md` except for its title, its own
+repository-map row — and **four governance paragraphs frozen before the 2026-08-11 ratifications**. It still
+taught `/play/{game}` as the approved commerce route (`FD-RTE-06` settled `/buynow/{code}`), a non-`www`
+canonical target (`FD-RTE-02`/`FD-RTE-03` settled `www`), a trailing-slash `301` (measured `308`, direction set
+by `FD-RTE-01`), and it referenced `.Codex/settings.local.json`, a path that does not exist. An agent reading it
+would have built against superseded route and canonical rules. Reconciled; the two guides now differ only in
+their title and their self-referential map row.
+
+**Root cause of the founder's "sometimes one, sometimes the other".** Neither guide named the archived
+`HomeTemplate` as a trap, so its section list stayed a plausible-looking target. Both guides now carry a §6 rule:
+Home has exactly one composition, and a section the archived template carried belongs in its governed BP-02
+section — never in a revived template, never under an invented ID.
+
+**Status.** 43.1 CLOSED (regression fixed). 43.2 CLOSED as built; the standalone-section variant is an OPEN
+founder decision. 43.3 CLOSED.
+
 ## Conflict 44 — 07B §15 lists `image` as a REQUIRED `NewsArticle` field; Google requires it to represent the article (MEDIUM — RESOLVED 2026-08-13)
 
 **Raised by LRG-UX-SCHEMA-001 correction 3**, which instructed: *"Remove the site logo fallback from `NewsArticle`
@@ -1531,3 +1694,57 @@ Until it is taken, articles ship with no `image` in schema.
 
 **Status.** RESOLVED as implemented; the editorial-imagery decision remains an OPEN founder item, and 07B §15 is
 not amended.
+
+---
+
+## Conflict 45 — Home rail placement in `adAnchors.ts` did not match measured production placement (CLOSED — RECORDED 2026-08-27)
+
+**Tier 4** — `home-preview-section-manifest.md` §4 (anchor → production slot mapping), BP-02 v1.1 §63 (position
+map) — hung five of the six `hp_side_*` rail placements on two anchors: `hp_side_halfpage_pos1` + `hp_side_mpu`
+on AD-H01, and `hp_side_halfpage_pos2` + `hp_side_mpu_pos1` + `hp_side_halfpage_pos3` + `hp_side_halfpage_pos4`
+on AD-H05.
+
+**Tier 1** — founder instruction, 2026-08-27: *"place the ads as they are on the current home page."*
+
+### The evidence
+
+Production Home (`lotterycorner.com/`) was measured live at a 1440px viewport. All six side placements exist and
+all six are in a right rail — the `"notes": "Right rail"` transcription in `ad-slot-definitions.json` is correct
+— but production spreads them down the whole page beside the content they accompany:
+
+| slot | production `y` (page ≈ 12,000px) | share |
+|---|---|---|
+| `hp_side_halfpage_pos1` | 273 | 2% |
+| `hp_side_halfpage_pos3` | 4948 | 41% |
+| `hp_side_mpu_pos1` | 5776 | 48% |
+| `hp_side_halfpage_pos4` | 9230 | 77% |
+| `hp_side_mpu` | 9877 | 82% |
+| `hp_side_halfpage_pos2` | 11981 | 100% |
+
+The deployed new-UI build rendered the same six at `y` = 468, 516, 588, 636, 684, 732 — six placements inside
+264px, then ~10,500px of empty rail. Two causes, one governed and one not:
+
+1. the anchor map clustered them on two anchors (this conflict); and
+2. `.lcp-rail` was a single page-level `position: sticky` column holding every rail group, which collapsed even
+   that two-anchor intent into one stack. That is a layout defect, not a source conflict, and is fixed separately.
+
+### Resolution
+
+Rail groups re-hung across the four anchors whose sequence positions match production's shares: AD-H01 (14%) →
+`pos1`; AD-H03 (44%) → `pos3` + `mpu_pos1`; AD-H04 (72%) → `pos4` + `mpu`; AD-H05 (88%) → `pos2`.
+
+**What did NOT change**, and is asserted by the unchanged `assertHomeAdBaseline()`: no slot added, removed,
+renamed, resized or retired; no GAM unit path, div id, size map or eager/lazy classification touched; all six
+remain `subPosition: "rail"` and `visibility: "gte-992"`; `placedSlotKeys()` returns the same 15 active
+placements. Only which anchor each rail group hangs from moved.
+
+**Not amended.** `home-preview-section-manifest.md` §4 and BP-02 §63 still record the previous mapping. They are
+superseded here by tier-1 instruction for Home only, exactly as `CLAUDE.md` §2 provides; no other page family's
+anchor map is affected.
+
+### Still open
+
+Production also separates the two inline pairs that the new UI renders 48px apart —
+`hp_mid_large_leaderboard_pos2`/`pos3` (both at 72%) and `hp_mid_billboard_pos2`/`pos3` (both at 88%). Production
+puts 400–2,000px of content between each pair. Closing that requires either new anchors or moving a slot between
+existing ones, which is a further BP-02 §63 change and a separate founder decision. **OPEN.**

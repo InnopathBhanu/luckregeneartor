@@ -14,6 +14,8 @@
  *
  * §38's own closing rule is why the anonymous page stays whole below this layer: "The signed-in page
  * retains broad national and state discovery. Personalization changes priority, not fact ownership."
+ * The complete signed-in sequence is progressively disclosed from one compact summary so sparse account
+ * states cannot push the public result task several viewports down the page.
  */
 
 import Link from "next/link";
@@ -42,6 +44,7 @@ import {
   InsightList,
   MatchesBlock,
   MyDayList,
+  PersonalLayerDisclosure,
   PersonalSection,
   TypedEmptyAdAnchor,
 } from "./PersonalCards";
@@ -73,11 +76,11 @@ export default function SignedInHomeLayer({ facts }: { facts: readonly PageGameF
   const heading = (id: string) => HOME_SIGNED_IN_SEQUENCE.find((s) => s.id === id)?.heading ?? id;
 
   return (
-    <div
-      className="lcp-personal"
-      data-personal-layer="home"
-      data-user-state="signed-in"
-      data-personal-order={ids.join(",")}
+    <PersonalLayerDisclosure
+      layer="home"
+      order={ids.join(",")}
+      title="My LotteryCorner"
+      summary={`${account.followedGames.length} followed ${account.followedGames.length === 1 ? "game" : "games"} · ${account.savedNumberSets.length} saved ${account.savedNumberSets.length === 1 ? "line" : "lines"}`}
     >
       <p className="lcp-personal__hello">
         Signed in as <strong>{account.displayName}</strong>. Your page starts with what you follow; everything
@@ -217,6 +220,6 @@ export default function SignedInHomeLayer({ facts }: { facts: readonly PageGameF
         Everything below is the same public page every reader sees — your account changes what comes first,
         never the facts.
       </p>
-    </div>
+    </PersonalLayerDisclosure>
   );
 }

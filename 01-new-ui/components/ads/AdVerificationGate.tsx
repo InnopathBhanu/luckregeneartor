@@ -1,7 +1,11 @@
 "use client";
 
 /*
- * THE CANARY GATE — LRG-ADS-CANARY-001 §2.
+ * ARCHIVED MANUAL CANARY GATE — retained as implementation history, not mounted by the application.
+ *
+ * The temporary protected subdomain now starts GAM automatically. `app/layout.tsx` deliberately does not
+ * import this component. Keeping the previous control as reference follows the repository's archive-not-delete
+ * policy and does not add any element to the rendered UI.
  *
  * A single, plainly-labelled control that a named tester uses to permit Ad Manager requests for the current
  * browser tab, and to withdraw that permission again.
@@ -27,7 +31,7 @@
 
 import { useEffect, useState } from "react";
 import "./adCanary.css";
-import { CANARY_GATE_AVAILABLE, PUBLIC_ACTIVATION_BLOCKED } from "@/lib/ads/gamConfig";
+import { GAM_ENABLED, PUBLIC_ACTIVATION_BLOCKED } from "@/lib/ads/gamConfig";
 import { isAdTestActive, onAdTestChange, setAdTestActive } from "@/lib/ads/adTestSession";
 
 export default function AdVerificationGate() {
@@ -40,7 +44,7 @@ export default function AdVerificationGate() {
     return onAdTestChange(setActive);
   }, []);
 
-  if (!CANARY_GATE_AVAILABLE) return null;
+  if (!GAM_ENABLED) return null;
 
   return (
     <div className="lcgam-gate" data-ad-gate={active ? "active" : "inactive"} role="region" aria-label="Ad verification">

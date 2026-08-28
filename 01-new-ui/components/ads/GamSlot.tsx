@@ -15,7 +15,7 @@
  * ══ EAGER VERSUS LAZY ══
  *
  * A slot marked `lazyLoad` in its definition requests only when it comes near the viewport, via
- * `IntersectionObserver` with a generous root margin. Above-the-fold slots request as soon as the gate opens.
+ * `IntersectionObserver` with a generous root margin. Above-the-fold slots request as soon as GAM is ready.
  * Registration always happens immediately for both — registering is free, requesting is the billable act, and
  * separating them is exactly what `disableInitialLoad()` buys.
  *
@@ -33,8 +33,7 @@
  */
 
 import { useEffect, useRef, useState } from "react";
-import { CANARY_GATE_AVAILABLE } from "@/lib/ads/gamConfig";
-import { isAdTestActive, onAdTestChange } from "@/lib/ads/adTestSession";
+import { GAM_ENABLED } from "@/lib/ads/gamConfig";
 import { isEligibleAtTier, type ViewportEligibility } from "@/lib/ads/viewportTier";
 import { useViewportTier } from "./useViewportTier";
 import {
@@ -56,7 +55,6 @@ export interface GamSlotProps {
 const LAZY_MARGIN = "300px 0px";
 
 export default function GamSlot({ divId, gamPath, sizes, mapping, lazy, viewports }: GamSlotProps) {
-  const [active, setActive] = useState(false);
   const [state, setState] = useState<SlotState>("inactive");
   const ref = useRef<HTMLDivElement | null>(null);
 
@@ -73,11 +71,6 @@ export default function GamSlot({ divId, gamPath, sizes, mapping, lazy, viewport
   const tier = useViewportTier();
   const eligible = isEligibleAtTier(viewports, tier);
 
-  useEffect(() => {
-    setActive(isAdTestActive());
-    return onAdTestChange(setActive);
-  }, []);
-
   /* Track this slot's lifecycle state for the debug attribute. */
   useEffect(() => {
     setState(slotState(divId));
@@ -87,7 +80,8 @@ export default function GamSlot({ divId, gamPath, sizes, mapping, lazy, viewport
   }, [divId]);
 
   /*
-   * Register on gate open AND viewport eligibility; destroy on unmount, gate close, or losing eligibility.
+   * Register when GAM is enabled and the placement is viewport-eligible; destroy on unmount or when it loses
+   * eligibility.
    *
    * `eligible` in the dependency list is what makes a resize across 992px correct: when the tier changes, this
    * effect's cleanup runs first — destroying the now-ineligible slot and freeing its div id inside GPT — and
@@ -95,14 +89,14 @@ export default function GamSlot({ divId, gamPath, sizes, mapping, lazy, viewport
    * pair can never be defined simultaneously and the div id is always free when it is reused.
    */
   useEffect(() => {
-    if (!CANARY_GATE_AVAILABLE || !active || !eligible) return;
+    if (!GAM_ENABLED || !eligible) return;
     registerSlot({ divId, gamPath, sizes, mapping, lazy });
     return () => {
       /* Client navigation and unmount both land here. Releasing the div id inside GPT is what allows the same
          route to register cleanly when it is visited again. */
       destroySlot(divId);
     };
-  }, [active, eligible, divId, gamPath, sizes, mapping, lazy]);
+  }, [eligible, divId, gamPath, sizes, mapping, lazy]);
 
   /*
    * Request: immediately when eager, at intersection when lazy.
@@ -112,7 +106,7 @@ export default function GamSlot({ divId, gamPath, sizes, mapping, lazy, viewport
    * slot the reader cannot see.
    */
   useEffect(() => {
-    if (!CANARY_GATE_AVAILABLE || !active || !eligible) return;
+    if (!GAM_ENABLED || !eligible) return;
     if (!lazy) {
       requestSlot(divId);
       return;
@@ -146,13 +140,13 @@ export default function GamSlot({ divId, gamPath, sizes, mapping, lazy, viewport
     );
     io.observe(el);
     return () => io.disconnect();
-  }, [active, eligible, divId, lazy]);
+  }, [eligible, divId, lazy]);
 
   /*
-   * The div GPT writes into. Present only once the gate is open: before that the parent's reservation is the
-   * whole of the placement, and an empty GPT div in the DOM would suggest a slot that was requested.
+   * The div GPT writes into. It remains absent when the deployment kill switch is off or this viewport is not
+   * eligible for the placement.
    */
-  if (!CANARY_GATE_AVAILABLE || !active || !eligible) return null;
+  if (!GAM_ENABLED || !eligible) return null;
 
   return (
     <div

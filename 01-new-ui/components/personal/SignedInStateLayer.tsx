@@ -15,6 +15,8 @@
  * AD-SS00 and AD-SS02 (§32 rows 2 and 16) belong to the anonymous composition's approved inventory and are
  * NOT re-rendered here — the layer must never move, duplicate or repurpose a slot (`CLAUDE.md` §12).
  * AD-SS01 is the one anchor this sequence introduces, typed and empty.
+ * The complete signed-in sequence is progressively disclosed from one compact summary so sparse account
+ * states cannot push the public result task several viewports down the page.
  */
 
 import Link from "next/link";
@@ -42,6 +44,7 @@ import {
   ContinueList,
   MatchesBlock,
   MyDayList,
+  PersonalLayerDisclosure,
   PersonalSection,
   TypedEmptyAdAnchor,
 } from "./PersonalCards";
@@ -95,11 +98,11 @@ export default function SignedInStateLayer({
         : { text: "Your saved numbers are checked in My State Matches below.", follow: false };
 
   return (
-    <div
-      className="lcp-personal"
-      data-personal-layer="state"
-      data-user-state="signed-in"
-      data-personal-order={ids.join(",")}
+    <PersonalLayerDisclosure
+      layer="state"
+      order={ids.join(",")}
+      title={`My ${stateName} Lottery`}
+      summary={`${followedHere.length} followed ${followedHere.length === 1 ? "game" : "games"} here · ${setsHere.length} saved ${setsHere.length === 1 ? "line" : "lines"}`}
     >
       {/* 1 — S-01S. PF-02 §33: only meaningful changes, summarized. */}
       <PersonalSection family="state" id="S-01S" heading={heading("S-01S")} protectedZone>
@@ -219,6 +222,6 @@ export default function SignedInStateLayer({
         Everything below is the same public {stateName} page every reader sees — your account changes what
         comes first, never the facts.
       </p>
-    </div>
+    </PersonalLayerDisclosure>
   );
 }

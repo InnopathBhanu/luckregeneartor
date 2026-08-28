@@ -257,13 +257,25 @@ body {
    992-1023px gap in which mobile slots AND the rail were both hidden.
    -------------------------------------------------------------------------- */
 
-/* Below 992: single column. At/above: main + 300px rail. */
-.lcp-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; }
+/* Below 992: single column. At/above: main + 300px rail.
+
+   LRG-ADS-016 §2: the grid now carries ONE ROW PER SEGMENT (see HomePreview's `renderSequence`),
+   so `row-gap` MUST be 0 — the segments are consecutive parts of one continuous content sequence,
+   and any row gap would open a false seam between sections that belong together. The 32px is a
+   COLUMN gap only, which is what it always meant in practice when there was a single row. */
+.lcp-grid { display: grid; grid-template-columns: minmax(0, 1fr); column-gap: 32px; row-gap: 0; }
 @media (min-width: 992px) {
   .lcp-grid { grid-template-columns: minmax(0, 1fr) var(--layout-rail); }
 }
 
-/* Contextual rail: hidden below the threshold, visible at/above it. */
+/* Contextual rail: hidden below the threshold, visible at/above it.
+
+   `display: none` below 992px removes the cell from the grid entirely rather than leaving an empty
+   track, so the mobile single-column flow is unaffected by the segmentation.
+
+   `position: sticky` is retained but now scopes to the segment's ROW instead of the whole page: the
+   placement follows the section it accompanies and releases at the end of it, which is the behaviour
+   production has. Stacked in one page-level sticky column it produced the six-deep top cluster. */
 .lcp-rail { display: none; }
 @media (min-width: 992px) {
   .lcp-rail {
@@ -449,6 +461,22 @@ body {
   cursor: pointer;
 }
 .lcp-accordion > div { padding: 0 14px 12px; }
+
+/*
+ * SUB-BLOCKS INSIDE A GOVERNED SECTION — "Systems and number analysis" within H-09, the Home FAQ
+ * within H-15. Both are a labelled part of their parent section rather than a section of their own,
+ * so they get separation and a rule, not a card: a boxed treatment would read as a peer section and
+ * confuse a heading structure that is deliberately h2 → h3.
+ */
+.lcp-systems,
+.lcp-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border-subtle);
+}
 
 /* COMPACT STALE BADGE — sits beside "Last updated" instead of a dominant banner. */
 .lcp-stale-badge {

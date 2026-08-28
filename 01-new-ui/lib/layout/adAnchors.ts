@@ -97,9 +97,32 @@ export const HOME_AD_ANCHORS: AdAnchor[] = [
         placementState: "filled-preview",
       },
       {
+        /*
+         * LRG-ADS-016 §1 — RAIL DISTRIBUTION, matched to measured production placement.
+         *
+         * The rail formerly carried `pos1` AND `hp_side_mpu` here, with the remaining four at AD-H05.
+         * Measured against production Home at 1440px, that is not where either of them sits: the
+         * production rail spreads all six down the full page beside the content they accompany.
+         *
+         *   slot                    production y (page ~12,000px)   share of page
+         *   hp_side_halfpage_pos1                             273             2%
+         *   hp_side_halfpage_pos3                            4948            41%
+         *   hp_side_mpu_pos1                                 5776            48%
+         *   hp_side_halfpage_pos4                            9230            77%
+         *   hp_side_mpu                                      9877            82%
+         *   hp_side_halfpage_pos2                           11981           100%
+         *
+         * The existing seven anchors already sit at comparable shares, so production spacing is
+         * reproduced by re-hanging the rail groups — NOT by adding anchors and NOT by changing any
+         * slot's identity, path, size map, count or eager/lazy classification. All six remain rail,
+         * all six remain `gte-992`, and `placedSlotKeys()` is unchanged, so the 15-active baseline
+         * assertion still holds.
+         *
+         * `hp_side_mpu` moves from here to AD-H04, where production puts it (82%, not 2%).
+         */
         subPosition: "rail",
         visibility: "gte-992",
-        slotKeys: ["hp_side_halfpage_pos1", "hp_side_mpu"],
+        slotKeys: ["hp_side_halfpage_pos1"],
         placementState: "reserved",
       },
     ],
@@ -128,6 +151,13 @@ export const HOME_AD_ANCHORS: AdAnchor[] = [
         slotKeys: ["hp_mid_billboard_pos1"],
         placementState: "reserved",
       },
+      {
+        /* LRG-ADS-016 §1. Production: pos3 at 41% of page, mpu_pos1 at 48% — this anchor sits at 44%. */
+        subPosition: "rail",
+        visibility: "gte-992",
+        slotKeys: ["hp_side_halfpage_pos3", "hp_side_mpu_pos1"],
+        placementState: "reserved",
+      },
     ],
   },
   {
@@ -149,6 +179,13 @@ export const HOME_AD_ANCHORS: AdAnchor[] = [
         // inner creative area collapsed, label suppressed.
         placementState: "no-fill-preview",
       },
+      {
+        /* LRG-ADS-016 §1. Production: pos4 at 77% of page, hp_side_mpu at 82% — this anchor sits at 72%. */
+        subPosition: "rail",
+        visibility: "gte-992",
+        slotKeys: ["hp_side_halfpage_pos4", "hp_side_mpu"],
+        placementState: "reserved",
+      },
     ],
   },
   {
@@ -169,14 +206,14 @@ export const HOME_AD_ANCHORS: AdAnchor[] = [
         placementState: "reserved",
       },
       {
+        /*
+         * LRG-ADS-016 §1. Production puts `hp_side_halfpage_pos2` LAST in the rail (y 11981, the
+         * page tail); the other three that used to stack here moved up to AD-H03 and AD-H04, where
+         * production actually places them. This is the group that produced the six-deep stack.
+         */
         subPosition: "rail",
         visibility: "gte-992",
-        slotKeys: [
-          "hp_side_halfpage_pos2",
-          "hp_side_mpu_pos1",
-          "hp_side_halfpage_pos3",
-          "hp_side_halfpage_pos4",
-        ],
+        slotKeys: ["hp_side_halfpage_pos2"],
         placementState: "reserved",
       },
     ],

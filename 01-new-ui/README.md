@@ -21,25 +21,27 @@ npm run lint
 ```
 
 ## Data
-Reads static sample JSON from `../04-sample-data` via the data-provider (`lib/data-provider`).
-Override the location with `SAMPLE_DATA_DIR=/abs/path`. No API/DB, no live calls (Phase 1).
+Reads bundled runtime-safe JSON through `lib/data-provider`. The bundled files live in
+`lib/data-provider/fixtures`; their byte-identical provenance records remain in `../04-sample-data`.
+No API/DB and no live data calls are made by this provider.
 
 ## Home preview (Preview Track P3)
 
-The approved anonymous Home preview renders **only** when the server env flag is set:
+The approved anonymous Home composition is registry-controlled and needs no page-enable environment flag:
 
 ```
 cd 01-new-ui
-LC_HOME_PREVIEW=true npm run dev      # then open http://localhost:3000/
+nvm use 24
+npm run dev      # then open http://localhost:3000/
 ```
 
 ### Advertising review mode
 
-`LC_HOME_PREVIEW_AD_MODE` controls how the (always inactive) ad reservations are drawn:
+`LC_HOME_PREVIEW_AD_MODE` controls only how the ad reservations are drawn:
 
 ```
-LC_HOME_PREVIEW=true LC_HOME_PREVIEW_AD_MODE=compact    npm run dev   # default when unset
-LC_HOME_PREVIEW=true LC_HOME_PREVIEW_AD_MODE=production npm run dev
+LC_HOME_PREVIEW_AD_MODE=compact    npm run dev   # default when unset
+LC_HOME_PREVIEW_AD_MODE=production npm run dev
 ```
 
 | Mode | Behaviour |

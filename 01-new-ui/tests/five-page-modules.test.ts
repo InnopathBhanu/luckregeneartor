@@ -1001,3 +1001,108 @@ describe("§B5: adding GS-09 did not create a sticky conflict", () => {
     assert.ok(!/lcp-ball|--ball-/.test(block), "a drawn number's size is not a density lever");
   });
 });
+
+/* ══════════════════════════════════════════════ Conflict 43 — the two Home sections that went missing */
+
+/*
+ * Both defects had the same shape: content the fixture supplies, that the page did not render, that nobody
+ * noticed because nothing failed. So these tests assert the RENDERED path, not just the view model — a field on
+ * the view model that no component reads is exactly the state we are leaving.
+ */
+describe("Conflict 43.1 — the systems block keeps its heading and its safety copy when every row is filtered", () => {
+  const vm = () => buildHomePreview();
+  const h09 = () =>
+    vm().entries.find((e) => (e as { id: string }).id === "H-09") as never as {
+      data: { systemsHeading?: string; systemsIntro?: string; systems: readonly { title: string }[] };
+    };
+
+  test("the de-duplication still empties the rows — this is the exact condition that hid the block", () => {
+    /*
+     * If a future fixture adds a non-duplicate system row, this test starts passing for the wrong reason and the
+     * regression could return unobserved. So it asserts the PRECONDITION explicitly: today both fixture rows
+     * duplicate a tool card, the array empties, and the heading must survive that anyway.
+     */
+    assert.equal(h09().data.systems.length, 0,
+      "both fixture rows duplicate a Lottery Tools card, so LRG-UI-016 filters the array to empty");
+  });
+
+  test("the heading survives an empty array — it is not guarded by systems.length", () => {
+    assert.equal(h09().data.systemsHeading, "Lottery Systems & Number Analysis");
+  });
+
+  test("the Constitution §7 randomness statement is present, beneath a Number Analysis tool", () => {
+    const intro = h09().data.systemsIntro ?? "";
+    /* The claim that must never go missing from a page offering number analysis. */
+    assert.match(intro, /random/i);
+    assert.match(intro, /cannot be predicted or guaranteed/i);
+    /* And §7's prohibition holds in the copy itself. */
+    assert.ok(!/increase your chances/i.test(intro));
+  });
+
+  test("the renderer guards on the heading, not on the row count", () => {
+    const view = src("components/preview/HomePreview.tsx");
+    const block = view.slice(view.indexOf('case "tools":'), view.indexOf('case "popular-games":'));
+    assert.match(block, /s\.data\.systemsHeading \?/, "the sub-block renders from the heading");
+    /* The old guard may still gate the ROWS — it may never again gate the heading. */
+    assert.ok(
+      block.indexOf("s.data.systemsHeading ?") < block.indexOf("s.data.systems.length > 0"),
+      "the heading must render before, and independently of, the filtered rows",
+    );
+  });
+});
+
+describe("Conflict 43.2 — the Home FAQ is visible, inside H-15, and claims no schema", () => {
+  const vm = () => buildHomePreview();
+  const h15 = () =>
+    vm().entries.find((e) => (e as { id: string }).id === "H-15") as never as {
+      data: { faq: { heading: string; items: readonly { q: string; a: string }[] } | null };
+    };
+
+  test("the fixture's three answers reach the page", () => {
+    const faq = h15().data.faq;
+    assert.ok(faq, "the fixture marks the block visibleOnPage — it must render");
+    assert.equal(faq.heading, "Frequently Asked Questions");
+    assert.equal(faq.items.length, 3);
+    for (const i of faq.items) {
+      assert.ok(i.q.length > 0 && i.a.length > 0, "no empty question or answer");
+    }
+  });
+
+  test("the prediction answer says no — the one answer that must never soften", () => {
+    const a = h15().data.faq?.items.find((i) => /predict/i.test(i.q))?.a ?? "";
+    assert.match(a, /^No\./, "the answer leads with the refusal, per the Constitution §7 copy pattern");
+    assert.match(a, /random/i);
+  });
+
+  test("no section ID was invented — BP-02 §12 still has exactly 30 entries", () => {
+    /*
+     * The whole reason the FAQ lives in H-15. Adding a 31st entry to the frozen sequence is the amendment this
+     * build deliberately did not make (Conflict 43.2), so the count is the assertion that carries it.
+     */
+    assert.equal(vm().entries.length, 30);
+    assert.ok(!vm().entries.some((e) => /faq/i.test((e as { id: string }).id)));
+  });
+
+  test("no FAQPage JSON-LD while Home is noindex", () => {
+    /*
+     * `CLAUDE.md` §11 permits FAQPage once the FAQ is visible — it now is. It stays out because Home is
+     * `noindex, nofollow`; structured data for a page no crawler may index advertises what is not on offer.
+     * Asserted on both the page and the renderer so neither can add it alone.
+     */
+    assert.equal(vm().page.schema.searchAction, false);
+    /* Comments stripped first: BOTH files explain in prose why FAQPage is absent, and a test that cannot tell an
+       explanation from an emission would force the reasoning to be deleted to stay green. */
+    const code = (p: string) => src(p).replace(/\/\*[\s\S]*?\*\//g, "").replace(/\{\/\*[\s\S]*?\*\/\}/g, "");
+    assert.ok(!/FAQPage/.test(code("components/preview/HomePreview.tsx")));
+    assert.ok(!/FAQPage/.test(code("app/page.tsx")));
+    assert.match(vm().page.robots, /noindex/);
+  });
+
+  test("progressive disclosure: the questions are in the HTML, the answers are collapsed", () => {
+    const view = src("components/preview/HomePreview.tsx");
+    const block = view.slice(view.indexOf('case "trust":'));
+    /* <details> keeps both in the server HTML — collapsed is not absent, which is what §11 requires. */
+    assert.match(block, /s\.data\.faq \?[\s\S]*<details/);
+    assert.ok(!/dangerouslySetInnerHTML/.test(block));
+  });
+});

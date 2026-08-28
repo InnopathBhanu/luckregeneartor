@@ -1,7 +1,6 @@
 /*
- * Loose TypeScript shapes for the Phase-1 sample data (04-sample-data/*.json).
- * Mirrors the sample JSON; the future API must satisfy the same data-provider interface so
- * components never change when we swap sample -> API.
+ * Loose presentation shapes for the currently bundled frontend fixtures.
+ * These mirror the JSON consumed by the page models; they are not future domain, API, or database contracts.
  */
 
 export interface BallGroupDrawn {

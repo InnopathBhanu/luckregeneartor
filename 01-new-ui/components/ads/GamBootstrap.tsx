@@ -5,15 +5,13 @@
  *
  * ══ THE ONE PLACE THE LIBRARY IS FETCHED ══
  *
- * `gpt.js` is injected here and nowhere else, and only when all three conditions hold: GAM enabled, canary
- * mode, and the tester's session gate open. Before that the page makes **zero** requests to
- * `securepubads.g.doubleclick.net` — which is the pre-gate assertion in the validation matrix.
+ * `gpt.js` is injected here and nowhere else. It loads automatically on the protected temporary subdomain
+ * unless `NEXT_PUBLIC_GAM_ENABLED=false`; that exact flag is the deployment kill switch.
  *
  * ══ WHY A MANUAL SCRIPT ELEMENT AND NOT `next/script` ══
  *
- * `next/script` decides *when* to load; this component must decide *whether*, from state that only exists
- * after hydration. Rendering a `<Script>` conditionally makes the tag part of the React tree, so a hydration
- * recovery can re-insert it — the duplicate-script hazard §1 exists to prevent. A direct, id-guarded DOM
+ * Rendering a `<Script>` conditionally makes the tag part of the React tree, so a hydration recovery can
+ * re-insert it — the duplicate-script hazard §1 exists to prevent. A direct, id-guarded DOM
  * insertion is idempotent by construction: the id is checked against the live document, not against React's
  * memory of it.
  *
@@ -27,24 +25,16 @@
  * returned nothing" — two different investigations.
  */
 
-import { useEffect, useState } from "react";
-import { CANARY_GATE_AVAILABLE } from "@/lib/ads/gamConfig";
-import { isAdTestActive, onAdTestChange } from "@/lib/ads/adTestSession";
+import { useEffect } from "react";
+import { GAM_ENABLED } from "@/lib/ads/gamConfig";
 import { markLibraryBlocked } from "@/lib/ads/gptClient";
 
 const SCRIPT_ID = "lc-gpt-js";
 const GPT_SRC = "https://securepubads.g.doubleclick.net/tag/js/gpt.js";
 
 export default function GamBootstrap() {
-  const [active, setActive] = useState(false);
-
   useEffect(() => {
-    setActive(isAdTestActive());
-    return onAdTestChange(setActive);
-  }, []);
-
-  useEffect(() => {
-    if (!CANARY_GATE_AVAILABLE || !active) return;
+    if (!GAM_ENABLED) return;
     /* Idempotent against the DOM, so Strict Mode's double effect and any hydration recovery are both no-ops. */
     if (document.getElementById(SCRIPT_ID)) return;
 
@@ -65,7 +55,7 @@ export default function GamBootstrap() {
      * would not unregister it, and re-adding it on the next effect would load a second copy over the first —
      * the duplicate-library case that produces duplicate slot definitions.
      */
-  }, [active]);
+  }, []);
 
   return null;
 }

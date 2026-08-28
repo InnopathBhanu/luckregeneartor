@@ -1,0 +1,1174 @@
+{
+  "_meta": {
+    "purpose": "UI-first sample payload for the Maine state page (/me), rendered by the shared StatePageTemplate. Real result values from source-xml; content structure guided by the Maine content doc. Clean sample/admin-editable copy (no [ADMIN]). /buynow only.",
+    "illustrative": true,
+    "schemaVersion": "0.1-sample",
+    "canonicalTarget": "https://lotterycorner.com/me (no trailing slash; www->non-www migration pending)"
+  },
+  "page": {
+    "stateCode": "me",
+    "stateName": "Maine",
+    "url": "/me",
+    "pageType": "state",
+    "metadata": {
+      "title": "Maine Lottery Results Today \u2014 Winning Numbers, Jackpots & How to Claim",
+      "description": "Latest Maine Lottery winning numbers for State (US)-Gimme 5, State (US)-Tri-State Megabucks Plus, Lotto America, Mega Millions, Powerball \u2014 updated after every draw.",
+      "canonicalPlaceholder": "[VERIFY-CONVENTION] https://lotterycorner.com/me (target host non-www, no trailing slash; migration pending \u2014 not emitted yet)",
+      "robots": "index,follow",
+      "openGraph": {
+        "type": "website",
+        "title": "Maine Lottery Results Today",
+        "description": "Latest Maine Lottery winning numbers and jackpots.",
+        "siteName": "Lottery Corner"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Maine Lottery Results Today",
+        "description": "Latest Maine Lottery winning numbers and jackpots."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "url": "/"
+        },
+        {
+          "name": "Maine Winning Numbers",
+          "url": "/me"
+        }
+      ]
+    },
+    "h1": "Maine Lottery Results Today \u2014 Winning Numbers, Jackpots, & How to Claim",
+    "intro": "Check the latest Maine Lottery winning numbers, jackpots, and draw results in one place \u2014 including next draw times, prize information, claim instructions, and jackpot updates. Updated after every official Maine Lottery drawing.",
+    "lastUpdated": {
+      "display": "Last updated: July 9, 2026 at 2:46 PM ET",
+      "storedDrawTimezone": "America/New_York",
+      "displayTimezone": "America/New_York",
+      "isoDateModified": "2026-07-09T14:46:44"
+    },
+    "timezoneMeta": {
+      "storedTimezone": "America/New_York",
+      "gameLocalTimezone": "America/New_York",
+      "note": "Draw times stored in EST are converted to America/New_York for display (05-doc D6/D7)."
+    }
+  },
+  "jackpotTicker": {
+    "nextDraw": {
+      "game": "State (US)-Gimme 5",
+      "timeDisplay": "see schedule (ET)",
+      "countdownLabel": ""
+    },
+    "topJackpots": [
+      {
+        "game": "Mega Millions",
+        "amountDisplay": "$576 Million"
+      },
+      {
+        "game": "Powerball",
+        "amountDisplay": "$435 Million"
+      },
+      {
+        "game": "Lotto America",
+        "amountDisplay": "$32.50 Million"
+      }
+    ],
+    "alsoComingUp": [],
+    "quickActions": [
+      {
+        "label": "Check Ticket",
+        "href": "#check-ticket"
+      },
+      {
+        "label": "Past Results",
+        "href": "#winning-history"
+      },
+      {
+        "label": "Jackpot Tracker",
+        "href": "#jackpot-tracker"
+      },
+      {
+        "label": "Claim Info",
+        "href": "#how-to-claim"
+      }
+    ],
+    "buyTickets": {
+      "label": "Buy Tickets",
+      "href": "/buynow/play-usa-powerball"
+    },
+    "disclaimer": "Winning numbers are updated shortly after each drawing. Always verify winning tickets with the official Maine Lottery before claiming a prize."
+  },
+  "tabs": [
+    {
+      "key": "results",
+      "label": "Results",
+      "href": "#results",
+      "active": true
+    },
+    {
+      "key": "winning-history",
+      "label": "Winning History",
+      "href": "#winning-history"
+    },
+    {
+      "key": "schedule",
+      "label": "Schedule",
+      "href": "#schedule"
+    },
+    {
+      "key": "how-to-play",
+      "label": "How to Play",
+      "href": "#how-to-play"
+    },
+    {
+      "key": "how-to-claim",
+      "label": "How to Claim",
+      "href": "#how-to-claim"
+    }
+  ],
+  "latestResults": {
+    "heading": "Today's Maine Lottery Winning Numbers",
+    "infoCallout": "Winning numbers are published after the Maine Lottery releases the official draw results. If you believe you have a winning ticket, keep the original ticket safe and complete the official validation process.",
+    "intro": "Find the latest Maine Lottery winning numbers for every draw game below as soon as each official drawing is complete.",
+    "groups": [
+      {
+        "groupKey": "multiState",
+        "heading": "Multi-State Draws (Powerball & Mega Millions)",
+        "resultCards": [
+          {
+            "gameId": 1005,
+            "gameSlug": "state-us-gimme-5",
+            "displayName": "State (US)-Gimme 5",
+            "formatRef": {
+              "gameId": 1005
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  1,
+                  5,
+                  23,
+                  36,
+                  38
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$100,000",
+            "prizeRaw": "100000",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$100,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/me/state-us-gimme-5/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 1008,
+            "gameSlug": "state-us-tri-state-megabucks-plus",
+            "displayName": "State (US)-Tri-State Megabucks Plus",
+            "formatRef": {
+              "gameId": 1008
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  12,
+                  15,
+                  23,
+                  27,
+                  40
+                ],
+                "colorToken": "ball.default"
+              },
+              {
+                "order": 1,
+                "label": "Mega Ball",
+                "values": [
+                  3
+                ],
+                "colorToken": "ball.megaball"
+              }
+            ],
+            "prizeDisplay": "$2.20 Million",
+            "prizeRaw": "2200000",
+            "nextDraw": {
+              "display": "Saturday, 07/11/2026",
+              "nextJackpotDisplay": "$2.27 Million"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/me/state-us-tri-state-megabucks-plus/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 1018,
+            "gameSlug": "lotto-america",
+            "displayName": "Lotto America",
+            "formatRef": {
+              "gameId": 1018
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  17,
+                  26,
+                  31,
+                  32,
+                  37
+                ],
+                "colorToken": "ball.default"
+              },
+              {
+                "order": 1,
+                "label": "Star Ball",
+                "values": [
+                  1
+                ],
+                "colorToken": "ball.bonus"
+              }
+            ],
+            "drawScheduleLabel": "Wed & Sat",
+            "multipliers": [
+              {
+                "key": "all-star-bonus",
+                "label": "All Star Bonus",
+                "value": 2,
+                "display": "All Star Bonus 2X"
+              }
+            ],
+            "prizeDisplay": "$32.50 Million",
+            "prizeRaw": "32500000",
+            "nextDraw": {
+              "display": "Saturday, 07/11/2026",
+              "nextJackpotDisplay": "$32.86 Million"
+            },
+            "buyTickets": {
+              "label": "Buy Tickets",
+              "href": "/buynow/play-usa-lottoamerica",
+              "affiliateResolved": false
+            },
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/me/lotto-america/2026"
+              },
+              {
+                "type": "findMore",
+                "href": "/me/lotto-america"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 1013,
+            "gameSlug": "mega-millions",
+            "displayName": "Mega Millions",
+            "formatRef": {
+              "gameId": 1013
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-07",
+              "display": "Tuesday, 07/07/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  2,
+                  31,
+                  35,
+                  36,
+                  63
+                ],
+                "colorToken": "ball.default"
+              },
+              {
+                "order": 1,
+                "label": "Mega Ball",
+                "values": [
+                  12
+                ],
+                "colorToken": "ball.megaball"
+              }
+            ],
+            "drawScheduleLabel": "Tue & Fri",
+            "prizeDisplay": "$576 Million",
+            "prizeRaw": "576000000",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$604 Million"
+            },
+            "buyTickets": {
+              "label": "Buy Tickets",
+              "href": "/buynow/play-usa-megamillions",
+              "affiliateResolved": false
+            },
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/me/mega-millions/2026"
+              },
+              {
+                "type": "findMore",
+                "href": "/me/mega-millions"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 1012,
+            "gameSlug": "powerball",
+            "displayName": "Powerball",
+            "formatRef": {
+              "gameId": 1012
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  12,
+                  29,
+                  37,
+                  43,
+                  55
+                ],
+                "colorToken": "ball.default"
+              },
+              {
+                "order": 1,
+                "label": "Powerball",
+                "values": [
+                  18
+                ],
+                "colorToken": "ball.powerball"
+              }
+            ],
+            "drawScheduleLabel": "Mon, Wed & Sat",
+            "multipliers": [
+              {
+                "key": "power-play",
+                "label": "Power Play",
+                "value": 4,
+                "display": "Power Play 4X"
+              }
+            ],
+            "prizeDisplay": "$435 Million",
+            "prizeRaw": "435000000",
+            "nextDraw": {
+              "display": "Saturday, 07/11/2026",
+              "nextJackpotDisplay": "$457 Million"
+            },
+            "buyTickets": {
+              "label": "Buy Tickets",
+              "href": "/buynow/play-usa-powerball",
+              "affiliateResolved": false
+            },
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/me/powerball/2026"
+              },
+              {
+                "type": "findMore",
+                "href": "/me/powerball"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      },
+      {
+        "groupKey": "pick",
+        "heading": "Pick Games & Daily Draws",
+        "resultCards": [
+          {
+            "gameId": 1001,
+            "gameSlug": "state-us-tri-state-pick-3-day",
+            "displayName": "State (US)-Tri-State Pick 3 Day",
+            "formatRef": {
+              "gameId": 1001
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-09",
+              "display": "Thursday, 07/09/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  1,
+                  5,
+                  4
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$500",
+            "prizeRaw": "500",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$500"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/me/state-us-tri-state-pick-3-day/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 1002,
+            "gameSlug": "state-us-tri-state-pick-3-evening",
+            "displayName": "State (US)-Tri-State Pick 3 Evening",
+            "formatRef": {
+              "gameId": 1002
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  2,
+                  4,
+                  0
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$500",
+            "prizeRaw": "500",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$500"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/me/state-us-tri-state-pick-3-evening/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 1003,
+            "gameSlug": "state-us-tri-state-pick-4-day",
+            "displayName": "State (US)-Tri-State Pick 4 Day",
+            "formatRef": {
+              "gameId": 1003
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-09",
+              "display": "Thursday, 07/09/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  5,
+                  0,
+                  2,
+                  1
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$5,000",
+            "prizeRaw": "5000",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$5,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/me/state-us-tri-state-pick-4-day/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 1004,
+            "gameSlug": "state-us-tri-state-pick-4-evening",
+            "displayName": "State (US)-Tri-State Pick 4 Evening",
+            "formatRef": {
+              "gameId": 1004
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  9,
+                  2,
+                  0,
+                  9
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$5,000",
+            "prizeRaw": "5000",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$5,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/me/state-us-tri-state-pick-4-evening/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 649,
+            "gameSlug": "cash-pop-early-bird",
+            "displayName": "Cash Pop Early Bird",
+            "formatRef": {
+              "gameId": 649
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-09",
+              "display": "Thursday, 07/09/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  1
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$250",
+            "prizeRaw": "250",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$250"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/me/cash-pop-early-bird/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 650,
+            "gameSlug": "cash-pop-brunch",
+            "displayName": "Cash Pop Brunch",
+            "formatRef": {
+              "gameId": 650
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-09",
+              "display": "Thursday, 07/09/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  4
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$250",
+            "prizeRaw": "250",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$250"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/me/cash-pop-brunch/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 651,
+            "gameSlug": "cash-pop-matinee",
+            "displayName": "Cash Pop Matinee",
+            "formatRef": {
+              "gameId": 651
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-09",
+              "display": "Thursday, 07/09/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  4
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$250",
+            "prizeRaw": "250",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$250"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/me/cash-pop-matinee/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 652,
+            "gameSlug": "cash-pop-suppertime",
+            "displayName": "Cash Pop Suppertime",
+            "formatRef": {
+              "gameId": 652
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  6
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$250",
+            "prizeRaw": "250",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$250"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/me/cash-pop-suppertime/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 653,
+            "gameSlug": "cash-pop-night-owl",
+            "displayName": "Cash Pop Night Owl",
+            "formatRef": {
+              "gameId": 653
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  12
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$250",
+            "prizeRaw": "250",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$250"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/me/cash-pop-night-owl/2026"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      }
+    ]
+  },
+  "quickFacts": {
+    "heading": "Maine Lottery Quick Facts",
+    "rows": [
+      {
+        "label": "Founded",
+        "value": "1974 (Hallowell)"
+      },
+      {
+        "label": "Minimum playing age",
+        "value": "18 years"
+      },
+      {
+        "label": "Claim deadline (draw games)",
+        "value": "One year from the draw date"
+      },
+      {
+        "label": "State tax on winnings",
+        "value": "Yes \u2014 state income tax is withheld"
+      },
+      {
+        "label": "Games covered",
+        "value": "State (US)-Gimme 5, State (US)-Tri-State Megabucks Plus, Lotto America, Mega Millions, Powerball, State (US)-Tri-State Pick 3 Day"
+      },
+      {
+        "label": "Time zone",
+        "value": "Maine local time (ET)"
+      }
+    ]
+  },
+  "drawSchedule": {
+    "heading": "Maine Lottery Draw Schedule (ET)",
+    "intro": "Regular draw days and approximate draw times (ET). Times are approximate and may change for operational reasons or holidays.",
+    "entries": [
+      {
+        "game": "State (US)-Gimme 5",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "State (US)-Tri-State Megabucks Plus",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Lotto America",
+        "days": "Wed & Sat",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Mega Millions",
+        "days": "Tue & Fri",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Powerball",
+        "days": "Mon, Wed & Sat",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "State (US)-Tri-State Pick 3 Day",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "State (US)-Tri-State Pick 3 Evening",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "State (US)-Tri-State Pick 4 Day",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      }
+    ]
+  },
+  "historyLinks": {
+    "heading": "Maine Lottery Winning Numbers History",
+    "intro": "Browse past Maine Lottery winning numbers by game.",
+    "links": [
+      {
+        "label": "State (US)-Gimme 5 History",
+        "href": "/me/state-us-gimme-5/2026"
+      },
+      {
+        "label": "State (US)-Tri-State Megabucks Plus History",
+        "href": "/me/state-us-tri-state-megabucks-plus/2026"
+      },
+      {
+        "label": "Lotto America History",
+        "href": "/me/lotto-america/2026"
+      },
+      {
+        "label": "Mega Millions History",
+        "href": "/me/mega-millions/2026"
+      },
+      {
+        "label": "Powerball History",
+        "href": "/me/powerball/2026"
+      },
+      {
+        "label": "State (US)-Tri-State Pick 3 Day History",
+        "href": "/me/state-us-tri-state-pick-3-day/2026"
+      },
+      {
+        "label": "State (US)-Tri-State Pick 3 Evening History",
+        "href": "/me/state-us-tri-state-pick-3-evening/2026"
+      },
+      {
+        "label": "State (US)-Tri-State Pick 4 Day History",
+        "href": "/me/state-us-tri-state-pick-4-day/2026"
+      }
+    ]
+  },
+  "howToClaim": {
+    "heading": "How to Claim Maine Lottery Prizes",
+    "intro": "How to claim Maine Lottery prizes, from small retailer payouts to large jackpot claims.",
+    "claimOptions": [
+      {
+        "amount": "Up to $599",
+        "method": "Claim at most authorized Maine Lottery retailers"
+      },
+      {
+        "amount": "$600 and above",
+        "method": "Claim at a Maine Lottery office or claim center per prize amount"
+      },
+      {
+        "amount": "Jackpot / annuity",
+        "method": "Claim at Maine Lottery headquarters (appointment recommended)"
+      }
+    ],
+    "documents": [
+      "Signed winning ticket",
+      "Government-issued photo ID",
+      "Social Security number or taxpayer ID",
+      "Completed claim form"
+    ],
+    "steps": [
+      {
+        "title": "Sign your winning ticket",
+        "detail": "Sign the back immediately to protect ownership."
+      },
+      {
+        "title": "Confirm the amount you won",
+        "detail": "Compare to the Latest Draw Results."
+      },
+      {
+        "title": "Choose the correct claim method",
+        "detail": "Based on the prize amount."
+      },
+      {
+        "title": "Complete the paperwork",
+        "detail": "Claim form and tax forms for larger prizes."
+      },
+      {
+        "title": "Submit your claim",
+        "detail": "In person or by mail (certified mail recommended)."
+      }
+    ],
+    "deadlines": [
+      "Draw games: One year from the draw date",
+      "Scratch-Offs: per each game's end date",
+      "Mailed claims: postmark by the deadline"
+    ],
+    "districtOffices": "Maine Lottery claim centers/headquarters handle larger prizes; appointments recommended for jackpot and annuity prizes."
+  },
+  "taxes": {
+    "heading": "Taxes & Withholding",
+    "stateNote": "Maine withholds state income tax on lottery winnings, in addition to federal tax.",
+    "federalIntro": "Federal tax rules apply for prizes of $600 or more:",
+    "points": [
+      "Mandatory federal withholding: 24%",
+      "State income tax is withheld on winnings",
+      "Additional tax may apply at filing",
+      "W-2G forms are issued for reportable winnings"
+    ]
+  },
+  "playerInfo": {
+    "heading": "Maine Lottery Guide & Player Information",
+    "intro": "Key information Maine Lottery players should understand.",
+    "sections": [
+      {
+        "title": "Draw Integrity & Oversight",
+        "body": "Maine Lottery drawings follow strict procedures to ensure fairness and randomness; results are verified before publication."
+      },
+      {
+        "title": "Key Maine Lottery Rules",
+        "list": [
+          "Minimum age to play: 18",
+          "Tickets must be signed to become valid property",
+          "Damaged or unreadable tickets follow a formal review process",
+          "Draw cutoff times vary by game"
+        ]
+      },
+      {
+        "title": "Responsible Play",
+        "list": [
+          "Set a budget and stick to it",
+          "Odds are fixed \u2014 play for entertainment",
+          "Avoid chasing losses",
+          "A problem-gambling helpline is available for confidential support"
+        ]
+      }
+    ]
+  },
+  "finalFaqs": {
+    "heading": "Maine Lottery \u2014 Frequently Asked Questions",
+    "visibleOnPage": true,
+    "items": [
+      {
+        "q": "What time are Maine Lottery drawings held?",
+        "a": "Draw times vary by game; times on this page use Maine local time (ET). See the Schedule section."
+      },
+      {
+        "q": "What is the minimum age to play the Maine Lottery?",
+        "a": "You must be 18 or older to play."
+      },
+      {
+        "q": "Are Maine Lottery prizes taxed?",
+        "a": "Maine withholds state income tax on lottery winnings, in addition to federal tax. Federal withholding of 24% applies to prizes over $5,000."
+      },
+      {
+        "q": "How do I claim a Maine Lottery prize?",
+        "a": "Smaller prizes at retailers; larger prizes at a claim center or headquarters. See How to Claim above."
+      },
+      {
+        "q": "What happens to unclaimed Maine Lottery prizes?",
+        "a": "Unclaimed prize funds are directed to state programs per Maine Lottery rules."
+      }
+    ]
+  },
+  "faqs": {
+    "heading": "Frequently Asked Questions",
+    "visibleOnPage": true,
+    "schemaEligible": true,
+    "items": [
+      {
+        "q": "What are today's Maine Lottery numbers?",
+        "a": "The latest winning numbers for all games appear in the Latest Draw Results section above."
+      },
+      {
+        "q": "How do I check my Maine Lottery ticket?",
+        "a": "Compare your numbers to the Latest Draw Results and complete official validation before claiming."
+      },
+      {
+        "q": "Did anyone win the jackpot?",
+        "a": "See the Jackpot Tracker below for whether top prizes rolled over and the next estimated jackpots."
+      }
+    ]
+  },
+  "adSlotRefs": {
+    "note": "Same fixed state-page ad slots as /fl.",
+    "top": [
+      "sp_top_billboard"
+    ],
+    "inContent": [
+      "sp_mid_leaderboard_pos1",
+      "sp_mid_leaderboard_pos2",
+      "sp_mid_leaderboard_pos3",
+      "sp_mid_leaderboard_pos4"
+    ],
+    "rightRail": [
+      "sp_side_halfpage_pos1",
+      "sp_side_mpu_pos2",
+      "sp_side_skyscraper"
+    ],
+    "mobileInContent": [
+      "sp_mobile_leaderboard_pos1",
+      "sp_mobile_leaderboard_pos2",
+      "sp_mobile_leaderboard_pos3",
+      "sp_mobile_leaderboard_pos4"
+    ],
+    "bottom": [
+      "sp_bottom_billboard"
+    ],
+    "stickyFooterAd": "sp_bottom_large_leaderboard"
+  },
+  "officialSourceNotice": {
+    "name": "Maine Lottery",
+    "text": "Winning numbers are sourced from official Maine Lottery draws. Always verify major prizes with an authorized Maine Lottery retailer or office."
+  },
+  "responsiblePlayNotice": {
+    "text": "Play responsibly. 18+ only. If gambling is a problem, help is available."
+  },
+  "independenceDisclaimer": {
+    "text": "Lottery Corner is an independent lottery information website and is not affiliated with the Maine Lottery or the State of Maine."
+  },
+  "popularGames": [
+    {
+      "gameSlug": "powerball",
+      "displayName": "Powerball",
+      "href": "/powerball"
+    },
+    {
+      "gameSlug": "mega-millions",
+      "displayName": "Mega Millions",
+      "href": "/mega-millions"
+    }
+  ],
+  "aiToolsTeaser": {
+    "enabled": true,
+    "heading": "AI-assisted lottery tools (coming soon)",
+    "copy": "Explore AI-assisted insights, smart number analysis and personalized alerts. For entertainment and informational purposes only.",
+    "cta": "Sign in to try",
+    "loginGated": true
+  },
+  "accountHooks": {
+    "loginRegisterVisible": true,
+    "favoritesEnabled": true
+  },
+  "jackpotTracker": {
+    "heading": "Did Anyone Win Last Night? (Jackpot Tracker)",
+    "intro": "Current estimated jackpots and next draw dates for the biggest games. When a top prize rolls over, the next jackpot increases.",
+    "columns": [
+      "Game",
+      "Jackpot Won?",
+      "Next Estimated Jackpot",
+      "Next Draw Date"
+    ],
+    "rows": [
+      [
+        "State (US)-Gimme 5",
+        "Rolled Over",
+        "$100,000",
+        "Thursday, 07/09/2026"
+      ],
+      [
+        "State (US)-Tri-State Megabucks Plus",
+        "Rolled Over",
+        "$2.27 Million",
+        "Saturday, 07/11/2026"
+      ],
+      [
+        "Lotto America",
+        "Rolled Over",
+        "$32.86 Million",
+        "Saturday, 07/11/2026"
+      ],
+      [
+        "Mega Millions",
+        "Rolled Over",
+        "$604 Million",
+        "Friday, 07/10/2026"
+      ],
+      [
+        "Powerball",
+        "Rolled Over",
+        "$457 Million",
+        "Saturday, 07/11/2026"
+      ]
+    ]
+  },
+  "highlights": {
+    "heading": "Recent Highlights & Alerts",
+    "intro": "Notable Maine Lottery trends, unclaimed prizes nearing expiration, and jackpot movement. Updated periodically.",
+    "recentWins": [
+      {
+        "location": "Maine",
+        "text": "Recent top-tier Maine Lottery wins are published when officially released."
+      }
+    ],
+    "unclaimedPrizes": [
+      {
+        "game": "State (US)-Gimme 5",
+        "amount": "See official source",
+        "location": "Maine",
+        "note": "Unclaimed prizes expire after the claim deadline \u2014 check your tickets."
+      }
+    ],
+    "jackpotGrowth": [
+      {
+        "game": "Powerball",
+        "text": "The jackpot has rolled following draws without a top-prize winner."
+      },
+      {
+        "game": "Mega Millions",
+        "text": "Recent rollovers have increased the advertised jackpot."
+      }
+    ],
+    "note": "Winner specifics are published only when officially released."
+  },
+  "anonymityRules": {
+    "heading": "Winner Privacy & Anonymity in Maine",
+    "intro": "Winner privacy rules depend on prize amount and state law.",
+    "sections": [
+      {
+        "title": "Winner Privacy",
+        "body": "Maine law protects the identity of winners of prizes of $100,000 or more unless the winner authorizes disclosure."
+      },
+      {
+        "title": "Verification",
+        "body": "All winners must complete identity and prize verification even where public disclosure is limited."
+      }
+    ]
+  },
+  "contentMeta": {
+    "source": "Official Maine Lottery draw results",
+    "reviewStatus": "published",
+    "lastReviewed": "July 9, 2026 at 2:46 PM ET",
+    "note": "Content is reviewed after each official drawing (draft \u2192 review \u2192 publish workflow for future admin/agent edits)."
+  }
+}

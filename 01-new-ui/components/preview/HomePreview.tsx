@@ -26,6 +26,7 @@ import type {
 } from "@/lib/preview/types";
 import type { HomePreviewAdMode } from "@/lib/preview/previewGuard";
 import { isAdAnchor } from "@/lib/preview/types";
+import type { AnchorSlotGroup } from "@/lib/layout/adAnchors";
 import {
   anchorById,
   anchorsWithoutActivePlacement,
@@ -955,6 +956,22 @@ function renderSection(s: PreviewSection) {
               </li>
             ))}
           </ul>
+          {/*
+            SYSTEMS AND NUMBER EXPLORATION — the second half of the section BP-02 §12 names
+            "Tools, Systems and Number Exploration".
+
+            The guard is on the HEADING, not on `systems.length`. Those rows are filtered by topic in
+            the view model to avoid repeating a tool card, and when the filter empties the array the
+            block still has something to say: the intro is the Constitution §7 statement that draws are
+            random and cannot be predicted, and it belongs directly under a Number Analysis tool
+            whether or not any accordion row survives.
+          */}
+          {s.data.systemsHeading ? (
+            <div className="lcp-systems" data-systems-block="true">
+              <H level={3}>{s.data.systemsHeading}</H>
+              {s.data.systemsIntro ? <p className="lcp-measure lcp-an__short">{s.data.systemsIntro}</p> : null}
+            </div>
+          ) : null}
           {/* Progressive disclosure retained: the explanatory system content stays collapsed. */}
           {s.data.systems.length > 0 ? (
             <div>
@@ -1419,6 +1436,31 @@ function renderSection(s: PreviewSection) {
               <ActionLink key={l.label} l={l} />
             ))}
           </div>
+          {/*
+            HOME FAQ, inside the trust section — the same placement FG-15 uses on the flagship pages.
+
+            Progressive disclosure by default (`<details>`), so three answers do not push the footer
+            down for a reader who did not ask a question. The questions stay in the server HTML either
+            way, which is what CLAUDE.md §11 requires of crawlable content.
+
+            NO `FAQPage` JSON-LD, for the reason FlagshipEcosystem records: §11 permits it once the FAQ
+            is visible — which it now is — but Home is `noindex, nofollow`, so emitting structured data
+            for a page no crawler may index advertises something that is not on offer. It goes in with
+            the indexing cutover, alongside the FD-RTE-03 origin reconciliation, not before.
+          */}
+          {s.data.faq ? (
+            <div className="lcp-faq" data-faq="true">
+              <H level={3}>{s.data.faq.heading}</H>
+              {s.data.faq.items.map((f) => (
+                <details key={f.q} className="lcp-accordion">
+                  <summary>{f.q}</summary>
+                  <div>
+                    <p className="lcp-measure lcp-an__short">{f.a}</p>
+                  </div>
+                </details>
+              ))}
+            </div>
+          ) : null}
         </Section>
       );
 
@@ -1522,11 +1564,47 @@ export default function HomePreview({
    * experiment were reverted, the three sections would no longer be adjacent and each would simply
    * render standalone — no special-casing needed.
    */
+  /*
+   * LRG-ADS-016 §2 — THE RAIL IS SEGMENTED, NOT STACKED.
+   *
+   * The rail used to be ONE `<aside>` holding every rail group, `position: sticky` at the top of the
+   * grid. Measured on the deployed build at 1440px, that put all six side placements at y = 468, 516,
+   * 588, 636, 684 and 732 — six ads inside 264px, followed by 10,500px of empty rail. Production
+   * spreads the same six from y 273 to y 11981, each beside the content it accompanies.
+   *
+   * The anchor map was already right (see `adAnchors.ts`); the LAYOUT collapsed its intent. So the
+   * sequence is now cut into segments at every rail-bearing anchor, and each segment becomes one grid
+   * ROW: content in column 1, that anchor's rail placement in column 2. The row's height comes from
+   * its content, so the ad sits beside the section it belongs to and sticks only within that row.
+   *
+   * Nothing about the sequence itself changes — segmenting is a partition of the SAME entries in the
+   * SAME order, so the §12 thirty-entry composition and the band grouping below are untouched.
+   */
+  const railByAnchor = new Map<string, AnchorSlotGroup[]>();
+  for (const { anchorId, group } of railGroups()) {
+    const list = railByAnchor.get(anchorId) ?? [];
+    list.push(group);
+    railByAnchor.set(anchorId, list);
+  }
+
   const renderSequence = () => {
-    const out: React.ReactNode[] = [];
+    /* Segment 0 holds everything before the first rail anchor and has no rail cell of its own. */
+    const segments: { anchorId: string | null; nodes: React.ReactNode[] }[] = [
+      { anchorId: null, nodes: [] },
+    ];
+    const out = {
+      push(node: React.ReactNode) {
+        segments[segments.length - 1].nodes.push(node);
+      },
+    };
     let i = 0;
     while (i < entries.length) {
       const e = entries[i];
+      /* A rail-bearing anchor opens the next grid row, so its placement aligns with the content
+         that follows it rather than with the top of the page. */
+      if (isAdAnchor(e) && railByAnchor.has(e.anchorId)) {
+        segments.push({ anchorId: e.anchorId, nodes: [] });
+      }
       const band = !isAdAnchor(e) ? e.band : undefined;
       if (!band) {
         out.push(renderEntry(e));
@@ -1554,7 +1632,7 @@ export default function HomePreview({
         </div>,
       );
     }
-    return out;
+    return segments;
   };
 
   return (
@@ -1643,22 +1721,37 @@ export default function HomePreview({
           ) : null}
         </p>
 
-        <div className="lcp-grid" style={{ marginTop: 16 }}>
-          {/* Main column — the ordered 30-entry sequence. */}
-          <div>{renderSequence()}</div>
+        {/*
+          One grid ROW per segment: the 30-entry sequence in column 1, the rail placement for that
+          segment's anchor in column 2. See the note on `renderSequence` above.
 
-          {/* Desktop contextual rail (>=992px only) — production ad slots only. */}
-          <aside className="lcp-rail" aria-label="Sponsored">
-            {railGroups().map(({ anchorId, group }, i) => (
-              <PreviewAdSlot
-                key={`${anchorId}-rail-${i}`}
-                anchorId={anchorId}
-                group={group}
-                adMode={adMode}
-                debug={debug}
-              />
-            ))}
-          </aside>
+          The rail column is a plain `div`, NOT an `<aside role="complementary">`. Every reservation
+          inside it already exposes its own `role="complementary" aria-label="Advertisement"` from
+          `AdReservation`, so wrapping them made a redundant landmark — and with several segments it
+          would have made SEVERAL landmarks sharing one name, which is the WCAG 2.2 duplicate-label
+          problem. The ads carry their own names; the column just carries geometry.
+        */}
+        <div className="lcp-grid" style={{ marginTop: 16 }}>
+          {renderSequence().flatMap((seg, si) => [
+            <div key={`seg-${si}`} className="lcp-grid__main">
+              {seg.nodes}
+            </div>,
+            <div
+              key={`rail-${si}`}
+              className="lcp-rail"
+              data-rail-anchor={seg.anchorId ?? "none"}
+            >
+              {(seg.anchorId ? railByAnchor.get(seg.anchorId) ?? [] : []).map((group, gi) => (
+                <PreviewAdSlot
+                  key={`${seg.anchorId}-rail-${gi}`}
+                  anchorId={seg.anchorId!}
+                  group={group}
+                  adMode={adMode}
+                  debug={debug}
+                />
+              ))}
+            </div>,
+          ])}
         </div>
 
       </div>

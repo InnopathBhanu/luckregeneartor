@@ -140,9 +140,25 @@ describe("PF-02 §32: the State layer's ids are the blueprint's, verbatim and in
   });
 
   test("both layers stamp their full order on the DOM for audit", () => {
+    /*
+     * The ATTRIBUTE moved, the REQUIREMENT did not.
+     *
+     * `data-personal-order` used to be written directly on each layer's root element. Once both layers were
+     * wrapped in the shared `PersonalLayerDisclosure`, the root element became that component's, so the
+     * literal this test matched now lives in `PersonalCards.tsx` and the layers pass the value in as `order`.
+     *
+     * The audit requirement is unchanged — each layer still supplies its COMPLETE id order and it still
+     * reaches the DOM — so the assertion follows the chain instead of pinning one file's source text. Pinning
+     * the literal is what made a pure refactor look like a regression.
+     */
     for (const f of ["components/personal/SignedInHomeLayer.tsx", "components/personal/SignedInStateLayer.tsx"]) {
-      assert.match(src(f), /data-personal-order=\{ids\.join\(","\)\}/);
+      assert.match(src(f), /order=\{ids\.join\(","\)\}/, `${f} must supply its full id order`);
     }
+    assert.match(
+      src("components/personal/PersonalCards.tsx"),
+      /data-personal-order=\{order\}/,
+      "PersonalLayerDisclosure must stamp the supplied order on the DOM",
+    );
   });
 });
 

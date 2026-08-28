@@ -1,0 +1,1099 @@
+{
+  "_meta": {
+    "purpose": "UI-first sample payload for the Michigan state page (/mi), rendered by the shared StatePageTemplate. Result numbers/dates are real values from source-xml/latest-results-lc.xml. Copy is clean sample/admin-editable (no [ADMIN] tokens). Ads by slotKey; Buy Tickets via /buynow/<code>.",
+    "illustrative": true,
+    "schemaVersion": "0.1-sample",
+    "note": "Highlights/winner content is generic sample text (no fabricated named winners)."
+  },
+  "page": {
+    "stateCode": "mi",
+    "stateName": "Michigan",
+    "url": "/mi",
+    "pageType": "state",
+    "metadata": {
+      "title": "Michigan Lottery Results Today \u2014 Winning Numbers, Jackpots & How to Claim",
+      "description": "Latest Michigan Lottery winning numbers for Mega Millions, Powerball, Fantasy 5, Classic Lotto 47, Daily 3 Midday \u2014 updated after every draw.",
+      "canonicalPlaceholder": "[VERIFY-CONVENTION] /mi (host + trailing-slash convention not finalized \u2014 not emitted yet)",
+      "robots": "index,follow",
+      "openGraph": {
+        "type": "website",
+        "title": "Michigan Lottery Results Today",
+        "description": "Latest Michigan Lottery winning numbers and jackpots.",
+        "siteName": "Lottery Corner"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Michigan Lottery Results Today",
+        "description": "Latest Michigan Lottery winning numbers and jackpots."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "url": "/"
+        },
+        {
+          "name": "Michigan Winning Numbers",
+          "url": "/mi"
+        }
+      ]
+    },
+    "h1": "Michigan Lottery Results Today \u2014 Winning Numbers, Jackpots, & How to Claim",
+    "intro": "Get the latest Michigan Lottery winning numbers, live jackpots, and clear tools to check results, verify your ticket, and understand odds and claim rules \u2014 updated after every draw.",
+    "lastUpdated": {
+      "display": "Last updated: July 9, 2026 at 1:16 PM ET",
+      "storedDrawTimezone": "America/New_York",
+      "displayTimezone": "America/New_York",
+      "isoDateModified": "2026-07-09T13:16:35"
+    },
+    "timezoneMeta": {
+      "storedTimezone": "America/New_York",
+      "gameLocalTimezone": "America/New_York",
+      "note": "Draw times stored in EST are converted to America/New_York for display (05-doc D6/D7)."
+    }
+  },
+  "jackpotTicker": {
+    "nextDraw": {
+      "game": "Mega Millions",
+      "timeDisplay": "see schedule (ET)",
+      "countdownLabel": ""
+    },
+    "topJackpots": [
+      {
+        "game": "Mega Millions",
+        "amountDisplay": "$576 Million"
+      },
+      {
+        "game": "Powerball",
+        "amountDisplay": "$435 Million"
+      },
+      {
+        "game": "Classic Lotto 47",
+        "amountDisplay": "$3.85 Million"
+      }
+    ],
+    "alsoComingUp": [],
+    "quickActions": [
+      {
+        "label": "Check Ticket",
+        "href": "#check-ticket"
+      },
+      {
+        "label": "Past Results",
+        "href": "#winning-history"
+      },
+      {
+        "label": "Prize Lookup",
+        "href": "#how-to-claim"
+      },
+      {
+        "label": "Claim Info",
+        "href": "#how-to-claim"
+      }
+    ],
+    "buyTickets": {
+      "label": "Buy Tickets",
+      "href": "/buynow/play-usa-powerball"
+    },
+    "disclaimer": "Winning numbers are updated shortly after each drawing. For major prizes, confirm your ticket with an authorized Michigan Lottery retailer or office."
+  },
+  "tabs": [
+    {
+      "key": "results",
+      "label": "Results",
+      "href": "#results",
+      "active": true
+    },
+    {
+      "key": "winning-history",
+      "label": "Winning History",
+      "href": "#winning-history"
+    },
+    {
+      "key": "schedule",
+      "label": "Schedule",
+      "href": "#schedule"
+    },
+    {
+      "key": "how-to-play",
+      "label": "How to Play",
+      "href": "#how-to-play"
+    },
+    {
+      "key": "how-to-claim",
+      "label": "How to Claim",
+      "href": "#how-to-claim"
+    }
+  ],
+  "latestResults": {
+    "heading": "Latest Draw Results",
+    "infoCallout": "Winning numbers on Lottery Corner are updated shortly after each draw. For major prizes, confirm your ticket with an authorized Michigan Lottery retailer or office.",
+    "intro": "Here are the most recent Michigan Lottery winning numbers, updated as soon as each drawing is completed.",
+    "groups": [
+      {
+        "groupKey": "multiState",
+        "heading": "Multi-State Draws (Powerball & Mega Millions)",
+        "resultCards": [
+          {
+            "gameId": 1013,
+            "gameSlug": "mega-millions",
+            "displayName": "Mega Millions",
+            "formatRef": {
+              "gameId": 1013
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-07",
+              "display": "Tuesday, 07/07/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  2,
+                  31,
+                  35,
+                  36,
+                  63
+                ],
+                "colorToken": "ball.default"
+              },
+              {
+                "order": 1,
+                "label": "Mega Ball",
+                "values": [
+                  12
+                ],
+                "colorToken": "ball.megaball"
+              }
+            ],
+            "drawScheduleLabel": "Tue & Fri",
+            "prizeDisplay": "$576 Million",
+            "prizeRaw": "576000000",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$604 Million"
+            },
+            "buyTickets": {
+              "label": "Buy Tickets",
+              "href": "/buynow/play-usa-megamillions",
+              "affiliateResolved": false
+            },
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/mi/mega-millions/2026"
+              },
+              {
+                "type": "findMore",
+                "href": "/mi/mega-millions"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 1012,
+            "gameSlug": "powerball",
+            "displayName": "Powerball",
+            "formatRef": {
+              "gameId": 1012
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  12,
+                  29,
+                  37,
+                  43,
+                  55
+                ],
+                "colorToken": "ball.default"
+              },
+              {
+                "order": 1,
+                "label": "Powerball",
+                "values": [
+                  18
+                ],
+                "colorToken": "ball.powerball"
+              },
+              {
+                "order": 2,
+                "label": "Powerball",
+                "values": [
+                  23
+                ],
+                "colorToken": "ball.powerball"
+              }
+            ],
+            "drawScheduleLabel": "Mon, Wed & Sat",
+            "multipliers": [
+              {
+                "key": "power-play",
+                "label": "Power Play",
+                "value": 4,
+                "display": "Power Play 4X"
+              }
+            ],
+            "secondaryDraw": {
+              "key": "doubleplay",
+              "label": "Double Play",
+              "groupsDrawn": [
+                {
+                  "order": 0,
+                  "label": null,
+                  "values": [
+                    6,
+                    27,
+                    33,
+                    44,
+                    69
+                  ],
+                  "colorToken": "ball.default"
+                }
+              ]
+            },
+            "prizeDisplay": "$435 Million",
+            "prizeRaw": "435000000",
+            "nextDraw": {
+              "display": "Saturday, 07/11/2026",
+              "nextJackpotDisplay": "$457 Million"
+            },
+            "buyTickets": {
+              "label": "Buy Tickets",
+              "href": "/buynow/play-usa-powerball",
+              "affiliateResolved": false
+            },
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/mi/powerball/2026"
+              },
+              {
+                "type": "findMore",
+                "href": "/mi/powerball"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      },
+      {
+        "groupKey": "inState",
+        "heading": "Michigan In-State Draws",
+        "resultCards": [
+          {
+            "gameId": 401,
+            "gameSlug": "fantasy-5",
+            "displayName": "Fantasy 5",
+            "formatRef": {
+              "gameId": 401
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  6,
+                  7,
+                  9,
+                  13,
+                  17
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "secondaryDraw": {
+              "key": "doubleplay",
+              "label": "Double Play",
+              "groupsDrawn": [
+                {
+                  "order": 0,
+                  "label": null,
+                  "values": [
+                    18,
+                    25,
+                    28,
+                    32,
+                    39
+                  ],
+                  "colorToken": "ball.default"
+                }
+              ]
+            },
+            "prizeDisplay": "$105,000",
+            "prizeRaw": "105000",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$100,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/mi/fantasy-5/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 517,
+            "gameSlug": "classic-lotto-47",
+            "displayName": "Classic Lotto 47",
+            "formatRef": {
+              "gameId": 517
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  12,
+                  15,
+                  20,
+                  30,
+                  37,
+                  39
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "secondaryDraw": {
+              "key": "doubleplay",
+              "label": "Double Play",
+              "groupsDrawn": [
+                {
+                  "order": 0,
+                  "label": null,
+                  "values": [
+                    1,
+                    17,
+                    18,
+                    28,
+                    31,
+                    38
+                  ],
+                  "colorToken": "ball.default"
+                }
+              ]
+            },
+            "prizeDisplay": "$3.85 Million",
+            "prizeRaw": "3850000",
+            "nextDraw": {
+              "display": "Saturday, 07/11/2026",
+              "nextJackpotDisplay": "$4.05 Million"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/mi/classic-lotto-47/2026"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      },
+      {
+        "groupKey": "pick",
+        "heading": "Pick Games & Daily Draws",
+        "resultCards": [
+          {
+            "gameId": 397,
+            "gameSlug": "daily-3-midday",
+            "displayName": "Daily 3 Midday",
+            "formatRef": {
+              "gameId": 397
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-09",
+              "display": "Thursday, 07/09/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  7,
+                  0,
+                  2
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$500",
+            "prizeRaw": "500",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$500"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/mi/daily-3-midday/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 398,
+            "gameSlug": "daily-3-evening",
+            "displayName": "Daily 3 Evening",
+            "formatRef": {
+              "gameId": 398
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  6,
+                  6,
+                  6
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$500",
+            "prizeRaw": "500",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$500"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/mi/daily-3-evening/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 399,
+            "gameSlug": "daily-4-midday",
+            "displayName": "Daily 4 Midday",
+            "formatRef": {
+              "gameId": 399
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-09",
+              "display": "Thursday, 07/09/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  2,
+                  0,
+                  2,
+                  0
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$5,000",
+            "prizeRaw": "5000",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$5,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/mi/daily-4-midday/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 400,
+            "gameSlug": "daily-4-evening",
+            "displayName": "Daily 4 Evening",
+            "formatRef": {
+              "gameId": 400
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  6,
+                  9,
+                  1,
+                  7
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$5,000",
+            "prizeRaw": "5000",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$5,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/mi/daily-4-evening/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 402,
+            "gameSlug": "keno",
+            "displayName": "Keno",
+            "formatRef": {
+              "gameId": 402
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  1,
+                  4,
+                  9,
+                  16,
+                  17,
+                  24,
+                  26,
+                  33,
+                  35,
+                  36,
+                  37,
+                  39,
+                  42,
+                  43,
+                  46,
+                  47,
+                  50,
+                  52,
+                  57,
+                  74,
+                  77,
+                  80
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$250,000",
+            "prizeRaw": "250000",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$250,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/mi/keno/2026"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      }
+    ]
+  },
+  "quickFacts": {
+    "heading": "Michigan Lottery Quick Facts",
+    "rows": [
+      {
+        "label": "Minimum age to play",
+        "value": "18"
+      },
+      {
+        "label": "Draw-game claim deadline",
+        "value": "Varies by game (commonly 180 days from the draw date)"
+      },
+      {
+        "label": "State tax on winnings",
+        "value": "Yes \u2014 state income tax is withheld"
+      },
+      {
+        "label": "Games covered",
+        "value": "Mega Millions, Powerball, Fantasy 5, Classic Lotto 47, Daily 3 Midday, Daily 3 Evening"
+      }
+    ]
+  },
+  "drawSchedule": {
+    "heading": "Michigan Lottery Draw Schedule (ET)",
+    "intro": "All times shown in Michigan local time.",
+    "entries": [
+      {
+        "game": "Mega Millions",
+        "days": "Tue & Fri",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Powerball",
+        "days": "Mon, Wed & Sat",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Fantasy 5",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Classic Lotto 47",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Daily 3 Midday",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Daily 3 Evening",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Daily 4 Midday",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      },
+      {
+        "game": "Daily 4 Evening",
+        "days": "See game page",
+        "timeDisplay": "Evening (ET)"
+      }
+    ]
+  },
+  "historyLinks": {
+    "heading": "Michigan Lottery Winning Numbers History",
+    "intro": "Browse past Michigan Lottery winning numbers by game.",
+    "links": [
+      {
+        "label": "Mega Millions History",
+        "href": "/mi/mega-millions/2026"
+      },
+      {
+        "label": "Powerball History",
+        "href": "/mi/powerball/2026"
+      },
+      {
+        "label": "Fantasy 5 History",
+        "href": "/mi/fantasy-5/2026"
+      },
+      {
+        "label": "Classic Lotto 47 History",
+        "href": "/mi/classic-lotto-47/2026"
+      },
+      {
+        "label": "Daily 3 Midday History",
+        "href": "/mi/daily-3-midday/2026"
+      },
+      {
+        "label": "Daily 3 Evening History",
+        "href": "/mi/daily-3-evening/2026"
+      },
+      {
+        "label": "Daily 4 Midday History",
+        "href": "/mi/daily-4-midday/2026"
+      },
+      {
+        "label": "Daily 4 Evening History",
+        "href": "/mi/daily-4-evening/2026"
+      }
+    ]
+  },
+  "howToClaim": {
+    "heading": "How to Claim Michigan Lottery Prizes",
+    "intro": "How to claim Michigan Lottery prizes, from small retailer payouts to large jackpot claims.",
+    "claimOptions": [
+      {
+        "amount": "Up to $599",
+        "method": "Claim at most authorized Michigan Lottery retailers"
+      },
+      {
+        "amount": "$600 and above",
+        "method": "Claim at a Michigan Lottery office or by mail per prize amount"
+      },
+      {
+        "amount": "Jackpot / annuity",
+        "method": "Claim in person at the Michigan Lottery headquarters (appointment recommended)"
+      }
+    ],
+    "documents": [
+      "Signed winning ticket",
+      "Government-issued photo ID",
+      "Social Security number or taxpayer ID",
+      "Completed claim form"
+    ],
+    "steps": [
+      {
+        "title": "Sign your winning ticket",
+        "detail": "Immediately sign the back to protect ownership."
+      },
+      {
+        "title": "Confirm the amount you won",
+        "detail": "Use the Check Ticket tool or Latest Draw Results."
+      },
+      {
+        "title": "Choose the correct claim method",
+        "detail": "Based on the prize amount."
+      },
+      {
+        "title": "Complete the paperwork",
+        "detail": "Claim form and tax forms for larger prizes."
+      },
+      {
+        "title": "Submit your claim",
+        "detail": "In person or by mail (certified mail recommended)."
+      }
+    ],
+    "deadlines": [
+      "Draw games: commonly 180 days from the draw date",
+      "Scratchers: per each game's end date",
+      "Mailed claims: postmark by the deadline"
+    ],
+    "districtOffices": "Michigan Lottery claim offices handle larger prizes; appointments are recommended for jackpot and annuity prizes."
+  },
+  "taxes": {
+    "heading": "Taxes & Withholding",
+    "stateNote": "Michigan withholds state income tax on lottery winnings, in addition to federal tax.",
+    "federalIntro": "Federal tax rules apply for prizes of $600 or more:",
+    "points": [
+      "Mandatory federal withholding: 24%",
+      "State income tax is withheld on winnings",
+      "Additional tax may apply at filing",
+      "W-2G forms are issued for reportable winnings"
+    ]
+  },
+  "playerInfo": {
+    "heading": "Michigan Lottery Guide & Player Information",
+    "intro": "Key information Michigan Lottery players should understand.",
+    "sections": [
+      {
+        "title": "Draw Integrity & Oversight",
+        "body": "Michigan Lottery drawings follow strict procedures designed to ensure fairness and randomness; results are verified before publication."
+      },
+      {
+        "title": "Key Michigan Lottery Rules",
+        "list": [
+          "Minimum age to play: 18",
+          "Tickets must be signed to become valid property",
+          "Damaged or unreadable tickets follow a formal review process",
+          "Draw cutoff times vary by game"
+        ]
+      },
+      {
+        "title": "Responsible Play",
+        "list": [
+          "Set a budget and stick to it",
+          "Odds are fixed \u2014 play for entertainment",
+          "Avoid chasing losses",
+          "A problem-gambling helpline is available for confidential support"
+        ]
+      }
+    ]
+  },
+  "finalFaqs": {
+    "heading": "Michigan Lottery \u2014 Frequently Asked Questions",
+    "visibleOnPage": true,
+    "items": [
+      {
+        "q": "What time are Michigan Lottery drawings held?",
+        "a": "Draw times vary by game; times on this page use Michigan local time. See the Schedule section for each game's days and times."
+      },
+      {
+        "q": "What is the minimum age to play the Michigan Lottery?",
+        "a": "You must be 18 or older to play."
+      },
+      {
+        "q": "Are Michigan Lottery prizes taxed?",
+        "a": "Michigan withholds state income tax on lottery winnings, in addition to federal tax. Federal withholding of 24% applies to prizes over $5,000."
+      },
+      {
+        "q": "How do I claim a Michigan Lottery prize?",
+        "a": "Smaller prizes can be claimed at retailers; larger prizes at a Lottery office or headquarters. See How to Claim above."
+      },
+      {
+        "q": "What happens to unclaimed Michigan Lottery prizes?",
+        "a": "Unclaimed prize funds are directed to state programs per Michigan Lottery rules."
+      }
+    ]
+  },
+  "adSlotRefs": {
+    "note": "Same fixed state-page ad slots as /fl (per pageType).",
+    "top": [
+      "sp_top_billboard"
+    ],
+    "inContent": [
+      "sp_mid_leaderboard_pos1",
+      "sp_mid_leaderboard_pos2",
+      "sp_mid_leaderboard_pos3",
+      "sp_mid_leaderboard_pos4"
+    ],
+    "rightRail": [
+      "sp_side_halfpage_pos1",
+      "sp_side_mpu_pos2",
+      "sp_side_skyscraper"
+    ],
+    "mobileInContent": [
+      "sp_mobile_leaderboard_pos1",
+      "sp_mobile_leaderboard_pos2",
+      "sp_mobile_leaderboard_pos3",
+      "sp_mobile_leaderboard_pos4"
+    ],
+    "bottom": [
+      "sp_bottom_billboard"
+    ],
+    "stickyFooterAd": "sp_bottom_large_leaderboard"
+  },
+  "officialSourceNotice": {
+    "name": "Michigan Lottery",
+    "text": "Winning numbers are sourced from official Michigan Lottery draws. Always verify major prizes with an authorized Michigan Lottery retailer or office."
+  },
+  "responsiblePlayNotice": {
+    "text": "Play responsibly. 18+ only. If gambling is a problem, help is available."
+  },
+  "independenceDisclaimer": {
+    "text": "Lottery Corner is an independent lottery information website and is not affiliated with the Michigan Lottery or the State of Michigan."
+  },
+  "popularGames": [
+    {
+      "gameSlug": "powerball",
+      "displayName": "Powerball",
+      "href": "/powerball"
+    },
+    {
+      "gameSlug": "mega-millions",
+      "displayName": "Mega Millions",
+      "href": "/mega-millions"
+    },
+    {
+      "gameSlug": "fantasy-5",
+      "displayName": "Fantasy 5",
+      "href": "/mi/fantasy-5"
+    },
+    {
+      "gameSlug": "classic-lotto-47",
+      "displayName": "Classic Lotto 47",
+      "href": "/mi/classic-lotto-47"
+    }
+  ],
+  "aiToolsTeaser": {
+    "enabled": true,
+    "heading": "AI-assisted lottery tools (coming soon)",
+    "copy": "Explore AI-assisted insights, smart number analysis and personalized alerts. For entertainment and informational purposes only.",
+    "cta": "Sign in to try",
+    "loginGated": true
+  },
+  "accountHooks": {
+    "loginRegisterVisible": true,
+    "favoritesEnabled": true
+  },
+  "faqs": {
+    "heading": "Frequently Asked Questions",
+    "visibleOnPage": true,
+    "schemaEligible": true,
+    "items": [
+      {
+        "q": "What are today's Michigan Lottery numbers?",
+        "a": "The latest winning numbers for all games appear in the Latest Draw Results section above."
+      },
+      {
+        "q": "How do I check my Michigan Lottery ticket?",
+        "a": "Compare your numbers to the Latest Draw Results, or use the Check Your Ticket tool where available."
+      },
+      {
+        "q": "Where do I claim a Michigan Lottery prize?",
+        "a": "Smaller prizes at retailers; larger prizes at a Lottery office. See How to Claim below."
+      }
+    ]
+  },
+  "highlights": {
+    "heading": "Recent Highlights & Alerts",
+    "intro": "Notable Michigan Lottery trends, unclaimed prizes nearing expiration, and jackpot movement. Updated periodically.",
+    "recentWins": [
+      {
+        "location": "Michigan",
+        "text": "A recent top-tier Michigan Lottery win was reported in the state (details published when officially released)."
+      }
+    ],
+    "unclaimedPrizes": [
+      {
+        "game": "Mega Millions",
+        "amount": "See official source",
+        "location": "Michigan",
+        "note": "Unclaimed prizes expire after the claim deadline \u2014 check your tickets."
+      }
+    ],
+    "jackpotGrowth": [
+      {
+        "game": "Powerball",
+        "text": "The jackpot has rolled following draws without a top-prize winner."
+      },
+      {
+        "game": "Mega Millions",
+        "text": "Recent rollovers have increased the advertised jackpot."
+      }
+    ],
+    "note": "Winner specifics are published only when officially released."
+  },
+  "oddsGuide": {
+    "heading": "Game Odds, Prize Matrix & How Each Michigan Lottery Game Works",
+    "intro": "Odds and prize tiers for the major multi-state games. In-state game odds are shown on each game page.",
+    "games": [
+      {
+        "gameName": "Powerball",
+        "rules": "Pick five numbers (1\u201369) plus a Powerball (1\u201326).",
+        "prizeMatrix": [
+          {
+            "tier": "Match 5 + Powerball",
+            "prize": "Jackpot"
+          },
+          {
+            "tier": "Match 5",
+            "prize": "$1 million"
+          }
+        ],
+        "odds": [
+          "Jackpot: 1 in 292 million",
+          "Any prize: 1 in 24.9"
+        ]
+      },
+      {
+        "gameName": "Mega Millions",
+        "rules": "Pick five numbers (1\u201370) plus a Megaball (1\u201324).",
+        "prizeMatrix": [
+          {
+            "tier": "Match 5 + Megaball",
+            "prize": "Jackpot"
+          },
+          {
+            "tier": "Match 5",
+            "prize": "$1 million"
+          }
+        ],
+        "odds": [
+          "Jackpot: 1 in 302 million",
+          "Any prize: 1 in 24"
+        ]
+      }
+    ]
+  },
+  "fundAllocation": {
+    "heading": "Where Michigan Lottery Money Goes",
+    "intro": "How Michigan Lottery revenue supports state programs.",
+    "sections": [
+      {
+        "title": "Beneficiaries",
+        "body": "A significant portion of Michigan Lottery revenue supports state programs such as education and community initiatives, per state law."
+      },
+      {
+        "title": "Unclaimed prizes",
+        "body": "Unclaimed prize funds are also directed to state programs."
+      }
+    ]
+  },
+  "winnerLocation": {
+    "heading": "Recent Michigan Lottery Winning Ticket Locations",
+    "intro": "Illustrative sample rows; official winner locations are published when released.",
+    "columns": [
+      "Prize",
+      "Game",
+      "Area",
+      "Draw Date"
+    ],
+    "rows": [
+      [
+        "$576 Million",
+        "Mega Millions",
+        "Statewide (sample)",
+        "Tuesday, 07/07/2026"
+      ],
+      [
+        "$435 Million",
+        "Powerball",
+        "Statewide (sample)",
+        "Wednesday, 07/08/2026"
+      ],
+      [
+        "$105,000",
+        "Fantasy 5",
+        "Statewide (sample)",
+        "Wednesday, 07/08/2026"
+      ],
+      [
+        "$3.85 Million",
+        "Classic Lotto 47",
+        "Statewide (sample)",
+        "Wednesday, 07/08/2026"
+      ],
+      [
+        "$500",
+        "Daily 3 Midday",
+        "Statewide (sample)",
+        "Thursday, 07/09/2026"
+      ]
+    ]
+  },
+  "biggestWinners": {
+    "heading": "Biggest Michigan Lottery Winners",
+    "intro": "Notable record prizes (published amounts).",
+    "items": [
+      {
+        "amount": "Record jackpot",
+        "game": "Powerball",
+        "location": "Michigan",
+        "text": "Michigan has produced multi-million-dollar Powerball and Mega Millions prizes over the years."
+      },
+      {
+        "amount": "State-game record",
+        "game": "Fantasy 5",
+        "location": "Michigan",
+        "text": "In-state jackpot games have delivered notable top prizes."
+      }
+    ]
+  }
+}

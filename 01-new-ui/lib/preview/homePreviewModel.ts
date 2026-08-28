@@ -898,6 +898,23 @@ export function buildHomePreview(
           state: "preview-unavailable" as const,
         })),
         /*
+         * The systems sub-block keeps its own framing, INDEPENDENT of how many rows survive the
+         * de-duplication below.
+         *
+         * BP-02 §12 order 15 is "Tools, Systems and Number Exploration", and §23 lists Systems and
+         * Wheels and Frequency/number history among the initial tools — the systems half is part of
+         * the governed section, not an optional extra. LRG-UI-016 filtered `systems.sections` by topic
+         * and, because both fixture rows happened to duplicate a tool card, the array emptied and the
+         * renderer's `systems.length > 0` guard dropped the heading and the intro along with the rows.
+         *
+         * That intro is Constitution §7 language — "lottery draws are random and outcomes cannot be
+         * predicted or guaranteed" — sitting directly beneath a Number Analysis tool. Losing it to a
+         * de-duplication is a safety regression, not a cosmetic one. Heading and intro now render
+         * whenever the fixture supplies them; only the duplicate ROWS are filtered.
+         */
+        systemsHeading: cleanCopy(fx.systems?.heading, "Lottery Systems & Number Analysis"),
+        systemsIntro: fx.systems?.intro ? cleanCopy(fx.systems.intro) : undefined,
+        /*
          * LRG-UI-016 §1: drop the plain rows that DUPLICATE a Lottery Tools card.
          *
          * The final-state tool cards added in LRG-UI-013 cover "Number Analysis" and "Responsible
@@ -1352,6 +1369,32 @@ export function buildHomePreview(
           { label: "Contact us", href: "/contact-us", state: "preview-unavailable" },
           { label: "Responsible play", href: "/responsible-play", state: "preview-unavailable" },
         ],
+        /*
+         * The Home FAQ, restored from `home-page-sample.json` where it has sat unread since the BP-02
+         * rebuild. The fixture marks it `visibleOnPage: true`; the previous home template rendered it;
+         * nothing on the current page did.
+         *
+         * It renders INSIDE H-15 rather than as a section of its own. BP-02 §12 lists no FAQ ID, and
+         * `CLAUDE.md` §6 is explicit that page structure comes from the blueprint — so the choice was
+         * between inventing a 31st entry in a frozen sequence and following the pattern this codebase
+         * already approved for the same content type, FG-15 "Trust, responsible play and FAQ". The
+         * second needs no amendment. §29's content list (methodology, corrections, support) is where
+         * these three answers belong anyway: where to check results, how to find a state, and whether
+         * any tool can predict a draw.
+         *
+         * `visibleOnPage: false` yields `null`, so the flag genuinely governs. See source-conflicts.md
+         * Conflict 43.
+         */
+        faq:
+          fx.faqs?.visibleOnPage && (fx.faqs.items?.length ?? 0) > 0
+            ? {
+                heading: cleanCopy(fx.faqs.heading, "Frequently Asked Questions"),
+                items: (fx.faqs.items ?? []).map((f) => ({
+                  q: cleanCopy(f.q),
+                  a: cleanCopy(f.a),
+                })),
+              }
+            : null,
       },
     },
     { id: "AD-H06", name: "Existing Bottom Anchor / Sticky Slot, when enabled", order: 30, kind: "ad-anchor", anchorId: "AD-H06" },

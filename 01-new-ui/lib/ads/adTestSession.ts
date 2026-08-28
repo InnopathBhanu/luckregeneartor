@@ -1,5 +1,6 @@
 /*
- * THE SESSION-SCOPED AD-TEST GATE — LRG-ADS-CANARY-001 §2.
+ * ARCHIVED SESSION-SCOPED AD-TEST GATE — retained as implementation history and imported only by the
+ * archived `AdVerificationGate`. The live GAM bootstrap and slots no longer read browser-session state.
  *
  * ══ WHAT IT IS ══
  *

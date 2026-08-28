@@ -3,9 +3,8 @@
  *
  * What this guards, in order of how badly it would fail in public:
  *
- *   1. AN AD REQUEST NOBODY ASKED FOR. Three conditions must hold before `gpt.js` is fetched, and the third is
- *      a per-session tester action. A regression that drops any one of them turns a restricted canary into an
- *      unconsented public ad load.
+ *   1. UNCONTROLLED ACTIVATION. GAM is automatic on the protected temporary host, but one exact disable flag
+ *      must make both the loader and every slot inert.
  *   2. THE WRONG SLOT ACTIVATED. Only the 15 rendered Home placements and the 10 captured Florida placements
  *      are eligible. Retired, disabled, candidate, video, Wyoming and every other page family stay inactive.
  *   3. A MOVED OR RESHAPED PLACEMENT. Unit path, div id, sizes and the 992px mapping come from the recorded
@@ -16,11 +15,11 @@
 
 import { describe, test } from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 
 import {
-  ADSENSE_ENABLED, ANALYTICS_ENABLED, CANARY_GATE_AVAILABLE, CANARY_PAGE_TYPES, CANARY_STATE_CODES,
-  GAM_DESKTOP_MIN_WIDTH, GAM_ENABLED, GAM_NETWORK_CODE, IZOOTO_ENABLED, PUBLIC_ACTIVATION_BLOCKED,
+  ADSENSE_ENABLED, ANALYTICS_ENABLED, CANARY_PAGE_TYPES, CANARY_STATE_CODES, GAM_DESKTOP_MIN_WIDTH,
+  GAM_ENABLED, GAM_NETWORK_CODE, IZOOTO_ENABLED, PUBLIC_ACTIVATION_BLOCKED,
 } from "../lib/ads/gamConfig";
 import {
   canaryHomeSlotKeys, canaryStateSlotKeys, canarySlotConfig, inactiveHomeSlotKeys,
@@ -34,27 +33,26 @@ const src = (p: string) => readFileSync(new URL(`../${p}`, import.meta.url), "ut
 const code = (p: string) =>
   src(p).replace(/\/\*[\s\S]*?\*\//g, " ").replace(/(^|[^:])\/\/.*$/gm, "$1");
 
-/* ══════════════════════════════════════════════════════════════ §2 fail-closed flags */
+/* ══════════════════════════════════════════════════════════════ §2 independent flags */
 
-describe("LRG-ADS-CANARY-001 §2: every partner flag is separate and fails closed", () => {
-  test("the test environment sets none of them, so everything is off", () => {
-    /* The suite runs with no NEXT_PUBLIC_* set. That is the default a new environment inherits, and it must
-       load nothing — the direction a mistake should fail in. */
-    for (const [name, value] of [
-      ["GAM_ENABLED", GAM_ENABLED], ["ADSENSE_ENABLED", ADSENSE_ENABLED],
-      ["ANALYTICS_ENABLED", ANALYTICS_ENABLED], ["IZOOTO_ENABLED", IZOOTO_ENABLED],
-    ] as const) {
-      assert.equal(value, false, `${name} must default to false`);
-    }
-    assert.equal(CANARY_GATE_AVAILABLE, false, "no gate without both GAM flags");
+describe("LRG-ADS-CANARY-001 §2: every partner flag is separate and follows its declared default", () => {
+  test("missing variables enable GAM and iZooto but not AdSense or analytics", () => {
+    /* The suite runs with no NEXT_PUBLIC_* set, matching a new deployment with no partner overrides. */
+    assert.equal(GAM_ENABLED, true, "GAM must default to enabled");
+    assert.equal(IZOOTO_ENABLED, true, "iZooto must default to enabled");
+    assert.equal(ADSENSE_ENABLED, false, "AdSense must remain opt-in");
+    assert.equal(ANALYTICS_ENABLED, false, "analytics must remain opt-in");
   });
 
-  test("only the exact string \"true\" enables a flag", () => {
-    const flagFn = code("lib/ads/gamConfig.ts");
-    assert.match(flagFn, /raw === "true"/, "comparison must be strict equality against the exact string");
-    /* No loose coercion anywhere: `Boolean(x)`, `!!x` or `x !== "false"` would make "0" and "no" truthy. */
-    assert.doesNotMatch(flagFn, /!==\s*"false"/);
-    assert.doesNotMatch(flagFn, /Boolean\(process\.env/);
+  test("default-on and opt-in systems use distinct exact-string checks", () => {
+    const config = code("lib/ads/gamConfig.ts");
+    assert.match(config, /enabledUnlessFalse[\s\S]*?raw !== "false"/);
+    assert.match(config, /enabledOnlyWhenTrue[\s\S]*?raw === "true"/);
+    assert.match(config, /GAM_ENABLED = enabledUnlessFalse/);
+    assert.match(config, /IZOOTO_ENABLED = enabledUnlessFalse/);
+    assert.match(config, /ADSENSE_ENABLED = enabledOnlyWhenTrue/);
+    assert.match(config, /ANALYTICS_ENABLED = enabledOnlyWhenTrue/);
+    assert.doesNotMatch(config, /Boolean\(process\.env/);
   });
 
   test("the old combined NEXT_PUBLIC_ADS_ENABLED flag is gone from the codebase", () => {
@@ -76,35 +74,52 @@ describe("LRG-ADS-CANARY-001 §2: every partner flag is separate and fails close
   });
 });
 
-/* ══════════════════════════════════════════════════════════════ §2 the session gate */
+/* ══════════════════════════════════════════════════════════════ §2 automatic temporary-host activation */
 
-describe("LRG-ADS-CANARY-001 §2: the gate is per-session and fails closed", () => {
-  test("the gate uses sessionStorage, never localStorage or a cookie", () => {
-    const s = code("lib/ads/adTestSession.ts");
-    assert.match(s, /sessionStorage/);
-    assert.doesNotMatch(s, /localStorage/, "localStorage would persist ad requests across visits");
-    assert.doesNotMatch(s, /document\.cookie/, "a cookie would reach the server and change caching");
+describe("LRG-ADS-CANARY-001 §2: GAM starts automatically and retains one kill switch", () => {
+  test("the root layout mounts no manual verification gate", () => {
+    const layout = code("app/layout.tsx");
+    assert.doesNotMatch(layout, /AdVerificationGate/);
+    assert.match(layout, /<GamBootstrap\s*\/>/);
   });
 
-  test("an unreadable or absent store reports OFF", () => {
-    /* Server render and hardened browsers both land here; assuming yes would request ads for a tester who
-       never pressed anything. */
-    const s = code("lib/ads/adTestSession.ts");
-    /* Every storage read is wrapped, and the unreadable path returns false rather than assuming consent. */
-    assert.match(s, /try \{[\s\S]*?getItem\(KEY\)[\s\S]*?\} catch \{[\s\S]*?return false;[\s\S]*?\}/);
-    /* The environment guard is expressed positively — `canUseStorage()` requires BOTH a window and a
-       sessionStorage before any read is attempted, so server render and hardened browsers both return false. */
-    assert.match(s, /typeof window !== "undefined" && typeof window\.sessionStorage !== "undefined"/);
-    assert.match(s, /if \(!canUseStorage\(\)\) return false;/);
-  });
-
-  test("GamBootstrap requires all three conditions before injecting gpt.js", () => {
-    const b = code("components/ads/GamBootstrap.tsx");
-    assert.match(b, /CANARY_GATE_AVAILABLE/, "build-time flags");
-    assert.match(b, /isAdTestActive/, "session gate");
-    assert.match(b, /if \(!CANARY_GATE_AVAILABLE \|\| !active\) return;/);
+  test("GamBootstrap uses only GAM_ENABLED before injecting one gpt.js", () => {
+    const bootstrap = code("components/ads/GamBootstrap.tsx");
+    assert.match(bootstrap, /if \(!GAM_ENABLED\) return;/);
+    assert.doesNotMatch(bootstrap, /adTestSession|sessionStorage|CANARY_GATE_AVAILABLE|GAM_CANARY_MODE/);
     /* Idempotent against the live DOM, not against React's memory of it. */
-    assert.match(b, /document\.getElementById\(SCRIPT_ID\)/);
+    assert.match(bootstrap, /document\.getElementById\(SCRIPT_ID\)/);
+  });
+
+  test("eligible slots use the same disable flag and no browser-session gate", () => {
+    const slot = code("components/ads/GamSlot.tsx");
+    assert.equal((slot.match(/!GAM_ENABLED \|\| !eligible/g) ?? []).length, 3);
+    assert.doesNotMatch(slot, /adTestSession|sessionStorage|CANARY_GATE_AVAILABLE|GAM_CANARY_MODE/);
+  });
+});
+
+describe("LRG-ADS-CANARY-001 deployment root: runtime fixtures are bundled without changing their evidence", () => {
+  test("the data provider has no filesystem dependency outside 01-new-ui", () => {
+    const provider = code("lib/data-provider/index.ts");
+    assert.doesNotMatch(provider, /node:fs|node:path|SAMPLE_DATA_DIR|\.\.\/04-sample-data/);
+    assert.match(provider, /\.\/fixtures\/ad-slot-definitions\.json/);
+  });
+
+  test("every runtime JSON copy is byte-identical to its 04-sample-data provenance record", () => {
+    const fixtureDir = new URL("../lib/data-provider/fixtures/", import.meta.url);
+    const sourceDir = new URL("../../04-sample-data/", import.meta.url);
+    const bundled = readdirSync(fixtureDir).filter((name) => name.endsWith(".json")).sort();
+    const expected = readdirSync(sourceDir)
+      .filter((name) => /^(ad-slot-definitions|campaigns-sample|footer-config|home-page-sample|result-format-definitions|state-[a-z]{2}-sample)\.json$/.test(name))
+      .sort();
+
+    assert.deepEqual(bundled, expected);
+    for (const name of expected) {
+      assert.ok(
+        readFileSync(new URL(name, fixtureDir)).equals(readFileSync(new URL(name, sourceDir))),
+        `${name} is not byte-identical to its provenance record`,
+      );
+    }
   });
 });
 
@@ -118,7 +133,7 @@ describe("LRG-ADS-CANARY-001 §3: one lifecycle, in GPT's required order", () =>
      * LRG-ADS-CANARY-002 §4. GPT reported the migration itself at runtime:
      *   "[GPT] PubAdsService.disableInitialLoad is deprecated, use googletag.setConfig({disableInitialLoad: …})"
      * `disableInitialLoad` is the line that separates registration from request — reversed, `display()`
-     * fetches immediately and the session gate is bypassed entirely.
+     * fetches immediately and bypasses the governed eager/lazy request lifecycle.
      */
     assert.match(client, /setConfig\(\{ disableInitialLoad: true, singleRequest: true \}\)/);
     assert.ok(client.indexOf("setConfig(") < client.indexOf("enableServices()"),

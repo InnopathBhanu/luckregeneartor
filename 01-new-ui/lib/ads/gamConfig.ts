@@ -8,69 +8,59 @@
  * all", so the canary could not be expressed: turning ads on turned on a second ad system, sitewide, on every
  * page, including the families this task explicitly must not activate.
  *
- * Each partner system now has its own flag and each is **fail-closed** — anything other than the exact string
- * `"true"` is off, including `undefined`, `"1"`, `"TRUE"` and `"yes"`. A missing variable in a new environment
- * therefore loads nothing, which is the direction a mistake should fail in.
+ * Each partner system has its own flag. By founder instruction, GAM and iZooto are enabled when their
+ * variables are absent; setting the corresponding variable to the exact string `"false"` disables that
+ * system. AdSense and analytics remain opt-in and require the exact string `"true"`.
  *
- * ══ THREE CONDITIONS, NOT ONE ══
+ * ══ AUTOMATIC ON THE TEMPORARY HOST ══
  *
- * No GPT library is fetched and no ad is requested unless ALL of:
+ * The protected ad-review subdomain has no in-page startup control. GPT loads automatically when GAM is
+ * enabled, and an eligible slot requests according to its recorded eager/lazy and viewport rules. The one
+ * deployment kill switch is deliberately simple:
  *
- *   1. `NEXT_PUBLIC_GAM_ENABLED=true`        — the deployment is allowed to talk to Ad Manager at all;
- *   2. `NEXT_PUBLIC_GAM_CANARY_MODE=true`    — it is the restricted canary rather than a public build;
- *   3. the tester has pressed "Start ad verification" in THIS browser session (`adTestSession.ts`).
- *
- * (1) and (2) are build-time; (3) is per-session and per-browser. A reader who reaches the canary without
- * pressing the control sees exactly what the pre-canary build showed: reserved, labelled, unrequested space.
+ *   `NEXT_PUBLIC_GAM_ENABLED=false` — do not load GPT or register/request any slot.
  *
  * ══ THIS IS NOT A CMP ══
  *
- * The session gate is a TECHNICAL CANARY CONTROL for a named tester on a restricted subdomain. It is not a
- * consent management platform: it does not enumerate purposes, does not record a legal basis, does not signal
- * TCF, and does not speak for any end user. Public activation stays blocked until the approved Google-certified
- * CMP arrangement is confirmed — `PUBLIC_ACTIVATION_BLOCKED` below is the machine-readable form of that, and
- * the runbook states it in prose.
+ * Subdomain access protection is not a consent management platform: it does not enumerate purposes, record a
+ * legal basis, signal TCF, or speak for a public end user. Public production activation stays blocked until the
+ * approved Google-certified CMP arrangement is confirmed. `PUBLIC_ACTIVATION_BLOCKED` below records that
+ * boundary; it does not stop the founder-authorized temporary host from making automatic test requests.
  */
 
-/** Fail-closed: only the exact string `"true"` enables anything. */
-function flag(raw: string | undefined): boolean {
+/** Opt-in systems remain off unless the exact string `"true"` is supplied. */
+function enabledOnlyWhenTrue(raw: string | undefined): boolean {
   return raw === "true";
 }
 
-/** Ad Manager may be contacted by this deployment at all. */
-export const GAM_ENABLED = flag(process.env.NEXT_PUBLIC_GAM_ENABLED);
+/** Default-on systems remain enabled unless the exact string `"false"` is supplied. */
+function enabledUnlessFalse(raw: string | undefined): boolean {
+  return raw !== "false";
+}
 
-/** This deployment is the restricted canary, so the session gate applies. */
-export const GAM_CANARY_MODE = flag(process.env.NEXT_PUBLIC_GAM_CANARY_MODE);
+/** Ad Manager may be contacted by this deployment at all. */
+export const GAM_ENABLED = enabledUnlessFalse(process.env.NEXT_PUBLIC_GAM_ENABLED);
 
 /** AdSense. Independent of GAM since this task; must stay `false` for the canary. */
-export const ADSENSE_ENABLED = flag(process.env.NEXT_PUBLIC_ADSENSE_ENABLED);
+export const ADSENSE_ENABLED = enabledOnlyWhenTrue(process.env.NEXT_PUBLIC_ADSENSE_ENABLED);
 
 /** GA4 / GTM. */
-export const ANALYTICS_ENABLED = flag(process.env.NEXT_PUBLIC_ANALYTICS_ENABLED);
+export const ANALYTICS_ENABLED = enabledOnlyWhenTrue(process.env.NEXT_PUBLIC_ANALYTICS_ENABLED);
 
-/** iZooto web push. */
-export const IZOOTO_ENABLED = flag(process.env.NEXT_PUBLIC_IZOOTO_ENABLED);
-
-/**
- * Whether the session gate may be OFFERED. Not whether ads load — that additionally needs the tester's action.
- *
- * Outside canary mode the gate is not rendered at all: a public build must not carry a control that starts ad
- * requests, however carefully it is labelled.
- */
-export const CANARY_GATE_AVAILABLE = GAM_ENABLED && GAM_CANARY_MODE;
+/** iZooto web push; enabled by default and disabled only by the exact string `"false"`. */
+export const IZOOTO_ENABLED = enabledUnlessFalse(process.env.NEXT_PUBLIC_IZOOTO_ENABLED);
 
 /**
  * The one place that says public activation is still blocked.
  *
- * Read by the gate's own copy and asserted by test, so removing the restriction requires editing a constant
- * whose name states what it is rather than quietly flipping an environment variable.
+ * Asserted by test, so removing the restriction requires editing a constant whose name states what it is
+ * rather than quietly reusing the temporary subdomain configuration for production.
  */
 export const PUBLIC_ACTIVATION_BLOCKED = {
   blocked: true,
   reason:
-    "Restricted technical canary. A Google-certified CMP arrangement has not been confirmed, so ad requests "
-    + "are limited to an explicit per-session tester action on the canary host.",
+    "Restricted technical preview only. A Google-certified CMP arrangement has not been confirmed, so this "
+    + "automatic GAM activation must not be assigned to the public production host.",
 } as const;
 
 /**

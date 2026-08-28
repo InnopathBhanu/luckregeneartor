@@ -12,8 +12,9 @@ The complete currently-implemented application, deployed so that a named tester 
 Manager requests reach the **already captured and approved Home and Florida State placements** — and nothing
 else.
 
-It is **not** a public launch. Every page remains `noindex, nofollow`, and no ad request happens until a tester
-explicitly starts one.
+It is **not** a public launch. Every page remains `noindex, nofollow`. On this protected temporary host, GAM
+loads automatically and eligible placements begin their normal eager/lazy request lifecycle without an in-page
+startup gate.
 
 ### What can request an ad
 
@@ -62,7 +63,7 @@ founder/ad-operations review.
 | Build Command | `npm run build` |
 | Output Directory | *framework default* (leave blank) |
 | Install Command | *framework default* (leave blank) |
-| Node.js Version | 20.x or 22.x |
+| Node.js Version | 24.x |
 
 Normal Next.js SSR/SSG. **No `output: "export"`**, and no `vercel.json` — nothing about this canary requires
 redirects, rewrites, canonical behaviour, trailing-slash behaviour or route changes, and adding a config file
@@ -70,24 +71,35 @@ that could express those is a risk with no benefit here.
 
 **Domain:** attach `ads-test.lotterycorner.com` only. **Do not** change production `www` or apex DNS.
 
+**Access:** keep the temporary host behind the existing Vercel Deployment Protection or equivalent edge access
+control. There is deliberately no application-level password, verification strip, or GAM start button.
+
+The application is self-contained under the configured root. Runtime JSON is bundled from
+`lib/data-provider/fixtures`; deployment must not set `SAMPLE_DATA_DIR` or depend on `../04-sample-data`.
+
 ---
 
 ## 3. Environment variables
 
-Set all five, in the canary project only.
+No environment variable is required to enable GAM or iZooto. Their defaults are:
 
 ```
-NEXT_PUBLIC_GAM_ENABLED=true
-NEXT_PUBLIC_GAM_CANARY_MODE=true
-NEXT_PUBLIC_ADSENSE_ENABLED=false
-NEXT_PUBLIC_ANALYTICS_ENABLED=false
+NEXT_PUBLIC_GAM_ENABLED=(unset)          # enabled
+NEXT_PUBLIC_IZOOTO_ENABLED=(unset)       # enabled
+NEXT_PUBLIC_ADSENSE_ENABLED=(unset)      # disabled
+NEXT_PUBLIC_ANALYTICS_ENABLED=(unset)    # disabled
+```
+
+To disable GAM or iZooto, add the corresponding variable with the exact value `false` and redeploy:
+
+```
+NEXT_PUBLIC_GAM_ENABLED=false
 NEXT_PUBLIC_IZOOTO_ENABLED=false
 ```
 
-Every flag is **fail-closed**: only the exact string `true` enables anything. `1`, `TRUE`, `yes` and an unset
-variable all mean off, so a new environment that inherits nothing loads nothing.
+AdSense and analytics remain opt-in: only the exact value `true` enables either of them.
 
-`NEXT_PUBLIC_ADSENSE_ENABLED` must stay `false`. A second ad system on the same page makes every observed fill
+`NEXT_PUBLIC_ADSENSE_ENABLED` must stay unset or `false`. A second ad system on the same page makes every observed fill
 ambiguous about which system served it, which defeats the purpose of the canary.
 
 > The former combined `NEXT_PUBLIC_ADS_ENABLED` flag no longer exists. It gated GAM and AdSense together, so
@@ -97,18 +109,14 @@ ambiguous about which system served it, which defeats the purpose of the canary.
 
 ## 4. Running an ad test
 
-1. Open a page on the canary host (`/` or `/fl`).
-2. At the top of the page, find the **Ad verification** strip. It reads *not started*.
-3. Press **Start ad verification**.
-4. GPT loads, the eligible slots register, above-the-fold slots request immediately, and below-the-fold slots
-   request as they approach the viewport.
-5. Press **Stop ad verification** to end it, or simply close the tab.
+1. Open a page on the protected host (`/` or `/fl`).
+2. Open browser developer tools before or immediately after navigation.
+3. Confirm one `gpt.js` request to `securepubads.g.doubleclick.net`.
+4. Confirm eligible above-the-fold slots register and request automatically.
+5. Scroll the page and confirm lazy placements request as they approach the viewport.
 
-The gate is stored in `sessionStorage` under `lc-ad-verification` and is scoped to **that browser tab**. It does
-not persist to the next visit and does not travel to the server.
-
-**Before you press the button, the page makes zero requests to `securepubads.g.doubleclick.net`.** That is the
-first thing to verify on any new deployment.
+There is no `sessionStorage` gate and no start/stop control. The explicit deployment-wide stop mechanism is
+`NEXT_PUBLIC_GAM_ENABLED=false` followed by a redeploy.
 
 ---
 
@@ -122,8 +130,8 @@ the reservation and the inner GPT div can no longer disagree. The inner GPT div 
 
 | Value | Meaning | Action |
 |---|---|---|
-| `inactive` | Gate not started | Expected before the test |
-| `registered` | Defined with GPT, not yet requested | Normal for a lazy slot above the fold line |
+| `inactive` | GAM disabled, placement ineligible, or slot not mounted | Expected with the kill switch off or outside the slot's viewport tier |
+| `registered` | Defined with GPT, not yet requested | Normal for a lazy slot outside the request threshold |
 | `requested` | Ad requested, awaiting a response | Transient |
 | `filled` | A creative rendered | Success |
 | `empty-response` | The slot rendered nothing | **Investigation required** — see below |
@@ -187,10 +195,9 @@ change any seller relationship.
 
 In increasing order of severity:
 
-1. **Stop one tester** — press *Stop ad verification*, or close the tab.
-2. **Stop all ad requests, keep the site up** — set `NEXT_PUBLIC_GAM_ENABLED=false` in the Vercel project and
-   redeploy. The gate disappears, GPT is never fetched, and every placement returns to reserved-and-labelled.
-3. **Withdraw the deployment** — remove the `ads-test` domain assignment, or delete the deployment. Production
+1. **Stop all ad requests, keep the site up** — set `NEXT_PUBLIC_GAM_ENABLED=false` in the Vercel project and
+   redeploy. GPT is never fetched, and every placement returns to reserved-and-labelled.
+2. **Withdraw the deployment** — remove the `ads-test` domain assignment, or delete the deployment. Production
    `www` and apex are untouched by any of this and need no action.
 
 No rollback step requires a code change, and none touches production DNS.
@@ -207,10 +214,10 @@ and the restricted host should additionally be blocked at the edge if that is av
 
 ## 9. Consent posture
 
-**This is a restricted technical canary gate, not a production-certified CMP.**
+**The protected temporary host is not a production-certified CMP.**
 
-The session control records one boolean about one tester's browser tab. It does not enumerate purposes or
-vendors, does not record a legal basis, does not emit a TCF string, and does not speak for any end user.
+External access protection limits who can reach the host, but it does not enumerate purposes or vendors, record
+a legal basis, emit a TCF string, or speak for a public end user.
 
 Public production activation remains **blocked** until the approved Google-certified CMP arrangement is
 confirmed. That statement is also encoded as `PUBLIC_ACTIVATION_BLOCKED` in `lib/ads/gamConfig.ts` and asserted

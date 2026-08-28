@@ -31,6 +31,50 @@ import {
   type PersonalInsight,
   type PersonalMatchOutcome,
 } from "@/lib/personal/personalModel";
+import disclosureStyles from "./PersonalLayerDisclosure.module.css";
+
+/* ------------------------------------------------------------------ compact layer */
+
+/**
+ * Keeps the complete governed signed-in sequence available without forcing a stack of sparse account
+ * panels ahead of the page's primary results. Native details/summary gives keyboard and screen-reader
+ * users the same explicit control, starts closed without client state, and therefore stays hydration-safe.
+ */
+export function PersonalLayerDisclosure({
+  layer,
+  order,
+  title,
+  summary,
+  children,
+}: {
+  layer: "home" | "state";
+  order: string;
+  title: string;
+  summary: string;
+  children: ReactNode;
+}) {
+  return (
+    <div
+      className="lcp-personal"
+      data-personal-layer={layer}
+      data-user-state="signed-in"
+      data-personal-order={order}
+      data-personal-default-state="collapsed"
+    >
+      <details className={disclosureStyles.disclosure}>
+        <summary className={disclosureStyles.summary} data-personal-summary="true">
+          <span>
+            <span className={disclosureStyles.title}>{title}</span>
+            <span className={disclosureStyles.meta}>{summary}</span>
+          </span>
+          <span className={`${disclosureStyles.action} ${disclosureStyles.actionShow}`}>Show</span>
+          <span className={`${disclosureStyles.action} ${disclosureStyles.actionHide}`}>Hide</span>
+        </summary>
+        <div className={disclosureStyles.content}>{children}</div>
+      </details>
+    </div>
+  );
+}
 
 /* ------------------------------------------------------------------ section wrapper */
 

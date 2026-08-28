@@ -1,0 +1,961 @@
+{
+  "_meta": {
+    "purpose": "UI-first sample payload for the Mississippi state page (/ms), rendered by the shared StatePageTemplate. Real result values from source-xml; content structure guided by the Mississippi content doc. Clean sample/admin-editable copy (no [ADMIN]). /buynow only.",
+    "illustrative": true,
+    "schemaVersion": "0.1-sample",
+    "canonicalTarget": "https://lotterycorner.com/ms (no trailing slash; www->non-www migration pending)"
+  },
+  "page": {
+    "stateCode": "ms",
+    "stateName": "Mississippi",
+    "url": "/ms",
+    "pageType": "state",
+    "metadata": {
+      "title": "Mississippi Lottery Results Today \u2014 Winning Numbers, Jackpots & How to Claim",
+      "description": "Latest Mississippi Lottery winning numbers for Powerball, Mega Millions, Match 5 With Multiplier, Missippi Cash3 Midday, Cash 3 Evening \u2014 updated after every draw.",
+      "canonicalPlaceholder": "[VERIFY-CONVENTION] https://lotterycorner.com/ms (target host non-www, no trailing slash; migration pending \u2014 not emitted yet)",
+      "robots": "index,follow",
+      "openGraph": {
+        "type": "website",
+        "title": "Mississippi Lottery Results Today",
+        "description": "Latest Mississippi Lottery winning numbers and jackpots.",
+        "siteName": "Lottery Corner"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Mississippi Lottery Results Today",
+        "description": "Latest Mississippi Lottery winning numbers and jackpots."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "url": "/"
+        },
+        {
+          "name": "Mississippi Winning Numbers",
+          "url": "/ms"
+        }
+      ]
+    },
+    "h1": "Mississippi Lottery Results Today \u2014 Winning Numbers, Jackpots, & How to Claim",
+    "intro": "Check the latest Mississippi Lottery winning numbers, jackpots, and draw results in one place \u2014 including next draw times, prize information, claim instructions, and jackpot updates. Updated after every official Mississippi Lottery drawing.",
+    "lastUpdated": {
+      "display": "Last updated: July 9, 2026 at 12:11 AM CT",
+      "storedDrawTimezone": "America/New_York",
+      "displayTimezone": "America/Chicago",
+      "isoDateModified": "2026-07-09T00:11:54"
+    },
+    "timezoneMeta": {
+      "storedTimezone": "America/New_York",
+      "gameLocalTimezone": "America/Chicago",
+      "note": "Draw times stored in EST are converted to America/Chicago for display (05-doc D6/D7)."
+    }
+  },
+  "jackpotTicker": {
+    "nextDraw": {
+      "game": "Powerball",
+      "timeDisplay": "see schedule (CT)",
+      "countdownLabel": ""
+    },
+    "topJackpots": [
+      {
+        "game": "Mega Millions",
+        "amountDisplay": "$576 Million"
+      },
+      {
+        "game": "Powerball",
+        "amountDisplay": "$435 Million"
+      }
+    ],
+    "alsoComingUp": [],
+    "quickActions": [
+      {
+        "label": "Check Ticket",
+        "href": "#check-ticket"
+      },
+      {
+        "label": "Past Results",
+        "href": "#winning-history"
+      },
+      {
+        "label": "Jackpot Tracker",
+        "href": "#jackpot-tracker"
+      },
+      {
+        "label": "Claim Info",
+        "href": "#how-to-claim"
+      }
+    ],
+    "buyTickets": {
+      "label": "Buy Tickets",
+      "href": "/buynow/play-usa-powerball"
+    },
+    "disclaimer": "Winning numbers are updated shortly after each drawing. Always verify winning tickets with the official Mississippi Lottery before claiming a prize."
+  },
+  "tabs": [
+    {
+      "key": "results",
+      "label": "Results",
+      "href": "#results",
+      "active": true
+    },
+    {
+      "key": "winning-history",
+      "label": "Winning History",
+      "href": "#winning-history"
+    },
+    {
+      "key": "schedule",
+      "label": "Schedule",
+      "href": "#schedule"
+    },
+    {
+      "key": "how-to-play",
+      "label": "How to Play",
+      "href": "#how-to-play"
+    },
+    {
+      "key": "how-to-claim",
+      "label": "How to Claim",
+      "href": "#how-to-claim"
+    }
+  ],
+  "latestResults": {
+    "heading": "Today's Mississippi Lottery Winning Numbers",
+    "infoCallout": "Winning numbers are published after the Mississippi Lottery releases the official draw results. If you believe you have a winning ticket, keep the original ticket safe and complete the official validation process.",
+    "intro": "Find the latest Mississippi Lottery winning numbers for every draw game below as soon as each official drawing is complete.",
+    "groups": [
+      {
+        "groupKey": "multiState",
+        "heading": "Multi-State Draws (Powerball & Mega Millions)",
+        "resultCards": [
+          {
+            "gameId": 1012,
+            "gameSlug": "powerball",
+            "displayName": "Powerball",
+            "formatRef": {
+              "gameId": 1012
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  12,
+                  29,
+                  37,
+                  43,
+                  55
+                ],
+                "colorToken": "ball.default"
+              },
+              {
+                "order": 1,
+                "label": "Powerball",
+                "values": [
+                  18
+                ],
+                "colorToken": "ball.powerball"
+              }
+            ],
+            "drawScheduleLabel": "Mon, Wed & Sat",
+            "multipliers": [
+              {
+                "key": "power-play",
+                "label": "Power Play",
+                "value": 4,
+                "display": "Power Play 4X"
+              }
+            ],
+            "prizeDisplay": "$435 Million",
+            "prizeRaw": "435000000",
+            "nextDraw": {
+              "display": "Saturday, 07/11/2026",
+              "nextJackpotDisplay": "$457 Million"
+            },
+            "buyTickets": {
+              "label": "Buy Tickets",
+              "href": "/buynow/play-usa-powerball",
+              "affiliateResolved": false
+            },
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/ms/powerball/2026"
+              },
+              {
+                "type": "findMore",
+                "href": "/ms/powerball"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 1013,
+            "gameSlug": "mega-millions",
+            "displayName": "Mega Millions",
+            "formatRef": {
+              "gameId": 1013
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-07",
+              "display": "Tuesday, 07/07/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  2,
+                  31,
+                  35,
+                  36,
+                  63
+                ],
+                "colorToken": "ball.default"
+              },
+              {
+                "order": 1,
+                "label": "Mega Ball",
+                "values": [
+                  12
+                ],
+                "colorToken": "ball.megaball"
+              }
+            ],
+            "drawScheduleLabel": "Tue & Fri",
+            "prizeDisplay": "$576 Million",
+            "prizeRaw": "576000000",
+            "nextDraw": {
+              "display": "Friday, 07/10/2026",
+              "nextJackpotDisplay": "$604 Million"
+            },
+            "buyTickets": {
+              "label": "Buy Tickets",
+              "href": "/buynow/play-usa-megamillions",
+              "affiliateResolved": false
+            },
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/ms/mega-millions/2026"
+              },
+              {
+                "type": "findMore",
+                "href": "/ms/mega-millions"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      },
+      {
+        "groupKey": "inState",
+        "heading": "Mississippi In-State Draws",
+        "resultCards": [
+          {
+            "gameId": 605,
+            "gameSlug": "match-5-with-multiplier",
+            "displayName": "Match 5 With Multiplier",
+            "formatRef": {
+              "gameId": 605
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  10,
+                  15,
+                  18,
+                  21,
+                  28
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$58,000",
+            "prizeRaw": "58000",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$60,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/ms/match-5-with-multiplier/2026"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      },
+      {
+        "groupKey": "pick",
+        "heading": "Pick Games & Daily Draws",
+        "resultCards": [
+          {
+            "gameId": 626,
+            "gameSlug": "missippi-cash3-midday",
+            "displayName": "Missippi Cash3 Midday",
+            "formatRef": {
+              "gameId": 626
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  8,
+                  2,
+                  7
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "addOns": [
+              {
+                "key": "fireball",
+                "label": "Fireball",
+                "value": 5,
+                "colorToken": "ball.fireball"
+              }
+            ],
+            "prizeDisplay": "$500",
+            "prizeRaw": "500",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$500"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/ms/missippi-cash3-midday/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 594,
+            "gameSlug": "cash-3-evening",
+            "displayName": "Cash 3 Evening",
+            "formatRef": {
+              "gameId": 594
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  3,
+                  5,
+                  3
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "addOns": [
+              {
+                "key": "fireball",
+                "label": "Fireball",
+                "value": 1,
+                "colorToken": "ball.fireball"
+              }
+            ],
+            "prizeDisplay": "$500",
+            "prizeRaw": "500",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$500"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/ms/cash-3-evening/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 627,
+            "gameSlug": "missippi-cash4-midday",
+            "displayName": "Missippi Cash4 Midday",
+            "formatRef": {
+              "gameId": 627
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  7,
+                  3,
+                  4,
+                  8
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "addOns": [
+              {
+                "key": "fireball",
+                "label": "Fireball",
+                "value": 5,
+                "colorToken": "ball.fireball"
+              }
+            ],
+            "prizeDisplay": "$5,000",
+            "prizeRaw": "5000",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$5,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/ms/missippi-cash4-midday/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 613,
+            "gameSlug": "cash4-evening",
+            "displayName": "Cash4  Evening",
+            "formatRef": {
+              "gameId": 613
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  3,
+                  9,
+                  2,
+                  5
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "addOns": [
+              {
+                "key": "fireball",
+                "label": "Fireball",
+                "value": 1,
+                "colorToken": "ball.fireball"
+              }
+            ],
+            "prizeDisplay": "$5,000",
+            "prizeRaw": "5000",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$5,000"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/ms/cash4-evening/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 636,
+            "gameSlug": "cash-pop-midday",
+            "displayName": "Cash Pop Midday",
+            "formatRef": {
+              "gameId": 636
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  1
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$250",
+            "prizeRaw": "250",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$250"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/ms/cash-pop-midday/2026"
+              }
+            ],
+            "favoriteHook": true
+          },
+          {
+            "gameId": 637,
+            "gameSlug": "cash-pop-evening",
+            "displayName": "Cash Pop Evening",
+            "formatRef": {
+              "gameId": 637
+            },
+            "status": "latest",
+            "resultDate": {
+              "gameLocalDate": "2026-07-08",
+              "display": "Wednesday, 07/08/2026"
+            },
+            "groupsDrawn": [
+              {
+                "order": 0,
+                "label": null,
+                "values": [
+                  4
+                ],
+                "colorToken": "ball.default"
+              }
+            ],
+            "prizeDisplay": "$250",
+            "prizeRaw": "250",
+            "nextDraw": {
+              "display": "Thursday, 07/09/2026",
+              "nextJackpotDisplay": "$250"
+            },
+            "buyTickets": null,
+            "actions": [
+              {
+                "type": "viewHistory",
+                "href": "/ms/cash-pop-evening/2026"
+              }
+            ],
+            "favoriteHook": true
+          }
+        ]
+      }
+    ]
+  },
+  "quickFacts": {
+    "heading": "Mississippi Lottery Quick Facts",
+    "rows": [
+      {
+        "label": "Founded",
+        "value": "2019"
+      },
+      {
+        "label": "Minimum playing age",
+        "value": "18 years"
+      },
+      {
+        "label": "Claim deadline (draw games)",
+        "value": "180 days from the draw date"
+      },
+      {
+        "label": "State tax on winnings",
+        "value": "Yes \u2014 state income tax is withheld"
+      },
+      {
+        "label": "Games covered",
+        "value": "Powerball, Mega Millions, Match 5 With Multiplier, Missippi Cash3 Midday, Cash 3 Evening, Missippi Cash4 Midday"
+      },
+      {
+        "label": "Time zone",
+        "value": "Mississippi local time (CT)"
+      }
+    ]
+  },
+  "drawSchedule": {
+    "heading": "Mississippi Lottery Draw Schedule (CT)",
+    "intro": "Regular draw days and approximate draw times (CT). Times are approximate and may change for operational reasons or holidays.",
+    "entries": [
+      {
+        "game": "Powerball",
+        "days": "Mon, Wed & Sat",
+        "timeDisplay": "Evening (CT)"
+      },
+      {
+        "game": "Mega Millions",
+        "days": "Tue & Fri",
+        "timeDisplay": "Evening (CT)"
+      },
+      {
+        "game": "Match 5 With Multiplier",
+        "days": "See game page",
+        "timeDisplay": "Evening (CT)"
+      },
+      {
+        "game": "Missippi Cash3 Midday",
+        "days": "See game page",
+        "timeDisplay": "Evening (CT)"
+      },
+      {
+        "game": "Cash 3 Evening",
+        "days": "See game page",
+        "timeDisplay": "Evening (CT)"
+      },
+      {
+        "game": "Missippi Cash4 Midday",
+        "days": "See game page",
+        "timeDisplay": "Evening (CT)"
+      },
+      {
+        "game": "Cash4  Evening",
+        "days": "See game page",
+        "timeDisplay": "Evening (CT)"
+      },
+      {
+        "game": "Cash Pop Midday",
+        "days": "See game page",
+        "timeDisplay": "Evening (CT)"
+      }
+    ]
+  },
+  "historyLinks": {
+    "heading": "Mississippi Lottery Winning Numbers History",
+    "intro": "Browse past Mississippi Lottery winning numbers by game.",
+    "links": [
+      {
+        "label": "Powerball History",
+        "href": "/ms/powerball/2026"
+      },
+      {
+        "label": "Mega Millions History",
+        "href": "/ms/mega-millions/2026"
+      },
+      {
+        "label": "Match 5 With Multiplier History",
+        "href": "/ms/match-5-with-multiplier/2026"
+      },
+      {
+        "label": "Missippi Cash3 Midday History",
+        "href": "/ms/missippi-cash3-midday/2026"
+      },
+      {
+        "label": "Cash 3 Evening History",
+        "href": "/ms/cash-3-evening/2026"
+      },
+      {
+        "label": "Missippi Cash4 Midday History",
+        "href": "/ms/missippi-cash4-midday/2026"
+      },
+      {
+        "label": "Cash4  Evening History",
+        "href": "/ms/cash4-evening/2026"
+      },
+      {
+        "label": "Cash Pop Midday History",
+        "href": "/ms/cash-pop-midday/2026"
+      }
+    ]
+  },
+  "howToClaim": {
+    "heading": "How to Claim Mississippi Lottery Prizes",
+    "intro": "How to claim Mississippi Lottery prizes, from small retailer payouts to large jackpot claims.",
+    "claimOptions": [
+      {
+        "amount": "Up to $599",
+        "method": "Claim at most authorized Mississippi Lottery retailers"
+      },
+      {
+        "amount": "$600 and above",
+        "method": "Claim at a Mississippi Lottery office or claim center per prize amount"
+      },
+      {
+        "amount": "Jackpot / annuity",
+        "method": "Claim at Mississippi Lottery headquarters (appointment recommended)"
+      }
+    ],
+    "documents": [
+      "Signed winning ticket",
+      "Government-issued photo ID",
+      "Social Security number or taxpayer ID",
+      "Completed claim form"
+    ],
+    "steps": [
+      {
+        "title": "Sign your winning ticket",
+        "detail": "Sign the back immediately to protect ownership."
+      },
+      {
+        "title": "Confirm the amount you won",
+        "detail": "Compare to the Latest Draw Results."
+      },
+      {
+        "title": "Choose the correct claim method",
+        "detail": "Based on the prize amount."
+      },
+      {
+        "title": "Complete the paperwork",
+        "detail": "Claim form and tax forms for larger prizes."
+      },
+      {
+        "title": "Submit your claim",
+        "detail": "In person or by mail (certified mail recommended)."
+      }
+    ],
+    "deadlines": [
+      "Draw games: 180 days from the draw date",
+      "Scratch-Offs: per each game's end date",
+      "Mailed claims: postmark by the deadline"
+    ],
+    "districtOffices": "Mississippi Lottery claim centers/headquarters handle larger prizes; appointments recommended for jackpot and annuity prizes."
+  },
+  "taxes": {
+    "heading": "Taxes & Withholding",
+    "stateNote": "Mississippi withholds state income tax on lottery winnings, in addition to federal tax.",
+    "federalIntro": "Federal tax rules apply for prizes of $600 or more:",
+    "points": [
+      "Mandatory federal withholding: 24%",
+      "State income tax is withheld on winnings",
+      "Additional tax may apply at filing",
+      "W-2G forms are issued for reportable winnings"
+    ]
+  },
+  "playerInfo": {
+    "heading": "Mississippi Lottery Guide & Player Information",
+    "intro": "Key information Mississippi Lottery players should understand.",
+    "sections": [
+      {
+        "title": "Draw Integrity & Oversight",
+        "body": "Mississippi Lottery drawings follow strict procedures to ensure fairness and randomness; results are verified before publication."
+      },
+      {
+        "title": "Key Mississippi Lottery Rules",
+        "list": [
+          "Minimum age to play: 18",
+          "Tickets must be signed to become valid property",
+          "Damaged or unreadable tickets follow a formal review process",
+          "Draw cutoff times vary by game"
+        ]
+      },
+      {
+        "title": "Responsible Play",
+        "list": [
+          "Set a budget and stick to it",
+          "Odds are fixed \u2014 play for entertainment",
+          "Avoid chasing losses",
+          "A problem-gambling helpline is available for confidential support"
+        ]
+      }
+    ]
+  },
+  "finalFaqs": {
+    "heading": "Mississippi Lottery \u2014 Frequently Asked Questions",
+    "visibleOnPage": true,
+    "items": [
+      {
+        "q": "What time are Mississippi Lottery drawings held?",
+        "a": "Draw times vary by game; times on this page use Mississippi local time (CT). See the Schedule section."
+      },
+      {
+        "q": "What is the minimum age to play the Mississippi Lottery?",
+        "a": "You must be 18 or older to play."
+      },
+      {
+        "q": "Are Mississippi Lottery prizes taxed?",
+        "a": "Mississippi withholds state income tax on lottery winnings, in addition to federal tax. Federal withholding of 24% applies to prizes over $5,000."
+      },
+      {
+        "q": "How do I claim a Mississippi Lottery prize?",
+        "a": "Smaller prizes at retailers; larger prizes at a claim center or headquarters. See How to Claim above."
+      },
+      {
+        "q": "What happens to unclaimed Mississippi Lottery prizes?",
+        "a": "Unclaimed prize funds are directed to state programs per Mississippi Lottery rules."
+      }
+    ]
+  },
+  "faqs": {
+    "heading": "Frequently Asked Questions",
+    "visibleOnPage": true,
+    "schemaEligible": true,
+    "items": [
+      {
+        "q": "What are today's Mississippi Lottery numbers?",
+        "a": "The latest winning numbers for all games appear in the Latest Draw Results section above."
+      },
+      {
+        "q": "How do I check my Mississippi Lottery ticket?",
+        "a": "Compare your numbers to the Latest Draw Results and complete official validation before claiming."
+      },
+      {
+        "q": "Did anyone win the jackpot?",
+        "a": "See the Jackpot Tracker below for whether top prizes rolled over and the next estimated jackpots."
+      }
+    ]
+  },
+  "adSlotRefs": {
+    "note": "Same fixed state-page ad slots as /fl.",
+    "top": [
+      "sp_top_billboard"
+    ],
+    "inContent": [
+      "sp_mid_leaderboard_pos1",
+      "sp_mid_leaderboard_pos2",
+      "sp_mid_leaderboard_pos3",
+      "sp_mid_leaderboard_pos4"
+    ],
+    "rightRail": [
+      "sp_side_halfpage_pos1",
+      "sp_side_mpu_pos2",
+      "sp_side_skyscraper"
+    ],
+    "mobileInContent": [
+      "sp_mobile_leaderboard_pos1",
+      "sp_mobile_leaderboard_pos2",
+      "sp_mobile_leaderboard_pos3",
+      "sp_mobile_leaderboard_pos4"
+    ],
+    "bottom": [
+      "sp_bottom_billboard"
+    ],
+    "stickyFooterAd": "sp_bottom_large_leaderboard"
+  },
+  "officialSourceNotice": {
+    "name": "Mississippi Lottery",
+    "text": "Winning numbers are sourced from official Mississippi Lottery draws. Always verify major prizes with an authorized Mississippi Lottery retailer or office."
+  },
+  "responsiblePlayNotice": {
+    "text": "Play responsibly. 18+ only. If gambling is a problem, help is available."
+  },
+  "independenceDisclaimer": {
+    "text": "Lottery Corner is an independent lottery information website and is not affiliated with the Mississippi Lottery or the State of Mississippi."
+  },
+  "popularGames": [
+    {
+      "gameSlug": "powerball",
+      "displayName": "Powerball",
+      "href": "/powerball"
+    },
+    {
+      "gameSlug": "mega-millions",
+      "displayName": "Mega Millions",
+      "href": "/mega-millions"
+    },
+    {
+      "gameSlug": "match-5-with-multiplier",
+      "displayName": "Match 5 With Multiplier",
+      "href": "/ms/match-5-with-multiplier"
+    }
+  ],
+  "aiToolsTeaser": {
+    "enabled": true,
+    "heading": "AI-assisted lottery tools (coming soon)",
+    "copy": "Explore AI-assisted insights, smart number analysis and personalized alerts. For entertainment and informational purposes only.",
+    "cta": "Sign in to try",
+    "loginGated": true
+  },
+  "accountHooks": {
+    "loginRegisterVisible": true,
+    "favoritesEnabled": true
+  },
+  "jackpotTracker": {
+    "heading": "Did Anyone Win Last Night? (Jackpot Tracker)",
+    "intro": "Current estimated jackpots and next draw dates for the biggest games. When a top prize rolls over, the next jackpot increases.",
+    "columns": [
+      "Game",
+      "Jackpot Won?",
+      "Next Estimated Jackpot",
+      "Next Draw Date"
+    ],
+    "rows": [
+      [
+        "Match 5 With Multiplier",
+        "Rolled Over",
+        "$60,000",
+        "Thursday, 07/09/2026"
+      ],
+      [
+        "Powerball",
+        "Rolled Over",
+        "$457 Million",
+        "Saturday, 07/11/2026"
+      ],
+      [
+        "Mega Millions",
+        "Rolled Over",
+        "$604 Million",
+        "Friday, 07/10/2026"
+      ]
+    ]
+  },
+  "highlights": {
+    "heading": "Recent Highlights & Alerts",
+    "intro": "Notable Mississippi Lottery trends, unclaimed prizes nearing expiration, and jackpot movement. Updated periodically.",
+    "recentWins": [
+      {
+        "location": "Mississippi",
+        "text": "Recent top-tier Mississippi Lottery wins are published when officially released."
+      }
+    ],
+    "unclaimedPrizes": [
+      {
+        "game": "Powerball",
+        "amount": "See official source",
+        "location": "Mississippi",
+        "note": "Unclaimed prizes expire after the claim deadline \u2014 check your tickets."
+      }
+    ],
+    "jackpotGrowth": [
+      {
+        "game": "Powerball",
+        "text": "The jackpot has rolled following draws without a top-prize winner."
+      },
+      {
+        "game": "Mega Millions",
+        "text": "Recent rollovers have increased the advertised jackpot."
+      }
+    ],
+    "note": "Winner specifics are published only when officially released."
+  },
+  "contentMeta": {
+    "source": "Official Mississippi Lottery draw results",
+    "reviewStatus": "published",
+    "lastReviewed": "July 9, 2026 at 12:11 AM CT",
+    "note": "Content is reviewed after each official drawing (draft \u2192 review \u2192 publish workflow for future admin/agent edits)."
+  }
+}

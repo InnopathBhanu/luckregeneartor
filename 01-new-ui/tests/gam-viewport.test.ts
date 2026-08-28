@@ -259,7 +259,7 @@ describe("LRG-ADS-CANARY-003A: the inventory contract is unchanged", () => {
 
 /* ══════════════════════════════════════════════════════════ hydration safety */
 
-describe("LRG-ADS-CANARY-003A: the gate is hydration-safe by construction", () => {
+describe("LRG-ADS-CANARY-003A: viewport activation is hydration-safe by construction", () => {
   test("the tier hook never reads a width, and never answers before mount", () => {
     const h = code("components/ads/useViewportTier.ts");
     assert.doesNotMatch(h, /innerWidth|clientWidth|offsetWidth|getBoundingClientRect/,
@@ -274,10 +274,10 @@ describe("LRG-ADS-CANARY-003A: the gate is hydration-safe by construction", () =
   test("GamSlot gates registration, the observer and the rendered div on the same answer", () => {
     const g = code("components/ads/GamSlot.tsx");
     /* Three separate paths, one condition — a gap in any of them is an ad request from a hidden slot. */
-    assert.equal((g.match(/!CANARY_GATE_AVAILABLE \|\| !active \|\| !eligible/g) ?? []).length, 3);
+    assert.equal((g.match(/!GAM_ENABLED \|\| !eligible/g) ?? []).length, 3);
     /* Eligibility is a dependency, so losing it tears the slot down. */
-    assert.match(g, /\}, \[active, eligible, divId, gamPath, sizes, mapping, lazy\]\);/);
-    assert.match(g, /\}, \[active, eligible, divId, lazy\]\);/);
+    assert.match(g, /\}, \[eligible, divId, gamPath, sizes, mapping, lazy\]\);/);
+    assert.match(g, /\}, \[eligible, divId, lazy\]\);/);
   });
 
   test("no CSS or element measurement is consulted for eligibility", () => {

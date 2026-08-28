@@ -1,0 +1,96 @@
+{
+  "_meta": {
+    "purpose": "Sample internal campaigns/banners (content modules, NOT ads). Rendered by CampaignPlacement when previewEligible + placement/page/state match. Never replace/move/collapse GAM slots. Geo/device/schedule are stored for a FUTURE API/backend resolver (no browser IP lookup). Internal CTA URLs only.",
+    "illustrative": true,
+    "schemaVersion": "0.1-sample"
+  },
+  "campaigns": [
+    {
+      "id": "pb-jackpot-alert",
+      "title": "Powerball is $457 Million",
+      "description": "See the latest Powerball winning numbers and next-draw jackpot.",
+      "image": null,
+      "ctaText": "See Powerball",
+      "ctaUrl": "/powerball",
+      "variant": "accent",
+      "priority": 90,
+      "active": true,
+      "previewEligible": true,
+      "placements": ["home.afterTopJackpots"],
+      "targeting": { "pages": ["home"], "geo": { "allGeos": true }, "devices": ["all"] },
+      "schedule": { "start": null, "end": null, "timezone": "America/New_York" }
+    },
+    {
+      "id": "ai-tools-teaser",
+      "title": "AI-assisted lottery tools (coming soon)",
+      "description": "Explore AI-assisted insights and smart number analysis. For entertainment only — no tool can predict or guarantee winning numbers.",
+      "image": null,
+      "ctaText": "Sign in to explore",
+      "ctaUrl": "#insider",
+      "variant": "insider",
+      "priority": 70,
+      "active": true,
+      "previewEligible": true,
+      "placements": ["home.insiderBand"],
+      "targeting": { "pages": ["home"], "geo": { "allGeos": true }, "devices": ["all"] }
+    },
+    {
+      "id": "buy-tickets-availability",
+      "title": "Play your favorite games",
+      "description": "Buy Tickets availability may depend on your location, state, and game. Links route through our partner service.",
+      "image": null,
+      "ctaText": "Buy Tickets",
+      "ctaUrl": "/buynow/play-usa-powerball",
+      "variant": "info",
+      "priority": 60,
+      "active": true,
+      "previewEligible": true,
+      "placements": ["home.heroBelow"],
+      "targeting": { "pages": ["home"], "geo": { "allGeos": true }, "devices": ["all"] }
+    },
+    {
+      "id": "jackpot-alert-subscribe",
+      "title": "Get jackpot alerts",
+      "description": "Sign in to save favorite games and get notified when jackpots climb.",
+      "image": null,
+      "ctaText": "Set up alerts",
+      "ctaUrl": "#alerts",
+      "variant": "subtle",
+      "priority": 50,
+      "active": true,
+      "previewEligible": true,
+      "placements": ["home.beforeNews"],
+      "targeting": { "pages": ["home"], "geo": { "allGeos": true }, "devices": ["all"] }
+    },
+    {
+      "id": "ny-check-ticket-promo",
+      "title": "Check your New York ticket",
+      "description": "Verify your New York Lottery numbers against the latest results.",
+      "image": null,
+      "ctaText": "Check ticket",
+      "ctaUrl": "#check-ticket",
+      "variant": "info",
+      "priority": 80,
+      "active": true,
+      "previewEligible": true,
+      "placements": ["state.afterHero"],
+      "targeting": { "pages": ["state"], "stateCodesInclude": ["ny"], "geo": { "allGeos": true }, "devices": ["all"] },
+      "_note": "Selected-state example (NY only). Demonstrates state targeting without affecting /fl or other states."
+    },
+    {
+      "id": "va-responsible-play-example",
+      "title": "Play responsibly in Virginia",
+      "description": "Set a budget and know the odds. Help is available if gambling is a problem.",
+      "image": null,
+      "ctaText": "Learn more",
+      "ctaUrl": "#legal-responsible-play",
+      "variant": "subtle",
+      "priority": 40,
+      "active": true,
+      "previewEligible": false,
+      "placements": ["state.beforeFaq"],
+      "targeting": { "pages": ["state"], "stateCodesInclude": ["va"] },
+      "_note": "previewEligible=false — stored as a data example only; renders nowhere in the sample phase."
+    }
+  ]
+}

@@ -20,7 +20,7 @@
  *   1. `setConfig({ disableInitialLoad, singleRequest, collapseDiv })` — BEFORE `enableServices()`.
  *      `disableInitialLoad` is what separates "register the slot" from "request the ad": with it, `display()`
  *      only registers, and nothing is fetched until `refresh()`. Without it, `display()` fetches immediately
- *      and the tester's gate is bypassed. LRG-ADS-CANARY-002 §4 migrated these from the deprecated
+ *      and the governed eager/lazy request boundary is bypassed. LRG-ADS-CANARY-002 §4 migrated these from the deprecated
  *      `pubads().disableInitialLoad()` / `enableSingleRequest()` / `collapseEmptyDivs()` service methods.
  *   2. `enableServices()` once.
  *   5. per slot: `defineSlot` → `defineSizeMapping` → `addService` → `display(divId)`.
@@ -78,7 +78,7 @@ export interface SlotRegistration {
   sizes: number[][];
   /** Desktop tier ([992,0]) and mobile tier ([0,0]) from the slot's own named mapping, if it has one. */
   mapping: { minViewport: number[]; sizes: number[][] }[] | null;
-  /** Below-fold slots wait for the viewport; above-fold slots request as soon as the gate opens. */
+  /** Below-fold slots wait for the viewport; above-fold slots request as soon as GAM is ready. */
   lazy: boolean;
 }
 
@@ -187,8 +187,8 @@ function ensureServices(): void {
      * ORDER IS LOAD-BEARING, and the official "Control ad loading" guide is explicit: `setConfig` with
      * `disableInitialLoad` must run BEFORE `enableServices()` and before any `display()`. With it, `display()`
      * only registers the div and `refresh()` is the sole act that requests an ad — which is the whole
-     * mechanism the tester's session gate depends on. Reversed, `display()` would fetch immediately and the
-     * gate would be decorative.
+     * mechanism the explicit request lifecycle depends on. Reversed, `display()` would fetch before the slot's
+     * eager/lazy request decision.
      *
      * `collapseDiv` IS DELIBERATELY OMITTED, and that is a verified decision rather than an oversight.
      *

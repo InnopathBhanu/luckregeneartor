@@ -1,0 +1,75 @@
+{
+  "_meta": {
+    "purpose": "Production footer structure, transcribed from footerbar_upgrade_as.jspf (reference project). Links are the REAL production footer links — do not invent. Newsletter/account variants preserved. Admin/API-editable later; rendered by SiteFooter.",
+    "source": "00-reference-existing-project/.../WebContent/WEB-INF/upgrade/footerbar_upgrade_as.jspf",
+    "note": "The production footer has NO copyright/'not affiliated'/18+ line — those were removed from the generated footer to avoid inventing content. Responsible-play/18+/official-source notices live in page content, not the footer."
+  },
+  "columns": [
+    {
+      "title": "Lottery",
+      "links": [
+        { "label": "Home", "href": "/" },
+        { "label": "Jackpots", "href": "/jackpots" },
+        { "label": "Powerball Results", "href": "/powerball" },
+        { "label": "Megamillions Results", "href": "/mega-millions" },
+        { "label": "Lotto America Results", "href": "/lotto-america" },
+        { "label": "USA Popular Games", "href": "/popularlotteries" },
+        { "label": "USA Multi-State Games", "href": "/multistatelotteries" },
+        { "label": "Taxes on lotteries", "href": "/lottery-tax-calculator" }
+      ]
+    },
+    {
+      "title": "Information",
+      "links": [
+        { "label": "About Us", "href": "/about-us" },
+        { "label": "Help & FAQs", "href": "/faqs" },
+        { "label": "Terms and Conditions", "href": "/terms-and-conditions" },
+        { "label": "Privacy policy", "href": "/privacy-policy" }
+      ],
+      "glossary": {
+        "label": "Glossary-Terms",
+        "links": [
+          { "label": "Glossary (a-c)", "href": "/lottery-glossary-a-to-c" },
+          { "label": "Glossary (d-j)", "href": "/lottery-glossary-d-to-j" },
+          { "label": "Glossary (k-n)", "href": "/lottery-glossary-k-to-n" },
+          { "label": "Glossary (o-q)", "href": "/lottery-glossary-o-to-q" },
+          { "label": "Glossary (r-s)", "href": "/lottery-glossary-r-to-s" },
+          { "label": "Glossary (t-z)", "href": "/lottery-glossary-t-to-z" }
+        ]
+      }
+    },
+    {
+      "title": "Lottery",
+      "links": [
+        { "label": "Contact Us", "href": "/contact-us" },
+        { "label": "Login", "href": "/insider/login" },
+        { "label": "Register", "href": "/insider/register" },
+        { "label": "Blog", "href": "/blog" },
+        { "label": "News", "href": "/news" }
+      ],
+      "loggedInLinksNote": "When logged in, production shows: Search numbers (/insider/searchnumbers), Download Results (/insider/downloadresults), Tools & Systems (/insider/dashboard), Logout (/insider/logout) instead of Login/Register."
+    }
+  ],
+  "newsletter": {
+    "title": "Subscribe to NewsLetter",
+    "emailPlaceholder": "Email address",
+    "action": "/insider/register",
+    "text": "Hello, Subscribe and get Powerball, Mega Millions winning numbers and jackpot updates in notifications through mail. Also check Latest US Lottery Results for favorite games, Jackpot updates, Lottery Systems. Join Now! To get more winning chances use our lottery predictions.",
+    "phase1Note": "Non-functional placeholder in Phase 1 (no auth/API); preserves the block visually."
+  },
+  "bottom": {
+    "privacyManager": true,
+    "links": [
+      { "label": "Terms", "href": "/terms-and-conditions" },
+      { "label": "Privacy", "href": "/privacy-policy" },
+      { "label": "Cookies", "href": "/cookies-policy" },
+      { "label": "sitemap", "href": "/sitemap.xml" }
+    ],
+    "social": [
+      { "label": "facebook", "href": "https://www.facebook.com/lotterycornerofficial" },
+      { "label": "twitter", "href": "https://twitter.com/LotteryCorner" },
+      { "label": "instagram", "href": "https://www.instagram.com/lotterycorner" },
+      { "label": "pinterest", "href": "https://www.pinterest.com/Lotterycorner/" }
+    ]
+  }
+}

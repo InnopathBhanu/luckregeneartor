@@ -3,7 +3,6 @@ import "./globals.css";
 import SiteFooter from "@/components/layout/SiteFooter";
 import JsonLd from "@/components/seo/JsonLd";
 import PartnerScripts from "@/components/partner/PartnerScripts";
-import AdVerificationGate from "@/components/ads/AdVerificationGate";
 import GamBootstrap from "@/components/ads/GamBootstrap";
 import { organizationSchema, websiteSchema } from "@/lib/seo/siteSchema";
 import { getStatePreviewAdMode } from "@/lib/state/statePreviewGuard";
@@ -121,22 +120,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Sitewide structured data (Organization + WebSite). */}
         <JsonLd data={organizationSchema()} />
         <JsonLd data={websiteSchema()} />
-        {/* Env-gated third-party tags — inert unless a flag is explicitly "true" (renders nothing).
-            GAM/GPT is NOT among them since LRG-ADS-CANARY-001 §2; see `GamBootstrap` below. */}
+        {/* Independently env-gated third-party tags. iZooto defaults on; AdSense and analytics default off.
+            GAM/GPT is NOT among them; see `GamBootstrap` below. */}
         <PartnerScripts />
         {/*
-          THE CANARY GATE AND THE GPT LOADER — LRG-ADS-CANARY-001 §2.
+          THE GPT LOADER — temporary protected ad-rendering subdomain.
 
-          Both render `null` unless `NEXT_PUBLIC_GAM_ENABLED` and `NEXT_PUBLIC_GAM_CANARY_MODE` are both
-          exactly "true", so a public build carries neither the control nor the loader. Even in the canary the
-          library is fetched only after the tester presses "Start ad verification" in that browser tab — so a
-          canary page that nobody has started makes zero requests to securepubads.g.doubleclick.net.
+          GAM defaults on and loads automatically. `NEXT_PUBLIC_GAM_ENABLED=false` is the explicit kill switch.
+          There is deliberately no page-level verification strip or manual startup action on this temporary
+          host; access protection is configured outside the application.
 
           Mounted in the LAYOUT rather than per page because GPT is a global: one loader, one command queue,
           one set of services for the document. Per-page mounting is how a client navigation ends up loading a
           second copy of the library over the first.
         */}
-        <AdVerificationGate />
         <GamBootstrap />
         {/*
           LRG-SHELL-045 — THE GLOBAL FOOTER RENDERS ON EVERY ROUTE.

@@ -517,7 +517,17 @@ export type PreviewSection =
   | SectionEnvelope<"upcoming", { heading: string; items: UpcomingItem[] }>
   | SectionEnvelope<"state-explore", { heading: string; intro?: string; states: { code: string; name: string; href: string }[] }>
   | SectionEnvelope<"highlights", { heading: string; intro?: string; items: HighlightItem[] }>
-  | SectionEnvelope<"tools", { heading: string; intro?: string; tools: LinkRef[]; systems: InfoBlock[] }>
+  /*
+   * TOOLS, SYSTEMS AND NUMBER EXPLORATION — BP-02 §12 order 15 names all three, and §23 lists
+   * "Systems and Wheels" and "Frequency / number history" among the initial tools.
+   *
+   * `systemsHeading` and `systemsIntro` exist SEPARATELY from `systems` because LRG-UI-016 filters
+   * `systems` down by topic to remove rows that duplicate a tool card — and when that filter emptied
+   * the array it also silently took the sub-block's heading and its intro with it. The intro is not
+   * decoration: it is the Constitution §7 language that says draws are random and outcomes cannot be
+   * predicted or guaranteed. Framing and safety copy must not be collateral damage of a de-duplication.
+   */
+  | SectionEnvelope<"tools", { heading: string; intro?: string; tools: LinkRef[]; systemsHeading?: string; systemsIntro?: string; systems: InfoBlock[] }>
   | SectionEnvelope<"popular-games", { heading: string; items: { slug: string; displayName: string; href: string; jurisdiction?: string; topPrizeDisplay?: string; nextDrawDisplay?: string; purchase?: PurchaseRef }[] }>
   | SectionEnvelope<"jackpot-history", { heading: string; intro?: string; items: JackpotRow[]; chart: null; chartReason: string }>
   /*
@@ -570,7 +580,16 @@ export type PreviewSection =
   | SectionEnvelope<"return-channels", { heading: string; intro?: string; channels: { label: string; stateText: string; kind: "reminder" | "alert"; body?: string }[]; updates: MediaUpdate[]; emptyState: EmptyState; mediaChannels: MediaChannel[]; image?: LocalImage }>
   | SectionEnvelope<"newsletter", { heading: string; text?: string; emailPlaceholder: string }>
   | SectionEnvelope<"state-directory", { heading: string; intro?: string; states: { code: string; name: string; href: string }[] }>
-  | SectionEnvelope<"trust", { heading: string; sourcePolicy: string; accuracyPolicy: string; supportLinks: LinkRef[] }>;
+  /*
+   * TRUST, SUPPORT AND FOOTER — BP-02 §29.
+   *
+   * `faq` follows the pattern already approved and shipped on the flagship game pages, where FG-15 is
+   * "Trust, responsible play and FAQ" and the FAQ renders inside that section rather than claiming a
+   * section ID of its own. BP-02 §12 has no FAQ entry, so absorbing it here adds the visible FAQ the
+   * founder asked for WITHOUT amending the frozen 30-entry sequence. `null` when the fixture marks the
+   * block not visible on the page — a hidden FAQ is an absent one, and schema follows visibility.
+   */
+  | SectionEnvelope<"trust", { heading: string; sourcePolicy: string; accuracyPolicy: string; supportLinks: LinkRef[]; faq: { heading: string; items: { q: string; a: string }[] } | null }>;
 
 export type PreviewEntry = PreviewSection | AdAnchorEntry;
 

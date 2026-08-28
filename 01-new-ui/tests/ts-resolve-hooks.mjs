@@ -13,7 +13,7 @@
  */
 
 import { registerHooks } from "node:module";
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, resolve as resolvePath } from "node:path";
 
@@ -43,5 +43,22 @@ registerHooks({
     }
 
     return nextResolve(specifier, context);
+  },
+
+  /*
+   * Application code now statically imports its bundled runtime JSON. Next.js handles those imports, while
+   * Node's native ESM loader requires an import attribute that TypeScript's bundler-mode source does not emit.
+   * Present JSON as a test-only ESM default export so the same application modules remain directly testable.
+   */
+  load(url, context, nextLoad) {
+    if (url.endsWith(".json")) {
+      const raw = readFileSync(fileURLToPath(url), "utf8");
+      return {
+        format: "module",
+        source: `export default JSON.parse(${JSON.stringify(raw)});`,
+        shortCircuit: true,
+      };
+    }
+    return nextLoad(url, context);
   },
 });

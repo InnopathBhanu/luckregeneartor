@@ -1,8 +1,8 @@
 /*
  * CANARY-ONLY ADVERTISING STYLES — LRG-ADS-CANARY-001.
  *
- * A separate stylesheet, imported by the gate component, because `app/globals.css` carries uncommitted work
- * from an unrelated task and this task must not touch it. Nothing here restyles an existing placement: the
+ * A separate stylesheet, imported by `AdReservation`, because `app/globals.css` carries uncommitted work from
+ * an unrelated task and this task must not touch it. Nothing here restyles an existing placement: the
  * reserved geometry, labels and no-fill treatment all remain in `globals.css` and are untouched.
  *
  * Scope is limited to two things this task introduces: the tester's gate, and the GPT div inside an existing
@@ -13,7 +13,7 @@
  * `components/admin`. Reusing it here would have made a public advertising component read as admin markup.
  */
 
-/* ---------------------------------------------------------------- the gate */
+/* ---------------------------------------------------------------- archived gate reference (not mounted) */
 
 .lcgam-gate {
   border-bottom: 1px solid var(--color-border-subtle);
