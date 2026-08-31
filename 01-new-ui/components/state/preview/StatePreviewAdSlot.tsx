@@ -112,7 +112,19 @@ export default function StatePreviewAdSlot({
             Ad slot · {placement.slotKey} · reserves {r.mobileH}/{r.desktopH}px in production
           </span>
         ) : (
-          <span className="lcp-adslot__label">Advertisement</span>
+          /*
+           * NO VISIBLE LABEL IN PRODUCTION GEOMETRY — LRG-ADS-017, matching production and Home.
+           *
+           * Production draws no ad-labelling text on any of its 20 Home placements, so neither do we.
+           * The accessible name from `reservationState` is unchanged, so the region is still announced
+           * as an advertisement to assistive technology.
+           *
+           * The COMPACT branch above keeps its review marker. That is not an ad label — it is a
+           * founder-review annotation naming the slot and the production height it stands in for, and
+           * it exists precisely so compact geometry can never be mistaken for the real thing. It never
+           * renders in production ad mode.
+           */
+          null
         )
       }
     />

@@ -171,9 +171,25 @@ export default function PreviewAdSlot({
                 ["--lcp-ad-desktop-h" as string]: `${desktopH}px`,
               } as React.CSSProperties
             }
-            /* Quiet by design: the label alone. Suppressed by the preview no-fill state OR by a real
-               no-fill response — an empty slot must not advertise itself as an advertisement. */
-            label={<span className="lcp-adslot__label">Advertisement</span>}
+            /*
+             * NO VISIBLE LABEL — LRG-ADS-017, founder instruction 2026-08-28, matched to production.
+             *
+             * The reservation used to draw the word "Advertisement" in every state. Production does not:
+             * every leaf element on `lotterycorner.com/` was checked for ad labelling text
+             * (advertisement / ad / ads / sponsored / advt) and there are ZERO matches across all 20
+             * placements. An unfilled production slot is an empty reserved box with no text at all.
+             *
+             * The ACCESSIBLE name is deliberately kept. `AdReservation` still sets
+             * `role="complementary"` with an `aria-label` from `reservationState`, so a screen-reader
+             * user is still told this region is an advertisement and whether it is filled. That is the
+             * honesty requirement; drawing the word on screen was never what satisfied it, and
+             * production demonstrates the two are separable.
+             *
+             * `showLabel` is left in the contract rather than deleted: it still correctly reports that a
+             * no-fill suppresses labelling, and reinstating a visible label is then a one-line change
+             * here rather than a re-plumbing.
+             */
+            label={null}
           >
             {debug ? <AdDebugLabel slotKey={slotKey} /> : null}
             {filled ? (

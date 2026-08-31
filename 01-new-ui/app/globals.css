@@ -553,6 +553,25 @@ body {
   font-weight: 600;
   opacity: 0.75;
 }
+/*
+   PRODUCTION AD MODE LOOKS LIKE PRODUCTION — LRG-ADS-017.
+
+   Measured on `lotterycorner.com/`: every unfilled placement is FULLY TRANSPARENT — computed
+   `background-color: rgba(0,0,0,0)`, `border: 0px none`, and no text node anywhere (all 20 placements
+   checked for advertisement/ad/sponsored labelling: zero matches). What it DOES keep is its reserved
+   height — `min-height` 50 / 90 / 168 / 288px depending on the slot. Nothing collapses, so a creative
+   arriving causes no layout shift, which is the same contract `CLAUDE.md` §12 states.
+
+   So an unfilled slot in production ad mode is invisible reserved whitespace, not a grey labelled box.
+
+   COMPACT REVIEW MODE DELIBERATELY KEEPS THE OUTLINE. It is the founder-review affordance — without it
+   a reviewer cannot see where inventory sits — and it never ships as production geometry. That is why
+   this rule is scoped with `:not(.lcp-adslot--compact)` rather than applied to every reservation. */
+.lcp-adslot:not(.lcp-adslot--compact) {
+  background: transparent;
+  border-color: transparent;
+}
+
 /* Rail slots are quieter still — they must not dominate the contextual rail. */
 .lcp-rail .lcp-adslot { border-style: dashed; }
 /* NO-FILL (DS-24): outer placement geometry retained, inner creative area collapsed,
